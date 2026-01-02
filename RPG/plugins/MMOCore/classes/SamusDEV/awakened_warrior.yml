@@ -1,0 +1,61 @@
+display:
+    name: '&6&lAwakened Warrior Class'
+    lore:
+    - '&cChoose the Awakened Warrior Class'
+    item: STONE_SWORD:2086 # Supports custom model data/texture by durability
+
+# Must match an existing exp curve filename from the 'expcurves' folder
+exp-curve: levels
+
+# The maximum level players can reach
+max-level: 100
+
+exp-table: class_exp_table
+
+skills:
+    BULWARK_INSTINCT:
+        level: 1
+        max-level: 30
+    BRUTAL_COMBO:
+        level: 1
+        max-level: 30
+    BERSERKERS_LEAP:
+        level: 1
+        max-level: 30
+    RELENTLESS_WHIRLWIND:
+        level: 1
+        max-level: 30
+    BLOODBOUND_BARRIER:
+        level: 1
+        max-level: 20
+    VICIOUS_STRIKE:
+        level: 1
+        max-level: 30
+    STRIKE_OF_FURY:
+        level: 1
+        max-level: 20
+
+skill-slots:
+    1:
+        name: "&aSkill Slot I (Passive)"
+        formula: "<PASSIVE>"
+        unlocked-by-default: true
+    2:
+        name: "&aSkill Slot II"
+        unlocked-by-default: true
+    3:
+        name: "&aSkill Slot III"
+        unlocked-by-default: true
+    4:
+        name: "&aSkill Slot IV"
+        unlocked-by-default: true
+    5:
+        name: "&aSkill Slot V"
+        unlocked-by-default: true
+    6:
+        name: "&aSkill Slot VI"
+        unlocked-by-default: true
+    7:
+        name: "&aSkill Slot VII"
+        unlocked-by-default: true
+#6d05f30ea0fbc31f8c3f205e8be57182
