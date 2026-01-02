@@ -1,0 +1,102 @@
+# Beispiel Klasse: Krieger (Warrior)
+# Eine Nahkampf-Klasse mit hoher Verteidigung
+
+WARRIOR:
+  name: "Krieger"
+  description: |
+    Ein mächtiger Nahkämpfer, der sich durch
+    hohe Verteidigung und starke Angriffe auszeichnet.
+  
+  # Basis-Stats
+  base_stats:
+    health: 120
+    mana: 50
+    defense: 15
+    strength: 20
+    intelligence: 5
+    speed: 90
+  
+  # Stats pro Level
+  stats_per_level:
+    health: 5
+    mana: 1
+    defense: 1
+    strength: 2
+    intelligence: 0
+    speed: 0
+  
+  # Erlaubte Waffen
+  allowed_weapons:
+    - SWORD
+    - AXE
+    - MACE
+  
+  # Erlaubte Rüstungen
+  allowed_armor:
+    - HEAVY
+    - MEDIUM
+  
+  # Skill-Tree
+  skills:
+    # Passiv: Mehr Gesundheit
+    TOUGH_SKIN:
+      name: "Zähe Haut"
+      type: PASSIVE
+      max_level: 5
+      description: "Erhöht deine maximale Gesundheit"
+      required_level: 1
+      effect:
+        type: MAX_HEALTH
+        value_per_level: 10
+    
+    # Aktiv: Mächtiger Schlag
+    MIGHTY_STRIKE:
+      name: "Mächtiger Schlag"
+      type: ACTIVE
+      max_level: 5
+      description: "Ein kraftvoller Angriff mit erhöhtem Schaden"
+      required_level: 5
+      cooldown: 10
+      mana_cost: 20
+      effect:
+        type: DAMAGE_MULTIPLIER
+        value_per_level: 0.5
+    
+    # Aktiv: Kampfschrei
+    BATTLE_CRY:
+      name: "Kampfschrei"
+      type: ACTIVE
+      max_level: 3
+      description: "Erhöht Stärke für dich und Verbündete"
+      required_level: 15
+      cooldown: 60
+      mana_cost: 40
+      duration: 10
+      radius: 10
+      effect:
+        type: STRENGTH_BUFF
+        value_per_level: 5
+    
+    # Passiv: Schildmeister
+    SHIELD_MASTER:
+      name: "Schildmeister"
+      type: PASSIVE
+      max_level: 5
+      description: "Reduziert eingehenden Schaden"
+      required_level: 20
+      effect:
+        type: DAMAGE_REDUCTION
+        value_per_level: 0.02
+    
+    # Ultimate: Unbesiegbar
+    INVINCIBILITY:
+      name: "Unbesiegbar"
+      type: ULTIMATE
+      max_level: 1
+      description: "Macht dich für kurze Zeit unverwundbar"
+      required_level: 50
+      cooldown: 300
+      mana_cost: 100
+      duration: 5
+      effect:
+        type: INVULNERABILITY

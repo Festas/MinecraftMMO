@@ -1,0 +1,55 @@
+# Beispiel Quest: Der Anfang
+# Eine Starter-Quest für neue Spieler
+
+MAIN_01_THE_BEGINNING:
+  name: "Der Anfang"
+  description: |
+    Willkommen in der RPG Welt!
+    Sprich mit dem Dorf-Ältesten, um deine
+    Reise zu beginnen.
+  
+  # Quest Requirements
+  requirements:
+    level: 1
+    quests:
+      required: []
+  
+  # Quest Stages
+  stages:
+    1:
+      type: TALK_TO_NPC
+      npc: "VILLAGE_ELDER"
+      message: |
+        &eWillkommen, junger Abenteurer!
+        &7Die Insel braucht deine Hilfe.
+        &7Sammle erst einmal 10 Holz.
+      
+    2:
+      type: COLLECT_ITEMS
+      items:
+        - "minecraft:oak_log:10"
+      message: "&aSammle 10 Holzstämme"
+    
+    3:
+      type: CRAFT_ITEMS
+      items:
+        - "minecraft:crafting_table:1"
+      message: "&aCrafte eine Werkbank"
+    
+    4:
+      type: TALK_TO_NPC
+      npc: "VILLAGE_ELDER"
+      message: |
+        &aGut gemacht!
+        &7Du hast die Grundlagen gelernt.
+        &7Hier ist eine Belohnung für dich.
+  
+  # Quest Rewards
+  rewards:
+    experience: 100
+    money: 50
+    items:
+      - "SWORD_BASIC_COMMON:1"
+      - "minecraft:bread:5"
+    commands:
+      - "broadcast &e{player} hat die erste Quest abgeschlossen!"

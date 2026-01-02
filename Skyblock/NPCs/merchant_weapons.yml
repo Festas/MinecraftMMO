@@ -1,0 +1,80 @@
+# Beispiel NPC: Waffen-Händler
+# Ein Händler, der Waffen und Rüstungen verkauft
+
+MERCHANT_WEAPONS:
+  name: "&6&lWaffenhändler Gunther"
+  type: MERCHANT
+  
+  # NPC Eigenschaften
+  properties:
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU2YTM2MTg0NTllNDNiMjg3YjIyYjdlMjM1ZWM2OTk1OTQ1NDZkNmE5YTU2ODg3YzNkMjZiZThhOGNjNDYzMyJ9fX0="
+    location:
+      world: "skyblock"
+      x: 110
+      y: 64
+      z: 205
+      yaw: 90
+      pitch: 0
+    look_close: true
+    look_range: 10
+  
+  # Dialoge
+  dialogues:
+    greeting:
+      messages:
+        - "&6Willkommen in meinem Laden!"
+        - "&7Ich habe die besten Waffen und Rüstungen."
+        - ""
+        - "&eRechtsklick um den Shop zu öffnen!"
+  
+  # Shop-Inventar
+  shop:
+    title: "&6Waffenhändler Gunther"
+    rows: 5
+    items:
+      # Waffen
+      1:
+        item: "SWORD_BASIC_COMMON"
+        buy_price: 100
+        sell_price: 50
+        slot: 10
+      
+      2:
+        item: "SWORD_IRON_UNCOMMON"
+        buy_price: 500
+        sell_price: 250
+        slot: 11
+      
+      3:
+        item: "SWORD_STEEL_RARE"
+        buy_price: 2000
+        sell_price: 1000
+        slot: 12
+        required_level: 15
+      
+      # Rüstungen
+      4:
+        item: "ARMOR_LEATHER_SET"
+        buy_price: 200
+        sell_price: 100
+        slot: 19
+      
+      5:
+        item: "ARMOR_IRON_SET"
+        buy_price: 1000
+        sell_price: 500
+        slot: 20
+      
+      6:
+        item: "ARMOR_STEEL_SET"
+        buy_price: 4000
+        sell_price: 2000
+        slot: 21
+        required_level: 20
+  
+  # Klick-Aktionen
+  actions:
+    left_click:
+      - "openDialogue:greeting"
+    right_click:
+      - "openShop"

@@ -1,0 +1,26 @@
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Build artifacts
+target/
+build/
+dist/
+
+# Logs
+*.log
+logs/
+
+# Test files
+test-server/
