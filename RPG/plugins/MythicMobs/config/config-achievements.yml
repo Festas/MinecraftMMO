@@ -1,0 +1,10 @@
+Configuration:
+  General:
+  Storage:
+    Driver: JSON
+  DisabledVanillaCategories:
+  - STORY
+  - ADVENTURE
+  - HUSBANDRY
+  - NETHER
+  - END

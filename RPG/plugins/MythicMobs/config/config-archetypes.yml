@@ -1,0 +1,18 @@
+#
+# Archetype Configuration Options
+#
+# More information about Mythic Archetype features can be found here:
+# https://git.mythiccraft.io/mythiccraft/mythicrpg/-/wikis/Archetypes
+#
+Configuration:
+
+  #================================================================================
+  # General Options
+  #================================================================================
+  CommandFeedback: true
+  DefaultArchetypes: []
+  #- CLASS ADVENTURER
+
+  #================================================================================
+  # Leveling Options
+  #================================================================================
