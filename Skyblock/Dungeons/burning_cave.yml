@@ -1,0 +1,107 @@
+# Beispiel Dungeon: Brennende Höhle
+# Ein Anfänger-Dungeon mit Feuer-Thema
+
+DUNGEON_BURNING_CAVE:
+  name: "Brennende Höhle"
+  description: |
+    Eine gefährliche Höhle voller Feuer-Kreaturen.
+    Besiege den Feuer-Dämon am Ende!
+  
+  # Dungeon-Info
+  info:
+    min_level: 10
+    max_level: 25
+    recommended_players: 3-5
+    estimated_time: "20-30 Minuten"
+    difficulty_modes:
+      - NORMAL
+      - HARD
+      - MASTER
+  
+  # Dungeon-Bereiche
+  areas:
+    # Eingangsbereich
+    entrance:
+      name: "Eingang"
+      mobs:
+        - type: "ZOMBIE_WARRIOR_10"
+          amount: 5
+          spawn_delay: 30
+        - type: "SKELETON_ARCHER_12"
+          amount: 3
+          spawn_delay: 40
+    
+    # Lava-Raum
+    lava_chamber:
+      name: "Lava-Kammer"
+      mobs:
+        - type: "MAGMA_GOLEM_15"
+          amount: 4
+          spawn_delay: 20
+        - type: "FIRE_ELEMENTAL_15"
+          amount: 6
+          spawn_delay: 15
+      hazards:
+        - type: LAVA
+          damage: 20
+          tick_rate: 20
+    
+    # Boss-Raum
+    boss_room:
+      name: "Thron des Dämons"
+      boss:
+        type: "DEMON_FIRE_BOSS"
+        health_multiplier:
+          NORMAL: 1.0
+          HARD: 1.5
+          MASTER: 2.0
+        minions:
+          - type: "FIRE_IMP_20"
+            amount: 4
+            spawn_at_health: 0.5
+  
+  # Belohnungen
+  rewards:
+    completion:
+      experience:
+        NORMAL: 1000
+        HARD: 2000
+        MASTER: 4000
+      money:
+        NORMAL: 500
+        HARD: 1000
+        MASTER: 2000
+    
+    # Loot-Tables
+    loot:
+      common:
+        - item: "MATERIAL_FIRE_ESSENCE"
+          chance: 0.8
+          amount: 1-3
+        - item: "minecraft:coal"
+          chance: 0.6
+          amount: 5-10
+      
+      rare:
+        - item: "SWORD_FIRE_RARE"
+          chance: 0.2
+          amount: 1
+        - item: "ARMOR_FIRE_CHESTPLATE_RARE"
+          chance: 0.15
+          amount: 1
+      
+      legendary:
+        - item: "SWORD_FIRE_LEGENDARY"
+          chance: 0.05
+          amount: 1
+        - item: "MATERIAL_DEMON_ESSENCE"
+          chance: 0.1
+          amount: 1
+  
+  # Dungeon-Mechaniken
+  mechanics:
+    - type: "FIRE_IMMUNITY"
+      description: "Spieler benötigen Feuerresistenz"
+    - type: "TIMED_CHALLENGE"
+      time_limit: 1800
+      bonus_reward_multiplier: 1.5

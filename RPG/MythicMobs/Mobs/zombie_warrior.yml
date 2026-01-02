@@ -1,0 +1,25 @@
+# Beispiel: Verstärkter Zombie
+# Ein stärkerer Zombie für Anfänger-Gebiete
+
+ZOMBIE_WARRIOR_10:
+  Type: ZOMBIE
+  Display: '&e&lZombie Krieger'
+  Health: 500
+  Damage: 25
+  Armor: 5
+  Options:
+    MovementSpeed: 0.25
+    FollowRange: 20
+    PreventOtherDrops: true
+  Equipment:
+  - IRON_SWORD:0
+  - IRON_HELMET:1
+  - IRON_CHESTPLATE:2
+  - IRON_LEGGINGS:3
+  - IRON_BOOTS:4
+  Skills:
+  - skill{s=ShieldBash} @target ~onTimer:60
+  Drops:
+  - MATERIAL_ROTTEN_FLESH 0.5 1-3
+  - MATERIAL_BONE 0.3 1-2
+  - exp 50-100
