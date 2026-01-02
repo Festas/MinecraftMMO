@@ -1,0 +1,43 @@
+name: Strike of Fury
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&7Gather in vibrative aura while your red spiritual sword grows"
+- "&7massively in length. Then slash forward with your sword 4 times in a"
+- "&7row, leap up high, and smash down the area you're looking at,"
+- "&7creating a huge crack with ruptures. Immediately leap up and"
+- "&7backwards to your original position. The crack glows up and"
+- "&7creates a huge explosion, with bigger ruptures and rubbles"
+- "&7emerging and destroyed from the surface. Enemies in the area get"
+- "&7stunned for a while."
+- "&c🗡 {damage} Damage"
+- "&e⌛ {cooldown}s Cooldown"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2292'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 8
+  per-level: 1
+  min: 8
+  max: 10
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 12
+  per-level: -0.01
+  min: 11
+  max: 12
+#6d05f30ea0fbc31f8c3f205e8be57182

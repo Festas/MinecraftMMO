@@ -1,0 +1,58 @@
+name: Summon Minion
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&7Summon an Axe Minion on your first summon, a Crossbow Minion"
+- "&7on your second summon."
+- ""
+- "&6Axe Minion (Melee Minion)"
+- "&bAxe Slash: &7Your Axe Minion slashes the enemy with its axe."
+- "&bAxe Spin: &7Your Axe Minion spins with his axe, constantly"
+- "&7damaging nearby enemies."
+- ""
+- "&6Crossbow Minion (Ranged Minion)"
+- "&bCrossbow Shot: &7Your Crossbow Minion fires an arrow at an enemy."
+- ""
+- "&c🗡 {axedamage} Axe Slash Damage"
+- "&c🗡 {spindamage} Axe Spin Damage"
+- "&c🗡 {crossbowdamage} Crossbow Damage"
+- "&e⌛ {cooldown}s Cooldown"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2328'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+axedamage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 6
+spindamage:
+  base: 2
+  per-level: 1
+  min: 2
+  max: 4
+crossbowdamage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 7
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 12
+  per-level: -0.01
+  min: 11
+  max: 12
+#aee9a606e111e02c29d52ab339f31451

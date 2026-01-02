@@ -1,0 +1,44 @@
+name: Soul Spear
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&7Summon a soul spear and smash it towards the surface, creating" 
+- "&7a rupture and damaging enemies, stunning them."
+- ""
+- "&c🗡 {damage} Damage"
+- "&9⏱ {stunduration}s Stun Duration"
+- "&e⌛ {cooldown}s Cooldown"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2325'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 5
+stunduration:
+  base: 3
+  per-level: 0.1
+  min: 3
+  max: 4
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 5
+  per-level: -0.01
+  min: 4
+  max: 5
+#aee9a606e111e02c29d52ab339f31451

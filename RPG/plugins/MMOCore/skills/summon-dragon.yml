@@ -1,0 +1,43 @@
+name: Summon Dragon
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&7Summon a Spirit Dragon that fights by your side."
+- ""
+- "&6Spirit Dragon (Ranged Minion)"
+- "&bSoul Fireball: &7Your Spirit Dragon fires a ball of soulfire"
+- "&7which explodes on contact."
+- "&bSoul Breath: &7Your Spirit Dragon charges and fires a long breath"
+- "&7of soulfire for 1.5 seconds."
+- ""
+- "&c🗡 {damage} Damage"
+- "&e⌛ {cooldown}s Cooldown"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2327'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 7
+  per-level: 1
+  min: 7
+  max: 10
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 8
+  per-level: -0.01
+  min: 7
+  max: 8
+#aee9a606e111e02c29d52ab339f31451

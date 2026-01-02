@@ -1,0 +1,42 @@
+name: Spirit Wolf
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&7Summon a Spirit Wolf that always fights by your side."
+- ""
+- "&6Spirit Wolf (Melee Minion)"
+- "&bClaw Slash: &7Your Spirit Wolf slashes its claw, damaging an enemy."
+- "&bBite: &7Your Spirit Wolf bites and damages an enemy. It leaps"
+- "&7before biting when far from the target."
+- ""
+- "&c🗡 {damage} Damage"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2326'
+passive-type: TIMER
+timer:
+  base: 3
+  per-level: 0
+  min: 3
+  max: 3
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 5
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+#aee9a606e111e02c29d52ab339f31451

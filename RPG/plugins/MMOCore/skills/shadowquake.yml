@@ -1,0 +1,47 @@
+name: Shadowquake
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&7Gain Invisibility I and Speed IV for 9 seconds. Your next basic"
+- "&7attack ends invisibility and speed, releasing a shockwave slash"
+- "&7forward that damages enemies and causes a quake, briefly stunning"
+- "&7enemies in front."
+- "&c🗡 {damage} Damage"
+- "&9⏱ {duration}s Duration"
+- "&e⌛ {cooldown}s Cooldown"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2272'
+passive-type: TIMER
+timer:
+  base: 10
+  per-level: 0
+  min: 10
+  max: 10
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 7
+duration:
+  base: 7
+  per-level: 0.1
+  min: 7
+  max: 9
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 11
+  per-level: -0.01
+  min: 10
+  max: 11
+  
+#b53095753b85db436e21bfd09361a285

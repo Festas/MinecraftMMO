@@ -1,0 +1,40 @@
+name: Soul Combo
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&7Unleash a chain of soul slashes:"
+- "&bFirst Strike: &7Slash forward once with your left blade."
+- "&bSecond Strike: &7Slash twice in a row with both blades."
+- "&bThird Strike: &7Slash three times in a row with both blades."
+- "&bFourth Strike: &7Perform a strong duo slash with both blades."
+- "&c🗡 {damage} Damage"
+- "&e⌛ {cooldown}s Cooldown"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2324'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 5
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0.3
+  per-level: -0.01
+  min: 0.2
+  max: 0.3
+#aee9a606e111e02c29d52ab339f31451

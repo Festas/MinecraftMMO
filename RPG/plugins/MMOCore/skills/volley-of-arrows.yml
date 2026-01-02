@@ -1,0 +1,38 @@
+name: Volley of Arrows
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&7Fire a fan of arrows forward, slightly knocking back enemies."
+- "&7Charge a shot and fire a stronger blast of arrows that create"
+- "&7a fan-shaped rupture. Enemies get knocked back and stunned."
+- "&c🗡 {damage} Damage"
+- "&e⌛ {cooldown}s Cooldown"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2300'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 7
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 5
+  per-level: -0.01
+  min: 4
+  max: 5
+#492e30dc18406489ddf5d183f170de23
