@@ -1,0 +1,42 @@
+name: Brutal Combo
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&7Unleash a brutal chain of strikes:"
+- "&b- First Strike: &7A wide slash forward."
+- "&b- Second Strike: &7A wide slash forward."
+- "&b- Third Strike: &7A short forward dash and a wide pierce."
+- "&b- Fourth Strike: &7A vertical spinning slash while taking enemies"
+- "&7into the air."
+- "&b- Fifth Strike: &7A final down smash strike."
+- "&c🗡 {damage} Damage"
+- "&e⌛ {cooldown}s Cooldown"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2289'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 7
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0.5
+  per-level: -0.01
+  min: 0.4
+  max: 0.5
+#6d05f30ea0fbc31f8c3f205e8be57182

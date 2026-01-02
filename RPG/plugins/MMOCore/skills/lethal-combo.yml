@@ -1,0 +1,43 @@
+name: Lethal Combo
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&7Unleash a relentless chain of blade strikes:"
+- "&7- First Strike: A quick slash forward."
+- "&7- Second Strike: A slash and a spinning slash that hits twice"
+- "&7in rapid succession."
+- "&7- Third Strike: A short backstep followed by a forward piercing"
+- "&7dash, leaping back and upwards afterwards."
+- "&7- Fourth Strike: Throw a dagger downward, triggering a powerful"
+- "&7double slash that smashes the surface on impact."
+- "&c🗡 {damage} Damage"
+- "&e⌛ {cooldown}s Cooldown"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2270'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 6
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0.2
+  per-level: -0.01
+  min: 0.1
+  max: 0.2
+#b53095753b85db436e21bfd09361a285

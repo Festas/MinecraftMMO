@@ -1,0 +1,44 @@
+name: Hailpiercer
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&7Inhale ice aura from a few blocks forward towards the caster,"
+- "&7slightly pulling in enemies for 1.5 seconds. Emerge 3 huge ice"
+- "&7spikes in front of you, damaging and slowing enemies."
+- "&c🗡 {damage} Damage"
+- "&9⏱ {slowduration}s Slow Duration"
+- "&e⌛ {cooldown}s Cooldown"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2310'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 6
+  per-level: 1
+  min: 6
+  max: 10
+slowduration:
+  base: 4
+  per-level: 0.1
+  min: 4
+  max: 7
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 12
+  per-level: -0.01
+  min: 11
+  max: 12
+#694c90325772693c3b5b9b053f3eabc9

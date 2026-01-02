@@ -1,0 +1,43 @@
+name: Last Dance
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&7Summon several shadow blades around you and begin spinning them"
+- "&7in a circle, launching them in every direction. You can right-click"
+- "&7to teleport to the block you're looking at, up to three times."
+- "&7After 3 seconds, you take nearby enemies into the air while"
+- "&7slashing them multiple times. While airborne, summon shadow"
+- "&7figures that slice through the enemies repeatedly. Then, dash"
+- "&7forward and pierce through them one final time. After 2 seconds,"
+- "&7enemies still suspended in the air explode in a burst of blood."
+- "&c🗡 {damage} Damage"
+- "&e⌛ {cooldown}s Cooldown"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2269'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 2
+  per-level: 1
+  min: 2
+  max: 6
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 14
+  per-level: -0.01
+  min: 13
+  max: 14
+#b53095753b85db436e21bfd09361a285
