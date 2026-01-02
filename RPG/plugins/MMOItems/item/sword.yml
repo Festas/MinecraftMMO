@@ -1,0 +1,852 @@
+# -----------------------------------------------------
+# STANDARD ITEMS (Übersetzt & Optimiert)
+# -----------------------------------------------------
+
+LONG_SWORD:
+  base:
+    material: IRON_SWORD
+    name: '&fLangschwert'
+    attack-speed: 1.6
+    attack-damage:
+      base: 6
+      scale: 1.2
+      spread: 0.1
+      max-spread: 0.3
+    required-level:
+      base: 0
+      scale: 1
+    element:
+      fire:
+        damage: 10
+  modifiers:
+    sharp:
+      chance: 0.5
+    fiery:
+      chance: 0.5
+
+CUTLASS:
+  base:
+    material: IRON_SWORD
+    attack-damage:
+      base: 7.0
+      spread: 0.04
+      max-spread: 0.13
+    attack-speed:
+      base: 1.7
+      spread: 0.02
+      max-spread: 0.05
+    lore:
+    - '&7Etwas besser als ein Eisenschwert.'
+    required-level: 3.0
+    tier: COMMON
+    name: '&fScharfer Säbel'
+    max-durability: 300.0
+
+FALCON_BLADE:
+  base:
+    material: GOLDEN_SWORD
+    required-level: 10.0
+    attack-damage:
+      base: 8.0
+      spread: 0.04
+      max-spread: 0.11
+      maxSpread: 0.11
+    attack-speed:
+      base: 1.8
+      spread: 0.03
+      max-spread: 0.1
+    critical-strike-chance:
+      base: 60.0
+      spread: 0.05
+      max-spread: 0.14
+    gem-sockets:
+    - Blue
+    - Green
+    ability:
+      on-hit:
+        type: LIFE_ENDER
+        mode: ATTACK
+        damage:
+          base: 10.0
+          scale: 1
+          spread: 0.1
+          max-spread: 0.2
+    unbreakable: true
+    perm-effects:
+      SPEED: 1
+    disable-enchanting: true
+    tier: EPIC
+    crafting:
+      shaped:
+        '1':
+        - AIR MATERIAL.EPIC_WEAPON_ESSENCE AIR
+        - MATERIAL.EPIC_WEAPON_ESSENCE GOLDEN_SWORD MATERIAL.EPIC_WEAPON_ESSENCE
+        - AIR MATERIAL.EPIC_WEAPON_ESSENCE AIR
+    disable-repairing: true
+    name: '&eFalkenklinge'
+    upgrade:
+      workbench: false
+    hide-enchants: true
+
+KATANA:
+  base:
+    material: IRON_SWORD
+    attack-damage: 7.0
+    lore:
+    - '&7&oEin sehr scharfes & leichtes Schwert,'
+    - '&7&ogeschmiedet in hundert Jahren'
+    - '&7&oschmiedeeiserner Meisterschaft.'
+    attack-speed: 2.0
+    tier: RARE
+    movement-speed: 0.02
+    critical-strike-chance: 10.0
+    name: '&fKatana'
+    max-durability: 800.0
+
+SOULSTEALER:
+  base:
+    material: IRON_SWORD
+    enchants:
+      unbreaking: 9
+    name: '&cDer Seelenräuber'
+    attack-damage:
+      base: 10.0
+      spread: 10.0
+      max-spread: 0.03
+      scale: 10.0
+      maxSpread: 10.0
+    attack-speed:
+      base: 1.65
+      spread: 0.01
+      max-spread: 0.03
+    mana-cost: 2.0
+    critical-strike-chance: 30.0
+    max-health: 2.0
+    required-level: 10.0
+    ability:
+      ability1:
+        type: VAMPIRISM
+        mode: ATTACK
+        cooldown: 7.0
+    crafting:
+      shaped:
+        '1':
+        - MISCELLANEOUS.HUMAN_SOUL MISCELLANEOUS.HUMAN_SOUL MISCELLANEOUS.HUMAN_SOUL
+        - MISCELLANEOUS.HUMAN_SOUL SWORD.SILVER_SWORD MISCELLANEOUS.HUMAN_SOUL
+        - MISCELLANEOUS.HUMAN_SOUL MISCELLANEOUS.HUMAN_SOUL MISCELLANEOUS.HUMAN_SOUL
+    lore:
+    - '&7Entzieht &c10%&7 des verursachten'
+    - '&7Schadens als Lebenspunkte.'
+
+STEEL_SWORD:
+  base:
+    material: IRON_SWORD
+    name: '&fStahlschwert'
+    attack-damage:
+      base: 6.5
+      spread: 0.02
+      max-spread: 0.07
+    attack-speed:
+      base: 1.625
+      spread: 0.006
+      max-spread: 0.02
+    lore:
+    - '&7Kann aufgewertet werden.'
+    required-level: 6.0
+    upgrade:
+      template: weapon-default
+
+SILVER_SWORD:
+  base:
+    material: IRON_SWORD
+    name: '&fSilberschwert'
+    attack-damage: 6.0
+    attack-speed: 1.6
+    lore:
+    - '&7Kann aufgewertet werden.'
+    required-level: 4.0
+    crafting:
+      shaped:
+        '1':
+        - AIR MATERIAL.SILVER_INGOT AIR
+        - AIR MATERIAL.SILVER_INGOT AIR
+        - AIR STICK AIR
+        '2':
+        - MATERIAL.SILVER_INGOT AIR AIR
+        - MATERIAL.SILVER_INGOT AIR AIR
+        - STICK AIR AIR
+        '3':
+        - AIR AIR MATERIAL.SILVER_INGOT
+        - AIR AIR MATERIAL.SILVER_INGOT
+        - AIR AIR STICK
+
+AMETHYST_SWORD:
+  base:
+    material: IRON_SWORD
+    name: §9§l§oAmethyst-Schwert
+    lore:
+      - §dEine ziemlich magische Komponente
+      - §dmacht dieses Schwert besonders.
+    enchants:
+      sharpness: 3.0
+    max-durability: 2200.0
+    item-particles:
+      type: DOUBLE_RINGS
+      particle: REDSTONE
+      color:
+        red: 128
+        green: 0
+        blue: 128
+    attack-damage:
+      base: 30.0
+      scale: 0.08
+      spread: 0.1
+      max-spread: 0.15
+    critical-strike-chance:
+      base: 4.0
+      spread: 0.1
+      max-spread: 0.3
+    critical-strike-power:
+      base: 15.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.3
+    required-level: 50.0
+    tier: LEGENDARY
+    magic-damage:
+      base: 60.0
+      scale: 0.15
+      spread: 0.15
+      max-spread: 0.25
+    parry-rating:
+      base: 10.0
+      spread: 0.1
+      max-spread: 0.2
+    parry-cooldown-reduction:
+      base: 15.0
+      spread: 0.04
+      max-spread: 0.08
+    weapon-damage:
+      base: 15.0
+      scale: 0.04
+      spread: 0.09
+      max-spread: 0.16
+    element:
+      earth:
+        damage:
+          base: 10.0
+          scale: 0.0
+          spread: 0.02
+          max-spread: 0.3
+      water:
+        damage:
+          base: 20.0
+          scale: 0.0
+          spread: 0.02
+          max-spread: 0.3
+    perm-effects:
+      REGENERATION: 1.0
+    ability:
+      ability1:
+        type: GRAND_HEAL
+        mode: RIGHT_CLICK
+        mana: 5.0
+        cooldown: 20.0
+        heal: 60.0
+        radius: 8.0
+    crafting:
+      supershaped:
+        '1':
+          input:
+            - v AIR 0 1..|v amethyst_block - 1.0..|v diamond_block - 1.0..|v amethyst_block
+              - 1.0..|v AIR 0 1..
+            - v amethyst_shard - 1.0..|v amethyst_block - 1.0..|v nether_star - 1.0..|v
+              amethyst_block - 1.0..|v amethyst_shard - 1.0..
+            - v AIR 0 1..|v amethyst_block - 1.0..|v diamond_block - 1.0..|v amethyst_block
+              - 1.0..|v AIR 0 1..
+            - v AIR 0 1..|v stick - 1.0..|v blaze_rod - 1.0..|v stick - 1.0..|v AIR
+              0 1..
+            - v AIR 0 1..|v AIR 0 1..|v blaze_rod - 1.0..|v AIR 0 1..|v AIR 0 1..
+      shaped:
+        '1':
+          input:
+            - v amethyst_block - 1.0..|v nether_star - 1.0..|v amethyst_block - 1.0..
+            - v amethyst_block - 1.0..|v amethyst_shard - 1.0..|v amethyst_block - 1.0..
+            - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+    attack-speed: 1.6
+
+FROZEN_BLADE:
+  base:
+    material: DIAMOND_SWORD
+    lore:
+      - §bHergestellt aus Eis, so kalt,
+      - §bdass es niemals schmilzt.
+    max-durability: 15000.0
+    tier: MYTHICAL
+    name: §b§lEwig Gefrorene Klinge
+    weapon-damage:
+      base: 30.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.25
+    attack-damage:
+      base: 70.0
+      scale: 0.15
+      spread: 0.1
+      max-spread: 0.2
+    stamina-cost: 12.0
+    attack-speed: 1.6
+    critical-strike-chance:
+      base: 5.0
+      scale: 0.05
+      spread: 0.2
+      max-spread: 0.4
+    critical-strike-power:
+      base: 25.0
+      scale: 0.1
+      spread: 0.15
+      max-spread: 0.25
+    parry-rating:
+      base: 30.0
+      spread: 0.1
+      max-spread: 0.4
+    required-level: 70.0
+    element:
+      ice:
+        damage:
+          base: 60.0
+          scale: 0.0
+          spread: 0.1
+          max-spread: 0.2
+    gem-sockets:
+      - Blue
+      - Blue
+    ability:
+      ability1:
+        type: FROZEN_AURA
+        mode: RIGHT_CLICK
+        duration: 8.0
+        cooldown: 12.0
+        amplifier: 2.0
+        radius: 10.0
+    magic-damage:
+      base: 25.0
+      spread: 0.25
+      max-spread: 0.4
+    upgrade:
+      reference: weapon-default
+    disable-death-drop: true
+    two-handed: true
+    movement-speed: -0.01
+
+OMNIELEMENTAL_SWORD:
+  base:
+    material: IRON_SWORD
+    name: §c§lO§6§lm§e§ln§a§li§2§lE§3§ll§9§le§b§lm§f§le§e§ln§a§lt§6§la§c§lr§6§ls§e§lc§a§lh§2§lw§3§le§9§lr§b§lt
+    attack-damage:
+      base: 30.0
+      scale: 0.12
+      spread: 0.1
+      max-spread: 0.2
+    attack-speed: 1.6
+    required-level: 34.0
+    magic-damage:
+      base: 70.0
+      scale: 0.08
+      spread: 0.08
+      max-spread: 0.15
+    tier: VERY_RARE
+    gem-sockets:
+      - Uncolored
+      - Uncolored
+      - Uncolored
+    ability:
+      ability1:
+        type: FIREBOLT
+        mode: RIGHT_CLICK
+        damage: 15.0
+        ignite: 3.0
+        cooldown: 5.0
+      ability2:
+        type: ICE_CRYSTAL
+        mode: RIGHT_CLICK
+        damage: 3.0
+        cooldown: 5.0
+        amplifier: 2.0
+        duration: 3.0
+      ability4:
+        type: CURSED_BEAM
+        duration: 3.0
+        cooldown: 5.0
+        damage: 12.0
+        mode: RIGHT_CLICK
+      ability3:
+        type: HOLY_MISSILE
+        duration: 4.0
+        mode: RIGHT_CLICK
+        damage: 5.0
+        cooldown: 5.0
+    element:
+      darkness:
+        damage: 25.0
+      lightness:
+        damage: 25.0
+      fire:
+        damage: 25.0
+      ice:
+        damage: 25.0
+    lore:
+      - §7Warum sich auf ein Element beschränken?
+    hide-enchants: true
+    enchants:
+      luck_of_the_sea: 1.0
+
+YANISDARK_SWORD:
+  base:
+    material: GOLDEN_SWORD
+    name: §e§lYanisDarks Schwert
+    magic-damage: 25.0
+    attack-damage: 12.0
+    attack-speed: 1.6
+    critical-strike-chance:
+      base: 5.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    critical-strike-power:
+      base: 5.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    required-level: 10.0
+    enchants:
+      fortune: 5.0
+      looting: 5.0
+    additional-experience: 30.0
+    element:
+      lightness:
+        damage: 30.0
+    gem-sockets:
+      - Yellow
+    tier: RARE
+    lore:
+      - §eHier ist ein besonderes Geschenk!
+      - §2Es ist unzerstörbar!
+    unbreakable: true
+
+TOOLTIP_COPPER_SWORD:
+  base:
+    material: WOODEN_SWORD
+    name: Kupfer-Kurzschwert
+    attack-damage: 10.0
+    attack-speed: 1.6
+    tooltip: COPPER
+    element:
+      fire:
+        damage: 3.0
+    required-class:
+      - Warrior
+
+TOOLTIP_SILVER_SWORD:
+  base:
+    material: IRON_SWORD
+    name: Silber-Kurzschwert
+    attack-damage: 10.0
+    attack-speed: 1.6
+    tooltip: SILVER
+    element:
+      fire:
+        damage: 3.0
+    required-class:
+      - Warrior
+
+TOOLTIP_GOLD_SWORD:
+  base:
+    material: GOLDEN_SWORD
+    name: Gold-Kurzschwert
+    attack-damage: 10.0
+    attack-speed: 1.6
+    tooltip: GOLD
+    element:
+      fire:
+        damage: 3.0
+    required-class:
+      - Warrior
+
+# -----------------------------------------------------
+# AWAKENED CLASSES WEAPONS (Zusammengefügt, Bereinigt & mit Rezepten)
+# -----------------------------------------------------
+
+AWAKENED_ARCHER_GALEBOW:
+  base:
+    material: STONE_SWORD
+    custom-model-data: 2087
+    name: <gradient:#00ff2a:#e1ff75:#00ff2a>Sturmbogen
+    lore:
+    - <gradient:#00ff2a:#e1ff75:#00ff2a>Der Sturmbogen des Erwachten Schützen
+    displayed-type: <gradient:#00ff2a:#e1ff75:#00ff2a>Erwachter Schütze
+    attack-damage: 5.0
+    unbreakable: true
+    required-class:
+    - 'Awakened Archer Class'
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+        - EMERALD_BLOCK EMERALD_BLOCK EMERALD_BLOCK
+        - FEATHER NETHER_STAR FEATHER
+        - EMERALD_BLOCK BOW EMERALD_BLOCK
+    ability:
+      # ability1: AMBUSH (Timer deaktiviert)
+#      ability1:
+#        type: AMBUSH
+#        mode: TIMER
+#        timer: 10
+#        cooldown: 0
+      ability2:
+        type: BLASTING_COMBO
+        mode: LEFT_CLICK
+        damage: 5
+        cooldown: 0.3
+      ability3:
+        type: EVASIVE_SHOT
+        mode: RIGHT_CLICK
+        damage: 5
+        cooldown: 2
+      ability4:
+        type: VOLLEY_OF_ARROWS
+        mode: SNEAK
+        damage: 5
+        skillcooldown: 3
+      # ability5: PIERCING_SKYFALL (Timer deaktiviert)
+#      ability5:
+#        type: PIERCING_SKYFALL
+#        mode: TIMER
+#        timer: 10
+#        damage: 6
+#        skillcooldown: 3
+      ability6:
+        type: RAPID_ARROWS
+        mode: SHIFT_RIGHT_CLICK
+        damage: 5
+        cooldown: 3
+      ability7:
+        type: SHOT_OF_DESTRUCTION
+        mode: SHIFT_LEFT_CLICK
+        damage: 40
+        cooldown: 7
+    disable-attack-passive: true
+    attack-speed: 1.0
+
+AWAKENED_ASSASSIN_DUSKBLADE:
+  base:
+    material: STONE_SWORD
+    custom-model-data: 2083
+    name: <gradient:#6a0000:#ff0202:#6a0000>Dämmerklinge
+    lore:
+    - <gradient:#6a0000:#ff0202:#6a0000>Die Dämmerklinge des Erwachten Assassinen
+    displayed-type: <gradient:#6a0000:#ff0202:#6a0000>Erwachter Assassine
+    attack-damage: 5.0
+    unbreakable: true
+    required-class:
+    - 'Awakened Assassin Class'
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+        - COAL_BLOCK OBSIDIAN COAL_BLOCK
+        - OBSIDIAN NETHER_STAR OBSIDIAN
+        - COAL_BLOCK IRON_SWORD COAL_BLOCK
+    ability:
+#      ability1:
+#        type: DEADLY_CALM
+#        mode: TIMER
+#        timer: 10
+      ability2:
+        type: LETHAL_COMBO
+        mode: LEFT_CLICK
+        damage: 3
+        cooldown: 0.2
+      ability3:
+        type: RAVAGING_DASH
+        mode: RIGHT_CLICK
+        damage: 4
+        cooldown: 2
+      ability4:
+        type: DEATH_BLOOM
+        mode: SNEAK
+        damage: 4
+        skillcooldown: 5
+#      ability5:
+#        type: SHADOWQUAKE
+#        mode: TIMER
+#        timer: 10
+#        duration: 9
+#        damage: 5
+#        skillcooldown: 11
+      ability6:
+        type: CRIMSON_ARC
+        mode: SHIFT_RIGHT_CLICK
+        damage: 4
+        cooldown: 3
+      ability7:
+        type: LAST_DANCE
+        mode: SHIFT_LEFT_CLICK
+        damage: 2
+        cooldown: 12
+    disable-attack-passive: true
+    attack-speed: 1.0
+
+AWAKENED_MAGE_RUNESTAFF:
+  base:
+    material: STONE_SWORD
+    custom-model-data: 2089
+    name: <gradient:#4c00ff:#75acff:#4c00ff>Runenstab
+    lore:
+    - <gradient:#4c00ff:#75acff:#4c00ff>Der Runenstab des Erwachten Magiers
+    displayed-type: <gradient:#4c00ff:#75acff:#4c00ff>Erwachter Magier
+    attack-damage: 5.0
+    unbreakable: true
+    required-class:
+    - 'Awakened Mage Class'
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+        - LAPIS_BLOCK BOOK LAPIS_BLOCK
+        - BOOK NETHER_STAR BOOK
+        - LAPIS_BLOCK BLAZE_ROD LAPIS_BLOCK
+    ability:
+#      ability1:
+#        type: MANA_BARRIER
+#        mode: TIMER
+#        timer: 10
+#        barriercooldown: 7
+#        cooldown: 0
+      ability2:
+        type: SORCERY_COMBO
+        mode: LEFT_CLICK
+        damage: 5
+        burndamage: 1
+        burnduration: 3
+        slowduration: 3
+        cooldown: 0.3
+      ability3:
+        type: TELEPORT_STRIKE
+        mode: RIGHT_CLICK
+        damage: 5
+        stunduration: 2
+        cooldown: 2
+      ability4:
+        type: BLAZING_BARRAGE
+        mode: SNEAK
+        damage: 5
+        burndamage: 1
+        burnduration: 3
+        skillcooldown: 3
+#      ability5:
+#        type: CRYO_PRISON
+#        mode: TIMER
+#        timer: 10
+#        damage: 6
+#        freezedamage: 5
+#        freezeduration: 3
+#        skillcooldown: 3
+      ability6:
+        type: HAILPIERCER
+        mode: SHIFT_RIGHT_CLICK
+        damage: 5
+        slowduration: 4
+        cooldown: 3
+      ability7:
+        type: METEOR_OF_DOOM
+        mode: SHIFT_LEFT_CLICK
+        damage: 20
+        burndamage: 2
+        burnduration: 7
+        cooldown: 7
+    disable-attack-passive: true
+    attack-speed: 1.0
+
+AWAKENED_SHAMAN_LIFESCEPTER:
+  base:
+    material: STONE_SWORD
+    custom-model-data: 2090
+    name: <gradient:#e1ff8f:#b5eeff:#e1ff8f>Lebenszepter
+    lore:
+    - <gradient:#e1ff8f:#b5eeff:#e1ff8f>Das Lebenszepter des Erwachten Schamanen
+    displayed-type: <gradient:#e1ff8f:#b5eeff:#e1ff8f>Erwachter Schamane
+    attack-damage: 5.0
+    unbreakable: true
+    required-class:
+    - 'Awakened Shaman Class'
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+        - EMERALD_BLOCK GOLDEN_APPLE EMERALD_BLOCK
+        - GOLDEN_APPLE NETHER_STAR GOLDEN_APPLE
+        - EMERALD_BLOCK BLAZE_ROD EMERALD_BLOCK
+    ability:
+#      ability1:
+#        type: SOUL_LINK
+#        mode: TIMER
+#        timer: 2
+#        heal: 2
+#        healinterval: 1
+#        cooldown: 0
+      ability2:
+        type: PRIMAL_COMBO
+        mode: LEFT_CLICK
+        damage: 3
+        heal: 3
+        cooldown: 0.3
+      ability3:
+        type: ECHO_STEP
+        mode: RIGHT_CLICK
+        cooldown: 2
+      ability4:
+        type: RITUAL_TOTEM
+        mode: SNEAK
+        damage: 3
+        heal: 3
+        skillcooldown: 3
+#      ability5:
+#        type: STANCE_SWITCH
+#        mode: TIMER
+#        timer: 10
+#        skillcooldown: 2
+      ability6:
+        type: EARTHEN_EMBRACE
+        mode: SHIFT_RIGHT_CLICK
+        cooldown: 3
+      ability7:
+        type: ANCESTRAL_HANDS
+        mode: SHIFT_LEFT_CLICK
+        damage: 7
+        heal: 2
+        cooldown: 7
+    disable-attack-passive: true
+    attack-speed: 1.0
+
+AWAKENED_SUMMONER_SOULTOME:
+  base:
+    material: STONE_SWORD
+    custom-model-data: 2091
+    name: <gradient:#4c00ff:#75acff:#4c00ff>Seelenfoliant
+    lore:
+    - <gradient:#4c00ff:#75acff:#4c00ff>Der Seelenfoliant des Erwachten Beschwörers
+    displayed-type: <gradient:#4c00ff:#75acff:#4c00ff>Erwachter Beschwörer
+    attack-damage: 5.0
+    unbreakable: true
+    required-class:
+    - 'Awakened Summoner Class'
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+        - BONE_BLOCK DIAMOND BONE_BLOCK
+        - DIAMOND NETHER_STAR DIAMOND
+        - BONE_BLOCK BOOK BONE_BLOCK
+    ability:
+#      ability1:
+#        type: SPIRIT_WOLF
+#        mode: TIMER
+#        damage: 4
+#        timer: 3
+#        cooldown: 0
+      ability2:
+        type: SOUL_COMBO
+        mode: LEFT_CLICK
+        damage: 3
+        cooldown: 0.2
+      ability3:
+        type: BLADE_WHEEL
+        mode: RIGHT_CLICK
+        damage: 4
+        cooldown: 2
+      ability4:
+        type: SUMMON_MINION
+        mode: SNEAK
+        axedamage: 3
+        spindamage: 2
+        crossbowdamage: 4
+        skillcooldown: 1
+#      ability5:
+#        type: SUMMONERS_COMMAND
+#        mode: TIMER
+#        timer: 10
+#        skillcooldown: 1
+      ability6:
+        type: SOUL_SPEAR
+        mode: SHIFT_RIGHT_CLICK
+        damage: 3
+        stunduration: 3
+        cooldown: 3
+      ability7:
+        type: SUMMON_DRAGON
+        mode: SHIFT_LEFT_CLICK
+        damage: 7
+        cooldown: 10
+    disable-attack-passive: true
+    attack-speed: 1.0
+
+AWAKENED_WARRIOR_BRUTESWORD:
+  base:
+    material: STONE_SWORD
+    custom-model-data: 2086
+    name: <gradient:#ff0000:#ff582e:#ff0000>Brutalschwert
+    lore:
+    - <gradient:#ff0000:#ff582e:#ff0000>Das Brutalschwert des Erwachten Kriegers
+    displayed-type: <gradient:#ff0000:#ff582e:#ff0000>Erwachter Krieger
+    attack-damage: 5.0
+    unbreakable: true
+    required-class:
+    - 'Awakened Warrior Class'
+    tier: LEGENDARY
+    crafting:
+      shaped:
+        '1':
+        - REDSTONE_BLOCK IRON_BLOCK REDSTONE_BLOCK
+        - IRON_BLOCK NETHER_STAR IRON_BLOCK
+        - REDSTONE_BLOCK DIAMOND_SWORD REDSTONE_BLOCK
+    ability:
+      ability1:
+        type: BULWARK_INSTINCT
+        mode: DAMAGED
+        duration: 5
+        cooldown: 10
+      ability2:
+        type: BRUTAL_COMBO
+        mode: LEFT_CLICK
+        damage: 4
+        cooldown: 0.3
+      ability3:
+        type: BERSERKERS_LEAP
+        mode: RIGHT_CLICK
+        damage: 4
+        cooldown: 2
+      ability4:
+        type: RELENTLESS_WHIRLWIND
+        mode: SNEAK
+        damage: 4
+        skillcooldown: 3
+      # ability5:
+      #   type: BLOODBOUND_BARRIER
+      #   mode: TIMER
+      #   timer: 10
+      #   duration: 8
+      #   damage: 4
+      #   skillcooldown: 9
+      ability6:
+        type: VICIOUS_STRIKE
+        mode: SHIFT_RIGHT_CLICK
+        damage: 6
+        cooldown: 3
+      ability7:
+        type: STRIKE_OF_FURY
+        mode: SHIFT_LEFT_CLICK
+        damage: 8
+        cooldown: 7
+    disable-attack-passive: true
+    attack-speed: 1.0
