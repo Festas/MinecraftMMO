@@ -1,6 +1,6 @@
-# MythicMobs Mobs für Skyblock
+# MythicMobs Mobs für RPG
 
-Dieser Ordner enthält alle Custom Mob-Definitionen für den Skyblock Server.
+Dieser Ordner enthält alle Custom Mob-Definitionen für den RPG Server.
 
 ## Mob-Kategorien
 

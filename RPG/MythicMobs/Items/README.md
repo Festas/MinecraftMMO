@@ -1,6 +1,6 @@
-# MythicMobs Items für Skyblock
+# MythicMobs Items für RPG
 
-Dieser Ordner enthält alle Custom Item-Definitionen für den Skyblock Server.
+Dieser Ordner enthält alle Custom Item-Definitionen für den RPG Server.
 
 ## Item-Kategorien
 

@@ -1,4 +1,4 @@
-# MythicMobs Skills für Skyblock
+# MythicMobs Skills für RPG
 
 Dieser Ordner enthält alle Custom Skill-Definitionen für Mobs und Items.
 

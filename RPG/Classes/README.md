@@ -1,4 +1,4 @@
-# Klassen-System für Skyblock
+# Klassen-System für RPG
 
 Dieser Ordner enthält alle Klassen-Definitionen und Skill-Trees.
 

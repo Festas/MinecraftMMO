@@ -1,4 +1,4 @@
-# NPCs für Skyblock
+# NPCs für RPG
 
 Dieser Ordner enthält alle NPC-Definitionen mit Dialogen und Funktionen.
 

@@ -1,0 +1,254 @@
+# Quick Reference Guide
+
+Schnelle Übersicht über die wichtigsten Befehle und Konzepte.
+
+## Verzeichnisstruktur
+
+```
+MinecraftMMO/
+├── Skyblock/              # Skyblock Server
+│   ├── MythicMobs/
+│   │   ├── Items/        # Custom Items (Waffen, Rüstungen, etc.)
+│   │   ├── Mobs/         # Custom Mobs und Bosse
+│   │   └── Skills/       # Skills für Mobs und Items
+│   ├── Quests/           # Quest-Definitionen
+│   ├── Classes/          # Klassen-System (Warrior, Mage, etc.)
+│   ├── Dungeons/         # Dungeon-Konfigurationen
+│   └── NPCs/             # NPCs und Händler
+├── RPG/                  # RPG Server (gleiche Struktur)
+├── Lobby/                # Lobby Server
+├── Survival/             # Survival Server
+└── Shared/               # Gemeinsame Ressourcen
+```
+
+## Wichtige Dateien
+
+- **README.md** - Projekt-Übersicht
+- **USAGE.md** - Ausführliche Nutzungsanleitung
+- **CONTRIBUTING.md** - Richtlinien für Beiträge
+- **.gitignore** - Git-Ausschlüsse
+
+## Schnellstart
+
+### 1. Neues Item erstellen
+
+```bash
+cd Skyblock/MythicMobs/Items/
+cp example_sword.yml my_new_item.yml
+# Bearbeite my_new_item.yml
+```
+
+### 2. Neuen Mob erstellen
+
+```bash
+cd Skyblock/MythicMobs/Mobs/
+cp zombie_warrior.yml my_new_mob.yml
+# Bearbeite my_new_mob.yml
+```
+
+### 3. Neue Quest erstellen
+
+```bash
+cd Skyblock/Quests/
+cp example_quest.yml my_new_quest.yml
+# Bearbeite my_new_quest.yml
+```
+
+## In-Game Befehle
+
+### MythicMobs
+
+```
+/mm items get ITEM_NAME [Anzahl]      # Item erhalten
+/mm mobs spawn MOB_NAME [Anzahl]       # Mob spawnen
+/mm reload                             # Plugin neu laden
+```
+
+### Citizens (NPCs)
+
+```
+/npc create NAME                       # NPC erstellen
+/npc skin [NAME]                       # Skin setzen
+/citizens reload                       # Plugin neu laden
+```
+
+### Quests
+
+```
+/quests give [Spieler] QUEST_NAME      # Quest geben
+/quests reload                         # Plugin neu laden
+```
+
+### Skills/Classes
+
+```
+/class choose [KLASSE]                 # Klasse wählen
+/skills [SKILL]                        # Skill verwenden
+/skills reload                         # Plugin neu laden
+```
+
+## Tier-System
+
+| Tier | Farbe | Code | Werte-Multiplikator |
+|------|-------|------|---------------------|
+| Common | Weiß | `&f` | 1.0x |
+| Uncommon | Grün | `&a` | 1.25x |
+| Rare | Blau | `&9` | 1.5x |
+| Epic | Lila | `&5` | 2.0x |
+| Legendary | Gold | `&6` | 3.0x |
+| Mythic | Pink | `&d` | 5.0x |
+
+## Klassen-Übersicht
+
+| Klasse | Hauptstat | Rolle | Waffen |
+|--------|-----------|-------|--------|
+| Warrior | Stärke | Tank/DPS | Schwert, Axt |
+| Mage | Intelligenz | Ranged DPS | Stab, Zauberbuch |
+| Archer | Geschick | Ranged DPS | Bogen |
+| Assassin | Geschwindigkeit | Melee DPS | Dolch |
+| Tank | Verteidigung | Tank | Schild, Schwert |
+
+## Beispiel-Items
+
+### Anfänger-Schwert
+```yaml
+SWORD_BASIC_COMMON:
+  Id: IRON_SWORD
+  Display: '&fEinfaches Schwert'
+  Damage: 20
+  Tier: COMMON
+```
+
+### Legendäres Schwert
+```yaml
+SWORD_FIRE_LEGENDARY:
+  Id: DIAMOND_SWORD
+  Display: '&6&lLegendäres Feuerschwert'
+  Damage: 150
+  Tier: LEGENDARY
+  Special: Fire Aspect
+```
+
+## Mob-Level-System
+
+```
+Level 1-25:   Anfänger-Gebiet
+Level 26-50:  Fortgeschrittenen-Gebiet
+Level 51-75:  Experten-Gebiet
+Level 76-100: End-Game-Gebiet
+```
+
+## Dungeon-Schwierigkeiten
+
+| Schwierigkeit | Multiplikator | Empfohlene Gruppe |
+|---------------|---------------|-------------------|
+| Normal | 1.0x | 3-4 Spieler |
+| Hard | 1.5x | 4-5 Spieler |
+| Master | 2.0x | 5 Spieler |
+
+## Datei-Konventionen
+
+### Items
+`KATEGORIE_NAME_TIER.yml`
+- `SWORD_FIRE_LEGENDARY.yml`
+
+### Mobs
+`MOB_NAME_LEVEL.yml`
+- `ZOMBIE_WARRIOR_10.yml`
+
+### Quests
+`KATEGORIE_NUMMER_NAME.yml`
+- `MAIN_01_THE_BEGINNING.yml`
+
+### NPCs
+`FUNKTION_NAME.yml`
+- `MERCHANT_WEAPONS.yml`
+
+## Farbcodes Referenz
+
+```
+&0 Schwarz      &8 Dunkelgrau
+&1 Dunkelblau   &9 Blau
+&2 Dunkelgrün   &a Grün
+&3 Dunkel-Aqua  &b Aqua
+&4 Dunkelrot    &c Rot
+&5 Dunkel-Lila  &d Pink
+&6 Gold         &e Gelb
+&7 Grau         &f Weiß
+
+&l Fett         &o Kursiv
+&m Durchgestr.  &n Unterstrichen
+&r Reset
+```
+
+## Häufige Fehler
+
+### YAML-Syntax
+```yaml
+# ❌ FALSCH (Tabs verwendet)
+Item:
+	Display: 'Text'
+
+# ✅ RICHTIG (2 Leerzeichen)
+Item:
+  Display: 'Text'
+```
+
+### Anführungszeichen
+```yaml
+# ❌ FALSCH (fehlende Anführungszeichen bei &)
+Display: &6Text
+
+# ✅ RICHTIG
+Display: '&6Text'
+```
+
+## Hilfreiche Links
+
+- MythicMobs Wiki: https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/home
+- Citizens Wiki: https://wiki.citizensnpcs.co/
+- Paper Docs: https://docs.papermc.io/
+- Minecraft Farbcodes: https://minecraft.tools/en/color-code.php
+
+## Plugin-Versionen
+
+| Plugin | Min. Version | Empfohlen |
+|--------|-------------|-----------|
+| MythicMobs | 5.0.0 | 5.6.0+ |
+| Citizens | 2.0.30 | 2.0.33+ |
+| Paper | 1.21.10 | Latest |
+
+## Backup-Befehl
+
+```bash
+# Komplettes Backup erstellen
+tar -czf mmo-backup-$(date +%Y%m%d).tar.gz \
+  Skyblock/ RPG/ Shared/
+```
+
+## Repository-Befehle
+
+```bash
+# Änderungen anzeigen
+git status
+
+# Dateien hinzufügen
+git add .
+
+# Commit erstellen
+git commit -m "Add: Neue Items"
+
+# Push zu GitHub
+git push
+
+# Aktuellen Stand holen
+git pull
+```
+
+## Support
+
+Bei Problemen:
+1. YAML-Syntax prüfen
+2. Console-Logs lesen
+3. Plugin-Dokumentation konsultieren
+4. Beispiel-Dateien vergleichen

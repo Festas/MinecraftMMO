@@ -1,4 +1,4 @@
-# Dungeons für Skyblock
+# Dungeons für RPG
 
 Dieser Ordner enthält alle Dungeon-Konfigurationen.
 

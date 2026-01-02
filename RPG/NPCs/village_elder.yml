@@ -9,7 +9,7 @@ VILLAGE_ELDER:
   properties:
     skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWI5N2M1YTdhZjMzNzExYTgzOWY3Y2U0MTViNDcxNDJmN2ZmZTAwODM1NDY0MmZmZjA1OGU4OTU2NTVjYTk4NiJ9fX0="
     location:
-      world: "skyblock"
+      world: "rpg"
       x: 100
       y: 64
       z: 200

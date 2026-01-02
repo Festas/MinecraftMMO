@@ -1,6 +1,6 @@
-# Quests für Skyblock
+# Quests für RPG
 
-Dieser Ordner enthält alle Quest-Definitionen für den Skyblock Server.
+Dieser Ordner enthält alle Quest-Definitionen für den RPG Server.
 
 ## Quest-Kategorien
 
