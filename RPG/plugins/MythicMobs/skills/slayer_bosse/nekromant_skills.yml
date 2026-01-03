@@ -10,7 +10,7 @@
 # Todesgriff - Zieht Spieler zum Boss
 TodesgriffMalachar:
   Skills:
-  - message{m="&5&lMalachar: &7Komm zu mir, Sterblicher!"} @target
+  - 'message{m="&5&lMalachar: &7Komm zu mir, Sterblicher!"} @target'
   - effect:particles{p=soul;a=50;hS=1;vS=1} @target
   - effect:sound{s=entity.wither.ambient;v=1;p=0.8} @self
   - delay 10
@@ -21,7 +21,7 @@ TodesgriffMalachar:
 # Skelett-Diener Beschwörung Phase 1
 BeschwoereDienerP1:
   Skills:
-  - message{m="&5&lMalachar: &7Erhebt euch, meine Diener!"} @PlayersInRadius{r=30}
+  - 'message{m="&5&lMalachar: &7Erhebt euch, meine Diener!"} @PlayersInRadius{r=30}'
   - effect:particles{p=portal;a=50;hS=3;vS=2} @self
   - effect:sound{s=entity.zombie.infect;v=1;p=0.5} @self
   - delay 20
@@ -35,7 +35,7 @@ BeschwoereDienerP1:
 # Seelenraub - AoE Schaden + Heilung
 SeelenraubMalachar:
   Skills:
-  - message{m="&5&lMalachar: &7Eure Lebenskraft gehört MIR!"} @PlayersInRadius{r=20}
+  - 'message{m="&5&lMalachar: &7Eure Lebenskraft gehört MIR!"} @PlayersInRadius{r=20}'
   - effect:particles{p=damage_indicator;a=100;hS=5;vS=2} @self
   - effect:sound{s=entity.wither.hurt;v=1.5;p=0.5} @self
   - delay 20
@@ -47,7 +47,7 @@ SeelenraubMalachar:
 # Knochenkäfig - Fängt Spieler ein
 KnochenkäfigMalachar:
   Skills:
-  - message{m="&5&lMalachar: &7Du kannst nicht entkommen!"} @target
+  - 'message{m="&5&lMalachar: &7Du kannst nicht entkommen!"} @target'
   - effect:particles{p=block_crack;m=bone_block;a=50;hS=2;vS=2} @target
   - effect:sound{s=block.bone_block.place;v=2;p=0.5} @self
   - potion{t=SLOW;d=100;l=10} @target
@@ -59,7 +59,7 @@ KnochenkäfigMalachar:
 # Skelett-Diener Beschwörung Phase 2
 BeschwoereDienerP2:
   Skills:
-  - message{m="&5&lMalachar: &7Ihr seid hartnäckig... aber meine Armee ist UNENDLICH!"} @PlayersInRadius{r=30}
+  - 'message{m="&5&lMalachar: &7Ihr seid hartnäckig... aber meine Armee ist UNENDLICH!"} @PlayersInRadius{r=30}'
   - effect:particles{p=portal;a=80;hS=4;vS=3} @self
   - effect:sound{s=entity.zombie.infect;v=1.5;p=0.5} @self
   - delay 20
@@ -73,8 +73,8 @@ BeschwoereDienerP2:
 # Apokalypse der Toten - Ultimate Skill
 ApokalypseMalachar:
   Skills:
-  - message{m="&5&l>>> Malachar beginnt Apokalypse der Toten zu wirken! <<<"} @PlayersInRadius{r=30}
-  - message{m="&c&lUNTERBRECHT IHN SCHNELL!"} @PlayersInRadius{r=30}
+  - 'message{m="&5&l>>> Malachar beginnt Apokalypse der Toten zu wirken! <<<"} @PlayersInRadius{r=30}'
+  - 'message{m="&c&lUNTERBRECHT IHN SCHNELL!"} @PlayersInRadius{r=30}'
   - effect:particles{p=soul_fire_flame;a=200;hS=3;vS=3} @self
   - effect:sound{s=entity.wither.spawn;v=2;p=0.5} @self
   - potion{t=SLOW;d=100;l=5} @self
@@ -83,12 +83,12 @@ ApokalypseMalachar:
   - summon{t=Skelett_Diener;a=10;r=8} @self
   - effect:particles{p=explosion_huge;a=5;hS=10;vS=5} @self
   - effect:sound{s=entity.generic.explode;v=2;p=0.5} @self
-  - message{m="&5&lMalachar: &7STERBT ALLE!"} @PlayersInRadius{r=30}
+  - 'message{m="&5&lMalachar: &7STERBT ALLE!"} @PlayersInRadius{r=30}'
 
 # Skelett-Champion Beschwörung Phase 3
 BeschwoereChampions:
   Skills:
-  - message{m="&5&lMalachar: &7GENUG! Ich werde euch ALLE vernichten!"} @PlayersInRadius{r=30}
+  - 'message{m="&5&lMalachar: &7GENUG! Ich werde euch ALLE vernichten!"} @PlayersInRadius{r=30}'
   - effect:particles{p=portal;a=150;hS=5;vS=4} @self
   - effect:sound{s=entity.wither.spawn;v=1.5;p=0.8} @self
   - delay 30
@@ -99,7 +99,7 @@ BeschwoereChampions:
 # Phase 3 Rage Buff
 RageBuffMalachar:
   Skills:
-  - message{m="&5&lMalachar: &7Meine Macht wächst!"} @PlayersInRadius{r=30}
+  - 'message{m="&5&lMalachar: &7Meine Macht wächst!"} @PlayersInRadius{r=30}'
   - potion{t=SPEED;d=999999;l=2} @self
   - potion{t=INCREASE_DAMAGE;d=999999;l=2} @self
   - effect:particles{p=angry_villager;a=50;hS=2;vS=2} @self
@@ -112,7 +112,7 @@ RageBuffMalachar:
 # Start Dialog
 MalacharStartDialog:
   Skills:
-  - message{m="&5&lMalachar: &7Eure Seelen werden meiner Armee dienen... für alle Ewigkeit!"} @PlayersInRadius{r=30}
+  - 'message{m="&5&lMalachar: &7Eure Seelen werden meiner Armee dienen... für alle Ewigkeit!"} @PlayersInRadius{r=30}'
   - effect:sound{s=entity.wither.ambient;v=2;p=0.5} @self
   - delay 40
   - skill{s=BossSpawnAnnounce} @self
@@ -120,14 +120,14 @@ MalacharStartDialog:
 # Phase 2 Dialog
 MalacharPhase2Dialog:
   Skills:
-  - message{m="&5&lMalachar: &7Ihr seid hartnäckig... aber meine Armee ist UNENDLICH!"} @PlayersInRadius{r=30}
+  - 'message{m="&5&lMalachar: &7Ihr seid hartnäckig... aber meine Armee ist UNENDLICH!"} @PlayersInRadius{r=30}'
   - effect:sound{s=entity.wither.hurt;v=1.5;p=0.5} @self
   - skill{s=PhaseTransition} @self
 
 # Phase 3 Dialog
 MalacharPhase3Dialog:
   Skills:
-  - message{m="&5&lMalachar: &7GENUG! Ich werde euch ALLE vernichten!"} @PlayersInRadius{r=30}
+  - 'message{m="&5&lMalachar: &7GENUG! Ich werde euch ALLE vernichten!"} @PlayersInRadius{r=30}'
   - effect:sound{s=entity.wither.angry;v=2;p=0.5} @self
   - skill{s=PhaseTransition} @self
   - delay 20
@@ -136,7 +136,7 @@ MalacharPhase3Dialog:
 # Death Dialog
 MalacharDeathDialog:
   Skills:
-  - message{m="&5&lMalachar: &7Nein... unmöglich... meine Armee..."} @PlayersInRadius{r=50}
+  - 'message{m="&5&lMalachar: &7Nein... unmöglich... meine Armee..."} @PlayersInRadius{r=50}'
   - effect:sound{s=entity.wither.death;v=2;p=0.5} @self
   - delay 20
   - skill{s=BossDeathEffects} @self

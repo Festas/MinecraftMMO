@@ -16,7 +16,7 @@ DunklerMagierVexorin:
     FollowRange: 50
     Silent: false
   Equipment:
-  - NETHERITE_SWORD{Enchantments:[sharpness:5],Unbreakable:true,display:{Lore:["&0Stab der Leere"]}} HAND
+  - 'NETHERITE_SWORD{Enchantments:[sharpness:5],Unbreakable:true,display:{Lore:["&0Stab der Leere"]}} HAND'
   - LEATHER_HELMET{color=0,0,0,Unbreakable:true} HEAD
   - LEATHER_CHESTPLATE{color=0,0,0,Unbreakable:true} CHEST
   - LEATHER_LEGGINGS{color=0,0,0,Unbreakable:true} LEGS

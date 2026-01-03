@@ -10,7 +10,7 @@
 # Schattenpfeil - Zielsuchender Projektil
 SchattenpfeilVexorin:
   Skills:
-  - message{m="&0&lVexorin: &7Die Dunkelheit findet dich!"} @target
+  - 'message{m="&0&lVexorin: &7Die Dunkelheit findet dich!"} @target'
   - effect:sound{s=entity.evoker.cast_spell;v=1.5;p=0.5} @self
   - projectile{onTick=Schattenpfeil_Tick;onHit=Schattenpfeil_Hit;v=3;i=1;ht=true;hR=1;vR=1} @target
 
@@ -29,7 +29,7 @@ Schattenpfeil_Hit:
 # Leere-Rune - Explodierende Bodenrunen
 LeereRuneVexorin:
   Skills:
-  - message{m="&0&lVexorin: &7Die Runen der Leere!"} @PlayersInRadius{r=30}
+  - 'message{m="&0&lVexorin: &7Die Runen der Leere!"} @PlayersInRadius{r=30}'
   - effect:sound{s=entity.evoker.prepare_summon;v=1.5;p=0.8} @self
   - effect:particles{p=portal;a=50;hS=3;vS=1;y=0} @target
   - effect:particles{p=enchantment_table;a=30;hS=2;vS=2} @target
@@ -55,7 +55,7 @@ TeleportVexorin:
 # Leere-Explosion - Großer AoE
 LeereExplosionVexorin:
   Skills:
-  - message{m="&0&lVexorin: &7VERSCHWINDET!"} @PlayersInRadius{r=20}
+  - 'message{m="&0&lVexorin: &7VERSCHWINDET!"} @PlayersInRadius{r=20}'
   - effect:particles{p=explosion_huge;a=5;hS=3;vS=2} @self
   - effect:particles{p=portal;a=500;hS=8;vS=2} @self
   - effect:sound{s=entity.generic.explode;v=2;p=0.5} @self
@@ -66,16 +66,16 @@ LeereExplosionVexorin:
 # Dunkle Ketten - Verbindet 2 Spieler
 DunkleKettenVexorin:
   Skills:
-  - message{m="&0&lVexorin: &7Ihr seid aneinander gefesselt!"} @target
+  - 'message{m="&0&lVexorin: &7Ihr seid aneinander gefesselt!"} @target'
   - effect:particles{p=portal;a=50;hS=1;vS=1} @target
   - effect:sound{s=block.chain.place;v=2;p=0.5} @self
   - potion{t=SLOW;d=200;l=1} @target
-  - message{m="&c<target.name> ist mit dunklen Ketten verbunden! Bleibt nah beieinander!"} @PlayersInRadius{r=30}
+  - 'message{m="&c<target.name> ist mit dunklen Ketten verbunden! Bleibt nah beieinander!"} @PlayersInRadius{r=30}'
 
 # Leere-Splitter Beschwörung
 BeschwoereLeereSplitter:
   Skills:
-  - message{m="&0&lVexorin: &7Die Leere heilt mich!"} @PlayersInRadius{r=30}
+  - 'message{m="&0&lVexorin: &7Die Leere heilt mich!"} @PlayersInRadius{r=30}'
   - effect:particles{p=portal;a=100;hS=5;vS=3} @self
   - effect:sound{s=entity.vex.ambient;v=1.5;p=0.5} @self
   - delay 20
@@ -85,7 +85,7 @@ BeschwoereLeereSplitter:
 # Schaden-Reflektion Aktivierung
 ReflektionBuffVexorin:
   Skills:
-  - message{m="&0&lVexorin: &7Eure Angriffe werden euch vernichten!"} @PlayersInRadius{r=30}
+  - 'message{m="&0&lVexorin: &7Eure Angriffe werden euch vernichten!"} @PlayersInRadius{r=30}'
   - potion{t=ABSORPTION;d=999999;l=2} @self
   - effect:particles{p=damage_indicator;a=100;hS=3;vS=3} @self
   - effect:sound{s=block.beacon.power_select;v=1.5;p=0.5} @self
@@ -97,7 +97,7 @@ ReflektionBuffVexorin:
 # Leere-Sturm - Zieht alle Spieler zur Mitte
 LeereSturmVexorin:
   Skills:
-  - message{m="&0&l>>> Vexorin wirkt LEERE-STURM! <<<"} @PlayersInRadius{r=30}
+  - 'message{m="&0&l>>> Vexorin wirkt LEERE-STURM! <<<"} @PlayersInRadius{r=30}'
   - effect:particles{p=portal;a=300;hS=10;vS=5} @self
   - effect:sound{s=entity.wither.spawn;v=1.5;p=0.5} @self
   - delay 40
@@ -109,8 +109,8 @@ LeereSturmVexorin:
 # Gedankenkontrolle - Übernimmt Spieler
 GedankenkontrolleVexorin:
   Skills:
-  - message{m="&0&lVexorin: &7Dein Wille gehört MIR!"} @target
-  - message{m="&4&l>>> <target.name> wird kontrolliert! <<<"} @PlayersInRadius{r=30}
+  - 'message{m="&0&lVexorin: &7Dein Wille gehört MIR!"} @target'
+  - 'message{m="&4&l>>> <target.name> wird kontrolliert! <<<"} @PlayersInRadius{r=30}'
   - effect:particles{p=portal;a=100;hS=2;vS=3} @target
   - effect:sound{s=entity.evoker.prepare_attack;v=1.5;p=0.5} @self
   - potion{t=CONFUSION;d=100;l=5} @target
@@ -120,7 +120,7 @@ GedankenkontrolleVexorin:
 # Schattenwächter Beschwörung
 BeschwoereSchattenwaechter:
   Skills:
-  - message{m="&0&lVexorin: &7Die Leere VERSCHLINGT alles! Auch EUCH!"} @PlayersInRadius{r=30}
+  - 'message{m="&0&lVexorin: &7Die Leere VERSCHLINGT alles! Auch EUCH!"} @PlayersInRadius{r=30}'
   - effect:particles{p=portal;a=200;hS=6;vS=4} @self
   - effect:sound{s=entity.wither.spawn;v=2;p=0.5} @self
   - delay 30
@@ -131,7 +131,7 @@ BeschwoereSchattenwaechter:
 # Leere-Zonen Aktivierung (Kontinuierlicher Schaden auf dem Boden)
 LeereZonenVexorin:
   Skills:
-  - message{m="&0&lVexorin: &7Der Boden wird zu LEERE!"} @PlayersInRadius{r=30}
+  - 'message{m="&0&lVexorin: &7Der Boden wird zu LEERE!"} @PlayersInRadius{r=30}'
   - effect:particles{p=portal;a=500;hS=15;vS=1;y=0} @self
   - effect:sound{s=block.portal.trigger;v=2;p=0.5} @self
   - potion{t=WITHER;d=100;l=1} @PlayersInRadius{r=15}
@@ -143,7 +143,7 @@ LeereZonenVexorin:
 # Dimensionsriss - Dodgeable One-Shot
 DimensionsrissVexorin:
   Skills:
-  - message{m="&4&l>>> DIMENSIONSRISS! WEICHT AUS! <<<"} @PlayersInRadius{r=30}
+  - 'message{m="&4&l>>> DIMENSIONSRISS! WEICHT AUS! <<<"} @PlayersInRadius{r=30}'
   - effect:particles{p=portal;a=200;hS=5;vS=5} @target
   - effect:particles{p=reverse_portal;a=200;hS=5;vS=5} @target
   - effect:sound{s=entity.wither.spawn;v=2;p=0.5} @self
@@ -155,21 +155,21 @@ DimensionsrissVexorin:
 # Leere-Apokalypse - Ultimate Channeling Skill
 LeereApokalypseVexorin:
   Skills:
-  - message{m="&0&l>>> Vexorin beginnt LEERE-APOKALYPSE zu wirken! <<<"} @PlayersInRadius{r=50}
-  - message{m="&c&lIHR HABT 10 SEKUNDEN! UNTERBRECHT IHN!"} @PlayersInRadius{r=50}
+  - 'message{m="&0&l>>> Vexorin beginnt LEERE-APOKALYPSE zu wirken! <<<"} @PlayersInRadius{r=50}'
+  - 'message{m="&c&lIHR HABT 10 SEKUNDEN! UNTERBRECHT IHN!"} @PlayersInRadius{r=50}'
   - effect:particles{p=reverse_portal;a=500;hS=10;vS=10} @self
   - effect:sound{s=entity.wither.spawn;v=2;p=0.5} @self
   - potion{t=SLOW;d=200;l=10} @self
   - delay 200
   - damage{a=100} @PlayersInRadius{r=50}
-  - message{m="&0&lVexorin: &7Die Leere... hat gesiegt..."} @PlayersInRadius{r=50}
+  - 'message{m="&0&lVexorin: &7Die Leere... hat gesiegt..."} @PlayersInRadius{r=50}'
   - effect:particles{p=explosion_huge;a=20;hS=20;vS=10} @self
   - effect:sound{s=entity.wither.death;v=2;p=0.5} @self
 
 # Enrage Buff Phase 4
 EnrageBuffVexorin:
   Skills:
-  - message{m="&0&lVexorin: &7NEIN! Das kann nicht sein! DIE LEERE WIRD EUCH ALLE VERSCHLINGEN!"} @PlayersInRadius{r=30}
+  - 'message{m="&0&lVexorin: &7NEIN! Das kann nicht sein! DIE LEERE WIRD EUCH ALLE VERSCHLINGEN!"} @PlayersInRadius{r=30}'
   - potion{t=SPEED;d=999999;l=2} @self
   - potion{t=INCREASE_DAMAGE;d=999999;l=3} @self
   - effect:particles{p=angry_villager;a=100;hS=3;vS=3} @self
@@ -183,7 +183,7 @@ EnrageBuffVexorin:
 # Start Dialog
 VexorinStartDialog:
   Skills:
-  - message{m="&0&lVexorin: &7Die Leere hat mich erwählt... Ihr seid nur Staub im Wind der Ewigkeit!"} @PlayersInRadius{r=30}
+  - 'message{m="&0&lVexorin: &7Die Leere hat mich erwählt... Ihr seid nur Staub im Wind der Ewigkeit!"} @PlayersInRadius{r=30}'
   - effect:sound{s=entity.evoker.cast_spell;v=2;p=0.5} @self
   - delay 40
   - skill{s=BossSpawnAnnounce} @self
@@ -191,7 +191,7 @@ VexorinStartDialog:
 # Phase 2 Dialog
 VexorinPhase2Dialog:
   Skills:
-  - message{m="&0&lVexorin: &7Ihr beeindruckt mich... aber das wird euch nicht retten!"} @PlayersInRadius{r=30}
+  - 'message{m="&0&lVexorin: &7Ihr beeindruckt mich... aber das wird euch nicht retten!"} @PlayersInRadius{r=30}'
   - effect:sound{s=entity.evoker.prepare_attack;v=2;p=0.5} @self
   - skill{s=PhaseTransition} @self
   - delay 20
@@ -200,14 +200,14 @@ VexorinPhase2Dialog:
 # Phase 3 Dialog
 VexorinPhase3Dialog:
   Skills:
-  - message{m="&0&lVexorin: &7Die Leere VERSCHLINGT alles! Auch EUCH!"} @PlayersInRadius{r=30}
+  - 'message{m="&0&lVexorin: &7Die Leere VERSCHLINGT alles! Auch EUCH!"} @PlayersInRadius{r=30}'
   - effect:sound{s=entity.evoker.prepare_summon;v=2;p=0.5} @self
   - skill{s=PhaseTransition} @self
 
 # Phase 4 Dialog
 VexorinPhase4Dialog:
   Skills:
-  - message{m="&0&lVexorin: &7NEIN! Das kann nicht sein! DIE LEERE WIRD EUCH ALLE VERSCHLINGEN!"} @PlayersInRadius{r=30}
+  - 'message{m="&0&lVexorin: &7NEIN! Das kann nicht sein! DIE LEERE WIRD EUCH ALLE VERSCHLINGEN!"} @PlayersInRadius{r=30}'
   - effect:sound{s=entity.wither.angry;v=2;p=0.5} @self
   - skill{s=PhaseTransition} @self
   - delay 20
@@ -216,7 +216,7 @@ VexorinPhase4Dialog:
 # Death Dialog
 VexorinDeathDialog:
   Skills:
-  - message{m="&0&lVexorin: &7Nein... die Leere... sie ruft mich zurück..."} @PlayersInRadius{r=50}
+  - 'message{m="&0&lVexorin: &7Nein... die Leere... sie ruft mich zurück..."} @PlayersInRadius{r=50}'
   - effect:sound{s=entity.evoker.death;v=2;p=0.5} @self
   - delay 20
   - skill{s=BossDeathEffects} @self

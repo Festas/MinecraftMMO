@@ -10,7 +10,7 @@
 # Giftspucke - Ranged Gift-AoE
 GiftspuckeArachnia:
   Skills:
-  - message{m="&c&lArachnia: &7Kostet mein Gift!"} @target
+  - 'message{m="&c&lArachnia: &7Kostet mein Gift!"} @target'
   - effect:sound{s=entity.spider.ambient;v=1.5;p=0.5} @self
   - projectile{onTick=Giftspucke_Tick;onHit=Giftspucke_Hit;v=2;i=1;hR=0.5;vR=0.5} @target
 
@@ -29,7 +29,7 @@ Giftspucke_Hit:
 # Spinnlinge Beschwörung Phase 1
 BeschwoereSpinnlingeP1:
   Skills:
-  - message{m="&c&lArachnia: &7Meine Kinder... VERSCHLINGT SIE!"} @PlayersInRadius{r=30}
+  - 'message{m="&c&lArachnia: &7Meine Kinder... VERSCHLINGT SIE!"} @PlayersInRadius{r=30}'
   - effect:particles{p=web;a=50;hS=3;vS=2} @self
   - effect:sound{s=entity.spider.hurt;v=1.5;p=0.8} @self
   - delay 20
@@ -43,7 +43,7 @@ BeschwoereSpinnlingeP1:
 # Netzfalle - Immobilisiert Spieler
 NetzfalleArachnia:
   Skills:
-  - message{m="&c&lArachnia: &7Du bist gefangen!"} @target
+  - 'message{m="&c&lArachnia: &7Du bist gefangen!"} @target'
   - effect:sound{s=block.wool.break;v=1.5;p=0.5} @self
   - effect:particles{p=web;a=50;hS=2;vS=2} @target
   - summon{t=web_block;d=100} @target
@@ -58,7 +58,7 @@ NetzfalleArachnia:
 # Hinterhalt - Teleportiert hinter Spieler
 HinterhaltArachnia:
   Skills:
-  - message{m="&c&lArachnia: &7Hinter dir..."} @target
+  - 'message{m="&c&lArachnia: &7Hinter dir..."} @target'
   - effect:particles{p=smoke_large;a=50;hS=2;vS=2} @self
   - effect:sound{s=entity.enderman.teleport;v=1;p=0.8} @self
   - potion{t=INVISIBILITY;d=60;l=1} @self
@@ -73,7 +73,7 @@ HinterhaltArachnia:
 # Giftspinnen Beschwörung Phase 2
 BeschwoereGiftspinnen:
   Skills:
-  - message{m="&c&lArachnia: &7Ihr seid nur Beute... nichts weiter!"} @PlayersInRadius{r=30}
+  - 'message{m="&c&lArachnia: &7Ihr seid nur Beute... nichts weiter!"} @PlayersInRadius{r=30}'
   - effect:particles{p=portal;a=80;hS=4;vS=3} @self
   - effect:sound{s=entity.spider.hurt;v=2;p=0.5} @self
   - delay 20
@@ -83,7 +83,7 @@ BeschwoereGiftspinnen:
 # Unsichtbarkeits-Angriff
 UnsichtbarAngriff:
   Skills:
-  - message{m="&c&lArachnia: &7Versucht mich doch zu finden!"} @PlayersInRadius{r=30}
+  - 'message{m="&c&lArachnia: &7Versucht mich doch zu finden!"} @PlayersInRadius{r=30}'
   - potion{t=INVISIBILITY;d=60;l=1} @self
   - effect:particles{p=smoke_large;a=100;hS=3;vS=3} @self
   - effect:sound{s=entity.enderman.teleport;v=1.5;p=1} @self
@@ -99,23 +99,23 @@ UnsichtbarAngriff:
 # Kokon - Wickelt Spieler ein
 KokonArachnia:
   Skills:
-  - message{m="&c&lArachnia: &7IHR WERDET MEINE BRUT NIEMALS ZERSTÖREN!"} @target
+  - 'message{m="&c&lArachnia: &7IHR WERDET MEINE BRUT NIEMALS ZERSTÖREN!"} @target'
   - effect:particles{p=web;a=100;hS=2;vS=3} @target
   - effect:sound{s=block.wool.place;v=2;p=0.5} @self
   - potion{t=SLOW;d=100;l=10} @target
   - potion{t=WITHER;d=100;l=2} @target
   - potion{t=WEAKNESS;d=100;l=3} @target
-  - message{m="&e<target.name> ist im Kokon gefangen! Befreit ihn!"} @PlayersInRadius{r=30}
+  - 'message{m="&e<target.name> ist im Kokon gefangen! Befreit ihn!"} @PlayersInRadius{r=30}'
 
 # Schwarm - Alle Spinnen greifen gleichzeitig an
 SchwarmArachnia:
   Skills:
-  - message{m="&c&l>>> Arachnia ruft den SCHWARM! <<<"} @PlayersInRadius{r=30}
+  - 'message{m="&c&l>>> Arachnia ruft den SCHWARM! <<<"} @PlayersInRadius{r=30}'
   - effect:particles{p=angry_villager;a=100;hS=5;vS=3} @self
   - effect:sound{s=entity.spider.hurt;v=2;p=0.5} @self
   - potion{t=SPEED;d=200;l=3} @MobsInRadius{r=50;t=Spinnling,Giftspinne}
   - potion{t=INCREASE_DAMAGE;d=200;l=2} @MobsInRadius{r=50;t=Spinnling,Giftspinne}
-  - message{m="&cAlle Spinnen werden rasend!"} @PlayersInRadius{r=30}
+  - 'message{m="&cAlle Spinnen werden rasend!"} @PlayersInRadius{r=30}'
 
 # Spinnlinge Raserei Phase 3
 BeschwoereSpinnlingeP3:
@@ -127,7 +127,7 @@ BeschwoereSpinnlingeP3:
 # Phase 3 Rage Buff
 RageBuffArachnia:
   Skills:
-  - message{m="&c&lArachnia: &7RAAAAARRR!"} @PlayersInRadius{r=30}
+  - 'message{m="&c&lArachnia: &7RAAAAARRR!"} @PlayersInRadius{r=30}'
   - potion{t=SPEED;d=999999;l=3} @self
   - potion{t=INCREASE_DAMAGE;d=999999;l=2} @self
   - effect:particles{p=angry_villager;a=50;hS=2;vS=2} @self
@@ -140,7 +140,7 @@ RageBuffArachnia:
 # Start Dialog
 ArachniaStartDialog:
   Skills:
-  - message{m="&c&lArachnia: &7Meine Kinder... VERSCHLINGT SIE!"} @PlayersInRadius{r=30}
+  - 'message{m="&c&lArachnia: &7Meine Kinder... VERSCHLINGT SIE!"} @PlayersInRadius{r=30}'
   - effect:sound{s=entity.spider.ambient;v=2;p=0.5} @self
   - delay 40
   - skill{s=BossSpawnAnnounce} @self
@@ -148,14 +148,14 @@ ArachniaStartDialog:
 # Phase 2 Dialog
 ArachniaPhase2Dialog:
   Skills:
-  - message{m="&c&lArachnia: &7Ihr seid nur Beute... nichts weiter!"} @PlayersInRadius{r=30}
+  - 'message{m="&c&lArachnia: &7Ihr seid nur Beute... nichts weiter!"} @PlayersInRadius{r=30}'
   - effect:sound{s=entity.spider.hurt;v=2;p=0.5} @self
   - skill{s=PhaseTransition} @self
 
 # Phase 3 Dialog
 ArachniaPhase3Dialog:
   Skills:
-  - message{m="&c&lArachnia: &7IHR WERDET MEINE BRUT NIEMALS ZERSTÖREN!"} @PlayersInRadius{r=30}
+  - 'message{m="&c&lArachnia: &7IHR WERDET MEINE BRUT NIEMALS ZERSTÖREN!"} @PlayersInRadius{r=30}'
   - effect:sound{s=entity.spider.death;v=2;p=0.5} @self
   - skill{s=PhaseTransition} @self
   - delay 20
@@ -164,7 +164,7 @@ ArachniaPhase3Dialog:
 # Death Dialog
 ArachniaDeathDialog:
   Skills:
-  - message{m="&c&lArachnia: &7Nein... meine Brut... meine Kinder..."} @PlayersInRadius{r=50}
+  - 'message{m="&c&lArachnia: &7Nein... meine Brut... meine Kinder..."} @PlayersInRadius{r=50}'
   - effect:sound{s=entity.spider.death;v=2;p=0.5} @self
   - delay 20
   - skill{s=BossDeathEffects} @self

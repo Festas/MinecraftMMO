@@ -16,7 +16,7 @@ NekromantMalachar:
     AlwaysShowName: true
     FollowRange: 50
   Equipment:
-  - NETHERITE_SWORD{Enchantments:[sharpness:5],Unbreakable:true,display:{Lore:["&5Stab der Verdammnis"]}} HAND
+  - 'NETHERITE_SWORD{Enchantments:[sharpness:5],Unbreakable:true,display:{Lore:["&5Stab der Verdammnis"]}} HAND'
   - WITHER_SKELETON_SKULL HEAD
   - LEATHER_CHESTPLATE{color=0,0,0,Unbreakable:true} CHEST
   - LEATHER_LEGGINGS{color=0,0,0,Unbreakable:true} LEGS
