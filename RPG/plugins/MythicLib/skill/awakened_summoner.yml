@@ -24,7 +24,6 @@ SUMMON_MINION:
 
 SUMMONERS_COMMAND:
     mythicmobs-skill-id: Summoners_Command
-    passive-type: TIMER
     modifiers:
     - skillcooldown
     

@@ -23,7 +23,6 @@ RITUAL_TOTEM:
 
 STANCE_SWITCH:
     mythicmobs-skill-id: Stance_Switch
-    passive-type: TIMER
     modifiers:
     - skillcooldown
     

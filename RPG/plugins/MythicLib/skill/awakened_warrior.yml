@@ -22,7 +22,6 @@ RELENTLESS_WHIRLWIND:
 
 BLOODBOUND_BARRIER:
     mythicmobs-skill-id: Bloodbound_Barrier
-    passive-type: TIMER
     modifiers:
     - damage
     - duration

@@ -20,7 +20,6 @@ VOLLEY_OF_ARROWS:
 
 PIERCING_SKYFALL:
     mythicmobs-skill-id: Piercing_Skyfall
-    passive-type: TIMER
     modifiers:
     - damage
     - skillcooldown

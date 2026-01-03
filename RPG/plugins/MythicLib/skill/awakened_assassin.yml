@@ -20,7 +20,6 @@ DEATH_BLOOM:
 
 SHADOWQUAKE:
     mythicmobs-skill-id: Shadowquake
-    passive-type: TIMER
     modifiers:
     - duration
     - damage
