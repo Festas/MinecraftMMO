@@ -72,13 +72,28 @@ Vollständige Plugin-Liste siehe [docs/PLUGINS.md](docs/PLUGINS.md)
 
 Umfassende Dokumentation findest du im [`/docs`](docs/) Verzeichnis:
 
+### Allgemeine Dokumentation
 - **[PLANNING.md](docs/PLANNING.md)** - Fragenkatalog für Planung und Entwicklung
 - **[ARCHITECTURE.md](docs/ARCHITECTURE.md)** - Netzwerk-Architektur und technische Details
 - **[PLUGINS.md](docs/PLUGINS.md)** - Vollständige Plugin-Referenz pro Server
 - **[WORKFLOWS.md](docs/WORKFLOWS.md)** - Workflow-Templates für häufige Aufgaben
 - **[CHECKLISTS.md](docs/CHECKLISTS.md)** - Checklisten für Content-Erstellung und Testing
 
-Zusätzliche Referenzen:
+### Gameplay-Systeme
+- **[Klassen-System](docs/classes/README.md)** - Detaillierte Guides für alle 6 Klassen
+  - [Krieger](docs/classes/KRIEGER.md), [Magier](docs/classes/MAGIER.md), [Assassine](docs/classes/ASSASSINE.md)
+  - [Bogenschütze](docs/classes/BOGENSCHUETZE.md), [Schamane](docs/classes/SCHAMANE.md), [Beschwörer](docs/classes/BESCHWOERER.md)
+- **[Item-System](docs/items/README.md)** - Item-Pipeline, Tiers, Templates und Crafting
+- **[Economy-System](docs/economy/README.md)** - Währungen und Shops
+
+### Server-spezifische Dokumentation
+- **[RPG-Server](docs/rpg/README.md)** - Zonen, Quests, Dungeons, Mobs, NPCs
+- **[Skyblock-Server](docs/skyblock/README.md)** - Islands, Minions, Progression
+
+### Technische Infrastruktur
+- **[Infrastruktur](docs/infrastructure/README.md)** - Datenbanken, Synchronisation, Backups
+
+### Zusätzliche Referenzen
 - **[QUICKREF.md](QUICKREF.md)** - Schnellreferenz für häufige Befehle und Konzepte
 - **[USAGE.md](USAGE.md)** - Ausführliche Nutzungsanleitung
 
