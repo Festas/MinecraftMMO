@@ -1,0 +1,20 @@
+# Wiederverwendbare Bedingungen
+# Reusable Conditions
+
+conditions:
+  # Level-Checks
+  ist_level_5: "level 5"
+  ist_level_10: "level 10"
+  ist_level_15: "level 15"
+  ist_level_20: "level 20"
+  ist_level_25: "level 25"
+  ist_level_30: "level 30"
+  ist_level_35: "level 35"
+  ist_level_40: "level 40"
+  ist_level_50: "level 50"
+  
+  # Zeit-Checks
+  ist_tag: "time 0-12000"
+  ist_nacht: "time 12000-24000"
+  
+  # Grundlegende Quest-Completion Checks werden in den spezifischen Quest-Dateien definiert

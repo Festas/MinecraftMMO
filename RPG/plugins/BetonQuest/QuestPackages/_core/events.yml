@@ -1,0 +1,21 @@
+# Wiederverwendbare Events
+# Reusable Events
+
+events:
+  # Sound-Effekte
+  sound_quest_start: "playsound ENTITY_PLAYER_LEVELUP"
+  sound_quest_complete: "playsound UI_TOAST_CHALLENGE_COMPLETE"
+  sound_quest_fail: "playsound ENTITY_VILLAGER_NO"
+  sound_item_received: "playsound ENTITY_ITEM_PICKUP"
+  
+  # XP-Belohnungen
+  xp_klein: "experience 50"
+  xp_mittel: "experience 150"
+  xp_gross: "experience 500"
+  xp_riesig: "experience 1500"
+  
+  # Gold-Belohnungen (PlayerPoints)
+  gold_klein: "point playerpoints 50"
+  gold_mittel: "point playerpoints 200"
+  gold_gross: "point playerpoints 1000"
+  gold_riesig: "point playerpoints 5000"

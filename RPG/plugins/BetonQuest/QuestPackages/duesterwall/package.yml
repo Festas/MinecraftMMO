@@ -1,0 +1,12 @@
+# Duesterwall - Hauptstadt Quest-Paket
+# The Last Bastion of Hope
+
+# Paket-Information
+npcs:
+  koenig_nitwit: "1"  # Citizens NPC ID - bitte anpassen
+  wachhauptmann_thorvald: "2"
+  schmiedemeister_grimjaw: "3"
+  kraeuterfrau_morgana: "4"
+  jaegermeister_fenris: "5"
+  haendler_berthold: "6"
+  wirt_hammund: "7"
