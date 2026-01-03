@@ -1,0 +1,266 @@
+# ===================================================
+# Zone 8: Pilzinsel (Level 55-70)
+# Gebiet: Mushroom Island
+# WorldGuard Region: pilzinsel
+# Thema: Giftige Pilz-Kreaturen, Halluzinationen
+# ===================================================
+
+# ==========================================
+# Normale Mobs
+# ==========================================
+
+PILZLING:
+  Type: ZOMBIE
+  Display: '&dPilzling &8[Lv.55]'
+  Health: 700
+  Damage: 48
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+    PreventSunburn: true
+  Drops:
+  - MMOItem{type=MATERIAL;id=PILZSPOREN} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 165-275
+
+SPORENWOLKE:
+  Type: VEX
+  Display: '&dSporenwolke &8[Lv.57]'
+  Health: 600
+  Damage: 45
+  Options:
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Skills:
+  - skill{s=SporenAura} @self ~onTimer:100
+  Drops:
+  - MMOItem{type=MATERIAL;id=GIFTSPOREN} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 171-285
+
+GIFTPILZ:
+  Type: SLIME
+  Display: '&5Giftpilz &8[Lv.58]'
+  Health: 650
+  Damage: 50
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 20
+  Skills:
+  - skill{s=GiftAura} @self ~onTimer:100
+  Drops:
+  - MMOItem{type=MATERIAL;id=GIFTPILZ_KAPPE} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 174-290
+
+PILZKRIECHER:
+  Type: SPIDER
+  Display: '&dPilzkriecher &8[Lv.60]'
+  Health: 800
+  Damage: 55
+  Options:
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Skills:
+  - skill{s=PilzGift} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=PILZFADEN} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 180-300
+
+MYZEL_GOLEM:
+  Type: IRON_GOLEM
+  Display: '&5Myzel-Golem &8[Lv.62]'
+  Health: 1200
+  Damage: 70
+  Armor: 12
+  Options:
+    MovementSpeed: 0.23
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Drops:
+  - MMOItem{type=MATERIAL;id=MYZEL_KERN} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 186-310
+
+HALLUZINATION:
+  Type: PHANTOM
+  Display: '&dHalluzination &8[Lv.63]'
+  Health: 750
+  Damage: 52
+  Options:
+    MovementSpeed: 0.32
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Skills:
+  - skill{s=VerwirrungsAura} @PIR{r=10} ~onTimer:200
+  Drops:
+  - MMOItem{type=MATERIAL;id=PHANTOM_MEMBRAN} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 189-315
+
+SPOREN_HEXE:
+  Type: WITCH
+  Display: '&5Sporen-Hexe &8[Lv.65]'
+  Health: 900
+  Damage: 60
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Skills:
+  - skill{s=SporenFluch} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=SPOREN_ELIXIER} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 195-325
+
+PILZRIESE:
+  Type: HOGLIN
+  Display: '&5Pilzriese &8[Lv.66]'
+  Health: 1100
+  Damage: 68
+  Armor: 10
+  Options:
+    MovementSpeed: 0.25
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Drops:
+  - MMOItem{type=MATERIAL;id=RIESEN_PILZ} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 198-330
+
+MYZEL_BESTIE:
+  Type: RAVAGER
+  Display: '&5Myzel-Bestie &8[Lv.68]'
+  Health: 1300
+  Damage: 75
+  Armor: 12
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Drops:
+  - MMOItem{type=MATERIAL;id=MYZEL_PANZER} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 204-340
+
+# ==========================================
+# Elite Mobs
+# ==========================================
+
+ELITE_PILZLING:
+  Type: ZOMBIE
+  Display: '&6⭐ Uralter Pilzling &8[Lv.62]'
+  Health: 1800
+  Damage: 85
+  Armor: 10
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+    PreventSunburn: true
+    Glowing: true
+  Skills:
+  - skill{s=EliteAura} @self ~onSpawn
+  - skill{s=EliteSchlag} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=PILZSPOREN} 1.0 2-4
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - exp 496-744
+
+ELITE_MYZEL:
+  Type: IRON_GOLEM
+  Display: '&6⭐ Myzel-Titan &8[Lv.66]'
+  Health: 2400
+  Damage: 100
+  Armor: 15
+  Options:
+    MovementSpeed: 0.25
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+    Glowing: true
+  Skills:
+  - skill{s=EliteAura} @self ~onSpawn
+  - skill{s=EliteSchlag} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=MYZEL_KERN} 1.0 2-4
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - exp 528-792
+
+# ==========================================
+# Mini-Bosse
+# ==========================================
+
+PILZKOENIG:
+  Type: HOGLIN
+  Display: '&c☠ Pilzkönig &8[Lv.70]'
+  Health: 6500
+  Damage: 110
+  Armor: 18
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Skills:
+  - skill{s=BossRuf} @self ~onSpawn
+  - skill{s=BossSchlag} @target ~onTimer:200
+  - skill{s=SporenExplosion} @PIR{r=25} ~onTimer:400
+  Drops:
+  - MMOItem{type=MATERIAL;id=PILZKRONE} 1.0 5-10
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - MMOItem{type=WEAPON;id=PILZ_KEULE} 0.15 1
+  - exp 1050-1750
+  BossBar:
+    Enabled: true
+    Title: '&c☠ Pilzkönig'
+    Color: RED
+    Style: SEGMENTED_10
+    Range: 50
+
+SPORENMUTTER:
+  Type: WITCH
+  Display: '&c☠ Sporenmutter &8[Lv.70]'
+  Health: 6000
+  Damage: 105
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Skills:
+  - skill{s=BossRuf} @self ~onSpawn
+  - skill{s=BossSchlag} @target ~onTimer:200
+  - skill{s=SporenFluch} @target ~onAttack
+  - skill{s=BeschwoerunSporenwolken} @self ~onTimer:500
+  Drops:
+  - MMOItem{type=MATERIAL;id=SPORENMUTTER_HERZ} 1.0 5-10
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - MMOItem{type=WEAPON;id=SPOREN_STAB} 0.2 1
+  - exp 1050-1750
+  BossBar:
+    Enabled: true
+    Title: '&c☠ Sporenmutter'
+    Color: PURPLE
+    Style: SEGMENTED_10
+    Range: 50
