@@ -1,16 +1,17 @@
-id: 'general'
-name: '&4General'
+id: 'allgemein'
+name: '&4Allgemein'
 type: CUSTOM
 item: 'DIAMOND_AXE'
 lore: 
-- '&6General skill tree'
+  - '&6Allgemeiner Skill-Baum für grundlegende Fähigkeiten'
+  - '&7Verbessere deine Basis-Attribute'
 max-point-spent: 11
 
 nodes:
 
-#### A
+#### A - Mana-Regeneration
   a1:
-    name: 'Mana Regen I'
+    name: 'Mana-Regeneration I'
     coordinates:
       x: -3
       y: -2
@@ -21,11 +22,12 @@ nodes:
           - 'stat{stat="MANA_REGENERATION";amount=1;type="FLAT"}'
     lores:
       0:
-        - "Mana regen in pts/sec +1"
+        - "&7Mana-Regeneration in Punkten/Sek +1"
       1:
-        - "Mana regen in pts/sec +1"
+        - "&aMana-Regeneration in Punkten/Sek +1"
+        
   a2:
-    name: 'Mana Regen II'
+    name: 'Mana-Regeneration II'
     coordinates:
       x: -2
       y: -2
@@ -40,11 +42,12 @@ nodes:
           - 'stat{stat="MANA_REGENERATION";amount=2;type="FLAT"}'
     lores:
       0:
-        - "Mana regen in pts/sec +2"
+        - "&7Mana-Regeneration in Punkten/Sek +2"
       1:
-        - "Mana regen in pts/sec +2"
+        - "&aMana-Regeneration in Punkten/Sek +2"
+        
   a3:
-    name: 'Mana Regen III'
+    name: 'Mana-Regeneration III'
     coordinates:
       x: -1
       y: -1
@@ -59,13 +62,13 @@ nodes:
           - 'stat{stat="MANA_REGENERATION";amount=2;type="FLAT"}'
     lores:
       0:
-        - "Mana regen in pts/sec +2"
+        - "&7Mana-Regeneration in Punkten/Sek +2"
       1:
-        - "Mana regen in pts/sec +2"
+        - "&aMana-Regeneration in Punkten/Sek +2"
         
-#### B
+#### B - Gesundheits-Regeneration
   b1:
-    name: 'Health Regen I'
+    name: 'Gesundheits-Regeneration I'
     coordinates:
       x: -3
       y: -0
@@ -76,12 +79,12 @@ nodes:
           - 'stat{stat="HEALTH_REGENERATION";amount=1;type="FLAT"}'
     lores:
       0:
-        - "Health regen in pts/sec +1"
+        - "&7Gesundheits-Regeneration in Punkten/Sek +1"
       1:
-        - "Health regen in pts/sec +1"
+        - "&aGesundheits-Regeneration in Punkten/Sek +1"
 
   b2:
-    name: 'Health Regen II'
+    name: 'Gesundheits-Regeneration II'
     coordinates:
       x: -2
       y: -0
@@ -96,12 +99,12 @@ nodes:
           - 'stat{stat="HEALTH_REGENERATION";amount=2;type="FLAT"}'
     lores:
       0:
-        - "Health regen in pts/sec +2"
+        - "&7Gesundheits-Regeneration in Punkten/Sek +2"
       1:
-        - "Health regen in pts/sec +2"
+        - "&aGesundheits-Regeneration in Punkten/Sek +2"
 
   b3:
-    name: 'Health Regen III'
+    name: 'Gesundheits-Regeneration III'
     coordinates:
       x: -1
       y: -0
@@ -116,13 +119,13 @@ nodes:
           - 'stat{stat="HEALTH_REGENERATION";amount=2;type="FLAT"}'
     lores:
       0:
-        - "Health regen in pts/sec +2"
+        - "&7Gesundheits-Regeneration in Punkten/Sek +2"
       1:
-        - "Health regen in pts/sec +2"
+        - "&aGesundheits-Regeneration in Punkten/Sek +2"
 
-#### C
+#### C - Abklingzeit-Reduktion
   c1:
-    name: 'Cooldown Reduction I'
+    name: 'Abklingzeit-Reduktion I'
     coordinates:
       x: -3
       y: 2
@@ -133,12 +136,12 @@ nodes:
           - 'stat{stat="COOLDOWN_REDUCTION";amount=5;type="FLAT"}'
     lores:
       0:
-        - "Reduces cooldowns of item and player skills (5%)"
+        - "&7Reduziert Abklingzeiten von Item- und Spieler-Fähigkeiten (5%)"
       1:
-        - "Reduces cooldowns of item and player skills (5%)"
+        - "&aReduziert Abklingzeiten von Item- und Spieler-Fähigkeiten (5%)"
 
   c2:
-    name: 'Cooldown Reduction II'
+    name: 'Abklingzeit-Reduktion II'
     coordinates:
       x: -2
       y: 2
@@ -153,12 +156,12 @@ nodes:
           - 'stat{stat="COOLDOWN_REDUCTION";amount=10;type="FLAT"}'
     lores:
       0:
-        - "Reduces cooldowns of item and player skills (10%)"
+        - "&7Reduziert Abklingzeiten von Item- und Spieler-Fähigkeiten (10%)"
       1:
-        - "Reduces cooldowns of item and player skills (10%)"
+        - "&aReduziert Abklingzeiten von Item- und Spieler-Fähigkeiten (10%)"
 
   c3:
-    name: 'Cooldown Reduction III'
+    name: 'Abklingzeit-Reduktion III'
     coordinates:
       x: -1
       y: 1
@@ -173,13 +176,13 @@ nodes:
           - 'stat{stat="COOLDOWN_REDUCTION";amount=15;type="FLAT"}'
     lores:
       0:
-        - "Reduces cooldowns of item and player skills (15%)"
+        - "&7Reduziert Abklingzeiten von Item- und Spieler-Fähigkeiten (15%)"
       1:
-        - "Reduces cooldowns of item and player skills (15%)"
+        - "&aReduziert Abklingzeiten von Item- und Spieler-Fähigkeiten (15%)"
 
-#### D
+#### D - Kritische Treffer
   d1:
-    name: 'Crit Chance I'
+    name: 'Kritische Treffer I'
     coordinates:
       x: 0
       y: 0
@@ -196,12 +199,12 @@ nodes:
           - 'stat{stat="CRITICAL_STRIKE_CHANCE";amount=2;type="FLAT"}'
     lores:
       0:
-        - "Critical Strikes deal more damage in +%2 chance"
+        - "&7Kritische Treffer verursachen mehr Schaden (+2% Chance)"
       1:
-        - "Critical Strikes deal more damage in +%2 chance"
+        - "&aKritische Treffer verursachen mehr Schaden (+2% Chance)"
 
   d2:
-    name: 'Crit Chance II'
+    name: 'Kritische Treffer II'
     coordinates:
       x: 1
       y: 0
@@ -216,12 +219,12 @@ nodes:
           - 'stat{stat="CRITICAL_STRIKE_CHANCE";amount=3;type="FLAT"}'
     lores:
       0:
-        - "Critical Strikes deal more damage in % chance"
+        - "&7Kritische Treffer verursachen mehr Schaden (+3% Chance)"
       1:
-        - "Critical Strikes deal more damage in +%3 chance"
+        - "&aKritische Treffer verursachen mehr Schaden (+3% Chance)"
 
   d3:
-    name: 'Crit Chance III'
+    name: 'Kritische Treffer III'
     coordinates:
       x: 2
       y: 0
@@ -236,14 +239,13 @@ nodes:
           - 'stat{stat="CRITICAL_STRIKE_CHANCE";amount=5;type="FLAT"}'
     lores:
       0:
-        - "Critical Strikes deal more damage in % chance"
+        - "&7Kritische Treffer verursachen mehr Schaden (+5% Chance)"
       1:
-        - "Critical Strikes deal more damage in +%5 chance"
+        - "&aKritische Treffer verursachen mehr Schaden (+5% Chance)"
 
-
-#### E
+#### E - Schadensreduktion
   e1:
-    name: 'Damage Reduction I'
+    name: 'Schadensreduktion I'
     coordinates:
       x: 2
       y: 1
@@ -258,12 +260,12 @@ nodes:
           - 'stat{stat="DAMAGE_REDUCTION";amount=1;type="FLAT"}'
     lores:
       0:
-        - "Reduces damage from any source in %."
+        - "&7Reduziert Schaden aus jeder Quelle (+1%)"
       1:
-        - "Reduces damage from any source in +%1."
+        - "&aReduziert Schaden aus jeder Quelle (+1%)"
 
   e2:
-    name: 'Damage Reduction II'
+    name: 'Schadensreduktion II'
     coordinates:
       x: 2
       y: 2
@@ -278,12 +280,12 @@ nodes:
           - 'stat{stat="DAMAGE_REDUCTION";amount=2;type="FLAT"}'
     lores:
       0:
-        - "Reduces damage from any source in %."
+        - "&7Reduziert Schaden aus jeder Quelle (+2%)"
       1:
-        - "Reduces damage from any source in +%2."
+        - "&aReduziert Schaden aus jeder Quelle (+2%)"
 
   e3:
-    name: 'Damage Reduction III'
+    name: 'Schadensreduktion III'
     coordinates:
       x: 3
       y: 2
@@ -298,13 +300,13 @@ nodes:
           - 'stat{stat="DAMAGE_REDUCTION";amount=2;type="FLAT"}'
     lores:
       0:
-        - "Reduces damage from any source in %."
+        - "&7Reduziert Schaden aus jeder Quelle (+2%)"
       1:
-        - "Reduces damage from any source in +%2."
+        - "&aReduziert Schaden aus jeder Quelle (+2%)"
 
-#### F
+#### F - Stärke
   f1:
-    name: 'Force I'
+    name: 'Stärke I'
     coordinates:
       x: 2
       y: -1
@@ -319,12 +321,12 @@ nodes:
           - 'stat{stat="WEAPON_DAMAGE";amount=1;type="FLAT"}'
     lores:
       0:
-        - "Additional on-hit weapon damage in +%1."
+        - "&7Zusätzlicher Waffenschaden beim Treffer (+1%)"
       1:
-        - "Additional on-hit weapon damage in +%1."
+        - "&aZusätzlicher Waffenschaden beim Treffer (+1%)"
 
   f2:
-    name: 'Force II'
+    name: 'Stärke II'
     coordinates:
       x: 2
       y: -2
@@ -339,12 +341,12 @@ nodes:
           - 'stat{stat="WEAPON_DAMAGE";amount=2;type="FLAT"}'
     lores:
       0:
-        - "Additional on-hit weapon damage in +%2."
+        - "&7Zusätzlicher Waffenschaden beim Treffer (+2%)"
       1:
-        - "Additional on-hit weapon damage in +%2."
+        - "&aZusätzlicher Waffenschaden beim Treffer (+2%)"
 
   f3:
-    name: 'Force III'
+    name: 'Stärke III'
     coordinates:
       x: 3
       y: -2
@@ -359,14 +361,13 @@ nodes:
           - 'stat{stat="WEAPON_DAMAGE";amount=2;type="FLAT"}'
     lores:
       0:
-        - "Additional on-hit weapon damage in +%2."
+        - "&7Zusätzlicher Waffenschaden beim Treffer (+2%)"
       1:
-        - "Additional on-hit weapon damage in +%2."
+        - "&aZusätzlicher Waffenschaden beim Treffer (+2%)"
 
-
-##last line
+#### G - Lebensraub
   g1:
-    name: 'Life Steal'
+    name: 'Lebensraub'
     coordinates:
       x: 4
       y: -1
@@ -381,12 +382,36 @@ nodes:
           - 'stat{stat="LIFESTEAL";amount=3;type="FLAT"}'
     lores:
       0:
-        - "Percentage of damage you gain back as health when inflicting weapon damage."
+        - "&7Prozentsatz des Schadens, den du als Gesundheit"
+        - "&7zurück erhältst beim Verursachen von Waffenschaden"
       1:
-        - "Percentage of damage you gain back as health when inflicting weapon damage +%3"
+        - "&aProzentsatz des Schadens, den du als Gesundheit"
+        - "&azurück erhältst beim Verursachen von Waffenschaden (+3%)"
 
+#### H - Magie-Schaden
+  h1:
+    name: 'Magie-Schaden'
+    coordinates:
+      x: 4
+      y: 1
+      
+    parents:
+      strong:
+        e3: 1
+
+    experience-table:
+      first_table_item:
+        triggers:
+          - 'stat{stat="ADDITIONAL_EXPERIENCE";amount=3;type="FLAT"}'
+    lores:
+      0:
+        - "&7Zusätzlicher magischer Fähigkeitsschaden (+3%)"
+      1:
+        - "&aZusätzlicher magischer Fähigkeitsschaden (+3%)"
+
+#### J - Max Gesundheit
   j1:
-    name: 'Max Health'
+    name: 'Max Gesundheit'
     coordinates:
       x: 4
       y: 0
@@ -399,49 +424,9 @@ nodes:
     experience-table:
       first_table_item:
         triggers:
-          - 'stat{stat="LIFESTEAL";amount=5;type="FLAT"}'
+          - 'stat{stat="MAX_HEALTH";amount=5;type="FLAT"}'
     lores:
       0:
-        - "Additional amount of health in +%5"
+        - "&7Zusätzliche maximale Gesundheit (+5)"
       1:
-        - "Additional amount of health in +%5"
-
-  h1:
-    name: 'Magic Damage'
-    coordinates:
-      x: 4
-      y: 1
-      
-    parents:
-      strong:
-        e3: 1
-
-    experience-table:
-      first_table_item:
-        triggers:
-          - 'stat{stat="LIFESTEAL";amount=3;type="FLAT"}'
-    lores:
-      0:
-        - "Additional magic skill damage in +%3"
-      1:
-        - "Additional magic skill damage in +%3"
-
-# This section is to change display options for nodes and paths depending on:
-# - their shape: each path has a shape given its neighboring connections (left + up, )... kind of like a vanilla redstone wire.
-# - their state: is the node/path unlocked, locked, maxed out... ?
-#
-# All of this is to "hide" the grid pattern of the chest inventory UI and give the
-# impression of a clean 2D skill tree UI.
-#
-# This config section is optional; if you do not provide it the one provided in the skill tree CUSTOM GUI CONFIG will be used.
-#
-# Please refer to the default config file 'combat.yml' for syntax examples and explanations.
-#########################
-#display:
-#  paths:
-#    unlocked:
-#      up: 'WHITE_DYE:0'
-#      ....
-#    ...
-#  nodes:
-#    ....
+        - "&aZusätzliche maximale Gesundheit (+5)"

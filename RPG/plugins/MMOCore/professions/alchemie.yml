@@ -1,0 +1,175 @@
+# Alchemie Profession (Alchemy)
+name: '&5🧪 &dAlchemie'
+
+# XP zum Hauptlevel beim Leveln dieses Berufs
+experience:
+  base: 35
+  per-level: 6
+
+# Skyblock-Style XP-Kurve
+exp-curve: '{level} * {level} * 4 + 200'
+
+# Maximum Level
+max-level: 50
+
+# Icon für UI
+icon: BREWING_STAND
+
+# Level-Up Trigger mit Meilensteinen
+on-level-up:
+  default:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &5🧪 &dAlchemie Level {level}!"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=ENTITY_PLAYER_LEVELUP;volume=1;pitch=1}'
+  
+  5:
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &dAlchemie Level 5"}'
+    - 'message{text="  &7Freigeschaltet: &a+5% Brau-Geschwindigkeit"}'
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  10:
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &dAlchemie Level 10"}'
+    - 'message{text="  &7Freigeschaltet: &aTrank-Dauer +10%"}'
+    - 'message{text="  &7Neue Fähigkeit: &dTrank-Verstärkung"}'
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  15:
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &dAlchemie Level 15"}'
+    - 'message{text="  &7Freigeschaltet: &aCustom Rezepte I"}'
+    - 'message{text="  &7Zugang zu: &bAlchemie-Labor I"}'
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  20:
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &dAlchemie Level 20"}'
+    - 'message{text="  &7Freigeschaltet: &eTrank-Effekt +20%"}'
+    - 'message{text="  &7Belohnung: &6Goldener Braustand"}'
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  25:
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &dAlchemie Level 25"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Alchemist]"}'
+    - 'message{text="  &7Zugang zu: &bAlchemie-Labor II"}'
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  30:
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &dAlchemie Level 30"}'
+    - 'message{text="  &7Freigeschaltet: &cCustom Rezepte II"}'
+    - 'message{text="  &7Neue Fähigkeit: &dElixier-Mischung"}'
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  35:
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &dAlchemie Level 35"}'
+    - 'message{text="  &7Freigeschaltet: &bErweiterte Trank-Dauer"}'
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  40:
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &dAlchemie Level 40"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Trank-Experte]"}'
+    - 'message{text="  &7Belohnung: &bDiamant-Braustand der Macht"}'
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  45:
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &dAlchemie Level 45"}'
+    - 'message{text="  &7Freigeschaltet: &5Meister-Alchemist"}'
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  50:
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&l&nMAXIMUM LEVEL! &dAlchemie Level 50"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Alchemie-Legende]"}'
+    - 'message{text="  &7Belohnung: &5&lLegendärer Braustand"}'
+    - 'message{text="&5▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=2}'
+
+# XP-Quellen für Trank-Brauen
+exp-sources:
+  # Basic Tränke
+  - 'brew{potion=AWKWARD;amount=3-5}'
+  - 'brew{potion=THICK;amount=2-4}'
+  - 'brew{potion=MUNDANE;amount=2-4}'
+  
+  # Heilung
+  - 'brew{potion=INSTANT_HEAL;amount=8-12}'
+  - 'brew{potion=STRONG_HEALING;amount=12-18}'
+  
+  # Regeneration
+  - 'brew{potion=REGEN;amount=10-15}'
+  - 'brew{potion=LONG_REGENERATION;amount=12-18}'
+  - 'brew{potion=STRONG_REGENERATION;amount=15-22}'
+  
+  # Stärke
+  - 'brew{potion=STRENGTH;amount=10-15}'
+  - 'brew{potion=LONG_STRENGTH;amount=12-18}'
+  - 'brew{potion=STRONG_STRENGTH;amount=15-22}'
+  
+  # Schnelligkeit
+  - 'brew{potion=SPEED;amount=8-12}'
+  - 'brew{potion=LONG_SWIFTNESS;amount=10-15}'
+  - 'brew{potion=STRONG_SWIFTNESS;amount=12-18}'
+  
+  # Sprungkraft
+  - 'brew{potion=JUMP;amount=8-12}'
+  - 'brew{potion=LONG_LEAPING;amount=10-15}'
+  - 'brew{potion=STRONG_LEAPING;amount=12-18}'
+  
+  # Feuerresistenz
+  - 'brew{potion=FIRE_RESISTANCE;amount=10-15}'
+  - 'brew{potion=LONG_FIRE_RESISTANCE;amount=12-18}'
+  
+  # Wasseratmung
+  - 'brew{potion=WATER_BREATHING;amount=10-15}'
+  - 'brew{potion=LONG_WATER_BREATHING;amount=12-18}'
+  
+  # Nachtsicht
+  - 'brew{potion=NIGHT_VISION;amount=8-12}'
+  - 'brew{potion=LONG_NIGHT_VISION;amount=10-15}'
+  
+  # Unsichtbarkeit
+  - 'brew{potion=INVISIBILITY;amount=12-18}'
+  - 'brew{potion=LONG_INVISIBILITY;amount=15-22}'
+  
+  # Langsamkeit
+  - 'brew{potion=SLOWNESS;amount=8-12}'
+  - 'brew{potion=LONG_SLOWNESS;amount=10-15}'
+  - 'brew{potion=STRONG_SLOWNESS;amount=12-18}'
+  
+  # Schaden
+  - 'brew{potion=INSTANT_DAMAGE;amount=10-15}'
+  - 'brew{potion=STRONG_HARMING;amount=15-22}'
+  
+  # Gift
+  - 'brew{potion=POISON;amount=10-15}'
+  - 'brew{potion=LONG_POISON;amount=12-18}'
+  - 'brew{potion=STRONG_POISON;amount=15-22}'
+  
+  # Schwäche
+  - 'brew{potion=WEAKNESS;amount=8-12}'
+  - 'brew{potion=LONG_WEAKNESS;amount=10-15}'
+  
+  # Schildkrötenpanzer
+  - 'brew{potion=TURTLE_MASTER;amount=15-22}'
+  - 'brew{potion=LONG_TURTLE_MASTER;amount=18-26}'
+  - 'brew{potion=STRONG_TURTLE_MASTER;amount=22-30}'
+  
+  # Sanfter Fall
+  - 'brew{potion=SLOW_FALLING;amount=10-15}'
+  - 'brew{potion=LONG_SLOW_FALLING;amount=12-18}'
