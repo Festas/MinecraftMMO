@@ -1,0 +1,175 @@
+# Zähmung Profession (Taming)
+name: '&d🐺 &5Zähmung'
+
+# XP zum Hauptlevel beim Leveln dieses Berufs
+experience:
+  base: 30
+  per-level: 5
+
+# Skyblock-Style XP-Kurve
+exp-curve: '{level} * {level} * 4 + 200'
+
+# Maximum Level
+max-level: 50
+
+# Icon für UI
+icon: LEAD
+
+# Level-Up Trigger mit Meilensteinen
+on-level-up:
+  default:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &d🐺 &5Zähmung Level {level}!"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=ENTITY_PLAYER_LEVELUP;volume=1;pitch=1}'
+  
+  5:
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &5Zähmung Level 5"}'
+    - 'message{text="  &7Freigeschaltet: &a+5% Pet-Gesundheit"}'
+    - 'message{text="  &7Tiere folgen schneller"}'
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  10:
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &5Zähmung Level 10"}'
+    - 'message{text="  &7Freigeschaltet: &a+1 Pet-Slot"}'
+    - 'message{text="  &7Neue Fähigkeit: &dTier-Ruf"}'
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  15:
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &5Zähmung Level 15"}'
+    - 'message{text="  &7Freigeschaltet: &aPets kämpfen stärker"}'
+    - 'message{text="  &7Zugang zu: &bZähmungs-Gehege I"}'
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  20:
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &5Zähmung Level 20"}'
+    - 'message{text="  &7Freigeschaltet: &e+15% Pet-Schaden"}'
+    - 'message{text="  &7Belohnung: &6Goldene Leine"}'
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  25:
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &5Zähmung Level 25"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Tierfreund]"}'
+    - 'message{text="  &7Freigeschaltet: &a+2 Pet-Slots"}'
+    - 'message{text="  &7Zugang zu: &bZähmungs-Gehege II"}'
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  30:
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &5Zähmung Level 30"}'
+    - 'message{text="  &7Neue Fähigkeit: &dRudel-Instinkt"}'
+    - 'message{text="  &7Alle Pets greifen gemeinsam an!"}'
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  35:
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &5Zähmung Level 35"}'
+    - 'message{text="  &7Freigeschaltet: &bSeltene Pets zähmbar"}'
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  40:
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &5Zähmung Level 40"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Zähmungs-Experte]"}'
+    - 'message{text="  &7Belohnung: &bDiamant-Leine der Bindung"}'
+    - 'message{text="  &7Freigeschaltet: &a+3 Pet-Slots"}'
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  45:
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &5Zähmung Level 45"}'
+    - 'message{text="  &7Freigeschaltet: &5Legendäre Pets verfügbar"}'
+    - 'message{text="  &7Neue Fähigkeit: &dTierische Fusion"}'
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  50:
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&l&nMAXIMUM LEVEL! &5Zähmung Level 50"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Zähmungs-Legende]"}'
+    - 'message{text="  &7Belohnung: &5&lLegendärer Pet-Amulett"}'
+    - 'message{text="  &7Freigeschaltet: &5&lMythische Pets verfügbar!"}'
+    - 'message{text="&d▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=2}'
+
+# XP-Quellen für Zähmung und Interaktion mit Tieren
+exp-sources:
+  # Tiere zähmen (10-30 XP)
+  - 'tame{type=WOLF;amount=15-20}'
+  - 'tame{type=CAT;amount=12-18}'
+  - 'tame{type=PARROT;amount=10-15}'
+  - 'tame{type=HORSE;amount=20-25}'
+  - 'tame{type=DONKEY;amount=18-23}'
+  - 'tame{type=MULE;amount=18-23}'
+  - 'tame{type=LLAMA;amount=15-20}'
+  - 'tame{type=TRADER_LLAMA;amount=20-25}'
+  - 'tame{type=FOX;amount=25-30}'
+  - 'tame{type=OCELOT;amount=20-25}'
+  - 'tame{type=AXOLOTL;amount=18-23}'
+  
+  # Tiere züchten (5-15 XP)
+  - 'breed{type=WOLF;amount=8-12}'
+  - 'breed{type=CAT;amount=6-10}'
+  - 'breed{type=HORSE;amount=10-15}'
+  - 'breed{type=DONKEY;amount=8-12}'
+  - 'breed{type=LLAMA;amount=8-12}'
+  - 'breed{type=FOX;amount=10-15}'
+  - 'breed{type=COW;amount=5-8}'
+  - 'breed{type=SHEEP;amount=5-8}'
+  - 'breed{type=PIG;amount=5-8}'
+  - 'breed{type=CHICKEN;amount=4-7}'
+  - 'breed{type=RABBIT;amount=6-9}'
+  - 'breed{type=GOAT;amount=7-10}'
+  - 'breed{type=TURTLE;amount=8-12}'
+  - 'breed{type=BEE;amount=6-9}'
+  - 'breed{type=PANDA;amount=10-15}'
+  - 'breed{type=POLAR_BEAR;amount=10-15}'
+  - 'breed{type=AXOLOTL;amount=8-12}'
+  - 'breed{type=HOGLIN;amount=12-16}'
+  - 'breed{type=STRIDER;amount=9-13}'
+  
+  # Tiere füttern (1-3 XP)
+  - 'feed{type=WOLF;amount=1-2}'
+  - 'feed{type=CAT;amount=1-2}'
+  - 'feed{type=HORSE;amount=2-3}'
+  - 'feed{type=DONKEY;amount=2-3}'
+  - 'feed{type=MULE;amount=2-3}'
+  - 'feed{type=LLAMA;amount=1-2}'
+  - 'feed{type=PARROT;amount=1-2}'
+  - 'feed{type=FOX;amount=1-2}'
+  - 'feed{type=COW;amount=1}'
+  - 'feed{type=SHEEP;amount=1}'
+  - 'feed{type=PIG;amount=1}'
+  - 'feed{type=CHICKEN;amount=1}'
+  - 'feed{type=RABBIT;amount=1}'
+  - 'feed{type=GOAT;amount=1-2}'
+  - 'feed{type=TURTLE;amount=1-2}'
+  - 'feed{type=BEE;amount=1}'
+  - 'feed{type=PANDA;amount=2-3}'
+  - 'feed{type=POLAR_BEAR;amount=2-3}'
+  - 'feed{type=AXOLOTL;amount=1-2}'
+  - 'feed{type=HOGLIN;amount=2-3}'
+  - 'feed{type=STRIDER;amount=1-2}'
+  
+  # Reiten (1 XP pro Strecke)
+  # Hinweis: Die genaue Implementierung hängt vom Plugin ab
+  # Diese Einträge sind Beispiele für mögliche Ride-XP
+  - 'ride{type=HORSE;amount=1;per-distance=100}'
+  - 'ride{type=DONKEY;amount=1;per-distance=100}'
+  - 'ride{type=MULE;amount=1;per-distance=100}'
+  - 'ride{type=LLAMA;amount=1;per-distance=100}'
+  - 'ride{type=PIG;amount=1;per-distance=100}'
+  - 'ride{type=STRIDER;amount=1;per-distance=100}'

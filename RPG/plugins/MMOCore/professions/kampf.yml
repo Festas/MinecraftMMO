@@ -1,0 +1,148 @@
+# Kampf Profession (Combat)
+name: '&c⚔ &4Kampf'
+
+# XP zum Hauptlevel beim Leveln dieses Berufs
+experience:
+  base: 35
+  per-level: 6
+
+# Skyblock-Style XP-Kurve
+exp-curve: '{level} * {level} * 4 + 200'
+
+# Maximum Level
+max-level: 50
+
+# Icon für UI
+icon: DIAMOND_SWORD
+
+# Level-Up Trigger mit Meilensteinen
+on-level-up:
+  default:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &c⚔ &4Kampf Level {level}!"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=ENTITY_PLAYER_LEVELUP;volume=1;pitch=1}'
+  
+  5:
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 5"}'
+    - 'message{text="  &7Freigeschaltet: &a+5% Schaden gegen Monster"}'
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  10:
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 10"}'
+    - 'message{text="  &7Freigeschaltet: &a+10% Angriffsgeschwindigkeit"}'
+    - 'message{text="  &7Neue Fähigkeit: &dKriegsschrei"}'
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  15:
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 15"}'
+    - 'message{text="  &7Freigeschaltet: &aDoppel-XP bei Untoten"}'
+    - 'message{text="  &7Zugang zu: &bKampfarena I"}'
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  20:
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 20"}'
+    - 'message{text="  &7Freigeschaltet: &e+15% Kritische Trefferchance"}'
+    - 'message{text="  &7Belohnung: &6Schwert des Anfängers"}'
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  25:
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 25"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Kämpfer]"}'
+    - 'message{text="  &7Zugang zu: &bKampfarena II"}'
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  30:
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 30"}'
+    - 'message{text="  &7Freigeschaltet: &cSlayer-Quests verfügbar"}'
+    - 'message{text="  &7Neue Fähigkeit: &dBerserker-Wut"}'
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  35:
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 35"}'
+    - 'message{text="  &7Freigeschaltet: &b+20% Schaden gegen Bosse"}'
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  40:
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 40"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Kampf-Experte]"}'
+    - 'message{text="  &7Belohnung: &bDiamant-Schwert der Macht"}'
+    - 'message{text="  &7Zugang zu: &5Elite-Dungeons"}'
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  45:
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 45"}'
+    - 'message{text="  &7Freigeschaltet: &5Ultimativer Schlag"}'
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  50:
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&l&nMAXIMUM LEVEL! &4Kampf Level 50"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Kampf-Legende]"}'
+    - 'message{text="  &7Belohnung: &5&lLegendäres Schwert des Schlächters"}'
+    - 'message{text="  &7Alle Kampf-Boni maximiert!"}'
+    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=2}'
+
+# XP-Quellen für das Töten von Monstern
+exp-sources:
+  # Passive/Schwache Mobs (5-10 XP)
+  - 'kill{type=ZOMBIE;amount=5-8}'
+  - 'kill{type=HUSK;amount=5-8}'
+  - 'kill{type=DROWNED;amount=6-9}'
+  - 'kill{type=SKELETON;amount=5-8}'
+  - 'kill{type=STRAY;amount=6-9}'
+  - 'kill{type=SPIDER;amount=5-7}'
+  - 'kill{type=CAVE_SPIDER;amount=6-8}'
+  - 'kill{type=CREEPER;amount=7-10}'
+  - 'kill{type=SLIME;amount=4-6}'
+  - 'kill{type=SILVERFISH;amount=3-5}'
+  
+  # Standard Mobs (10-20 XP)
+  - 'kill{type=ENDERMAN;amount=12-18}'
+  - 'kill{type=WITCH;amount=10-15}'
+  - 'kill{type=PILLAGER;amount=10-15}'
+  - 'kill{type=VINDICATOR;amount=12-18}'
+  - 'kill{type=BLAZE;amount=12-16}'
+  - 'kill{type=WITHER_SKELETON;amount=15-20}'
+  - 'kill{type=GHAST;amount=10-15}'
+  - 'kill{type=MAGMA_CUBE;amount=8-12}'
+  - 'kill{type=PHANTOM;amount=10-14}'
+  - 'kill{type=PIGLIN_BRUTE;amount=15-20}'
+  - 'kill{type=HOGLIN;amount=12-16}'
+  - 'kill{type=ZOGLIN;amount=14-18}'
+  - 'kill{type=RAVAGER;amount=18-25}'
+  - 'kill{type=GUARDIAN;amount=12-16}'
+  - 'kill{type=SHULKER;amount=15-20}'
+  
+  # Starke Mobs (30-50 XP)
+  - 'kill{type=WARDEN;amount=40-50}'
+  - 'kill{type=ELDER_GUARDIAN;amount=35-45}'
+  - 'kill{type=EVOKER;amount=30-40}'
+  
+  # Bosse (100-200 XP)
+  - 'kill{type=ENDER_DRAGON;amount=150-200}'
+  - 'kill{type=WITHER;amount=100-150}'
+  
+  # MythicMobs Integration (vorbereitet für Custom Mobs)
+  # Beispiel: - 'mythicmobs-kill{mob-type=CUSTOM_BOSS;amount=50-100}'
+  # Beispiel: - 'mythicmobs-kill{mob-type=CUSTOM_ELITE;amount=25-50}'
+  # Beispiel: - 'mythicmobs-kill{mob-type=CUSTOM_MINIBOSS;amount=15-30}'
