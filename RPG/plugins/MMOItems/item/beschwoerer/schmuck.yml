@@ -1,0 +1,256 @@
+# 💀 BESCHWÖRER SCHMUCK
+# 12 Schmuckstücke: Ringe und Amulette (je 6 Tiers)
+# WICHTIG: Item-IDs verwenden NEKROMANT_ Prefix wie in der README definiert
+
+# ==================== RINGE ====================
+NEKROMANT_RING_T1:
+  base:
+    material: GOLD_INGOT
+    name: '&fEinfacher Totenring'
+    lore:
+      - '&8Beschwörer Ring'
+      - ''
+      - '&7Ein einfacher Ring mit'
+      - '&7dunkler Macht.'
+      - ''
+      - '&f+5% Pet-Schaden'
+      - '&f+3% Lebensraub'
+      - ''
+      - '&8Benötigt Level 1'
+    lifesteal: 3
+    required-level: 1
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_RING_T2:
+  base:
+    material: GOLD_INGOT
+    name: '&aRing der Untoten'
+    lore:
+      - '&8Beschwörer Ring'
+      - ''
+      - '&7Ein Ring, der deine'
+      - '&7Untoten verstärkt.'
+      - ''
+      - '&a+12% Pet-Schaden'
+      - '&a+8% Lebensraub'
+      - '&a+3 Max Seelen'
+      - ''
+      - '&8Benötigt Level 12'
+    lifesteal: 8
+    required-level: 12
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_RING_T3:
+  base:
+    material: GOLD_INGOT
+    name: '&9Ring der Seelen'
+    lore:
+      - '&8Beschwörer Ring'
+      - ''
+      - '&7Ein Ring mit der Kraft'
+      - '&7der Seelen.'
+      - ''
+      - '&9+22% Pet-Schaden'
+      - '&9+15% Lebensraub'
+      - '&9+8 Max Seelen'
+      - '&9+5% Fluch'
+      - ''
+      - '&8Benötigt Level 22'
+    lifesteal: 15
+    required-level: 22
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_RING_T4:
+  base:
+    material: GOLD_INGOT
+    name: '&5Runenring des Todes'
+    lore:
+      - '&8Beschwörer Ring'
+      - ''
+      - '&7Runen verleihen diesem Ring'
+      - '&7die Macht des Todes.'
+      - ''
+      - '&5+38% Pet-Schaden'
+      - '&5+26% Lebensraub'
+      - '&5+15 Max Seelen'
+      - '&5+12% Fluch'
+      - ''
+      - '&8Benötigt Level 38'
+    lifesteal: 26
+    required-level: 38
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_RING_T5:
+  base:
+    material: GOLD_INGOT
+    name: '&6Legendärer Lichring'
+    lore:
+      - '&8Beschwörer Ring'
+      - ''
+      - '&7Ein legendärer Ring eines'
+      - '&7mächtigen Lichs.'
+      - ''
+      - '&6+65% Pet-Schaden'
+      - '&6+44% Lebensraub'
+      - '&6+25 Max Seelen'
+      - '&6+22% Fluch'
+      - '&6+1 Max Pet'
+      - ''
+      - '&8Benötigt Level 55'
+    lifesteal: 44
+    required-level: 55
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_RING_T6:
+  base:
+    material: GOLD_INGOT
+    name: '&cMythischer Todesring'
+    lore:
+      - '&8Beschwörer Ring'
+      - ''
+      - '&7Ein göttlicher Ring mit'
+      - '&7absoluter Todesmacht.'
+      - ''
+      - '&c+110% Pet-Schaden'
+      - '&c+72% Lebensraub'
+      - '&c+42 Max Seelen'
+      - '&c+38% Fluch'
+      - '&c+2 Max Pets'
+      - ''
+      - '&8Benötigt Level 78'
+    lifesteal: 72
+    required-level: 78
+    required-class:
+      - BESCHWOERER
+
+# ==================== AMULETTE ====================
+NEKROMANT_AMULETT_T1:
+  base:
+    material: EMERALD
+    name: '&fEinfaches Totenamulett'
+    lore:
+      - '&8Beschwörer Amulett'
+      - ''
+      - '&7Ein einfaches Amulett mit'
+      - '&7dunkler Macht.'
+      - ''
+      - '&f+8% Pet-Schaden'
+      - '&f+5% Lebensraub'
+      - ''
+      - '&8Benötigt Level 1'
+    lifesteal: 5
+    required-level: 1
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_AMULETT_T2:
+  base:
+    material: EMERALD
+    name: '&aAmulett der Verdammnis'
+    lore:
+      - '&8Beschwörer Amulett'
+      - ''
+      - '&7Ein Amulett, das Gegner'
+      - '&7verdammt.'
+      - ''
+      - '&a+18% Pet-Schaden'
+      - '&a+12% Lebensraub'
+      - '&a+5 Max Seelen'
+      - ''
+      - '&8Benötigt Level 12'
+    lifesteal: 12
+    required-level: 12
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_AMULETT_T3:
+  base:
+    material: EMERALD
+    name: '&9Amulett des Beschwörers'
+    lore:
+      - '&8Beschwörer Amulett'
+      - ''
+      - '&7Das Amulett eines mächtigen'
+      - '&7Beschwörers.'
+      - ''
+      - '&9+32% Pet-Schaden'
+      - '&9+22% Lebensraub'
+      - '&9+12 Max Seelen'
+      - '&9+8% Fluch'
+      - ''
+      - '&8Benötigt Level 22'
+    lifesteal: 22
+    required-level: 22
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_AMULETT_T4:
+  base:
+    material: EMERALD
+    name: '&5Runen-Amulett des Todes'
+    lore:
+      - '&8Beschwörer Amulett'
+      - ''
+      - '&7Runen schützen dich und'
+      - '&7verstärken deine Macht.'
+      - ''
+      - '&5+55% Pet-Schaden'
+      - '&5+38% Lebensraub'
+      - '&5+22 Max Seelen'
+      - '&5+18% Fluch'
+      - '&5Untoten-Immunität'
+      - ''
+      - '&8Benötigt Level 38'
+    lifesteal: 38
+    required-level: 38
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_AMULETT_T5:
+  base:
+    material: EMERALD
+    name: '&6Legendäres Lich-Amulett'
+    lore:
+      - '&8Beschwörer Amulett'
+      - ''
+      - '&7Ein legendäres Amulett mit'
+      - '&7unglaublicher Todesmacht.'
+      - ''
+      - '&6+95% Pet-Schaden'
+      - '&6+65% Lebensraub'
+      - '&6+38 Max Seelen'
+      - '&6+32% Fluch'
+      - '&6Untoten & Gift-Immunität'
+      - ''
+      - '&8Benötigt Level 55'
+    lifesteal: 65
+    required-level: 55
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_AMULETT_T6:
+  base:
+    material: EMERALD
+    name: '&cMythisches Todesamulett'
+    lore:
+      - '&8Beschwörer Amulett'
+      - ''
+      - '&7Ein göttliches Amulett mit'
+      - '&7absoluter Todesmacht.'
+      - ''
+      - '&c+160% Pet-Schaden'
+      - '&c+110% Lebensraub'
+      - '&c+65 Max Seelen'
+      - '&c+55% Fluch'
+      - '&cAlle Dunkle-Immunitäten'
+      - ''
+      - '&8Benötigt Level 78'
+    lifesteal: 110
+    required-level: 78
+    required-class:
+      - BESCHWOERER
