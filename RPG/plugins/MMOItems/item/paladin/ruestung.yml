@@ -1,0 +1,527 @@
+# 🛡️ PALADIN RÜSTUNG
+# 24 Rüstungsteile: Helm, Brustplatte, Beinschutz, Stiefel (je 6 Tiers)
+
+# ==================== HELME ====================
+PALADIN_HELM_T1:
+  base:
+    material: IRON_HELMET
+    name: '&fEinfacher Eisenhelm'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Ein einfacher Eisenhelm'
+      - '&7für angehende Paladine.'
+      - ''
+      - '&e+3% Heilungskraft'
+      - ''
+      - '&8Benötigt Level 1'
+    armor: 3
+    max-health: 15
+    required-level: 1
+    required-class:
+      - PALADIN
+
+PALADIN_HELM_T2:
+  base:
+    material: IRON_HELMET
+    name: '&aGeweihter Helm'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Ein gesegneter Helm, der'
+      - '&7deine Heilkraft verstärkt.'
+      - ''
+      - '&a+8% Heilungskraft'
+      - '&a+5 Heilig-Schaden'
+      - ''
+      - '&8Benötigt Level 12'
+    armor: 6
+    max-health: 35
+    required-level: 12
+    required-class:
+      - PALADIN
+
+PALADIN_HELM_T3:
+  base:
+    material: DIAMOND_HELMET
+    name: '&9Lichthelm'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Erfüllt von heiligem Licht,'
+      - '&7schützt dieser Helm vor allem Bösen.'
+      - ''
+      - '&9+15% Heilungskraft'
+      - '&9+10 Heilig-Schaden'
+      - '&9+3% Schadensreduzierung'
+      - ''
+      - '&8Benötigt Level 22'
+    armor: 9
+    max-health: 60
+    required-level: 22
+    required-class:
+      - PALADIN
+
+PALADIN_HELM_T4:
+  base:
+    material: DIAMOND_HELMET
+    name: '&5Runen-Lichthelm'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Mit uralten Runen verziert,'
+      - '&7verstärkt dieser Helm deine'
+      - '&7Auren und Heilungen.'
+      - ''
+      - '&5+26% Heilungskraft'
+      - '&5+18 Heilig-Schaden'
+      - '&5+7% Schadensreduzierung'
+      - '&5+10% Auren-Verstärkung'
+      - ''
+      - '&8Benötigt Level 38'
+    armor: 14
+    max-health: 100
+    required-level: 38
+    required-class:
+      - PALADIN
+
+PALADIN_HELM_T5:
+  base:
+    material: NETHERITE_HELMET
+    name: '&6Legendärer Kreuzritter-Helm'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Der legendäre Helm der'
+      - '&7Kreuzritter. Unzerstörbar'
+      - '&7und voller heiliger Macht.'
+      - ''
+      - '&6+44% Heilungskraft'
+      - '&6+32 Heilig-Schaden'
+      - '&6+12% Schadensreduzierung'
+      - '&6+20% Auren-Verstärkung'
+      - ''
+      - '&8Benötigt Level 55'
+    armor: 21
+    max-health: 160
+    required-level: 55
+    required-class:
+      - PALADIN
+
+PALADIN_HELM_T6:
+  base:
+    material: NETHERITE_HELMET
+    name: '&cMythischer Götterhelm'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Der Helm der Götter selbst.'
+      - '&7Verleiht unglaubliche Macht'
+      - '&7und Schutz.'
+      - ''
+      - '&c+72% Heilungskraft'
+      - '&c+55 Heilig-Schaden'
+      - '&c+20% Schadensreduzierung'
+      - '&c+35% Auren-Verstärkung'
+      - ''
+      - '&8Benötigt Level 78'
+    armor: 32
+    max-health: 260
+    required-level: 78
+    required-class:
+      - PALADIN
+
+# ==================== BRUSTPLATTEN ====================
+PALADIN_BRUST_T1:
+  base:
+    material: IRON_CHESTPLATE
+    name: '&fEinfache Eisenplatte'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Eine einfache Eisenplatte'
+      - '&7für Anfänger-Paladine.'
+      - ''
+      - '&e+5% Heilungskraft'
+      - ''
+      - '&8Benötigt Level 1'
+    armor: 5
+    max-health: 25
+    required-level: 1
+    required-class:
+      - PALADIN
+
+PALADIN_BRUST_T2:
+  base:
+    material: IRON_CHESTPLATE
+    name: '&aGeweihte Platte'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Eine gesegnete Platte,'
+      - '&7die dich vor Schaden schützt.'
+      - ''
+      - '&a+12% Heilungskraft'
+      - '&a+8 Heilig-Schaden'
+      - ''
+      - '&8Benötigt Level 12'
+    armor: 10
+    max-health: 60
+    required-level: 12
+    required-class:
+      - PALADIN
+
+PALADIN_BRUST_T3:
+  base:
+    material: DIAMOND_CHESTPLATE
+    name: '&9Lichtplatte'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Eine Platte aus heiligem Metall,'
+      - '&7die Licht ausstrahlt.'
+      - ''
+      - '&9+22% Heilungskraft'
+      - '&9+16 Heilig-Schaden'
+      - '&9+5% Schadensreduzierung'
+      - ''
+      - '&8Benötigt Level 22'
+    armor: 15
+    max-health: 105
+    required-level: 22
+    required-class:
+      - PALADIN
+
+PALADIN_BRUST_T4:
+  base:
+    material: DIAMOND_CHESTPLATE
+    name: '&5Runen-Lichtplatte'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Mit mächtigen Schutzrunen,'
+      - '&7verstärkt diese Platte deine'
+      - '&7heiligen Kräfte enorm.'
+      - ''
+      - '&5+38% Heilungskraft'
+      - '&5+28 Heilig-Schaden'
+      - '&5+10% Schadensreduzierung'
+      - '&5+15% Auren-Verstärkung'
+      - ''
+      - '&8Benötigt Level 38'
+    armor: 23
+    max-health: 175
+    required-level: 38
+    required-class:
+      - PALADIN
+
+PALADIN_BRUST_T5:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: '&6Legendäre Kreuzritter-Platte'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Die legendäre Platte der'
+      - '&7Kreuzritter. Nahezu'
+      - '&7unzerstörbar.'
+      - ''
+      - '&6+65% Heilungskraft'
+      - '&6+48 Heilig-Schaden'
+      - '&6+18% Schadensreduzierung'
+      - '&6+30% Auren-Verstärkung'
+      - ''
+      - '&8Benötigt Level 55'
+    armor: 35
+    max-health: 280
+    required-level: 55
+    required-class:
+      - PALADIN
+
+PALADIN_BRUST_T6:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: '&cMythische Götterplatte'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Die Brustplatte der Götter.'
+      - '&7Unüberwindlicher Schutz und'
+      - '&7unendliche Heilkraft.'
+      - ''
+      - '&c+110% Heilungskraft'
+      - '&c+82 Heilig-Schaden'
+      - '&c+28% Schadensreduzierung'
+      - '&c+50% Auren-Verstärkung'
+      - ''
+      - '&8Benötigt Level 78'
+    armor: 53
+    max-health: 450
+    required-level: 78
+    required-class:
+      - PALADIN
+
+# ==================== BEINSCHUTZ ====================
+PALADIN_BEINE_T1:
+  base:
+    material: IRON_LEGGINGS
+    name: '&fEinfache Eisenbeine'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Einfache Eisenbeine für'
+      - '&7angehende Paladine.'
+      - ''
+      - '&e+4% Heilungskraft'
+      - ''
+      - '&8Benötigt Level 1'
+    armor: 4
+    max-health: 20
+    required-level: 1
+    required-class:
+      - PALADIN
+
+PALADIN_BEINE_T2:
+  base:
+    material: IRON_LEGGINGS
+    name: '&aGeweihte Beine'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Gesegnete Beine, die'
+      - '&7deine Bewegungen schützen.'
+      - ''
+      - '&a+10% Heilungskraft'
+      - '&a+6 Heilig-Schaden'
+      - ''
+      - '&8Benötigt Level 12'
+    armor: 8
+    max-health: 50
+    required-level: 12
+    required-class:
+      - PALADIN
+
+PALADIN_BEINE_T3:
+  base:
+    material: DIAMOND_LEGGINGS
+    name: '&9Lichtbeine'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Beine aus heiligem Metall,'
+      - '&7die nie ermüden.'
+      - ''
+      - '&9+18% Heilungskraft'
+      - '&9+13 Heilig-Schaden'
+      - '&9+4% Schadensreduzierung'
+      - ''
+      - '&8Benötigt Level 22'
+    armor: 12
+    max-health: 90
+    required-level: 22
+    required-class:
+      - PALADIN
+
+PALADIN_BEINE_T4:
+  base:
+    material: DIAMOND_LEGGINGS
+    name: '&5Runen-Lichtbeine'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Mit Bewegungsrunen verziert,'
+      - '&7verstärken diese Beine deine'
+      - '&7Mobilität und Auren.'
+      - ''
+      - '&5+32% Heilungskraft'
+      - '&5+23 Heilig-Schaden'
+      - '&5+8% Schadensreduzierung'
+      - '&5+12% Auren-Verstärkung'
+      - ''
+      - '&8Benötigt Level 38'
+    armor: 19
+    max-health: 150
+    required-level: 38
+    required-class:
+      - PALADIN
+
+PALADIN_BEINE_T5:
+  base:
+    material: NETHERITE_LEGGINGS
+    name: '&6Legendäre Kreuzritter-Beine'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Die legendären Beine der'
+      - '&7Kreuzritter. Unerschütterlich'
+      - '&7im Stand.'
+      - ''
+      - '&6+55% Heilungskraft'
+      - '&6+40 Heilig-Schaden'
+      - '&6+15% Schadensreduzierung'
+      - '&6+25% Auren-Verstärkung'
+      - ''
+      - '&8Benötigt Level 55'
+    armor: 29
+    max-health: 240
+    required-level: 55
+    required-class:
+      - PALADIN
+
+PALADIN_BEINE_T6:
+  base:
+    material: NETHERITE_LEGGINGS
+    name: '&cMythische Götterbeine'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Die Beine der Götter.'
+      - '&7Unaufhaltsam in ihrer'
+      - '&7Bewegung.'
+      - ''
+      - '&c+92% Heilungskraft'
+      - '&c+68 Heilig-Schaden'
+      - '&c+24% Schadensreduzierung'
+      - '&c+42% Auren-Verstärkung'
+      - ''
+      - '&8Benötigt Level 78'
+    armor: 44
+    max-health: 390
+    required-level: 78
+    required-class:
+      - PALADIN
+
+# ==================== STIEFEL ====================
+PALADIN_STIEFEL_T1:
+  base:
+    material: IRON_BOOTS
+    name: '&fEinfache Eisenstiefel'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Einfache Eisenstiefel für'
+      - '&7den Beginn deiner Reise.'
+      - ''
+      - '&e+2% Heilungskraft'
+      - ''
+      - '&8Benötigt Level 1'
+    armor: 2
+    max-health: 12
+    required-level: 1
+    required-class:
+      - PALADIN
+
+PALADIN_STIEFEL_T2:
+  base:
+    material: IRON_BOOTS
+    name: '&aGeweihte Stiefel'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Gesegnete Stiefel, die deine'
+      - '&7Schritte leiten.'
+      - ''
+      - '&a+6% Heilungskraft'
+      - '&a+4 Heilig-Schaden'
+      - '&a+3% Bewegungsgeschwindigkeit'
+      - ''
+      - '&8Benötigt Level 12'
+    armor: 4
+    max-health: 28
+    movement-speed: 0.03
+    required-level: 12
+    required-class:
+      - PALADIN
+
+PALADIN_STIEFEL_T3:
+  base:
+    material: DIAMOND_BOOTS
+    name: '&9Lichtstiefel'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Stiefel aus heiligem Metall,'
+      - '&7die schnell wie das Licht sind.'
+      - ''
+      - '&9+12% Heilungskraft'
+      - '&9+8 Heilig-Schaden'
+      - '&9+6% Bewegungsgeschwindigkeit'
+      - ''
+      - '&8Benötigt Level 22'
+    armor: 6
+    max-health: 50
+    movement-speed: 0.06
+    required-level: 22
+    required-class:
+      - PALADIN
+
+PALADIN_STIEFEL_T4:
+  base:
+    material: DIAMOND_BOOTS
+    name: '&5Runen-Lichtstiefel'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Mit Geschwindigkeitsrunen,'
+      - '&7verstärken diese Stiefel deine'
+      - '&7Mobilität und Auren.'
+      - ''
+      - '&5+20% Heilungskraft'
+      - '&5+15 Heilig-Schaden'
+      - '&5+10% Bewegungsgeschwindigkeit'
+      - '&5+8% Auren-Verstärkung'
+      - ''
+      - '&8Benötigt Level 38'
+    armor: 9
+    max-health: 85
+    movement-speed: 0.10
+    required-level: 38
+    required-class:
+      - PALADIN
+
+PALADIN_STIEFEL_T5:
+  base:
+    material: NETHERITE_BOOTS
+    name: '&6Legendäre Kreuzritter-Stiefel'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Die legendären Stiefel der'
+      - '&7Kreuzritter. Schnell und'
+      - '&7unaufhaltsam.'
+      - ''
+      - '&6+35% Heilungskraft'
+      - '&6+26 Heilig-Schaden'
+      - '&6+15% Bewegungsgeschwindigkeit'
+      - '&6+18% Auren-Verstärkung'
+      - ''
+      - '&8Benötigt Level 55'
+    armor: 14
+    max-health: 135
+    movement-speed: 0.15
+    required-level: 55
+    required-class:
+      - PALADIN
+
+PALADIN_STIEFEL_T6:
+  base:
+    material: NETHERITE_BOOTS
+    name: '&cMythische Götterstiefel'
+    lore:
+      - '&8Paladin Rüstung'
+      - ''
+      - '&7Die Stiefel der Götter.'
+      - '&7Schneller als der Wind.'
+      - ''
+      - '&c+58% Heilungskraft'
+      - '&c+45 Heilig-Schaden'
+      - '&c+22% Bewegungsgeschwindigkeit'
+      - '&c+30% Auren-Verstärkung'
+      - ''
+      - '&8Benötigt Level 78'
+    armor: 21
+    max-health: 220
+    movement-speed: 0.22
+    required-level: 78
+    required-class:
+      - PALADIN

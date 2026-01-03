@@ -1,0 +1,581 @@
+# 🔥 BERSERKER RÜSTUNG
+# 24 Rüstungsteile: Helm, Brustplatte, Beinschutz, Stiefel (je 6 Tiers)
+
+# ==================== HELME ====================
+BERSERKER_HELM_T1:
+  base:
+    material: LEATHER_HELMET
+    name: '&fEinfacher Pelzhelm'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Ein einfacher Pelzhelm'
+      - '&7mit leichtem Schadensbonus.'
+      - ''
+      - '&c+3% Schaden'
+      - ''
+      - '&8Benötigt Level 1'
+    armor: 1
+    max-health: 10
+    attack-damage: 1
+    required-level: 1
+    required-class:
+      - BERSERKER
+
+BERSERKER_HELM_T2:
+  base:
+    material: LEATHER_HELMET
+    name: '&aWilder Helm'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Ein wilder Helm, der deine'
+      - '&7kritischen Treffer verstärkt.'
+      - ''
+      - '&c+8% Schaden'
+      - '&6+5% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 12'
+    armor: 2
+    max-health: 20
+    attack-damage: 2
+    critical-strike-chance: 5
+    required-level: 12
+    required-class:
+      - BERSERKER
+
+BERSERKER_HELM_T3:
+  base:
+    material: CHAINMAIL_HELMET
+    name: '&9Kriegshelm'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Ein Kriegshelm, der deine'
+      - '&7Kampfkraft deutlich erhöht.'
+      - ''
+      - '&9+15% Schaden'
+      - '&9+10% Kritische Trefferchance'
+      - '&9+8% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 22'
+    armor: 3
+    max-health: 35
+    attack-damage: 3
+    critical-strike-chance: 10
+    critical-strike-power: 8
+    required-level: 22
+    required-class:
+      - BERSERKER
+
+BERSERKER_HELM_T4:
+  base:
+    material: CHAINMAIL_HELMET
+    name: '&5Runen-Wuthelm'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Mit Wutrunen verziert,'
+      - '&7verstärkt dieser Helm deine'
+      - '&7Raserei enorm.'
+      - ''
+      - '&5+26% Schaden'
+      - '&5+18% Kritische Trefferchance'
+      - '&5+20% Kritischer Schaden'
+      - '&5+5% Schaden bei <50% HP'
+      - ''
+      - '&8Benötigt Level 38'
+    armor: 4
+    max-health: 60
+    attack-damage: 5
+    critical-strike-chance: 18
+    critical-strike-power: 20
+    required-level: 38
+    required-class:
+      - BERSERKER
+
+BERSERKER_HELM_T5:
+  base:
+    material: IRON_HELMET
+    name: '&6Legendärer Raserei-Helm'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Der legendäre Helm der'
+      - '&7Berserker. Entfesselt pure Wut.'
+      - ''
+      - '&6+44% Schaden'
+      - '&6+28% Kritische Trefferchance'
+      - '&6+40% Kritischer Schaden'
+      - '&6+15% Schaden bei <50% HP'
+      - ''
+      - '&8Benötigt Level 55'
+    armor: 6
+    max-health: 95
+    attack-damage: 8
+    critical-strike-chance: 28
+    critical-strike-power: 40
+    required-level: 55
+    required-class:
+      - BERSERKER
+
+BERSERKER_HELM_T6:
+  base:
+    material: DIAMOND_HELMET
+    name: '&cMythischer Chaos-Helm'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Der Helm des reinen Chaos.'
+      - '&7Unaufhaltsame Zerstörung.'
+      - ''
+      - '&c+72% Schaden'
+      - '&c+42% Kritische Trefferchance'
+      - '&c+70% Kritischer Schaden'
+      - '&c+30% Schaden bei <50% HP'
+      - ''
+      - '&8Benötigt Level 78'
+    armor: 9
+    max-health: 155
+    attack-damage: 13
+    critical-strike-chance: 42
+    critical-strike-power: 70
+    required-level: 78
+    required-class:
+      - BERSERKER
+
+# ==================== BRUSTPLATTEN ====================
+BERSERKER_BRUST_T1:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: '&fEinfache Pelzjacke'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Eine einfache Pelzjacke'
+      - '&7mit leichtem Schadensbonus.'
+      - ''
+      - '&c+5% Schaden'
+      - ''
+      - '&8Benötigt Level 1'
+    armor: 2
+    max-health: 20
+    attack-damage: 1
+    required-level: 1
+    required-class:
+      - BERSERKER
+
+BERSERKER_BRUST_T2:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: '&aWilde Jacke'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Eine wilde Jacke, die deine'
+      - '&7kritischen Treffer verstärkt.'
+      - ''
+      - '&a+12% Schaden'
+      - '&a+8% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 12'
+    armor: 3
+    max-health: 40
+    attack-damage: 3
+    critical-strike-chance: 8
+    required-level: 12
+    required-class:
+      - BERSERKER
+
+BERSERKER_BRUST_T3:
+  base:
+    material: CHAINMAIL_CHESTPLATE
+    name: '&9Kriegsplatte'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Eine Kriegsplatte, die deine'
+      - '&7Angriffskraft deutlich erhöht.'
+      - ''
+      - '&9+22% Schaden'
+      - '&9+15% Kritische Trefferchance'
+      - '&9+12% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 22'
+    armor: 5
+    max-health: 70
+    attack-damage: 5
+    critical-strike-chance: 15
+    critical-strike-power: 12
+    required-level: 22
+    required-class:
+      - BERSERKER
+
+BERSERKER_BRUST_T4:
+  base:
+    material: CHAINMAIL_CHESTPLATE
+    name: '&5Runen-Wutplatte'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Mit mächtigen Wutrunen,'
+      - '&7entfesselt diese Platte'
+      - '&7deine wahre Kraft.'
+      - ''
+      - '&5+38% Schaden'
+      - '&5+25% Kritische Trefferchance'
+      - '&5+30% Kritischer Schaden'
+      - '&5+10% Schaden bei <50% HP'
+      - ''
+      - '&8Benötigt Level 38'
+    armor: 8
+    max-health: 120
+    attack-damage: 9
+    critical-strike-chance: 25
+    critical-strike-power: 30
+    required-level: 38
+    required-class:
+      - BERSERKER
+
+BERSERKER_BRUST_T5:
+  base:
+    material: IRON_CHESTPLATE
+    name: '&6Legendäre Raserei-Platte'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Die legendäre Platte der'
+      - '&7Berserker. Pure Zerstörung.'
+      - ''
+      - '&6+65% Schaden'
+      - '&6+38% Kritische Trefferchance'
+      - '&6+60% Kritischer Schaden'
+      - '&6+22% Schaden bei <50% HP'
+      - ''
+      - '&8Benötigt Level 55'
+    armor: 12
+    max-health: 190
+    attack-damage: 15
+    critical-strike-chance: 38
+    critical-strike-power: 60
+    required-level: 55
+    required-class:
+      - BERSERKER
+
+BERSERKER_BRUST_T6:
+  base:
+    material: DIAMOND_CHESTPLATE
+    name: '&cMythische Chaos-Platte'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Die Platte des reinen Chaos.'
+      - '&7Unendliche Zerstörungskraft.'
+      - ''
+      - '&c+110% Schaden'
+      - '&c+55% Kritische Trefferchance'
+      - '&c+105% Kritischer Schaden'
+      - '&c+45% Schaden bei <50% HP'
+      - ''
+      - '&8Benötigt Level 78'
+    armor: 18
+    max-health: 310
+    attack-damage: 25
+    critical-strike-chance: 55
+    critical-strike-power: 105
+    required-level: 78
+    required-class:
+      - BERSERKER
+
+# ==================== BEINSCHUTZ ====================
+BERSERKER_BEINE_T1:
+  base:
+    material: LEATHER_LEGGINGS
+    name: '&fEinfache Pelzhose'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Eine einfache Pelzhose'
+      - '&7mit leichtem Schadensbonus.'
+      - ''
+      - '&c+4% Schaden'
+      - ''
+      - '&8Benötigt Level 1'
+    armor: 1
+    max-health: 15
+    attack-damage: 1
+    required-level: 1
+    required-class:
+      - BERSERKER
+
+BERSERKER_BEINE_T2:
+  base:
+    material: LEATHER_LEGGINGS
+    name: '&aWilde Hose'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Eine wilde Hose, die deine'
+      - '&7kritischen Treffer verstärkt.'
+      - ''
+      - '&a+10% Schaden'
+      - '&a+6% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 12'
+    armor: 2
+    max-health: 35
+    attack-damage: 2
+    critical-strike-chance: 6
+    required-level: 12
+    required-class:
+      - BERSERKER
+
+BERSERKER_BEINE_T3:
+  base:
+    material: CHAINMAIL_LEGGINGS
+    name: '&9Kriegshose'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Eine Kriegshose, die deine'
+      - '&7Kampfkraft deutlich erhöht.'
+      - ''
+      - '&9+18% Schaden'
+      - '&9+12% Kritische Trefferchance'
+      - '&9+10% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 22'
+    armor: 4
+    max-health: 60
+    attack-damage: 4
+    critical-strike-chance: 12
+    critical-strike-power: 10
+    required-level: 22
+    required-class:
+      - BERSERKER
+
+BERSERKER_BEINE_T4:
+  base:
+    material: CHAINMAIL_LEGGINGS
+    name: '&5Runen-Wuthose'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Mit Wutrunen verziert,'
+      - '&7verstärkt diese Hose deine'
+      - '&7Zerstörungskraft.'
+      - ''
+      - '&5+32% Schaden'
+      - '&5+22% Kritische Trefferchance'
+      - '&5+25% Kritischer Schaden'
+      - '&5+8% Schaden bei <50% HP'
+      - ''
+      - '&8Benötigt Level 38'
+    armor: 6
+    max-health: 105
+    attack-damage: 7
+    critical-strike-chance: 22
+    critical-strike-power: 25
+    required-level: 38
+    required-class:
+      - BERSERKER
+
+BERSERKER_BEINE_T5:
+  base:
+    material: IRON_LEGGINGS
+    name: '&6Legendäre Raserei-Hose'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Die legendäre Hose der'
+      - '&7Berserker. Unbändige Kraft.'
+      - ''
+      - '&6+55% Schaden'
+      - '&6+34% Kritische Trefferchance'
+      - '&6+50% Kritischer Schaden'
+      - '&6+18% Schaden bei <50% HP'
+      - ''
+      - '&8Benötigt Level 55'
+    armor: 9
+    max-health: 170
+    attack-damage: 12
+    critical-strike-chance: 34
+    critical-strike-power: 50
+    required-level: 55
+    required-class:
+      - BERSERKER
+
+BERSERKER_BEINE_T6:
+  base:
+    material: DIAMOND_LEGGINGS
+    name: '&cMythische Chaos-Hose'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Die Hose des reinen Chaos.'
+      - '&7Unaufhaltsame Bewegung.'
+      - ''
+      - '&c+92% Schaden'
+      - '&c+50% Kritische Trefferchance'
+      - '&c+88% Kritischer Schaden'
+      - '&c+38% Schaden bei <50% HP'
+      - ''
+      - '&8Benötigt Level 78'
+    armor: 14
+    max-health: 275
+    attack-damage: 20
+    critical-strike-chance: 50
+    critical-strike-power: 88
+    required-level: 78
+    required-class:
+      - BERSERKER
+
+# ==================== STIEFEL ====================
+BERSERKER_STIEFEL_T1:
+  base:
+    material: LEATHER_BOOTS
+    name: '&fEinfache Pelzstiefel'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Einfache Pelzstiefel mit'
+      - '&7leichtem Schadensbonus.'
+      - ''
+      - '&c+2% Schaden'
+      - '&a+3% Bewegungsgeschwindigkeit'
+      - ''
+      - '&8Benötigt Level 1'
+    armor: 1
+    max-health: 8
+    attack-damage: 1
+    movement-speed: 0.03
+    required-level: 1
+    required-class:
+      - BERSERKER
+
+BERSERKER_STIEFEL_T2:
+  base:
+    material: LEATHER_BOOTS
+    name: '&aWilde Stiefel'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Wilde Stiefel, die dich'
+      - '&7schneller und tödlicher machen.'
+      - ''
+      - '&a+6% Schaden'
+      - '&a+6% Bewegungsgeschwindigkeit'
+      - '&a+4% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 12'
+    armor: 2
+    max-health: 18
+    attack-damage: 1
+    movement-speed: 0.06
+    critical-strike-chance: 4
+    required-level: 12
+    required-class:
+      - BERSERKER
+
+BERSERKER_STIEFEL_T3:
+  base:
+    material: CHAINMAIL_BOOTS
+    name: '&9Kriegsstiefel'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Kriegsstiefel, die deine'
+      - '&7Kampfkraft erhöhen.'
+      - ''
+      - '&9+12% Schaden'
+      - '&9+10% Bewegungsgeschwindigkeit'
+      - '&9+8% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 22'
+    armor: 3
+    max-health: 32
+    attack-damage: 2
+    movement-speed: 0.10
+    critical-strike-chance: 8
+    required-level: 22
+    required-class:
+      - BERSERKER
+
+BERSERKER_STIEFEL_T4:
+  base:
+    material: CHAINMAIL_BOOTS
+    name: '&5Runen-Wutstiefel'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Mit Geschwindigkeitsrunen,'
+      - '&7machen diese Stiefel dich'
+      - '&7unaufhaltsam.'
+      - ''
+      - '&5+20% Schaden'
+      - '&5+15% Bewegungsgeschwindigkeit'
+      - '&5+15% Kritische Trefferchance'
+      - '&5+15% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 38'
+    armor: 4
+    max-health: 55
+    attack-damage: 4
+    movement-speed: 0.15
+    critical-strike-chance: 15
+    critical-strike-power: 15
+    required-level: 38
+    required-class:
+      - BERSERKER
+
+BERSERKER_STIEFEL_T5:
+  base:
+    material: IRON_BOOTS
+    name: '&6Legendäre Raserei-Stiefel'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Die legendären Stiefel der'
+      - '&7Berserker. Unaufhaltsame Wut.'
+      - ''
+      - '&6+35% Schaden'
+      - '&6+22% Bewegungsgeschwindigkeit'
+      - '&6+24% Kritische Trefferchance'
+      - '&6+35% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 55'
+    armor: 6
+    max-health: 90
+    attack-damage: 6
+    movement-speed: 0.22
+    critical-strike-chance: 24
+    critical-strike-power: 35
+    required-level: 55
+    required-class:
+      - BERSERKER
+
+BERSERKER_STIEFEL_T6:
+  base:
+    material: DIAMOND_BOOTS
+    name: '&cMythische Chaos-Stiefel'
+    lore:
+      - '&8Berserker Rüstung'
+      - ''
+      - '&7Die Stiefel des reinen Chaos.'
+      - '&7Schneller als der Blitz.'
+      - ''
+      - '&c+58% Schaden'
+      - '&c+32% Bewegungsgeschwindigkeit'
+      - '&c+36% Kritische Trefferchance'
+      - '&c+60% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 78'
+    armor: 9
+    max-health: 145
+    attack-damage: 10
+    movement-speed: 0.32
+    critical-strike-chance: 36
+    critical-strike-power: 60
+    required-level: 78
+    required-class:
+      - BERSERKER
