@@ -1,0 +1,501 @@
+# ⚔️ KRIEGER RÜSTUNG
+# 24 Rüstungsteile: Helm, Brustplatte, Beinschutz, Stiefel (je 6 Tiers)
+
+# ==================== HELME ====================
+KRIEGER_HELM_T1:
+  base:
+    material: IRON_HELMET
+    name: '&fRostiger Eisenhelm'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Ein alter Eisenhelm mit'
+      - '&7leichten Rostflecken.'
+      - ''
+      - '&8Benötigt Level 1'
+    armor: 3
+    max-health: 20
+    required-level: 1
+    required-class:
+      - KRIEGER
+
+KRIEGER_HELM_T2:
+  base:
+    material: IRON_HELMET
+    name: '&aStahlhelm des Lernenden'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Ein solider Stahlhelm für'
+      - '&7aufstrebende Krieger.'
+      - ''
+      - '&a+5 Stärke'
+      - ''
+      - '&8Benötigt Level 12'
+    armor: 6
+    max-health: 40
+    required-level: 12
+    required-class:
+      - KRIEGER
+
+KRIEGER_HELM_T3:
+  base:
+    material: DIAMOND_HELMET
+    name: '&9Verstärkter Kampfhelm'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Verstärkte Panzerung für'
+      - '&7erfahrene Krieger.'
+      - ''
+      - '&9+10 Stärke'
+      - '&9+2% Schadensreduzierung'
+      - ''
+      - '&8Benötigt Level 22'
+    armor: 9
+    max-health: 65
+    required-level: 22
+    required-class:
+      - KRIEGER
+
+KRIEGER_HELM_T4:
+  base:
+    material: DIAMOND_HELMET
+    name: '&5Runenhelm des Meisters'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Mit Schutzrunen verziert,'
+      - '&7bietet dieser Helm hervorragenden'
+      - '&7Schutz.'
+      - ''
+      - '&5+18 Stärke'
+      - '&5+5% Schadensreduzierung'
+      - ''
+      - '&8Benötigt Level 38'
+    armor: 14
+    max-health: 100
+    required-level: 38
+    required-class:
+      - KRIEGER
+
+KRIEGER_HELM_T5:
+  base:
+    material: NETHERITE_HELMET
+    name: '&6Legendärer Drachenkopf-Helm'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Aus einem Drachenschädel'
+      - '&7gefertigt, bietet dieser Helm'
+      - '&7unvergleichlichen Schutz.'
+      - ''
+      - '&6+30 Stärke'
+      - '&6+8% Schadensreduzierung'
+      - '&6+5% Lebensraub'
+      - ''
+      - '&8Benötigt Level 55'
+    armor: 21
+    max-health: 150
+    lifesteal: 5
+    required-level: 55
+    required-class:
+      - KRIEGER
+
+KRIEGER_HELM_T6:
+  base:
+    material: NETHERITE_HELMET
+    name: '&cMythischer Titanenhelm'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Der Helm eines gefallenen'
+      - '&7Titanen. Seine Macht ist'
+      - '&7unermesslich.'
+      - ''
+      - '&c+45 Stärke'
+      - '&c+12% Schadensreduzierung'
+      - '&c+8% Lebensraub'
+      - ''
+      - '&8Benötigt Level 78'
+    armor: 32
+    max-health: 230
+    lifesteal: 8
+    required-level: 78
+    required-class:
+      - KRIEGER
+
+# ==================== BRUSTPLATTEN ====================
+KRIEGER_BRUST_T1:
+  base:
+    material: IRON_CHESTPLATE
+    name: '&fRostige Eisenplatte'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Eine alte Brustplatte aus'
+      - '&7rostigem Eisen.'
+      - ''
+      - '&8Benötigt Level 1'
+    armor: 5
+    max-health: 35
+    required-level: 1
+    required-class:
+      - KRIEGER
+
+KRIEGER_BRUST_T2:
+  base:
+    material: IRON_CHESTPLATE
+    name: '&aStahlplatte des Lernenden'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Eine robuste Stahlbrustplatte'
+      - '&7für aufstrebende Krieger.'
+      - ''
+      - '&a+8 Stärke'
+      - ''
+      - '&8Benötigt Level 12'
+    armor: 10
+    max-health: 70
+    required-level: 12
+    required-class:
+      - KRIEGER
+
+KRIEGER_BRUST_T3:
+  base:
+    material: DIAMOND_CHESTPLATE
+    name: '&9Verstärkte Kampfplatte'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Meisterhaft geschmiedete'
+      - '&7Panzerung mit verstärktem'
+      - '&7Schutz.'
+      - ''
+      - '&9+15 Stärke'
+      - '&9+3% Schadensreduzierung'
+      - ''
+      - '&8Benötigt Level 22'
+    armor: 15
+    max-health: 110
+    required-level: 22
+    required-class:
+      - KRIEGER
+
+KRIEGER_BRUST_T4:
+  base:
+    material: DIAMOND_CHESTPLATE
+    name: '&5Runenbrustplatte des Meisters'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Mit mächtigen Schutzrunen'
+      - '&7graviert, hält diese Platte'
+      - '&7massiven Schaden aus.'
+      - ''
+      - '&5+28 Stärke'
+      - '&5+7% Schadensreduzierung'
+      - ''
+      - '&8Benötigt Level 38'
+    armor: 23
+    max-health: 170
+    required-level: 38
+    required-class:
+      - KRIEGER
+
+KRIEGER_BRUST_T5:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: '&6Legendäre Drachenschuppen-Platte'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Aus Drachenschuppen gefertigt,'
+      - '&7ist diese Panzerung nahezu'
+      - '&7unzerstörbar.'
+      - ''
+      - '&6+45 Stärke'
+      - '&6+12% Schadensreduzierung'
+      - '&6+8% Lebensraub'
+      - ''
+      - '&8Benötigt Level 55'
+    armor: 35
+    max-health: 260
+    lifesteal: 8
+    required-level: 55
+    required-class:
+      - KRIEGER
+
+KRIEGER_BRUST_T6:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: '&cMythische Titanen-Platte'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Die ultimative Panzerung.'
+      - '&7Geschmiedet aus dem Herzen'
+      - '&7eines Titanen.'
+      - ''
+      - '&c+70 Stärke'
+      - '&c+18% Schadensreduzierung'
+      - '&c+12% Lebensraub'
+      - ''
+      - '&8Benötigt Level 78'
+    armor: 53
+    max-health: 400
+    lifesteal: 12
+    required-level: 78
+    required-class:
+      - KRIEGER
+
+# ==================== BEINSCHUTZ ====================
+KRIEGER_BEINE_T1:
+  base:
+    material: IRON_LEGGINGS
+    name: '&fRostige Eisenbeinlinge'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Alte Eisenbeinlinge mit'
+      - '&7sichtbaren Abnutzungsspuren.'
+      - ''
+      - '&8Benötigt Level 1'
+    armor: 4
+    max-health: 30
+    required-level: 1
+    required-class:
+      - KRIEGER
+
+KRIEGER_BEINE_T2:
+  base:
+    material: IRON_LEGGINGS
+    name: '&aStahlbeinlinge des Lernenden'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Solide Stahlbeinlinge für'
+      - '&7aufstrebende Krieger.'
+      - ''
+      - '&a+7 Stärke'
+      - ''
+      - '&8Benötigt Level 12'
+    armor: 8
+    max-health: 60
+    required-level: 12
+    required-class:
+      - KRIEGER
+
+KRIEGER_BEINE_T3:
+  base:
+    material: DIAMOND_LEGGINGS
+    name: '&9Verstärkte Kampfbeinlinge'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Verstärkter Beinschutz für'
+      - '&7erfahrene Kämpfer.'
+      - ''
+      - '&9+13 Stärke'
+      - '&9+2% Schadensreduzierung'
+      - ''
+      - '&8Benötigt Level 22'
+    armor: 12
+    max-health: 95
+    required-level: 22
+    required-class:
+      - KRIEGER
+
+KRIEGER_BEINE_T4:
+  base:
+    material: DIAMOND_LEGGINGS
+    name: '&5Runenbeinschutz des Meisters'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Runen der Stärke verstärken'
+      - '&7diesen mächtigen Beinschutz.'
+      - ''
+      - '&5+23 Stärke'
+      - '&5+6% Schadensreduzierung'
+      - ''
+      - '&8Benötigt Level 38'
+    armor: 19
+    max-health: 145
+    required-level: 38
+    required-class:
+      - KRIEGER
+
+KRIEGER_BEINE_T5:
+  base:
+    material: NETHERITE_LEGGINGS
+    name: '&6Legendäre Drachenbeinlinge'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Mit Drachenschuppen verstärkte'
+      - '&7Beinlinge von legendärer'
+      - '&7Qualität.'
+      - ''
+      - '&6+38 Stärke'
+      - '&6+10% Schadensreduzierung'
+      - '&6+6% Lebensraub'
+      - ''
+      - '&8Benötigt Level 55'
+    armor: 29
+    max-health: 220
+    lifesteal: 6
+    required-level: 55
+    required-class:
+      - KRIEGER
+
+KRIEGER_BEINE_T6:
+  base:
+    material: NETHERITE_LEGGINGS
+    name: '&cMythische Titanenbeinlinge'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Beinschutz eines Titanen.'
+      - '&7Unzerstörbar und mächtig.'
+      - ''
+      - '&c+60 Stärke'
+      - '&c+15% Schadensreduzierung'
+      - '&c+10% Lebensraub'
+      - ''
+      - '&8Benötigt Level 78'
+    armor: 44
+    max-health: 340
+    lifesteal: 10
+    required-level: 78
+    required-class:
+      - KRIEGER
+
+# ==================== STIEFEL ====================
+KRIEGER_STIEFEL_T1:
+  base:
+    material: IRON_BOOTS
+    name: '&fRostige Eisenstiefel'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Abgenutzte Eisenstiefel,'
+      - '&7die schon viele Schlachten'
+      - '&7gesehen haben.'
+      - ''
+      - '&8Benötigt Level 1'
+    armor: 2
+    max-health: 15
+    required-level: 1
+    required-class:
+      - KRIEGER
+
+KRIEGER_STIEFEL_T2:
+  base:
+    material: IRON_BOOTS
+    name: '&aStahlstiefel des Lernenden'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Robuste Stahlstiefel für'
+      - '&7aufstrebende Krieger.'
+      - ''
+      - '&a+4 Stärke'
+      - ''
+      - '&8Benötigt Level 12'
+    armor: 4
+    max-health: 30
+    required-level: 12
+    required-class:
+      - KRIEGER
+
+KRIEGER_STIEFEL_T3:
+  base:
+    material: DIAMOND_BOOTS
+    name: '&9Verstärkte Kampfstiefel'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Verstärkte Stiefel mit'
+      - '&7verbesserter Mobilität.'
+      - ''
+      - '&9+8 Stärke'
+      - '&9+2% Bewegungsgeschwindigkeit'
+      - ''
+      - '&8Benötigt Level 22'
+    armor: 6
+    max-health: 50
+    movement-speed: 0.02
+    required-level: 22
+    required-class:
+      - KRIEGER
+
+KRIEGER_STIEFEL_T4:
+  base:
+    material: DIAMOND_BOOTS
+    name: '&5Runenstiefel des Meisters'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Runen der Geschwindigkeit'
+      - '&7erhöhen die Beweglichkeit.'
+      - ''
+      - '&5+14 Stärke'
+      - '&5+4% Bewegungsgeschwindigkeit'
+      - ''
+      - '&8Benötigt Level 38'
+    armor: 9
+    max-health: 80
+    movement-speed: 0.04
+    required-level: 38
+    required-class:
+      - KRIEGER
+
+KRIEGER_STIEFEL_T5:
+  base:
+    material: NETHERITE_BOOTS
+    name: '&6Legendäre Drachenstiefel'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Aus Drachenleder gefertigte'
+      - '&7Stiefel von außergewöhnlicher'
+      - '&7Qualität.'
+      - ''
+      - '&6+24 Stärke'
+      - '&6+6% Bewegungsgeschwindigkeit'
+      - '&6+4% Lebensraub'
+      - ''
+      - '&8Benötigt Level 55'
+    armor: 14
+    max-health: 120
+    movement-speed: 0.06
+    lifesteal: 4
+    required-level: 55
+    required-class:
+      - KRIEGER
+
+KRIEGER_STIEFEL_T6:
+  base:
+    material: NETHERITE_BOOTS
+    name: '&cMythische Titanenstiefel'
+    lore:
+      - '&8Krieger Rüstung'
+      - ''
+      - '&7Stiefel, die einst Titanen'
+      - '&7trugen. Verleihen übernatürliche'
+      - '&7Geschwindigkeit.'
+      - ''
+      - '&c+38 Stärke'
+      - '&c+10% Bewegungsgeschwindigkeit'
+      - '&c+6% Lebensraub'
+      - ''
+      - '&8Benötigt Level 78'
+    armor: 21
+    max-health: 185
+    movement-speed: 0.10
+    lifesteal: 6
+    required-level: 78
+    required-class:
+      - KRIEGER

@@ -1,0 +1,775 @@
+# ⚔️ KRIEGER WAFFEN
+# 36 Waffen: Schwerter, Zweihänder, Äxte, Großäxte, Hämmer, Kriegshämmer (je 6 Tiers)
+
+# ==================== SCHWERTER ====================
+KRIEGER_SCHWERT_T1:
+  base:
+    material: IRON_SWORD
+    name: '&fRostige Klinge'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Ein altes, rostiges Schwert.'
+      - '&7Besser als nichts...'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 6
+    attack-speed: 1.4
+    required-level: 1
+    required-class:
+      - KRIEGER
+
+KRIEGER_SCHWERT_T2:
+  base:
+    material: IRON_SWORD
+    name: '&aEisenklinge des Lernenden'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Eine solide Eisenklinge für'
+      - '&7aufstrebende Krieger.'
+      - ''
+      - '&a+5% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 9
+    attack-speed: 1.4
+    critical-strike-chance: 5
+    required-level: 12
+    required-class:
+      - KRIEGER
+
+KRIEGER_SCHWERT_T3:
+  base:
+    material: DIAMOND_SWORD
+    name: '&9Stahlschwert der Stärke'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Ein meisterhaft geschmiedetes'
+      - '&7Schwert aus bestem Stahl.'
+      - ''
+      - '&9+8% Kritische Trefferchance'
+      - '&9+10 Stärke'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 14
+    attack-speed: 1.4
+    critical-strike-chance: 8
+    required-level: 22
+    required-class:
+      - KRIEGER
+
+KRIEGER_SCHWERT_T4:
+  base:
+    material: DIAMOND_SWORD
+    name: '&5Runenklinge des Meisters'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Mit uralten Runen verziert,'
+      - '&7pulsiert diese Klinge vor Macht.'
+      - ''
+      - '&5+12% Kritische Trefferchance'
+      - '&5+20 Stärke'
+      - '&5+5% Lebensraub'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 21
+    attack-speed: 1.4
+    critical-strike-chance: 12
+    lifesteal: 5
+    required-level: 38
+    required-class:
+      - KRIEGER
+
+KRIEGER_SCHWERT_T5:
+  base:
+    material: NETHERITE_SWORD
+    name: '&6Legendäre Drachentöter-Klinge'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Geschmiedet aus dem Herzen eines'
+      - '&7Drachen, brennt diese Klinge ewig.'
+      - ''
+      - '&6+15% Kritische Trefferchance'
+      - '&6+35 Stärke'
+      - '&6+8% Lebensraub'
+      - ''
+      - '&d⚡ Ability: Wirbelsturm'
+      - '&8AoE-Schaden um 5 Blöcke'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 32
+    attack-speed: 1.4
+    critical-strike-chance: 15
+    lifesteal: 8
+    required-level: 55
+    required-class:
+      - KRIEGER
+
+KRIEGER_SCHWERT_T6:
+  base:
+    material: NETHERITE_SWORD
+    name: '&cMythische Weltenbrecher'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Die Klinge, die Welten spaltet.'
+      - '&7Kein Feind kann ihrer Macht'
+      - '&7widerstehen.'
+      - ''
+      - '&c+20% Kritische Trefferchance'
+      - '&c+50 Stärke'
+      - '&c+12% Lebensraub'
+      - ''
+      - '&d⚡ Ability: Todesstoß'
+      - '&8Verheerende Einzelziel-Hinrichtung'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 48
+    attack-speed: 1.4
+    critical-strike-chance: 20
+    lifesteal: 12
+    required-level: 78
+    required-class:
+      - KRIEGER
+
+# ==================== ZWEIHÄNDER ====================
+KRIEGER_ZWEIH_T1:
+  base:
+    material: IRON_SWORD
+    name: '&fGroße Eisenklinge'
+    lore:
+      - '&8Krieger Waffe (Zweihänder)'
+      - ''
+      - '&7Ein schweres Schwert, das'
+      - '&7beide Hände erfordert.'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 10
+    attack-speed: 0.9
+    required-level: 1
+    required-class:
+      - KRIEGER
+
+KRIEGER_ZWEIH_T2:
+  base:
+    material: IRON_SWORD
+    name: '&aSchwere Stahlklinge'
+    lore:
+      - '&8Krieger Waffe (Zweihänder)'
+      - ''
+      - '&7Ein massives Schwert aus Stahl'
+      - '&7mit beeindruckender Reichweite.'
+      - ''
+      - '&a+10% AoE-Schaden'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 16
+    attack-speed: 0.9
+    required-level: 12
+    required-class:
+      - KRIEGER
+
+KRIEGER_ZWEIH_T3:
+  base:
+    material: DIAMOND_SWORD
+    name: '&9Flammenklinge'
+    lore:
+      - '&8Krieger Waffe (Zweihänder)'
+      - ''
+      - '&7Lodernde Flammen umhüllen'
+      - '&7diese mächtige Waffe.'
+      - ''
+      - '&9+15% AoE-Schaden'
+      - '&9Feuerschaden'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 24
+    attack-speed: 0.9
+    required-level: 22
+    required-class:
+      - KRIEGER
+
+KRIEGER_ZWEIH_T4:
+  base:
+    material: DIAMOND_SWORD
+    name: '&5Runenzweihänder der Macht'
+    lore:
+      - '&8Krieger Waffe (Zweihänder)'
+      - ''
+      - '&7Uralte Macht fließt durch'
+      - '&7diesen gewaltigen Zweihänder.'
+      - ''
+      - '&5+20% AoE-Schaden'
+      - '&5+15 Stärke'
+      - '&5Betäubung'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 37
+    attack-speed: 0.9
+    required-level: 38
+    required-class:
+      - KRIEGER
+
+KRIEGER_ZWEIH_T5:
+  base:
+    material: NETHERITE_SWORD
+    name: '&6Legendärer Titanenschwert'
+    lore:
+      - '&8Krieger Waffe (Zweihänder)'
+      - ''
+      - '&7Einst von einem Titanen'
+      - '&7geschwungen, nun in deinen'
+      - '&7Händen.'
+      - ''
+      - '&6+25% AoE-Schaden'
+      - '&6+30 Stärke'
+      - ''
+      - '&d⚡ Ability: Erdspalter'
+      - '&8Linienförmiger AoE-Schaden'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 55
+    attack-speed: 0.9
+    required-level: 55
+    required-class:
+      - KRIEGER
+
+KRIEGER_ZWEIH_T6:
+  base:
+    material: NETHERITE_SWORD
+    name: '&cMythischer Göttertöter'
+    lore:
+      - '&8Krieger Waffe (Zweihänder)'
+      - ''
+      - '&7Die Waffe, die Götter'
+      - '&7zu Fall brachte. Unbezwingbare'
+      - '&7Macht durchströmt sie.'
+      - ''
+      - '&c+30% AoE-Schaden'
+      - '&c+45 Stärke'
+      - ''
+      - '&d⚡ Ability: Weltenbeben'
+      - '&8Verheerender AoE + Betäubung'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 82
+    attack-speed: 0.9
+    required-level: 78
+    required-class:
+      - KRIEGER
+
+# ==================== ÄXTE ====================
+KRIEGER_AXT_T1:
+  base:
+    material: IRON_AXE
+    name: '&fStumpfe Holzfälleraxt'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Eine alte Axt, die schon'
+      - '&7bessere Tage gesehen hat.'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 7
+    attack-speed: 1.2
+    required-level: 1
+    required-class:
+      - KRIEGER
+
+KRIEGER_AXT_T2:
+  base:
+    material: IRON_AXE
+    name: '&aScharfe Kampfaxt'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Eine geschärfte Kampfaxt,'
+      - '&7die tiefe Wunden hinterlässt.'
+      - ''
+      - '&aBlutung I (2 Sekunden)'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 11
+    attack-speed: 1.2
+    required-level: 12
+    required-class:
+      - KRIEGER
+
+KRIEGER_AXT_T3:
+  base:
+    material: DIAMOND_AXE
+    name: '&9Berserkeraxt'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Von wütenden Barbaren'
+      - '&7bevorzugt. Verursacht'
+      - '&7schwere Blutungen.'
+      - ''
+      - '&9Blutung II (4 Sekunden)'
+      - '&9+8 Stärke'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 16
+    attack-speed: 1.2
+    required-level: 22
+    required-class:
+      - KRIEGER
+
+KRIEGER_AXT_T4:
+  base:
+    material: DIAMOND_AXE
+    name: '&5Runengeätzte Kriegsaxt'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Runen der Zerstörung'
+      - '&7verzieren diese tödliche'
+      - '&7Kriegsaxt.'
+      - ''
+      - '&5Blutung III (6 Sekunden)'
+      - '&5+15 Stärke'
+      - '&5+10% Rüstungsdurchdringung'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 24
+    attack-speed: 1.2
+    required-level: 38
+    required-class:
+      - KRIEGER
+
+KRIEGER_AXT_T5:
+  base:
+    material: NETHERITE_AXE
+    name: '&6Legendäre Schädelaxt'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Mit Schädeln verziert,'
+      - '&7ein Tribut an ihre'
+      - '&7ungezählten Opfer.'
+      - ''
+      - '&6Blutung IV (8 Sekunden)'
+      - '&6+25 Stärke'
+      - '&6+15% Rüstungsdurchdringung'
+      - ''
+      - '&d⚡ Ability: Halsschlag'
+      - '&8Kritischer Treffer mit Blutung'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 37
+    attack-speed: 1.2
+    required-level: 55
+    required-class:
+      - KRIEGER
+
+KRIEGER_AXT_T6:
+  base:
+    material: NETHERITE_AXE
+    name: '&cMythischer Seelenspalter'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Eine Axt, die nicht nur'
+      - '&7Fleisch, sondern auch Seelen'
+      - '&7spaltet.'
+      - ''
+      - '&cBlutung V (10 Sekunden)'
+      - '&c+40 Stärke'
+      - '&c+25% Rüstungsdurchdringung'
+      - ''
+      - '&d⚡ Ability: Hinrichtung'
+      - '&8Massiver Schaden bei niedrigen HP'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 55
+    attack-speed: 1.2
+    required-level: 78
+    required-class:
+      - KRIEGER
+
+# ==================== GROSSÄXTE ====================
+KRIEGER_GROSSAXT_T1:
+  base:
+    material: IRON_AXE
+    name: '&fSchwere Holzaxt'
+    lore:
+      - '&8Krieger Waffe (Großaxt)'
+      - ''
+      - '&7Eine massive Axt, die'
+      - '&7verheerende Treffer landet.'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 11
+    attack-speed: 0.8
+    required-level: 1
+    required-class:
+      - KRIEGER
+
+KRIEGER_GROSSAXT_T2:
+  base:
+    material: IRON_AXE
+    name: '&aEiserne Schlachtaxt'
+    lore:
+      - '&8Krieger Waffe (Großaxt)'
+      - ''
+      - '&7Eine furchterregende Schlachtaxt'
+      - '&7mit verstärktem Krit-Schaden.'
+      - ''
+      - '&a+10% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 18
+    attack-speed: 0.8
+    required-level: 12
+    required-class:
+      - KRIEGER
+
+KRIEGER_GROSSAXT_T3:
+  base:
+    material: DIAMOND_AXE
+    name: '&9Orcische Kriegsaxt'
+    lore:
+      - '&8Krieger Waffe (Großaxt)'
+      - ''
+      - '&7Von Ork-Kriegsherren'
+      - '&7gefürchtet und respektiert.'
+      - ''
+      - '&9+15% Kritischer Schaden'
+      - '&9Blutung II'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 27
+    attack-speed: 0.8
+    required-level: 22
+    required-class:
+      - KRIEGER
+
+KRIEGER_GROSSAXT_T4:
+  base:
+    material: DIAMOND_AXE
+    name: '&5Dämonenschlächter'
+    lore:
+      - '&8Krieger Waffe (Großaxt)'
+      - ''
+      - '&7Geschmiedet, um Dämonen'
+      - '&7zu vernichten. Ihre Macht'
+      - '&7ist unbestreitbar.'
+      - ''
+      - '&5+25% Kritischer Schaden'
+      - '&5Blutung III'
+      - '&5+12 Stärke'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 40
+    attack-speed: 0.8
+    required-level: 38
+    required-class:
+      - KRIEGER
+
+KRIEGER_GROSSAXT_T5:
+  base:
+    material: NETHERITE_AXE
+    name: '&6Legendärer Riesen-Spalter'
+    lore:
+      - '&8Krieger Waffe (Großaxt)'
+      - ''
+      - '&7Mit dieser Axt wurden'
+      - '&7ganze Riesenarmeen bezwungen.'
+      - ''
+      - '&6+35% Kritischer Schaden'
+      - '&6Blutung IV'
+      - '&6+22 Stärke'
+      - ''
+      - '&d⚡ Ability: Wilder Hieb'
+      - '&8Schneller AoE-Wirbel'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 60
+    attack-speed: 0.8
+    required-level: 55
+    required-class:
+      - KRIEGER
+
+KRIEGER_GROSSAXT_T6:
+  base:
+    material: NETHERITE_AXE
+    name: '&cMythische Weltenaxt'
+    lore:
+      - '&8Krieger Waffe (Großaxt)'
+      - ''
+      - '&7Die ultimative Zerstörungswaffe.'
+      - '&7Selbst Welten beugen sich'
+      - '&7ihrer Schneide.'
+      - ''
+      - '&c+50% Kritischer Schaden'
+      - '&cBlutung V'
+      - '&c+35 Stärke'
+      - ''
+      - '&d⚡ Ability: Zerstörung'
+      - '&8Verheerender Kritischer AoE'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 90
+    attack-speed: 0.8
+    required-level: 78
+    required-class:
+      - KRIEGER
+
+# ==================== HÄMMER ====================
+KRIEGER_HAMMER_T1:
+  base:
+    material: IRON_AXE
+    name: '&fSteinerner Schmiedehammer'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Ein einfacher Hammer,'
+      - '&7robust aber unverfeinert.'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 7
+    attack-speed: 1.1
+    required-level: 1
+    required-class:
+      - KRIEGER
+
+KRIEGER_HAMMER_T2:
+  base:
+    material: IRON_AXE
+    name: '&aStählerner Kriegshammer'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Ein schwerer Stahlhammer,'
+      - '&7der Gegner betäuben kann.'
+      - ''
+      - '&a10% Betäubungschance (1s)'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 11
+    attack-speed: 1.1
+    required-level: 12
+    required-class:
+      - KRIEGER
+
+KRIEGER_HAMMER_T3:
+  base:
+    material: DIAMOND_AXE
+    name: '&9Donner-Hammer'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Elektrizität knistert um'
+      - '&7diesen donnernden Hammer.'
+      - ''
+      - '&915% Betäubungchance (1.5s)'
+      - '&9+10 Stärke'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 16
+    attack-speed: 1.1
+    required-level: 22
+    required-class:
+      - KRIEGER
+
+KRIEGER_HAMMER_T4:
+  base:
+    material: DIAMOND_AXE
+    name: '&5Runenhammer der Erschütterung'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Jeder Schlag erzeugt'
+      - '&7erschütternde Wellen der'
+      - '&7Zerstörung.'
+      - ''
+      - '&520% Betäubungchance (2s)'
+      - '&5+18 Stärke'
+      - '&5Rüstungszerstörung'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 24
+    attack-speed: 1.1
+    required-level: 38
+    required-class:
+      - KRIEGER
+
+KRIEGER_HAMMER_T5:
+  base:
+    material: NETHERITE_AXE
+    name: '&6Legendärer Thorhammer'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Der Hammer des Donnergottes'
+      - '&7selbst. Ruft Blitze herbei.'
+      - ''
+      - '&625% Betäubungchance (2.5s)'
+      - '&6+30 Stärke'
+      - ''
+      - '&d⚡ Ability: Donnerschlag'
+      - '&8Blitz-AoE-Schaden + Betäubung'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 36
+    attack-speed: 1.1
+    required-level: 55
+    required-class:
+      - KRIEGER
+
+KRIEGER_HAMMER_T6:
+  base:
+    material: NETHERITE_AXE
+    name: '&cMythischer Weltenhammer'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Mit diesem Hammer wurden'
+      - '&7Welten erschaffen und'
+      - '&7zerstört.'
+      - ''
+      - '&c35% Betäubungchance (3s)'
+      - '&c+45 Stärke'
+      - ''
+      - '&d⚡ Ability: Titanenschlag'
+      - '&8Vernichtender Schlag + Schockwelle'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 55
+    attack-speed: 1.1
+    required-level: 78
+    required-class:
+      - KRIEGER
+
+# ==================== KRIEGSHÄMMER ====================
+KRIEGER_KRIEGSHAMMER_T1:
+  base:
+    material: IRON_AXE
+    name: '&fGroßer Kriegshammer'
+    lore:
+      - '&8Krieger Waffe (Kriegshammer)'
+      - ''
+      - '&7Ein massiver Hammer, der'
+      - '&7beide Hände erfordert.'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 12
+    attack-speed: 0.7
+    required-level: 1
+    required-class:
+      - KRIEGER
+
+KRIEGER_KRIEGSHAMMER_T2:
+  base:
+    material: IRON_AXE
+    name: '&aZermalmer'
+    lore:
+      - '&8Krieger Waffe (Kriegshammer)'
+      - ''
+      - '&7Zermalmt Rüstungen wie'
+      - '&7Pergamentpapier.'
+      - ''
+      - '&a20% Rüstungsdurchdringung'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 19
+    attack-speed: 0.7
+    required-level: 12
+    required-class:
+      - KRIEGER
+
+KRIEGER_KRIEGSHAMMER_T3:
+  base:
+    material: DIAMOND_AXE
+    name: '&9Schädelbrecher'
+    lore:
+      - '&8Krieger Waffe (Kriegshammer)'
+      - ''
+      - '&7Ein Hammer, der durch'
+      - '&7jede Verteidigung bricht.'
+      - ''
+      - '&930% Rüstungsdurchdringung'
+      - '&9Betäubung I'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 29
+    attack-speed: 0.7
+    required-level: 22
+    required-class:
+      - KRIEGER
+
+KRIEGER_KRIEGSHAMMER_T4:
+  base:
+    material: DIAMOND_AXE
+    name: '&5Runen-Kriegshammer'
+    lore:
+      - '&8Krieger Waffe (Kriegshammer)'
+      - ''
+      - '&7Mit Runen der Macht'
+      - '&7beschriftet, durchbricht er'
+      - '&7jede Rüstung.'
+      - ''
+      - '&540% Rüstungsdurchdringung'
+      - '&5Betäubung II'
+      - '&5+15 Stärke'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 44
+    attack-speed: 0.7
+    required-level: 38
+    required-class:
+      - KRIEGER
+
+KRIEGER_KRIEGSHAMMER_T5:
+  base:
+    material: NETHERITE_AXE
+    name: '&6Legendärer Erdbrecher'
+    lore:
+      - '&8Krieger Waffe (Kriegshammer)'
+      - ''
+      - '&7Jeder Schlag lässt die'
+      - '&7Erde erbeben.'
+      - ''
+      - '&650% Rüstungsdurchdringung'
+      - '&6Betäubung III'
+      - '&6+28 Stärke'
+      - ''
+      - '&d⚡ Ability: Bodenstoß'
+      - '&8Erdbeeben-AoE + Verlangsamung'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 65
+    attack-speed: 0.7
+    required-level: 55
+    required-class:
+      - KRIEGER
+
+KRIEGER_KRIEGSHAMMER_T6:
+  base:
+    material: NETHERITE_AXE
+    name: '&cMythischer Götterhammer'
+    lore:
+      - '&8Krieger Waffe (Kriegshammer)'
+      - ''
+      - '&7Der ultimative Hammer.'
+      - '&7Keine Rüstung kann'
+      - '&7seiner Macht widerstehen.'
+      - ''
+      - '&c70% Rüstungsdurchdringung'
+      - '&cBetäubung IV'
+      - '&c+42 Stärke'
+      - ''
+      - '&d⚡ Ability: Apokalypse'
+      - '&8Vernichtender Schlag + Schockwelle'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 98
+    attack-speed: 0.7
+    required-level: 78
+    required-class:
+      - KRIEGER

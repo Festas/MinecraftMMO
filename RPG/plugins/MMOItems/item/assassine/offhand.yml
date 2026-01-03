@@ -1,0 +1,269 @@
+# 🗡️ ASSASSINE OFFHAND
+# 12 Offhand Items: Zweite Dolche und Wurfmesser-Sets (je 6 Tiers)
+
+# ==================== ZWEITE DOLCHE ====================
+ASSASSINE_OFFHAND_DOLCH_T1:
+  base:
+    material: IRON_SWORD
+    name: '&fZweiter Dolch'
+    lore:
+      - '&8Assassine Offhand'
+      - ''
+      - '&7Ein zweiter Dolch für'
+      - '&7Dual-Wielding-Angriffe.'
+      - ''
+      - '&f+3% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 3
+    critical-strike-chance: 3
+    required-level: 1
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_OFFHAND_DOLCH_T2:
+  base:
+    material: IRON_SWORD
+    name: '&aZwillings-Dolch'
+    lore:
+      - '&8Assassine Offhand'
+      - ''
+      - '&7Ein Zwillingsdolch, der'
+      - '&7perfekt ausbalanciert ist.'
+      - ''
+      - '&a+8% Kritische Trefferchance'
+      - '&a+5% Angriffsgeschwindigkeit'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 5
+    critical-strike-chance: 8
+    attack-speed: 0.05
+    required-level: 12
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_OFFHAND_DOLCH_T3:
+  base:
+    material: DIAMOND_SWORD
+    name: '&9Schatten-Zwillingsdolch'
+    lore:
+      - '&8Assassine Offhand'
+      - ''
+      - '&7Ein dunkler Zwillingsdolch'
+      - '&7für blitzschnelle Angriffe.'
+      - ''
+      - '&9+15% Kritische Trefferchance'
+      - '&9+10% Angriffsgeschwindigkeit'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 7
+    critical-strike-chance: 15
+    attack-speed: 0.10
+    required-level: 22
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_OFFHAND_DOLCH_T4:
+  base:
+    material: DIAMOND_SWORD
+    name: '&5Runen-Zwillingsdolch'
+    lore:
+      - '&8Assassine Offhand'
+      - ''
+      - '&7Ein mit Runen verzierter'
+      - '&7Zwillingsdolch von großer'
+      - '&7Macht.'
+      - ''
+      - '&5+24% Kritische Trefferchance'
+      - '&5+18% Angriffsgeschwindigkeit'
+      - '&5+30% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 12
+    critical-strike-chance: 24
+    critical-strike-power: 30
+    attack-speed: 0.18
+    required-level: 38
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_OFFHAND_DOLCH_T5:
+  base:
+    material: NETHERITE_SWORD
+    name: '&6Legendärer Seelen-Zwilling'
+    lore:
+      - '&8Assassine Offhand'
+      - ''
+      - '&7Ein legendärer Zwillingsdolch,'
+      - '&7der mit seiner Hauptwaffe'
+      - '&7harmoniert.'
+      - ''
+      - '&6+36% Kritische Trefferchance'
+      - '&6+28% Angriffsgeschwindigkeit'
+      - '&6+55% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 18
+    critical-strike-chance: 36
+    critical-strike-power: 55
+    attack-speed: 0.28
+    required-level: 55
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_OFFHAND_DOLCH_T6:
+  base:
+    material: NETHERITE_SWORD
+    name: '&cMythischer Schatten-Zwilling'
+    lore:
+      - '&8Assassine Offhand'
+      - ''
+      - '&7Der ultimative Zwillingsdolch.'
+      - '&7Perfekte Harmonie mit der'
+      - '&7Hauptwaffe.'
+      - ''
+      - '&c+52% Kritische Trefferchance'
+      - '&c+40% Angriffsgeschwindigkeit'
+      - '&c+90% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 28
+    critical-strike-chance: 52
+    critical-strike-power: 90
+    attack-speed: 0.40
+    required-level: 78
+    required-class:
+      - ASSASSINE
+
+# ==================== WURFMESSER-SETS ====================
+ASSASSINE_OFFHAND_WURFSET_T1:
+  base:
+    material: SNOWBALL
+    name: '&fWurfmesser-Set'
+    lore:
+      - '&8Assassine Offhand'
+      - ''
+      - '&7Ein Set von Wurfmessern'
+      - '&7für Fernkampf-Angriffe.'
+      - ''
+      - '&fReichweite: 12 Blöcke'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 2
+    required-level: 1
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_OFFHAND_WURFSET_T2:
+  base:
+    material: SNOWBALL
+    name: '&aVerstärktes Wurfklingen-Set'
+    lore:
+      - '&8Assassine Offhand'
+      - ''
+      - '&7Ein verstärktes Set von'
+      - '&7Wurfklingen mit besserer'
+      - '&7Reichweite.'
+      - ''
+      - '&aReichweite: 18 Blöcke'
+      - '&a+4% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 4
+    critical-strike-chance: 4
+    required-level: 12
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_OFFHAND_WURFSET_T3:
+  base:
+    material: SNOWBALL
+    name: '&9Schatten-Klingen-Set'
+    lore:
+      - '&8Assassine Offhand'
+      - ''
+      - '&7Ein Set dunkler Klingen,'
+      - '&7die im Flug fast unsichtbar'
+      - '&7sind.'
+      - ''
+      - '&9Reichweite: 24 Blöcke'
+      - '&9+10% Kritische Trefferchance'
+      - '&9Gift I'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 6
+    critical-strike-chance: 10
+    required-level: 22
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_OFFHAND_WURFSET_T4:
+  base:
+    material: SNOWBALL
+    name: '&5Runen-Wurfklingen-Set'
+    lore:
+      - '&8Assassine Offhand'
+      - ''
+      - '&7Ein Set mit Runen verzierter'
+      - '&7Wurfklingen von großer'
+      - '&7Präzision.'
+      - ''
+      - '&5Reichweite: 28 Blöcke'
+      - '&5+18% Kritische Trefferchance'
+      - '&5Gift II'
+      - '&5Durchdringung'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 9
+    critical-strike-chance: 18
+    required-level: 38
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_OFFHAND_WURFSET_T5:
+  base:
+    material: SNOWBALL
+    name: '&6Legendäres Schatten-Stern-Set'
+    lore:
+      - '&8Assassine Offhand'
+      - ''
+      - '&7Ein legendäres Set von'
+      - '&7Sternenklingen für präzise'
+      - '&7Fernkampf-Angriffe.'
+      - ''
+      - '&6Reichweite: 32 Blöcke'
+      - '&6+28% Kritische Trefferchance'
+      - '&6Gift III'
+      - '&6+15% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 14
+    critical-strike-chance: 28
+    critical-strike-power: 15
+    required-level: 55
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_OFFHAND_WURFSET_T6:
+  base:
+    material: SNOWBALL
+    name: '&cMythisches Todes-Stern-Set'
+    lore:
+      - '&8Assassine Offhand'
+      - ''
+      - '&7Das ultimative Wurfklingen-Set.'
+      - '&7Jeder Wurf ist tödlich'
+      - '&7präzise.'
+      - ''
+      - '&cReichweite: 40 Blöcke'
+      - '&c+42% Kritische Trefferchance'
+      - '&cGift IV'
+      - '&c+40% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 22
+    critical-strike-chance: 42
+    critical-strike-power: 40
+    required-level: 78
+    required-class:
+      - ASSASSINE

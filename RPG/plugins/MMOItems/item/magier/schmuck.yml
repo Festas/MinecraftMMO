@@ -1,0 +1,277 @@
+# 🔮 MAGIER SCHMUCK
+# 12 Schmuckstücke: Ringe und Amulette (je 6 Tiers)
+
+# ==================== RINGE ====================
+MAGIER_RING_T1:
+  base:
+    material: GOLD_NUGGET
+    name: '&fEinfacher Manaring'
+    lore:
+      - '&8Magier Schmuck'
+      - ''
+      - '&7Ein einfacher Ring, der'
+      - '&7Mana und Intelligenz erhöht.'
+      - ''
+      - '&f+3 Intelligenz'
+      - '&f+10 Max. Mana'
+      - ''
+      - '&8Benötigt Level 1'
+    max-mana: 10
+    required-level: 1
+    required-class:
+      - MAGIER
+
+MAGIER_RING_T2:
+  base:
+    material: GOLD_NUGGET
+    name: '&aRing des Gelehrten'
+    lore:
+      - '&8Magier Schmuck'
+      - ''
+      - '&7Ein Ring für wissbegierige'
+      - '&7Gelehrte der Magie.'
+      - ''
+      - '&a+7 Intelligenz'
+      - '&a+25 Max. Mana'
+      - '&a+5% Skill-Schaden'
+      - ''
+      - '&8Benötigt Level 12'
+    max-mana: 25
+    skill-damage: 5
+    required-level: 12
+    required-class:
+      - MAGIER
+
+MAGIER_RING_T3:
+  base:
+    material: GOLD_NUGGET
+    name: '&9Ring der Weisheit'
+    lore:
+      - '&8Magier Schmuck'
+      - ''
+      - '&7Ein mächtiger Ring, der'
+      - '&7die Weisheit des Trägers'
+      - '&7verstärkt.'
+      - ''
+      - '&9+12 Intelligenz'
+      - '&9+45 Max. Mana'
+      - '&9+10% Skill-Schaden'
+      - ''
+      - '&8Benötigt Level 22'
+    max-mana: 45
+    skill-damage: 10
+    required-level: 22
+    required-class:
+      - MAGIER
+
+MAGIER_RING_T4:
+  base:
+    material: GOLD_NUGGET
+    name: '&5Runenring der Magie'
+    lore:
+      - '&8Magier Schmuck'
+      - ''
+      - '&7Mit Runen der Magie verziert,'
+      - '&7verstärkt dieser Ring alle'
+      - '&7magischen Fähigkeiten.'
+      - ''
+      - '&5+20 Intelligenz'
+      - '&5+80 Max. Mana'
+      - '&5+18% Skill-Schaden'
+      - '&5-5% Cooldown-Reduktion'
+      - ''
+      - '&8Benötigt Level 38'
+    max-mana: 80
+    skill-damage: 18
+    cooldown-reduction: 5
+    required-level: 38
+    required-class:
+      - MAGIER
+
+MAGIER_RING_T5:
+  base:
+    material: GOLD_NUGGET
+    name: '&6Legendärer Arkaner Ring'
+    lore:
+      - '&8Magier Schmuck'
+      - ''
+      - '&7Ein legendärer Ring,'
+      - '&7durchströmt von arkaner'
+      - '&7Energie.'
+      - ''
+      - '&6+34 Intelligenz'
+      - '&6+140 Max. Mana'
+      - '&6+28% Skill-Schaden'
+      - '&6-12% Cooldown-Reduktion'
+      - ''
+      - '&8Benötigt Level 55'
+    max-mana: 140
+    skill-damage: 28
+    cooldown-reduction: 12
+    required-level: 55
+    required-class:
+      - MAGIER
+
+MAGIER_RING_T6:
+  base:
+    material: GOLD_NUGGET
+    name: '&cMythischer Ring der Unendlichkeit'
+    lore:
+      - '&8Magier Schmuck'
+      - ''
+      - '&7Der ultimative Ring für'
+      - '&7Magier. Verleiht schier'
+      - '&7unendliche Macht.'
+      - ''
+      - '&c+55 Intelligenz'
+      - '&c+240 Max. Mana'
+      - '&c+42% Skill-Schaden'
+      - '&c-20% Cooldown-Reduktion'
+      - ''
+      - '&8Benötigt Level 78'
+    max-mana: 240
+    skill-damage: 42
+    cooldown-reduction: 20
+    required-level: 78
+    required-class:
+      - MAGIER
+
+# ==================== AMULETTE ====================
+MAGIER_AMULETT_T1:
+  base:
+    material: GOLD_INGOT
+    name: '&fEinfaches Mana-Amulett'
+    lore:
+      - '&8Magier Schmuck'
+      - ''
+      - '&7Ein einfaches Amulett, das'
+      - '&7die Mana-Reserven erhöht.'
+      - ''
+      - '&f+15 Max. Mana'
+      - ''
+      - '&8Benötigt Level 1'
+    max-mana: 15
+    required-level: 1
+    required-class:
+      - MAGIER
+
+MAGIER_AMULETT_T2:
+  base:
+    material: GOLD_INGOT
+    name: '&aAmulett der Konzentration'
+    lore:
+      - '&8Magier Schmuck'
+      - ''
+      - '&7Ein Amulett, das die'
+      - '&7Konzentration und Mana-'
+      - '&7Regeneration verbessert.'
+      - ''
+      - '&a+35 Max. Mana'
+      - '&a+5 Intelligenz'
+      - '&a+3% Mana-Regeneration'
+      - ''
+      - '&8Benötigt Level 12'
+    max-mana: 35
+    mana-regeneration: 3
+    required-level: 12
+    required-class:
+      - MAGIER
+
+MAGIER_AMULETT_T3:
+  base:
+    material: GOLD_INGOT
+    name: '&9Amulett des Arkanisten'
+    lore:
+      - '&8Magier Schmuck'
+      - ''
+      - '&7Ein mächtiges Amulett für'
+      - '&7Meister der arkanen Künste.'
+      - ''
+      - '&9+65 Max. Mana'
+      - '&9+10 Intelligenz'
+      - '&9+8% Mana-Regeneration'
+      - '&9+5% Skill-Schaden'
+      - ''
+      - '&8Benötigt Level 22'
+    max-mana: 65
+    mana-regeneration: 8
+    skill-damage: 5
+    required-level: 22
+    required-class:
+      - MAGIER
+
+MAGIER_AMULETT_T4:
+  base:
+    material: GOLD_INGOT
+    name: '&5Runen-Amulett der Macht'
+    lore:
+      - '&8Magier Schmuck'
+      - ''
+      - '&7Mit Runen der Macht verziert,'
+      - '&7verstärkt dieses Amulett alle'
+      - '&7magischen Eigenschaften.'
+      - ''
+      - '&5+115 Max. Mana'
+      - '&5+18 Intelligenz'
+      - '&5+15% Mana-Regeneration'
+      - '&5+12% Skill-Schaden'
+      - ''
+      - '&8Benötigt Level 38'
+    max-mana: 115
+    mana-regeneration: 15
+    skill-damage: 12
+    required-level: 38
+    required-class:
+      - MAGIER
+
+MAGIER_AMULETT_T5:
+  base:
+    material: GOLD_INGOT
+    name: '&6Legendäres Archmage-Amulett'
+    lore:
+      - '&8Magier Schmuck'
+      - ''
+      - '&7Das Amulett eines Erzmagiers,'
+      - '&7verleiht Feuer-Immunität'
+      - '&7und immense Macht.'
+      - ''
+      - '&6+195 Max. Mana'
+      - '&6+32 Intelligenz'
+      - '&6+25% Mana-Regeneration'
+      - '&6+22% Skill-Schaden'
+      - ''
+      - '&dImmunität: Feuer'
+      - ''
+      - '&8Benötigt Level 55'
+    max-mana: 195
+    mana-regeneration: 25
+    skill-damage: 22
+    required-level: 55
+    required-class:
+      - MAGIER
+
+MAGIER_AMULETT_T6:
+  base:
+    material: GOLD_INGOT
+    name: '&cMythisches Götter-Amulett'
+    lore:
+      - '&8Magier Schmuck'
+      - ''
+      - '&7Das ultimative Amulett.'
+      - '&7Verleiht Immunität gegen'
+      - '&7alle Elemente.'
+      - ''
+      - '&c+335 Max. Mana'
+      - '&c+52 Intelligenz'
+      - '&c+40% Mana-Regeneration'
+      - '&c+35% Skill-Schaden'
+      - ''
+      - '&dElementar-Immunität'
+      - ''
+      - '&8Benötigt Level 78'
+    max-mana: 335
+    mana-regeneration: 40
+    skill-damage: 35
+    required-level: 78
+    required-class:
+      - MAGIER

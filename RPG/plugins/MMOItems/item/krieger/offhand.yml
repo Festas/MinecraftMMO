@@ -1,0 +1,149 @@
+# ⚔️ KRIEGER OFFHAND
+# 6 Schilde (je 6 Tiers)
+
+# ==================== SCHILDE ====================
+KRIEGER_SCHILD_T1:
+  base:
+    material: SHIELD
+    name: '&fHolzschild'
+    lore:
+      - '&8Krieger Offhand'
+      - ''
+      - '&7Ein einfacher Holzschild,'
+      - '&7der grundlegenden Schutz bietet.'
+      - ''
+      - '&fBlockchance: 15%'
+      - '&f+10 Max. HP'
+      - ''
+      - '&8Benötigt Level 1'
+    max-health: 10
+    block-rating: 15
+    required-level: 1
+    required-class:
+      - KRIEGER
+
+KRIEGER_SCHILD_T2:
+  base:
+    material: SHIELD
+    name: '&aEisenschild des Lernenden'
+    lore:
+      - '&8Krieger Offhand'
+      - ''
+      - '&7Ein solider Eisenschild'
+      - '&7für aufstrebende Krieger.'
+      - ''
+      - '&aBlockchance: 20%'
+      - '&a+25 Max. HP'
+      - '&a+3 Rüstung'
+      - ''
+      - '&8Benötigt Level 12'
+    max-health: 25
+    armor: 3
+    block-rating: 20
+    required-level: 12
+    required-class:
+      - KRIEGER
+
+KRIEGER_SCHILD_T3:
+  base:
+    material: SHIELD
+    name: '&9Stahlschild der Abwehr'
+    lore:
+      - '&8Krieger Offhand'
+      - ''
+      - '&7Ein verstärkter Stahlschild'
+      - '&7mit hervorragenden'
+      - '&7Abwehreigenschaften.'
+      - ''
+      - '&9Blockchance: 25%'
+      - '&9+45 Max. HP'
+      - '&9+6 Rüstung'
+      - '&9+5 Stärke'
+      - ''
+      - '&8Benötigt Level 22'
+    max-health: 45
+    armor: 6
+    block-rating: 25
+    required-level: 22
+    required-class:
+      - KRIEGER
+
+KRIEGER_SCHILD_T4:
+  base:
+    material: SHIELD
+    name: '&5Runenschild des Meisters'
+    lore:
+      - '&8Krieger Offhand'
+      - ''
+      - '&7Mit Schutzrunen verziert,'
+      - '&7reflektiert dieser Schild'
+      - '&7einen Teil des Schadens.'
+      - ''
+      - '&5Blockchance: 30%'
+      - '&5+75 Max. HP'
+      - '&5+10 Rüstung'
+      - '&5+10 Stärke'
+      - ''
+      - '&dReflection: 5% Schaden'
+      - ''
+      - '&8Benötigt Level 38'
+    max-health: 75
+    armor: 10
+    block-rating: 30
+    required-level: 38
+    required-class:
+      - KRIEGER
+
+KRIEGER_SCHILD_T5:
+  base:
+    material: SHIELD
+    name: '&6Legendärer Drachen-Schild'
+    lore:
+      - '&8Krieger Offhand'
+      - ''
+      - '&7Aus Drachenschuppen gefertigt,'
+      - '&7ist dieser Schild nahezu'
+      - '&7unzerstörbar.'
+      - ''
+      - '&6Blockchance: 35%'
+      - '&6+120 Max. HP'
+      - '&6+16 Rüstung'
+      - '&6+18 Stärke'
+      - ''
+      - '&dReflection: 10% Schaden'
+      - '&d+5% Schadensreduzierung'
+      - ''
+      - '&8Benötigt Level 55'
+    max-health: 120
+    armor: 16
+    block-rating: 35
+    required-level: 55
+    required-class:
+      - KRIEGER
+
+KRIEGER_SCHILD_T6:
+  base:
+    material: SHIELD
+    name: '&cMythischer Titan-Schild'
+    lore:
+      - '&8Krieger Offhand'
+      - ''
+      - '&7Der ultimative Schild.'
+      - '&7Einst von einem Titanen'
+      - '&7getragen, ist er unzerstörbar.'
+      - ''
+      - '&cBlockchance: 45%'
+      - '&c+190 Max. HP'
+      - '&c+25 Rüstung'
+      - '&c+28 Stärke'
+      - ''
+      - '&dReflection: 20% Schaden'
+      - '&d+10% Schadensreduzierung'
+      - ''
+      - '&8Benötigt Level 78'
+    max-health: 190
+    armor: 25
+    block-rating: 45
+    required-level: 78
+    required-class:
+      - KRIEGER
