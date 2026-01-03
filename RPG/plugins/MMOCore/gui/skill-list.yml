@@ -1,5 +1,5 @@
 # GUI display name
-name: 'Selected Skill: &6{skill}'
+name: 'Ausgewählter Skill: &6{skill}'
 
 # Number of slots in your inventory. Must be
 # between 9 and 54 and must be a multiple of 9.
@@ -13,9 +13,9 @@ items:
     name: '&a{skill} &6[{level}]'
     lore:
       - ''
-      - '{unlocked}&a✔ Requires Level {unlock}'
-      - '{locked}&c✖ Requires Level {unlock}'
-      - '{max_level}&e✔ Maximum Level Hit!'
+      - '{unlocked}&a✔ Benötigt Level {unlock}'
+      - '{locked}&c✖ Benötigt Level {unlock}'
+      - '{max_level}&e✔ Maximales Level erreicht!'
       - ''
       - '{lore}'
   next:
@@ -23,47 +23,47 @@ items:
     function: next
     item: PLAYER_HEAD
     texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
-    name: '&aNext'
+    name: '&aWeiter'
     lore: { }
   previous:
     slots: [ 2 ]
     function: previous
     item: PLAYER_HEAD
     texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
-    name: '&aPrevious'
+    name: '&aZurück'
     lore: { }
 
   reallocate:
     slots: [45]
     function: reallocation
     item: CAULDRON
-    name: '&aReallocate Skill Points'
+    name: '&aSkillpunkte neu verteilen'
     lore:
       - ''
-      - 'You have spent a total of &6{total}&7 skill points.'
-      - '&7Right click to reallocate them.'
+      - 'Du hast insgesamt &6{total}&7 Skillpunkte ausgegeben.'
+      - '&7Rechtsklick zum Neu verteilen.'
       - ''
-      - '&eCosts 1 skill reallocation point.'
-      - '&e◆ Skill Reallocation Points: &6{points}'
+      - '&eKostet 1 Skill-Neuverteilungspunkt.'
+      - '&e◆ Skill-Neuverteilungspunkte: &6{points}'
 
   slot:
     slots: [ 7,8,17,26,35,44,53 ]
     function: slot
     item: GRAY_DYE
 
-    name: '&aSkill Slot {slot}'
-    no-skill: '&cNone'
+    name: '&aFähigkeiten-Slot {slot}'
+    no-skill: '&cKeine'
     lore:
-      - '&7Current Skill: &6{skill}'
+      - '&7Aktueller Skill: &6{skill}'
       - ''
       - '{slot-lore}'
       - ''
-      - '&7&oCast this spell by pressing [F] followed'
-      - '&7&oby the keybind displayed on the action bar.'
+      - '&7&oWirke diesen Zauber mit [F] gefolgt'
+      - '&7&ovon der angezeigten Taste.'
       - ''
-      - '&e► Left click to bind {selected}.'
-      - '&e► Right click to unbind.'
-      - '&e► Shift left click to select.'
+      - '&e► Linksklick um {selected} zu binden.'
+      - '&e► Rechtsklick zum Lösen.'
+      - '&e► Shift+Linksklick zum Auswählen.'
   skill-level:
     slots: [ 6,15,24,33,42,51 ]
     function: level
@@ -89,8 +89,8 @@ items:
     item: GREEN_STAINED_GLASS_PANE
     name: '&a&lUPGRADE {skill_caps}'
     lore:
-      - '&7Costs 1 skill point.'
+      - '&7Kostet 1 Skillpunkt.'
       - ''
-      - '&eCurrent Skill Points: {skill_points}'
+      - '&eAktuelle Skillpunkte: {skill_points}'
 
 #aee9a606e111e02c29d52ab339f31451

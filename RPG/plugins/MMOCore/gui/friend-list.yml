@@ -1,5 +1,5 @@
 # GUI display name
-name: Friends
+name: Freundesliste
 
 # Number of slots in your inventory. Must be
 # between 9 and 54 and must be a multiple of 9.
@@ -12,7 +12,7 @@ items:
 
     # No friend
     item: GRAY_STAINED_GLASS_PANE
-    name: '&cNo Friend'
+    name: '&cKein Freund'
     lore: { }
 
     #custom_model_data_float: 0.45        # 1.20.4+ Float custom model data. Either this, or string option above works completely fine
@@ -32,21 +32,21 @@ items:
       name: '&a[Online] &f{name}'
       lore:
         - '&7Level {level} {class}'
-        - '&7Online Since: {online_since}'
+        - '&7Online Seit: {online_since}'
         - ''
-        - '&cRight click to remove.'
+        - '&cRechtsklick zum Entfernen.'
 
     # Offline friend
     offline:
       item: PLAYER_HEAD
       name: '&c[Offline] &f{name}'
       lore:
-        - '&7Last Seen: {last_seen} ago'
+        - '&7Zuletzt gesehen: vor {last_seen}'
         - ''
-        - '&cRight click to remove.'
+        - '&cRechtsklick zum Entfernen.'
   request:
     slots: [ 49 ]
     function: request
     item: WRITABLE_BOOK
-    name: '&aNew Friend Request'
+    name: '&aNeue Freundschaftsanfrage'
     lore: { }
