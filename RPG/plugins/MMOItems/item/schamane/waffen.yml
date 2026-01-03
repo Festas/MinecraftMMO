@@ -1,0 +1,410 @@
+# 🌿 SCHAMANE WAFFEN
+# 18 Waffen: Naturstäbe, Ritualwaffen, Sicheln (je 6 Tiers)
+
+# ==================== NATURSTÄBE ====================
+SCHAMANE_NATURSTAB_T1:
+  base:
+    material: STICK
+    name: '&fEinfacher Holzstab'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Ein einfacher Stab aus Holz'
+      - '&7mit schwacher Naturmagie.'
+      - ''
+      - '&f+5 HP/s Heilung'
+      - ''
+      - '&8Benötigt Level 1'
+    magic-damage: 5
+    health-regeneration: 5
+    required-level: 1
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_NATURSTAB_T2:
+  base:
+    material: STICK
+    name: '&aLebendiger Eichenstab'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Ein Stab aus lebendiger Eiche,'
+      - '&7durchströmt von Naturkraft.'
+      - ''
+      - '&a+10 HP/s Heilung'
+      - '&a+8% Heilungskraft'
+      - ''
+      - '&8Benötigt Level 12'
+    magic-damage: 8
+    health-regeneration: 10
+    required-level: 12
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_NATURSTAB_T3:
+  base:
+    material: BLAZE_ROD
+    name: '&9Stab des Lebens'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Ein seltener Stab, der'
+      - '&7Leben wiederherstellt.'
+      - ''
+      - '&9+18 HP/s Heilung'
+      - '&9+18% Heilungskraft'
+      - '&9Regeneration I'
+      - ''
+      - '&8Benötigt Level 22'
+    magic-damage: 13
+    health-regeneration: 18
+    required-level: 22
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_NATURSTAB_T4:
+  base:
+    material: BLAZE_ROD
+    name: '&5Runen-Naturstab'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Runen verstärken die'
+      - '&7Heilkraft der Natur.'
+      - ''
+      - '&5+30 HP/s Heilung'
+      - '&5+32% Heilungskraft'
+      - '&5Regeneration II'
+      - '&5+Totem-Radius'
+      - ''
+      - '&8Benötigt Level 38'
+    magic-damage: 20
+    health-regeneration: 30
+    required-level: 38
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_NATURSTAB_T5:
+  base:
+    material: END_ROD
+    name: '&6Legendärer Weltenbaum-Stab'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Geschaffen aus dem Holz des'
+      - '&7legendären Weltenbaums.'
+      - ''
+      - '&6+50 HP/s Heilung'
+      - '&6+55% Heilungskraft'
+      - '&6Regeneration III'
+      - ''
+      - '&d⚡ Ability: Lebens-Explosion'
+      - '&8(AoE-Heilung für Gruppe)'
+      - ''
+      - '&8Benötigt Level 55'
+    magic-damage: 31
+    health-regeneration: 50
+    required-level: 55
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_NATURSTAB_T6:
+  base:
+    material: END_ROD
+    name: '&cMythischer Urwald-Stab'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Ein göttlicher Stab mit'
+      - '&7der Urgewalt der Natur.'
+      - ''
+      - '&c+85 HP/s Heilung'
+      - '&c+92% Heilungskraft'
+      - '&cRegeneration IV'
+      - ''
+      - '&d⚡ Ability: Naturgewalt'
+      - '&8(Massive Heilung + Schaden)'
+      - ''
+      - '&8Benötigt Level 78'
+    magic-damage: 48
+    health-regeneration: 85
+    required-level: 78
+    required-class:
+      - SCHAMANE
+
+# ==================== RITUALWAFFEN ====================
+SCHAMANE_RITUAL_T1:
+  base:
+    material: IRON_AXE
+    name: '&fEinfache Ritualaxt'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Eine einfache Axt für'
+      - '&7schamanische Rituale.'
+      - ''
+      - '&f+15 Mana'
+      - '&f+3% Heilungskraft'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 6
+    max-mana: 15
+    required-level: 1
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_RITUAL_T2:
+  base:
+    material: IRON_AXE
+    name: '&aSchamanenaxt'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Eine Axt, gesegnet von'
+      - '&7den Geistern der Natur.'
+      - ''
+      - '&a+30 Mana'
+      - '&a+10% Heilungskraft'
+      - '&a+5 HP Regeneration'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 10
+    max-mana: 30
+    health-regeneration: 5
+    required-level: 12
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_RITUAL_T3:
+  base:
+    material: DIAMOND_AXE
+    name: '&9Geister-Ritualaxt'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Eine Axt, die Geister'
+      - '&7beschwören kann.'
+      - ''
+      - '&9+55 Mana'
+      - '&9+20% Heilungskraft'
+      - '&9+10 HP Regeneration'
+      - '&9Geister-Beschwörung'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 15
+    max-mana: 55
+    health-regeneration: 10
+    required-level: 22
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_RITUAL_T4:
+  base:
+    material: DIAMOND_AXE
+    name: '&5Runen-Ritualaxt'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Runen verstärken deine'
+      - '&7Totems und Heilungen.'
+      - ''
+      - '&5+95 Mana'
+      - '&5+35% Heilungskraft'
+      - '&5+18 HP Regeneration'
+      - '&5Totem-Verstärkung I'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 24
+    max-mana: 95
+    health-regeneration: 18
+    required-level: 38
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_RITUAL_T5:
+  base:
+    material: NETHERITE_AXE
+    name: '&6Legendäre Ahnenaxt'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Die Axt der Ahnen, erfüllt'
+      - '&7mit uralter Macht.'
+      - ''
+      - '&6+160 Mana'
+      - '&6+58% Heilungskraft'
+      - '&6+30 HP Regeneration'
+      - '&6Totem-Verstärkung II'
+      - ''
+      - '&d⚡ Ability: Ahnenruf'
+      - '&8(Beschwört mächtige Geister)'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 36
+    max-mana: 160
+    health-regeneration: 30
+    required-level: 55
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_RITUAL_T6:
+  base:
+    material: NETHERITE_AXE
+    name: '&cMythische Götteraxt'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Eine göttliche Axt mit'
+      - '&7unermesslicher Heilkraft.'
+      - ''
+      - '&c+280 Mana'
+      - '&c+95% Heilungskraft'
+      - '&c+52 HP Regeneration'
+      - '&cTotem-Verstärkung III'
+      - ''
+      - '&d⚡ Ability: Göttlicher Segen'
+      - '&8(Unverwundbarkeit + Heilung)'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 55
+    max-mana: 280
+    health-regeneration: 52
+    required-level: 78
+    required-class:
+      - SCHAMANE
+
+# ==================== SICHELN ====================
+SCHAMANE_SICHEL_T1:
+  base:
+    material: IRON_HOE
+    name: '&fEinfache Erntesichel'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Eine einfache Sichel für'
+      - '&7schnelle Angriffe.'
+      - ''
+      - '&fBlutung I (2s)'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 5
+    attack-speed: 1.6
+    required-level: 1
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_SICHEL_T2:
+  base:
+    material: IRON_HOE
+    name: '&aSchamanensichel'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Eine Sichel mit der Kraft'
+      - '&7der Natur.'
+      - ''
+      - '&aBlutung II (3s)'
+      - '&a+5% Lebensraub'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 8
+    attack-speed: 1.6
+    lifesteal: 5
+    required-level: 12
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_SICHEL_T3:
+  base:
+    material: DIAMOND_HOE
+    name: '&9Giftsichel'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Eine vergiftete Sichel für'
+      - '&7anhaltenden Schaden.'
+      - ''
+      - '&9Blutung III (5s)'
+      - '&9Gift II'
+      - '&9+10% Lebensraub'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 13
+    attack-speed: 1.6
+    lifesteal: 10
+    required-level: 22
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_SICHEL_T4:
+  base:
+    material: DIAMOND_HOE
+    name: '&5Runen-Sichel'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Runen verstärken die'
+      - '&7zersetzende Kraft.'
+      - ''
+      - '&5Blutung IV (7s)'
+      - '&5Gift III'
+      - '&5+18% Lebensraub'
+      - '&5Verrottung'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 20
+    attack-speed: 1.6
+    lifesteal: 18
+    required-level: 38
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_SICHEL_T5:
+  base:
+    material: NETHERITE_HOE
+    name: '&6Legendäre Todessichel'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Eine legendäre Sichel, die'
+      - '&7Seelen erntet.'
+      - ''
+      - '&6Blutung V (10s)'
+      - '&6Gift IV'
+      - '&6+30% Lebensraub'
+      - ''
+      - '&d⚡ Ability: Seelenernte'
+      - '&8(Massiver DoT-Schaden)'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 31
+    attack-speed: 1.6
+    lifesteal: 30
+    required-level: 55
+    required-class:
+      - SCHAMANE
+
+SCHAMANE_SICHEL_T6:
+  base:
+    material: NETHERITE_HOE
+    name: '&cMythische Sensenklinge'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Eine göttliche Sense mit'
+      - '&7verheerender Macht.'
+      - ''
+      - '&cBlutung VI (15s)'
+      - '&cGift V'
+      - '&c+50% Lebensraub'
+      - ''
+      - '&d⚡ Ability: Tod und Wiedergeburt'
+      - '&8(Tötet und heilt gleichzeitig)'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 47
+    attack-speed: 1.6
+    lifesteal: 50
+    required-level: 78
+    required-class:
+      - SCHAMANE
