@@ -140,7 +140,7 @@ ASSASSINE_RING_T6:
 ASSASSINE_AMULETT_T1:
   base:
     material: GOLD_INGOT
-    name: '&fEinfaches Schattenamullet'
+    name: '&fEinfaches Schattenamullett'
     lore:
       - '&8Assassine Schmuck'
       - ''

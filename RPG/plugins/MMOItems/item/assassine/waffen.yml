@@ -355,7 +355,6 @@ ASSASSINE_KLAUE_T3:
     attack-damage: 11
     attack-speed: 2.2
     critical-strike-chance: 15
-    attack-speed-bonus: 0.10
     required-level: 22
     required-class:
       - ASSASSINE
@@ -379,7 +378,6 @@ ASSASSINE_KLAUE_T4:
     attack-damage: 17
     attack-speed: 2.2
     critical-strike-chance: 24
-    attack-speed-bonus: 0.18
     required-level: 38
     required-class:
       - ASSASSINE
@@ -406,7 +404,6 @@ ASSASSINE_KLAUE_T5:
     attack-damage: 27
     attack-speed: 2.2
     critical-strike-chance: 35
-    attack-speed-bonus: 0.28
     required-level: 55
     required-class:
       - ASSASSINE
@@ -432,7 +429,6 @@ ASSASSINE_KLAUE_T6:
     attack-damage: 41
     attack-speed: 2.2
     critical-strike-chance: 48
-    attack-speed-bonus: 0.40
     required-level: 78
     required-class:
       - ASSASSINE
