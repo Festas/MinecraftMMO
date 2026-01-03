@@ -1,7 +1,7 @@
-# 💀 NEKROMANT (Necromancer)
+# 💀 BESCHWÖRER (Necromancer/Summoner)
 
 ## Übersicht
-Der **Nekromant** ist der Meister der dunklen Künste und des Todes. Mit der Macht, Untote zu beschwören und Seelen zu manipulieren, kontrolliert er das Schlachtfeld durch seine Diener. Die Klasse fokussiert sich auf Beschwörungen, Flüche und Lebensraub.
+Der **Beschwörer** ist der Meister der dunklen Künste und des Todes. Mit der Macht, Untote zu beschwören und Seelen zu manipulieren, kontrolliert er das Schlachtfeld durch seine Diener. Die Klasse fokussiert sich auf Beschwörungen, Flüche und Lebensraub.
 
 **Spielstil**: Beschwörungs-basierter Caster mit Pets und Fluch-Mechaniken. Fokus auf Seelenernte, Lebensraub und Kontrolle durch Untote.
 
@@ -44,7 +44,7 @@ Der **Nekromant** ist der Meister der dunklen Künste und des Todes. Mit der Mac
 |----|------|------|-------|---------|-------------|--------------|
 | NEKROMANT_KNOCHENSTAB_T1 | Einfacher Knochenstab | Gewöhnlich | 1 | 5-8 | +1 Skeleton | - |
 | NEKROMANT_KNOCHENSTAB_T2 | Verfluchter Knochenstab | Ungewöhnlich | 12 | 9-13 | +2 Skeletons | +10% Pet-Schaden, 5% Lebensraub |
-| NEKROMANT_KNOCHENSTAB_T3 | Nekromantischer Stab | Selten | 22 | 14-20 | +3 Skeletons | +22% Pet-Schaden, 10% Lebensraub, Seelenernte I |
+| NEKROMANT_KNOCHENSTAB_T3 | Beschwörer-Stab | Selten | 22 | 14-20 | +3 Skeletons | +22% Pet-Schaden, 10% Lebensraub, Seelenernte I |
 | NEKROMANT_KNOCHENSTAB_T4 | Runen-Totenstab | Episch | 38 | 21-30 | +4 Skeletons + Zombie | +38% Pet-Schaden, 18% Lebensraub, Seelenernte II, Fluch I |
 | NEKROMANT_KNOCHENSTAB_T5 | Legendärer Lichkönig-Stab | Legendär | 55 | 32-46 | +5 Skeletons + Lich | +65% Pet-Schaden, 30% Lebensraub, Ability: Armee der Toten |
 | NEKROMANT_KNOCHENSTAB_T6 | Mythischer Todeskönig-Stab | Mythisch | 78 | 49-70 | +7 Skeletons + Todesknight | +110% Pet-Schaden, 50% Lebensraub, Ability: Apokalypse der Untoten |
@@ -77,7 +77,7 @@ Der **Nekromant** ist der Meister der dunklen Künste und des Todes. Mit der Mac
 |----|------|------|-------|---------|-------------|--------------|
 | NEKROMANT_KAPUZE_T1 | Alte Dunkle Kapuze | Gewöhnlich | 1 | 1 | +5% Pet-Schaden | - |
 | NEKROMANT_KAPUZE_T2 | Schattenkapuze | Ungewöhnlich | 12 | 2 | +12% Pet-Schaden | +5% Lebensraub |
-| NEKROMANT_KAPUZE_T3 | Nekromanten-Kapuze | Selten | 22 | 3 | +22% Pet-Schaden | +12% Lebensraub, +1 Max Pets |
+| NEKROMANT_KAPUZE_T3 | Beschwörer-Kapuze | Selten | 22 | 3 | +22% Pet-Schaden | +12% Lebensraub, +1 Max Pets |
 | NEKROMANT_KAPUZE_T4 | Runen-Totenkapuze | Episch | 38 | 5 | +38% Pet-Schaden | +22% Lebensraub, +2 Max Pets, +10 Max Seelen |
 | NEKROMANT_KAPUZE_T5 | Legendäre Lichkönig-Kapuze | Legendär | 55 | 8 | +65% Pet-Schaden | +38% Lebensraub, +3 Max Pets, +20 Max Seelen |
 | NEKROMANT_KAPUZE_T6 | Mythische Todeskönig-Kapuze | Mythisch | 78 | 12 | +110% Pet-Schaden | +65% Lebensraub, +5 Max Pets, +35 Max Seelen |
@@ -88,7 +88,7 @@ Der **Nekromant** ist der Meister der dunklen Künste und des Todes. Mit der Mac
 |----|------|------|-------|---------|-------------|--------------|
 | NEKROMANT_ROBE_T1 | Alte Dunkle Robe | Gewöhnlich | 1 | 2 | +8% Pet-Schaden | - |
 | NEKROMANT_ROBE_T2 | Schattenrobe | Ungewöhnlich | 12 | 4 | +18% Pet-Schaden | +8% Lebensraub |
-| NEKROMANT_ROBE_T3 | Nekromanten-Robe | Selten | 22 | 6 | +32% Pet-Schaden | +18% Lebensraub, +5% Fluch-Stärke |
+| NEKROMANT_ROBE_T3 | Beschwörer-Robe | Selten | 22 | 6 | +32% Pet-Schaden | +18% Lebensraub, +5% Fluch-Stärke |
 | NEKROMANT_ROBE_T4 | Runen-Totenrobe | Episch | 38 | 9 | +55% Pet-Schaden | +32% Lebensraub, +15% Fluch-Stärke, +15 Max Seelen |
 | NEKROMANT_ROBE_T5 | Legendäre Lichkönig-Robe | Legendär | 55 | 14 | +95% Pet-Schaden | +55% Lebensraub, +28% Fluch-Stärke, +30 Max Seelen |
 | NEKROMANT_ROBE_T6 | Mythische Todeskönig-Robe | Mythisch | 78 | 21 | +160% Pet-Schaden | +95% Lebensraub, +50% Fluch-Stärke, +50 Max Seelen |
@@ -99,7 +99,7 @@ Der **Nekromant** ist der Meister der dunklen Künste und des Todes. Mit der Mac
 |----|------|------|-------|---------|-------------|--------------|
 | NEKROMANT_HOSE_T1 | Alte Dunkle Hose | Gewöhnlich | 1 | 1 | +6% Pet-Schaden | - |
 | NEKROMANT_HOSE_T2 | Schattenhose | Ungewöhnlich | 12 | 3 | +15% Pet-Schaden | +6% Lebensraub |
-| NEKROMANT_HOSE_T3 | Nekromanten-Hose | Selten | 22 | 5 | +28% Pet-Schaden | +15% Lebensraub, +3% Fluch-Stärke |
+| NEKROMANT_HOSE_T3 | Beschwörer-Hose | Selten | 22 | 5 | +28% Pet-Schaden | +15% Lebensraub, +3% Fluch-Stärke |
 | NEKROMANT_HOSE_T4 | Runen-Totenhose | Episch | 38 | 7 | +48% Pet-Schaden | +28% Lebensraub, +12% Fluch-Stärke, +12 Max Seelen |
 | NEKROMANT_HOSE_T5 | Legendäre Lichkönig-Hose | Legendär | 55 | 11 | +82% Pet-Schaden | +48% Lebensraub, +22% Fluch-Stärke, +25 Max Seelen |
 | NEKROMANT_HOSE_T6 | Mythische Todeskönig-Hose | Mythisch | 78 | 17 | +140% Pet-Schaden | +82% Lebensraub, +42% Fluch-Stärke, +42 Max Seelen |
@@ -110,7 +110,7 @@ Der **Nekromant** ist der Meister der dunklen Künste und des Todes. Mit der Mac
 |----|------|------|-------|---------|-------------|--------------|
 | NEKROMANT_SCHUHE_T1 | Alte Dunkle Schuhe | Gewöhnlich | 1 | 1 | +4% Pet-Schaden | +2% Bewegungsgeschw. |
 | NEKROMANT_SCHUHE_T2 | Schattenschuhe | Ungewöhnlich | 12 | 2 | +10% Pet-Schaden | +5% Bewegungsgeschw., +4% Lebensraub |
-| NEKROMANT_SCHUHE_T3 | Nekromanten-Schuhe | Selten | 22 | 3 | +18% Pet-Schaden | +10% Bewegungsgeschw., +10% Lebensraub |
+| NEKROMANT_SCHUHE_T3 | Beschwörer-Schuhe | Selten | 22 | 3 | +18% Pet-Schaden | +10% Bewegungsgeschw., +10% Lebensraub |
 | NEKROMANT_SCHUHE_T4 | Runen-Totenschuhe | Episch | 38 | 4 | +32% Pet-Schaden | +15% Bewegungsgeschw., +18% Lebensraub, +8 Max Seelen |
 | NEKROMANT_SCHUHE_T5 | Legendäre Lichkönig-Schuhe | Legendär | 55 | 6 | +55% Pet-Schaden | +22% Bewegungsgeschw., +32% Lebensraub, +18 Max Seelen |
 | NEKROMANT_SCHUHE_T6 | Mythische Todeskönig-Schuhe | Mythisch | 78 | 9 | +92% Pet-Schaden | +32% Bewegungsgeschw., +55% Lebensraub, +30 Max Seelen |
@@ -132,7 +132,7 @@ Der **Nekromant** ist der Meister der dunklen Künste und des Todes. Mit der Mac
 |----|------|------|-------|--------------|
 | NEKROMANT_AMULETT_T1 | Einfaches Totenamulett | Gewöhnlich | 1 | +8% Pet-Schaden, +5% Lebensraub |
 | NEKROMANT_AMULETT_T2 | Amulett der Verdammnis | Ungewöhnlich | 12 | +18% Pet-Schaden, +12% Lebensraub, +5 Max Seelen |
-| NEKROMANT_AMULETT_T3 | Amulett des Nekromanten | Selten | 22 | +32% Pet-Schaden, +22% Lebensraub, +12 Max Seelen, +8% Fluch |
+| NEKROMANT_AMULETT_T3 | Amulett des Beschwörers | Selten | 22 | +32% Pet-Schaden, +22% Lebensraub, +12 Max Seelen, +8% Fluch |
 | NEKROMANT_AMULETT_T4 | Runen-Amulett des Todes | Episch | 38 | +55% Pet-Schaden, +38% Lebensraub, +22 Max Seelen, +18% Fluch, Untoten-Immunität |
 | NEKROMANT_AMULETT_T5 | Legendäres Lich-Amulett | Legendär | 55 | +95% Pet-Schaden, +65% Lebensraub, +38 Max Seelen, +32% Fluch, Untoten & Gift-Immunität |
 | NEKROMANT_AMULETT_T6 | Mythisches Todesamulett | Mythisch | 78 | +160% Pet-Schaden, +110% Lebensraub, +65 Max Seelen, +55% Fluch, Alle Dunkle-Immunitäten |
@@ -154,14 +154,14 @@ Der **Nekromant** ist der Meister der dunklen Künste und des Todes. Mit der Mac
 |----|------|------|-------|-------------|--------------|
 | NEKROMANT_SCHAEDEL_T1 | Alter Totenschädel | Gewöhnlich | 1 | +5% | +3% Pet-Schaden |
 | NEKROMANT_SCHAEDEL_T2 | Verfluchter Schädel | Ungewöhnlich | 12 | +12% | +8% Pet-Schaden, +5% Lebensraub |
-| NEKROMANT_SCHAEDEL_T3 | Nekromanten-Schädel | Selten | 22 | +22% | +15% Pet-Schaden, +12% Lebensraub, Fluch-Aura |
+| NEKROMANT_SCHAEDEL_T3 | Beschwörer-Schädel | Selten | 22 | +22% | +15% Pet-Schaden, +12% Lebensraub, Fluch-Aura |
 | NEKROMANT_SCHAEDEL_T4 | Runen-Totenschädel | Episch | 38 | +38% | +28% Pet-Schaden, +22% Lebensraub, Starke Fluch-Aura |
 | NEKROMANT_SCHAEDEL_T5 | Legendärer Lich-Schädel | Legendär | 55 | +65% | +48% Pet-Schaden, +38% Lebensraub, Massenfluch-Aura |
 | NEKROMANT_SCHAEDEL_T6 | Mythischer Götter-Schädel | Mythisch | 78 | +110% | +82% Pet-Schaden, +65% Lebensraub, Apokalyptische Fluch-Aura |
 
 ## Set-Boni
 
-### T4 Set - Runen-Nekromant (4 Teile)
+### T4 Set - Runen-Beschwörer (4 Teile)
 - **2 Teile**: +40% Pet-Schaden, +25% Lebensraub, +20 Max Seelen
 - **3 Teile**: +70% Pet-Schaden, +45% Lebensraub, +35 Max Seelen, +2 Max Pets
 - **4 Teile**: +120% Pet-Schaden, +75% Lebensraub, +60 Max Seelen, +3 Max Pets, Ability: Armee der Verdammten
@@ -179,13 +179,13 @@ Der **Nekromant** ist der Meister der dunklen Künste und des Todes. Mit der Mac
 ## Besondere Mechaniken
 
 ### Beschwörungs-System
-Nekromanten können verschiedene Untote beschwören:
+Beschwörer können verschiedene Untote beschwören:
 - **Skeletons (T1+)**: Basis-Nahkämpfer, 1-7 gleichzeitig
 - **Zombies (T4+)**: Tanky-Nahkämpfer, langsam aber stark
 - **Lich (T5+)**: Magischer Fernkämpfer, sehr stark
 - **Todesknight (T6+)**: Elite-Nahkämpfer mit AoE-Schaden
 - Pet-Schaden skaliert mit Ausrüstung (+4% bis +420%)
-- Pets erben 30% der Nekromanten-Stats
+- Pets erben 30% der Beschwörer-Stats
 
 ### Seelen-System
 - Seelen werden durch Töten von Gegnern gesammelt
