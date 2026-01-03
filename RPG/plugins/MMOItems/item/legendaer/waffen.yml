@@ -1,0 +1,428 @@
+# 🔥 BERSERKER WAFFEN
+# 18 Waffen: Kriegsäxte, Keulen, Barbarenwaffen (je 6 Tiers)
+
+# ==================== KRIEGSÄXTE ====================
+BERSERKER_KRIEGSAXT_T1:
+  base:
+    material: IRON_AXE
+    name: '&fGrobe Kriegsaxt'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Eine rohe, massive Kriegsaxt.'
+      - '&7Für wahre Krieger.'
+      - ''
+      - '&c🗡 10-15 Schaden'
+      - '&4☠ Blutung I (3s)'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 12
+    attack-speed: 0.7
+    required-level: 1
+    required-class:
+      - BERSERKER
+
+BERSERKER_KRIEGSAXT_T2:
+  base:
+    material: IRON_AXE
+    name: '&aBarbarische Kriegsaxt'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Eine barbarische Kriegsaxt,'
+      - '&7die kritischen Schaden verstärkt.'
+      - ''
+      - '&c🗡 17-26 Schaden'
+      - '&4☠ Blutung II (5s)'
+      - '&6+15% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 21
+    attack-speed: 0.7
+    critical-strike-power: 15
+    required-level: 12
+    required-class:
+      - BERSERKER
+
+BERSERKER_KRIEGSAXT_T3:
+  base:
+    material: DIAMOND_AXE
+    name: '&9Wilde Kriegsaxt'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Eine wilde Kriegsaxt, die'
+      - '&7bei niedriger HP noch stärker wird.'
+      - ''
+      - '&c🗡 27-40 Schaden'
+      - '&4☠ Blutung III (7s)'
+      - '&6+30% Kritischer Schaden'
+      - '&c+10% Schaden bei <50% HP'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 33
+    attack-speed: 0.7
+    critical-strike-power: 30
+    required-level: 22
+    required-class:
+      - BERSERKER
+
+BERSERKER_KRIEGSAXT_T4:
+  base:
+    material: DIAMOND_AXE
+    name: '&5Runen-Kriegsaxt der Wut'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Mit Wutrunen verziert,'
+      - '&7entfesselt diese Axt'
+      - '&7pure Zerstörung.'
+      - ''
+      - '&c🗡 42-62 Schaden'
+      - '&4☠ Blutung IV (10s)'
+      - '&6+55% Kritischer Schaden'
+      - '&c+25% Schaden bei <50% HP'
+      - '&e+50% Wut-Generierung'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 52
+    attack-speed: 0.7
+    critical-strike-power: 55
+    required-level: 38
+    required-class:
+      - BERSERKER
+
+BERSERKER_KRIEGSAXT_T5:
+  base:
+    material: NETHERITE_AXE
+    name: '&6Legendäre Weltenspalter-Axt'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Die legendäre Axt, die'
+      - '&7Welten spaltet und Feinde'
+      - '&7vernichtet.'
+      - ''
+      - '&c🗡 64-94 Schaden'
+      - '&4☠ Blutung V (15s)'
+      - '&6+90% Kritischer Schaden'
+      - '&c+50% Schaden bei <50% HP'
+      - ''
+      - '&d⚡ Ability: Wilder Raserei-Hieb'
+      - '&8Massive AoE-Zerstörung'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 79
+    attack-speed: 0.7
+    critical-strike-power: 90
+    required-level: 55
+    required-class:
+      - BERSERKER
+
+BERSERKER_KRIEGSAXT_T6:
+  base:
+    material: NETHERITE_AXE
+    name: '&cMythische Chaos-Axt'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Die Axt des reinen Chaos.'
+      - '&7Vernichtet alles in ihrem Weg.'
+      - ''
+      - '&c🗡 98-144 Schaden'
+      - '&4☠ Blutung VI (20s)'
+      - '&6+150% Kritischer Schaden'
+      - '&c+100% Schaden bei <50% HP'
+      - ''
+      - '&d⚡ Ability: Totale Vernichtung'
+      - '&8Apokalyptischer AoE-Schaden'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 121
+    attack-speed: 0.7
+    critical-strike-power: 150
+    required-level: 78
+    required-class:
+      - BERSERKER
+
+# ==================== KEULEN ====================
+BERSERKER_KEULE_T1:
+  base:
+    material: IRON_SWORD
+    name: '&fGroße Holzkeule'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Eine große, schwere Holzkeule'
+      - '&7mit Betäubungseffekt.'
+      - ''
+      - '&c🗡 9-14 Schaden'
+      - '&615% Betäubung (1s)'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 11
+    attack-speed: 0.8
+    required-level: 1
+    required-class:
+      - BERSERKER
+
+BERSERKER_KEULE_T2:
+  base:
+    material: IRON_SWORD
+    name: '&aVerstärkte Keule'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Eine verstärkte Keule mit'
+      - '&7erhöhtem AoE-Schaden.'
+      - ''
+      - '&c🗡 15-23 Schaden'
+      - '&620% Betäubung (1.5s)'
+      - '&e+10% AoE-Schaden'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 19
+    attack-speed: 0.8
+    required-level: 12
+    required-class:
+      - BERSERKER
+
+BERSERKER_KEULE_T3:
+  base:
+    material: DIAMOND_SWORD
+    name: '&9Brutale Keule'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Eine brutale Keule, die den'
+      - '&7Boden erzittern lässt.'
+      - ''
+      - '&c🗡 24-36 Schaden'
+      - '&625% Betäubung (2s)'
+      - '&e+20% AoE-Schaden'
+      - '&6Erschütterung'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 30
+    attack-speed: 0.8
+    required-level: 22
+    required-class:
+      - BERSERKER
+
+BERSERKER_KEULE_T4:
+  base:
+    material: DIAMOND_SWORD
+    name: '&5Runen-Keule der Zerstörung'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Mit Zerstörungsrunen verziert,'
+      - '&7bricht diese Keule jede Rüstung.'
+      - ''
+      - '&c🗡 37-55 Schaden'
+      - '&632% Betäubung (2.5s)'
+      - '&e+35% AoE-Schaden'
+      - '&6Erschütterung II'
+      - '&cRüstungsbrechend'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 46
+    attack-speed: 0.8
+    required-level: 38
+    required-class:
+      - BERSERKER
+
+BERSERKER_KEULE_T5:
+  base:
+    material: NETHERITE_SWORD
+    name: '&6Legendärer Titanenbrecher'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Die legendäre Keule, die'
+      - '&7selbst Titanen zerschmettert.'
+      - ''
+      - '&c🗡 57-84 Schaden'
+      - '&642% Betäubung (3s)'
+      - '&e+55% AoE-Schaden'
+      - ''
+      - '&d⚡ Ability: Erdzerstörer'
+      - '&8Massive Erschütterung'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 70
+    attack-speed: 0.8
+    required-level: 55
+    required-class:
+      - BERSERKER
+
+BERSERKER_KEULE_T6:
+  base:
+    material: NETHERITE_SWORD
+    name: '&cMythischer Weltenzerstörer'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Die Keule, die Welten'
+      - '&7in Staub verwandelt.'
+      - ''
+      - '&c🗡 87-128 Schaden'
+      - '&655% Betäubung (4s)'
+      - '&e+85% AoE-Schaden'
+      - ''
+      - '&d⚡ Ability: Apokalyptische Erschütterung'
+      - '&8Weltvernichtender AoE'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 107
+    attack-speed: 0.8
+    required-level: 78
+    required-class:
+      - BERSERKER
+
+# ==================== BARBARENWAFFEN ====================
+BERSERKER_BARBAR_T1:
+  base:
+    material: WOODEN_SWORD
+    name: '&fPrimitive Waffe'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Eine primitive, rohe Waffe'
+      - '&7mit extremer Schadensschwankung.'
+      - ''
+      - '&c🗡 8-16 Schaden'
+      - '&7Hohe Schadensschwankung'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 12
+    attack-speed: 0.9
+    required-level: 1
+    required-class:
+      - BERSERKER
+
+BERSERKER_BARBAR_T2:
+  base:
+    material: STONE_SWORD
+    name: '&aWilde Barbarenwaffe'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Eine wilde Barbarenwaffe mit'
+      - '&7hoher Kritischer Trefferchance.'
+      - ''
+      - '&c🗡 14-28 Schaden'
+      - '&6+20% Kritische Trefferchance'
+      - '&7Hohe Schadensschwankung'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 21
+    attack-speed: 0.9
+    critical-strike-chance: 20
+    required-level: 12
+    required-class:
+      - BERSERKER
+
+BERSERKER_BARBAR_T3:
+  base:
+    material: IRON_SWORD
+    name: '&9Rasende Barbarenwaffe'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Eine rasende Barbarenwaffe mit'
+      - '&7extremen Schadensspitzen.'
+      - ''
+      - '&c🗡 22-44 Schaden'
+      - '&6+30% Kritische Trefferchance'
+      - '&6+25% Kritischer Schaden'
+      - '&7Extreme Schadensschwankung'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 33
+    attack-speed: 0.9
+    critical-strike-chance: 30
+    critical-strike-power: 25
+    required-level: 22
+    required-class:
+      - BERSERKER
+
+BERSERKER_BARBAR_T4:
+  base:
+    material: DIAMOND_SWORD
+    name: '&5Runen-Barbarenwaffe'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Mit Chaos-Runen verziert,'
+      - '&7entfesselt diese Waffe'
+      - '&7pure Zerstörungskraft.'
+      - ''
+      - '&c🗡 34-68 Schaden'
+      - '&6+40% Kritische Trefferchance'
+      - '&6+50% Kritischer Schaden'
+      - '&c+20% Schaden bei <50% HP'
+      - '&e+100% Wut-Generierung'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 51
+    attack-speed: 0.9
+    critical-strike-chance: 40
+    critical-strike-power: 50
+    required-level: 38
+    required-class:
+      - BERSERKER
+
+BERSERKER_BARBAR_T5:
+  base:
+    material: NETHERITE_SWORD
+    name: '&6Legendäre Chaoswaffe'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Die legendäre Waffe des Chaos.'
+      - '&7Unberechenbar und tödlich.'
+      - ''
+      - '&c🗡 52-104 Schaden'
+      - '&6+52% Kritische Trefferchance'
+      - '&6+85% Kritischer Schaden'
+      - '&c+40% Schaden bei <50% HP'
+      - ''
+      - '&d⚡ Ability: Chaos-Schlag'
+      - '&8Zufälliger Mega-Schaden'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 78
+    attack-speed: 0.9
+    critical-strike-chance: 52
+    critical-strike-power: 85
+    required-level: 55
+    required-class:
+      - BERSERKER
+
+BERSERKER_BARBAR_T6:
+  base:
+    material: NETHERITE_SWORD
+    name: '&cMythische Ur-Waffe'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Die Ur-Waffe aus der Zeit'
+      - '&7vor den Göttern. Pures Chaos.'
+      - ''
+      - '&c🗡 80-160 Schaden'
+      - '&6+68% Kritische Trefferchance'
+      - '&6+140% Kritischer Schaden'
+      - '&c+80% Schaden bei <50% HP'
+      - ''
+      - '&d⚡ Ability: Ur-Zorn'
+      - '&8Apokalyptischer Chaos-Schaden'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 120
+    attack-speed: 0.9
+    critical-strike-chance: 68
+    critical-strike-power: 140
+    required-level: 78
+    required-class:
+      - BERSERKER
