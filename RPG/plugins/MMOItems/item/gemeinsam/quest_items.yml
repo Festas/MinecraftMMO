@@ -1,0 +1,186 @@
+# 📜 QUEST ITEMS
+# Items die für Quests und als Boss-Trophäen dienen
+
+# ==================== SLAYER BOSS TROPHÄEN ====================
+SEELE_DES_NEKROMANTEN:
+  base:
+    material: GHAST_TEAR
+    name: '&5Seele des Nekromanten'
+    lore:
+      - '&8Quest-Item'
+      - ''
+      - '&7Die gefangene Seele des'
+      - '&7Nekromanten Malachar.'
+      - ''
+      - '&7Dieses Item dient als Beweis'
+      - '&7deines Sieges über den'
+      - '&7Untoten-Meister.'
+      - ''
+      - '&5━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eVerwendung:'
+      - '&7• Slayer Tier V Abschluss'
+      - '&7• Spezielle Crafting-Rezepte'
+      - '&7• NPC-Quest bei Jaegermeister Fenris'
+      - '&5━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&8Drop: Nekromant Malachar (100%)'
+    disable-interaction: true
+
+HERZ_DER_KOENIGIN:
+  base:
+    material: FERMENTED_SPIDER_EYE
+    name: '&cHerz der Königin'
+    lore:
+      - '&8Quest-Item'
+      - ''
+      - '&7Das noch schlagende Herz'
+      - '&7der Spinnenkönigin Arachnia.'
+      - ''
+      - '&7Ein grausiges Andenken an'
+      - '&7deinen Sieg über die'
+      - '&7Brutmutter.'
+      - ''
+      - '&c━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eVerwendung:'
+      - '&7• Slayer Tier V Abschluss'
+      - '&7• Gift-Rezepte'
+      - '&7• NPC-Quest bei Jaegermeister Fenris'
+      - '&c━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&8Drop: Spinnenkönigin Arachnia (100%)'
+    disable-interaction: true
+
+FRAGMENT_DER_LEERE:
+  base:
+    material: ENDER_EYE
+    name: '&0Fragment der Leere'
+    lore:
+      - '&8Quest-Item'
+      - ''
+      - '&7Ein Stück der Leere selbst.'
+      - '&7Es flüstert dir dunkle'
+      - '&7Geheimnisse zu...'
+      - ''
+      - '&8━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eVerwendung:'
+      - '&7• Slayer Tier V Abschluss'
+      - '&7• &6HAUPTQUEST Kapitel 2!'
+      - '&7• Leere-Rüstung Crafting'
+      - '&7• NPC-Quest bei König Nitwit'
+      - '&8━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&c⚠ Wichtig für die Hauptquest!'
+      - ''
+      - '&8Drop: Dunkler Magier Vexorin (100%)'
+    disable-interaction: true
+
+# ==================== HAUPTQUEST ITEMS ====================
+MAL_DER_LEERE:
+  base:
+    material: NETHER_STAR
+    name: '&5Mal der Leere'
+    lore:
+      - '&8Quest-Item'
+      - ''
+      - '&7Das mysteriöse Mal auf'
+      - '&7deiner Hand. Es glüht'
+      - '&7schwach violett...'
+      - ''
+      - '&7Du erinnerst dich nicht'
+      - '&7woher es kommt.'
+      - ''
+      - '&5━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eErhaltung:'
+      - '&7Hauptquest: Das Erwachen'
+      - '&5━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&8Seelengebunden'
+    disable-interaction: true
+    soulbound: true
+
+KOENIGLICHER_AUFTRAG:
+  base:
+    material: PAPER
+    name: '&6Königlicher Auftrag'
+    lore:
+      - '&8Quest-Item'
+      - ''
+      - '&7Ein offizieller Auftrag'
+      - '&7von König Nitwit persönlich.'
+      - ''
+      - '&7"Hiermit beauftrage ich...'
+      - '&7ähm... wie war der Name...'
+      - '&7diesen Helden, die Bedrohung'
+      - '&7der Leere zu untersuchen!"'
+      - ''
+      - '&7&o- König Nitwit'
+      - '&7&o(mit Kronenstempel)'
+      - ''
+      - '&6━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eErhaltung:'
+      - '&7Hauptquest: Bericht an den König'
+      - '&6━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&8Seelengebunden'
+    disable-interaction: true
+    soulbound: true
+
+# ==================== SLAYER TITEL-ITEMS ====================
+TITEL_UNTOTEN_VERNICHTER:
+  base:
+    material: ZOMBIE_HEAD
+    name: '&5&l[Untoten-Vernichter]'
+    lore:
+      - '&8Titel-Item'
+      - ''
+      - '&7Der Titel des Untoten-Vernichters.'
+      - '&7Nur die mächtigsten Slayer'
+      - '&7tragen diesen Namen.'
+      - ''
+      - '&5━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eBonus:'
+      - '&7+15% Schaden gegen Untote'
+      - '&5━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&8Rechtsklick zum Aktivieren'
+    disable-interaction: false
+
+TITEL_SPINNEN_BEZWINGER:
+  base:
+    material: SPIDER_EYE
+    name: '&c&l[Spinnen-Bezwinger]'
+    lore:
+      - '&8Titel-Item'
+      - ''
+      - '&7Der Titel des Spinnen-Bezwingers.'
+      - '&7Du hast die Königin besiegt'
+      - '&7und ihr Reich zerstört.'
+      - ''
+      - '&c━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eBonus:'
+      - '&7+15% Schaden gegen Spinnen'
+      - '&7Immun gegen Gift'
+      - '&c━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&8Rechtsklick zum Aktivieren'
+    disable-interaction: false
+
+TITEL_DAEMONEN_SCHLAECHTER:
+  base:
+    material: WITHER_SKELETON_SKULL
+    name: '&0&l[Dämonen-Schlächter]'
+    lore:
+      - '&8Titel-Item'
+      - ''
+      - '&7Der Titel des Dämonen-Schlächters.'
+      - '&7Du hast die Leere bezwungen'
+      - '&7und Vexorin vernichtet.'
+      - ''
+      - '&8━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eBonus:'
+      - '&7+20% Schaden gegen Dämonen'
+      - '&7+10% Magie-Resistenz'
+      - '&8━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&8Rechtsklick zum Aktivieren'
+    disable-interaction: false

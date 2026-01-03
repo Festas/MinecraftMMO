@@ -20,7 +20,7 @@ BERSERKER_KRIEGSAXT_T1:
     attack-speed: 0.7
     required-level: 1
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_KRIEGSAXT_T2:
   base:
@@ -42,7 +42,7 @@ BERSERKER_KRIEGSAXT_T2:
     critical-strike-power: 15
     required-level: 12
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_KRIEGSAXT_T3:
   base:
@@ -65,7 +65,7 @@ BERSERKER_KRIEGSAXT_T3:
     critical-strike-power: 30
     required-level: 22
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_KRIEGSAXT_T4:
   base:
@@ -90,7 +90,7 @@ BERSERKER_KRIEGSAXT_T4:
     critical-strike-power: 55
     required-level: 38
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_KRIEGSAXT_T5:
   base:
@@ -117,7 +117,7 @@ BERSERKER_KRIEGSAXT_T5:
     critical-strike-power: 90
     required-level: 55
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_KRIEGSAXT_T6:
   base:
@@ -143,7 +143,7 @@ BERSERKER_KRIEGSAXT_T6:
     critical-strike-power: 150
     required-level: 78
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 # ==================== KEULEN ====================
 BERSERKER_KEULE_T1:
@@ -164,7 +164,7 @@ BERSERKER_KEULE_T1:
     attack-speed: 0.8
     required-level: 1
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_KEULE_T2:
   base:
@@ -185,7 +185,7 @@ BERSERKER_KEULE_T2:
     attack-speed: 0.8
     required-level: 12
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_KEULE_T3:
   base:
@@ -207,7 +207,7 @@ BERSERKER_KEULE_T3:
     attack-speed: 0.8
     required-level: 22
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_KEULE_T4:
   base:
@@ -230,7 +230,7 @@ BERSERKER_KEULE_T4:
     attack-speed: 0.8
     required-level: 38
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_KEULE_T5:
   base:
@@ -254,7 +254,7 @@ BERSERKER_KEULE_T5:
     attack-speed: 0.8
     required-level: 55
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_KEULE_T6:
   base:
@@ -278,7 +278,7 @@ BERSERKER_KEULE_T6:
     attack-speed: 0.8
     required-level: 78
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 # ==================== BARBARENWAFFEN ====================
 BERSERKER_BARBAR_T1:
@@ -299,7 +299,7 @@ BERSERKER_BARBAR_T1:
     attack-speed: 0.9
     required-level: 1
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_BARBAR_T2:
   base:
@@ -321,7 +321,7 @@ BERSERKER_BARBAR_T2:
     critical-strike-chance: 20
     required-level: 12
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_BARBAR_T3:
   base:
@@ -345,7 +345,7 @@ BERSERKER_BARBAR_T3:
     critical-strike-power: 25
     required-level: 22
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_BARBAR_T4:
   base:
@@ -371,7 +371,7 @@ BERSERKER_BARBAR_T4:
     critical-strike-power: 50
     required-level: 38
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_BARBAR_T5:
   base:
@@ -398,7 +398,7 @@ BERSERKER_BARBAR_T5:
     critical-strike-power: 85
     required-level: 55
     required-class:
-      - BERSERKER
+      - KRIEGER
 
 BERSERKER_BARBAR_T6:
   base:
@@ -425,4 +425,4 @@ BERSERKER_BARBAR_T6:
     critical-strike-power: 140
     required-level: 78
     required-class:
-      - BERSERKER
+      - KRIEGER
