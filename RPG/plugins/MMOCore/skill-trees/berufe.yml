@@ -7,6 +7,12 @@ type: PROXIMITY
 item: DIAMOND_PICKAXE
 max-point-spent: 20
 
+# Hinweis: Die Fortune-Nodes verwenden derzeit 'ADDITIONAL_EXPERIENCE' als Platzhalter-Stat.
+# Für tatsächliche Fortune-Effekte (zusätzliche Drops) müssen Custom Stats in der
+# MMOCore config.yml definiert werden, z.B.:
+# - MINING_FORTUNE, FARMING_FORTUNE, FORAGING_FORTUNE, FISHING_LUCK
+# Diese Custom Stats können dann in Drop-Tabellen oder über Plugins wie MMOItems verwendet werden.
+
 nodes:
 
 #### A - Bergbau-Zweig
