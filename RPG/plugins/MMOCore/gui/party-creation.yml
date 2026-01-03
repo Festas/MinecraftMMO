@@ -1,5 +1,5 @@
 # GUI display name
-name: Party Creation
+name: Gruppe erstellen
 
 # Number of slots in your inventory. Must be
 # between 9 and 54 and must be a multiple of 9.
@@ -22,11 +22,11 @@ items:
     #item_flags: [HIDE_ENCHANTS, ....]    # Add item flags to your items. https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inventory/ItemFlag.html
 
     item: GREEN_TERRACOTTA
-    name: '&aCreate a party!'
+    name: '&aEine Gruppe erstellen!'
     lore: { }
   back:
     slots: [ 14 ]
     item: RED_TERRACOTTA
     function: back
-    name: '&aBack'
+    name: '&aZurück'
     lore: { }
