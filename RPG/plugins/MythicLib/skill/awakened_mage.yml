@@ -28,7 +28,6 @@ BLAZING_BARRAGE:
 
 CRYO_PRISON:
     mythicmobs-skill-id: Cryo_Prison
-    passive-type: TIMER
     modifiers:
     - damage
     - freezedamage
