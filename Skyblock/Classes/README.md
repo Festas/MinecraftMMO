@@ -4,13 +4,14 @@ Dieser Ordner enthält alle Klassen-Definitionen und Skill-Trees.
 
 ## Klassen
 
-Inspiriert von Wynncraft und Hypixel Skyblock:
+Inspiriert von Wynncraft und Hypixel Skyblock - **6 Klassen** verfügbar:
 
-- **Warrior**: Nahkampf-Klasse mit hoher Verteidigung
-- **Mage**: Magier mit mächtigen Zaubersprüchen
-- **Archer**: Fernkampf-Klasse mit Bögen
-- **Assassin**: Schnelle Klasse mit hohem Schaden
-- **Tank**: Defensive Klasse zum Schutz der Gruppe
+1. **Krieger** (Warrior): Nahkampf-Klasse mit hoher Verteidigung und Stärke
+2. **Magier** (Mage): Magier mit mächtigen Zaubersprüchen und hoher Intelligenz
+3. **Assassine** (Assassin): Schnelle Klasse mit hohem Schaden und Kritischen Treffern
+4. **Bogenschütze** (Archer): Fernkampf-Klasse mit Bögen und hoher Geschicklichkeit
+5. **Schamane** (Shaman): Support/Heiler-Klasse mit Totems und Naturmagie
+6. **Beschwörer** (Summoner): Beschwört Kreaturen und kontrolliert Minions
 
 ## Skill-Trees
 

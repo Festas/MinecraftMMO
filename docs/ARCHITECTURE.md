@@ -1,0 +1,512 @@
+# Netzwerk-Architektur - MinecraftMMO
+
+Dokumentation der technischen Architektur des MinecraftMMO Server-Netzwerks.
+
+---
+
+## Netzwerk-Übersicht
+
+```
+                                    [Internet]
+                                        |
+                                        v
+                              ┌─────────────────┐
+                              │  Velocity Proxy │
+                              │ mc.festas-builds│
+                              │      .com       │
+                              └────────┬────────┘
+                                       |
+          ┌────────────────────────────┼────────────────────────────┐
+          |                            |                            |
+    ┌─────▼─────┐              ┌──────▼──────┐            ┌────────▼────────┐
+    │   Lobby   │              │   Survival  │            │   MMO-Server    │
+    │  Server   │              │   Server    │            │   (RPG/Skyblock)│
+    └───────────┘              └─────────────┘            └─────────────────┘
+    - Routing                  - Standard SMP            - RPG (Paper 1.21.10)
+    - Welcome                  - Jobs, Claims            - Skyblock (Paper 1.21.10)
+    - Info NPCs                - Economy                 - MMOCore, MMOItems
+                               - Bluemap                 - MythicMobs Premium
+```
+
+---
+
+## Server-Details
+
+### 1. Velocity Proxy
+
+**Funktion:** Zentraler Eintrittspunkt und Load-Balancer für alle Backend-Server
+
+**Version:** Velocity (Latest)
+
+**Plugins:**
+- **CMIV** - CMI Integration für Velocity
+- **ForceResourcepacks** - Erzwingt Resourcepacks auf Clients
+- **LibertyBans** - Netzwerk-weites Ban-System
+- **MiniMOTD** - Custom MOTD (Message of the Day)
+- **MySQL-And-Configurate** - Datenbank-Integration
+- **PAF** (PartyAndFriends) - Party & Freundesliste über Server hinweg
+- **Plan** - Netzwerk-weite Analyse und Statistiken
+- **SkinsRestorer** - Custom Skins für Spieler
+- **TAB** - Custom TAB-Liste und Scoreboard
+- **VelocityScoreboardAPI** - API für Scoreboard-Management
+
+**Konfiguration:**
+- Server-IP: `mc.festas-builds.com`
+- Default Server: Lobby
+- Routing-Logic: Automatisch basierend auf Permissions/Commands
+
+---
+
+### 2. Lobby Server
+
+**Funktion:** Willkommens-Server und Hub für Server-Navigation
+
+**Version:** Paper 1.21.10
+
+**Hauptplugins:**
+- **CMI** (Complete Minecraft Integration) - Kern-Management-Plugin
+- **FancyNpcs** - Interaktive NPCs für Server-Navigation
+- **Oraxen** - Custom Items und Texturen
+- **DeluxeMenus** - Custom GUI-Menüs
+- **LuckPerms** - Permissions-Management
+- **PlaceholderAPI** - Platzhalter für Nachrichten/Displays
+- **ProtocolLib** - Packet-Manipulation für Custom-Features
+- **DecentHolograms** - Hologramme für Infos/Anzeigen
+
+**Besonderheiten:**
+- Keine Gameplay-Elemente (kein Survival, kein Combat)
+- Read-only World (keine Block-Manipulation)
+- Server-Selector NPCs
+- Informations-Hologramme
+
+**Datenbank:** Keine eigene (nutzt Velocity-Datenbanken)
+
+---
+
+### 3. Survival Server
+
+**Funktion:** Standard Minecraft Survival mit Economy und Claims
+
+**Version:** Paper 1.21.10
+
+**Hauptplugins:**
+- **Jobs** - Job-System für Economy
+- **PlotSquared** - Land-Claiming-System
+- **ShopGUIPlus** - Shop-GUI für Economy
+- **Rankup** - Rang-Progression-System
+- **Bluemap** - 3D-Web-Karte
+- **GlobalMarketPlus** - Globaler Marktplatz
+- **CMI** - Core Management
+- **LuckPerms** - Permissions
+- **EssentialsX** - Basis-Befehle
+- **Vault** - Economy API
+- **GriefPrevention** - Alternative Claims
+
+**Datenbank:**
+- **MySQL/MariaDB** (separiert von MMO-Servern)
+  - Spielerdaten (Jobs, Claims, Ranks)
+  - Economy-Daten
+  - Shop-Transaktionen
+
+**Besonderheiten:**
+- **Strikte Trennung von MMO-Servern** (keine Daten-Synchronisation)
+- Eigene Economy (nicht geteilt mit RPG/Skyblock)
+- Standard Survival Gameplay
+
+---
+
+### 4. Skyblock Server (MMO)
+
+**Funktion:** MMO Skyblock mit RPG-Elementen
+
+**Version:** Paper 1.21.10
+
+**Hauptplugins:**
+- **SuperiorSkyblock2** - Skyblock Core-System
+- **MMOCore** - Klassen und Skills
+- **MMOItems** - Custom Items System
+- **MythicMobs** - Custom Mobs (Community Edition)
+- **JetsMinions** - Minion-System
+- **CoinsEngine** - Multi-Währungs-System
+- **Aurora** - Quests/Achievements
+- **AuroraCollections** - Collection-System
+- **BetonQuest** - Advanced Quest-System
+- **Citizens** - NPCs
+- **HuskSync** - Daten-Synchronisation (mit RPG)
+- **LuckPerms** - Permissions
+- **PlaceholderAPI** - Platzhalter
+- **Oraxen** - Custom Items/Texturen
+- **DeluxeMenus** - Custom GUIs
+- **DeluxeBazaar** - Bazaar-System
+
+**Klassen (MMOCore):**
+1. Krieger
+2. Magier
+3. Assassine
+4. Bogenschütze
+5. Schamane
+6. Beschwörer
+
+**Datenbank:**
+- **MySQL/MariaDB** (geteilt mit RPG-Server)
+  - Spielerprofile (Klassen, Level, Stats)
+  - Inventare (synchronisiert via HuskSync)
+  - Skyblock-Island-Daten
+  - Quest-Progress
+- **Redis** (Cache für HuskSync)
+  - Session-Daten
+  - Temp-Inventare
+
+**Besonderheiten:**
+- Daten-Synchronisation mit RPG-Server (HuskSync)
+- Eigene Skyblock-Economy (CoinsEngine)
+- MMO-Progression parallel zu Skyblock-Progression
+
+---
+
+### 5. RPG Server (MMO)
+
+**Funktion:** Vollständiger MMO-RPG Server mit Open World
+
+**Version:** Paper 1.21.10
+
+**Hauptplugins:**
+- **MythicMobs Premium** - Advanced Custom Mobs/Bosse/Items
+- **MythicDungeons** - Instanzierte Dungeons
+- **MythicCrucible** - Advanced Item Creation
+- **MythicRPG** - RPG-Mechaniken
+- **MythicAchievements** - Achievement-System
+- **MMOCore** - Klassen und Skills
+- **MMOItems** - Custom Items System
+- **MythicLib** - Library für MMO-Features
+- **BetonQuest** - Advanced Quest-System
+- **Citizens** - NPCs
+- **HuskSync** - Daten-Synchronisation (mit Skyblock)
+- **CoinsEngine** - Multi-Währungs-System
+- **ModelEngine** - Custom 3D Models
+- **LuckPerms** - Permissions
+- **PlaceholderAPI** - Platzhalter
+- **FastAsyncWorldEdit** - World Editing
+- **LibsDisguises** - Mob/NPC Verkleidungen
+- **ProtocolLib** - Packet-Manipulation
+- **DecentHolograms** - Hologramme
+- **Aurora** - Quests/Achievements
+- **RoseGarden** - World Management
+- **RoseLoot** - Custom Loot-Tables
+- **RoseStacker** - Entity-Stacking
+- **Plan** - Server-Analytics
+- **Bluemap** - 3D-Web-Karte
+- **ExecutableItems** - Custom Item Actions
+- **PlayerParticles** - Partikel-Effekte
+- **PlayerPoints** - Punkt-System
+- **DeluxeMenus** - Custom GUIs
+- **Oraxen** - Custom Items/Texturen
+
+**Klassen (MMOCore):** (identisch mit Skyblock)
+1. Krieger
+2. Magier
+3. Assassine
+4. Bogenschütze
+5. Schamane
+6. Beschwörer
+
+**Datenbank:**
+- **MySQL/MariaDB** (geteilt mit Skyblock)
+  - Spielerprofile (Klassen, Level, Stats)
+  - Inventare (synchronisiert via HuskSync)
+  - Quest-Progress
+  - Achievement-Daten
+- **Redis** (Cache für HuskSync)
+  - Session-Daten
+  - Temp-Inventare
+
+**Besonderheiten:**
+- Premium MythicMobs mit erweiterten Features
+- Instanzierte Dungeons (MythicDungeons)
+- Vollständiges Quest-System (BetonQuest)
+- 3D Custom Models (ModelEngine)
+- Daten-Synchronisation mit Skyblock (HuskSync)
+
+---
+
+## Datenbank-Struktur
+
+### MySQL/MariaDB (Survival) - Separiert
+
+**Host:** `<survival-db-host>`
+
+**Verwendung:**
+- Survival Server Spielerdaten
+- Jobs-Plugin-Daten
+- Economy (Vault)
+- Claims (PlotSquared, GriefPrevention)
+- Ranks (Rankup)
+
+**Keine Verbindung zu:** RPG/Skyblock Servern
+
+---
+
+### MySQL/MariaDB (MMO) - Geteilt zwischen RPG & Skyblock
+
+**Host:** `<mmo-db-host>`
+
+**Verwendung:**
+- MMOCore Daten (Klassen, Skills, Level)
+- MMOItems Daten (Custom Items, Stats)
+- BetonQuest Progress
+- Citizens NPC-Daten
+- CoinsEngine Währungen
+- Achievement/Collection-Daten
+- MythicMobs Daten (Spawns, Cooldowns)
+
+**Geteilte Tabellen:**
+```
+mmocore_players        # Spieler-Klassen, Level, Skills
+mmoitems_data          # Custom Item Daten
+betonquest_*           # Quest-Progress
+coinsengine_*          # Währungen (coins, tokens, etc.)
+husksync_*             # Synchronisations-Daten
+```
+
+---
+
+### Redis Cache (MMO)
+
+**Host:** `<redis-host>`
+
+**Verwendung:**
+- HuskSync Session-Cache
+- Temporäre Inventar-Daten während Server-Switch
+- Player-Session-Daten
+- Live-Sync zwischen RPG und Skyblock
+
+**TTL (Time To Live):**
+- Session-Daten: 30 Minuten
+- Inventar-Cache: 5 Minuten
+
+---
+
+## Synchronisation (HuskSync)
+
+### Synchronisierte Daten zwischen RPG ↔ Skyblock
+
+**Inventare:**
+- ✅ Haupt-Inventar
+- ✅ Rüstungs-Slots
+- ✅ Offhand
+- ✅ Ender-Chest
+- ❌ Skyblock-Island-Inventare (nicht synchronisiert)
+
+**Spieler-Stats:**
+- ✅ Health/Hunger/Saturation
+- ✅ XP Level
+- ✅ Potion Effects
+- ✅ Location (beim Server-Switch)
+
+**MMO-Daten:**
+- ✅ Klassen-Level (MMOCore)
+- ✅ Skills und Skill-Trees
+- ✅ Quest-Progress (BetonQuest)
+- ✅ Währungen (CoinsEngine)
+
+**Nicht synchronisiert:**
+- ❌ Survival Server Daten (komplett getrennt)
+- ❌ Skyblock-Islands (server-spezifisch)
+- ❌ RPG-spezifische Dungeon-Progress
+- ❌ Server-spezifische Achievements
+
+### Sync-Flow
+
+```
+Spieler auf RPG Server
+        |
+        | /server skyblock
+        v
+1. Inventar → Redis Cache
+2. Stats → Redis Cache
+3. MMO-Daten → MySQL
+        |
+        v
+4. Server-Switch (Velocity)
+        |
+        v
+5. Skyblock lädt Daten aus Redis/MySQL
+6. Spieler spawnt mit synchronisiertem Inventar
+```
+
+### Konflikt-Handling
+
+- **Gleichzeitiges Spielen:** Nicht möglich (Session-Lock)
+- **Daten-Konflikt:** Neueste Timestamp gewinnt
+- **Connection-Loss:** Daten werden beim Reconnect aus MySQL geladen
+
+---
+
+## Resourcepacks
+
+**Erzwungen via:** ForceResourcepacks (Velocity)
+
+**Serverübergreifend:**
+- ✅ Custom Items (Oraxen)
+- ✅ Custom Mobs (MythicMobs + ModelEngine)
+- ✅ Custom Sounds
+- ✅ Custom Textures
+
+**Resourcepack-URL:**
+```
+https://<resourcepack-host>/MinecraftMMO-Pack.zip
+```
+
+**Auto-Download:** Ja (erzwungen beim Join)
+
+---
+
+## Performance & Skalierung
+
+### Erwartete Spieleranzahl
+- **Lobby:** 20-50 Spieler (leichtgewichtig)
+- **Survival:** 30-80 Spieler
+- **Skyblock:** 50-100 Spieler
+- **RPG:** 50-100 Spieler
+
+### Server-Hardware (empfohlen)
+```
+Velocity Proxy: 2 vCPU, 2 GB RAM
+Lobby:          2 vCPU, 4 GB RAM
+Survival:       4 vCPU, 8 GB RAM
+Skyblock:       4 vCPU, 10 GB RAM
+RPG:            6 vCPU, 12 GB RAM
+MySQL:          2 vCPU, 4 GB RAM
+Redis:          1 vCPU, 2 GB RAM
+```
+
+### Optimierungen
+- **Paper:** Optimierte Server-Software (Forks: Purpur/Airplane möglich)
+- **Entity-Stacking:** RoseStacker (RPG)
+- **Async Chunks:** FastAsyncWorldEdit
+- **Caching:** Redis für häufige Queries
+- **Lazy Loading:** Chunks nur laden wenn nötig
+
+---
+
+## Monitoring & Analytics
+
+### Plan (Netzwerk-weit)
+- Spieler-Statistiken
+- Server-Performance
+- Plugin-Performance
+- Join/Leave-Tracking
+
+### Bluemap (Survival, RPG)
+- 3D-Web-Karten
+- Live-Spieler-Tracking
+- Marker für wichtige Orte
+
+### Console Logging
+- Log-Level: INFO (Production), DEBUG (Development)
+- Log-Rotation: Täglich
+- Log-Retention: 30 Tage
+
+---
+
+## Backup-Strategie
+
+### Automatische Backups
+
+**Welten:**
+- Lobby: Wöchentlich (statische Map)
+- Survival: Täglich (3 Uhr nachts)
+- Skyblock: Täglich (3 Uhr nachts)
+- RPG: Täglich (3 Uhr nachts)
+
+**Datenbanken:**
+- MySQL: Stündlich (Incremental), Täglich (Full)
+- Redis: Täglich (RDB Snapshot)
+
+**Configs:**
+- Alle Plugin-Configs: Bei jedem Update (via Git)
+
+**Retention:**
+- Tägliche Backups: 7 Tage
+- Wöchentliche Backups: 4 Wochen
+- Monatliche Backups: 12 Monate
+
+---
+
+## Deployment & Updates
+
+### Update-Prozess
+
+1. **Test-Server:** Änderungen testen
+2. **Config-Backup:** Aktuelle Configs sichern
+3. **Ankündigung:** Spieler informieren (In-Game, Discord)
+4. **Wartungsmodus:** Server in Wartung (Velocity)
+5. **Update:** Plugins/Configs aktualisieren
+6. **Test:** Schneller Funktions-Check
+7. **Live:** Server wieder öffnen
+8. **Monitoring:** Logs überprüfen
+
+### Config-Versionierung
+
+- **Dieses Repository:** Alle Configs versioniert
+- **Branches:**
+  - `main` - Production-Configs
+  - `dev` - Development/Test-Configs
+- **Commits:** Beschreibende Commit-Messages
+
+### Rollback-Strategie
+
+Bei kritischen Fehlern:
+1. Server stoppen
+2. Letzte funktionierende Configs aus Git wiederherstellen
+3. Datenbank-Rollback (falls nötig)
+4. Server starten
+5. Post-Mortem-Analyse
+
+---
+
+## Sicherheit
+
+### LibertyBans (Velocity)
+- Netzwerk-weite Bans/Mutes
+- IP-Bans
+- Temporary Bans
+- Reason-Tracking
+
+### Permissions (LuckPerms)
+- Fein-granulare Permissions
+- Kontext-basiert (Server, World)
+- Temporäre Permissions
+- Track-System für Ranks
+
+### Anti-Cheat
+- _(Noch zu definieren)_
+
+### DDoS-Protection
+- Cloudflare (optional)
+- Proxy-Layer (Velocity)
+
+---
+
+## Bekannte Einschränkungen
+
+1. **HuskSync:** Synchronisation zwischen RPG ↔ Skyblock kann bei Lag verzögert sein
+2. **Skyblock Islands:** Können nicht auf RPG-Server übertragen werden
+3. **Survival Economy:** Komplett getrennt von MMO-Servern (Design-Entscheidung)
+4. **Resourcepack:** Muss heruntergeladen werden (kann bei schlechter Verbindung dauern)
+
+---
+
+## Zukünftige Verbesserungen
+
+- [ ] Load-Balancing für RPG/Skyblock (mehrere Instanzen)
+- [ ] Separate Build-Server für große Projekte
+- [ ] Event-Server (temporär für spezielle Events)
+- [ ] CDN für Resourcepacks
+- [ ] Backup-Server (Fallback bei Ausfällen)
+
+---
+
+**Letzte Aktualisierung:** 2026-01-03
+
+**Version:** 1.0

@@ -102,11 +102,12 @@ cp example_quest.yml my_new_quest.yml
 
 | Klasse | Hauptstat | Rolle | Waffen |
 |--------|-----------|-------|--------|
-| Warrior | Stärke | Tank/DPS | Schwert, Axt |
-| Mage | Intelligenz | Ranged DPS | Stab, Zauberbuch |
-| Archer | Geschick | Ranged DPS | Bogen |
-| Assassin | Geschwindigkeit | Melee DPS | Dolch |
-| Tank | Verteidigung | Tank | Schild, Schwert |
+| Krieger | Stärke | Tank/DPS | Schwert, Axt |
+| Magier | Intelligenz | Ranged DPS | Stab, Zauberbuch |
+| Assassine | Geschwindigkeit | Melee DPS | Dolch |
+| Bogenschütze | Geschick | Ranged DPS | Bogen |
+| Schamane | Weisheit | Support/Healer | Stab, Totem |
+| Beschwörer | Intelligenz | Summoner | Zauberbuch, Stab |
 
 ## Beispiel-Items
 
