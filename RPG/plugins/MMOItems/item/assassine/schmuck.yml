@@ -1,0 +1,278 @@
+# 🗡️ ASSASSINE SCHMUCK
+# 12 Schmuckstücke: Ringe und Amulette (je 6 Tiers)
+
+# ==================== RINGE ====================
+ASSASSINE_RING_T1:
+  base:
+    material: GOLD_NUGGET
+    name: '&fEinfacher Schattenring'
+    lore:
+      - '&8Assassine Schmuck'
+      - ''
+      - '&7Ein einfacher Ring, der'
+      - '&7die kritische Trefferchance erhöht.'
+      - ''
+      - '&f+2% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 1'
+    critical-strike-chance: 2
+    required-level: 1
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_RING_T2:
+  base:
+    material: GOLD_NUGGET
+    name: '&aRing der Geschwindigkeit'
+    lore:
+      - '&8Assassine Schmuck'
+      - ''
+      - '&7Ein Ring, der die Geschwindigkeit'
+      - '&7und Ausweichfähigkeit erhöht.'
+      - ''
+      - '&a+6% Kritische Trefferchance'
+      - '&a+5% Ausweichen'
+      - ''
+      - '&8Benötigt Level 12'
+    critical-strike-chance: 6
+    dodge-rating: 5
+    required-level: 12
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_RING_T3:
+  base:
+    material: GOLD_NUGGET
+    name: '&9Ring der Präzision'
+    lore:
+      - '&8Assassine Schmuck'
+      - ''
+      - '&7Ein mächtiger Ring, der'
+      - '&7die Präzision und den'
+      - '&7kritischen Schaden erhöht.'
+      - ''
+      - '&9+12% Kritische Trefferchance'
+      - '&9+10% Ausweichen'
+      - '&9+15% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 22'
+    critical-strike-chance: 12
+    dodge-rating: 10
+    critical-strike-power: 15
+    required-level: 22
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_RING_T4:
+  base:
+    material: GOLD_NUGGET
+    name: '&5Runenring der Tödlichkeit'
+    lore:
+      - '&8Assassine Schmuck'
+      - ''
+      - '&7Mit Runen der Tödlichkeit'
+      - '&7verziert, verstärkt dieser Ring'
+      - '&7alle Fähigkeiten.'
+      - ''
+      - '&5+20% Kritische Trefferchance'
+      - '&5+16% Ausweichen'
+      - '&5+35% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 38'
+    critical-strike-chance: 20
+    dodge-rating: 16
+    critical-strike-power: 35
+    required-level: 38
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_RING_T5:
+  base:
+    material: GOLD_NUGGET
+    name: '&6Legendärer Assassinen-Ring'
+    lore:
+      - '&8Assassine Schmuck'
+      - ''
+      - '&7Ein legendärer Ring,'
+      - '&7der von Meisterassassinen'
+      - '&7getragen wurde.'
+      - ''
+      - '&6+32% Kritische Trefferchance'
+      - '&6+24% Ausweichen'
+      - '&6+60% Kritischer Schaden'
+      - '&6+10% Bewegungsgeschwindigkeit'
+      - ''
+      - '&8Benötigt Level 55'
+    critical-strike-chance: 32
+    dodge-rating: 24
+    critical-strike-power: 60
+    movement-speed: 0.10
+    required-level: 55
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_RING_T6:
+  base:
+    material: GOLD_NUGGET
+    name: '&cMythischer Ring des Todes'
+    lore:
+      - '&8Assassine Schmuck'
+      - ''
+      - '&7Der ultimative Ring für'
+      - '&7Assassinen. Jeder Angriff'
+      - '&7kann tödlich sein.'
+      - ''
+      - '&c+48% Kritische Trefferchance'
+      - '&c+34% Ausweichen'
+      - '&c+100% Kritischer Schaden'
+      - '&c+18% Bewegungsgeschwindigkeit'
+      - ''
+      - '&8Benötigt Level 78'
+    critical-strike-chance: 48
+    dodge-rating: 34
+    critical-strike-power: 100
+    movement-speed: 0.18
+    required-level: 78
+    required-class:
+      - ASSASSINE
+
+# ==================== AMULETTE ====================
+ASSASSINE_AMULETT_T1:
+  base:
+    material: GOLD_INGOT
+    name: '&fEinfaches Schattenamullet'
+    lore:
+      - '&8Assassine Schmuck'
+      - ''
+      - '&7Ein einfaches Amulett, das'
+      - '&7die kritische Trefferchance erhöht.'
+      - ''
+      - '&f+3% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 1'
+    critical-strike-chance: 3
+    required-level: 1
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_AMULETT_T2:
+  base:
+    material: GOLD_INGOT
+    name: '&aAmulett der Schnelligkeit'
+    lore:
+      - '&8Assassine Schmuck'
+      - ''
+      - '&7Ein Amulett, das die'
+      - '&7Bewegungsgeschwindigkeit und'
+      - '&7kritische Chance erhöht.'
+      - ''
+      - '&a+8% Kritische Trefferchance'
+      - '&a+5% Bewegungsgeschwindigkeit'
+      - ''
+      - '&8Benötigt Level 12'
+    critical-strike-chance: 8
+    movement-speed: 0.05
+    required-level: 12
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_AMULETT_T3:
+  base:
+    material: GOLD_INGOT
+    name: '&9Amulett des Jägers'
+    lore:
+      - '&8Assassine Schmuck'
+      - ''
+      - '&7Ein mächtiges Amulett für'
+      - '&7geschickte Jäger der Nacht.'
+      - ''
+      - '&9+15% Kritische Trefferchance'
+      - '&9+10% Bewegungsgeschwindigkeit'
+      - '&9+5% Ausweichen'
+      - ''
+      - '&8Benötigt Level 22'
+    critical-strike-chance: 15
+    movement-speed: 0.10
+    dodge-rating: 5
+    required-level: 22
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_AMULETT_T4:
+  base:
+    material: GOLD_INGOT
+    name: '&5Runen-Amulett der Nacht'
+    lore:
+      - '&8Assassine Schmuck'
+      - ''
+      - '&7Mit Schattenrunen verziert,'
+      - '&7verleiht dieses Amulett'
+      - '&7Gift-Immunität.'
+      - ''
+      - '&5+24% Kritische Trefferchance'
+      - '&5+15% Bewegungsgeschwindigkeit'
+      - '&5+12% Ausweichen'
+      - ''
+      - '&dImmunität: Gift'
+      - ''
+      - '&8Benötigt Level 38'
+    critical-strike-chance: 24
+    movement-speed: 0.15
+    dodge-rating: 12
+    required-level: 38
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_AMULETT_T5:
+  base:
+    material: GOLD_INGOT
+    name: '&6Legendäres Assassinen-Amulett'
+    lore:
+      - '&8Assassine Schmuck'
+      - ''
+      - '&7Ein legendäres Amulett,'
+      - '&7das von den größten'
+      - '&7Assassinen getragen wurde.'
+      - ''
+      - '&6+38% Kritische Trefferchance'
+      - '&6+22% Bewegungsgeschwindigkeit'
+      - '&6+20% Ausweichen'
+      - '&6+40% Kritischer Schaden'
+      - ''
+      - '&dImmunität: Gift'
+      - ''
+      - '&8Benötigt Level 55'
+    critical-strike-chance: 38
+    movement-speed: 0.22
+    dodge-rating: 20
+    critical-strike-power: 40
+    required-level: 55
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_AMULETT_T6:
+  base:
+    material: GOLD_INGOT
+    name: '&cMythisches Schatten-Amulett'
+    lore:
+      - '&8Assassine Schmuck'
+      - ''
+      - '&7Das ultimative Amulett.'
+      - '&7Verleiht Immunität gegen'
+      - '&7Gift und Blutung.'
+      - ''
+      - '&c+56% Kritische Trefferchance'
+      - '&c+32% Bewegungsgeschwindigkeit'
+      - '&c+30% Ausweichen'
+      - '&c+80% Kritischer Schaden'
+      - ''
+      - '&dImmunität: Gift & Blutung'
+      - ''
+      - '&8Benötigt Level 78'
+    critical-strike-chance: 56
+    movement-speed: 0.32
+    dodge-rating: 30
+    critical-strike-power: 80
+    required-level: 78
+    required-class:
+      - ASSASSINE

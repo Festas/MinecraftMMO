@@ -1,0 +1,575 @@
+# 🗡️ ASSASSINE WAFFEN
+# 24 Waffen: Dolche, Kurzschwerter, Klauen, Wurfmesser (je 6 Tiers)
+
+# ==================== DOLCHE ====================
+ASSASSINE_DOLCH_T1:
+  base:
+    material: IRON_SWORD
+    name: '&fRostige Klinge'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Ein rostiger Dolch mit'
+      - '&7schnellen Angriffen.'
+      - ''
+      - '&f+5% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 4
+    attack-speed: 2.0
+    critical-strike-chance: 5
+    required-level: 1
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_DOLCH_T2:
+  base:
+    material: IRON_SWORD
+    name: '&aDiebesdolch'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Ein Dolch für geschickte'
+      - '&7Diebe und Meuchelmörder.'
+      - ''
+      - '&a+12% Kritische Trefferchance'
+      - '&a+5% Ausweichen'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 6
+    attack-speed: 2.0
+    critical-strike-chance: 12
+    dodge-rating: 5
+    required-level: 12
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_DOLCH_T3:
+  base:
+    material: DIAMOND_SWORD
+    name: '&9Schattendolch'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Ein Dolch, der im Schatten'
+      - '&7fast unsichtbar ist.'
+      - ''
+      - '&9+20% Kritische Trefferchance'
+      - '&9+10% Ausweichen'
+      - '&9Gift I'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 10
+    attack-speed: 2.0
+    critical-strike-chance: 20
+    dodge-rating: 10
+    required-level: 22
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_DOLCH_T4:
+  base:
+    material: DIAMOND_SWORD
+    name: '&5Runendolch der Stille'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Ein lautloser Dolch,'
+      - '&7perfekt für Hinterhalte.'
+      - ''
+      - '&5+30% Kritische Trefferchance'
+      - '&5+15% Ausweichen'
+      - '&5Gift II'
+      - '&5+50% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 16
+    attack-speed: 2.0
+    critical-strike-chance: 30
+    critical-strike-power: 50
+    dodge-rating: 15
+    required-level: 38
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_DOLCH_T5:
+  base:
+    material: NETHERITE_SWORD
+    name: '&6Legendärer Seelenschnitter'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Ein legendärer Dolch, der'
+      - '&7nicht nur Fleisch, sondern'
+      - '&7auch Seelen schneidet.'
+      - ''
+      - '&6+42% Kritische Trefferchance'
+      - '&6+22% Ausweichen'
+      - '&6Gift III'
+      - '&6+80% Kritischer Schaden'
+      - ''
+      - '&d⚡ Ability: Hinrichtung'
+      - '&8Massiver Schaden bei niedrigen HP'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 24
+    attack-speed: 2.0
+    critical-strike-chance: 42
+    critical-strike-power: 80
+    dodge-rating: 22
+    required-level: 55
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_DOLCH_T6:
+  base:
+    material: NETHERITE_SWORD
+    name: '&cMythischer Schattenfang'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Der ultimative Dolch.'
+      - '&7Jeder Treffer ist tödlich.'
+      - ''
+      - '&c+58% Kritische Trefferchance'
+      - '&c+30% Ausweichen'
+      - '&cGift IV'
+      - '&c+125% Kritischer Schaden'
+      - ''
+      - '&d⚡ Ability: Schatten-Tanz'
+      - '&8Blitzschnelle Angriffsserie'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 37
+    attack-speed: 2.0
+    critical-strike-chance: 58
+    critical-strike-power: 125
+    dodge-rating: 30
+    required-level: 78
+    required-class:
+      - ASSASSINE
+
+# ==================== KURZSCHWERTER ====================
+ASSASSINE_KURZSCHWERT_T1:
+  base:
+    material: IRON_SWORD
+    name: '&fEinfaches Kurzschwert'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Ein einfaches Kurzschwert'
+      - '&7mit schnellen Angriffen.'
+      - ''
+      - '&f+3% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 5
+    attack-speed: 1.7
+    critical-strike-chance: 3
+    required-level: 1
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_KURZSCHWERT_T2:
+  base:
+    material: IRON_SWORD
+    name: '&aStählernes Kurzschwert'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Ein solides Kurzschwert'
+      - '&7aus Stahl.'
+      - ''
+      - '&a+10% Kritische Trefferchance'
+      - '&a+3% Ausweichen'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 8
+    attack-speed: 1.7
+    critical-strike-chance: 10
+    dodge-rating: 3
+    required-level: 12
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_KURZSCHWERT_T3:
+  base:
+    material: DIAMOND_SWORD
+    name: '&9Nachtklinge'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Eine dunkle Klinge, die'
+      - '&7im Schatten der Nacht'
+      - '&7glänzt.'
+      - ''
+      - '&9+18% Kritische Trefferchance'
+      - '&9+8% Ausweichen'
+      - '&9+15% Schaden'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 13
+    attack-speed: 1.7
+    critical-strike-chance: 18
+    dodge-rating: 8
+    pve-damage: 15
+    required-level: 22
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_KURZSCHWERT_T4:
+  base:
+    material: DIAMOND_SWORD
+    name: '&5Runenschwert der Schatten'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Ein mit Schattenrunen'
+      - '&7verziertes Schwert.'
+      - ''
+      - '&5+28% Kritische Trefferchance'
+      - '&5+12% Ausweichen'
+      - '&5+25% Schaden'
+      - '&5Blutung II'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 20
+    attack-speed: 1.7
+    critical-strike-chance: 28
+    dodge-rating: 12
+    pve-damage: 25
+    required-level: 38
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_KURZSCHWERT_T5:
+  base:
+    material: NETHERITE_SWORD
+    name: '&6Legendäres Mondlicht-Schwert'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Ein legendäres Schwert, das'
+      - '&7im Mondlicht leuchtet.'
+      - ''
+      - '&6+38% Kritische Trefferchance'
+      - '&6+18% Ausweichen'
+      - '&6+40% Schaden'
+      - ''
+      - '&d⚡ Ability: Mondschlag'
+      - '&8Lunarer Schadenspuls'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 30
+    attack-speed: 1.7
+    critical-strike-chance: 38
+    dodge-rating: 18
+    pve-damage: 40
+    required-level: 55
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_KURZSCHWERT_T6:
+  base:
+    material: NETHERITE_SWORD
+    name: '&cMythischer Nachtbringer'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Das ultimative Kurzschwert.'
+      - '&7Bringt die ewige Nacht.'
+      - ''
+      - '&c+52% Kritische Trefferchance'
+      - '&c+26% Ausweichen'
+      - '&c+60% Schaden'
+      - ''
+      - '&d⚡ Ability: Ewige Nacht'
+      - '&8Entfesselt absolute Dunkelheit'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 47
+    attack-speed: 1.7
+    critical-strike-chance: 52
+    dodge-rating: 26
+    pve-damage: 60
+    required-level: 78
+    required-class:
+      - ASSASSINE
+
+# ==================== KLAUEN ====================
+ASSASSINE_KLAUE_T1:
+  base:
+    material: IRON_SWORD
+    name: '&fEinfache Krallen'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Einfache Krallen, die'
+      - '&7Blutungen verursachen.'
+      - ''
+      - '&fBlutung I (2 Sekunden)'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 4
+    attack-speed: 2.2
+    required-level: 1
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_KLAUE_T2:
+  base:
+    material: IRON_SWORD
+    name: '&aStahlklauen'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Scharfe Stahlklauen mit'
+      - '&7verstärkter Blutung.'
+      - ''
+      - '&aBlutung II (3 Sekunden)'
+      - '&a+8% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 7
+    attack-speed: 2.2
+    critical-strike-chance: 8
+    required-level: 12
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_KLAUE_T3:
+  base:
+    material: DIAMOND_SWORD
+    name: '&9Bestien-Klauen'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Wilde Klauen, die'
+      - '&7verheerende Wunden reißen.'
+      - ''
+      - '&9Blutung III (5 Sekunden)'
+      - '&9+15% Kritische Trefferchance'
+      - '&9+10% Angriffsgeschwindigkeit'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 11
+    attack-speed: 2.2
+    critical-strike-chance: 15
+    attack-speed-bonus: 0.10
+    required-level: 22
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_KLAUE_T4:
+  base:
+    material: DIAMOND_SWORD
+    name: '&5Runen-Klauen des Jägers'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Mit Runen verzierte Klauen,'
+      - '&7die das Opfer zerreißen.'
+      - ''
+      - '&5Blutung IV (7 Sekunden)'
+      - '&5+24% Kritische Trefferchance'
+      - '&5+18% Angriffsgeschwindigkeit'
+      - '&5Zerreißen'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 17
+    attack-speed: 2.2
+    critical-strike-chance: 24
+    attack-speed-bonus: 0.18
+    required-level: 38
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_KLAUE_T5:
+  base:
+    material: NETHERITE_SWORD
+    name: '&6Legendäre Drachen-Klauen'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Aus Drachenklauen gefertigt,'
+      - '&7verursachen sie schreckliche'
+      - '&7Wunden.'
+      - ''
+      - '&6Blutung V (10 Sekunden)'
+      - '&6+35% Kritische Trefferchance'
+      - '&6+28% Angriffsgeschwindigkeit'
+      - ''
+      - '&d⚡ Ability: Raserei'
+      - '&8Schnelle Angriffsserie'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 27
+    attack-speed: 2.2
+    critical-strike-chance: 35
+    attack-speed-bonus: 0.28
+    required-level: 55
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_KLAUE_T6:
+  base:
+    material: NETHERITE_SWORD
+    name: '&cMythische Dämon-Klauen'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Die ultimativen Klauen.'
+      - '&7Zerreißen alles zu Fetzen.'
+      - ''
+      - '&cBlutung VI (15 Sekunden)'
+      - '&c+48% Kritische Trefferchance'
+      - '&c+40% Angriffsgeschwindigkeit'
+      - ''
+      - '&d⚡ Ability: Blutrausch'
+      - '&8Verheerende Angriffswut'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 41
+    attack-speed: 2.2
+    critical-strike-chance: 48
+    attack-speed-bonus: 0.40
+    required-level: 78
+    required-class:
+      - ASSASSINE
+
+# ==================== WURFMESSER ====================
+ASSASSINE_WURFMESSER_T1:
+  base:
+    material: IRON_SWORD
+    name: '&fEinfache Wurfmesser'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Einfache Wurfmesser für'
+      - '&7Fernkampf-Angriffe.'
+      - ''
+      - '&fReichweite: 15 Blöcke'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 3
+    attack-speed: 1.8
+    required-level: 1
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_WURFMESSER_T2:
+  base:
+    material: IRON_SWORD
+    name: '&aGewichtete Wurfklingen'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Gewichtete Klingen mit'
+      - '&7erhöhter Reichweite.'
+      - ''
+      - '&aReichweite: 20 Blöcke'
+      - '&a+5% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 5
+    attack-speed: 1.8
+    critical-strike-chance: 5
+    required-level: 12
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_WURFMESSER_T3:
+  base:
+    material: DIAMOND_SWORD
+    name: '&9Vergiftete Wurfmesser'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Mit Gift beschichtete'
+      - '&7Wurfmesser.'
+      - ''
+      - '&9Reichweite: 25 Blöcke'
+      - '&9+12% Kritische Trefferchance'
+      - '&9Gift II'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 7
+    attack-speed: 1.8
+    critical-strike-chance: 12
+    required-level: 22
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_WURFMESSER_T4:
+  base:
+    material: DIAMOND_SWORD
+    name: '&5Runen-Wurfmesser'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Mit Runen verzierte'
+      - '&7Wurfmesser, die Rüstungen'
+      - '&7durchdringen.'
+      - ''
+      - '&5Reichweite: 30 Blöcke'
+      - '&5+20% Kritische Trefferchance'
+      - '&5Gift III'
+      - '&5Durchdringung'
+      - ''
+      - '&8Benötigt Level 38'
+    attack-damage: 11
+    attack-speed: 1.8
+    critical-strike-chance: 20
+    required-level: 38
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_WURFMESSER_T5:
+  base:
+    material: NETHERITE_SWORD
+    name: '&6Legendäre Schattenklingen'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Legendäre Wurfklingen, die'
+      - '&7im Schatten verschwinden.'
+      - ''
+      - '&6Reichweite: 35 Blöcke'
+      - '&6+30% Kritische Trefferchance'
+      - '&6Gift IV'
+      - ''
+      - '&d⚡ Ability: Klingen-Sturm'
+      - '&8Mehrfach-Wurf-Angriff'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 17
+    attack-speed: 1.8
+    critical-strike-chance: 30
+    required-level: 55
+    required-class:
+      - ASSASSINE
+
+ASSASSINE_WURFMESSER_T6:
+  base:
+    material: NETHERITE_SWORD
+    name: '&cMythische Todessterne'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Die ultimativen Wurfwaffen.'
+      - '&7Jeder Wurf ist tödlich.'
+      - ''
+      - '&cReichweite: 45 Blöcke'
+      - '&c+45% Kritische Trefferchance'
+      - '&cGift V'
+      - ''
+      - '&d⚡ Ability: Sternenhagel'
+      - '&8Massiver Wurfangriff'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 27
+    attack-speed: 1.8
+    critical-strike-chance: 45
+    required-level: 78
+    required-class:
+      - ASSASSINE
