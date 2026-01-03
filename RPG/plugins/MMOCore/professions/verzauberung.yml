@@ -1,0 +1,156 @@
+# Verzauberung Profession (Enchanting)
+name: '&9✨ &bVerzauberung'
+
+# XP zum Hauptlevel beim Leveln dieses Berufs
+experience:
+  base: 40
+  per-level: 7
+
+# Skyblock-Style XP-Kurve
+exp-curve: '{level} * {level} * 4 + 200'
+
+# Maximum Level
+max-level: 50
+
+# Icon für UI
+icon: ENCHANTING_TABLE
+
+# Level-Up Trigger mit Meilensteinen
+on-level-up:
+  default:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &9✨ &bVerzauberung Level {level}!"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=ENTITY_PLAYER_LEVELUP;volume=1;pitch=1}'
+  
+  5:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 5"}'
+    - 'message{text="  &7Freigeschaltet: &a+5% Verzauberungs-Qualität"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  10:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 10"}'
+    - 'message{text="  &7Freigeschaltet: &aBessere Verzauberungen"}'
+    - 'message{text="  &7Neue Fähigkeit: &dVerzauberungs-Boost"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  15:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 15"}'
+    - 'message{text="  &7Freigeschaltet: &aVerzauberungs-Kombinationen"}'
+    - 'message{text="  &7Zugang zu: &bVerzauberungs-Turm I"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  20:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 20"}'
+    - 'message{text="  &7Freigeschaltet: &eSeltene Verzauberungen"}'
+    - 'message{text="  &7Belohnung: &6Goldener Verzauberungstisch"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  25:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 25"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Verzauberer]"}'
+    - 'message{text="  &7Zugang zu: &bVerzauberungs-Turm II"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  30:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 30"}'
+    - 'message{text="  &7Freigeschaltet: &cCustom Verzauberungen"}'
+    - 'message{text="  &7Neue Fähigkeit: &dMagische Verstärkung"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  35:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 35"}'
+    - 'message{text="  &7Freigeschaltet: &bErweiterte Kombinationen"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  40:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 40"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Verzauberungs-Experte]"}'
+    - 'message{text="  &7Belohnung: &bDiamant-Verzauberungstisch der Magie"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  45:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 45"}'
+    - 'message{text="  &7Freigeschaltet: &5Meister-Verzauberer"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  50:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&l&nMAXIMUM LEVEL! &bVerzauberung Level 50"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Verzauberungs-Legende]"}'
+    - 'message{text="  &7Belohnung: &5&lLegendärer Verzauberungstisch"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=2}'
+
+# XP-Quellen für Verzauberungen
+exp-sources:
+  # Waffen-Verzauberungen
+  - 'enchant{enchant=SHARPNESS;amount=5-10}'
+  - 'enchant{enchant=SMITE;amount=5-10}'
+  - 'enchant{enchant=BANE_OF_ARTHROPODS;amount=5-10}'
+  - 'enchant{enchant=KNOCKBACK;amount=4-8}'
+  - 'enchant{enchant=FIRE_ASPECT;amount=8-12}'
+  - 'enchant{enchant=LOOTING;amount=10-15}'
+  - 'enchant{enchant=SWEEPING_EDGE;amount=6-10}'
+  
+  # Rüstungs-Verzauberungen
+  - 'enchant{enchant=PROTECTION;amount=5-10}'
+  - 'enchant{enchant=FIRE_PROTECTION;amount=5-10}'
+  - 'enchant{enchant=BLAST_PROTECTION;amount=5-10}'
+  - 'enchant{enchant=PROJECTILE_PROTECTION;amount=5-10}'
+  - 'enchant{enchant=FEATHER_FALLING;amount=6-10}'
+  - 'enchant{enchant=THORNS;amount=8-12}'
+  - 'enchant{enchant=RESPIRATION;amount=6-10}'
+  - 'enchant{enchant=DEPTH_STRIDER;amount=6-10}'
+  - 'enchant{enchant=FROST_WALKER;amount=8-12}'
+  - 'enchant{enchant=SOUL_SPEED;amount=10-15}'
+  
+  # Werkzeug-Verzauberungen
+  - 'enchant{enchant=EFFICIENCY;amount=5-10}'
+  - 'enchant{enchant=SILK_TOUCH;amount=15-20}'
+  - 'enchant{enchant=FORTUNE;amount=12-18}'
+  - 'enchant{enchant=UNBREAKING;amount=8-12}'
+  
+  # Bogen-Verzauberungen
+  - 'enchant{enchant=POWER;amount=6-10}'
+  - 'enchant{enchant=PUNCH;amount=5-8}'
+  - 'enchant{enchant=FLAME;amount=8-12}'
+  - 'enchant{enchant=INFINITY;amount=15-20}'
+  
+  # Armbrust-Verzauberungen
+  - 'enchant{enchant=QUICK_CHARGE;amount=8-12}'
+  - 'enchant{enchant=PIERCING;amount=8-12}'
+  - 'enchant{enchant=MULTISHOT;amount=12-18}'
+  
+  # Dreizack-Verzauberungen
+  - 'enchant{enchant=LOYALTY;amount=8-12}'
+  - 'enchant{enchant=IMPALING;amount=8-12}'
+  - 'enchant{enchant=RIPTIDE;amount=10-15}'
+  - 'enchant{enchant=CHANNELING;amount=12-18}'
+  
+  # Universelle Verzauberungen
+  - 'enchant{enchant=MENDING;amount=20-30}'
+  - 'enchant{enchant=VANISHING_CURSE;amount=5-8}'
+  - 'enchant{enchant=BINDING_CURSE;amount=5-8}'
+  
+  # Angel-Verzauberungen
+  - 'enchant{enchant=LUCK_OF_THE_SEA;amount=8-12}'
+  - 'enchant{enchant=LURE;amount=6-10}'

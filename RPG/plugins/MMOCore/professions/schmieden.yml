@@ -1,0 +1,173 @@
+# Schmieden Profession (Smithing)
+name: '&7🔨 &fSchmieden'
+
+# XP zum Hauptlevel beim Leveln dieses Berufs
+experience:
+  base: 35
+  per-level: 6
+
+# Skyblock-Style XP-Kurve
+exp-curve: '{level} * {level} * 4 + 200'
+
+# Maximum Level
+max-level: 50
+
+# Icon für UI
+icon: ANVIL
+
+# Level-Up Trigger mit Meilensteinen
+on-level-up:
+  default:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &7🔨 &fSchmieden Level {level}!"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=ENTITY_PLAYER_LEVELUP;volume=1;pitch=1}'
+  
+  5:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &fSchmieden Level 5"}'
+    - 'message{text="  &7Freigeschaltet: &a-5% Reparatur-Kosten"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  10:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &fSchmieden Level 10"}'
+    - 'message{text="  &7Freigeschaltet: &aBessere Reparaturen"}'
+    - 'message{text="  &7Neue Fähigkeit: &dSchnell-Reparatur"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  15:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &fSchmieden Level 15"}'
+    - 'message{text="  &7Freigeschaltet: &aNetherite-Upgrades"}'
+    - 'message{text="  &7Zugang zu: &bSchmiede-Werkstatt I"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  20:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &fSchmieden Level 20"}'
+    - 'message{text="  &7Freigeschaltet: &eVerzauberungs-Erhalt"}'
+    - 'message{text="  &7Belohnung: &6Goldener Amboss"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  25:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &fSchmieden Level 25"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Schmied]"}'
+    - 'message{text="  &7Zugang zu: &bSchmiede-Werkstatt II"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  30:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &fSchmieden Level 30"}'
+    - 'message{text="  &7Freigeschaltet: &cCustom Upgrades"}'
+    - 'message{text="  &7Neue Fähigkeit: &dMeister-Schmiedung"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  35:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &fSchmieden Level 35"}'
+    - 'message{text="  &7Freigeschaltet: &bErweiterte Reparaturen"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  40:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &fSchmieden Level 40"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Schmiede-Experte]"}'
+    - 'message{text="  &7Belohnung: &bDiamant-Amboss der Meisterschaft"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  45:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &fSchmieden Level 45"}'
+    - 'message{text="  &7Freigeschaltet: &5Meister-Schmied"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  50:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&l&nMAXIMUM LEVEL! &fSchmieden Level 50"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Schmiede-Legende]"}'
+    - 'message{text="  &7Belohnung: &5&lLegendärer Amboss"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=2}'
+
+# XP-Quellen für Schmieden (Reparaturen und Upgrades)
+exp-sources:
+  # Werkzeug-Reparaturen
+  - 'repair{type=WOODEN_PICKAXE;amount=2-4}'
+  - 'repair{type=WOODEN_AXE;amount=2-4}'
+  - 'repair{type=WOODEN_SHOVEL;amount=2-4}'
+  - 'repair{type=WOODEN_HOE;amount=2-4}'
+  - 'repair{type=STONE_PICKAXE;amount=3-5}'
+  - 'repair{type=STONE_AXE;amount=3-5}'
+  - 'repair{type=STONE_SHOVEL;amount=3-5}'
+  - 'repair{type=STONE_HOE;amount=3-5}'
+  - 'repair{type=IRON_PICKAXE;amount=5-8}'
+  - 'repair{type=IRON_AXE;amount=5-8}'
+  - 'repair{type=IRON_SHOVEL;amount=5-8}'
+  - 'repair{type=IRON_HOE;amount=5-8}'
+  - 'repair{type=GOLDEN_PICKAXE;amount=6-10}'
+  - 'repair{type=GOLDEN_AXE;amount=6-10}'
+  - 'repair{type=GOLDEN_SHOVEL;amount=6-10}'
+  - 'repair{type=GOLDEN_HOE;amount=6-10}'
+  - 'repair{type=DIAMOND_PICKAXE;amount=10-15}'
+  - 'repair{type=DIAMOND_AXE;amount=10-15}'
+  - 'repair{type=DIAMOND_SHOVEL;amount=10-15}'
+  - 'repair{type=DIAMOND_HOE;amount=10-15}'
+  - 'repair{type=NETHERITE_PICKAXE;amount=20-30}'
+  - 'repair{type=NETHERITE_AXE;amount=20-30}'
+  - 'repair{type=NETHERITE_SHOVEL;amount=20-30}'
+  - 'repair{type=NETHERITE_HOE;amount=20-30}'
+  
+  # Waffen-Reparaturen
+  - 'repair{type=WOODEN_SWORD;amount=2-4}'
+  - 'repair{type=STONE_SWORD;amount=3-5}'
+  - 'repair{type=IRON_SWORD;amount=5-8}'
+  - 'repair{type=GOLDEN_SWORD;amount=6-10}'
+  - 'repair{type=DIAMOND_SWORD;amount=10-15}'
+  - 'repair{type=NETHERITE_SWORD;amount=20-30}'
+  
+  # Rüstungs-Reparaturen
+  - 'repair{type=LEATHER_HELMET;amount=2-3}'
+  - 'repair{type=LEATHER_CHESTPLATE;amount=3-4}'
+  - 'repair{type=LEATHER_LEGGINGS;amount=3-4}'
+  - 'repair{type=LEATHER_BOOTS;amount=2-3}'
+  - 'repair{type=CHAINMAIL_HELMET;amount=4-6}'
+  - 'repair{type=CHAINMAIL_CHESTPLATE;amount=5-8}'
+  - 'repair{type=CHAINMAIL_LEGGINGS;amount=5-8}'
+  - 'repair{type=CHAINMAIL_BOOTS;amount=4-6}'
+  - 'repair{type=IRON_HELMET;amount=5-8}'
+  - 'repair{type=IRON_CHESTPLATE;amount=8-12}'
+  - 'repair{type=IRON_LEGGINGS;amount=8-12}'
+  - 'repair{type=IRON_BOOTS;amount=5-8}'
+  - 'repair{type=GOLDEN_HELMET;amount=6-10}'
+  - 'repair{type=GOLDEN_CHESTPLATE;amount=10-15}'
+  - 'repair{type=GOLDEN_LEGGINGS;amount=10-15}'
+  - 'repair{type=GOLDEN_BOOTS;amount=6-10}'
+  - 'repair{type=DIAMOND_HELMET;amount=12-18}'
+  - 'repair{type=DIAMOND_CHESTPLATE;amount=15-25}'
+  - 'repair{type=DIAMOND_LEGGINGS;amount=15-25}'
+  - 'repair{type=DIAMOND_BOOTS;amount=12-18}'
+  - 'repair{type=NETHERITE_HELMET;amount=25-35}'
+  - 'repair{type=NETHERITE_CHESTPLATE;amount=30-45}'
+  - 'repair{type=NETHERITE_LEGGINGS;amount=30-45}'
+  - 'repair{type=NETHERITE_BOOTS;amount=25-35}'
+  
+  # Spezial-Items
+  - 'repair{type=BOW;amount=5-8}'
+  - 'repair{type=CROSSBOW;amount=6-10}'
+  - 'repair{type=TRIDENT;amount=15-25}'
+  - 'repair{type=SHIELD;amount=4-7}'
+  - 'repair{type=ELYTRA;amount=20-30}'
+  - 'repair{type=FISHING_ROD;amount=3-5}'
+  - 'repair{type=FLINT_AND_STEEL;amount=2-4}'
+  - 'repair{type=SHEARS;amount=3-5}'
