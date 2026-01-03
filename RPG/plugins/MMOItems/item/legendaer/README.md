@@ -1,9 +1,11 @@
-# 🔥 BERSERKER (Berserker)
+# 🔥 LEGENDÄRE BERSERKER ITEMS (Legendary Berserker Items)
 
 ## Übersicht
-Der **Berserker** ist die ultimative Schadens-Klasse. Mit massiven Zweihandwaffen und minimaler Rüstung stürzt er sich rücksichtslos in den Kampf. Je niedriger seine HP, desto höher sein Schaden. Die Klasse ist perfekt für Spieler, die maximalen Schaden über alles andere stellen.
+Diese Sammlung enthält **legendäre und mythische Berserker-Items** - die ultimativen Waffen und Rüstungen für die Schadens-Klasse. Mit massiven Zweihandwaffen und minimaler Rüstung stürzt sich der Berserker rücksichtslos in den Kampf. Je niedriger seine HP, desto höher sein Schaden.
 
 **Spielstil**: Glas-Kanone im Nahkampf. Höchster Schaden im Spiel, aber sehr fragil. Fokus auf Wut, Blutung und Berserker-Modus bei niedriger HP.
+
+**Hinweis**: Dies ist eine Spezial-Sammlung für legendäre Berserker-Items, die besonders mächtig und selten sind.
 
 ## Waffentypen
 - **Kriegsäxte (WAR_AXE)**: Massive Zweihandäxte mit höchstem Schaden
