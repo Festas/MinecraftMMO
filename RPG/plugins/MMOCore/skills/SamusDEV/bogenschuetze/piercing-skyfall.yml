@@ -1,11 +1,11 @@
-name: Piercing Skyfall
+name: Durchbohrender Himmelsfall
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Fire multiple shots towards the sky. A rain of arrows fall from"
-- "&above in a straight line forward, piercing all enemies in its path."
-- "&c🗡 {damage} Damage"
-- "&e⌛ {skillcooldown}s Cooldown"
+- "&7Feuere mehrere Schüsse in den Himmel. Ein Pfeilregen fällt von oben"
+- "&7in einer geraden Linie nach vorne und durchbohrt alle Feinde auf seinem Weg."
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {skillcooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2297'

@@ -1,17 +1,17 @@
-name: Lethal Combo
+name: Tödliche Kombo
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Unleash a relentless chain of blade strikes:"
-- "&7- First Strike: A quick slash forward."
-- "&7- Second Strike: A slash and a spinning slash that hits twice"
-- "&7in rapid succession."
-- "&7- Third Strike: A short backstep followed by a forward piercing"
-- "&7dash, leaping back and upwards afterwards."
-- "&7- Fourth Strike: Throw a dagger downward, triggering a powerful"
-- "&7double slash that smashes the surface on impact."
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Entfessle eine unerbittliche Kette von Klingenschlägen:"
+- "&7- Erster Schlag: Ein schneller Hieb nach vorne."
+- "&7- Zweiter Schlag: Ein Hieb und ein wirbelnder Hieb, der zweimal"
+- "&7in schneller Folge trifft."
+- "&7- Dritter Schlag: Ein kurzer Rückschritt, gefolgt von einem"
+- "&7durchdringenden Sprint nach vorne, danach ein Sprung zurück und nach oben."
+- "&7- Vierter Schlag: Wirf einen Dolch nach unten, der bei Aufprall einen"
+- "&7mächtigen Doppelhieb auslöst, der die Oberfläche zerschmettert."
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2270'

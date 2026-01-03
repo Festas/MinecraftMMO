@@ -1,12 +1,12 @@
-name: Volley of Arrows
+name: Pfeilhagel
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Fire a fan of arrows forward, slightly knocking back enemies."
-- "&7Charge a shot and fire a stronger blast of arrows that create"
-- "&7a fan-shaped rupture. Enemies get knocked back and stunned."
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Feuere einen Fächer von Pfeilen nach vorne, der Feinde leicht zurückstößt."
+- "&7Lade einen Schuss und feuere eine stärkere Salve von Pfeilen ab,"
+- "&7die einen fächerförmigen Bruch erzeugt. Feinde werden zurückgestoßen und betäubt."
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2300'

@@ -1,11 +1,11 @@
-name: Berserker's Leap
+name: Berserkersprung
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Sweep your sword through the surface, creating a line of rupture."
-- "&7Then leap up, smash down to the area you're looking at."
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Führe dein Schwert über den Boden und erzeuge eine Bruchlinie."
+- "&7Springe dann hoch und krache auf die Fläche herab, die du anvisierst."
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2287'

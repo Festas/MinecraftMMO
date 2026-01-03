@@ -1,14 +1,14 @@
-name: Blasting Combo
+name: Sprengstoff-Kombo
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Unleash a blasting chain of shots:"
-- "&bFirst-Third Strike: &7Roll towards your moving direction and shoot"
-- "&7an arrow forward."
-- "&bFourth Strike: &7A leap upwards, followed by a charged shot that"
-- "&7creates a quake where the arrow lands."
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Entfessle eine explosive Kette von Schüssen:"
+- "&bErster-Dritter Schlag: &7Rolle in deine Bewegungsrichtung und schieße"
+- "&7einen Pfeil nach vorne."
+- "&bVierter Schlag: &7Ein Sprung nach oben, gefolgt von einem"
+- "&7aufgeladenen Schuss, der ein Beben an der Landestelle des Pfeils erzeugt."
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2295'

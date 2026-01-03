@@ -1,16 +1,16 @@
-name: Summoner's Command
+name: Befehl des Beschwörers
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Switch summon modes between Focus, Free, and Idle mode."
+- "&7Wechsle zwischen den Beschwörungsmodi Fokus, Frei und Untätig."
 - ""
-- "&bFocus Mode: &7Your minions attack only the enemy you last"
-- "&7dealt damage to."
-- "&bFree Mode: &7Your minions attack random enemies, excluding"
-- "&7party/guild members."
-- "&bIdle Mode: &7Your minions don't attack enemies and only follow you."
+- "&bFokus-Modus: &7Deine Diener greifen nur den Feind an, dem du"
+- "&7zuletzt Schaden zugefügt hast."
+- "&bFrei-Modus: &7Deine Diener greifen zufällige Feinde an, mit Ausnahme"
+- "&7von Gruppen-/Gildenmitgliedern."
+- "&bUntätig-Modus: &7Deine Diener greifen keine Feinde an und folgen dir nur."
 - ""
-- "&e⌛ {cooldown}s Cooldown"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2322'

@@ -1,14 +1,14 @@
-name: Shadowquake
+name: Schattenbeben
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Gain Invisibility I and Speed IV for 9 seconds. Your next basic"
-- "&7attack ends invisibility and speed, releasing a shockwave slash"
-- "&7forward that damages enemies and causes a quake, briefly stunning"
-- "&7enemies in front."
-- "&c🗡 {damage} Damage"
-- "&9⏱ {duration}s Duration"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Erhalte Unsichtbarkeit I und Geschwindigkeit IV für 9 Sekunden."
+- "&7Dein nächster Basisangriff beendet Unsichtbarkeit und Geschwindigkeit"
+- "&7und setzt einen Schockwellenhieb nach vorne frei, der Feinde verletzt"
+- "&7und ein Beben verursacht, das Feinde vor dir kurz betäubt."
+- "&c🗡 {damage} Schaden"
+- "&9⏱ {duration}s Dauer"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2272'

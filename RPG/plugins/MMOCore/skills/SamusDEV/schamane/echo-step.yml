@@ -1,10 +1,10 @@
-name: Echo Step
+name: Echoschritt
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Enter spirit form, swiftly dashing towards your moving direction"
-- "&7for 2 seconds. You are immune to damage while in spirit form."
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Tritt in Geistform ein und sprinte schnell in deine Bewegungsrichtung"
+- "&7für 2 Sekunden. Du bist immun gegen Schaden, während du in Geistform bist."
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2317'

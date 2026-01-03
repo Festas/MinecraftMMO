@@ -1,16 +1,16 @@
-name: Meteor Of Doom
+name: Meteor des Untergangs
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Slowly levitate upwards forming a huge meteor above you."
-- "&7Launch the meteor towards the surface, creating a cross-shaped"
-- "&7rupture with blazing fire, destroying and burning everything"
-- "&7in the area. Enemies in contact with the rupture's blazing"
-- "&7fire get burned."
-- "&c🗡 {damage} Damage"
-- "&6🔥 {burndamage} Burn Damage"
-- "&9⏱ {burnduration}s Burn Duration"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Schwebe langsam nach oben und forme einen riesigen Meteor über dir."
+- "&7Schleudere den Meteor auf die Oberfläche und erzeuge einen"
+- "&7kreuzförmigen Bruch mit loderndem Feuer, der alles im Bereich"
+- "&7zerstört und verbrennt. Feinde, die mit dem lodernden Feuer"
+- "&7des Bruchs in Kontakt kommen, werden verbrannt."
+- "&c🗡 {damage} Schaden"
+- "&6🔥 {burndamage} Verbrennungsschaden"
+- "&9⏱ {burnduration}s Verbrennungsdauer"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2312'

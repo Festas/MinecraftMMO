@@ -1,9 +1,9 @@
-name: Ambush
+name: Hinterhalt
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Your first hit against a new enemy deals +50% more damage."
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Dein erster Treffer gegen einen neuen Feind verursacht +50% mehr Schaden."
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2294'

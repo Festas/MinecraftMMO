@@ -1,10 +1,11 @@
-name: Evasive Shot
+name: Ausweichschuss
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Leap up backwards, shooting 2 splitting arrows 3 times in a row."
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Springe nach hinten und schieße 3-mal hintereinander 2 sich"
+- "&7teilende Pfeile ab."
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2296'

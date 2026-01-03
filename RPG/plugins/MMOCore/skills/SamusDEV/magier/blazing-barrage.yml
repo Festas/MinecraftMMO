@@ -1,15 +1,16 @@
-name: Blazing Barrage
+name: Flammensperrfeuer
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Summon 6 magic fire circles behind you, firing fireballs from"
-- "&7each circle in a row that explode and burn enemies. Charge another"
-- "&7fireball growing in size in front of you and blast it forward in"
-- "&7a fan shape, burning enemies."
-- "&c🗡 {damage} Damage"
-- "&6🔥 {burndamage} Burn Damage"
-- "&9⏱ {burnduration}s Burn Duration"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Beschwöre 6 magische Feuerkreise hinter dir und feuere Feuerbälle"
+- "&7aus jedem Kreis hintereinander ab, die explodieren und Feinde"
+- "&7verbrennen. Lade einen weiteren Feuerball, der an Größe zunimmt,"
+- "&7vor dir und schleudere ihn in Fächerform nach vorne,"
+- "&7um Feinde zu verbrennen."
+- "&c🗡 {damage} Schaden"
+- "&6🔥 {burndamage} Verbrennungsschaden"
+- "&9⏱ {burnduration}s Verbrennungsdauer"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2308'

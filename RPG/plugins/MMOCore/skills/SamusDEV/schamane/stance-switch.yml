@@ -1,9 +1,9 @@
-name: Stance Switch
+name: Haltungswechsel
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Switch form between Thunder Stance and Earth Stance."
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Wechsle die Form zwischen Donner-Haltung und Erd-Haltung."
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2321'
