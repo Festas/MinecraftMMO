@@ -1,0 +1,74 @@
+# ===================================================
+# Spinnenkönigin Arachnia - Slayer Tier V Boss
+# Spinnen-Slayer Boss mit 3 Kampfphasen
+# ===================================================
+
+SpinnenkoeniginArachnia:
+  Type: SPIDER
+  Display: '&c&lSpinnenkönigin Arachnia'
+  Health: 4500
+  Damage: 16
+  Armor: 8
+  Options:
+    MovementSpeed: 0.35
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 50
+    Silent: false
+  Disguise:
+    Type: SPIDER
+    Size: 3
+  
+  # ==========================================
+  # Skills
+  # ==========================================
+  Skills:
+  # Spawn
+  - skill{s=ArachniaStartDialog} @self ~onSpawn
+  
+  # Phase 1 (100%-60% HP)
+  - skill{s=GiftspuckeArachnia} @target ~onTimer:300
+  - skill{s=BeschwoereSpinnlingeP1} @self ~onTimer:500
+  
+  # Phase 2 (60%-30% HP)
+  - skill{s=ArachniaPhase2Dialog} @self ~onHealthMod:<0.6 1
+  - skill{s=NetzfalleArachnia} @target ~onTimer:400 ~onHealthMod:0.3to0.6
+  - skill{s=HinterhaltArachnia} @target ~onTimer:500 ~onHealthMod:0.3to0.6
+  - skill{s=BeschwoereGiftspinnen} @self ~onTimer:600 ~onHealthMod:0.3to0.6
+  - skill{s=UnsichtbarAngriff} @self ~onTimer:700 ~onHealthMod:0.3to0.6
+  
+  # Phase 3 (30%-0% HP)
+  - skill{s=ArachniaPhase3Dialog} @self ~onHealthMod:<0.3 1
+  - skill{s=BeschwoereSpinnlingeP3} @self ~onTimer:200 ~onHealthMod:<0.3
+  - skill{s=KokonArachnia} @target ~onTimer:500 ~onHealthMod:<0.3
+  - skill{s=SchwarmArachnia} @self ~onTimer:600 ~onHealthMod:<0.3
+  - skill{s=GiftspuckeArachnia} @target ~onTimer:250 ~onHealthMod:<0.3
+  - skill{s=HinterhaltArachnia} @target ~onTimer:400 ~onHealthMod:<0.3
+  
+  # Death
+  - skill{s=ArachniaDeathDialog} @self ~onDeath
+  
+  # ==========================================
+  # Drops
+  # ==========================================
+  Drops:
+  # Quest Item
+  - MMOItem{type=MATERIAL;id=HERZ_DER_KOENIGIN} 1.0 1
+  # Gold
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 3000
+  # XP
+  - exp 5000
+  # Legendary Weapon (25% chance)
+  - MMOItem{type=WEAPON;id=SPINNENSEIDE_BOGEN} 0.25 1
+  # Command für Titel
+  - cmd{c="lp user <trigger.name> permission set titles.spinnen_bezwinger true"} 1.0 ~onDeath
+  
+  # ==========================================
+  # BossBar
+  # ==========================================
+  BossBar:
+    Enabled: true
+    Title: '&c&lSpinnenkönigin Arachnia'
+    Color: RED
+    Style: SEGMENTED_10
+    Range: 50
