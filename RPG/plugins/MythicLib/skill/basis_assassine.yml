@@ -1,0 +1,20 @@
+EVADE:
+    mythicmobs-skill-id: Basis_Evade
+    modifiers:
+    - range
+
+BACKSTAB:
+    mythicmobs-skill-id: Basis_Backstab
+    modifiers:
+    - damage
+    - extra
+
+FURTIVE_STRIKE:
+    mythicmobs-skill-id: Basis_Furtive_Strike
+    modifiers:
+    - damage
+
+SHADOW_VEIL:
+    mythicmobs-skill-id: Basis_Shadow_Veil
+    modifiers:
+    - duration
