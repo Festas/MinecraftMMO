@@ -1,0 +1,249 @@
+# 💀 BESCHWÖRER OFFHAND
+# 12 Offhand-Items: Seelengefäße und Totenschädel (je 6 Tiers)
+# WICHTIG: Item-IDs verwenden NEKROMANT_ Prefix wie in der README definiert
+
+# ==================== SEELENGEFÄSSE ====================
+NEKROMANT_GEFAESS_T1:
+  base:
+    material: GLASS_BOTTLE
+    name: '&fEinfaches Seelengefäß'
+    lore:
+      - '&8Beschwörer Seelengefäß'
+      - ''
+      - '&7Ein einfaches Gefäß zum'
+      - '&7Sammeln von Seelen.'
+      - ''
+      - '&f+5 Seelen Kapazität'
+      - '&f+5% Pet-Schaden'
+      - ''
+      - '&8Benötigt Level 1'
+    required-level: 1
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_GEFAESS_T2:
+  base:
+    material: GLASS_BOTTLE
+    name: '&aVerzaubertes Gefäß'
+    lore:
+      - '&8Beschwörer Seelengefäß'
+      - ''
+      - '&7Ein verzaubertes Gefäß mit'
+      - '&7größerer Kapazität.'
+      - ''
+      - '&a+12 Seelen Kapazität'
+      - '&a+12% Pet-Schaden'
+      - '&a+5% Lebensraub'
+      - ''
+      - '&8Benötigt Level 12'
+    lifesteal: 5
+    required-level: 12
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_GEFAESS_T3:
+  base:
+    material: SOUL_LANTERN
+    name: '&9Seelen-Urne'
+    lore:
+      - '&8Beschwörer Seelengefäß'
+      - ''
+      - '&7Eine magische Urne für'
+      - '&7viele Seelen.'
+      - ''
+      - '&9+22 Seelen Kapazität'
+      - '&9+22% Pet-Schaden'
+      - '&9+12% Lebensraub'
+      - '&9Seelen-Regeneration'
+      - ''
+      - '&8Benötigt Level 22'
+    lifesteal: 12
+    required-level: 22
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_GEFAESS_T4:
+  base:
+    material: SOUL_LANTERN
+    name: '&5Runen-Seelengefäß'
+    lore:
+      - '&8Beschwörer Seelengefäß'
+      - ''
+      - '&7Runen verstärken die'
+      - '&7Seelenspeicherung.'
+      - ''
+      - '&5+38 Seelen Kapazität'
+      - '&5+38% Pet-Schaden'
+      - '&5+22% Lebensraub'
+      - '&5Schnelle Seelen-Regeneration'
+      - ''
+      - '&8Benötigt Level 38'
+    lifesteal: 22
+    required-level: 38
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_GEFAESS_T5:
+  base:
+    material: SOUL_LANTERN
+    name: '&6Legendäre Seelenurne'
+    lore:
+      - '&8Beschwörer Seelengefäß'
+      - ''
+      - '&7Eine legendäre Urne mit'
+      - '&7enormer Kapazität.'
+      - ''
+      - '&6+65 Seelen Kapazität'
+      - '&6+65% Pet-Schaden'
+      - '&6+38% Lebensraub'
+      - '&6Seelen-Explosion möglich'
+      - ''
+      - '&8Benötigt Level 55'
+    lifesteal: 38
+    required-level: 55
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_GEFAESS_T6:
+  base:
+    material: SOUL_LANTERN
+    name: '&cMythisches Seelen-Phylakterium'
+    lore:
+      - '&8Beschwörer Seelengefäß'
+      - ''
+      - '&7Ein göttliches Phylakterium'
+      - '&7mit unendlicher Macht.'
+      - ''
+      - '&c+110 Seelen Kapazität'
+      - '&c+110% Pet-Schaden'
+      - '&c+65% Lebensraub'
+      - '&cSeelen-Apokalypse möglich'
+      - ''
+      - '&8Benötigt Level 78'
+    lifesteal: 65
+    required-level: 78
+    required-class:
+      - BESCHWOERER
+
+# ==================== TOTENSCHÄDEL ====================
+NEKROMANT_SCHAEDEL_T1:
+  base:
+    material: SKELETON_SKULL
+    name: '&fAlter Totenschädel'
+    lore:
+      - '&8Beschwörer Totenschädel'
+      - ''
+      - '&7Ein alter Schädel mit'
+      - '&7schwacher Fluchkraft.'
+      - ''
+      - '&f+5% Fluch-Bonus'
+      - '&f+3% Pet-Schaden'
+      - ''
+      - '&8Benötigt Level 1'
+    required-level: 1
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_SCHAEDEL_T2:
+  base:
+    material: SKELETON_SKULL
+    name: '&aVerfluchter Schädel'
+    lore:
+      - '&8Beschwörer Totenschädel'
+      - ''
+      - '&7Ein verfluchter Schädel,'
+      - '&7der Gegner schwächt.'
+      - ''
+      - '&a+12% Fluch-Bonus'
+      - '&a+8% Pet-Schaden'
+      - '&a+5% Lebensraub'
+      - ''
+      - '&8Benötigt Level 12'
+    lifesteal: 5
+    required-level: 12
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_SCHAEDEL_T3:
+  base:
+    material: WITHER_SKELETON_SKULL
+    name: '&9Beschwörer-Schädel'
+    lore:
+      - '&8Beschwörer Totenschädel'
+      - ''
+      - '&7Ein Schädel mit dunkler'
+      - '&7Fluch-Aura.'
+      - ''
+      - '&9+22% Fluch-Bonus'
+      - '&9+15% Pet-Schaden'
+      - '&9+12% Lebensraub'
+      - '&9Fluch-Aura'
+      - ''
+      - '&8Benötigt Level 22'
+    lifesteal: 12
+    required-level: 22
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_SCHAEDEL_T4:
+  base:
+    material: WITHER_SKELETON_SKULL
+    name: '&5Runen-Totenschädel'
+    lore:
+      - '&8Beschwörer Totenschädel'
+      - ''
+      - '&7Runen verstärken die'
+      - '&7Fluchkraft massiv.'
+      - ''
+      - '&5+38% Fluch-Bonus'
+      - '&5+28% Pet-Schaden'
+      - '&5+22% Lebensraub'
+      - '&5Starke Fluch-Aura'
+      - ''
+      - '&8Benötigt Level 38'
+    lifesteal: 22
+    required-level: 38
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_SCHAEDEL_T5:
+  base:
+    material: WITHER_SKELETON_SKULL
+    name: '&6Legendärer Lich-Schädel'
+    lore:
+      - '&8Beschwörer Totenschädel'
+      - ''
+      - '&7Der Schädel eines mächtigen'
+      - '&7Lichs mit Massenfluch.'
+      - ''
+      - '&6+65% Fluch-Bonus'
+      - '&6+48% Pet-Schaden'
+      - '&6+38% Lebensraub'
+      - '&6Massenfluch-Aura'
+      - ''
+      - '&8Benötigt Level 55'
+    lifesteal: 38
+    required-level: 55
+    required-class:
+      - BESCHWOERER
+
+NEKROMANT_SCHAEDEL_T6:
+  base:
+    material: WITHER_SKELETON_SKULL
+    name: '&cMythischer Götter-Schädel'
+    lore:
+      - '&8Beschwörer Totenschädel'
+      - ''
+      - '&7Ein göttlicher Schädel mit'
+      - '&7apokalyptischer Fluchkraft.'
+      - ''
+      - '&c+110% Fluch-Bonus'
+      - '&c+82% Pet-Schaden'
+      - '&c+65% Lebensraub'
+      - '&cApokalyptische Fluch-Aura'
+      - ''
+      - '&8Benötigt Level 78'
+    lifesteal: 65
+    required-level: 78
+    required-class:
+      - BESCHWOERER
