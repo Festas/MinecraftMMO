@@ -1,0 +1,315 @@
+# ===================================================
+# Zone 9: Burgen (Level 60-80)
+# Gebiet: Red Castle, Purple Castle, Prisma Castle
+# WorldGuard Regionen: burgen_red, burgen_purple, burgen_prisma
+# Thema: Geisterritter, verfluchte Wachen
+# ===================================================
+
+# ==========================================
+# Normale Mobs
+# ==========================================
+
+BURGWACHE:
+  Type: ZOMBIE
+  Display: '&8Burgwache &8[Lv.60]'
+  Health: 900
+  Damage: 55
+  Armor: 10
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+    PreventSunburn: true
+  Equipment:
+  - IRON_SWORD HAND
+  - IRON_HELMET HEAD
+  - CHAINMAIL_CHESTPLATE CHEST
+  Drops:
+  - MMOItem{type=MATERIAL;id=BURG_ABZEICHEN} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 180-300
+
+GEISTERRITTER:
+  Type: SKELETON
+  Display: '&7Geisterritter &8[Lv.62]'
+  Health: 950
+  Damage: 58
+  Armor: 8
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+    PreventSunburn: true
+  Equipment:
+  - BOW HAND
+  - CHAINMAIL_HELMET HEAD
+  - CHAINMAIL_CHESTPLATE CHEST
+  Drops:
+  - MMOItem{type=MATERIAL;id=GEISTERESSENZ} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 186-310
+
+VERFLUCHTER_RITTER:
+  Type: WITHER_SKELETON
+  Display: '&5Verfluchter Ritter &8[Lv.64]'
+  Health: 1100
+  Damage: 65
+  Armor: 10
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Equipment:
+  - IRON_SWORD HAND
+  - IRON_HELMET HEAD
+  - IRON_CHESTPLATE CHEST
+  Drops:
+  - MMOItem{type=MATERIAL;id=VERFLUCHTES_METALL} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 192-320
+
+BURGGESPENST:
+  Type: VEX
+  Display: '&7Burggespenst &8[Lv.65]'
+  Health: 800
+  Damage: 55
+  Options:
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Drops:
+  - MMOItem{type=MATERIAL;id=GESPENSTERSTOFF} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 195-325
+
+SCHATTENWACHE:
+  Type: VINDICATOR
+  Display: '&8Schattenwache &8[Lv.67]'
+  Health: 1200
+  Damage: 70
+  Armor: 12
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Equipment:
+  - IRON_AXE HAND
+  - IRON_HELMET HEAD
+  - IRON_CHESTPLATE CHEST
+  Drops:
+  - MMOItem{type=MATERIAL;id=SCHATTENESSENZ} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 201-335
+
+KERKERMEISTER:
+  Type: PIGLIN_BRUTE
+  Display: '&8Kerkermeister &8[Lv.68]'
+  Health: 1300
+  Damage: 75
+  Armor: 12
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Equipment:
+  - IRON_AXE HAND
+  - CHAINMAIL_HELMET HEAD
+  - CHAINMAIL_CHESTPLATE CHEST
+  Drops:
+  - MMOItem{type=MATERIAL;id=KERKER_SCHLUESSEL} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 204-340
+
+RUNENRITTER:
+  Type: WITHER_SKELETON
+  Display: '&5Runenritter &8[Lv.70]'
+  Health: 1500
+  Damage: 80
+  Armor: 15
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Equipment:
+  - IRON_SWORD HAND
+  - IRON_HELMET HEAD
+  - IRON_CHESTPLATE CHEST
+  - IRON_LEGGINGS LEGS
+  - IRON_BOOTS FEET
+  Skills:
+  - skill{s=RunenSchlag} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=RUNENSTEIN} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 210-350
+
+HEXENMEISTER:
+  Type: EVOKER
+  Display: '&5Hexenmeister &8[Lv.72]'
+  Health: 1100
+  Damage: 70
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Skills:
+  - skill{s=DunklesMagie} @target ~onTimer:200
+  Drops:
+  - MMOItem{type=MATERIAL;id=HEXENBUCH} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 216-360
+
+TODESRITTER:
+  Type: WITHER_SKELETON
+  Display: '&0Todesritter &8[Lv.75]'
+  Health: 1800
+  Damage: 90
+  Armor: 18
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Equipment:
+  - NETHERITE_SWORD HAND
+  - NETHERITE_HELMET HEAD
+  - NETHERITE_CHESTPLATE CHEST
+  - NETHERITE_LEGGINGS LEGS
+  - NETHERITE_BOOTS FEET
+  Skills:
+  - skill{s=TodesSchlag} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=TODESESSENZ} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 225-375
+
+# ==========================================
+# Elite Mobs
+# ==========================================
+
+ELITE_GEISTERRITTER:
+  Type: WITHER_SKELETON
+  Display: '&6⭐ Geisterfürst &8[Lv.68]'
+  Health: 2500
+  Damage: 100
+  Armor: 15
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+    Glowing: true
+  Equipment:
+  - IRON_SWORD HAND
+  - IRON_HELMET HEAD
+  - IRON_CHESTPLATE CHEST
+  Skills:
+  - skill{s=EliteAura} @self ~onSpawn
+  - skill{s=EliteSchlag} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=GEISTERESSENZ} 1.0 2-4
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - exp 544-816
+
+ELITE_HEXENMEISTER:
+  Type: EVOKER
+  Display: '&6⭐ Erzhexenmeister &8[Lv.74]'
+  Health: 2200
+  Damage: 95
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+    Glowing: true
+  Skills:
+  - skill{s=EliteAura} @self ~onSpawn
+  - skill{s=EliteSchlag} @target ~onAttack
+  - skill{s=DunklesMagie} @target ~onTimer:150
+  Drops:
+  - MMOItem{type=MATERIAL;id=HEXENBUCH} 1.0 2-4
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - exp 592-888
+
+# ==========================================
+# Mini-Bosse
+# ==========================================
+
+BURGHERR:
+  Type: VINDICATOR
+  Display: '&c☠ Burgherr &8[Lv.80]'
+  Health: 8000
+  Damage: 130
+  Armor: 20
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Equipment:
+  - NETHERITE_AXE HAND
+  - NETHERITE_HELMET HEAD
+  - NETHERITE_CHESTPLATE CHEST
+  - NETHERITE_LEGGINGS LEGS
+  - NETHERITE_BOOTS FEET
+  Skills:
+  - skill{s=BossRuf} @self ~onSpawn
+  - skill{s=BossSchlag} @target ~onTimer:200
+  - skill{s=BurgherrBefehl} @MobsInRadius{r=30} ~onTimer:400
+  Drops:
+  - MMOItem{type=MATERIAL;id=BURG_KRONE} 1.0 5-10
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - MMOItem{type=WEAPON;id=BURGHERR_AXT} 0.15 1
+  - exp 1200-2000
+  BossBar:
+    Enabled: true
+    Title: '&c☠ Burgherr'
+    Color: RED
+    Style: SEGMENTED_10
+    Range: 50
+
+SCHATTENKOENIG:
+  Type: WITHER_SKELETON
+  Display: '&c☠ Schattenkönig &8[Lv.80]'
+  Health: 9000
+  Damage: 140
+  Armor: 22
+  Options:
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Equipment:
+  - NETHERITE_SWORD HAND
+  - NETHERITE_HELMET HEAD
+  - NETHERITE_CHESTPLATE CHEST
+  - NETHERITE_LEGGINGS LEGS
+  - NETHERITE_BOOTS FEET
+  Skills:
+  - skill{s=BossRuf} @self ~onSpawn
+  - skill{s=BossSchlag} @target ~onTimer:200
+  - skill{s=TodesSchlag} @target ~onAttack
+  - skill{s=SchattenArmee} @self ~onTimer:600
+  Drops:
+  - MMOItem{type=MATERIAL;id=SCHATTEN_KRONE} 1.0 5-10
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - MMOItem{type=WEAPON;id=SCHATTEN_KLINGE} 0.2 1
+  - exp 1200-2000
+  BossBar:
+    Enabled: true
+    Title: '&c☠ Schattenkönig'
+    Color: PURPLE
+    Style: SEGMENTED_10
+    Range: 50

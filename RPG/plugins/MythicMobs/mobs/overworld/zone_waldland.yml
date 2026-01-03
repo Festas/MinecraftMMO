@@ -1,0 +1,273 @@
+# ===================================================
+# Zone 2: Waldland (Level 10-20)
+# Gebiet: Red Village, Wild Farms, Blossom Temple Umgebung
+# WorldGuard Region: waldland
+# Thema: Dunkle Wälder, Werwölfe, Ents
+# ===================================================
+
+# ==========================================
+# Normale Mobs
+# ==========================================
+
+WALDSCHRAT:
+  Type: ZOMBIE
+  Display: '&7Waldschrat &8[Lv.10]'
+  Health: 150
+  Damage: 15
+  Options:
+    MovementSpeed: 0.25
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+    PreventSunburn: true
+  Equipment:
+  - WOODEN_SWORD HAND
+  Drops:
+  - MMOItem{type=MATERIAL;id=WALDHOLZ} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 30-50
+
+RIESENSPINNE:
+  Type: SPIDER
+  Display: '&7Riesenspinne &8[Lv.12]'
+  Health: 180
+  Damage: 18
+  Options:
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Skills:
+  - skill{s=SpinnenGift} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=SPINNENFADEN} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 36-60
+
+WALDBANDIT:
+  Type: PILLAGER
+  Display: '&7Waldbandit &8[Lv.13]'
+  Health: 200
+  Damage: 20
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Equipment:
+  - BOW HAND
+  Drops:
+  - MMOItem{type=MATERIAL;id=BANDITENGUT} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 39-65
+
+GIFTSPINNE:
+  Type: CAVE_SPIDER
+  Display: '&7Giftspinne &8[Lv.14]'
+  Health: 170
+  Damage: 17
+  Options:
+    MovementSpeed: 0.35
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Skills:
+  - skill{s=SpinnenGift} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=SPINNENGIFT} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 42-70
+
+WERWOLF:
+  Type: WOLF
+  Display: '&7Werwolf &8[Lv.15]'
+  Health: 250
+  Damage: 25
+  Options:
+    MovementSpeed: 0.32
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Skills:
+  - skill{s=WolfBiss} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=WERWOLFSFELL} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 45-75
+
+BAUMGEIST:
+  Type: VEX
+  Display: '&7Baumgeist &8[Lv.16]'
+  Health: 220
+  Damage: 22
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Drops:
+  - MMOItem{type=MATERIAL;id=GEISTERESSENZ} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 48-80
+
+ENT:
+  Type: IRON_GOLEM
+  Display: '&7Ent &8[Lv.17]'
+  Health: 400
+  Damage: 30
+  Armor: 5
+  Options:
+    MovementSpeed: 0.2
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Drops:
+  - MMOItem{type=MATERIAL;id=LEBENDIGES_HOLZ} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 51-85
+
+WALDLAEUFER:
+  Type: SKELETON
+  Display: '&7Dunkler Waldläufer &8[Lv.18]'
+  Health: 280
+  Damage: 28
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+    PreventSunburn: true
+  Equipment:
+  - BOW HAND
+  - LEATHER_HELMET HEAD
+  Drops:
+  - MMOItem{type=MATERIAL;id=WALDLAEUFER_BOGEN} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 54-90
+
+BLUTWOLF:
+  Type: WOLF
+  Display: '&7Blutwolf &8[Lv.19]'
+  Health: 320
+  Damage: 32
+  Options:
+    MovementSpeed: 0.32
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Skills:
+  - skill{s=WolfBiss} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=BLUTWOLFSFELL} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 57-95
+
+# ==========================================
+# Elite Mobs
+# ==========================================
+
+ELITE_WERWOLF:
+  Type: WOLF
+  Display: '&6⭐ Elite Werwolf &8[Lv.16]'
+  Health: 500
+  Damage: 40
+  Options:
+    MovementSpeed: 0.35
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+    Glowing: true
+  Skills:
+  - skill{s=EliteAura} @self ~onSpawn
+  - skill{s=EliteSchlag} @target ~onAttack
+  - skill{s=WolfBiss} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=WERWOLFSFELL} 1.0 2-4
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - exp 128-192
+
+ELITE_ENT:
+  Type: IRON_GOLEM
+  Display: '&6⭐ Uralter Ent &8[Lv.18]'
+  Health: 800
+  Damage: 50
+  Armor: 8
+  Options:
+    MovementSpeed: 0.22
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+    Glowing: true
+  Skills:
+  - skill{s=EliteAura} @self ~onSpawn
+  - skill{s=EliteSchlag} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=LEBENDIGES_HOLZ} 1.0 2-4
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - exp 144-216
+
+# ==========================================
+# Mini-Bosse
+# ==========================================
+
+WALDKOENIG:
+  Type: VINDICATOR
+  Display: '&c☠ Waldkönig &8[Lv.20]'
+  Health: 1500
+  Damage: 45
+  Armor: 8
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Equipment:
+  - IRON_AXE HAND
+  - LEATHER_HELMET{color=0,128,0} HEAD
+  - LEATHER_CHESTPLATE{color=0,128,0} CHEST
+  - LEATHER_LEGGINGS{color=0,128,0} LEGS
+  - LEATHER_BOOTS{color=0,128,0} FEET
+  Skills:
+  - skill{s=BossRuf} @self ~onSpawn
+  - skill{s=BossSchlag} @target ~onTimer:200
+  Drops:
+  - MMOItem{type=MATERIAL;id=LEBENDIGES_HOLZ} 1.0 5-10
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - MMOItem{type=WEAPON;id=WALDKOENIG_AXT} 0.15 1
+  - exp 300-500
+  BossBar:
+    Enabled: true
+    Title: '&c☠ Waldkönig'
+    Color: RED
+    Style: SEGMENTED_10
+    Range: 50
+
+SPINNENMATRIARCHIN:
+  Type: SPIDER
+  Display: '&c☠ Spinnenmatriarchin &8[Lv.20]'
+  Health: 1200
+  Damage: 40
+  Options:
+    MovementSpeed: 0.35
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Skills:
+  - skill{s=BossRuf} @self ~onSpawn
+  - skill{s=BossSchlag} @target ~onTimer:200
+  - skill{s=SpinnenGift} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=SPINNENFADEN} 1.0 5-10
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - MMOItem{type=WEAPON;id=SPINNENBEIN_LANZE} 0.2 1
+  - exp 300-500
+  BossBar:
+    Enabled: true
+    Title: '&c☠ Spinnenmatriarchin'
+    Color: RED
+    Style: SEGMENTED_10
+    Range: 50

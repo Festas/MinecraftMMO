@@ -1,0 +1,281 @@
+# ===================================================
+# Zone 5: Wüste (Level 35-50)
+# Gebiet: Desert Biome, Village (Nordwest), Mines
+# WorldGuard Region: wueste
+# Thema: Wüsten-Kreaturen, Mumien, Pharaonen
+# ===================================================
+
+# ==========================================
+# Normale Mobs
+# ==========================================
+
+WUESTENSKORPION:
+  Type: SPIDER
+  Display: '&6Wüstenskorpion &8[Lv.35]'
+  Health: 450
+  Damage: 35
+  Options:
+    MovementSpeed: 0.32
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Skills:
+  - skill{s=SkorpionGift} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=SKORPIONSTACHEL} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 105-175
+
+SANDGEIST:
+  Type: VEX
+  Display: '&eSandgeist &8[Lv.37]'
+  Health: 400
+  Damage: 32
+  Options:
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Drops:
+  - MMOItem{type=MATERIAL;id=SANDESSENZ} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 111-185
+
+MUMIE:
+  Type: HUSK
+  Display: '&6Mumie &8[Lv.38]'
+  Health: 520
+  Damage: 40
+  Armor: 5
+  Options:
+    MovementSpeed: 0.25
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Drops:
+  - MMOItem{type=MATERIAL;id=MUMIENBANDAGE} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 114-190
+
+WUESTENRAEUBER:
+  Type: PILLAGER
+  Display: '&6Wüstenräuber &8[Lv.40]'
+  Health: 550
+  Damage: 42
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Equipment:
+  - BOW HAND
+  - LEATHER_HELMET{color=194,142,0} HEAD
+  Drops:
+  - MMOItem{type=MATERIAL;id=RAEUBERGUT} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 120-200
+
+SANDWURM:
+  Type: ENDERMAN
+  Display: '&6Sandwurm &8[Lv.42]'
+  Health: 600
+  Damage: 48
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Drops:
+  - MMOItem{type=MATERIAL;id=SANDWURMHAUT} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 126-210
+
+GRABWAECHTER:
+  Type: WITHER_SKELETON
+  Display: '&8Grabwächter &8[Lv.43]'
+  Health: 650
+  Damage: 50
+  Armor: 8
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Equipment:
+  - STONE_SWORD HAND
+  Drops:
+  - MMOItem{type=MATERIAL;id=GRABSTAUB} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 129-215
+
+PHARAONEN_DIENER:
+  Type: HUSK
+  Display: '&6Pharaonen-Diener &8[Lv.45]'
+  Health: 700
+  Damage: 52
+  Armor: 5
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Equipment:
+  - GOLDEN_SWORD HAND
+  - GOLDEN_HELMET HEAD
+  Drops:
+  - MMOItem{type=MATERIAL;id=PHARAONEN_GOLD} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 135-225
+
+ANUBIS_KRIEGER:
+  Type: ZOMBIE
+  Display: '&5Anubis Krieger &8[Lv.46]'
+  Health: 750
+  Damage: 55
+  Armor: 8
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+    PreventSunburn: true
+  Equipment:
+  - IRON_SWORD HAND
+  - WITHER_SKELETON_SKULL HEAD
+  - LEATHER_CHESTPLATE{color=0,0,0} CHEST
+  Drops:
+  - MMOItem{type=MATERIAL;id=ANUBIS_EMBLEM} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 138-230
+
+SANDGOLEM:
+  Type: IRON_GOLEM
+  Display: '&6Sandgolem &8[Lv.48]'
+  Health: 900
+  Damage: 60
+  Armor: 10
+  Options:
+    MovementSpeed: 0.23
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Drops:
+  - MMOItem{type=MATERIAL;id=SANDSTEIN_KERN} 0.3 1
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - exp 144-240
+
+# ==========================================
+# Elite Mobs
+# ==========================================
+
+ELITE_MUMIE:
+  Type: HUSK
+  Display: '&6⭐ Uralte Mumie &8[Lv.42]'
+  Health: 1200
+  Damage: 65
+  Armor: 8
+  Options:
+    MovementSpeed: 0.27
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+    Glowing: true
+  Skills:
+  - skill{s=EliteAura} @self ~onSpawn
+  - skill{s=EliteSchlag} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=MUMIENBANDAGE} 1.0 2-4
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - exp 336-504
+
+ELITE_ANUBIS:
+  Type: WITHER_SKELETON
+  Display: '&6⭐ Anubis Wächter &8[Lv.46]'
+  Health: 1500
+  Damage: 75
+  Armor: 10
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+    Glowing: true
+  Equipment:
+  - IRON_SWORD HAND
+  - WITHER_SKELETON_SKULL HEAD
+  - CHAINMAIL_CHESTPLATE CHEST
+  Skills:
+  - skill{s=EliteAura} @self ~onSpawn
+  - skill{s=EliteSchlag} @target ~onAttack
+  Drops:
+  - MMOItem{type=MATERIAL;id=ANUBIS_EMBLEM} 1.0 2-4
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - exp 368-552
+
+# ==========================================
+# Mini-Bosse
+# ==========================================
+
+PHARAO:
+  Type: WITHER_SKELETON
+  Display: '&c☠ Pharao &8[Lv.50]'
+  Health: 4000
+  Damage: 85
+  Armor: 15
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Equipment:
+  - GOLDEN_SWORD HAND
+  - GOLDEN_HELMET HEAD
+  - GOLDEN_CHESTPLATE CHEST
+  - GOLDEN_LEGGINGS LEGS
+  - GOLDEN_BOOTS FEET
+  Skills:
+  - skill{s=BossRuf} @self ~onSpawn
+  - skill{s=BossSchlag} @target ~onTimer:200
+  - skill{s=PharaoFluch} @PIR{r=20} ~onTimer:400
+  Drops:
+  - MMOItem{type=MATERIAL;id=PHARAONEN_GOLD} 1.0 5-10
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - MMOItem{type=WEAPON;id=PHARAO_ZEPTER} 0.15 1
+  - exp 750-1250
+  BossBar:
+    Enabled: true
+    Title: '&c☠ Pharao'
+    Color: RED
+    Style: SEGMENTED_10
+    Range: 50
+
+SANDKOLOSS:
+  Type: IRON_GOLEM
+  Display: '&c☠ Sandkoloss &8[Lv.50]'
+  Health: 5000
+  Damage: 90
+  Armor: 18
+  Options:
+    MovementSpeed: 0.25
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Skills:
+  - skill{s=BossRuf} @self ~onSpawn
+  - skill{s=BossSchlag} @target ~onTimer:200
+  - skill{s=SandSturm} @PIR{r=25} ~onTimer:600
+  Drops:
+  - MMOItem{type=MATERIAL;id=SANDSTEIN_KERN} 1.0 5-10
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - MMOItem{type=ARMOR;id=SANDKOLOSS_RUESTUNG} 0.2 1
+  - exp 750-1250
+  BossBar:
+    Enabled: true
+    Title: '&c☠ Sandkoloss'
+    Color: RED
+    Style: SEGMENTED_10
+    Range: 50
