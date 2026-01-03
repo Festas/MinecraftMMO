@@ -1,10 +1,10 @@
-name: Mana Barrier
+name: Mana-Barriere
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Generate a mana shield every {barriercooldown} seconds. The mana shield blocks"
-- "&7up to one incoming attack."
-- "&e⌛ {barriercooldown}s Barrier Cooldown"
+- "&7Erzeuge alle {barriercooldown} Sekunden einen Mana-Schild."
+- "&7Der Mana-Schild blockt bis zu einen eingehenden Angriff."
+- "&e⌛ {barriercooldown}s Barriere-Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2311'

@@ -1,13 +1,13 @@
-name: Hailpiercer
+name: Hagelstecher
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Inhale ice aura from a few blocks forward towards the caster,"
-- "&7slightly pulling in enemies for 1.5 seconds. Emerge 3 huge ice"
-- "&7spikes in front of you, damaging and slowing enemies."
-- "&c🗡 {damage} Damage"
-- "&9⏱ {slowduration}s Slow Duration"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Sauge Eisaura von einigen Blöcken vor dir in Richtung des Zauberers"
+- "&7an und ziehe Feinde für 1,5 Sekunden leicht an. Lasse 3 riesige"
+- "&7Eisstacheln vor dir auftauchen, die Feinde verletzen und verlangsamen."
+- "&c🗡 {damage} Schaden"
+- "&9⏱ {slowduration}s Verlangsamungsdauer"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2310'

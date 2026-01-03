@@ -1,11 +1,11 @@
-name: Relentless Whirlwind
+name: Erbarmungsloser Wirbelwind
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Execute a spinning whirlwind slash for a while. Then step back,"
-- "&7dash forward delivering a long-ranged pierce twice."
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Führe für kurze Zeit einen wirbelnden Hieb aus. Weiche dann zurück,"
+- "&7stürme nach vorne und führe zweimal einen weitreichenden Stoß aus."
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2291'

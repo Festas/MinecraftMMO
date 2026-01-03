@@ -1,9 +1,10 @@
-name: Deadly Calm
+name: Tödliche Ruhe
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Standing still for 3 seconds grants 'Calm Focus'. Your next skill"
-- "&7gains 100% critical chance and deals 2x damage."
+- "&7Wenn du 3 Sekunden still stehst, erhältst du 'Ruhiger Fokus'."
+- "&7Deine nächste Fähigkeit erhält 100% kritische Trefferchance"
+- "&7und verursacht doppelten Schaden."
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2267'

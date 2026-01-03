@@ -1,17 +1,17 @@
-name: Strike of Fury
+name: Schlag der Wut
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Gather in vibrative aura while your red spiritual sword grows"
-- "&7massively in length. Then slash forward with your sword 4 times in a"
-- "&7row, leap up high, and smash down the area you're looking at,"
-- "&7creating a huge crack with ruptures. Immediately leap up and"
-- "&7backwards to your original position. The crack glows up and"
-- "&7creates a huge explosion, with bigger ruptures and rubbles"
-- "&7emerging and destroyed from the surface. Enemies in the area get"
-- "&7stunned for a while."
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Sammle vibrierende Aura, während dein rotes Geisterschwert"
+- "&7massiv in die Länge wächst. Führe dann 4-mal hintereinander einen"
+- "&7Hieb nach vorne aus, springe hoch und krache auf die Stelle herab,"
+- "&7die du anvisierst, und erzeuge einen gewaltigen Riss mit Brüchen."
+- "&7Springe sofort hoch und zurück zu deiner ursprünglichen Position."
+- "&7Der Riss glüht auf und erzeugt eine gewaltige Explosion mit"
+- "&7größeren Brüchen und Trümmern, die aus dem Boden emporsteigen"
+- "&7und zerstört werden. Feinde im Bereich werden für kurze Zeit betäubt."
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2292'

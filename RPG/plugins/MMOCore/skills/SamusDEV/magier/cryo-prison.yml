@@ -1,16 +1,16 @@
-name: Cryo Prison
+name: Eisgefängnis
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Create an ice aura forming on the ground, exploding and creating"
-- "&7a giant ice prism. Enemies in the area gets frozen, trapped in"
-- "&7an ice crystal which gets destroyed after some time, dealing"
-- "&7extra damage to enemies. Damaging frozen enemies will destroy"
-- "&7the ice crystal sooner."
-- "&c🗡 {damage} Damage"
-- "&b🧊 {freezedamage} Freeze Damage"
-- "&9⏱ {freezeduration}s Freeze Duration"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Erzeuge eine Eisaura, die sich am Boden bildet, explodiert und"
+- "&7ein riesiges Eisprisma erschafft. Feinde im Bereich werden"
+- "&7eingefroren, gefangen in einem Eiskristall, der nach einiger Zeit"
+- "&7zerstört wird und dabei zusätzlichen Schaden verursacht. Das"
+- "&7Angreifen eingefrorener Feinde zerstört den Eiskristall früher."
+- "&c🗡 {damage} Schaden"
+- "&b🧊 {freezedamage} Einfrierschaden"
+- "&9⏱ {freezeduration}s Einfrierdauer"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2309'

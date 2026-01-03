@@ -1,12 +1,12 @@
-name: Vicious Strike
+name: Brutaler Schlag
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Stand still and gather aura, then release your rage with an"
-- "&7upward sweep from the surface, drawing a long line of destructive"
-- "&7rupture forward."
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Stehe still und sammle Aura, dann entfessle deine Wut mit einem"
+- "&7aufwärts gerichteten Schwung vom Boden und erzeuge eine lange"
+- "&7Linie der Zerstörung nach vorne."
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2293'

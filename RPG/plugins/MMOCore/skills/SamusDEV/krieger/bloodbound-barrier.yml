@@ -1,13 +1,13 @@
-name: Bloodbound Barrier
+name: Blutgebundene Barriere
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Gather in blood aura forming a bloody barrier. Block any damage"
-- "&7up to 5 times. During the shield's duration, release a blood pulse"
-- "&7that damages nearby enemies whenever you get hit."
-- "&c🗡 {damage} Damage"
-- "&9🕗 {duration}s Duration"
-- "&e⌛ {skillcooldown}s Cooldown"
+- "&7Sammle Blut-Aura und forme eine blutige Barriere. Blocke jeden Schaden"
+- "&7bis zu 5-mal. Während der Dauer des Schildes sende einen Blutimpuls aus,"
+- "&7der nahegelegene Feinde verletzt, wenn du getroffen wirst."
+- "&c🗡 {damage} Schaden"
+- "&9🕗 {duration}s Dauer"
+- "&e⌛ {skillcooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2288'

@@ -1,17 +1,17 @@
-name: Last Dance
+name: Letzter Tanz
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Summon several shadow blades around you and begin spinning them"
-- "&7in a circle, launching them in every direction. You can right-click"
-- "&7to teleport to the block you're looking at, up to three times."
-- "&7After 3 seconds, you take nearby enemies into the air while"
-- "&7slashing them multiple times. While airborne, summon shadow"
-- "&7figures that slice through the enemies repeatedly. Then, dash"
-- "&7forward and pierce through them one final time. After 2 seconds,"
-- "&7enemies still suspended in the air explode in a burst of blood."
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Beschwöre mehrere Schattenklingen um dich herum und beginne, sie im"
+- "&7Kreis zu drehen, wobei du sie in alle Richtungen schleuderst. Du kannst"
+- "&7mit Rechtsklick bis zu dreimal zu dem Block teleportieren, den du anvisierst."
+- "&7Nach 3 Sekunden reißt du nahegelegene Feinde in die Luft, während du"
+- "&7sie mehrmals triffst. Während du in der Luft bist, beschwöre"
+- "&7Schattengestalten, die die Feinde wiederholt durchschneiden. Dann stürme"
+- "&7nach vorne und durchbohre sie ein letztes Mal. Nach 2 Sekunden"
+- "&7explodieren die noch in der Luft schwebenden Feinde in einem Blutrausch."
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2269'

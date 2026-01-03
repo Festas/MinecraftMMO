@@ -1,11 +1,11 @@
-name: Ravaging Dash
+name: Verheerender Sprint
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Charge your blade with shadow particles, then dash a long"
-- "&7distance, slashing enemies multiple times along your path."
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Lade deine Klinge mit Schattenpartikeln auf und sprinte dann eine"
+- "&7weite Strecke, wobei du Feinde mehrmals auf deinem Weg triffst."
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2271'

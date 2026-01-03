@@ -1,12 +1,12 @@
-name: Teleport Strike
+name: Teleport-Schlag
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Teleport forward infused with thunderous energy. At the end,"
-- "&7unleash a thunder explosion that stuns enemies."
-- "&c🗡 {damage} Damage"
-- "&9⏱ {stunduration}s Stun Duration"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Teleportiere dich nach vorne, erfüllt mit Donnerenergie. Am Ende"
+- "&7entfessle eine Donnerexplosion, die Feinde betäubt."
+- "&c🗡 {damage} Schaden"
+- "&9⏱ {stunduration}s Betäubungsdauer"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2314'
