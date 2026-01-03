@@ -1,17 +1,17 @@
-name: Summon Dragon
+name: Drache beschwören
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Summon a Spirit Dragon that fights by your side."
+- "&7Beschwöre einen Geisterdrachen, der an deiner Seite kämpft."
 - ""
-- "&6Spirit Dragon (Ranged Minion)"
-- "&bSoul Fireball: &7Your Spirit Dragon fires a ball of soulfire"
-- "&7which explodes on contact."
-- "&bSoul Breath: &7Your Spirit Dragon charges and fires a long breath"
-- "&7of soulfire for 1.5 seconds."
+- "&6Geisterdrache (Fernkampf-Diener)"
+- "&bSeelen-Feuerball: &7Dein Geisterdrache feuert einen Ball aus Seelenfeuer"
+- "&7ab, der bei Kontakt explodiert."
+- "&bSeelen-Atem: &7Dein Geisterdrache lädt auf und feuert einen langen Strahl"
+- "&7aus Seelenfeuer für 1,5 Sekunden ab."
 - ""
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2327'

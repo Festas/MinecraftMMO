@@ -1,14 +1,14 @@
-name: Soul Combo
+name: Seelen-Kombo
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Unleash a chain of soul slashes:"
-- "&bFirst Strike: &7Slash forward once with your left blade."
-- "&bSecond Strike: &7Slash twice in a row with both blades."
-- "&bThird Strike: &7Slash three times in a row with both blades."
-- "&bFourth Strike: &7Perform a strong duo slash with both blades."
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Entfessle eine Kette von Seelenhieben:"
+- "&bErster Schlag: &7Schlage einmal mit deiner linken Klinge nach vorne."
+- "&bZweiter Schlag: &7Schlage zweimal hintereinander mit beiden Klingen zu."
+- "&bDritter Schlag: &7Schlage dreimal hintereinander mit beiden Klingen zu."
+- "&bVierter Schlag: &7Führe einen starken Doppelhieb mit beiden Klingen aus."
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2324'

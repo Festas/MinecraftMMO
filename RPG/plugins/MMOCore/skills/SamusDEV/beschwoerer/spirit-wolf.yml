@@ -1,15 +1,15 @@
-name: Spirit Wolf
+name: Geisterwolf
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Summon a Spirit Wolf that always fights by your side."
+- "&7Beschwöre einen Geisterwolf, der immer an deiner Seite kämpft."
 - ""
-- "&6Spirit Wolf (Melee Minion)"
-- "&bClaw Slash: &7Your Spirit Wolf slashes its claw, damaging an enemy."
-- "&bBite: &7Your Spirit Wolf bites and damages an enemy. It leaps"
-- "&7before biting when far from the target."
+- "&6Geisterwolf (Nahkampf-Diener)"
+- "&bKlauenhieb: &7Dein Geisterwolf schlägt mit seiner Klaue zu und verletzt einen Feind."
+- "&bBiss: &7Dein Geisterwolf beißt einen Feind und verletzt ihn. Er springt"
+- "&7vor dem Biss, wenn er weit vom Ziel entfernt ist."
 - ""
-- "&c🗡 {damage} Damage"
+- "&c🗡 {damage} Schaden"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2326'

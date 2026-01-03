@@ -1,11 +1,11 @@
-name: Rapid Arrows
+name: Schnelle Pfeile
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Fire 5 arrows in a row. After a short pause, rapidly fire 3"
-- "&7strong piercing arrows that penetrate through enemies."
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Feuere 5 Pfeile hintereinander ab. Nach kurzer Pause feuere"
+- "&7schnell 3 starke durchdringende Pfeile ab, die durch Feinde hindurchgehen."
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2298'

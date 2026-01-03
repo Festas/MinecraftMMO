@@ -1,12 +1,12 @@
-name: Soul Link
+name: Seelenverbindung
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&bPower Link (Thunder Stance): &7Create a spiritual link with the nearest ally, giving them strength."
+- "&bKraft-Verbindung (Donner-Haltung): &7Erschaffe eine spirituelle Verbindung mit dem nächsten Verbündeten und verleihe ihm Stärke."
 - ""
-- "&bLife Link (Earth Stance): &7Create a spiritual link with the nearest ally, constantly healing them."
-- "&a❤ {heal} Heal"
-- "&9⏱ {healinterval} ticks Heal Interval"
+- "&bLebens-Verbindung (Erd-Haltung): &7Erschaffe eine spirituelle Verbindung mit dem nächsten Verbündeten und heile ihn kontinuierlich."
+- "&a❤ {heal} Heilung"
+- "&9⏱ {healinterval} Ticks Heil-Intervall"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2320'

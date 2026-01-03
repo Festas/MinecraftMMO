@@ -1,13 +1,13 @@
-name: Soul Spear
+name: Seelenlanze
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Summon a soul spear and smash it towards the surface, creating" 
-- "&7a rupture and damaging enemies, stunning them."
+- "&7Beschwöre eine Seelenlanze und schleudere sie auf die Oberfläche,"
+- "&7erzeuge einen Bruch, verletze Feinde und betäube sie."
 - ""
-- "&c🗡 {damage} Damage"
-- "&9⏱ {stunduration}s Stun Duration"
-- "&e⌛ {cooldown}s Cooldown"
+- "&c🗡 {damage} Schaden"
+- "&9⏱ {stunduration}s Betäubungsdauer"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2325'

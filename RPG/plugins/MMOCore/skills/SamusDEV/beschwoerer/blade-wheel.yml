@@ -1,13 +1,13 @@
-name: Blade Wheel
+name: Klingenrad
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Form your blades into a spinning wheel and throw it forward."
-- "&7The blades pierce through enemies and stop at a position, still"
-- "&7cutting through enemies nearby before coming back to you."
+- "&7Forme deine Klingen zu einem wirbelnden Rad und wirf es nach vorne."
+- "&7Die Klingen durchbohren Feinde und stoppen an einer Position, wo sie"
+- "&7weiterhin nahe Feinde durchschneiden, bevor sie zu dir zurückkehren."
 - ""
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2323'

@@ -1,10 +1,10 @@
-name: Earthen Embrace
+name: Erdumarmung
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Wooden roots emerge from the surface below up to 5 nearby"
-- "&7enemies, entangling them for 2.5 seconds."
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Holzwurzeln erheben sich von der Oberfläche unter bis zu 5"
+- "&7nahegelegenen Feinden und verfangen sie für 2,5 Sekunden."
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2316'

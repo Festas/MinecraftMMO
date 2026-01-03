@@ -1,12 +1,12 @@
-name: Shot of Destruction
+name: Schuss der Zerstörung
 lore:
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 - ""
-- "&7Focus on the tip of your arrow, gathering energy and locking in."
-- "&7Fire a blast of destructive arrow forward, destroying everything"
-- "&7in its path."
-- "&c🗡 {damage} Damage"
-- "&e⌛ {cooldown}s Cooldown"
+- "&7Konzentriere dich auf die Spitze deines Pfeils, sammle Energie und"
+- "&7verriegele sie. Feuere einen vernichtenden Pfeil nach vorne,"
+- "&7der alles auf seinem Weg zerstört."
+- "&c🗡 {damage} Schaden"
+- "&e⌛ {cooldown}s Abklingzeit"
 - ""
 - "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 material: 'COAL:2299'
