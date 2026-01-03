@@ -1,0 +1,111 @@
+name: Deploy Survival Server Configs
+
+on:
+  push:
+    branches: [main]
+    paths: ['Survival/**']
+  workflow_dispatch:
+    inputs:
+      replace_folder:
+        description: 'Plugin-Ordner komplett ersetzen (z.B. MMOCore) - leer lassen für normalen Deploy'
+        required: false
+        default: ''
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Für Vergleich mit vorherigem Commit
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Get Changed Files
+        id: changed_files
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            # Bei Push: Erkenne geänderte/gelöschte Dateien
+            git diff --name-status HEAD~1 HEAD | grep '^[AMD]' | grep '^.\s*Survival/' > /tmp/changed_files.txt || true
+            cat /tmp/changed_files.txt
+          else
+            echo "Manual trigger - will handle in sync step"
+          fi
+
+      - name: Sync Changed Files / Replace Folder
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SERVER_PATH: ${{ secrets.SERVER_PATH_SURVIVAL }}
+          REPLACE_FOLDER: ${{ github.event.inputs.replace_folder }}
+        run: |
+          # Exclude patterns
+          EXCLUDE_OPTS="--exclude='*.db' --exclude='*.sqlite' --exclude='*.log' --exclude='playerdata/' --exclude='data/' --exclude='cache/' --exclude='.git*'"
+
+          if [ -n "$REPLACE_FOLDER" ]; then
+            # Ordner komplett ersetzen
+            echo "Replacing folder: $REPLACE_FOLDER"
+
+            # Prüfe ob Ordner im Repository existiert
+            if [ ! -d "Survival/$REPLACE_FOLDER" ]; then
+              echo "Error: Folder Survival/$REPLACE_FOLDER does not exist in repository"
+              exit 1
+            fi
+
+            # Lösche Ordner auf dem Server
+            ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rm -rf $SERVER_PATH/$REPLACE_FOLDER"
+
+            # Lade kompletten Ordner hoch
+            eval "scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -r $EXCLUDE_OPTS Survival/$REPLACE_FOLDER $SSH_USER@$SSH_HOST:$SERVER_PATH/"
+
+            echo "Folder $REPLACE_FOLDER replaced successfully"
+          else
+            # Normale Synchronisation
+            echo "Syncing changed files..."
+
+            if [ "${{ github.event_name }}" = "push" ]; then
+              # Verarbeite geänderte Dateien
+              if [ -f /tmp/changed_files.txt ] && [ -s /tmp/changed_files.txt ]; then
+                while IFS=$'\t' read -r status file; do
+                  # Entferne Survival/ Prefix
+                  relative_file="${file#Survival/}"
+
+                  # Skip excluded patterns
+                  if echo "$relative_file" | grep -qE '\.(db|sqlite|log)$|^(playerdata|data|cache)/|^\.git'; then
+                    echo "Skipping excluded file: $relative_file"
+                    continue
+                  fi
+
+                  if [ "$status" = "D" ]; then
+                    # Datei wurde gelöscht
+                    echo "Deleting: $relative_file"
+                    ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rm -f $SERVER_PATH/$relative_file"
+                  else
+                    # Datei wurde hinzugefügt oder geändert
+                    echo "Uploading: $relative_file"
+                    # Erstelle Verzeichnisstruktur
+                    dir_path=$(dirname "$relative_file")
+                    if [ "$dir_path" != "." ]; then
+                      ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "mkdir -p $SERVER_PATH/$dir_path"
+                    fi
+                    # Lade Datei hoch
+                    scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no "Survival/$relative_file" "$SSH_USER@$SSH_HOST:$SERVER_PATH/$relative_file"
+                  fi
+                done < /tmp/changed_files.txt
+                echo "Sync completed successfully"
+              else
+                echo "No files changed in Survival/"
+              fi
+            else
+              # Manueller Trigger ohne replace_folder: Sync alle Dateien
+              echo "Manual sync: uploading all files..."
+              eval "rsync -avz -e 'ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no' $EXCLUDE_OPTS --delete Survival/ $SSH_USER@$SSH_HOST:$SERVER_PATH/"
+              echo "Full sync completed successfully"
+            fi
+          fi
