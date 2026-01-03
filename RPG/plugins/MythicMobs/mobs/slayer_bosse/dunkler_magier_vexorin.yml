@@ -1,0 +1,90 @@
+# ===================================================
+# Dunkler Magier Vexorin - Slayer Tier V Boss
+# Dämonen-Slayer Boss mit 4 Kampfphasen
+# ===================================================
+
+DunklerMagierVexorin:
+  Type: EVOKER
+  Display: '&0&lDunkler Magier Vexorin'
+  Health: 6000
+  Damage: 28
+  Armor: 15
+  Options:
+    MovementSpeed: 0.25
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 50
+    Silent: false
+  Equipment:
+  - 'NETHERITE_SWORD{Enchantments:[sharpness:5],Unbreakable:true,display:{Lore:["&0Stab der Leere"]}} HAND'
+  - LEATHER_HELMET{color=0,0,0,Unbreakable:true} HEAD
+  - LEATHER_CHESTPLATE{color=0,0,0,Unbreakable:true} CHEST
+  - LEATHER_LEGGINGS{color=0,0,0,Unbreakable:true} LEGS
+  - LEATHER_BOOTS{color=0,0,0,Unbreakable:true} FEET
+  
+  # ==========================================
+  # Skills
+  # ==========================================
+  Skills:
+  # Spawn
+  - skill{s=VexorinStartDialog} @self ~onSpawn
+  
+  # Phase 1 (100%-75% HP)
+  - skill{s=SchattenpfeilVexorin} @target ~onTimer:200
+  - skill{s=LeereRuneVexorin} @target ~onTimer:400
+  - skill{s=TeleportVexorin} @self ~onTimer:300
+  
+  # Phase 2 (75%-50% HP)
+  - skill{s=VexorinPhase2Dialog} @self ~onHealthMod:<0.75 1
+  - skill{s=LeereExplosionVexorin} @self ~onTimer:500 ~onHealthMod:0.5to0.75
+  - skill{s=DunkleKettenVexorin} @target ~onTimer:600 ~onHealthMod:0.5to0.75
+  - skill{s=BeschwoereLeereSplitter} @self ~onTimer:700 ~onHealthMod:0.5to0.75
+  - skill{s=SchattenpfeilVexorin} @target ~onTimer:250 ~onHealthMod:0.5to0.75
+  - skill{s=TeleportVexorin} @self ~onTimer:350 ~onHealthMod:0.5to0.75
+  
+  # Phase 3 (50%-25% HP)
+  - skill{s=VexorinPhase3Dialog} @self ~onHealthMod:<0.5 1
+  - skill{s=BeschwoereSchattenwaechter} @self ~onHealthMod:<0.5 1
+  - skill{s=LeereSturmVexorin} @self ~onTimer:600 ~onHealthMod:0.25to0.5
+  - skill{s=GedankenkontrolleVexorin} @target ~onTimer:700 ~onHealthMod:0.25to0.5
+  - skill{s=LeereZonenVexorin} @self ~onTimer:400 ~onHealthMod:0.25to0.5
+  - skill{s=SchattenpfeilVexorin} @target ~onTimer:200 ~onHealthMod:0.25to0.5
+  - skill{s=LeereExplosionVexorin} @self ~onTimer:450 ~onHealthMod:0.25to0.5
+  
+  # Phase 4 (25%-x% HP)
+  - skill{s=VexorinPhase4Dialog} @self ~onHealthMod:<0.25 1
+  - skill{s=DimensionsrissVexorin} @target ~onTimer:500 ~onHealthMod:<0.25
+  - skill{s=LeereApokalypseVexorin} @self ~onTimer:800 ~onHealthMod:<0.25
+  - skill{s=SchattenpfeilVexorin} @target ~onTimer:150 ~onHealthMod:<0.25
+  - skill{s=LeereExplosionVexorin} @self ~onTimer:350 ~onHealthMod:<0.25
+  - skill{s=LeereSturmVexorin} @self ~onTimer:500 ~onHealthMod:<0.25
+  
+  # Death
+  - skill{s=VexorinDeathDialog} @self ~onDeath
+  
+  # ==========================================
+  # Drops
+  # ==========================================
+  Drops:
+  # Quest Item (WICHTIG für Hauptquest Kapitel 2!)
+  - MMOItem{type=MATERIAL;id=FRAGMENT_DER_LEERE} 1.0 1
+  # Gold
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 5000
+  # XP
+  - exp 8000
+  # Legendary Weapon (25% chance)
+  - MMOItem{type=WEAPON;id=STAB_DER_LEERE} 0.25 1
+  # Mythic Armor Piece (5% chance)
+  - MMOItem{type=ARMOR;id=LEERE_RUESTUNG_TEIL} 0.05 1
+  # Command für Titel
+  - cmd{c="lp user <trigger.name> permission set titles.daemonen_schlaechter true"} 1.0 ~onDeath
+  
+  # ==========================================
+  # BossBar
+  # ==========================================
+  BossBar:
+    Enabled: true
+    Title: '&0&lDunkler Magier Vexorin'
+    Color: BLACK
+    Style: SEGMENTED_10
+    Range: 50

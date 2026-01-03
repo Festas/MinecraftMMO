@@ -1,0 +1,75 @@
+# ===================================================
+# Nekromant Malachar - Slayer Tier V Boss
+# Untoten-Slayer Boss mit 3 Kampfphasen
+# ===================================================
+
+NekromantMalachar:
+  Type: WITHER_SKELETON
+  Display: '&5&lNekromant Malachar'
+  Health: 5000
+  Damage: 20
+  Armor: 12
+  Options:
+    MovementSpeed: 0.25
+    PreventOtherDrops: true
+    PreventSunburn: true
+    AlwaysShowName: true
+    FollowRange: 50
+  Equipment:
+  - 'NETHERITE_SWORD{Enchantments:[sharpness:5],Unbreakable:true,display:{Lore:["&5Stab der Verdammnis"]}} HAND'
+  - WITHER_SKELETON_SKULL HEAD
+  - LEATHER_CHESTPLATE{color=0,0,0,Unbreakable:true} CHEST
+  - LEATHER_LEGGINGS{color=0,0,0,Unbreakable:true} LEGS
+  - LEATHER_BOOTS{color=0,0,0,Unbreakable:true} FEET
+  
+  # ==========================================
+  # Skills
+  # ==========================================
+  Skills:
+  # Spawn
+  - skill{s=MalacharStartDialog} @self ~onSpawn
+  
+  # Phase 1 (100%-70% HP)
+  - skill{s=TodesgriffMalachar} @target ~onTimer:400
+  - skill{s=BeschwoereDienerP1} @self ~onTimer:600
+  
+  # Phase 2 (70%-40% HP)
+  - skill{s=MalacharPhase2Dialog} @self ~onHealthMod:<0.7 1
+  - skill{s=SeelenraubMalachar} @self ~onTimer:500 ~onHealthMod:0.4to0.7
+  - skill{s=KnochenkäfigMalachar} @target ~onTimer:600 ~onHealthMod:0.4to0.7
+  - skill{s=BeschwoereDienerP2} @self ~onTimer:400 ~onHealthMod:0.4to0.7
+  
+  # Phase 3 (40%-0% HP)
+  - skill{s=MalacharPhase3Dialog} @self ~onHealthMod:<0.4 1
+  - skill{s=BeschwoereChampions} @self ~onHealthMod:<0.4 1
+  - skill{s=ApokalypseMalachar} @self ~onTimer:800 ~onHealthMod:<0.4
+  - skill{s=SeelenraubMalachar} @self ~onTimer:400 ~onHealthMod:<0.4
+  - skill{s=TodesgriffMalachar} @target ~onTimer:300 ~onHealthMod:<0.4
+  
+  # Death
+  - skill{s=MalacharDeathDialog} @self ~onDeath
+  
+  # ==========================================
+  # Drops
+  # ==========================================
+  Drops:
+  # Quest Item
+  - MMOItem{type=MATERIAL;id=SEELE_DES_NEKROMANTEN} 1.0 1
+  # Gold
+  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 3000
+  # XP
+  - exp 5000
+  # Legendary Weapon (25% chance)
+  - MMOItem{type=WEAPON;id=STAB_DER_VERDAMMNIS} 0.25 1
+  # Command für Titel
+  - cmd{c="lp user <trigger.name> permission set titles.untoten_vernichter true"} 1.0 ~onDeath
+  
+  # ==========================================
+  # BossBar
+  # ==========================================
+  BossBar:
+    Enabled: true
+    Title: '&5&lNekromant Malachar'
+    Color: PURPLE
+    Style: SEGMENTED_10
+    Range: 50
