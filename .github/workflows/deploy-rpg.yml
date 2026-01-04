@@ -62,7 +62,7 @@ jobs:
             ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rm -rf $SERVER_PATH/$REPLACE_FOLDER"
 
             # Lade kompletten Ordner hoch
-            eval "scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -r $EXCLUDE_OPTS RPG/$REPLACE_FOLDER $SSH_USER@$SSH_HOST:$SERVER_PATH/"
+            eval "rsync -avz -e 'ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no' $EXCLUDE_OPTS --delete RPG/plugins/$REPLACE_FOLDER/ $SSH_USER@$SSH_HOST:$SERVER_PATH/$REPLACE_FOLDER/"
 
             echo "Folder $REPLACE_FOLDER replaced successfully"
           else
