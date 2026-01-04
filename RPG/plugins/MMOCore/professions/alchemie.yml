@@ -1,4 +1,5 @@
 # Alchemie Profession (Alchemy)
+# Updated for Minecraft 1.21+ (Flattening & Potion Names)
 name: '&5🧪 &dAlchemie'
 
 # XP zum Hauptlevel beim Leveln dieses Berufs
@@ -101,6 +102,7 @@ on-level-up:
     - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=2}'
 
 # XP-Quellen für Trank-Brauen
+# ACHTUNG: Namen wurden für 1.21+ korrigiert!
 exp-sources:
   # Basic Tränke
   - 'brew{potion=AWKWARD;amount=3-5}'
@@ -108,11 +110,11 @@ exp-sources:
   - 'brew{potion=MUNDANE;amount=2-4}'
   
   # Heilung
-  - 'brew{potion=INSTANT_HEAL;amount=8-12}'
+  - 'brew{potion=HEALING;amount=8-12}'
   - 'brew{potion=STRONG_HEALING;amount=12-18}'
   
   # Regeneration
-  - 'brew{potion=REGEN;amount=10-15}'
+  - 'brew{potion=REGENERATION;amount=10-15}'
   - 'brew{potion=LONG_REGENERATION;amount=12-18}'
   - 'brew{potion=STRONG_REGENERATION;amount=15-22}'
   
@@ -122,12 +124,12 @@ exp-sources:
   - 'brew{potion=STRONG_STRENGTH;amount=15-22}'
   
   # Schnelligkeit
-  - 'brew{potion=SPEED;amount=8-12}'
+  - 'brew{potion=SWIFTNESS;amount=8-12}'
   - 'brew{potion=LONG_SWIFTNESS;amount=10-15}'
   - 'brew{potion=STRONG_SWIFTNESS;amount=12-18}'
   
   # Sprungkraft
-  - 'brew{potion=JUMP;amount=8-12}'
+  - 'brew{potion=LEAPING;amount=8-12}'
   - 'brew{potion=LONG_LEAPING;amount=10-15}'
   - 'brew{potion=STRONG_LEAPING;amount=12-18}'
   
@@ -153,7 +155,7 @@ exp-sources:
   - 'brew{potion=STRONG_SLOWNESS;amount=12-18}'
   
   # Schaden
-  - 'brew{potion=INSTANT_DAMAGE;amount=10-15}'
+  - 'brew{potion=HARMING;amount=10-15}'
   - 'brew{potion=STRONG_HARMING;amount=15-22}'
   
   # Gift
@@ -173,3 +175,4 @@ exp-sources:
   # Sanfter Fall
   - 'brew{potion=SLOW_FALLING;amount=10-15}'
   - 'brew{potion=LONG_SLOW_FALLING;amount=12-18}'
+
