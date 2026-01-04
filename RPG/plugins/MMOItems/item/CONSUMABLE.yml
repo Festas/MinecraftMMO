@@ -1,0 +1,373 @@
+# ============================================================
+# CONSUMABLE.yml - Alle CONSUMABLE Items
+# ============================================================
+
+# ==================== GEMEINSAM CONSUMABLE ====================
+GEMEINSAM_HEILTRANK_T1:
+  base:
+    material: POTION
+    name: '&fKleiner Heiltrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein einfacher Heiltrank.'
+      - '&7Stellt 50 HP sofort wieder her.'
+      - ''
+      - '&c❤ +50 Heilung'
+      - '&e⌛ 30s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    restore-health: 50
+    required-level: 1
+
+GEMEINSAM_HEILTRANK_T2:
+  base:
+    material: POTION
+    name: '&aHeiltrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein solider Heiltrank für'
+      - '&7erfahrenere Abenteurer.'
+      - ''
+      - '&c❤ +150 Heilung'
+      - '&e⌛ 30s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    restore-health: 150
+    required-level: 12
+
+GEMEINSAM_HEILTRANK_T3:
+  base:
+    material: POTION
+    name: '&9Großer Heiltrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein mächtiger Heiltrank mit'
+      - '&7Regenerationseffekt.'
+      - ''
+      - '&c❤ +350 Heilung'
+      - '&a+3s Regeneration'
+      - '&e⌛ 30s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    restore-health: 350
+    required-level: 22
+
+GEMEINSAM_HEILTRANK_T4:
+  base:
+    material: POTION
+    name: '&5Überragender Heiltrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein überragender Heiltrank mit'
+      - '&7starker Regeneration.'
+      - ''
+      - '&c❤ +750 Heilung'
+      - '&a+5s Starke Regeneration'
+      - '&e⌛ 25s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    restore-health: 750
+    required-level: 38
+
+GEMEINSAM_HEILTRANK_T5:
+  base:
+    material: POTION
+    name: '&6Legendärer Heiltrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein legendärer Heiltrank,'
+      - '&7der dich fast vollständig heilt.'
+      - ''
+      - '&c❤ +1500 Heilung'
+      - '&a+10s Regeneration'
+      - '&e⌛ 20s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    restore-health: 1500
+    required-level: 55
+
+GEMEINSAM_HEILTRANK_T6:
+  base:
+    material: POTION
+    name: '&cMythischer Heiltrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein mythischer Heiltrank,'
+      - '&7der dich vollständig heilt und'
+      - '&7kurzzeitig unverwundbar macht.'
+      - ''
+      - '&c❤ +3000 Heilung'
+      - '&6⚡ 2s Unverwundbarkeit'
+      - '&e⌛ 15s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    restore-health: 3000
+    required-level: 78
+
+GEMEINSAM_MANATRANK_T1:
+  base:
+    material: POTION
+    name: '&fKleiner Manatrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein einfacher Manatrank.'
+      - '&7Stellt 30 Mana sofort wieder her.'
+      - ''
+      - '&9✦ +30 Mana'
+      - '&e⌛ 30s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    restore-mana: 30
+    required-level: 1
+
+GEMEINSAM_MANATRANK_T2:
+  base:
+    material: POTION
+    name: '&aManatrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein solider Manatrank für'
+      - '&7erfahrenere Zauberkundige.'
+      - ''
+      - '&9✦ +100 Mana'
+      - '&e⌛ 30s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    restore-mana: 100
+    required-level: 12
+
+GEMEINSAM_MANATRANK_T3:
+  base:
+    material: POTION
+    name: '&9Großer Manatrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein mächtiger Manatrank mit'
+      - '&7Regenerationseffekt.'
+      - ''
+      - '&9✦ +250 Mana'
+      - '&a+3s Mana-Regeneration'
+      - '&e⌛ 30s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    restore-mana: 250
+    required-level: 22
+
+GEMEINSAM_MANATRANK_T4:
+  base:
+    material: POTION
+    name: '&5Überragender Manatrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein überragender Manatrank mit'
+      - '&7starker Regeneration.'
+      - ''
+      - '&9✦ +550 Mana'
+      - '&a+5s Starke Mana-Regeneration'
+      - '&e⌛ 25s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    restore-mana: 550
+    required-level: 38
+
+GEMEINSAM_MANATRANK_T5:
+  base:
+    material: POTION
+    name: '&6Legendärer Manatrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein legendärer Manatrank,'
+      - '&7der dein Mana fast vollständig'
+      - '&7wiederherstellt.'
+      - ''
+      - '&9✦ +1200 Mana'
+      - '&a+10s Mana-Regeneration'
+      - '&e⌛ 20s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    restore-mana: 1200
+    required-level: 55
+
+GEMEINSAM_MANATRANK_T6:
+  base:
+    material: POTION
+    name: '&cMythischer Manatrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein mythischer Manatrank,'
+      - '&7der dein Mana vollständig'
+      - '&7wiederherstellt und Kosten reduziert.'
+      - ''
+      - '&9✦ +2500 Mana'
+      - '&650% Kosten-Reduktion (10s)'
+      - '&e⌛ 15s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    restore-mana: 2500
+    required-level: 78
+
+GEMEINSAM_STAERKETRANK:
+  base:
+    material: SPLASH_POTION
+    name: '&aTrank der Stärke'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Trank, der deine'
+      - '&7Stärke temporär erhöht.'
+      - ''
+      - '&c+15% Schaden'
+      - '&a⏱ 5min Dauer'
+      - '&e⌛ 5min Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 12
+
+GEMEINSAM_GESCHWINDIGKEIT:
+  base:
+    material: SPLASH_POTION
+    name: '&9Trank der Geschwindigkeit'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Trank, der dich'
+      - '&7schneller macht.'
+      - ''
+      - '&a+25% Bewegungsgeschwindigkeit'
+      - '&a⏱ 5min Dauer'
+      - '&e⌛ 5min Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 22
+
+GEMEINSAM_REGENERATION:
+  base:
+    material: SPLASH_POTION
+    name: '&9Trank der Regeneration'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Trank, der dich'
+      - '&7kontinuierlich heilt.'
+      - ''
+      - '&c+5 HP/s'
+      - '&a⏱ 3min Dauer'
+      - '&e⌛ 5min Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 22
+
+GEMEINSAM_RESISTENZ:
+  base:
+    material: SPLASH_POTION
+    name: '&5Trank der Resistenz'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Trank, der deinen'
+      - '&7Körper stählt.'
+      - ''
+      - '&6+20% Schadensreduzierung'
+      - '&a⏱ 5min Dauer'
+      - '&e⌛ 5min Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 38
+
+GEMEINSAM_UNSICHTBARKEIT:
+  base:
+    material: SPLASH_POTION
+    name: '&6Trank der Unsichtbarkeit'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Trank, der dich'
+      - '&7unsichtbar macht.'
+      - ''
+      - '&7⚠ Bricht bei Angriff'
+      - '&a⏱ 2min Dauer'
+      - '&e⌛ 10min Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 55
+
+GEMEINSAM_SPRUNGTRANK:
+  base:
+    material: SPLASH_POTION
+    name: '&9Trank der Sprungkraft'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Trank, der deine'
+      - '&7Sprünge verstärkt.'
+      - ''
+      - '&a+50% Sprungkraft'
+      - '&a⏱ 5min Dauer'
+      - '&e⌛ 5min Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 22
+
+GEMEINSAM_FEUERSCHUTZ:
+  base:
+    material: SPLASH_POTION
+    name: '&6Trank des Feuerschutzes'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Trank, der dich vor'
+      - '&7Feuer und Lava schützt.'
+      - ''
+      - '&c⚡ Feuer-Immunität'
+      - '&a⏱ 5min Dauer'
+      - '&e⌛ 5min Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 38
+
+GEMEINSAM_WASSERTRANK:
+  base:
+    material: SPLASH_POTION
+    name: '&9Trank der Wasseratmung'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Trank, der dir ermöglicht,'
+      - '&7unter Wasser zu atmen.'
+      - ''
+      - '&9✦ Wasseratmung'
+      - '&a⏱ 8min Dauer'
+      - '&e⌛ 5min Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 12
+
+GEMEINSAM_NACHTSICHT:
+  base:
+    material: SPLASH_POTION
+    name: '&aTrank der Nachtsicht'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Trank, der dir erlaubt,'
+      - '&7im Dunkeln zu sehen.'
+      - ''
+      - '&e⚡ Nachtsicht'
+      - '&a⏱ 8min Dauer'
+      - '&e⌛ 3min Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 1
+

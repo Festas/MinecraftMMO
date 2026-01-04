@@ -1,0 +1,455 @@
+# ============================================================
+# BOW.yml - Alle BOW Items
+# ============================================================
+
+# ==================== BOGENSCHÜTZE BOW ====================
+BOGENSCHUETZE_LANGBOGEN_T1:
+  base:
+    material: BOW
+    name: '&fEinfacher Holzbogen'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Ein einfacher Bogen aus Holz.'
+      - '&7Gut für den Anfang.'
+      - ''
+      - '&7Reichweite: &f35 Blöcke'
+      - ''
+      - '&8Benötigt Level 1'
+    arrow-velocity: 2.0
+    projectile-damage: 7
+    required-level: 1
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_LANGBOGEN_T2:
+  base:
+    material: BOW
+    name: '&aVerstärkter Kriegsbogen'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Ein verstärkter Bogen für'
+      - '&7erfahrene Schützen.'
+      - ''
+      - '&7Reichweite: &f40 Blöcke'
+      - '&a+5% Kopfschuss-Schaden'
+      - ''
+      - '&8Benötigt Level 12'
+    arrow-velocity: 2.2
+    projectile-damage: 12
+    critical-strike-chance: 5
+    required-level: 12
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_LANGBOGEN_T3:
+  base:
+    material: BOW
+    name: '&9Elfen-Langbogen'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Ein magischer Bogen der Elfen,'
+      - '&7leicht und präzise.'
+      - ''
+      - '&7Reichweite: &f50 Blöcke'
+      - '&9+15% Kopfschuss-Schaden'
+      - '&9Durchdringung I'
+      - ''
+      - '&8Benötigt Level 22'
+    arrow-velocity: 2.5
+    projectile-damage: 19
+    critical-strike-chance: 8
+    required-level: 22
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_LANGBOGEN_T4:
+  base:
+    material: BOW
+    name: '&5Runen-Langbogen des Jägers'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Mit uralten Runen verziert,'
+      - '&7verstärkt dieser Bogen jeden Schuss.'
+      - ''
+      - '&7Reichweite: &f60 Blöcke'
+      - '&5+28% Kopfschuss-Schaden'
+      - '&5Durchdringung II'
+      - '&5+12% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 38'
+    arrow-velocity: 2.8
+    projectile-damage: 32
+    critical-strike-chance: 12
+    required-level: 38
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_LANGBOGEN_T5:
+  base:
+    material: BOW
+    name: '&6Legendärer Adlerbogen'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Geschaffen aus dem Gefieder'
+      - '&7eines legendären Adlers.'
+      - ''
+      - '&7Reichweite: &f75 Blöcke'
+      - '&6+45% Kopfschuss-Schaden'
+      - '&6Durchdringung III'
+      - '&6+20% Kritische Trefferchance'
+      - ''
+      - '&d⚡ Ability: Präzisionsschuss'
+      - '&8(Garantierter Kopfschuss)'
+      - ''
+      - '&8Benötigt Level 55'
+    arrow-velocity: 3.2
+    projectile-damage: 45
+    critical-strike-chance: 20
+    required-level: 55
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_LANGBOGEN_T6:
+  base:
+    material: BOW
+    name: '&cMythischer Weltenbogen'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Ein göttlicher Bogen, der'
+      - '&7Welten durchdringen kann.'
+      - ''
+      - '&7Reichweite: &f100 Blöcke'
+      - '&c+75% Kopfschuss-Schaden'
+      - '&cDurchdringung IV'
+      - '&c+32% Kritische Trefferchance'
+      - ''
+      - '&d⚡ Ability: Göttlicher Pfeil'
+      - '&8(Explosiver Pfeil mit AoE)'
+      - ''
+      - '&8Benötigt Level 78'
+    arrow-velocity: 3.8
+    projectile-damage: 69
+    critical-strike-chance: 32
+    required-level: 78
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_KURZBOGEN_T1:
+  base:
+    material: BOW
+    name: '&fEinfacher Kurzbogen'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Ein kleiner Bogen für'
+      - '&7schnelle Schüsse.'
+      - ''
+      - '&7Schussrate: &f1.5/s'
+      - ''
+      - '&8Benötigt Level 1'
+    arrow-velocity: 1.8
+    projectile-damage: 5
+    attack-speed: 1.5
+    required-level: 1
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_KURZBOGEN_T2:
+  base:
+    material: BOW
+    name: '&aSchneller Jagdbogen'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Ein Bogen für die schnelle'
+      - '&7Jagd auf flinke Beute.'
+      - ''
+      - '&7Schussrate: &f1.8/s'
+      - '&a+5% Schussgeschwindigkeit'
+      - ''
+      - '&8Benötigt Level 12'
+    arrow-velocity: 1.9
+    projectile-damage: 9
+    attack-speed: 1.8
+    critical-strike-chance: 5
+    required-level: 12
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_KURZBOGEN_T3:
+  base:
+    material: BOW
+    name: '&9Windläufer-Bogen'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Leicht wie der Wind,'
+      - '&7schnell wie der Sturm.'
+      - ''
+      - '&7Schussrate: &f2.1/s'
+      - '&9+15% Schussgeschwindigkeit'
+      - '&9+8% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 22'
+    arrow-velocity: 2.0
+    projectile-damage: 14
+    attack-speed: 2.1
+    critical-strike-chance: 8
+    required-level: 22
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_KURZBOGEN_T4:
+  base:
+    material: BOW
+    name: '&5Runen-Schnellbogen'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Runenmagie beschleunigt'
+      - '&7jeden abgeschossenen Pfeil.'
+      - ''
+      - '&7Schussrate: &f2.5/s'
+      - '&5+28% Schussgeschwindigkeit'
+      - '&5+15% Kritische Trefferchance'
+      - '&5Mehrfachschuss II'
+      - ''
+      - '&8Benötigt Level 38'
+    arrow-velocity: 2.1
+    projectile-damage: 21
+    attack-speed: 2.5
+    critical-strike-chance: 15
+    required-level: 38
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_KURZBOGEN_T5:
+  base:
+    material: BOW
+    name: '&6Legendärer Sturmwind-Bogen'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Beherrscht die Macht des'
+      - '&7Sturmwinds für tödliche Salven.'
+      - ''
+      - '&7Schussrate: &f3.0/s'
+      - '&6+45% Schussgeschwindigkeit'
+      - '&6+24% Kritische Trefferchance'
+      - '&6Mehrfachschuss III'
+      - ''
+      - '&d⚡ Ability: Pfeilsalve'
+      - '&8(5 Pfeile gleichzeitig)'
+      - ''
+      - '&8Benötigt Level 55'
+    arrow-velocity: 2.2
+    projectile-damage: 33
+    attack-speed: 3.0
+    critical-strike-chance: 24
+    required-level: 55
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_KURZBOGEN_T6:
+  base:
+    material: BOW
+    name: '&cMythischer Orkan-Bogen'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Ein Bogen mit der Macht'
+      - '&7eines gewaltigen Orkans.'
+      - ''
+      - '&7Schussrate: &f3.8/s'
+      - '&c+70% Schussgeschwindigkeit'
+      - '&c+36% Kritische Trefferchance'
+      - '&cMehrfachschuss IV'
+      - ''
+      - '&d⚡ Ability: Pfeilsturm'
+      - '&8(10 Pfeile in alle Richtungen)'
+      - ''
+      - '&8Benötigt Level 78'
+    arrow-velocity: 2.3
+    projectile-damage: 49
+    attack-speed: 3.8
+    critical-strike-chance: 36
+    required-level: 78
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_ARMBRUST_T1:
+  base:
+    material: CROSSBOW
+    name: '&fEinfache Armbrust'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Eine einfache Armbrust'
+      - '&7mit automatischem Nachladen.'
+      - ''
+      - '&7Nachladezeit: &f3.0s'
+      - '&fAuto-Reload'
+      - ''
+      - '&8Benötigt Level 1'
+    arrow-velocity: 2.5
+    projectile-damage: 10
+    required-level: 1
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_ARMBRUST_T2:
+  base:
+    material: CROSSBOW
+    name: '&aSchwere Armbrust'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Eine schwere Armbrust mit'
+      - '&7durchdringender Kraft.'
+      - ''
+      - '&7Nachladezeit: &f2.7s'
+      - '&aAuto-Reload'
+      - '&a+10% Durchdringung'
+      - ''
+      - '&8Benötigt Level 12'
+    arrow-velocity: 2.6
+    projectile-damage: 16
+    required-level: 12
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_ARMBRUST_T3:
+  base:
+    material: CROSSBOW
+    name: '&9Belagerungs-Armbrust'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Eine mächtige Armbrust, die'
+      - '&7selbst Rüstungen durchdringt.'
+      - ''
+      - '&7Nachladezeit: &f2.4s'
+      - '&9Auto-Reload'
+      - '&9+20% Durchdringung'
+      - '&9Rüstungsbrechend I'
+      - ''
+      - '&8Benötigt Level 22'
+    arrow-velocity: 2.7
+    projectile-damage: 24
+    required-level: 22
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_ARMBRUST_T4:
+  base:
+    material: CROSSBOW
+    name: '&5Runen-Armbrust'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Runen verstärken die Bolzen'
+      - '&7zu explosiver Kraft.'
+      - ''
+      - '&7Nachladezeit: &f2.0s'
+      - '&5Auto-Reload'
+      - '&5+35% Durchdringung'
+      - '&5Rüstungsbrechend II'
+      - '&5Explosion'
+      - ''
+      - '&8Benötigt Level 38'
+    arrow-velocity: 2.8
+    projectile-damage: 37
+    required-level: 38
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_ARMBRUST_T5:
+  base:
+    material: CROSSBOW
+    name: '&6Legendäre Ballistia'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Eine Belagerungswaffe in'
+      - '&7Handformat - verheerend.'
+      - ''
+      - '&7Nachladezeit: &f1.6s'
+      - '&6Auto-Reload'
+      - '&6+55% Durchdringung'
+      - '&6Rüstungsbrechend III'
+      - ''
+      - '&d⚡ Ability: Explosiv-Bolzen'
+      - '&8(Massiver AoE-Schaden)'
+      - ''
+      - '&8Benötigt Level 55'
+    arrow-velocity: 3.0
+    projectile-damage: 57
+    required-level: 55
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_ARMBRUST_T6:
+  base:
+    material: CROSSBOW
+    name: '&cMythische Weltenzerstörer'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Eine göttliche Waffe, die'
+      - '&7alles durchdringt und zerstört.'
+      - ''
+      - '&7Nachladezeit: &f1.2s'
+      - '&cAuto-Reload'
+      - '&c+85% Durchdringung'
+      - '&cRüstungsbrechend IV'
+      - ''
+      - '&d⚡ Ability: Vernichtungs-Bolzen'
+      - '&8(Zerstört alles im Pfad)'
+      - ''
+      - '&8Benötigt Level 78'
+    arrow-velocity: 3.2
+    projectile-damage: 87
+    required-level: 78
+    required-class:
+      - 'BOGENSCHUETZE'
+
+# ==================== LEGENDÄR BOW ====================
+SPINNENSEIDE_BOGEN:
+  base:
+    material: BOW
+    name: '&c&lSpinnenseide-Bogen'
+    lore:
+      - '&8Legendäre Waffe'
+      - ''
+      - '&7Gefertigt aus der Seide'
+      - '&7der Spinnenkönigin Arachnia.'
+      - '&7Jeder Pfeil ist mit'
+      - '&7tödlichem Gift getränkt.'
+      - ''
+      - '&c━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&c🏹 38-52 Schaden'
+      - '&2+30% Gift-Schaden'
+      - '&c+20% Kritische Trefferchance'
+      - '&8🕷 Gift-Pfeile (5s)'
+      - '&c━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&d⚡ Ability: Netzfalle'
+      - '&7Schießt ein Netz das Feinde'
+      - '&7für 3s immobilisiert.'
+      - '&8Abklingzeit: 20s'
+      - ''
+      - '&c&lLEGENDÄR'
+      - '&8Drop: Spinnenkönigin Arachnia'
+    attack-damage: 45
+    critical-strike-chance: 20
+    required-level: 45
+    tier: LEGENDARY
+    required-class:
+      - 'BOGENSCHUETZE'
+

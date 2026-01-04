@@ -1,0 +1,190 @@
+# ============================================================
+# WAND.yml - Alle WAND Items
+# ============================================================
+
+# ==================== MAGIER WAND ====================
+MAGIER_STAB_T1:
+  base:
+    material: STICK
+    name: '&fAlter Holzstab'
+    lore:
+      - '&8Magier Waffe'
+      - ''
+      - '&7Ein einfacher Holzstab mit'
+      - '&7schwachen magischen Eigenschaften.'
+      - ''
+      - '&8Benötigt Level 1'
+    magic-damage: 7
+    max-mana: 20
+    required-level: 1
+    required-class:
+      - 'MAGIER'
+
+MAGIER_STAB_T2:
+  base:
+    material: STICK
+    name: '&aMystischer Eichenstab'
+    lore:
+      - '&8Magier Waffe'
+      - ''
+      - '&7Ein Stab aus mystischem'
+      - '&7Eichenholz, durchzogen von'
+      - '&7magischer Energie.'
+      - ''
+      - '&a+5 Intelligenz'
+      - ''
+      - '&8Benötigt Level 12'
+    magic-damage: 12
+    max-mana: 40
+    required-level: 12
+    required-class:
+      - 'MAGIER'
+
+MAGIER_ZAUBERSTAB_T1:
+  base:
+    material: STICK
+    name: '&fEinfacher Zauberstab'
+    lore:
+      - '&8Magier Waffe'
+      - ''
+      - '&7Ein simpler Zauberstab für'
+      - '&7schnelle Zaubersprüche.'
+      - ''
+      - '&fSchnelle Angriffe'
+      - ''
+      - '&8Benötigt Level 1'
+    magic-damage: 5
+    max-mana: 15
+    attack-speed: 1.8
+    required-level: 1
+    required-class:
+      - 'MAGIER'
+
+MAGIER_ZAUBERSTAB_T2:
+  base:
+    material: STICK
+    name: '&aKristall-Zauberstab'
+    lore:
+      - '&8Magier Waffe'
+      - ''
+      - '&7Ein mit Kristallen besetzter'
+      - '&7Zauberstab mit erhöhter'
+      - '&7Angriffsgeschwindigkeit.'
+      - ''
+      - '&a+4 Intelligenz'
+      - '&aSchnelle Angriffe'
+      - ''
+      - '&8Benötigt Level 12'
+    magic-damage: 8
+    max-mana: 30
+    attack-speed: 1.8
+    required-level: 12
+    required-class:
+      - 'MAGIER'
+
+# ==================== BESCHWÖRER WAND ====================
+NEKROMANT_FLUCHSTAB_T1:
+  base:
+    material: STICK
+    name: '&fEinfacher Dunkler Stab'
+    lore:
+      - '&8Beschwörer Waffe'
+      - ''
+      - '&7Ein einfacher Stab mit'
+      - '&7dunkler Magie.'
+      - ''
+      - '&f+5% Fluch-Stärke'
+      - '&fSchwächung I (3s)'
+      - ''
+      - '&8Benötigt Level 1'
+    magic-damage: 5
+    required-level: 1
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_FLUCHSTAB_T2:
+  base:
+    material: STICK
+    name: '&aVerfluchter Stab'
+    lore:
+      - '&8Beschwörer Waffe'
+      - ''
+      - '&7Ein verfluchter Stab, der'
+      - '&7Gegner schwächt.'
+      - ''
+      - '&a+12% Fluch-Stärke'
+      - '&aSchwächung II (5s)'
+      - '&aLangsamkeit I'
+      - ''
+      - '&8Benötigt Level 12'
+    magic-damage: 9
+    required-level: 12
+    required-class:
+      - 'BESCHWOERER'
+
+# ==================== SCHAMANE WAND ====================
+SCHAMANE_NATURSTAB_T1:
+  base:
+    material: STICK
+    name: '&fEinfacher Holzstab'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Ein einfacher Stab aus Holz'
+      - '&7mit schwacher Naturmagie.'
+      - ''
+      - '&f+5 HP/s Heilung'
+      - ''
+      - '&8Benötigt Level 1'
+    magic-damage: 5
+    health-regeneration: 5
+    required-level: 1
+    required-class:
+      - 'SCHAMANE'
+
+SCHAMANE_NATURSTAB_T2:
+  base:
+    material: STICK
+    name: '&aLebendiger Eichenstab'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Ein Stab aus lebendiger Eiche,'
+      - '&7durchströmt von Naturkraft.'
+      - ''
+      - '&a+10 HP/s Heilung'
+      - '&a+8% Heilungskraft'
+      - ''
+      - '&8Benötigt Level 12'
+    magic-damage: 8
+    health-regeneration: 10
+    required-level: 12
+    required-class:
+      - 'SCHAMANE'
+
+# ==================== BOSS WAND ====================
+LIGHTNING_STAFF:
+  base:
+    material: STICK
+    name: '&f&lLightning Staff'
+    required-level: 3.0
+    attack-damage:
+      base: 10.0
+      spread: 0.06
+      max-spread: 0.17
+    attack-speed:
+      base: 0.4
+      spread: 0.07
+      max-spread: 0.2
+    staff-spirit: LIGHTNING_SPIRIT
+    gem-sockets:
+      - 'Blue'
+      - 'Blue'
+    range: 45.0
+    ability:
+      on-hit:
+        type: STARFALL
+        mode: ATTACK
+        damage: 5.0
+        cooldown: 30.0
+
