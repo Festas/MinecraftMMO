@@ -30,11 +30,11 @@ Giftspucke_Hit:
 BeschwoereSpinnlingeP1:
   Skills:
   - 'message{m="&c&lArachnia: &7Meine Kinder... VERSCHLINGT SIE!"} @PlayersInRadius{r=30}'
-  - effect:particles{p=web;a=50;hS=3;vS=2} @self
+  - effect:particles{p=WHITE_ASH;a=50;hS=3;vS=2} @self
   - effect:sound{s=entity.spider.hurt;v=1.5;p=0.8} @self
   - delay 20
   - summon{t=Spinnling;a=4;r=5} @self
-  - effect:particles{p=smoke_large;a=80;hS=4;vS=2} @self
+  - effect:particles{p=LARGE_SMOKE;a=80;hS=4;vS=2} @self
 
 # ==========================================
 # Phase 2 Skills (60%-30% HP)
@@ -45,21 +45,17 @@ NetzfalleArachnia:
   Skills:
   - 'message{m="&c&lArachnia: &7Du bist gefangen!"} @target'
   - effect:sound{s=block.wool.break;v=1.5;p=0.5} @self
-  - effect:particles{p=web;a=50;hS=2;vS=2} @target
-  - summon{t=web_block;d=100} @target
-  - summon{t=web_block;d=100} @target <target.l.f{1}>
-  - summon{t=web_block;d=100} @target <target.l.b{1}>
-  - summon{t=web_block;d=100} @target <target.l.l{1}>
-  - summon{t=web_block;d=100} @target <target.l.r{1}>
+  - effect:particles{p=WHITE_ASH;a=50;hS=2;vS=2} @target
+  - blockplace{material=COBWEB;duration=100} @target
   - potion{t=SLOW;d=100;l=5} @target
   - delay 100
-  - effect:particles{p=web;a=100;hS=3;vS=3} @target
+  - effect:particles{p=WHITE_ASH;a=100;hS=3;vS=3} @target
 
 # Hinterhalt - Teleportiert hinter Spieler
 HinterhaltArachnia:
   Skills:
   - 'message{m="&c&lArachnia: &7Hinter dir..."} @target'
-  - effect:particles{p=smoke_large;a=50;hS=2;vS=2} @self
+  - effect:particles{p=LARGE_SMOKE;a=50;hS=2;vS=2} @self
   - effect:sound{s=entity.enderman.teleport;v=1;p=0.8} @self
   - potion{t=INVISIBILITY;d=60;l=1} @self
   - delay 20
@@ -67,7 +63,7 @@ HinterhaltArachnia:
   - delay 5
   - removepotioneffect{t=INVISIBILITY} @self
   - damage{a=25} @target
-  - effect:particles{p=smoke_large;a=50;hS=2;vS=2} @self
+  - effect:particles{p=LARGE_SMOKE;a=50;hS=2;vS=2} @self
   - effect:sound{s=entity.spider.ambient;v=2;p=0.5} @self
 
 # Giftspinnen Beschwörung Phase 2
@@ -85,7 +81,7 @@ UnsichtbarAngriff:
   Skills:
   - 'message{m="&c&lArachnia: &7Versucht mich doch zu finden!"} @PlayersInRadius{r=30}'
   - potion{t=INVISIBILITY;d=60;l=1} @self
-  - effect:particles{p=smoke_large;a=100;hS=3;vS=3} @self
+  - effect:particles{p=LARGE_SMOKE;a=100;hS=3;vS=3} @self
   - effect:sound{s=entity.enderman.teleport;v=1.5;p=1} @self
   - delay 60
   - removepotioneffect{t=INVISIBILITY} @self
@@ -100,7 +96,7 @@ UnsichtbarAngriff:
 KokonArachnia:
   Skills:
   - 'message{m="&c&lArachnia: &7IHR WERDET MEINE BRUT NIEMALS ZERSTÖREN!"} @target'
-  - effect:particles{p=web;a=100;hS=2;vS=3} @target
+  - effect:particles{p=WHITE_ASH;a=100;hS=2;vS=3} @target
   - effect:sound{s=block.wool.place;v=2;p=0.5} @self
   - potion{t=SLOW;d=100;l=10} @target
   - potion{t=WITHER;d=100;l=2} @target
@@ -120,9 +116,9 @@ SchwarmArachnia:
 # Spinnlinge Raserei Phase 3
 BeschwoereSpinnlingeP3:
   Skills:
-  - effect:particles{p=web;a=30;hS=2;vS=2} @self
+  - effect:particles{p=WHITE_ASH;a=30;hS=2;vS=2} @self
   - summon{t=Spinnling;a=6;r=5} @self
-  - effect:particles{p=smoke_large;a=50;hS=3;vS=2} @self
+  - effect:particles{p=LARGE_SMOKE;a=50;hS=3;vS=2} @self
 
 # Phase 3 Rage Buff
 RageBuffArachnia:

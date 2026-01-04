@@ -94,14 +94,14 @@ FeuerballHit:
 FrostBiss:
   Skills:
   - potion{t=SLOW;d=100;l=2} @target
-  - particles{p=snow_shovel;a=15} @target
+  - particles{p=SNOWFLAKE;a=15} @target
   - sound{s=block.glass.break;v=0.8}
 
 # Frost Aura
 FrostAura:
   Skills:
   - potion{t=SLOW;d=40;l=1} @PlayersInRadius{r=5}
-  - particles{p=snow_shovel;a=20;hS=2;vS=1} @self
+  - particles{p=SNOWFLAKE;a=20;hS=2;vS=1} @self
   - sound{s=block.glass.break;v=0.3;p=0.5}
 
 # Frost Gift
@@ -109,14 +109,14 @@ FrostGift:
   Skills:
   - potion{t=SLOW;d=80;l=2} @target
   - potion{t=WEAKNESS;d=60;l=1} @target
-  - particles{p=snow_shovel;a=10} @target
+  - particles{p=SNOWFLAKE;a=10} @target
 
 # Frost Fluch
 FrostFluch:
   Skills:
   - potion{t=SLOW;d=100;l=2} @target
   - potion{t=SLOW_DIGGING;d=100;l=1} @target
-  - particles{p=snow_shovel;a=20;hS=1;vS=2} @target
+  - particles{p=SNOWFLAKE;a=20;hS=1;vS=2} @target
   - sound{s=entity.witch.ambient;v=1;p=0.7}
 
 # Pilz Gift
@@ -171,14 +171,14 @@ DunklesMagieHit:
   Skills:
   - damage{a=<mob.damage>*0.9} @target
   - potion{t=WITHER;d=60;l=1} @target
-  - particles{p=smoke_large;a=15} @origin
+  - particles{p=LARGE_SMOKE;a=15} @origin
 
 # Todes Schlag
 TodesSchlag:
   Skills:
   - damage{a=<mob.damage>*1.5}
   - potion{t=WITHER;d=80;l=2} @target
-  - particles{p=smoke_large;a=20} @target
+  - particles{p=LARGE_SMOKE;a=20} @target
   - sound{s=entity.wither.hurt;v=0.8}
 
 # Himmels Aura
@@ -286,7 +286,7 @@ SumpfFlut:
   Skills:
   - damage{a=30} @PlayersInRadius{r=20}
   - potion{t=SLOW;d=100;l=2} @PlayersInRadius{r=20}
-  - particles{p=water_drop;a=200;hS=10;vS=3} @self
+  - particles{p=DRIPPING_WATER;a=200;hS=10;vS=3} @self
   - sound{s=entity.player.splash;v=2}
 
 # Beschwörung untergebene Hexen
@@ -301,7 +301,7 @@ PharaoFluch:
   Skills:
   - potion{t=WITHER;d=100;l=2} @PlayersInRadius{r=20}
   - potion{t=WEAKNESS;d=100;l=1} @PlayersInRadius{r=20}
-  - particles{p=smoke_large;a=100;hS=10;vS=5} @self
+  - particles{p=LARGE_SMOKE;a=100;hS=10;vS=5} @self
   - sound{s=entity.wither.ambient;v=1.5}
 
 # Sand Sturm
@@ -309,7 +309,7 @@ SandSturm:
   Skills:
   - damage{a=25} @PlayersInRadius{r=25}
   - potion{t=BLINDNESS;d=100;l=1} @PlayersInRadius{r=25}
-  - particles{p=block_dust{m=SAND};a=300;hS=15;vS=8} @self
+  - particles{p=BLOCK{m=SAND};a=300;hS=15;vS=8} @self
   - sound{s=entity.wither.shoot;v=1.5}
 
 # Feuer Inferno
@@ -334,7 +334,7 @@ FrostSchlag:
   - damage{a=<mob.damage>*1.5}
   - potion{t=SLOW;d=120;l=3} @target
   - potion{t=SLOW_DIGGING;d=120;l=2} @target
-  - particles{p=snow_shovel;a=30} @target
+  - particles{p=SNOWFLAKE;a=30} @target
   - sound{s=block.glass.break;v=1}
 
 # Eis Lawine
@@ -342,7 +342,7 @@ EisLawine:
   Skills:
   - damage{a=35} @PlayersInRadius{r=25}
   - potion{t=SLOW;d=140;l=3} @PlayersInRadius{r=25}
-  - particles{p=snow_shovel;a=200;hS=15;vS=8} @self
+  - particles{p=SNOWFLAKE;a=200;hS=15;vS=8} @self
   - sound{s=block.glass.break;v=2;p=0.5}
 
 # Eis Sturm
@@ -351,7 +351,7 @@ EisSturm:
   - damage{a=30} @PlayersInRadius{r=25}
   - potion{t=SLOW;d=120;l=2} @PlayersInRadius{r=25}
   - potion{t=WEAKNESS;d=100;l=1} @PlayersInRadius{r=25}
-  - particles{p=snow_shovel;a=250;hS=15;vS=10} @self
+  - particles{p=SNOWFLAKE;a=250;hS=15;vS=10} @self
   - sound{s=entity.wither.shoot;v=1.5;p=0.6}
 
 # Sporen Explosion
@@ -382,7 +382,7 @@ BurgherrBefehl:
 SchattenArmee:
   Skills:
   - summon{m=SCHATTENWACHE;a=3;r=5} @self
-  - particles{p=smoke_large;a=100;hS=5;vS=5} @self
+  - particles{p=LARGE_SMOKE;a=100;hS=5;vS=5} @self
   - sound{s=entity.wither.spawn;v=1}
 
 # Zeus Blitz
