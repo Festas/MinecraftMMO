@@ -9,7 +9,7 @@
 
 # Legendary Weapon
 StabDerVerdammnis:
-  Id: STAB_DER_VERDAMMNIS
+  Id: NETHERITE_SWORD
   Type: SWORD
   Material: NETHERITE_SWORD
   Display: '&5&lStab der Verdammnis'
@@ -108,7 +108,7 @@ HerzDerKoenigin:
 
 # Legendary Weapon
 StabDerLeere:
-  Id: STAB_DER_LEERE
+  Id: NETHERITE_SWORD
   Type: STAFF
   Material: NETHERITE_SWORD
   Display: '&0&lStab der Leere'

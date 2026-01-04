@@ -23,7 +23,20 @@ NekromantMalachar:
   - LEATHER_BOOTS{color=0,0,0,Unbreakable:true} FEET
   
   # ==========================================
-  # Skills
+  # Drops
+  # ==========================================
+  Drops:
+  # Quest Item
+  - mmi{type=MATERIAL;id=SEELE_DES_NEKROMANTEN;amount=1} 1.0
+  # Gold
+  - mmi{type=MATERIAL;id=GOLD_COIN;amount=3000} 1.0
+  # XP
+  - exp 5000
+  # Legendary Weapon (25% chance)
+  - mmi{type=WEAPON;id=STAB_DER_VERDAMMNIS;amount=1} 0.25
+  
+  # ==========================================
+  # Skills with Command for Title
   # ==========================================
   Skills:
   # Spawn
@@ -48,21 +61,7 @@ NekromantMalachar:
   
   # Death
   - skill{s=MalacharDeathDialog} @self ~onDeath
-  
-  # ==========================================
-  # Drops
-  # ==========================================
-  Drops:
-  # Quest Item
-  - MMOItem{type=MATERIAL;id=SEELE_DES_NEKROMANTEN} 1.0 1
-  # Gold
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 3000
-  # XP
-  - exp 5000
-  # Legendary Weapon (25% chance)
-  - MMOItem{type=WEAPON;id=STAB_DER_VERDAMMNIS} 0.25 1
-  # Command für Titel
-  - cmd{c="lp user <trigger.name> permission set titles.untoten_vernichter true"} 1.0 ~onDeath
+  - command{c=lp user <trigger.name> permission set titles.untoten_vernichter true} @trigger ~onDeath
   
   # ==========================================
   # BossBar
