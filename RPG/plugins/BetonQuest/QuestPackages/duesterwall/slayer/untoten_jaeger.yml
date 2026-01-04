@@ -16,7 +16,7 @@ conversations:
       start:
         text: "&7*Grauwind knurrt* Du willst Untote jagen? Gut. Sie sind die Fußsoldaten der Leere. Vernichte sie, und du schwächst die Dunkelheit."
         pointer: "tier_info"
-        conditions: "ist_level_10,!untoten_tier5_complete"
+        conditions: "_core.ist_level_10,!untoten_tier5_complete"
       
       tier_info_text:
         text: "&7Fünf Ränge erwarten dich:|&cTier I: &710 Kills → 50 Gold + 100 XP|&cTier II: &725 Kills → 150 Gold + 300 XP|&cTier III: &750 Kills → 400 Gold + 750 XP (Level 10)|&cTier IV: &7100 Kills → 1000 Gold + 2000 XP (Level 20)|&cTier V: &7250 Kills → 3000 Gold + 5000 XP + &c[Untoten-Vernichter] &7(Level 35)"
@@ -47,7 +47,7 @@ conversations:
       tier3_angebot:
         text: "&7Tier III: 50 Untote. Nur erfahrene Jäger schaffen das."
         pointer: "tier3_optionen"
-        conditions: "untoten_tier2_complete,ist_level_10,!untoten_tier3_aktiv,!untoten_tier3_complete"
+        conditions: "untoten_tier2_complete,_core.ist_level_10,!untoten_tier3_aktiv,!untoten_tier3_complete"
       
       tier3_erfolg:
         text: "&aTier III! Du bist ein ernstzunehmender Jäger geworden!"
@@ -58,7 +58,7 @@ conversations:
       tier4_angebot:
         text: "&7Tier IV: 100 Untote. Für Elite-Jäger."
         pointer: "tier4_optionen"
-        conditions: "untoten_tier3_complete,ist_level_20,!untoten_tier4_aktiv,!untoten_tier4_complete"
+        conditions: "untoten_tier3_complete,_core.ist_level_20,!untoten_tier4_aktiv,!untoten_tier4_complete"
       
       tier4_erfolg:
         text: "&aTier IV abgeschlossen! Du bist eine lebende Legende!"
@@ -69,7 +69,7 @@ conversations:
       tier5_angebot:
         text: "&7Tier V: 250 Untote. Der finale Test. Der Titel [Untoten-Vernichter] wartet auf dich."
         pointer: "tier5_optionen"
-        conditions: "untoten_tier4_complete,ist_level_35,!untoten_tier5_aktiv,!untoten_tier5_complete"
+        conditions: "untoten_tier4_complete,_core.ist_level_35,!untoten_tier5_aktiv,!untoten_tier5_complete"
       
       tier5_erfolg:
         text: "&6&l*Verneigt sich respektvoll* Du bist jetzt ein [&cUntoten-Vernichter&6&l]. Die Leere fürchtet deinen Namen!"
@@ -144,10 +144,6 @@ objectives:
 
 # CONDITIONS
 conditions:
-  ist_level_10: "_core.ist_level_10"
-  ist_level_20: "_core.ist_level_20"
-  ist_level_35: "_core.ist_level_35"
-  
   untoten_tier1_aktiv: "tag untoten_tier1_aktiv"
   untoten_tier1_complete: "tag untoten_tier1_complete"
   untoten_tier1_belohnt: "tag untoten_tier1_belohnt"
