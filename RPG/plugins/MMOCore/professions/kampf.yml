@@ -33,78 +33,76 @@ on-level-up:
   10:
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 10"}'
-    - 'message{text="  &7Freigeschaltet: &a+10% Angriffsgeschwindigkeit"}'
-    - 'message{text="  &7Neue Fähigkeit: &dKriegsschrei"}'
+    - 'message{text="  &7Freigeschaltet: &aKritische Trefferchance +2%"}'
+    - 'message{text="  &7Neue Fähigkeit: &cRundumschlag"}'
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
   
   15:
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 15"}'
-    - 'message{text="  &7Freigeschaltet: &aDoppel-XP bei Untoten"}'
-    - 'message{text="  &7Zugang zu: &bKampfarena I"}'
+    - 'message{text="  &7Freigeschaltet: &aAusweich-Chance +2%"}'
+    - 'message{text="  &7Zugang zu: &4Krieger-Gilde I"}'
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
   
   20:
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 20"}'
-    - 'message{text="  &7Freigeschaltet: &e+15% Kritische Trefferchance"}'
-    - 'message{text="  &7Belohnung: &6Schwert des Anfängers"}'
+    - 'message{text="  &7Freigeschaltet: &eKampf-Regeneration"}'
+    - 'message{text="  &7Belohnung: &6Schwert des Veteranen"}'
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
   
   25:
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 25"}'
-    - 'message{text="  &7Freigeschaltet: &6Titel [Kämpfer]"}'
-    - 'message{text="  &7Zugang zu: &bKampfarena II"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Krieger]"}'
+    - 'message{text="  &7Zugang zu: &4Krieger-Gilde II"}'
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
   
   30:
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 30"}'
-    - 'message{text="  &7Freigeschaltet: &cSlayer-Quests verfügbar"}'
-    - 'message{text="  &7Neue Fähigkeit: &dBerserker-Wut"}'
+    - 'message{text="  &7Freigeschaltet: &cKritischer Schaden +10%"}'
+    - 'message{text="  &7Neue Fähigkeit: &4Berserker-Wut"}'
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
   
   35:
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 35"}'
-    - 'message{text="  &7Freigeschaltet: &b+20% Schaden gegen Bosse"}'
+    - 'message{text="  &7Freigeschaltet: &bRüstungsdurchdringung +5%"}'
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
   
   40:
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 40"}'
-    - 'message{text="  &7Freigeschaltet: &6Titel [Kampf-Experte]"}'
-    - 'message{text="  &7Belohnung: &bDiamant-Schwert der Macht"}'
-    - 'message{text="  &7Zugang zu: &5Elite-Dungeons"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Schlächter]"}'
+    - 'message{text="  &7Belohnung: &bDiamant-Schwert der Zerstörung"}'
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
   
   45:
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 45"}'
-    - 'message{text="  &7Freigeschaltet: &5Ultimativer Schlag"}'
+    - 'message{text="  &7Freigeschaltet: &5Meister-Krieger"}'
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
   
   50:
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'message{text="  &6&l&nMAXIMUM LEVEL! &4Kampf Level 50"}'
-    - 'message{text="  &7Freigeschaltet: &6Titel [Kampf-Legende]"}'
-    - 'message{text="  &7Belohnung: &5&lLegendäres Schwert des Schlächters"}'
-    - 'message{text="  &7Alle Kampf-Boni maximiert!"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Kriegsgott]"}'
+    - 'message{text="  &7Belohnung: &5&lLegendäres Schwert"}'
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=2}'
 
-# XP-Quellen für das Töten von Monstern
+# XP-Quellen für das Töten von Mobs
 exp-sources:
-  # Passive/Schwache Mobs (5-10 XP)
+  # Einfache Mobs (5-10 XP)
   - 'kill{type=ZOMBIE;amount=5-8}'
   - 'kill{type=HUSK;amount=5-8}'
   - 'kill{type=DROWNED;amount=6-9}'
@@ -115,6 +113,8 @@ exp-sources:
   - 'kill{type=CREEPER;amount=7-10}'
   - 'kill{type=SLIME;amount=4-6}'
   - 'kill{type=SILVERFISH;amount=3-5}'
+  # NEU in 1.21: Sumpf-Skelett
+  - 'kill{type=BOGGED;amount=6-9}'
   
   # Standard Mobs (10-20 XP)
   - 'kill{type=ENDERMAN;amount=12-18}'
@@ -129,20 +129,18 @@ exp-sources:
   - 'kill{type=PIGLIN_BRUTE;amount=15-20}'
   - 'kill{type=HOGLIN;amount=12-16}'
   - 'kill{type=ZOGLIN;amount=14-18}'
-  - 'kill{type=RAVAGER;amount=18-25}'
   - 'kill{type=GUARDIAN;amount=12-16}'
   - 'kill{type=SHULKER;amount=15-20}'
+  # NEU in 1.21: Trial Chambers Wind-Mob
+  - 'kill{type=BREEZE;amount=15-25}'
   
-  # Starke Mobs (30-50 XP)
-  - 'kill{type=WARDEN;amount=40-50}'
+  # Starke Mobs / Mini-Bosse (20-50 XP)
+  - 'kill{type=RAVAGER;amount=18-25}'
   - 'kill{type=ELDER_GUARDIAN;amount=35-45}'
   - 'kill{type=EVOKER;amount=30-40}'
+  - 'kill{type=WARDEN;amount=40-50}'
   
-  # Bosse (100-200 XP)
+  # Bosse (100+ XP)
   - 'kill{type=ENDER_DRAGON;amount=150-200}'
   - 'kill{type=WITHER;amount=100-150}'
-  
-  # MythicMobs Integration (vorbereitet für Custom Mobs)
-  # Beispiel: - 'mythicmobs-kill{mob-type=CUSTOM_BOSS;amount=50-100}'
-  # Beispiel: - 'mythicmobs-kill{mob-type=CUSTOM_ELITE;amount=25-50}'
-  # Beispiel: - 'mythicmobs-kill{mob-type=CUSTOM_MINIBOSS;amount=15-30}'
+
