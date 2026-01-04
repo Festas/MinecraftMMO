@@ -53,8 +53,8 @@ jobs:
             echo "Replacing folder: $REPLACE_FOLDER"
 
             # Prüfe ob Ordner im Repository existiert
-            if [ ! -d "RPG/$REPLACE_FOLDER" ]; then
-              echo "Error: Folder RPG/$REPLACE_FOLDER does not exist in repository"
+            if [ ! -d "RPG/plugins/$REPLACE_FOLDER" ]; then
+              echo "Error: Folder RPG/plugins/$REPLACE_FOLDER does not exist in repository"
               exit 1
             fi
 
