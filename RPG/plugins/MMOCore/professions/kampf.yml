@@ -33,74 +33,26 @@ on-level-up:
   10:
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 10"}'
-    - 'message{text="  &7Freigeschaltet: &aKritische Trefferchance +2%"}'
-    - 'message{text="  &7Neue Fähigkeit: &cRundumschlag"}'
-    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
-    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
-  
-  15:
-    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
-    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 15"}'
-    - 'message{text="  &7Freigeschaltet: &aAusweich-Chance +2%"}'
-    - 'message{text="  &7Zugang zu: &4Krieger-Gilde I"}'
-    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
-    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
-  
-  20:
-    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
-    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 20"}'
-    - 'message{text="  &7Freigeschaltet: &eKampf-Regeneration"}'
-    - 'message{text="  &7Belohnung: &6Schwert des Veteranen"}'
+    - 'message{text="  &7Freigeschaltet: &aKritischer Treffer I"}'
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
   
   25:
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 25"}'
-    - 'message{text="  &7Freigeschaltet: &6Titel [Krieger]"}'
-    - 'message{text="  &7Zugang zu: &4Krieger-Gilde II"}'
+    - 'message{text="  &7Freigeschaltet: &a+10% Schaden gegen Monster"}'
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
-    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
-  
-  30:
-    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
-    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 30"}'
-    - 'message{text="  &7Freigeschaltet: &cKritischer Schaden +10%"}'
-    - 'message{text="  &7Neue Fähigkeit: &4Berserker-Wut"}'
-    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
-    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
-  
-  35:
-    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
-    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 35"}'
-    - 'message{text="  &7Freigeschaltet: &bRüstungsdurchdringung +5%"}'
-    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
-    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
-  
-  40:
-    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
-    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 40"}'
-    - 'message{text="  &7Freigeschaltet: &6Titel [Schlächter]"}'
-    - 'message{text="  &7Belohnung: &bDiamant-Schwert der Zerstörung"}'
-    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
-    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
-  
-  45:
-    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
-    - 'message{text="  &6&lMEILENSTEIN! &4Kampf Level 45"}'
-    - 'message{text="  &7Freigeschaltet: &5Meister-Krieger"}'
-    - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
-    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
-  
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=2}'
+
   50:
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
-    - 'message{text="  &6&l&nMAXIMUM LEVEL! &4Kampf Level 50"}'
-    - 'message{text="  &7Freigeschaltet: &6Titel [Kriegsgott]"}'
-    - 'message{text="  &7Belohnung: &5&lLegendäres Schwert"}'
+    - 'message{text="  &6&lMEISTER! &4Kampf Level 50"}'
+    - 'message{text="  &7Du hast den Kampf gemeistert!"}'
     - 'message{text="&c▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=2}'
 
 # XP-Quellen für das Töten von Mobs
+# HINWEIS: Damit diese funktionieren, muss in der config.yml 'kill' enabled sein!
 exp-sources:
   # Einfache Mobs (5-10 XP)
   - 'kill{type=ZOMBIE;amount=5-8}'
@@ -126,21 +78,26 @@ exp-sources:
   - 'kill{type=GHAST;amount=10-15}'
   - 'kill{type=MAGMA_CUBE;amount=8-12}'
   - 'kill{type=PHANTOM;amount=10-14}'
+  
+  # Nether Mobs
   - 'kill{type=PIGLIN_BRUTE;amount=15-20}'
   - 'kill{type=HOGLIN;amount=12-16}'
+  - 'kill{type=ZOMBIFIED_PIGLIN;amount=8-12}'
   - 'kill{type=ZOGLIN;amount=14-18}'
+  
+  # Special Mobs (15-25 XP)
   - 'kill{type=GUARDIAN;amount=12-16}'
   - 'kill{type=SHULKER;amount=15-20}'
-  # NEU in 1.21: Trial Chambers Wind-Mob
+  # NEU in 1.21: Breeze
   - 'kill{type=BREEZE;amount=15-25}'
   
-  # Starke Mobs / Mini-Bosse (20-50 XP)
+  # Mini-Bosse (20-50 XP)
   - 'kill{type=RAVAGER;amount=18-25}'
   - 'kill{type=ELDER_GUARDIAN;amount=35-45}'
   - 'kill{type=EVOKER;amount=30-40}'
-  - 'kill{type=WARDEN;amount=40-50}'
   
   # Bosse (100+ XP)
+  - 'kill{type=WARDEN;amount=40-50}'
   - 'kill{type=ENDER_DRAGON;amount=150-200}'
   - 'kill{type=WITHER;amount=100-150}'
 
