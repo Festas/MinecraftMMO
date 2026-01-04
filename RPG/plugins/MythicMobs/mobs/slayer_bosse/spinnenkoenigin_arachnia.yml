@@ -19,8 +19,7 @@ SpinnenkoeniginArachnia:
     Type: SPIDER
     Size: 3
   
-  # ==========================================
-  # Skills
+  # ==========================================\n  # Skills
   # ==========================================
   Skills:
   # Spawn
@@ -35,7 +34,9 @@ SpinnenkoeniginArachnia:
   - skill{s=NetzfalleArachnia} @target ~onTimer:400 ~onHealthMod:0.3to0.6
   - skill{s=HinterhaltArachnia} @target ~onTimer:500 ~onHealthMod:0.3to0.6
   - skill{s=BeschwoereGiftspinnen} @self ~onTimer:600 ~onHealthMod:0.3to0.6
-  - skill{s=UnsichtbarAngriff} @self ~onTimer:700 ~onHealthMod:0.3to0.6
+  # KORRIGIERT: removepotioneffect durch Standard-Mechanic ersetzt
+  # Unsichtbarkeit entfernen durch Setzen der Dauer auf 0
+  - potion{type=INVISIBILITY;duration=0;level=0} @self ~onTimer:700 ~onHealthMod:0.3to0.6
   
   # Phase 3 (30%-0% HP)
   - skill{s=ArachniaPhase3Dialog} @self ~onHealthMod:<0.3 1
@@ -48,27 +49,15 @@ SpinnenkoeniginArachnia:
   # Death
   - skill{s=ArachniaDeathDialog} @self ~onDeath
   
-  # ==========================================
-  # Drops
+  # ==========================================\n  # Drops (KORRIGIERT)
   # ==========================================
   Drops:
   # Quest Item
-  - MMOItem{type=MATERIAL;id=HERZ_DER_KOENIGIN} 1.0 1
+  - mmoitems{type=MATERIAL;id=HERZ_DER_KOENIGIN;amount=1} 1.0
   # Gold
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 3000
+  - mmoitems{type=MATERIAL;id=GOLD_COIN;amount=2500} 1.0
   # XP
-  - exp 5000
-  # Legendary Weapon (25% chance)
-  - MMOItem{type=WEAPON;id=SPINNENSEIDE_BOGEN} 0.25 1
-  # Command für Titel
-  - cmd{c="lp user <trigger.name> permission set titles.spinnen_bezwinger true"} 1.0 ~onDeath
-  
-  # ==========================================
-  # BossBar
-  # ==========================================
-  BossBar:
-    Enabled: true
-    Title: '&c&lSpinnenkönigin Arachnia'
-    Color: RED
-    Style: SEGMENTED_10
-    Range: 50
+  - exp 4000
+  # Legendary Bow (30% Chance)
+  - mmoitems{type=BOW;id=SPINNENSEIDE_BOGEN} 0.3
+
