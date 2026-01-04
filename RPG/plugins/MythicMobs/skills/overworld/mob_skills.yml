@@ -373,10 +373,10 @@ BeschwoerunSporenwolken:
 # Burgherr Befehl
 BurgherrBefehl:
   Skills:
-  - potion{t=INCREASE_DAMAGE;d=200;l=1} @MobsInRadius{r=30;t=MONSTER}
-  - potion{t=SPEED;d=200;l=1} @MobsInRadius{r=30;t=MONSTER}
-  - particles{p=angry_villager;a=50;hS=15;vS=5} @self
-  - sound{s=entity.ravager.roar;v=1.5}
+  - potion{t=INCREASE_DAMAGE;d=200;l=1} @MobsInRadius{r=30}
+  - potion{t=SPEED;d=200;l=1} @MobsInRadius{r=30}
+  - effect:particles{p=angry_villager;a=50;hS=15;vS=5} @self
+  - effect:sound{s=entity.ravager.roar;v=1.5} @self
 
 # Schatten Armee
 SchattenArmee:

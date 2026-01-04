@@ -10,12 +10,12 @@ conversations:
       begruessung:
         text: "&5*Ihre Augen funkeln geheimnisvoll* Ah... das Zeichen. Ich habe dich erwartet, Kind. Die Kräuter haben mir von dir erzählt..."
         pointer: "spieler_optionen"
-        conditions: "hat_leere_zeichen"
+        conditions: "_core.hat_leere_zeichen"
       
       begruessung_normal:
         text: "&5Willkommen, Wanderer. Suchst du Heilung oder... Wissen?"
         pointer: "spieler_optionen"
-        conditions: "!hat_leere_zeichen"
+        conditions: "!_core.hat_leere_zeichen"
       
       ueber_leere:
         text: "&5Die Leere... *seufzt* Ich habe sie studiert. Sie ist älter als das Königreich, älter als die Erinnerung. Sie wartet. Sie wächst. Und nur wenige können ihr widerstehen..."
@@ -29,7 +29,7 @@ conversations:
       geheimnis:
         text: "&5*flüstert* Das Mal auf deiner Hand... Es ist sowohl Fluch als auch Segen. Die Leere hat dich markiert, aber du bist nicht ihr Diener. Du bist der Ausgleich. Das Gegengift."
         pointer: "ende"
-        conditions: "hat_leere_zeichen"
+        conditions: "_core.hat_leere_zeichen"
     
     player_options:
       frage_leere:
@@ -44,14 +44,13 @@ conversations:
       frage_mal:
         text: "&7Was bedeutet dieses Mal auf meiner Hand?"
         pointer: "geheimnis"
-        conditions: "hat_leere_zeichen"
+        conditions: "_core.hat_leere_zeichen"
       
       abschied:
         text: "&7Auf Wiedersehen, Morgana."
         pointer: "ende"
 
 conditions:
-  hat_leere_zeichen: "item _core.leere_zeichen"
   daily_kraeuter_aktiv: "tag daily_kraeuter_aktiv"
 
 events:

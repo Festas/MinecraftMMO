@@ -31,7 +31,7 @@ conversations:
       mal_frage:
         text: "&7Ja, es glüht violett. Was bedeutet das?"
         pointer: "klarheit_moment"
-        conditions: "hat_leere_zeichen"
+        conditions: "_core.hat_leere_zeichen"
       
       mal_frage_nein:
         text: "&7Ich sehe nichts Besonderes..."
@@ -47,7 +47,6 @@ conversations:
         pointer: "ende"
 
 conditions:
-  hat_leere_zeichen: "item _core.leere_zeichen"
   hauptquest_aktiv: "tag hauptquest_kap1_aktiv"
 
 events:

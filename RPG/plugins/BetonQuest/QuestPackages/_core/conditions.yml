@@ -17,4 +17,7 @@ conditions:
   ist_tag: "time 0-12000"
   ist_nacht: "time 12000-24000"
   
+  # Quest-Status Checks
+  hat_leere_zeichen: "item leere_zeichen"
+  
   # Grundlegende Quest-Completion Checks werden in den spezifischen Quest-Dateien definiert

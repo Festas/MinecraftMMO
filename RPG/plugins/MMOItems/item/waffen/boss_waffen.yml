@@ -1,0 +1,77 @@
+# Boss-Waffen Drops
+# Seltene Waffen die von Mini-Bossen droppen
+
+BURGHERR_AXT:
+  base:
+    material: NETHERITE_AXE
+    name: '&c&lBurgherr-Axt'
+    lore:
+      - '&8Boss-Waffe'
+      - ''
+      - '&7Die mächtige Axt des Burgherrn.'
+      - '&7Durchdrungen von dunkler Macht.'
+      - ''
+      - '&7Schaden: &c+45'
+      - '&7Angriffstempo: &c-10%'
+      - ''
+      - '&cSelten'
+    attack-damage: 45
+    attack-speed: -10
+    required-level: 75
+    tier: RARE
+
+SCHATTEN_KLINGE:
+  base:
+    material: NETHERITE_SWORD
+    name: '&8&lSchatten-Klinge'
+    lore:
+      - '&8Boss-Waffe'
+      - ''
+      - '&7Das Schwert des Schattenkönigs.'
+      - '&7Absorbiert das Licht.'
+      - ''
+      - '&7Schaden: &c+40'
+      - '&7Kritische Chance: &a+5%'
+      - ''
+      - '&5Episch'
+    attack-damage: 40
+    critical-strike-chance: 5
+    required-level: 75
+    tier: EPIC
+
+SUMPF_DREIZACK:
+  base:
+    material: TRIDENT
+    name: '&2&lSumpf-Dreizack'
+    lore:
+      - '&8Boss-Waffe'
+      - ''
+      - '&7Der Dreizack des Sumpfkönigs.'
+      - '&7Vergiftet bei Treffer.'
+      - ''
+      - '&7Schaden: &c+35'
+      - '&7Gift-Schaden: &2+10'
+      - ''
+      - '&aSelten'
+    attack-damage: 35
+    required-level: 35
+    tier: RARE
+
+HEXENSTAB:
+  base:
+    material: BLAZE_ROD
+    name: '&5&lHexenstab'
+    lore:
+      - '&8Boss-Waffe'
+      - ''
+      - '&7Der Stab der Hexenkönigin.'
+      - '&7Verstärkt magische Angriffe.'
+      - ''
+      - '&7Magie-Schaden: &5+30'
+      - '&7Max Mana: &b+50'
+      - ''
+      - '&5Episch'
+    magic-damage: 30
+    max-mana: 50
+    required-level: 35
+    tier: EPIC
