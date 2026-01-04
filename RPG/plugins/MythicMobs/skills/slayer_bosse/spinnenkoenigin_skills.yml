@@ -46,9 +46,10 @@ NetzfalleArachnia:
   - 'message{m="&c&lArachnia: &7Du bist gefangen!"} @target'
   - effect:sound{s=block.wool.break;v=1.5;p=0.5} @self
   - effect:particles{p=WHITE_ASH;a=50;hS=2;vS=2} @target
-  - blockplace{material=COBWEB;duration=100} @target
+  - setblock{material=COBWEB;duration=100} @target
   - potion{t=SLOW;d=100;l=5} @target
   - delay 100
+  - setblock{material=AIR} @target
   - effect:particles{p=WHITE_ASH;a=100;hS=3;vS=3} @target
 
 # Hinterhalt - Teleportiert hinter Spieler

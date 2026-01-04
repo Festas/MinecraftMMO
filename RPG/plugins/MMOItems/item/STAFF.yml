@@ -1,0 +1,14 @@
+# Boss Waffen (Stäbe)
+# Seltene Waffen die von Mini-Bossen droppen
+
+HEXENSTAB:
+  base:
+    material: BLAZE_ROD
+    name: '&5&lHexenstab'
+    lore:
+      - '&8Boss-Waffe'
+      - ''
+      - '&7Der Stab der Hexenkönigin.'
+    magic-damage: 30
+    max-mana: 50
+    required-level: 35
