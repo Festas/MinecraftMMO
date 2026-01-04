@@ -1,0 +1,2418 @@
+# ============================================================
+# MISCELLANEOUS.yml - Alle MISCELLANEOUS Items
+# ============================================================
+
+# ==================== MAGIER MISCELLANEOUS ====================
+MAGIER_BUCH_T1:
+  base:
+    material: BOOK
+    name: '&fAltes Zauberbuch'
+    lore:
+      - '&8Magier Offhand'
+      - ''
+      - '&7Ein altes Zauberbuch mit'
+      - '&7grundlegenden Zaubersprüchen.'
+      - ''
+      - '&f+3 Intelligenz'
+      - '&f+15 Max. Mana'
+      - ''
+      - '&8Benötigt Level 1'
+    max-mana: 15
+    required-level: 1
+    required-class:
+      - 'MAGIER'
+
+MAGIER_BUCH_T2:
+  base:
+    material: BOOK
+    name: '&aGelehrtenbuch'
+    lore:
+      - '&8Magier Offhand'
+      - ''
+      - '&7Ein Buch voller Wissen'
+      - '&7und magischer Erkenntnisse.'
+      - ''
+      - '&a+7 Intelligenz'
+      - '&a+35 Max. Mana'
+      - '&a-3% Cooldown-Reduktion'
+      - ''
+      - '&8Benötigt Level 12'
+    max-mana: 35
+    cooldown-reduction: 3
+    required-level: 12
+    required-class:
+      - 'MAGIER'
+
+MAGIER_BUCH_T3:
+  base:
+    material: ENCHANTED_BOOK
+    name: '&9Buch der Weisheit'
+    lore:
+      - '&8Magier Offhand'
+      - ''
+      - '&7Ein verzaubertes Buch,'
+      - '&7das tiefe Weisheit enthält.'
+      - ''
+      - '&9+12 Intelligenz'
+      - '&9+60 Max. Mana'
+      - '&9-6% Cooldown-Reduktion'
+      - '&9+8% Mana-Regeneration'
+      - ''
+      - '&8Benötigt Level 22'
+    max-mana: 60
+    cooldown-reduction: 6
+    mana-regeneration: 8
+    required-level: 22
+    required-class:
+      - 'MAGIER'
+
+MAGIER_BUCH_T4:
+  base:
+    material: ENCHANTED_BOOK
+    name: '&5Runenbuch der Macht'
+    lore:
+      - '&8Magier Offhand'
+      - ''
+      - '&7Ein mit Runen beschriebenes'
+      - '&7Buch von großer Macht.'
+      - ''
+      - '&5+21 Intelligenz'
+      - '&5+105 Max. Mana'
+      - '&5-10% Cooldown-Reduktion'
+      - '&5+15% Mana-Regeneration'
+      - ''
+      - '&8Benötigt Level 38'
+    max-mana: 105
+    cooldown-reduction: 10
+    mana-regeneration: 15
+    required-level: 38
+    required-class:
+      - 'MAGIER'
+
+MAGIER_BUCH_T5:
+  base:
+    material: ENCHANTED_BOOK
+    name: '&6Legendäres Grimoire'
+    lore:
+      - '&8Magier Offhand'
+      - ''
+      - '&7Ein legendäres Grimoire'
+      - '&7mit verbotenen Zaubersprüchen.'
+      - ''
+      - '&6+36 Intelligenz'
+      - '&6+180 Max. Mana'
+      - '&6-16% Cooldown-Reduktion'
+      - '&6+25% Mana-Regeneration'
+      - '&6+15% Skill-Schaden'
+      - ''
+      - '&8Benötigt Level 55'
+    max-mana: 180
+    cooldown-reduction: 16
+    mana-regeneration: 25
+    skill-damage: 15
+    required-level: 55
+    required-class:
+      - 'MAGIER'
+
+MAGIER_BUCH_T6:
+  base:
+    material: ENCHANTED_BOOK
+    name: '&cMythisches Necronomicon'
+    lore:
+      - '&8Magier Offhand'
+      - ''
+      - '&7Das ultimative Zauberbuch.'
+      - '&7Enthält die mächtigsten'
+      - '&7Zaubersprüche der Existenz.'
+      - ''
+      - '&c+58 Intelligenz'
+      - '&c+310 Max. Mana'
+      - '&c-25% Cooldown-Reduktion'
+      - '&c+40% Mana-Regeneration'
+      - '&c+28% Skill-Schaden'
+      - ''
+      - '&8Benötigt Level 78'
+    max-mana: 310
+    cooldown-reduction: 25
+    mana-regeneration: 40
+    skill-damage: 28
+    required-level: 78
+    required-class:
+      - 'MAGIER'
+
+# ==================== PALADIN MISCELLANEOUS ====================
+PALADIN_RELIQUIE_T1:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '&fEinfaches Heiliges Symbol'
+    lore:
+      - '&8Paladin Offhand'
+      - ''
+      - '&7Ein einfaches heiliges Symbol'
+      - '&7für deine ersten Segnungen.'
+      - ''
+      - '&e+5% Heilungskraft'
+      - '&e+2 Heilig-Schaden'
+      - ''
+      - '&8Benötigt Level 1'
+    required-level: 1
+    required-class:
+      - 'PALADIN'
+
+PALADIN_RELIQUIE_T2:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '&aGesegnete Reliquie'
+    lore:
+      - '&8Paladin Offhand'
+      - ''
+      - '&7Eine gesegnete Reliquie,'
+      - '&7die deine Auren verstärkt.'
+      - ''
+      - '&a+12% Heilungskraft'
+      - '&a+6 Heilig-Schaden'
+      - '&a+5% Auren-Verstärkung'
+      - ''
+      - '&8Benötigt Level 12'
+    required-level: 12
+    required-class:
+      - 'PALADIN'
+
+PALADIN_RELIQUIE_T3:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '&9Lichtreliquie'
+    lore:
+      - '&8Paladin Offhand'
+      - ''
+      - '&7Eine heilige Reliquie,'
+      - '&7die Lebensenergie spendet.'
+      - ''
+      - '&9+22% Heilungskraft'
+      - '&9+12 Heilig-Schaden'
+      - '&9+12% Auren-Verstärkung'
+      - '&9+3 HP-Regeneration'
+      - ''
+      - '&8Benötigt Level 22'
+    health-regeneration: 3
+    required-level: 22
+    required-class:
+      - 'PALADIN'
+
+PALADIN_RELIQUIE_T4:
+  base:
+    material: NETHER_STAR
+    name: '&5Runen-Reliquie'
+    lore:
+      - '&8Paladin Offhand'
+      - ''
+      - '&7Mit uralten Runen verziert,'
+      - '&7verleiht diese Reliquie'
+      - '&7mächtige Segen.'
+      - ''
+      - '&5+38% Heilungskraft'
+      - '&5+22 Heilig-Schaden'
+      - '&5+22% Auren-Verstärkung'
+      - '&5+8 HP-Regeneration'
+      - '&5Segen-Effekt'
+      - ''
+      - '&8Benötigt Level 38'
+    health-regeneration: 8
+    required-level: 38
+    required-class:
+      - 'PALADIN'
+
+PALADIN_RELIQUIE_T5:
+  base:
+    material: NETHER_STAR
+    name: '&6Legendäre Göttliche Reliquie'
+    lore:
+      - '&8Paladin Offhand'
+      - ''
+      - '&7Die legendäre Reliquie der'
+      - '&7Götter. Verleiht mächtige'
+      - '&7Segnungen.'
+      - ''
+      - '&6+65% Heilungskraft'
+      - '&6+38 Heilig-Schaden'
+      - '&6+38% Auren-Verstärkung'
+      - '&6+16 HP-Regeneration'
+      - '&6Starker Segen'
+      - ''
+      - '&8Benötigt Level 55'
+    health-regeneration: 16
+    required-level: 55
+    required-class:
+      - 'PALADIN'
+
+PALADIN_RELIQUIE_T6:
+  base:
+    material: NETHER_STAR
+    name: '&cMythische Ur-Reliquie'
+    lore:
+      - '&8Paladin Offhand'
+      - ''
+      - '&7Die Ur-Reliquie der Götter.'
+      - '&7Verleiht göttliche Segnungen'
+      - '&7an alle Verbündeten.'
+      - ''
+      - '&c+110% Heilungskraft'
+      - '&c+65 Heilig-Schaden'
+      - '&c+65% Auren-Verstärkung'
+      - '&c+28 HP-Regeneration'
+      - '&cGöttlicher Segen'
+      - ''
+      - '&8Benötigt Level 78'
+    health-regeneration: 28
+    required-level: 78
+    required-class:
+      - 'PALADIN'
+
+# ==================== BOGENSCHÜTZE MISCELLANEOUS ====================
+BOGENSCHUETZE_KOECHER_T1:
+  base:
+    material: LEATHER
+    name: '&fEinfacher Lederköcher'
+    lore:
+      - '&8Bogenschütze Köcher'
+      - ''
+      - '&7Ein einfacher Köcher aus'
+      - '&7Leder für zusätzliche Pfeile.'
+      - ''
+      - '&f+10 Pfeile Kapazität'
+      - '&f+5% Pfeil-Schaden'
+      - ''
+      - '&8Benötigt Level 1'
+    required-level: 1
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_KOECHER_T2:
+  base:
+    material: LEATHER
+    name: '&aVerstärkter Köcher'
+    lore:
+      - '&8Bogenschütze Köcher'
+      - ''
+      - '&7Ein verstärkter Köcher mit'
+      - '&7Feuerpfeilen.'
+      - ''
+      - '&a+20 Pfeile Kapazität'
+      - '&a+12% Pfeil-Schaden'
+      - '&aEnthält: Feuerpfeile'
+      - ''
+      - '&8Benötigt Level 12'
+    required-level: 12
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_KOECHER_T3:
+  base:
+    material: LEATHER
+    name: '&9Jäger-Köcher'
+    lore:
+      - '&8Bogenschütze Köcher'
+      - ''
+      - '&7Ein Jäger-Köcher mit'
+      - '&7verschiedenen Pfeiltypen.'
+      - ''
+      - '&9+35 Pfeile Kapazität'
+      - '&9+22% Pfeil-Schaden'
+      - '&9Enthält: Feuerpfeile, Giftpfeile'
+      - ''
+      - '&8Benötigt Level 22'
+    required-level: 22
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_KOECHER_T4:
+  base:
+    material: LEATHER
+    name: '&5Runen-Köcher'
+    lore:
+      - '&8Bogenschütze Köcher'
+      - ''
+      - '&7Ein magischer Köcher mit'
+      - '&7allen Pfeiltypen.'
+      - ''
+      - '&5+55 Pfeile Kapazität'
+      - '&5+35% Pfeil-Schaden'
+      - '&5Enthält: Alle Pfeiltypen'
+      - '&5+8% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 38'
+    critical-strike-chance: 8
+    required-level: 38
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_KOECHER_T5:
+  base:
+    material: LEATHER
+    name: '&6Legendärer Unendlich-Köcher'
+    lore:
+      - '&8Bogenschütze Köcher'
+      - ''
+      - '&7Ein legendärer Köcher, der'
+      - '&7nie leer wird.'
+      - ''
+      - '&6Unendlich Pfeile'
+      - '&6+55% Pfeil-Schaden'
+      - '&6Enthält: Alle Pfeiltypen+'
+      - '&6+15% Kritische Trefferchance'
+      - '&6Spezial: Explosivpfeile'
+      - ''
+      - '&8Benötigt Level 55'
+    critical-strike-chance: 15
+    required-level: 55
+    required-class:
+      - 'BOGENSCHUETZE'
+
+BOGENSCHUETZE_KOECHER_T6:
+  base:
+    material: LEATHER
+    name: '&cMythischer Götter-Köcher'
+    lore:
+      - '&8Bogenschütze Köcher'
+      - ''
+      - '&7Ein göttlicher Köcher mit'
+      - '&7göttlichen Pfeilen.'
+      - ''
+      - '&cUnendlich Pfeile'
+      - '&c+85% Pfeil-Schaden'
+      - '&cEnthält: Alle Pfeiltypen++'
+      - '&c+25% Kritische Trefferchance'
+      - '&cSpezial: Göttliche Pfeile'
+      - ''
+      - '&8Benötigt Level 78'
+    critical-strike-chance: 25
+    required-level: 78
+    required-class:
+      - 'BOGENSCHUETZE'
+
+# ==================== BESCHWÖRER MISCELLANEOUS ====================
+NEKROMANT_GEFAESS_T1:
+  base:
+    material: GLASS_BOTTLE
+    name: '&fEinfaches Seelengefäß'
+    lore:
+      - '&8Beschwörer Seelengefäß'
+      - ''
+      - '&7Ein einfaches Gefäß zum'
+      - '&7Sammeln von Seelen.'
+      - ''
+      - '&f+5 Seelen Kapazität'
+      - '&f+5% Pet-Schaden'
+      - ''
+      - '&8Benötigt Level 1'
+    required-level: 1
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_GEFAESS_T2:
+  base:
+    material: GLASS_BOTTLE
+    name: '&aVerzaubertes Gefäß'
+    lore:
+      - '&8Beschwörer Seelengefäß'
+      - ''
+      - '&7Ein verzaubertes Gefäß mit'
+      - '&7größerer Kapazität.'
+      - ''
+      - '&a+12 Seelen Kapazität'
+      - '&a+12% Pet-Schaden'
+      - '&a+5% Lebensraub'
+      - ''
+      - '&8Benötigt Level 12'
+    lifesteal: 5
+    required-level: 12
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_GEFAESS_T3:
+  base:
+    material: SOUL_LANTERN
+    name: '&9Seelen-Urne'
+    lore:
+      - '&8Beschwörer Seelengefäß'
+      - ''
+      - '&7Eine magische Urne für'
+      - '&7viele Seelen.'
+      - ''
+      - '&9+22 Seelen Kapazität'
+      - '&9+22% Pet-Schaden'
+      - '&9+12% Lebensraub'
+      - '&9Seelen-Regeneration'
+      - ''
+      - '&8Benötigt Level 22'
+    lifesteal: 12
+    required-level: 22
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_GEFAESS_T4:
+  base:
+    material: SOUL_LANTERN
+    name: '&5Runen-Seelengefäß'
+    lore:
+      - '&8Beschwörer Seelengefäß'
+      - ''
+      - '&7Runen verstärken die'
+      - '&7Seelenspeicherung.'
+      - ''
+      - '&5+38 Seelen Kapazität'
+      - '&5+38% Pet-Schaden'
+      - '&5+22% Lebensraub'
+      - '&5Schnelle Seelen-Regeneration'
+      - ''
+      - '&8Benötigt Level 38'
+    lifesteal: 22
+    required-level: 38
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_GEFAESS_T5:
+  base:
+    material: SOUL_LANTERN
+    name: '&6Legendäre Seelenurne'
+    lore:
+      - '&8Beschwörer Seelengefäß'
+      - ''
+      - '&7Eine legendäre Urne mit'
+      - '&7enormer Kapazität.'
+      - ''
+      - '&6+65 Seelen Kapazität'
+      - '&6+65% Pet-Schaden'
+      - '&6+38% Lebensraub'
+      - '&6Seelen-Explosion möglich'
+      - ''
+      - '&8Benötigt Level 55'
+    lifesteal: 38
+    required-level: 55
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_GEFAESS_T6:
+  base:
+    material: SOUL_LANTERN
+    name: '&cMythisches Seelen-Phylakterium'
+    lore:
+      - '&8Beschwörer Seelengefäß'
+      - ''
+      - '&7Ein göttliches Phylakterium'
+      - '&7mit unendlicher Macht.'
+      - ''
+      - '&c+110 Seelen Kapazität'
+      - '&c+110% Pet-Schaden'
+      - '&c+65% Lebensraub'
+      - '&cSeelen-Apokalypse möglich'
+      - ''
+      - '&8Benötigt Level 78'
+    lifesteal: 65
+    required-level: 78
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_SCHAEDEL_T1:
+  base:
+    material: SKELETON_SKULL
+    name: '&fAlter Totenschädel'
+    lore:
+      - '&8Beschwörer Totenschädel'
+      - ''
+      - '&7Ein alter Schädel mit'
+      - '&7schwacher Fluchkraft.'
+      - ''
+      - '&f+5% Fluch-Bonus'
+      - '&f+3% Pet-Schaden'
+      - ''
+      - '&8Benötigt Level 1'
+    required-level: 1
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_SCHAEDEL_T2:
+  base:
+    material: SKELETON_SKULL
+    name: '&aVerfluchter Schädel'
+    lore:
+      - '&8Beschwörer Totenschädel'
+      - ''
+      - '&7Ein verfluchter Schädel,'
+      - '&7der Gegner schwächt.'
+      - ''
+      - '&a+12% Fluch-Bonus'
+      - '&a+8% Pet-Schaden'
+      - '&a+5% Lebensraub'
+      - ''
+      - '&8Benötigt Level 12'
+    lifesteal: 5
+    required-level: 12
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_SCHAEDEL_T3:
+  base:
+    material: WITHER_SKELETON_SKULL
+    name: '&9Beschwörer-Schädel'
+    lore:
+      - '&8Beschwörer Totenschädel'
+      - ''
+      - '&7Ein Schädel mit dunkler'
+      - '&7Fluch-Aura.'
+      - ''
+      - '&9+22% Fluch-Bonus'
+      - '&9+15% Pet-Schaden'
+      - '&9+12% Lebensraub'
+      - '&9Fluch-Aura'
+      - ''
+      - '&8Benötigt Level 22'
+    lifesteal: 12
+    required-level: 22
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_SCHAEDEL_T4:
+  base:
+    material: WITHER_SKELETON_SKULL
+    name: '&5Runen-Totenschädel'
+    lore:
+      - '&8Beschwörer Totenschädel'
+      - ''
+      - '&7Runen verstärken die'
+      - '&7Fluchkraft massiv.'
+      - ''
+      - '&5+38% Fluch-Bonus'
+      - '&5+28% Pet-Schaden'
+      - '&5+22% Lebensraub'
+      - '&5Starke Fluch-Aura'
+      - ''
+      - '&8Benötigt Level 38'
+    lifesteal: 22
+    required-level: 38
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_SCHAEDEL_T5:
+  base:
+    material: WITHER_SKELETON_SKULL
+    name: '&6Legendärer Lich-Schädel'
+    lore:
+      - '&8Beschwörer Totenschädel'
+      - ''
+      - '&7Der Schädel eines mächtigen'
+      - '&7Lichs mit Massenfluch.'
+      - ''
+      - '&6+65% Fluch-Bonus'
+      - '&6+48% Pet-Schaden'
+      - '&6+38% Lebensraub'
+      - '&6Massenfluch-Aura'
+      - ''
+      - '&8Benötigt Level 55'
+    lifesteal: 38
+    required-level: 55
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_SCHAEDEL_T6:
+  base:
+    material: WITHER_SKELETON_SKULL
+    name: '&cMythischer Götter-Schädel'
+    lore:
+      - '&8Beschwörer Totenschädel'
+      - ''
+      - '&7Ein göttlicher Schädel mit'
+      - '&7apokalyptischer Fluchkraft.'
+      - ''
+      - '&c+110% Fluch-Bonus'
+      - '&c+82% Pet-Schaden'
+      - '&c+65% Lebensraub'
+      - '&cApokalyptische Fluch-Aura'
+      - ''
+      - '&8Benötigt Level 78'
+    lifesteal: 65
+    required-level: 78
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_KNOCHENSTAB_T1:
+  base:
+    material: BONE
+    name: '&fEinfacher Knochenstab'
+    lore:
+      - '&8Beschwörer Waffe'
+      - ''
+      - '&7Ein einfacher Stab aus'
+      - '&7gebleichten Knochen.'
+      - ''
+      - '&f+1 Skeleton beschwörbar'
+      - ''
+      - '&8Benötigt Level 1'
+    magic-damage: 6
+    required-level: 1
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_KNOCHENSTAB_T2:
+  base:
+    material: BONE
+    name: '&aVerfluchter Knochenstab'
+    lore:
+      - '&8Beschwörer Waffe'
+      - ''
+      - '&7Ein verfluchter Stab, der'
+      - '&7mehr Untote beschwört.'
+      - ''
+      - '&a+2 Skeletons beschwörbar'
+      - '&a+10% Pet-Schaden'
+      - '&a5% Lebensraub'
+      - ''
+      - '&8Benötigt Level 12'
+    magic-damage: 11
+    lifesteal: 5
+    required-level: 12
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_KNOCHENSTAB_T3:
+  base:
+    material: BONE
+    name: '&9Beschwörer-Stab'
+    lore:
+      - '&8Beschwörer Waffe'
+      - ''
+      - '&7Ein mächtiger Stab zur'
+      - '&7Beschwörung der Untoten.'
+      - ''
+      - '&9+3 Skeletons beschwörbar'
+      - '&9+22% Pet-Schaden'
+      - '&910% Lebensraub'
+      - '&9Seelenernte I'
+      - ''
+      - '&8Benötigt Level 22'
+    magic-damage: 17
+    lifesteal: 10
+    required-level: 22
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_KNOCHENSTAB_T4:
+  base:
+    material: BONE
+    name: '&5Runen-Totenstab'
+    lore:
+      - '&8Beschwörer Waffe'
+      - ''
+      - '&7Runen verstärken deine'
+      - '&7Beschwörungskraft.'
+      - ''
+      - '&5+4 Skeletons + Zombie'
+      - '&5+38% Pet-Schaden'
+      - '&518% Lebensraub'
+      - '&5Seelenernte II'
+      - '&5Fluch I'
+      - ''
+      - '&8Benötigt Level 38'
+    magic-damage: 26
+    lifesteal: 18
+    required-level: 38
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_KNOCHENSTAB_T5:
+  base:
+    material: BONE
+    name: '&6Legendärer Lichkönig-Stab'
+    lore:
+      - '&8Beschwörer Waffe'
+      - ''
+      - '&7Der Stab eines Lichkönigs,'
+      - '&7Meister der Untoten.'
+      - ''
+      - '&6+5 Skeletons + Lich'
+      - '&6+65% Pet-Schaden'
+      - '&630% Lebensraub'
+      - ''
+      - '&d⚡ Ability: Armee der Toten'
+      - '&8(Beschwört 10 Untote)'
+      - ''
+      - '&8Benötigt Level 55'
+    magic-damage: 39
+    lifesteal: 30
+    required-level: 55
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_KNOCHENSTAB_T6:
+  base:
+    material: BONE
+    name: '&cMythischer Todeskönig-Stab'
+    lore:
+      - '&8Beschwörer Waffe'
+      - ''
+      - '&7Ein göttlicher Stab mit'
+      - '&7absoluter Macht über Tod.'
+      - ''
+      - '&c+7 Skeletons + Todesknight'
+      - '&c+110% Pet-Schaden'
+      - '&c50% Lebensraub'
+      - ''
+      - '&d⚡ Ability: Apokalypse der Untoten'
+      - '&8(20 Elite-Untote + Unsterblichkeit)'
+      - ''
+      - '&8Benötigt Level 78'
+    magic-damage: 59
+    lifesteal: 50
+    required-level: 78
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_SEELENSICHEL_T5:
+  base:
+    material: NETHERITE_HOE
+    name: '&6Legendäre Todessense'
+    lore:
+      - '&8Beschwörer Waffe'
+      - ''
+      - '&7Eine legendäre Sense, die'
+      - '&7alles Leben erntet.'
+      - ''
+      - '&6+8 Seelen/Kill'
+      - '&660% Lebensraub'
+      - '&6Blutung V'
+      - ''
+      - '&d⚡ Ability: Seelensturm'
+      - '&8(AoE Seelenexplosion)'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 53
+    attack-speed: 1.4
+    lifesteal: 60
+    required-level: 55
+    required-class:
+      - 'BESCHWOERER'
+
+NEKROMANT_SEELENSICHEL_T6:
+  base:
+    material: NETHERITE_HOE
+    name: '&cMythische Weltenschnitter'
+    lore:
+      - '&8Beschwörer Waffe'
+      - ''
+      - '&7Eine göttliche Sense, die'
+      - '&7Welten durchschneidet.'
+      - ''
+      - '&c+13 Seelen/Kill'
+      - '&c95% Lebensraub'
+      - '&cBlutung VI'
+      - ''
+      - '&d⚡ Ability: Seelenverschlingung'
+      - '&8(Erntet alle Seelen im Umkreis)'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 81
+    attack-speed: 1.4
+    lifesteal: 95
+    required-level: 78
+    required-class:
+      - 'BESCHWOERER'
+
+# ==================== SCHAMANE MISCELLANEOUS ====================
+SCHAMANE_TOTEM_T1:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '&fEinfaches Holztotem'
+    lore:
+      - '&8Schamane Totem'
+      - ''
+      - '&7Ein einfaches Totem aus Holz'
+      - '&7mit schwacher Heilaura.'
+      - ''
+      - '&f+3 HP/s Aura'
+      - '&f8 Block Radius'
+      - ''
+      - '&8Benötigt Level 1'
+    required-level: 1
+    required-class:
+      - 'SCHAMANE'
+
+SCHAMANE_TOTEM_T2:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '&aVerstärktes Totem'
+    lore:
+      - '&8Schamane Totem'
+      - ''
+      - '&7Ein verstärktes Totem mit'
+      - '&7besserer Heilaura.'
+      - ''
+      - '&a+6 HP/s Aura'
+      - '&a12 Block Radius'
+      - '&a+5% Heilungskraft'
+      - ''
+      - '&8Benötigt Level 12'
+    required-level: 12
+    required-class:
+      - 'SCHAMANE'
+
+SCHAMANE_TOTEM_T3:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '&9Lebenstotem'
+    lore:
+      - '&8Schamane Totem'
+      - ''
+      - '&7Ein Totem des Lebens mit'
+      - '&7starker Regeneration.'
+      - ''
+      - '&9+12 HP/s Aura'
+      - '&916 Block Radius'
+      - '&9+12% Heilungskraft'
+      - '&9Regeneration I'
+      - ''
+      - '&8Benötigt Level 22'
+    health-regeneration: 3
+    required-level: 22
+    required-class:
+      - 'SCHAMANE'
+
+SCHAMANE_TOTEM_T4:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '&5Runen-Totem'
+    lore:
+      - '&8Schamane Totem'
+      - ''
+      - '&7Ein Totem mit mächtigen Runen,'
+      - '&7das Gruppen-Buffs gewährt.'
+      - ''
+      - '&5+22 HP/s Aura'
+      - '&520 Block Radius'
+      - '&5+22% Heilungskraft'
+      - '&5Regeneration II'
+      - '&5Gruppen-Buffs'
+      - ''
+      - '&8Benötigt Level 38'
+    health-regeneration: 6
+    required-level: 38
+    required-class:
+      - 'SCHAMANE'
+
+SCHAMANE_TOTEM_T5:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '&6Legendäres Druiden-Totem'
+    lore:
+      - '&8Schamane Totem'
+      - ''
+      - '&7Ein legendäres Totem mit'
+      - '&7unglaublicher Heilkraft.'
+      - ''
+      - '&6+38 HP/s Aura'
+      - '&628 Block Radius'
+      - '&6+38% Heilungskraft'
+      - '&6Regeneration III'
+      - '&6Starke Gruppen-Buffs'
+      - ''
+      - '&8Benötigt Level 55'
+    health-regeneration: 12
+    required-level: 55
+    required-class:
+      - 'SCHAMANE'
+
+SCHAMANE_TOTEM_T6:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '&cMythisches Ur-Totem'
+    lore:
+      - '&8Schamane Totem'
+      - ''
+      - '&7Ein göttliches Totem mit'
+      - '&7göttlicher Heilaura.'
+      - ''
+      - '&c+65 HP/s Aura'
+      - '&c40 Block Radius'
+      - '&c+65% Heilungskraft'
+      - '&cRegeneration IV'
+      - '&cGöttliche Gruppen-Buffs'
+      - ''
+      - '&8Benötigt Level 78'
+    health-regeneration: 22
+    required-level: 78
+    required-class:
+      - 'SCHAMANE'
+
+SCHAMANE_SICHEL_T5:
+  base:
+    material: NETHERITE_HOE
+    name: '&6Legendäre Todessichel'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Eine legendäre Sichel, die'
+      - '&7Seelen erntet.'
+      - ''
+      - '&6Blutung V (10s)'
+      - '&6Gift IV'
+      - '&6+30% Lebensraub'
+      - ''
+      - '&d⚡ Ability: Seelenernte'
+      - '&8(Massiver DoT-Schaden)'
+      - ''
+      - '&8Benötigt Level 55'
+    attack-damage: 31
+    attack-speed: 1.6
+    lifesteal: 30
+    required-level: 55
+    required-class:
+      - 'SCHAMANE'
+
+SCHAMANE_SICHEL_T6:
+  base:
+    material: NETHERITE_HOE
+    name: '&cMythische Sensenklinge'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Eine göttliche Sense mit'
+      - '&7verheerender Macht.'
+      - ''
+      - '&cBlutung VI (15s)'
+      - '&cGift V'
+      - '&c+50% Lebensraub'
+      - ''
+      - '&d⚡ Ability: Tod und Wiedergeburt'
+      - '&8(Tötet und heilt gleichzeitig)'
+      - ''
+      - '&8Benötigt Level 78'
+    attack-damage: 47
+    attack-speed: 1.6
+    lifesteal: 50
+    required-level: 78
+    required-class:
+      - 'SCHAMANE'
+
+# ==================== LEGENDÄR MISCELLANEOUS ====================
+BERSERKER_BARBAR_T1:
+  base:
+    material: WOODEN_SWORD
+    name: '&fPrimitive Waffe'
+    lore:
+      - '&8Berserker Waffe'
+      - ''
+      - '&7Eine primitive, rohe Waffe'
+      - '&7mit extremer Schadensschwankung.'
+      - ''
+      - '&c🗡 8-16 Schaden'
+      - '&7Hohe Schadensschwankung'
+      - ''
+      - '&8Benötigt Level 1'
+    attack-damage: 12
+    attack-speed: 0.9
+    required-level: 1
+    required-class:
+      - 'KRIEGER'
+
+# ==================== GEMEINSAM MISCELLANEOUS ====================
+GEMEINSAM_PET_HUND:
+  base:
+    material: BONE
+    name: '&aHunde-Ei'
+    lore:
+      - '&8Pet'
+      - ''
+      - '&7Beschwört einen treuen Hund'
+      - '&7als deinen Begleiter.'
+      - ''
+      - '&a🐕 Folgt dir überall hin'
+      - '&7Kein Kampfwert'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 1
+
+GEMEINSAM_PET_KATZE:
+  base:
+    material: TROPICAL_FISH
+    name: '&9Katzen-Ei'
+    lore:
+      - '&8Pet'
+      - ''
+      - '&7Beschwört eine verspielte Katze'
+      - '&7als deinen Begleiter.'
+      - ''
+      - '&9🐈 Folgt dir überall hin'
+      - '&7Kein Kampfwert'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 1
+
+GEMEINSAM_PET_PAPAGEI:
+  base:
+    material: COOKIE
+    name: '&cPapageien-Ei'
+    lore:
+      - '&8Pet'
+      - ''
+      - '&7Beschwört einen bunten Papagei'
+      - '&7als deinen Begleiter.'
+      - ''
+      - '&c🦜 Sitzt auf deiner Schulter'
+      - '&7Kein Kampfwert'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 1
+
+GEMEINSAM_PET_FUCHS:
+  base:
+    material: SWEET_BERRIES
+    name: '&6Fuchs-Ei'
+    lore:
+      - '&8Pet'
+      - ''
+      - '&7Beschwört einen niedlichen Fuchs'
+      - '&7als deinen Begleiter.'
+      - ''
+      - '&6🦊 Folgt dir überall hin'
+      - '&7Kein Kampfwert'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 12
+
+GEMEINSAM_PARTIKEL_FEUER:
+  base:
+    material: BLAZE_POWDER
+    name: '&cFeuer-Partikel'
+    lore:
+      - '&8Kosmetik'
+      - ''
+      - '&7Verleiht dir einen Effekt'
+      - '&7aus Feuer-Partikeln.'
+      - ''
+      - '&c🔥 Permanenter Effekt'
+      - '&7Rein kosmetisch'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 1
+
+GEMEINSAM_PARTIKEL_HEILIG:
+  base:
+    material: GLOWSTONE_DUST
+    name: '&6Heilige Partikel'
+    lore:
+      - '&8Kosmetik'
+      - ''
+      - '&7Verleiht dir einen Effekt'
+      - '&7aus heiligen Partikeln.'
+      - ''
+      - '&6✨ Permanenter Effekt'
+      - '&7Rein kosmetisch'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 1
+
+GEMEINSAM_PARTIKEL_SCHATTEN:
+  base:
+    material: INK_SAC
+    name: '&8Schatten-Partikel'
+    lore:
+      - '&8Kosmetik'
+      - ''
+      - '&7Verleiht dir einen Effekt'
+      - '&7aus dunklen Partikeln.'
+      - ''
+      - '&8💀 Permanenter Effekt'
+      - '&7Rein kosmetisch'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 1
+
+GEMEINSAM_TITEL_HELD:
+  base:
+    material: NAME_TAG
+    name: '&6Titel: Held'
+    lore:
+      - '&8Kosmetik'
+      - ''
+      - '&7Verleiht dir den Titel'
+      - '&6[Held]'
+      - ''
+      - '&7Wird vor deinem Namen angezeigt'
+      - '&7Rein kosmetisch'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 22
+
+GEMEINSAM_TITEL_LEGENDE:
+  base:
+    material: NAME_TAG
+    name: '&cTitel: Legende'
+    lore:
+      - '&8Kosmetik'
+      - ''
+      - '&7Verleiht dir den Titel'
+      - '&c[Legende]'
+      - ''
+      - '&7Wird vor deinem Namen angezeigt'
+      - '&7Rein kosmetisch'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 55
+
+GEMEINSAM_SCHLUESSEL_BRONZE:
+  base:
+    material: TRIPWIRE_HOOK
+    name: '&fBronzener Schlüssel'
+    lore:
+      - '&8Schlüssel'
+      - ''
+      - '&7Ein einfacher Schlüssel zum'
+      - '&7Öffnen von Bronze-Truhen.'
+      - ''
+      - '&7Inhalt: Basis-Items'
+      - '&7Einmaliger Gebrauch'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 1
+
+GEMEINSAM_SCHLUESSEL_SILBER:
+  base:
+    material: TRIPWIRE_HOOK
+    name: '&7Silberner Schlüssel'
+    lore:
+      - '&8Schlüssel'
+      - ''
+      - '&7Ein solider Schlüssel zum'
+      - '&7Öffnen von Silber-Truhen.'
+      - ''
+      - '&7Inhalt: Gute Items'
+      - '&7Einmaliger Gebrauch'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 12
+
+GEMEINSAM_SCHLUESSEL_GOLD:
+  base:
+    material: TRIPWIRE_HOOK
+    name: '&6Goldener Schlüssel'
+    lore:
+      - '&8Schlüssel'
+      - ''
+      - '&7Ein wertvoller Schlüssel zum'
+      - '&7Öffnen von Gold-Truhen.'
+      - ''
+      - '&7Inhalt: Seltene Items'
+      - '&7Einmaliger Gebrauch'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 22
+
+GEMEINSAM_SCHLUESSEL_DIAMANT:
+  base:
+    material: TRIPWIRE_HOOK
+    name: '&bDiamantener Schlüssel'
+    lore:
+      - '&8Schlüssel'
+      - ''
+      - '&7Ein kostbarer Schlüssel zum'
+      - '&7Öffnen von Diamant-Truhen.'
+      - ''
+      - '&7Inhalt: Epische Items'
+      - '&7Einmaliger Gebrauch'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 38
+
+GEMEINSAM_SCHLUESSEL_MYTHISCH:
+  base:
+    material: TRIPWIRE_HOOK
+    name: '&cMythischer Schlüssel'
+    lore:
+      - '&8Schlüssel'
+      - ''
+      - '&7Ein legendärer Schlüssel zum'
+      - '&7Öffnen von Mythischen Truhen.'
+      - ''
+      - '&7Inhalt: Legendäre Items'
+      - '&7Einmaliger Gebrauch'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 55
+
+GEMEINSAM_PFERD_SATTEL:
+  base:
+    material: SADDLE
+    name: '&aReisepferd-Sattel'
+    lore:
+      - '&8Transportmittel'
+      - ''
+      - '&7Beschwört ein schnelles'
+      - '&7Reisepferd.'
+      - ''
+      - '&a🐴 +20% Bewegungsgeschwindigkeit'
+      - '&7Permanent (bis Tod)'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 12
+
+GEMEINSAM_PEGASUS:
+  base:
+    material: SADDLE
+    name: '&9Pegasus-Sattel'
+    lore:
+      - '&8Transportmittel'
+      - ''
+      - '&7Beschwört einen fliegenden'
+      - '&7Pegasus.'
+      - ''
+      - '&9🦄 +30% Bewegungsgeschwindigkeit'
+      - '&9⚡ Flugfähigkeit'
+      - '&7Permanent (bis Tod)'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 55
+
+GEMEINSAM_ENDERPERLE_STACK:
+  base:
+    material: ENDER_PEARL
+    name: '&5Endlose Enderperle'
+    lore:
+      - '&8Transportmittel'
+      - ''
+      - '&7Eine magische Enderperle'
+      - '&7mit unbegrenzten Verwendungen.'
+      - ''
+      - '&5⚡ Teleportation'
+      - '&e⌛ 10s Cooldown'
+      - '&7Unbegrenzte Verwendungen'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 38
+
+GEMEINSAM_RUCKSACK:
+  base:
+    material: CHEST
+    name: '&6Magischer Rucksack'
+    lore:
+      - '&8Sonstiges'
+      - ''
+      - '&7Ein magischer Rucksack mit'
+      - '&7zusätzlichem Inventar.'
+      - ''
+      - '&6📦 +27 Inventarplätze'
+      - '&7Rechtklick zum Öffnen'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 22
+
+GEMEINSAM_BANK:
+  base:
+    material: ENDER_CHEST
+    name: '&5Portable Bank'
+    lore:
+      - '&8Sonstiges'
+      - ''
+      - '&7Eine portable Bank zum'
+      - '&7Zugriff auf dein Ender-Inventar.'
+      - ''
+      - '&5📦 Zugriff auf Ender-Inventar'
+      - '&e⌛ 5min Cooldown'
+      - '&7Rechtklick zum Öffnen'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 38
+
+GEMEINSAM_QUESTBUCH:
+  base:
+    material: BOOK
+    name: '&6Quest-Buch'
+    lore:
+      - '&8Sonstiges'
+      - ''
+      - '&7Ein magisches Buch, das'
+      - '&7all deine Quests verwaltet.'
+      - ''
+      - '&6📖 Zeigt alle Quests'
+      - '&7Rechtklick zum Öffnen'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 1
+
+GEMEINSAM_ANGEL_T1:
+  base:
+    material: FISHING_ROD
+    name: '&fEinfache Angel'
+    lore:
+      - '&8Werkzeug'
+      - ''
+      - '&7Eine einfache Angel'
+      - '&7zum Fischen.'
+      - ''
+      - '&e🐟 Standard-Fischen'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 1
+
+GEMEINSAM_ANGEL_T2:
+  base:
+    material: FISHING_ROD
+    name: '&aVerstärkte Angel'
+    lore:
+      - '&8Werkzeug'
+      - ''
+      - '&7Eine verstärkte Angel'
+      - '&7mit besserer Ausbeute.'
+      - ''
+      - '&a🐟 +10% Fang-Geschwindigkeit'
+      - '&a+5% Seltene Fische'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 12
+
+GEMEINSAM_ANGEL_T3:
+  base:
+    material: FISHING_ROD
+    name: '&9Meister-Angel'
+    lore:
+      - '&8Werkzeug'
+      - ''
+      - '&7Eine Meister-Angel für'
+      - '&7professionelle Fischer.'
+      - ''
+      - '&9🐟 +25% Fang-Geschwindigkeit'
+      - '&9+15% Seltene Fische'
+      - '&9Luck of the Sea I'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 22
+
+GEMEINSAM_ANGEL_T4:
+  base:
+    material: FISHING_ROD
+    name: '&5Runen-Angel'
+    lore:
+      - '&8Werkzeug'
+      - ''
+      - '&7Mit Wasserrunen verziert,'
+      - '&7fängt diese Angel die'
+      - '&7seltensten Schätze.'
+      - ''
+      - '&5🐟 +45% Fang-Geschwindigkeit'
+      - '&5+30% Seltene Fische'
+      - '&5Luck of the Sea II'
+      - '&5+Schatz-Drops'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 38
+
+GEMEINSAM_ANGEL_T5:
+  base:
+    material: FISHING_ROD
+    name: '&6Legendäre Neptun-Angel'
+    lore:
+      - '&8Werkzeug'
+      - ''
+      - '&7Die legendäre Angel des'
+      - '&7Meeresgottes Neptun.'
+      - ''
+      - '&6🐟 +75% Fang-Geschwindigkeit'
+      - '&6+50% Seltene Fische'
+      - '&6Luck of the Sea III'
+      - '&6+Legendäre Schätze'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 55
+
+GEMEINSAM_ANGEL_T6:
+  base:
+    material: FISHING_ROD
+    name: '&cMythische Ozean-Beherrscher'
+    lore:
+      - '&8Werkzeug'
+      - ''
+      - '&7Die mythische Angel,'
+      - '&7die den Ozean beherrscht.'
+      - ''
+      - '&c🐟 +120% Fang-Geschwindigkeit'
+      - '&c+80% Seltene Fische'
+      - '&cLuck of the Sea IV'
+      - '&c+Mythische Schätze'
+      - '&c+Auto-Fischen'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 78
+
+GEMEINSAM_HACKE_T5:
+  base:
+    material: NETHERITE_HOE
+    name: '&6Legendäre Bauern-Hacke'
+    lore:
+      - '&8Werkzeug'
+      - ''
+      - '&7Die legendäre Hacke der'
+      - '&7Meisterbauern. Unzerstörbar.'
+      - ''
+      - '&6🌾 +75% Ernte-Geschwindigkeit'
+      - '&6+35% Bonus-Drop-Chance'
+      - '&6Fortune III'
+      - '&6+Auto-Replant'
+      - '&6+3x3 Ernte'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 55
+
+GEMEINSAM_HACKE_T6:
+  base:
+    material: NETHERITE_HOE
+    name: '&cMythische Ernte-Göttin'
+    lore:
+      - '&8Werkzeug'
+      - ''
+      - '&7Die mythische Hacke,'
+      - '&7gesegnet von der Erntegöttin.'
+      - ''
+      - '&c🌾 +120% Ernte-Geschwindigkeit'
+      - '&c+60% Bonus-Drop-Chance'
+      - '&cFortune IV'
+      - '&c+Auto-Replant'
+      - '&c+5x5 Ernte'
+      - '&c+Seltene Samen'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 78
+
+GEMEINSAM_RUNENSTEIN:
+  base:
+    material: EMERALD
+    name: '&6Runenstein'
+    lore:
+      - '&8Upgrade-Material'
+      - ''
+      - '&7Ein legendärer Runenstein.'
+      - '&7Wird für mächtige Verzauberungen'
+      - '&7und Upgrades verwendet.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Item-Verzauberungen'
+      - '&8• Legendäre Waffen-Upgrades (T5)'
+      - '&8• Set-Boni aktivieren'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 55
+
+GEMEINSAM_KRISTALL:
+  base:
+    material: NETHER_STAR
+    name: '&cMystischer Kristall'
+    lore:
+      - '&8Upgrade-Material'
+      - ''
+      - '&7Ein mythischer Kristall von'
+      - '&7unvorstellbarer Macht.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Mythische Waffen-Upgrades (T6)'
+      - '&8• Göttliche Verzauberungen'
+      - '&8• Maximale Set-Boni'
+      - '&8• Item-Reforging'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 78
+
+GEMEINSAM_DRACHENESSSENZ:
+  base:
+    material: BLAZE_POWDER
+    name: '&6Drachenessenz'
+    lore:
+      - '&8Spezialmaterial'
+      - ''
+      - '&7Die Essenz eines gefallenen'
+      - '&7Drachen. Extrem selten.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Legendäre Waffen-Upgrades'
+      - '&8• Feuer-Verzauberungen'
+      - '&8• Drachentöter-Items'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 55
+
+GEMEINSAM_DAEMONENHERZ:
+  base:
+    material: MAGMA_CREAM
+    name: '&5Dämonenherz'
+    lore:
+      - '&8Spezialmaterial'
+      - ''
+      - '&7Das Herz eines mächtigen'
+      - '&7Dämons. Pulsiert vor dunkler Energie.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Dunkle Verzauberungen'
+      - '&8• Beschwörer-Waffen'
+      - '&8• Spezial-Abilities'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 38
+
+GEMEINSAM_ENGELSFLÜGEL:
+  base:
+    material: FEATHER
+    name: '&bEngelsflügel'
+    lore:
+      - '&8Spezialmaterial'
+      - ''
+      - '&7Eine Feder von einem'
+      - '&7himmlischen Wesen.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Heilige Verzauberungen'
+      - '&8• Paladin-Waffen'
+      - '&8• Flug-Abilities'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 55
+
+GEMEINSAM_SEELENSTAUB:
+  base:
+    material: GLOWSTONE_DUST
+    name: '&9Seelenstaub'
+    lore:
+      - '&8Spezialmaterial'
+      - ''
+      - '&7Staub aus den Seelen der'
+      - '&7Verstorbenen.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Magische Verzauberungen'
+      - '&8• Magier-Stäbe'
+      - '&8• Mana-Regeneration'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 22
+
+GEMEINSAM_SCHATTENESSENZ:
+  base:
+    material: INK_SAC
+    name: '&8Schattenessenz'
+    lore:
+      - '&8Spezialmaterial'
+      - ''
+      - '&7Essenz aus den tiefsten'
+      - '&7Schatten.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Assassinen-Waffen'
+      - '&8• Unsichtbarkeits-Verzauberungen'
+      - '&8• Kritische Treffer-Boni'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 22
+
+GEMEINSAM_NATURESSENZ:
+  base:
+    material: GLOW_BERRIES
+    name: '&aNaturessenz'
+    lore:
+      - '&8Spezialmaterial'
+      - ''
+      - '&7Die Essenz der Natur selbst.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Schamanen-Waffen'
+      - '&8• Natur-Verzauberungen'
+      - '&8• Heilungs-Boni'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 22
+
+GOLD_COIN:
+  base:
+    material: GOLD_NUGGET
+    name: '&6Gold'
+    lore:
+      - '&7Eine wertvolle Goldmünze.'
+    custom-model-data: 100
+
+ELITE_ESSENZ:
+  base:
+    material: AMETHYST_SHARD
+    name: '&6Elite-Essenz'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Essenz eines Elite-Gegners.'
+    custom-model-data: 200
+
+BOSS_ESSENZ:
+  base:
+    material: NETHER_STAR
+    name: '&cBoss-Essenz'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Essenz eines mächtigen Bosses.'
+    custom-model-data: 201
+
+BURG_ABZEICHEN:
+  base:
+    material: IRON_NUGGET
+    name: '&8Burg-Abzeichen'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Ein Abzeichen der Burgwachen.'
+
+GEISTERESSENZ:
+  base:
+    material: GHAST_TEAR
+    name: '&7Geisteressenz'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Die Essenz eines Geistes.'
+
+VERFLUCHTES_METALL:
+  base:
+    material: IRON_INGOT
+    name: '&5Verfluchtes Metall'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Metall, durchdrungen von Flüchen.'
+
+GESPENSTERSTOFF:
+  base:
+    material: WHITE_WOOL
+    name: '&7Gespensterstoff'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Ätherischer Stoff eines Gespenstes.'
+
+SCHATTENESSENZ:
+  base:
+    material: INK_SAC
+    name: '&8Schattenessenz'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Essenz aus den Schatten.'
+
+KERKER_SCHLUESSEL:
+  base:
+    material: TRIPWIRE_HOOK
+    name: '&8Kerker-Schlüssel'
+    lore:
+      - '&8Quest-Material'
+      - '&7Ein Schlüssel aus dem Kerker.'
+
+RUNENSTEIN:
+  base:
+    material: LAPIS_LAZULI
+    name: '&9Runenstein'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Ein mit Runen gravierter Stein.'
+
+HEXENBUCH:
+  base:
+    material: BOOK
+    name: '&5Hexenbuch'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Ein Buch voller dunkler Magie.'
+
+TODESESSENZ:
+  base:
+    material: WITHER_ROSE
+    name: '&0Todesessenz'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Die Essenz des Todes selbst.'
+
+VERFAULTES_FLEISCH:
+  base:
+    material: ROTTEN_FLESH
+    name: '&2Verfaultes Fleisch'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Fleisch aus dem Sumpf.'
+
+HEXENKRAUT:
+  base:
+    material: FERN
+    name: '&5Hexenkraut'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Ein Kraut für dunkle Tränke.'
+
+GIFTSCHLEIM_BALL:
+  base:
+    material: SLIME_BALL
+    name: '&2Giftschleim'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Giftiger Schleim aus dem Sumpf.'
+
+KROKODILHAUT:
+  base:
+    material: LEATHER
+    name: '&2Krokodilhaut'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Zähe Haut eines Sumpfkrokodils.'
+
+IRRLICHTSTOFF:
+  base:
+    material: GLOW_INK_SAC
+    name: '&5Irrlichtstoff'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Leuchtende Essenz eines Irrwichts.'
+
+PHANTOM_MEMBRAN:
+  base:
+    material: PHANTOM_MEMBRANE
+    name: '&7Phantom-Membran'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Die Membran eines Phantoms.'
+
+NATTERGIFT:
+  base:
+    material: SPIDER_EYE
+    name: '&2Nattergift'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Tödliches Gift einer Sumpfnatter.'
+
+TROLL_HAUT:
+  base:
+    material: DRIED_KELP
+    name: '&2Troll-Haut'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Die dicke Haut eines Sumpftrolls.'
+
+SUMPFKRONE:
+  base:
+    material: LILY_PAD
+    name: '&2Sumpfkrone'
+    lore:
+      - '&8Boss-Material'
+      - '&7Die Krone des Sumpfkönigs.'
+
+HEXENKRONE:
+  base:
+    material: GOLDEN_APPLE
+    name: '&5Hexenkrone'
+    lore:
+      - '&8Boss-Material'
+      - '&7Die Krone der Hexenkönigin.'
+
+SEELE_DES_NEKROMANTEN:
+  base:
+    material: GHAST_TEAR
+    name: '&5Seele des Nekromanten'
+    lore:
+      - '&8Quest-Item'
+      - ''
+      - '&7Die gefangene Seele des'
+      - '&7Nekromanten Malachar.'
+      - ''
+      - '&7Dieses Item dient als Beweis'
+      - '&7deines Sieges über den'
+      - '&7Untoten-Meister.'
+      - ''
+      - '&5━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eVerwendung:'
+      - '&7• Slayer Tier V Abschluss'
+      - '&7• Spezielle Crafting-Rezepte'
+      - '&7• NPC-Quest bei Jaegermeister Fenris'
+      - '&5━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&8Drop: Nekromant Malachar (100%)'
+    disable-interaction: True
+
+HERZ_DER_KOENIGIN:
+  base:
+    material: FERMENTED_SPIDER_EYE
+    name: '&cHerz der Königin'
+    lore:
+      - '&8Quest-Item'
+      - ''
+      - '&7Das noch schlagende Herz'
+      - '&7der Spinnenkönigin Arachnia.'
+      - ''
+      - '&7Ein grausiges Andenken an'
+      - '&7deinen Sieg über die'
+      - '&7Brutmutter.'
+      - ''
+      - '&c━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eVerwendung:'
+      - '&7• Slayer Tier V Abschluss'
+      - '&7• Gift-Rezepte'
+      - '&7• NPC-Quest bei Jaegermeister Fenris'
+      - '&c━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&8Drop: Spinnenkönigin Arachnia (100%)'
+    disable-interaction: True
+
+FRAGMENT_DER_LEERE:
+  base:
+    material: ENDER_EYE
+    name: '&0Fragment der Leere'
+    lore:
+      - '&8Quest-Item'
+      - ''
+      - '&7Ein Stück der Leere selbst.'
+      - '&7Es flüstert dir dunkle'
+      - '&7Geheimnisse zu...'
+      - ''
+      - '&8━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eVerwendung:'
+      - '&7• Slayer Tier V Abschluss'
+      - '&7• &6HAUPTQUEST Kapitel 2!'
+      - '&7• Leere-Rüstung Crafting'
+      - '&7• NPC-Quest bei König Nitwit'
+      - '&8━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&c⚠ Wichtig für die Hauptquest!'
+      - ''
+      - '&8Drop: Dunkler Magier Vexorin (100%)'
+    disable-interaction: True
+
+MAL_DER_LEERE:
+  base:
+    material: NETHER_STAR
+    name: '&5Mal der Leere'
+    lore:
+      - '&8Quest-Item'
+      - ''
+      - '&7Das mysteriöse Mal auf'
+      - '&7deiner Hand. Es glüht'
+      - '&7schwach violett...'
+      - ''
+      - '&7Du erinnerst dich nicht'
+      - '&7woher es kommt.'
+      - ''
+      - '&5━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eErhaltung:'
+      - '&7Hauptquest: Das Erwachen'
+      - '&5━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&8Seelengebunden'
+    disable-interaction: True
+    soulbound: True
+
+KOENIGLICHER_AUFTRAG:
+  base:
+    material: PAPER
+    name: '&6Königlicher Auftrag'
+    lore:
+      - '&8Quest-Item'
+      - ''
+      - '&7Ein offizieller Auftrag'
+      - '&7von König Nitwit persönlich.'
+      - ''
+      - '&7"Hiermit beauftrage ich...'
+      - '&7ähm... wie war der Name...'
+      - '&7diesen Helden, die Bedrohung'
+      - '&7der Leere zu untersuchen!"'
+      - ''
+      - '&7&o- König Nitwit'
+      - '&7&o(mit Kronenstempel)'
+      - ''
+      - '&6━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eErhaltung:'
+      - '&7Hauptquest: Bericht an den König'
+      - '&6━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&8Seelengebunden'
+    disable-interaction: True
+    soulbound: True
+
+TITEL_UNTOTEN_VERNICHTER:
+  base:
+    material: ZOMBIE_HEAD
+    name: '&5&l[Untoten-Vernichter]'
+    lore:
+      - '&8Titel-Item'
+      - ''
+      - '&7Der Titel des Untoten-Vernichters.'
+      - '&7Nur die mächtigsten Slayer'
+      - '&7tragen diesen Namen.'
+      - ''
+      - '&5━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eBonus:'
+      - '&7+15% Schaden gegen Untote'
+      - '&5━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&8Rechtsklick zum Aktivieren'
+    disable-interaction: False
+
+TITEL_SPINNEN_BEZWINGER:
+  base:
+    material: SPIDER_EYE
+    name: '&c&l[Spinnen-Bezwinger]'
+    lore:
+      - '&8Titel-Item'
+      - ''
+      - '&7Der Titel des Spinnen-Bezwingers.'
+      - '&7Du hast die Königin besiegt'
+      - '&7und ihr Reich zerstört.'
+      - ''
+      - '&c━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eBonus:'
+      - '&7+15% Schaden gegen Spinnen'
+      - '&7Immun gegen Gift'
+      - '&c━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&8Rechtsklick zum Aktivieren'
+    disable-interaction: False
+
+TITEL_DAEMONEN_SCHLAECHTER:
+  base:
+    material: WITHER_SKELETON_SKULL
+    name: '&0&l[Dämonen-Schlächter]'
+    lore:
+      - '&8Titel-Item'
+      - ''
+      - '&7Der Titel des Dämonen-Schlächters.'
+      - '&7Du hast die Leere bezwungen'
+      - '&7und Vexorin vernichtet.'
+      - ''
+      - '&8━━━━━━━━━━━━━━━━━━━━━━━━'
+      - '&eBonus:'
+      - '&7+20% Schaden gegen Dämonen'
+      - '&7+10% Magie-Resistenz'
+      - '&8━━━━━━━━━━━━━━━━━━━━━━━━'
+      - ''
+      - '&8Rechtsklick zum Aktivieren'
+    disable-interaction: False
+
+GEMEINSAM_BOMBE_T1:
+  base:
+    material: FIRE_CHARGE
+    name: '&fEinfache Bombe'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Eine einfache Bombe mit'
+      - '&7moderatem AoE-Schaden.'
+      - ''
+      - '&c💥 30-40 Schaden'
+      - '&e📏 3 Blöcke Radius'
+      - '&e⌛ 10s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    attack-damage: 35
+    required-level: 1
+
+GEMEINSAM_BOMBE_T2:
+  base:
+    material: FIRE_CHARGE
+    name: '&aVerstärkte Bombe'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Eine verstärkte Bombe mit'
+      - '&7höherem Schaden.'
+      - ''
+      - '&c💥 60-80 Schaden'
+      - '&e📏 4 Blöcke Radius'
+      - '&e⌛ 10s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    attack-damage: 70
+    required-level: 12
+
+GEMEINSAM_BOMBE_T3:
+  base:
+    material: TNT
+    name: '&9Schwere Bombe'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Eine schwere Bombe mit'
+      - '&7Betäubungseffekt.'
+      - ''
+      - '&c💥 120-160 Schaden'
+      - '&e📏 5 Blöcke Radius'
+      - '&6⚡ Betäubung (2s)'
+      - '&e⌛ 12s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    attack-damage: 140
+    required-level: 22
+
+GEMEINSAM_FEUERBOMBE:
+  base:
+    material: FIREWORK_STAR
+    name: '&5Feuerbombe'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Eine explosive Feuerbombe mit'
+      - '&7Feuer-Schaden über Zeit.'
+      - ''
+      - '&c💥 200-260 Schaden'
+      - '&e📏 6 Blöcke Radius'
+      - '&c🔥 Feuer-DoT (5s)'
+      - '&e⌛ 15s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    attack-damage: 230
+    required-level: 38
+
+GEMEINSAM_EISBOMBE:
+  base:
+    material: SNOWBALL
+    name: '&5Eisbombe'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Eine gefrorene Bombe, die'
+      - '&7Feinde verlangsamt.'
+      - ''
+      - '&9❄ 180-240 Schaden'
+      - '&e📏 6 Blöcke Radius'
+      - '&b⚡ Verlangsamung (5s)'
+      - '&e⌛ 15s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    attack-damage: 210
+    required-level: 38
+
+GEMEINSAM_BLITZBOMBE:
+  base:
+    material: END_CRYSTAL
+    name: '&6Blitzbombe'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Eine elektrische Bombe mit'
+      - '&7Kettenschaden.'
+      - ''
+      - '&e⚡ 350-450 Schaden'
+      - '&e📏 7 Blöcke Radius'
+      - '&6⛓ Kettenschaden (3 Ziele)'
+      - '&e⌛ 20s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    attack-damage: 400
+    required-level: 55
+
+GEMEINSAM_GIFT_T1:
+  base:
+    material: POTION
+    name: '&fSchwaches Gift'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein schwaches Gift zum'
+      - '&7Vergiften deiner Waffe.'
+      - ''
+      - '&2☠ 5 Schaden/s (10s)'
+      - '&a⏱ 3 Anwendungen'
+      - '&e⌛ 30s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 1
+
+GEMEINSAM_GIFT_T2:
+  base:
+    material: POTION
+    name: '&aGift'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein starkes Gift zum'
+      - '&7Vergiften deiner Waffe.'
+      - ''
+      - '&2☠ 12 Schaden/s (15s)'
+      - '&a⏱ 5 Anwendungen'
+      - '&e⌛ 30s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 12
+
+GEMEINSAM_GIFT_T3:
+  base:
+    material: POTION
+    name: '&9Tödliches Gift'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein tödliches Gift, das auch'
+      - '&7die Verteidigung schwächt.'
+      - ''
+      - '&2☠ 25 Schaden/s (20s)'
+      - '&c-10% Rüstung'
+      - '&a⏱ 5 Anwendungen'
+      - '&e⌛ 35s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 22
+
+GEMEINSAM_LAHMGIFT:
+  base:
+    material: POTION
+    name: '&5Lähmungsgift'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Gift, das Feinde'
+      - '&7verlangsamt und schwächt.'
+      - ''
+      - '&2☠ 15 Schaden/s (20s)'
+      - '&b⚡ -30% Bewegungsgeschwindigkeit'
+      - '&c-15% Angriffsgeschwindigkeit'
+      - '&a⏱ 5 Anwendungen'
+      - '&e⌛ 40s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 38
+
+GEMEINSAM_TELEPORT_SCROLL:
+  base:
+    material: PAPER
+    name: '&9Teleport-Scroll'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein magischer Scroll, der dich'
+      - '&7zurück zum Spawn teleportiert.'
+      - ''
+      - '&6⚡ Sofort-Teleport'
+      - '&e⌛ 30s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 1
+
+GEMEINSAM_HEILSCROLL:
+  base:
+    material: PAPER
+    name: '&aHeilungs-Scroll'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein heiliger Scroll, der dich'
+      - '&7und Verbündete heilt.'
+      - ''
+      - '&c❤ +300 Heilung (AoE)'
+      - '&e📏 10 Blöcke Radius'
+      - '&e⌛ 60s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    restore-health: 300
+    required-level: 22
+
+GEMEINSAM_SCHILD_SCROLL:
+  base:
+    material: PAPER
+    name: '&5Schutz-Scroll'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein magischer Scroll, der'
+      - '&7einen Schutzschild erschafft.'
+      - ''
+      - '&6⚡ Absorptions-Schild (200 HP)'
+      - '&a⏱ 60s Dauer'
+      - '&e⌛ 120s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 38
+
+GEMEINSAM_BLITZ_SCROLL:
+  base:
+    material: PAPER
+    name: '&6Blitz-Scroll'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein elektrischer Scroll, der'
+      - '&7Feinde in der Nähe zerstört.'
+      - ''
+      - '&e⚡ 500 Blitz-Schaden (AoE)'
+      - '&e📏 15 Blöcke Radius'
+      - '&6⚡ Betäubung (3s)'
+      - '&e⌛ 90s Cooldown'
+      - ''
+      - '&8Für alle Klassen'
+    attack-damage: 500
+    required-level: 55
+
+GEMEINSAM_WIEDERBELEBUNG:
+  base:
+    material: PAPER
+    name: '&cWiederbelebungs-Scroll'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein göttlicher Scroll, der'
+      - '&7dich vor dem Tod rettet.'
+      - ''
+      - '&c❤ Rettet vor Tod (1x)'
+      - '&650% HP Wiederherstellung'
+      - '&e⌛ Einmaliger Gebrauch'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 78
+
+GEMEINSAM_REISEPROVIANT:
+  base:
+    material: BREAD
+    name: '&fReiseproviant'
+    lore:
+      - '&8Nahrung'
+      - ''
+      - '&7Einfache Nahrung für'
+      - '&7deine Reise.'
+      - ''
+      - '&c❤ +30 Heilung'
+      - '&6🍖 +5 Sättigung'
+      - ''
+      - '&8Für alle Klassen'
+    restore-health: 30
+    required-level: 1
+
+GEMEINSAM_KRAFTRIEGEL:
+  base:
+    material: COOKED_BEEF
+    name: '&aKraftriegel'
+    lore:
+      - '&8Nahrung'
+      - ''
+      - '&7Ein nahrhafter Riegel,'
+      - '&7der Kraft verleiht.'
+      - ''
+      - '&c❤ +80 Heilung'
+      - '&6🍖 +10 Sättigung'
+      - '&c+5% Stärke (10min)'
+      - ''
+      - '&8Für alle Klassen'
+    restore-health: 80
+    required-level: 12
+
+GEMEINSAM_FESTMAHL:
+  base:
+    material: GOLDEN_APPLE
+    name: '&6Heldenfestmahl'
+    lore:
+      - '&8Nahrung'
+      - ''
+      - '&7Ein königliches Festmahl,'
+      - '&7das alle Stats verstärkt.'
+      - ''
+      - '&c❤ +200 Heilung'
+      - '&6🍖 Volle Sättigung'
+      - '&6+10% Alle Stats (15min)'
+      - '&a+Regeneration (30s)'
+      - ''
+      - '&8Für alle Klassen'
+    restore-health: 200
+    required-level: 38
+
+# ==================== BOSS MISCELLANEOUS ====================
+EARTH_STAFF:
+  base:
+    material: JUNGLE_SAPLING
+    name: '&fEarth Staff'
+    enchants:
+      unbreaking: 1
+    hide-enchants: True
+    movement-speed: 0.005
+    attack-damage:
+      base: 17.0
+      spread: 0.02
+      max-spread: 0.06
+    attack-speed: 0.4
+    critical-strike-chance: 18.0
+    critical-strike-power: 49.0
+    range: 15.0
+    two-handed: True
+    perm-effects:
+      JUMP: 2
+    crafting:
+      shaped:
+        1:
+          - 'JUNGLE_SAPLING EMERALD JUNGLE_SAPLING'
+          - 'EMERALD STICK EMERALD'
+          - 'JUNGLE_SAPLING EMERALD JUNGLE_SAPLING'
+    element:
+      earth:
+        damage: 23.0
+    gem-sockets:
+      - 'Blue'
+      - 'Blue'
+    ability:
+      right-click:
+        type: EARTHQUAKE
+        mode: SHIFT_LEFT_CLICK
+        cooldown: 28.0
+        damage: 5.0
+        amplifier: 2.0
+        duration: 2.0
+      on-hit:
+        type: SLOW
+        mode: ATTACK
+        cooldown: 39.0
+        amplifier: 4.0
+        duration: 2.0
+    lore:
+      - '&7An extremely powerful weapon.'
+      - '&7Use it &f&nwisely&7.'
+    tier: VERY_RARE
+    disable-crafting: True
+    disable-smelting: True
+    disable-interaction: True
+    required-level: 30.0
+
+BONE_STAFF:
+  base:
+    material: BONE
+    disable-interaction: False
+    disable-crafting: True
+    required-level: 3.0
+    attack-damage:
+      base: 5.0
+      spread: 0.06
+      max-spread: 0.17
+    attack-speed: 0.4
+    tier: TRASH
+    magic-damage:
+      base: 7.0
+      spread: 0.07
+      max-spread: 0.2
+    lore:
+    name: '&fBone Staff'
+
+VOID_STAFF:
+  base:
+    material: NETHERITE_HOE
+    name: §5§lVoid Staff
+    attack-damage: 25.0
+    attack-speed: 1.5
+    required-level: 40.0
+    tier: LEGENDARY
+    critical-strike-chance:
+      base: 10.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    critical-strike-power:
+      base: 20.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    range: 30.0
+    mana-cost: 6.0
+    magic-damage: 40.0
+    staff-spirit: VOID_SPIRIT
+    required-class:
+      - 'Mage'
+    ability:
+      ability1:
+        type: CURSED_BEAM
+        mode: RIGHT_CLICK
+        damage: 30.0
+        duration: 4.0
+        cooldown: 7.0
+    lore:
+      - '§7Think of all the places this can go.'
+

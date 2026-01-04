@@ -1,0 +1,150 @@
+# ============================================================
+# MATERIAL.yml - Alle MATERIAL Items
+# ============================================================
+
+# ==================== GEMEINSAM MATERIAL ====================
+GEMEINSAM_EISENBARREN:
+  base:
+    material: IRON_INGOT
+    name: '&fGewöhnlicher Eisenbarren'
+    lore:
+      - '&8Crafting-Material'
+      - ''
+      - '&7Ein gewöhnlicher Eisenbarren.'
+      - '&7Wird für Basis-Crafting verwendet.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Basis-Waffen und Rüstungen'
+      - '&8• Einfache Werkzeuge'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 1
+
+GEMEINSAM_STAHLBARREN:
+  base:
+    material: IRON_INGOT
+    name: '&aStahlbarren'
+    lore:
+      - '&8Crafting-Material'
+      - ''
+      - '&7Ein gehärteter Stahlbarren.'
+      - '&7Wird für fortgeschrittenes'
+      - '&7Crafting verwendet.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Verbesserte Waffen (T2)'
+      - '&8• Verstärkte Rüstungen (T2)'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 12
+
+GEMEINSAM_MITHRILBARREN:
+  base:
+    material: GOLD_INGOT
+    name: '&9Mithrilbarren'
+    lore:
+      - '&8Crafting-Material'
+      - ''
+      - '&7Ein seltener Mithrilbarren.'
+      - '&7Wird für High-Level-Crafting'
+      - '&7verwendet.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Seltene Waffen (T3-T4)'
+      - '&8• Magische Rüstungen (T3-T4)'
+      - '&8• Verzauberungen'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 22
+
+GEMEINSAM_ADAMANTBARREN:
+  base:
+    material: DIAMOND
+    name: '&5Adamantbarren'
+    lore:
+      - '&8Crafting-Material'
+      - ''
+      - '&7Ein äußerst seltener'
+      - '&7Adamantbarren aus den Tiefen.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Epische Waffen (T4-T5)'
+      - '&8• Legendäre Rüstungen (T4-T5)'
+      - '&8• Mächtige Verzauberungen'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 38
+
+MOORERDE:
+  base:
+    material: MUD
+    name: '&8Moorerde'
+    lore:
+      - '&8Crafting-Material'
+      - '&7Erde aus den tiefsten Mooren.'
+
+# ==================== BOSS MATERIAL ====================
+FROZEN_BLADE:
+  base:
+    material: DIAMOND_SWORD
+    lore:
+      - '§bHergestellt aus Eis, so kalt,'
+      - '§bdass es niemals schmilzt.'
+    max-durability: 15000.0
+    tier: MYTHICAL
+    name: §b§lEwig Gefrorene Klinge
+    weapon-damage:
+      base: 30.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.25
+    attack-damage:
+      base: 70.0
+      scale: 0.15
+      spread: 0.1
+      max-spread: 0.2
+    stamina-cost: 12.0
+    attack-speed: 1.6
+    critical-strike-chance:
+      base: 5.0
+      scale: 0.05
+      spread: 0.2
+      max-spread: 0.4
+    critical-strike-power:
+      base: 25.0
+      scale: 0.1
+      spread: 0.15
+      max-spread: 0.25
+    parry-rating:
+      base: 30.0
+      spread: 0.1
+      max-spread: 0.4
+    required-level: 70.0
+    element:
+      ice:
+        damage:
+          base: 60.0
+          scale: 0.0
+          spread: 0.1
+          max-spread: 0.2
+    gem-sockets:
+      - 'Blue'
+      - 'Blue'
+    ability:
+      ability1:
+        type: FROZEN_AURA
+        mode: RIGHT_CLICK
+        duration: 8.0
+        cooldown: 12.0
+        amplifier: 2.0
+        radius: 10.0
+    magic-damage:
+      base: 25.0
+      spread: 0.25
+      max-spread: 0.4
+    upgrade:
+      reference: weapon-default
+    disable-death-drop: True
+    two-handed: True
+    movement-speed: -0.01
+
