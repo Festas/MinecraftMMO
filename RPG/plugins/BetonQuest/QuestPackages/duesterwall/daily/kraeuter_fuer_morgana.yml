@@ -15,7 +15,7 @@ conversations:
       start:
         text: "&5*Lächelt sanft* Die Kräuter... sie verlieren ihre Heilkraft. Die Dunkelheit verdirbt alles. Hilfst du mir, frische zu sammeln?"
         pointer: "spieler_antwort"
-        conditions: "!daily_kraeuter_aktiv,ist_level_5,!daily_kraeuter_complete_heute"
+        conditions: "!daily_kraeuter_aktiv,_core.ist_level_5,!daily_kraeuter_complete_heute"
       
       beschreibung:
         text: "&5Ich brauche 10 Kräuter - verschiedene Blumen des Feldes. Mohnblumen, Löwenzahn, Orchideen... was auch immer du findest. Ich gebe dir Gold und einen meiner Heiltränke."
@@ -59,7 +59,6 @@ conditions:
   daily_kraeuter_aktiv: "tag daily_kraeuter_aktiv"
   daily_kraeuter_complete: "tag daily_kraeuter_complete"
   daily_kraeuter_complete_heute: "tag daily_kraeuter_complete_heute"
-  ist_level_5: "_core.ist_level_5"
 
 journal:
   daily_kraeuter_start: "&bDaily: Kräuter für Morgana|&7Sammle 10 verschiedene Blumen|&7für Kräuterfrau Morgana.|&7Belohnung: 100 Gold + Heiltrank"

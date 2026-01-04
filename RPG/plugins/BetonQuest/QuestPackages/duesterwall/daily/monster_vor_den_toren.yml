@@ -15,7 +15,7 @@ conversations:
       start:
         text: "&c*Blickt ernst in die Ferne* Jede Nacht werden es mehr. Die Monster werden dreister. Wir brauchen jeden Kämpfer den wir bekommen können!"
         pointer: "spieler_antwort"
-        conditions: "!daily_monster_aktiv,ist_level_5,!daily_monster_complete_heute"
+        conditions: "!daily_monster_aktiv,_core.ist_level_5,!daily_monster_complete_heute"
       
       beschreibung:
         text: "&cTöte 15 Monster vor den Stadtmauern. Egal welche - Zombies, Skelette, Spinnen, Creeper. Wir müssen ihre Zahlen dezimieren! Ich zahle 150 Gold und belohne deinen Kampfgeist mit Erfahrung."
@@ -59,7 +59,6 @@ conditions:
   daily_monster_aktiv: "tag daily_monster_aktiv"
   daily_monster_complete: "tag daily_monster_complete"
   daily_monster_complete_heute: "tag daily_monster_complete_heute"
-  ist_level_5: "_core.ist_level_5"
 
 journal:
   daily_monster_start: "&bDaily: Monster vor den Toren|&7Töte 15 Monster die|&7Düsterwall bedrohen.|&7Belohnung: 150 Gold + 100 XP"

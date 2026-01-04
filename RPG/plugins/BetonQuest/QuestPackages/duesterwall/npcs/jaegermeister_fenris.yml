@@ -14,12 +14,12 @@ conversations:
       slayer_erklaerung:
         text: "&7Du willst ein Slayer werden? *grinst* Gut. Die Monster werden mutiger. Wir brauchen Jäger. Ich biete drei Pfade: Untoten-Jäger, Spinnen-Jäger, oder Dämonen-Jäger. Jeder Pfad hat fünf Ränge."
         pointer: "slayer_optionen"
-        conditions: "ist_level_10"
+        conditions: "_core.ist_level_10"
       
       slayer_niedrig_level:
         text: "&7*schüttelt den Kopf* Du bist zu grün. Komm wieder wenn du Level 10 erreicht hast. Die Monster da draußen fressen Grünschnäbel zum Frühstück."
         pointer: "ende"
-        conditions: "!ist_level_10"
+        conditions: "!_core.ist_level_10"
       
       untoten_info:
         text: "&7Untote... Zombies, Skelette, Ertrunkene. Sie verbreiten die Fäulnis der Leere. Fünf Ränge: 10, 25, 50, 100, 250 Kills. Belohnungen steigen mit jedem Rang. Bei Rang V erhältst du den Titel [Untoten-Vernichter]."
@@ -55,8 +55,6 @@ conversations:
         pointer: "ende"
 
 conditions:
-  ist_level_10: "_core.ist_level_10"
-  ist_level_15: "_core.ist_level_15"
 
 journal:
   fenris_begegnung: "&7Jägermeister Fenris|&7Der Jägermeister koordiniert|&7die Slayer-Aufträge."
