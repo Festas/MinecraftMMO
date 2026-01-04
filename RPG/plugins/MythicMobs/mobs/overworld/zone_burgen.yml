@@ -270,7 +270,7 @@ BURGHERR:
   - mmoitems{type=MATERIAL;id=BURG_KRONE} 1.0 5-10
   - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - mmoitems{type=WEAPON;id=BURGHERR_AXT} 0.15 1
+  - mmoitems{type=SWORD;id=BURGHERR_AXT} 0.15 1
   - exp 1200-2000
   BossBar:
     Enabled: true
@@ -305,7 +305,7 @@ SCHATTENKOENIG:
   - mmoitems{type=MATERIAL;id=SCHATTEN_KRONE} 1.0 5-10
   - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - mmoitems{type=WEAPON;id=SCHATTEN_KLINGE} 0.2 1
+  - mmoitems{type=SWORD;id=SCHATTEN_KLINGE} 0.2 1
   - exp 1200-2000
   BossBar:
     Enabled: true

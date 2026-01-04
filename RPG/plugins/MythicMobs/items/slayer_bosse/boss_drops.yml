@@ -10,7 +10,7 @@
 # Legendary Weapon
 StabDerVerdammnis:
   Id: STAB_DER_VERDAMMNIS
-  Type: WEAPON
+  Type: SWORD
   Material: NETHERITE_SWORD
   Display: '&5&lStab der Verdammnis'
   Lore:
@@ -59,7 +59,7 @@ SeeleDesNekromanten:
 # Legendary Weapon
 SpinnenseideBogen:
   Id: SPINNENSEIDE_BOGEN
-  Type: WEAPON
+  Type: BOW
   Material: BOW
   Display: '&c&lSpinnenseide-Bogen'
   Lore:
@@ -109,7 +109,7 @@ HerzDerKoenigin:
 # Legendary Weapon
 StabDerLeere:
   Id: STAB_DER_LEERE
-  Type: WEAPON
+  Type: STAFF
   Material: NETHERITE_SWORD
   Display: '&0&lStab der Leere'
   Lore:

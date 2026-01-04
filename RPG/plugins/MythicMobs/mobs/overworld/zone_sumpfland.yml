@@ -229,7 +229,7 @@ SUMPFKOENIG:
   - mmoitems{type=MATERIAL;id=SUMPFKRONE} 1.0 5-10
   - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - mmoitems{type=WEAPON;id=SUMPF_DREIZACK} 0.15 1
+  - mmoitems{type=SPEAR;id=SUMPF_DREIZACK} 0.15 1
   - exp 600-1000
   BossBar:
     Enabled: true
@@ -257,7 +257,7 @@ HEXENKOENIGIN:
   - mmoitems{type=MATERIAL;id=HEXENKRONE} 1.0 5-10
   - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - mmoitems{type=WEAPON;id=HEXENSTAB} 0.2 1
+  - mmoitems{type=STAFF;id=HEXENSTAB} 0.2 1
   - exp 600-1000
   BossBar:
     Enabled: true

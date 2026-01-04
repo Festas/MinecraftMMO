@@ -1,0 +1,13 @@
+# Boss Waffen (Speere)
+# Seltene Waffen die von Mini-Bossen droppen
+
+SUMPF_DREIZACK:
+  base:
+    material: TRIDENT
+    name: '&2&lSumpf-Dreizack'
+    lore:
+      - '&8Boss-Waffe'
+      - ''
+      - '&7Der Dreizack des Sumpfkönigs.'
+    attack-damage: 35
+    required-level: 35

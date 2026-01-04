@@ -1,0 +1,26 @@
+# Boss Waffen (Schwerter)
+# Seltene Waffen die von Mini-Bossen droppen
+
+BURGHERR_AXT:
+  base:
+    material: NETHERITE_AXE
+    name: '&c&lBurgherr-Axt'
+    lore:
+      - '&8Boss-Waffe'
+      - ''
+      - '&7Die mächtige Axt des Burgherrn.'
+      - '&7Durchdrungen von dunkler Macht.'
+    attack-damage: 45
+    required-level: 75
+
+SCHATTEN_KLINGE:
+  base:
+    material: NETHERITE_SWORD
+    name: '&8&lSchatten-Klinge'
+    lore:
+      - '&8Boss-Waffe'
+      - ''
+      - '&7Das Schwert des Schattenkönigs.'
+    attack-damage: 40
+    critical-strike-chance: 5
+    required-level: 75
