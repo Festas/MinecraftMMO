@@ -26,8 +26,8 @@ BURGWACHE:
   - IRON_HELMET HEAD
   - CHAINMAIL_CHESTPLATE CHEST
   Drops:
-  - MMOItem{type=MATERIAL;id=BURG_ABZEICHEN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=BURG_ABZEICHEN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 180-300
 
 GEISTERRITTER:
@@ -47,8 +47,8 @@ GEISTERRITTER:
   - CHAINMAIL_HELMET HEAD
   - CHAINMAIL_CHESTPLATE CHEST
   Drops:
-  - MMOItem{type=MATERIAL;id=GEISTERESSENZ} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=GEISTERESSENZ} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 186-310
 
 VERFLUCHTER_RITTER:
@@ -67,8 +67,8 @@ VERFLUCHTER_RITTER:
   - IRON_HELMET HEAD
   - IRON_CHESTPLATE CHEST
   Drops:
-  - MMOItem{type=MATERIAL;id=VERFLUCHTES_METALL} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=VERFLUCHTES_METALL} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 192-320
 
 BURGGESPENST:
@@ -82,8 +82,8 @@ BURGGESPENST:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=GESPENSTERSTOFF} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=GESPENSTERSTOFF} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 195-325
 
 SCHATTENWACHE:
@@ -102,8 +102,8 @@ SCHATTENWACHE:
   - IRON_HELMET HEAD
   - IRON_CHESTPLATE CHEST
   Drops:
-  - MMOItem{type=MATERIAL;id=SCHATTENESSENZ} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=SCHATTENESSENZ} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 201-335
 
 KERKERMEISTER:
@@ -122,8 +122,8 @@ KERKERMEISTER:
   - CHAINMAIL_HELMET HEAD
   - CHAINMAIL_CHESTPLATE CHEST
   Drops:
-  - MMOItem{type=MATERIAL;id=KERKER_SCHLUESSEL} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=KERKER_SCHLUESSEL} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 204-340
 
 RUNENRITTER:
@@ -146,8 +146,8 @@ RUNENRITTER:
   Skills:
   - skill{s=RunenSchlag} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=RUNENSTEIN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=RUNENSTEIN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 210-350
 
 HEXENMEISTER:
@@ -163,8 +163,8 @@ HEXENMEISTER:
   Skills:
   - skill{s=DunklesMagie} @target ~onTimer:200
   Drops:
-  - MMOItem{type=MATERIAL;id=HEXENBUCH} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=HEXENBUCH} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 216-360
 
 TODESRITTER:
@@ -187,8 +187,8 @@ TODESRITTER:
   Skills:
   - skill{s=TodesSchlag} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=TODESESSENZ} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=TODESESSENZ} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 225-375
 
 # ==========================================
@@ -215,9 +215,9 @@ ELITE_GEISTERRITTER:
   - skill{s=EliteAura} @self ~onSpawn
   - skill{s=EliteSchlag} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=GEISTERESSENZ} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=GEISTERESSENZ} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 544-816
 
 ELITE_HEXENMEISTER:
@@ -236,9 +236,9 @@ ELITE_HEXENMEISTER:
   - skill{s=EliteSchlag} @target ~onAttack
   - skill{s=DunklesMagie} @target ~onTimer:150
   Drops:
-  - MMOItem{type=MATERIAL;id=HEXENBUCH} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=HEXENBUCH} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 592-888
 
 # ==========================================
@@ -267,10 +267,10 @@ BURGHERR:
   - skill{s=BossSchlag} @target ~onTimer:200
   - skill{s=BurgherrBefehl} @MobsInRadius{r=30} ~onTimer:400
   Drops:
-  - MMOItem{type=MATERIAL;id=BURG_KRONE} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=WEAPON;id=BURGHERR_AXT} 0.15 1
+  - mmoitems{type=MATERIAL;id=BURG_KRONE} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=WEAPON;id=BURGHERR_AXT} 0.15 1
   - exp 1200-2000
   BossBar:
     Enabled: true
@@ -302,10 +302,10 @@ SCHATTENKOENIG:
   - skill{s=TodesSchlag} @target ~onAttack
   - skill{s=SchattenArmee} @self ~onTimer:600
   Drops:
-  - MMOItem{type=MATERIAL;id=SCHATTEN_KRONE} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=WEAPON;id=SCHATTEN_KLINGE} 0.2 1
+  - mmoitems{type=MATERIAL;id=SCHATTEN_KRONE} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=WEAPON;id=SCHATTEN_KLINGE} 0.2 1
   - exp 1200-2000
   BossBar:
     Enabled: true

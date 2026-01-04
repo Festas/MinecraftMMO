@@ -20,8 +20,8 @@ MAGMASCHLEIMER:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=MAGMACREME} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=MAGMACREME} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 150-250
 
 FEUERDAEMON:
@@ -37,8 +37,8 @@ FEUERDAEMON:
   Skills:
   - skill{s=Feuerball} @target ~onTimer:100
   Drops:
-  - MMOItem{type=MATERIAL;id=FEUERRUTE} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=FEUERRUTE} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 156-260
 
 LAVAKRABBE:
@@ -52,8 +52,8 @@ LAVAKRABBE:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=LAVAPANZER} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=LAVAPANZER} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 159-265
 
 ASCHEZOMBIE:
@@ -68,8 +68,8 @@ ASCHEZOMBIE:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=VULKANASCHE} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=VULKANASCHE} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 165-275
 
 HOELLENJAEGER:
@@ -87,8 +87,8 @@ HOELLENJAEGER:
   - GOLDEN_AXE HAND
   - GOLDEN_HELMET HEAD
   Drops:
-  - MMOItem{type=MATERIAL;id=HOELLEN_ESSENZ} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=HOELLEN_ESSENZ} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 171-285
 
 VULKANGOLEM:
@@ -103,8 +103,8 @@ VULKANGOLEM:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=VULKANGESTEIN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=VULKANGESTEIN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 174-290
 
 FEUERWYVERN:
@@ -120,8 +120,8 @@ FEUERWYVERN:
   Skills:
   - skill{s=Feuerball} @target ~onTimer:120
   Drops:
-  - MMOItem{type=MATERIAL;id=WYVERN_SCHUPPE} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=WYVERN_SCHUPPE} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 180-300
 
 MAGMARIESE:
@@ -135,8 +135,8 @@ MAGMARIESE:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=RIESEN_MAGMACREME} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=RIESEN_MAGMACREME} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 186-310
 
 HOELLENSCHMIED:
@@ -155,8 +155,8 @@ HOELLENSCHMIED:
   - CHAINMAIL_HELMET HEAD
   - CHAINMAIL_CHESTPLATE CHEST
   Drops:
-  - MMOItem{type=MATERIAL;id=HOELLENSCHMIED_HAMMER} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=HOELLENSCHMIED_HAMMER} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 189-315
 
 # ==========================================
@@ -179,9 +179,9 @@ ELITE_FEUERDAEMON:
   - skill{s=EliteSchlag} @target ~onAttack
   - skill{s=Feuerball} @target ~onTimer:80
   Drops:
-  - MMOItem{type=MATERIAL;id=FEUERRUTE} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=FEUERRUTE} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 464-696
 
 ELITE_VULKANGOLEM:
@@ -200,9 +200,9 @@ ELITE_VULKANGOLEM:
   - skill{s=EliteAura} @self ~onSpawn
   - skill{s=EliteSchlag} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=VULKANGESTEIN} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=VULKANGESTEIN} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 496-744
 
 # ==========================================
@@ -225,10 +225,10 @@ FEUERLORD:
   - skill{s=Feuerball} @target ~onTimer:60
   - skill{s=FeuerInferno} @PIR{r=25} ~onTimer:500
   Drops:
-  - MMOItem{type=MATERIAL;id=FEUERLORD_KERN} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=WEAPON;id=FEUERLORD_STAB} 0.15 1
+  - mmoitems{type=MATERIAL;id=FEUERLORD_KERN} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=WEAPON;id=FEUERLORD_STAB} 0.15 1
   - exp 975-1625
   BossBar:
     Enabled: true
@@ -253,10 +253,10 @@ VULKANBIEST:
   - skill{s=BossSchlag} @target ~onTimer:200
   - skill{s=VulkanBeben} @PIR{r=30} ~onTimer:400
   Drops:
-  - MMOItem{type=MATERIAL;id=VULKANBIEST_HORN} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=ARMOR;id=VULKANBIEST_PANZER} 0.2 1
+  - mmoitems{type=MATERIAL;id=VULKANBIEST_HORN} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=ARMOR;id=VULKANBIEST_PANZER} 0.2 1
   - exp 975-1625
   BossBar:
     Enabled: true

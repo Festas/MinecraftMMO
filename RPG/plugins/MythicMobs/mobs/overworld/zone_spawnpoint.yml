@@ -20,8 +20,8 @@ WILDSCHWEIN:
     AlwaysShowName: true
     FollowRange: 20
   Drops:
-  - MMOItem{type=MATERIAL;id=ROHES_FLEISCH} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=ROHES_FLEISCH} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 3-5
 
 WUETENDER_HUHN:
@@ -35,8 +35,8 @@ WUETENDER_HUHN:
     AlwaysShowName: true
     FollowRange: 20
   Drops:
-  - MMOItem{type=MATERIAL;id=ROHES_FLEISCH} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=ROHES_FLEISCH} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 6-10
 
 WALDWOLF:
@@ -52,8 +52,8 @@ WALDWOLF:
   Skills:
   - skill{s=WolfBiss} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=LEDERFETZEN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=LEDERFETZEN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 9-15
 
 RIESENKAEFER:
@@ -67,8 +67,8 @@ RIESENKAEFER:
     AlwaysShowName: true
     FollowRange: 20
   Drops:
-  - MMOItem{type=MATERIAL;id=INSEKTEN_CHITIN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=INSEKTEN_CHITIN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 12-20
 
 BANDIT_ANFAENGER:
@@ -86,8 +86,8 @@ BANDIT_ANFAENGER:
   - WOODEN_SWORD HAND
   - LEATHER_HELMET HEAD
   Drops:
-  - MMOItem{type=MATERIAL;id=BANDITENGUT} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=BANDITENGUT} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 15-25
 
 WALDSPINNE:
@@ -103,8 +103,8 @@ WALDSPINNE:
   Skills:
   - skill{s=SpinnenGift} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=SPINNENFADEN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=SPINNENFADEN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 18-30
 
 VERWILDERTER_HUND:
@@ -120,8 +120,8 @@ VERWILDERTER_HUND:
   Skills:
   - skill{s=WolfBiss} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=LEDERFETZEN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=LEDERFETZEN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 21-35
 
 KOBOLD:
@@ -138,8 +138,8 @@ KOBOLD:
   Equipment:
   - STONE_SWORD HAND
   Drops:
-  - MMOItem{type=MATERIAL;id=KOBOLDSCHROTT} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=KOBOLDSCHROTT} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 24-40
 
 # ==========================================
@@ -161,9 +161,9 @@ ELITE_WILDSCHWEIN:
   - skill{s=EliteAura} @self ~onSpawn
   - skill{s=EliteSchlag} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=ROHES_FLEISCH} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=ROHES_FLEISCH} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 40-60
 
 ELITE_WALDWOLF:
@@ -182,9 +182,9 @@ ELITE_WALDWOLF:
   - skill{s=EliteSchlag} @target ~onAttack
   - skill{s=WolfBiss} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=LEDERFETZEN} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=LEDERFETZEN} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 64-96
 
 # ==========================================
@@ -206,10 +206,10 @@ ALPHA_WOLF:
   - skill{s=BossSchlag} @target ~onTimer:200
   - skill{s=WolfBiss} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=LEDERFETZEN} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=WEAPON;id=WOLFSZAHN_DOLCH} 0.15 1
+  - mmoitems{type=MATERIAL;id=LEDERFETZEN} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=WEAPON;id=WOLFSZAHN_DOLCH} 0.15 1
   - exp 150-250
   BossBar:
     Enabled: true
@@ -239,10 +239,10 @@ BANDITENFUEHRER:
   - skill{s=BossRuf} @self ~onSpawn
   - skill{s=BossSchlag} @target ~onTimer:200
   Drops:
-  - MMOItem{type=MATERIAL;id=BANDITENGUT} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=WEAPON;id=BANDITENAXT} 0.2 1
+  - mmoitems{type=MATERIAL;id=BANDITENGUT} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=WEAPON;id=BANDITENAXT} 0.2 1
   - exp 150-250
   BossBar:
     Enabled: true

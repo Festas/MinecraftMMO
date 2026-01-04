@@ -23,8 +23,8 @@ EISWOLF:
   - skill{s=WolfBiss} @target ~onAttack
   - skill{s=FrostBiss} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=EISFELL} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=EISFELL} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 135-225
 
 FROSTGEIST:
@@ -40,8 +40,8 @@ FROSTGEIST:
   Skills:
   - skill{s=FrostAura} @self ~onTimer:100
   Drops:
-  - MMOItem{type=MATERIAL;id=FROSTESSENZ} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=FROSTESSENZ} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 141-235
 
 FROSTZOMBIE:
@@ -58,8 +58,8 @@ FROSTZOMBIE:
   Equipment:
   - BOW HAND
   Drops:
-  - MMOItem{type=MATERIAL;id=FROST_KNOCHEN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=FROST_KNOCHEN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 144-240
 
 EISBAER:
@@ -74,8 +74,8 @@ EISBAER:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=EISBAER_FELL} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=EISBAER_FELL} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 150-250
 
 YETI_JUNG:
@@ -93,8 +93,8 @@ YETI_JUNG:
   Equipment:
   - STONE_SWORD HAND
   Drops:
-  - MMOItem{type=MATERIAL;id=YETI_FELL} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=YETI_FELL} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 156-260
 
 FROSTSPINNE:
@@ -110,8 +110,8 @@ FROSTSPINNE:
   Skills:
   - skill{s=FrostGift} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=FROSTFADEN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=FROSTFADEN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 159-265
 
 EISGOLEM:
@@ -126,8 +126,8 @@ EISGOLEM:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=EISKRISTALL} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=EISKRISTALL} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 165-275
 
 SCHNEEWICHT:
@@ -143,8 +143,8 @@ SCHNEEWICHT:
   Skills:
   - skill{s=FrostFluch} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=SCHNEEKRAUT} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=SCHNEEKRAUT} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 168-280
 
 FROSTJAEGER:
@@ -163,8 +163,8 @@ FROSTJAEGER:
   - CHAINMAIL_HELMET HEAD
   - CHAINMAIL_CHESTPLATE CHEST
   Drops:
-  - MMOItem{type=MATERIAL;id=FROSTPFEIL} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=FROSTPFEIL} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 174-290
 
 # ==========================================
@@ -187,9 +187,9 @@ ELITE_EISBAER:
   - skill{s=EliteAura} @self ~onSpawn
   - skill{s=EliteSchlag} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=EISBAER_FELL} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=EISBAER_FELL} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 416-624
 
 ELITE_YETI:
@@ -208,9 +208,9 @@ ELITE_YETI:
   - skill{s=EliteAura} @self ~onSpawn
   - skill{s=EliteSchlag} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=YETI_FELL} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=YETI_FELL} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 448-672
 
 # ==========================================
@@ -234,10 +234,10 @@ YETI_KOENIG:
   - skill{s=FrostSchlag} @target ~onAttack
   - skill{s=EisLawine} @PIR{r=25} ~onTimer:500
   Drops:
-  - MMOItem{type=MATERIAL;id=YETI_KRONE} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=WEAPON;id=YETI_KEULE} 0.15 1
+  - mmoitems{type=MATERIAL;id=YETI_KRONE} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=WEAPON;id=YETI_KEULE} 0.15 1
   - exp 900-1500
   BossBar:
     Enabled: true
@@ -262,10 +262,10 @@ FROSTKOENIGIN:
   - skill{s=FrostFluch} @target ~onAttack
   - skill{s=EisSturm} @PIR{r=25} ~onTimer:400
   Drops:
-  - MMOItem{type=MATERIAL;id=FROST_KRONE} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=WEAPON;id=FROST_ZEPTER} 0.2 1
+  - mmoitems{type=MATERIAL;id=FROST_KRONE} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=WEAPON;id=FROST_ZEPTER} 0.2 1
   - exp 900-1500
   BossBar:
     Enabled: true
