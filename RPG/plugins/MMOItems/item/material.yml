@@ -147,4 +147,32 @@ FROZEN_BLADE:
     disable-death-drop: True
     two-handed: True
     movement-speed: -0.01
+    
+MAGIC_FRAGMENT:
+  base: AMETHYST_SHARD
+  name: '&dMagisches Fragment'
+
+MAGIC_ESSENCE:
+  base: GLOWSTONE_DUST
+  name: '&dMagische Essenz'
+
+STEEL_INGOT:
+  base: IRON_INGOT
+  name: '&fStahlbarren'
+
+HUMAN_SOUL:
+  base: SOUL_SAND
+  name: '&bMenschenseele'
+
+FIRE_ESSENCE:
+  base: BLAZE_POWDER
+  name: '&cFeuer Essenz'
+
+WITHER_ESSENCE:
+  base: COAL
+  name: '&8Wither Essenz'
+
+GOLD_COIN:
+  base: GOLD_NUGGET
+  name: '&6Goldmünze'
 
