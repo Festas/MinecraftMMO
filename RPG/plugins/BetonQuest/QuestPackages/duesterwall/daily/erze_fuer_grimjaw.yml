@@ -15,7 +15,7 @@ conversations:
       start:
         text: "&8*Schaut mürrisch von seinem Amboss auf* Jeden verfluchten Tag das Gleiche... Erze sammeln. Du! Bist du stark genug für ein bisschen Bergbau?"
         pointer: "spieler_antwort"
-        conditions: "!daily_erze_aktiv,ist_level_5,!daily_erze_complete_heute"
+        conditions: "!daily_erze_aktiv,_core.ist_level_5,!daily_erze_complete_heute"
       
       beschreibung:
         text: "&8Ich brauche 20 Erze. Eisen oder Kohle, ist mir egal. Haupt Sache Material! Ich zahl dir 100 Gold und geb dir etwas Bergbau-Erfahrung. Deal?"
@@ -59,7 +59,6 @@ conditions:
   daily_erze_aktiv: "tag daily_erze_aktiv"
   daily_erze_complete: "tag daily_erze_complete"
   daily_erze_complete_heute: "tag daily_erze_complete_heute"
-  ist_level_5: "_core.ist_level_5"
 
 journal:
   daily_erze_start: "&bDaily: Erze für Grimjaw|&7Sammle 20 Erze (Eisen/Kohle)|&7für Schmiedemeister Grimjaw.|&7Belohnung: 100 Gold + 50 XP"

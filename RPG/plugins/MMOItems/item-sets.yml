@@ -29,6 +29,22 @@ STAHL:
     - '&8[3] +5% Schadensreduktion'
     - '&8[4] +10 Rüstung'
 
+# Alias für englische Referenzen
+STEEL:
+    name: '&8Steel Set'
+    bonuses:
+        '2':
+            damage-reduction: 3
+        '3':
+            damage-reduction: 5
+        '4':
+            armor: 10
+    lore-tag:
+    - '&7Steel Set Bonus:'
+    - '&8[2] +3% Damage Reduction'
+    - '&8[3] +5% Damage Reduction'
+    - '&8[4] +10 Armor'
+
 LEBKUCHEN:
     name: '&cLebkuchen Set'
     bonuses:

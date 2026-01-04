@@ -24,7 +24,7 @@ conversations:
       daily_kraeuter:
         text: "&5Die Kräuter verlieren ihre Kraft... Die Dunkelheit verdirbt sie. Sammle mir 10 frische Kräuter - Blumen des Feldes. Ich gebe dir Gold und einen Heiltrank."
         pointer: "daily_optionen"
-        conditions: "!daily_kraeuter_aktiv,ist_level_5"
+        conditions: "!daily_kraeuter_aktiv,_core.ist_level_5"
       
       geheimnis:
         text: "&5*flüstert* Das Mal auf deiner Hand... Es ist sowohl Fluch als auch Segen. Die Leere hat dich markiert, aber du bist nicht ihr Diener. Du bist der Ausgleich. Das Gegengift."
@@ -53,7 +53,6 @@ conversations:
 conditions:
   hat_leere_zeichen: "item _core.leere_zeichen"
   daily_kraeuter_aktiv: "tag daily_kraeuter_aktiv"
-  ist_level_5: "_core.ist_level_5"
 
 events:
   start_daily_kraeuter: "tag daily_kraeuter_aktiv,objective add daily_kraeuter_sammeln 10"

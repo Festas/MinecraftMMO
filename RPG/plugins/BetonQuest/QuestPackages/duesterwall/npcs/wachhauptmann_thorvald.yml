@@ -30,12 +30,12 @@ conversations:
       daily_monster:
         text: "&cDie Monster werden nicht weniger... Jede Nacht kommen mehr. Töte 15 Monster vor den Stadtmauern. Ich zahle dir 150 Gold."
         pointer: "daily_optionen"
-        conditions: "!daily_monster_aktiv,ist_level_5"
+        conditions: "!daily_monster_aktiv,_core.ist_level_5"
       
       slayer_angebot:
         text: "&cDu willst dich als Jäger beweisen? Sprich mit Fenris, dem Jägermeister. Er koordiniert die Slayer-Aufträge."
         pointer: "ende"
-        conditions: "ist_level_10"
+        conditions: "_core.ist_level_10"
     
     player_options:
       erklaerung_spieler:
@@ -60,8 +60,6 @@ conditions:
   hauptquest_pruefung_aktiv: "tag hauptquest_pruefung_aktiv"
   pruefung_complete: "tag pruefung_complete"
   daily_monster_aktiv: "tag daily_monster_aktiv"
-  ist_level_5: "_core.ist_level_5"
-  ist_level_10: "_core.ist_level_10"
 
 events:
   thorvald_zum_koenig: "tag thorvald_getroffen,objective start audienz_koenig"

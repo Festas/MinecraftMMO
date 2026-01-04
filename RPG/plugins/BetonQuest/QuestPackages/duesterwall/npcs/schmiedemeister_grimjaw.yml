@@ -25,7 +25,7 @@ conversations:
       daily_erze:
         text: "&8*seufzt* Jeden Tag das Gleiche... Erze sammeln, schmieden, wieder von vorne. Du! Bring mir 20 Erze - egal ob Eisen oder Kohle. Ich zahl dir 100 Gold."
         pointer: "daily_optionen"
-        conditions: "!daily_erze_aktiv,ist_level_5"
+        conditions: "!daily_erze_aktiv,_core.ist_level_5"
       
       small_talk:
         text: "&8*brummt zustimmend* Die Dunkelheit da draußen... sie korrumpiert sogar das Metall. Hab neulich ein Schwert geschmiedet - wurde schwarz wie die Nacht. Musste es einschmelzen. Verflucht sei die Leere!"
@@ -58,7 +58,6 @@ conditions:
   hauptquest_schmied_aktiv: "tag hauptquest_schmied_aktiv"
   schmied_erze_complete: "tag schmied_erze_complete"
   daily_erze_aktiv: "tag daily_erze_aktiv"
-  ist_level_5: "_core.ist_level_5"
 
 events:
   start_schmied_quest: "tag hauptquest_schmied_aktiv,objective add sammle_eisenerze 10"
