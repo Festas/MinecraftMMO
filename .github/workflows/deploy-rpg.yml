@@ -3,7 +3,7 @@ name: Deploy RPG Server Configs
 on:
   push:
     branches: [main]
-    paths: ['RPG/**']
+    paths: ['RPG/plugins/**']
   workflow_dispatch:
     inputs:
       replace_folder:
