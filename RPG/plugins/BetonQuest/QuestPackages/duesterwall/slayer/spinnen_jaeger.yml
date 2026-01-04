@@ -110,29 +110,29 @@ conversations:
 # EVENTS
 events:
   # Tier I
-  start_spinnen_tier1: "tag spinnen_tier1_aktiv,journal add spinnen_tier1_start,objective add spinnen_tier1_kills 10"
-  spinnen_tier1_done: "tag spinnen_tier1_complete,tag !spinnen_tier1_aktiv"
-  spinnen_tier1_belohnung: "tag spinnen_tier1_belohnt,point playerpoints 50,experience 100,sound_quest_complete"
+  start_spinnen_tier1: "tag add spinnen_tier1_aktiv,journal add spinnen_tier1_start,objective add spinnen_tier1_kills 10"
+  spinnen_tier1_done: "tag add spinnen_tier1_complete,tag remove spinnen_tier1_aktiv"
+  spinnen_tier1_belohnung: "run ^tag add spinnen_tier1_belohnt ^point playerpoints 50 ^experience 100 ^sound_quest_complete"
   
   # Tier II
-  start_spinnen_tier2: "tag spinnen_tier2_aktiv,journal add spinnen_tier2_start,objective add spinnen_tier2_kills 25"
-  spinnen_tier2_done: "tag spinnen_tier2_complete,tag !spinnen_tier2_aktiv"
-  spinnen_tier2_belohnung: "tag spinnen_tier2_belohnt,point playerpoints 150,experience 300,sound_quest_complete"
+  start_spinnen_tier2: "tag add spinnen_tier2_aktiv,journal add spinnen_tier2_start,objective add spinnen_tier2_kills 25"
+  spinnen_tier2_done: "tag add spinnen_tier2_complete,tag remove spinnen_tier2_aktiv"
+  spinnen_tier2_belohnung: "run ^tag add spinnen_tier2_belohnt ^point playerpoints 150 ^experience 300 ^sound_quest_complete"
   
   # Tier III
-  start_spinnen_tier3: "tag spinnen_tier3_aktiv,journal add spinnen_tier3_start,objective add spinnen_tier3_kills 50"
-  spinnen_tier3_done: "tag spinnen_tier3_complete,tag !spinnen_tier3_aktiv"
-  spinnen_tier3_belohnung: "tag spinnen_tier3_belohnt,point playerpoints 400,experience 750,sound_quest_complete"
+  start_spinnen_tier3: "tag add spinnen_tier3_aktiv,journal add spinnen_tier3_start,objective add spinnen_tier3_kills 50"
+  spinnen_tier3_done: "tag add spinnen_tier3_complete,tag remove spinnen_tier3_aktiv"
+  spinnen_tier3_belohnung: "run ^tag add spinnen_tier3_belohnt ^point playerpoints 400 ^experience 750 ^sound_quest_complete"
   
   # Tier IV
-  start_spinnen_tier4: "tag spinnen_tier4_aktiv,journal add spinnen_tier4_start,objective add spinnen_tier4_kills 100"
-  spinnen_tier4_done: "tag spinnen_tier4_complete,tag !spinnen_tier4_aktiv"
-  spinnen_tier4_belohnung: "tag spinnen_tier4_belohnt,point playerpoints 1000,experience 2000,sound_quest_complete"
+  start_spinnen_tier4: "tag add spinnen_tier4_aktiv,journal add spinnen_tier4_start,objective add spinnen_tier4_kills 100"
+  spinnen_tier4_done: "tag add spinnen_tier4_complete,tag remove spinnen_tier4_aktiv"
+  spinnen_tier4_belohnung: "run ^tag add spinnen_tier4_belohnt ^point playerpoints 1000 ^experience 2000 ^sound_quest_complete"
   
   # Tier V
-  start_spinnen_tier5: "tag spinnen_tier5_aktiv,journal add spinnen_tier5_start,objective add spinnen_tier5_kills 250"
-  spinnen_tier5_done: "tag spinnen_tier5_complete,tag !spinnen_tier5_aktiv"
-  spinnen_tier5_belohnung: "tag spinnen_tier5_belohnt,point playerpoints 3000,experience 5000,tag titel_spinnen_bezwinger,sound_quest_complete"
+  start_spinnen_tier5: "tag add spinnen_tier5_aktiv,journal add spinnen_tier5_start,objective add spinnen_tier5_kills 250"
+  spinnen_tier5_done: "tag add spinnen_tier5_complete,tag remove spinnen_tier5_aktiv"
+  spinnen_tier5_belohnung: "run ^tag add spinnen_tier5_belohnt ^point playerpoints 3000 ^experience 5000 ^tag add titel_spinnen_bezwinger ^sound_quest_complete"
 
 # OBJECTIVES
 objectives:

@@ -116,29 +116,29 @@ conversations:
 # EVENTS
 events:
   # Tier I
-  start_daemonen_tier1: "tag daemonen_tier1_aktiv,journal add daemonen_tier1_start,objective add daemonen_tier1_kills 10"
-  daemonen_tier1_done: "tag daemonen_tier1_complete,tag !daemonen_tier1_aktiv"
-  daemonen_tier1_belohnung: "tag daemonen_tier1_belohnt,point playerpoints 50,experience 100,sound_quest_complete"
+  start_daemonen_tier1: "tag add daemonen_tier1_aktiv,journal add daemonen_tier1_start,objective add daemonen_tier1_kills 10"
+  daemonen_tier1_done: "tag add daemonen_tier1_complete,tag remove daemonen_tier1_aktiv"
+  daemonen_tier1_belohnung: "run ^tag add daemonen_tier1_belohnt ^point playerpoints 50 ^experience 100 ^sound_quest_complete"
   
   # Tier II
-  start_daemonen_tier2: "tag daemonen_tier2_aktiv,journal add daemonen_tier2_start,objective add daemonen_tier2_kills 25"
-  daemonen_tier2_done: "tag daemonen_tier2_complete,tag !daemonen_tier2_aktiv"
-  daemonen_tier2_belohnung: "tag daemonen_tier2_belohnt,point playerpoints 150,experience 300,sound_quest_complete"
+  start_daemonen_tier2: "tag add daemonen_tier2_aktiv,journal add daemonen_tier2_start,objective add daemonen_tier2_kills 25"
+  daemonen_tier2_done: "tag add daemonen_tier2_complete,tag remove daemonen_tier2_aktiv"
+  daemonen_tier2_belohnung: "run ^tag add daemonen_tier2_belohnt ^point playerpoints 150 ^experience 300 ^sound_quest_complete"
   
   # Tier III
-  start_daemonen_tier3: "tag daemonen_tier3_aktiv,journal add daemonen_tier3_start,objective add daemonen_tier3_kills 50"
-  daemonen_tier3_done: "tag daemonen_tier3_complete,tag !daemonen_tier3_aktiv"
-  daemonen_tier3_belohnung: "tag daemonen_tier3_belohnt,point playerpoints 400,experience 750,sound_quest_complete"
+  start_daemonen_tier3: "tag add daemonen_tier3_aktiv,journal add daemonen_tier3_start,objective add daemonen_tier3_kills 50"
+  daemonen_tier3_done: "tag add daemonen_tier3_complete,tag remove daemonen_tier3_aktiv"
+  daemonen_tier3_belohnung: "run ^tag add daemonen_tier3_belohnt ^point playerpoints 400 ^experience 750 ^sound_quest_complete"
   
   # Tier IV
-  start_daemonen_tier4: "tag daemonen_tier4_aktiv,journal add daemonen_tier4_start,objective add daemonen_tier4_kills 100"
-  daemonen_tier4_done: "tag daemonen_tier4_complete,tag !daemonen_tier4_aktiv"
-  daemonen_tier4_belohnung: "tag daemonen_tier4_belohnt,point playerpoints 1000,experience 2000,sound_quest_complete"
+  start_daemonen_tier4: "tag add daemonen_tier4_aktiv,journal add daemonen_tier4_start,objective add daemonen_tier4_kills 100"
+  daemonen_tier4_done: "tag add daemonen_tier4_complete,tag remove daemonen_tier4_aktiv"
+  daemonen_tier4_belohnung: "run ^tag add daemonen_tier4_belohnt ^point playerpoints 1000 ^experience 2000 ^sound_quest_complete"
   
   # Tier V
-  start_daemonen_tier5: "tag daemonen_tier5_aktiv,journal add daemonen_tier5_start,objective add daemonen_tier5_kills 250"
-  daemonen_tier5_done: "tag daemonen_tier5_complete,tag !daemonen_tier5_aktiv"
-  daemonen_tier5_belohnung: "tag daemonen_tier5_belohnt,point playerpoints 3000,experience 5000,tag titel_daemonen_schlaechter,sound_quest_complete"
+  start_daemonen_tier5: "tag add daemonen_tier5_aktiv,journal add daemonen_tier5_start,objective add daemonen_tier5_kills 250"
+  daemonen_tier5_done: "tag add daemonen_tier5_complete,tag remove daemonen_tier5_aktiv"
+  daemonen_tier5_belohnung: "run ^tag add daemonen_tier5_belohnt ^point playerpoints 3000 ^experience 5000 ^tag add titel_daemonen_schlaechter ^sound_quest_complete"
 
 # OBJECTIVES
 objectives:
