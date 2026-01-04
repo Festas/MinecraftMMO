@@ -23,8 +23,8 @@ WALDSCHRAT:
   Equipment:
   - WOODEN_SWORD HAND
   Drops:
-  - MMOItem{type=MATERIAL;id=WALDHOLZ} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=WALDHOLZ} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 30-50
 
 RIESENSPINNE:
@@ -40,8 +40,8 @@ RIESENSPINNE:
   Skills:
   - skill{s=SpinnenGift} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=SPINNENFADEN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=SPINNENFADEN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 36-60
 
 WALDBANDIT:
@@ -57,8 +57,8 @@ WALDBANDIT:
   Equipment:
   - BOW HAND
   Drops:
-  - MMOItem{type=MATERIAL;id=BANDITENGUT} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=BANDITENGUT} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 39-65
 
 GIFTSPINNE:
@@ -74,8 +74,8 @@ GIFTSPINNE:
   Skills:
   - skill{s=SpinnenGift} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=SPINNENGIFT} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=SPINNENGIFT} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 42-70
 
 WERWOLF:
@@ -91,8 +91,8 @@ WERWOLF:
   Skills:
   - skill{s=WolfBiss} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=WERWOLFSFELL} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=WERWOLFSFELL} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 45-75
 
 BAUMGEIST:
@@ -106,8 +106,8 @@ BAUMGEIST:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=GEISTERESSENZ} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=GEISTERESSENZ} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 48-80
 
 ENT:
@@ -122,8 +122,8 @@ ENT:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=LEBENDIGES_HOLZ} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=LEBENDIGES_HOLZ} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 51-85
 
 WALDLAEUFER:
@@ -141,8 +141,8 @@ WALDLAEUFER:
   - BOW HAND
   - LEATHER_HELMET HEAD
   Drops:
-  - MMOItem{type=MATERIAL;id=WALDLAEUFER_BOGEN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=WALDLAEUFER_BOGEN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 54-90
 
 BLUTWOLF:
@@ -158,8 +158,8 @@ BLUTWOLF:
   Skills:
   - skill{s=WolfBiss} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=BLUTWOLFSFELL} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=BLUTWOLFSFELL} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 57-95
 
 # ==========================================
@@ -182,9 +182,9 @@ ELITE_WERWOLF:
   - skill{s=EliteSchlag} @target ~onAttack
   - skill{s=WolfBiss} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=WERWOLFSFELL} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=WERWOLFSFELL} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 128-192
 
 ELITE_ENT:
@@ -203,9 +203,9 @@ ELITE_ENT:
   - skill{s=EliteAura} @self ~onSpawn
   - skill{s=EliteSchlag} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=LEBENDIGES_HOLZ} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=LEBENDIGES_HOLZ} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 144-216
 
 # ==========================================
@@ -233,10 +233,10 @@ WALDKOENIG:
   - skill{s=BossRuf} @self ~onSpawn
   - skill{s=BossSchlag} @target ~onTimer:200
   Drops:
-  - MMOItem{type=MATERIAL;id=LEBENDIGES_HOLZ} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=WEAPON;id=WALDKOENIG_AXT} 0.15 1
+  - mmoitems{type=MATERIAL;id=LEBENDIGES_HOLZ} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=WEAPON;id=WALDKOENIG_AXT} 0.15 1
   - exp 300-500
   BossBar:
     Enabled: true
@@ -260,10 +260,10 @@ SPINNENMATRIARCHIN:
   - skill{s=BossSchlag} @target ~onTimer:200
   - skill{s=SpinnenGift} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=SPINNENFADEN} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=WEAPON;id=SPINNENBEIN_LANZE} 0.2 1
+  - mmoitems{type=MATERIAL;id=SPINNENFADEN} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=WEAPON;id=SPINNENBEIN_LANZE} 0.2 1
   - exp 300-500
   BossBar:
     Enabled: true

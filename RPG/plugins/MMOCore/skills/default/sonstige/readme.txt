@@ -1,1 +1,0 @@
-hier sind sehr viele standard skills drin, die schon in der Jar enthalten waren und die Skills von SamusDEV. Ziel ist hier besonders die skills von SamusDEV in einen extra ordner zu machen, zwecks übersichtlichkeit

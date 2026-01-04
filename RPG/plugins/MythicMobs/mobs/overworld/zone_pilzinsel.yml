@@ -21,8 +21,8 @@ PILZLING:
     FollowRange: 25
     PreventSunburn: true
   Drops:
-  - MMOItem{type=MATERIAL;id=PILZSPOREN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=PILZSPOREN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 165-275
 
 SPORENWOLKE:
@@ -38,8 +38,8 @@ SPORENWOLKE:
   Skills:
   - skill{s=SporenAura} @self ~onTimer:100
   Drops:
-  - MMOItem{type=MATERIAL;id=GIFTSPOREN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=GIFTSPOREN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 171-285
 
 GIFTPILZ:
@@ -55,8 +55,8 @@ GIFTPILZ:
   Skills:
   - skill{s=GiftAura} @self ~onTimer:100
   Drops:
-  - MMOItem{type=MATERIAL;id=GIFTPILZ_KAPPE} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=GIFTPILZ_KAPPE} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 174-290
 
 PILZKRIECHER:
@@ -72,8 +72,8 @@ PILZKRIECHER:
   Skills:
   - skill{s=PilzGift} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=PILZFADEN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=PILZFADEN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 180-300
 
 MYZEL_GOLEM:
@@ -88,8 +88,8 @@ MYZEL_GOLEM:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=MYZEL_KERN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=MYZEL_KERN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 186-310
 
 HALLUZINATION:
@@ -105,8 +105,8 @@ HALLUZINATION:
   Skills:
   - skill{s=VerwirrungsAura} @PIR{r=10} ~onTimer:200
   Drops:
-  - MMOItem{type=MATERIAL;id=PHANTOM_MEMBRAN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=PHANTOM_MEMBRAN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 189-315
 
 SPOREN_HEXE:
@@ -122,8 +122,8 @@ SPOREN_HEXE:
   Skills:
   - skill{s=SporenFluch} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=SPOREN_ELIXIER} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=SPOREN_ELIXIER} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 195-325
 
 PILZRIESE:
@@ -138,8 +138,8 @@ PILZRIESE:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=RIESEN_PILZ} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=RIESEN_PILZ} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 198-330
 
 MYZEL_BESTIE:
@@ -154,8 +154,8 @@ MYZEL_BESTIE:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=MYZEL_PANZER} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=MYZEL_PANZER} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 204-340
 
 # ==========================================
@@ -179,9 +179,9 @@ ELITE_PILZLING:
   - skill{s=EliteAura} @self ~onSpawn
   - skill{s=EliteSchlag} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=PILZSPOREN} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=PILZSPOREN} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 496-744
 
 ELITE_MYZEL:
@@ -200,9 +200,9 @@ ELITE_MYZEL:
   - skill{s=EliteAura} @self ~onSpawn
   - skill{s=EliteSchlag} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=MYZEL_KERN} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=MYZEL_KERN} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 528-792
 
 # ==========================================
@@ -225,10 +225,10 @@ PILZKOENIG:
   - skill{s=BossSchlag} @target ~onTimer:200
   - skill{s=SporenExplosion} @PIR{r=25} ~onTimer:400
   Drops:
-  - MMOItem{type=MATERIAL;id=PILZKRONE} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=WEAPON;id=PILZ_KEULE} 0.15 1
+  - mmoitems{type=MATERIAL;id=PILZKRONE} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=WEAPON;id=PILZ_KEULE} 0.15 1
   - exp 1050-1750
   BossBar:
     Enabled: true
@@ -253,10 +253,10 @@ SPORENMUTTER:
   - skill{s=SporenFluch} @target ~onAttack
   - skill{s=BeschwoerunSporenwolken} @self ~onTimer:500
   Drops:
-  - MMOItem{type=MATERIAL;id=SPORENMUTTER_HERZ} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=WEAPON;id=SPOREN_STAB} 0.2 1
+  - mmoitems{type=MATERIAL;id=SPORENMUTTER_HERZ} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=WEAPON;id=SPOREN_STAB} 0.2 1
   - exp 1050-1750
   BossBar:
     Enabled: true

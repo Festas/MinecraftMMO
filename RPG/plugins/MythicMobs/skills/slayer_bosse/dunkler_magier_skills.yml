@@ -16,7 +16,7 @@ SchattenpfeilVexorin:
 
 Schattenpfeil_Tick:
   Skills:
-  - effect:particles{p=smoke_large;a=10;hS=0.2;vS=0.2} @origin
+  - effect:particles{p=LARGE_SMOKE;a=10;hS=0.2;vS=0.2} @origin
   - effect:particles{p=portal;a=3;hS=0.1;vS=0.1} @origin
 
 Schattenpfeil_Hit:

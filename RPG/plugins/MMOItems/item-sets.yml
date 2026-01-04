@@ -17,14 +17,17 @@ ARKAN:
 STAHL:
     name: '&8Stahl Set'
     bonuses:
+        '2':
+            damage-reduction: 3
         '3':
             damage-reduction: 5
         '4':
-            damage-reduction: 5
+            armor: 10
     lore-tag:
     - '&7Stahl Set Bonus:'
+    - '&8[2] +3% Schadensreduktion'
     - '&8[3] +5% Schadensreduktion'
-    - '&8[4] +10% Schadensreduktion'
+    - '&8[4] +10 Rüstung'
 
 LEBKUCHEN:
     name: '&cLebkuchen Set'

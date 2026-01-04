@@ -20,8 +20,8 @@ SUMPFZOMBIE:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=VERFAULTES_FLEISCH} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=VERFAULTES_FLEISCH} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 75-125
 
 SUMPFHEXE:
@@ -37,8 +37,8 @@ SUMPFHEXE:
   Skills:
   - skill{s=HexenFluch} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=HEXENKRAUT} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=HEXENKRAUT} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 81-135
 
 GIFTSCHLEIM:
@@ -54,8 +54,8 @@ GIFTSCHLEIM:
   Skills:
   - skill{s=GiftAura} @self ~onTimer:100
   Drops:
-  - MMOItem{type=MATERIAL;id=GIFTSCHLEIM_BALL} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=GIFTSCHLEIM_BALL} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 84-140
 
 SUMPFKROKODIL:
@@ -72,8 +72,8 @@ SUMPFKROKODIL:
   Skills:
   - skill{s=KrokodilBiss} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=KROKODILHAUT} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=KROKODILHAUT} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 90-150
 
 IRRWICHT:
@@ -87,8 +87,8 @@ IRRWICHT:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=IRRLICHTSTOFF} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=IRRLICHTSTOFF} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 93-155
 
 MOORLEICHE:
@@ -103,8 +103,8 @@ MOORLEICHE:
     FollowRange: 25
     PreventSunburn: true
   Drops:
-  - MMOItem{type=MATERIAL;id=MOORERDE} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=MOORERDE} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 99-165
 
 SUMPFSCHRECKE:
@@ -118,8 +118,8 @@ SUMPFSCHRECKE:
     AlwaysShowName: true
     FollowRange: 30
   Drops:
-  - MMOItem{type=MATERIAL;id=PHANTOM_MEMBRAN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=PHANTOM_MEMBRAN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 105-175
 
 GIFTNATTER:
@@ -135,8 +135,8 @@ GIFTNATTER:
   Skills:
   - skill{s=SchlangenGift} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=NATTERGIFT} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=NATTERGIFT} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 108-180
 
 SUMPFTROLL:
@@ -151,8 +151,8 @@ SUMPFTROLL:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=TROLL_HAUT} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=TROLL_HAUT} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 114-190
 
 # ==========================================
@@ -175,9 +175,9 @@ ELITE_HEXE:
   - skill{s=EliteSchlag} @target ~onAttack
   - skill{s=HexenFluch} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=HEXENKRAUT} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=HEXENKRAUT} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 256-384
 
 ELITE_KROKODIL:
@@ -197,9 +197,9 @@ ELITE_KROKODIL:
   - skill{s=EliteSchlag} @target ~onAttack
   - skill{s=KrokodilBiss} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=KROKODILHAUT} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=KROKODILHAUT} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 288-432
 
 # ==========================================
@@ -226,10 +226,10 @@ SUMPFKOENIG:
   - skill{s=BossSchlag} @target ~onTimer:200
   - skill{s=SumpfFlut} @PIR{r=20} ~onTimer:400
   Drops:
-  - MMOItem{type=MATERIAL;id=SUMPFKRONE} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=WEAPON;id=SUMPF_DREIZACK} 0.15 1
+  - mmoitems{type=MATERIAL;id=SUMPFKRONE} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=WEAPON;id=SUMPF_DREIZACK} 0.15 1
   - exp 600-1000
   BossBar:
     Enabled: true
@@ -254,10 +254,10 @@ HEXENKOENIGIN:
   - skill{s=HexenFluch} @target ~onAttack
   - skill{s=BeschwoerunguntergebeneHexen} @self ~onTimer:600
   Drops:
-  - MMOItem{type=MATERIAL;id=HEXENKRONE} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=WEAPON;id=HEXENSTAB} 0.2 1
+  - mmoitems{type=MATERIAL;id=HEXENKRONE} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=WEAPON;id=HEXENSTAB} 0.2 1
   - exp 600-1000
   BossBar:
     Enabled: true

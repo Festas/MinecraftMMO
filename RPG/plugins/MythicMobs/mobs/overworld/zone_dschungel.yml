@@ -22,8 +22,8 @@ DSCHUNGELSPINNE:
   Skills:
   - skill{s=SpinnenGift} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=DSCHUNGEL_SPINNENFADEN} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=DSCHUNGEL_SPINNENFADEN} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 60-100
 
 GIFTSCHLANGE:
@@ -39,8 +39,8 @@ GIFTSCHLANGE:
   Skills:
   - skill{s=SchlangenGift} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=SCHLANGENGIFT} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=SCHLANGENGIFT} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 66-110
 
 KANNIBALE:
@@ -57,8 +57,8 @@ KANNIBALE:
   Equipment:
   - STONE_SWORD HAND
   Drops:
-  - MMOItem{type=MATERIAL;id=KANNIBALEN_TROPHAE} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=KANNIBALEN_TROPHAE} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 72-120
 
 DSCHUNGELPANTHER:
@@ -74,8 +74,8 @@ DSCHUNGELPANTHER:
   Skills:
   - skill{s=PantherSprung} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=PANTHERFELL} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=PANTHERFELL} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 75-125
 
 MAYA_KRIEGER:
@@ -93,8 +93,8 @@ MAYA_KRIEGER:
   - STONE_SWORD HAND
   - GOLDEN_HELMET HEAD
   Drops:
-  - MMOItem{type=MATERIAL;id=MAYA_GOLD} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=MAYA_GOLD} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 81-135
 
 GIFTFROSCH:
@@ -110,8 +110,8 @@ GIFTFROSCH:
   Skills:
   - skill{s=GiftAura} @self ~onTimer:100
   Drops:
-  - MMOItem{type=MATERIAL;id=FROSCHGIFT} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=FROSCHGIFT} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 84-140
 
 URZEITECHSE:
@@ -126,8 +126,8 @@ URZEITECHSE:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - MMOItem{type=MATERIAL;id=ECHSENSCHUPPE} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=ECHSENSCHUPPE} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 90-150
 
 MAYA_SCHAMANE:
@@ -143,8 +143,8 @@ MAYA_SCHAMANE:
   Skills:
   - skill{s=SchamaneHeilung} @self ~onTimer:400
   Drops:
-  - MMOItem{type=MATERIAL;id=SCHAMANENSTAB} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=SCHAMANENSTAB} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 96-160
 
 RIESENSCHLANGE:
@@ -160,8 +160,8 @@ RIESENSCHLANGE:
   Skills:
   - skill{s=SchlangenGift} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=RIESENSCHLANGENHAUT} 0.3 1
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=RIESENSCHLANGENHAUT} 0.3 1
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
   - exp 99-165
 
 # ==========================================
@@ -184,9 +184,9 @@ ELITE_PANTHER:
   - skill{s=EliteSchlag} @target ~onAttack
   - skill{s=PantherSprung} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=PANTHERFELL} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=PANTHERFELL} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 224-336
 
 ELITE_MAYA:
@@ -207,9 +207,9 @@ ELITE_MAYA:
   - skill{s=EliteAura} @self ~onSpawn
   - skill{s=EliteSchlag} @target ~onAttack
   Drops:
-  - MMOItem{type=MATERIAL;id=MAYA_GOLD} 1.0 2-4
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - MMOItem{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
+  - mmoitems{type=MATERIAL;id=MAYA_GOLD} 1.0 2-4
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
   - exp 256-384
 
 # ==========================================
@@ -238,10 +238,10 @@ MAYA_GOTT:
   - skill{s=BossSchlag} @target ~onTimer:200
   - skill{s=SonnenFlare} @PIR{r=20} ~onTimer:400
   Drops:
-  - MMOItem{type=MATERIAL;id=MAYA_GOLD} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=WEAPON;id=MAYA_SONNENSCHWERT} 0.15 1
+  - mmoitems{type=MATERIAL;id=MAYA_GOLD} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=WEAPON;id=MAYA_SONNENSCHWERT} 0.15 1
   - exp 525-875
   BossBar:
     Enabled: true
@@ -266,10 +266,10 @@ DSCHUNGELHYDRA:
   - skill{s=BossSchlag} @target ~onTimer:200
   - skill{s=HydraRegeneration} @self ~onTimer:300
   Drops:
-  - MMOItem{type=MATERIAL;id=HYDRA_SCHUPPE} 1.0 5-10
-  - MMOItem{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - MMOItem{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - MMOItem{type=ARMOR;id=HYDRA_RUESTUNG} 0.2 1
+  - mmoitems{type=MATERIAL;id=HYDRA_SCHUPPE} 1.0 5-10
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
+  - mmoitems{type=ARMOR;id=HYDRA_RUESTUNG} 0.2 1
   - exp 525-875
   BossBar:
     Enabled: true
