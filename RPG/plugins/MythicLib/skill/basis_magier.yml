@@ -1,10 +1,10 @@
-FIREBALL:
+MAGIER_FIREBALL:
     mythicmobs-skill-id: Basis_Fireball
     modifiers:
     - damage
     - ignite
 
-ICE_SPIKES:
+MAGIER_ICE_SPIKES:
     mythicmobs-skill-id: Basis_Ice_Spikes
     modifiers:
     - damage

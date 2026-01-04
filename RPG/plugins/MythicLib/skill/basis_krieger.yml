@@ -24,7 +24,7 @@ CIRCULAR_SLASH:
     - damage
     - radius
 
-HEAVY_CHARGE:
+KRIEGER_HEAVY_CHARGE:
     mythicmobs-skill-id: Basis_Heavy_Charge
     modifiers:
     - damage

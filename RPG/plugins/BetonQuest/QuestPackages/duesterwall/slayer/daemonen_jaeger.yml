@@ -17,12 +17,12 @@ conversations:
       start:
         text: "&7*Blickt ernst* Hexen und Illager... Sie sind schlau. Sie planen. Sie arbeiten zusammen. Dies ist der härteste Pfad. Bist du bereit?"
         pointer: "tier_info"
-        conditions: "ist_level_15,!daemonen_tier5_complete"
+        conditions: "_core.ist_level_15,!daemonen_tier5_complete"
       
       zu_schwach:
         text: "&7*Schüttelt den Kopf* Du bist noch nicht bereit. Diese Gegner töten erfahrene Krieger. Komm wieder wenn du Level 15 erreicht hast."
         pointer: "ende"
-        conditions: "!ist_level_15"
+        conditions: "!_core.ist_level_15"
       
       tier_info_text:
         text: "&7Fünf Ränge erwarten dich:|&5Tier I: &710 Kills → 50 Gold + 100 XP (Level 15)|&5Tier II: &725 Kills → 150 Gold + 300 XP (Level 15)|&5Tier III: &750 Kills → 400 Gold + 750 XP (Level 20)|&5Tier IV: &7100 Kills → 1000 Gold + 2000 XP (Level 25)|&5Tier V: &7250 Kills → 3000 Gold + 5000 XP + &5[Dämonen-Schlächter] &7(Level 35)"
@@ -31,7 +31,7 @@ conversations:
       tier1_angebot:
         text: "&7Tier I: 10 Dämonen. Unterschätze sie nicht."
         pointer: "tier1_optionen"
-        conditions: "ist_level_15,!daemonen_tier1_aktiv,!daemonen_tier1_complete"
+        conditions: "_core.ist_level_15,!daemonen_tier1_aktiv,!daemonen_tier1_complete"
       
       tier1_erfolg:
         text: "&aBeeindruckend. Du lebst noch. Tier II wird härter."
@@ -42,7 +42,7 @@ conversations:
       tier2_angebot:
         text: "&7Tier II: 25 Dämonen. Ihre Magie ist tödlich."
         pointer: "tier2_optionen"
-        conditions: "daemonen_tier1_complete,ist_level_15,!daemonen_tier2_aktiv,!daemonen_tier2_complete"
+        conditions: "daemonen_tier1_complete,_core.ist_level_15,!daemonen_tier2_aktiv,!daemonen_tier2_complete"
       
       tier2_erfolg:
         text: "&aTier II bezwungen! Du lernst schnell."
@@ -53,7 +53,7 @@ conversations:
       tier3_angebot:
         text: "&7Tier III: 50 Dämonen. Für wahre Veteranen."
         pointer: "tier3_optionen"
-        conditions: "daemonen_tier2_complete,ist_level_20,!daemonen_tier3_aktiv,!daemonen_tier3_complete"
+        conditions: "daemonen_tier2_complete,_core.ist_level_20,!daemonen_tier3_aktiv,!daemonen_tier3_complete"
       
       tier3_erfolg:
         text: "&aTier III! Die Dämonen flüstern deinen Namen mit Furcht!"
@@ -64,7 +64,7 @@ conversations:
       tier4_angebot:
         text: "&7Tier IV: 100 Dämonen. Elite-Status steht bevor."
         pointer: "tier4_optionen"
-        conditions: "daemonen_tier3_complete,ist_level_25,!daemonen_tier4_aktiv,!daemonen_tier4_complete"
+        conditions: "daemonen_tier3_complete,_core.ist_level_25,!daemonen_tier4_aktiv,!daemonen_tier4_complete"
       
       tier4_erfolg:
         text: "&aTier IV abgeschlossen! Du bist ein legendärer Jäger geworden!"
@@ -75,7 +75,7 @@ conversations:
       tier5_angebot:
         text: "&7Tier V: 250 Dämonen. Die ultimative Prüfung. Werde zum [Dämonen-Schlächter]."
         pointer: "tier5_optionen"
-        conditions: "daemonen_tier4_complete,ist_level_35,!daemonen_tier5_aktiv,!daemonen_tier5_complete"
+        conditions: "daemonen_tier4_complete,_core.ist_level_35,!daemonen_tier5_aktiv,!daemonen_tier5_complete"
       
       tier5_erfolg:
         text: "&6&l*Verneigt sich tief* [&5Dämonen-Schlächter&6&l]. Selbst die Leere weiß von deinen Taten. Du bist eine lebende Legende."
@@ -150,11 +150,6 @@ objectives:
 
 # CONDITIONS
 conditions:
-  ist_level_15: "_core.ist_level_15"
-  ist_level_20: "_core.ist_level_20"
-  ist_level_25: "_core.ist_level_25"
-  ist_level_35: "_core.ist_level_35"
-  
   daemonen_tier1_aktiv: "tag daemonen_tier1_aktiv"
   daemonen_tier1_complete: "tag daemonen_tier1_complete"
   daemonen_tier1_belohnt: "tag daemonen_tier1_belohnt"

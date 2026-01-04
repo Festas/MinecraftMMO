@@ -16,7 +16,7 @@ conversations:
       start:
         text: "&7*Zeigt auf Narben am Arm* Spinnen... ihre Netze erwürgen das Leben. Ihre Bisse vergiften die Seele. Bist du bereit, sie zu jagen?"
         pointer: "tier_info"
-        conditions: "ist_level_10,!spinnen_tier5_complete"
+        conditions: "_core.ist_level_10,!spinnen_tier5_complete"
       
       tier_info_text:
         text: "&7Fünf Ränge erwarten dich:|&8Tier I: &710 Kills → 50 Gold + 100 XP|&8Tier II: &725 Kills → 150 Gold + 300 XP|&8Tier III: &750 Kills → 400 Gold + 750 XP (Level 10)|&8Tier IV: &7100 Kills → 1000 Gold + 2000 XP (Level 20)|&8Tier V: &7250 Kills → 3000 Gold + 5000 XP + &8[Spinnen-Bezwinger] &7(Level 35)"
@@ -47,7 +47,7 @@ conversations:
       tier3_angebot:
         text: "&7Tier III: 50 Spinnen. Die Dunkelheit in den Höhlen ruft."
         pointer: "tier3_optionen"
-        conditions: "spinnen_tier2_complete,ist_level_10,!spinnen_tier3_aktiv,!spinnen_tier3_complete"
+        conditions: "spinnen_tier2_complete,_core.ist_level_10,!spinnen_tier3_aktiv,!spinnen_tier3_complete"
       
       tier3_erfolg:
         text: "&aTier III! Die Spinnen fürchten dich bereits!"
@@ -58,7 +58,7 @@ conversations:
       tier4_angebot:
         text: "&7Tier IV: 100 Spinnen. Nur die Furchtlosesten schaffen das."
         pointer: "tier4_optionen"
-        conditions: "spinnen_tier3_complete,ist_level_20,!spinnen_tier4_aktiv,!spinnen_tier4_complete"
+        conditions: "spinnen_tier3_complete,_core.ist_level_20,!spinnen_tier4_aktiv,!spinnen_tier4_complete"
       
       tier4_erfolg:
         text: "&aTier IV geschafft! Du bist ein Meister der Spinnenjagd!"
@@ -69,7 +69,7 @@ conversations:
       tier5_angebot:
         text: "&7Tier V: 250 Spinnen. Beende was du begonnen hast. Werde zum [Spinnen-Bezwinger]."
         pointer: "tier5_optionen"
-        conditions: "spinnen_tier4_complete,ist_level_35,!spinnen_tier5_aktiv,!spinnen_tier5_complete"
+        conditions: "spinnen_tier4_complete,_core.ist_level_35,!spinnen_tier5_aktiv,!spinnen_tier5_complete"
       
       tier5_erfolg:
         text: "&6&l*Nickt respektvoll* [&8Spinnen-Bezwinger&6&l]. Selbst die größten Spinnen weben ihre Netze nicht mehr in deiner Nähe."
@@ -144,10 +144,6 @@ objectives:
 
 # CONDITIONS
 conditions:
-  ist_level_10: "_core.ist_level_10"
-  ist_level_20: "_core.ist_level_20"
-  ist_level_35: "_core.ist_level_35"
-  
   spinnen_tier1_aktiv: "tag spinnen_tier1_aktiv"
   spinnen_tier1_complete: "tag spinnen_tier1_complete"
   spinnen_tier1_belohnt: "tag spinnen_tier1_belohnt"
