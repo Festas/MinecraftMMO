@@ -3,199 +3,69 @@
 # MMOItems Integration für Legendary Weapons und Quest Items
 # ===================================================
 
+# WICHTIG: MythicMobs importiert MMOItems automatisch, wenn sie existieren.
+# Du musst sie hier nicht neu definieren, wenn du sie nur droppen willst.
+# Wenn du sie aber als MythicItem haben willst, das auf dem MMOItem basiert:
+
 # ==========================================
 # Nekromant Malachar - Drops
 # ==========================================
 
 # Legendary Weapon
-StabDerVerdammnis:
-  Id: NETHERITE_SWORD
-  Type: SWORD
-  Material: NETHERITE_SWORD
-  Display: '&5&lStab der Verdammnis'
-  Lore:
-  - '&7Eine Waffe des Nekromanten Malachar'
-  - '&7durchdrungen von dunkler Magie.'
-  - ''
-  - '&d&lLegendär'
-  - ''
-  - '&7Schaden: &c+35'
-  - '&7Angriffstempo: &c+10%'
-  - ''
-  - '&5Spezialfähigkeit:'
-  - '&7• Seelenraub: Heilt 10% des'
-  - '&7  verursachten Schadens'
-  - '&7• Untote nehmen +20% Schaden'
-  Amount: 1
-  Enchantments:
-    DAMAGE_ALL: 5
-    SWEEPING_EDGE: 3
-    MENDING: 1
-  ItemFlags:
-  - HIDE_ENCHANTS
-  - HIDE_ATTRIBUTES
-  Unbreakable: true
+# Wir verweisen hier direkt auf das MMOItem.
+# MythicMobs kann MMOItems direkt in Drops verwenden.
+# Falls du dieses Item hier definieren musst, um es woanders zu referenzieren:
 
+StabDerVerdammnis:
+  # Nutze die MMOItems ID als Referenz
+  # Syntax: MMOITEMS:<TYPE>:<ID>
+  Id: MMOITEMS:SWORD:STAB_DER_VERDAMMNIS
+  Display: '&5&lStab der Verdammnis'
+  
 # Quest Item
 SeeleDesNekromanten:
-  Id: SEELE_DES_NEKROMANTEN
-  Type: MATERIAL
-  Material: GHAST_TEAR
+  Id: MMOITEMS:MATERIAL:SEELE_DES_NEKROMANTEN
   Display: '&5Seele des Nekromanten'
-  Lore:
-  - '&7Die gefangene Seele von Malachar.'
-  - '&7Ein Beweis deines Sieges.'
-  - ''
-  - '&e&oQuest Item'
-  Amount: 1
-  CustomModelData: 1001
-  ItemFlags:
-  - HIDE_ENCHANTS
 
 # ==========================================
 # Spinnenkönigin Arachnia - Drops
 # ==========================================
 
-# Legendary Weapon
+# Legendary Bow
 SpinnenseideBogen:
-  Id: SPINNENSEIDE_BOGEN
-  Type: BOW
-  Material: BOW
-  Display: '&c&lSpinnenseide-Bogen'
-  Lore:
-  - '&7Gefertigt aus der Seide der'
-  - '&7Spinnenkönigin Arachnia selbst.'
-  - ''
-  - '&c&lLegendär'
-  - ''
-  - '&7Schaden: &c+28'
-  - '&7Reichweite: &a+20%'
-  - ''
-  - '&cSpezialfähigkeit:'
-  - '&7• Giftpfeile: Vergiftet Gegner'
-  - '&7  für 5 Sekunden'
-  - '&7• Spinnennetz: 10% Chance'
-  - '&7  Gegner zu verlangsamen'
-  Amount: 1
-  Enchantments:
-    ARROW_DAMAGE: 5
-    ARROW_INFINITE: 1
-    MENDING: 1
-  ItemFlags:
-  - HIDE_ENCHANTS
-  - HIDE_ATTRIBUTES
-  Unbreakable: true
+  Id: MMOITEMS:BOW:SPINNENSEIDE_BOGEN
+  Display: '&2&lSpinnenseide-Bogen'
 
-# Quest Item
+# Quest Item (WICHTIG!)
 HerzDerKoenigin:
-  Id: HERZ_DER_KOENIGIN
-  Type: MATERIAL
-  Material: FERMENTED_SPIDER_EYE
-  Display: '&cHerz der Königin'
-  Lore:
-  - '&7Das noch schlagende Herz'
-  - '&7der Spinnenkönigin Arachnia.'
-  - ''
-  - '&e&oQuest Item'
-  Amount: 1
-  CustomModelData: 1002
-  ItemFlags:
-  - HIDE_ENCHANTS
+  Id: MMOITEMS:MATERIAL:HERZ_DER_KOENIGIN
+  Display: '&4Herz der Königin'
 
 # ==========================================
 # Dunkler Magier Vexorin - Drops
 # ==========================================
 
-# Legendary Weapon
+# Legendary Staff
 StabDerLeere:
-  Id: NETHERITE_SWORD
-  Type: STAFF
-  Material: NETHERITE_SWORD
+  Id: MMOITEMS:STAFF:STAB_DER_LEERE
   Display: '&0&lStab der Leere'
-  Lore:
-  - '&7Die Essenz der Leere selbst'
-  - '&7pulsiert durch diese Waffe.'
-  - ''
-  - '&8&lMythisch'
-  - ''
-  - '&7Schaden: &c+40'
-  - '&7Magischer Schaden: &5+25'
-  - ''
-  - '&0Spezialfähigkeit:'
-  - '&7• Leere-Explosion: Rechtklick'
-  - '&7  für AoE Schaden (30s CD)'
-  - '&7• Ignoriert 30% Rüstung'
-  - '&7• +15% Schaden gegen Bosse'
-  Amount: 1
-  Enchantments:
-    DAMAGE_ALL: 7
-    SWEEPING_EDGE: 3
-    FIRE_ASPECT: 2
-    MENDING: 1
-  ItemFlags:
-  - HIDE_ENCHANTS
-  - HIDE_ATTRIBUTES
-  Unbreakable: true
 
 # Quest Item (WICHTIG für Hauptquest!)
 FragmentDerLeere:
-  Id: FRAGMENT_DER_LEERE
-  Type: MATERIAL
-  Material: ENDER_EYE
+  Id: MMOITEMS:MATERIAL:FRAGMENT_DER_LEERE
   Display: '&0Fragment der Leere'
-  Lore:
-  - '&7Ein Stück der Leere selbst.'
-  - '&7Es flüstert dir dunkle Geheimnisse zu...'
-  - ''
-  - '&e&lWichtig für die Hauptquest!'
-  - '&7Kapitel 2: Die Rückkehr der Dunkelheit'
-  Amount: 1
-  CustomModelData: 1003
-  ItemFlags:
-  - HIDE_ENCHANTS
-  Enchantments:
-    PROTECTION_ENVIRONMENTAL: 1
 
 # Mythic Armor Piece (5% Drop)
 LeereRuestungTeil:
-  Id: LEERE_RUESTUNG_TEIL
-  Type: ARMOR
-  Material: NETHERITE_CHESTPLATE
+  Id: MMOITEMS:ARMOR:LEERE_RUESTUNG_TEIL
   Display: '&8&lLeere-Brustplatte'
-  Lore:
-  - '&7Geschmiedet aus der Essenz'
-  - '&7der Leere selbst.'
-  - ''
-  - '&8&lMythisch'
-  - ''
-  - '&7Rüstung: &a+16'
-  - '&7Resistenz: &a+10%'
-  - ''
-  - '&0Set-Bonus (4/4):'
-  - '&7• Leere-Aura: Schaden-Reflexion'
-  - '&7• Unsichtbarkeit bei niedrigem Leben'
-  - '&7• +20% Magischer Schaden'
-  Amount: 1
-  Enchantments:
-    PROTECTION_ENVIRONMENTAL: 5
-    DURABILITY: 3
-    MENDING: 1
-  ItemFlags:
-  - HIDE_ENCHANTS
-  - HIDE_ATTRIBUTES
-  Unbreakable: true
 
 # ==========================================
-# Gemeinsame Drops
+# Währung (Global)
 # ==========================================
 
-# Gold Coin (für Shops/Economy)
+# Gold Coin (Währung)
 GoldCoin:
-  Id: GOLD_COIN
-  Type: MATERIAL
-  Material: GOLD_NUGGET
-  Display: '&6Gold'
-  Lore:
-  - '&7Eine wertvolle Goldmünze.'
-  Amount: 1
-  CustomModelData: 100
+  Id: MMOITEMS:MATERIAL:GOLD_COIN
+  Display: '&6Goldmünze'
+
