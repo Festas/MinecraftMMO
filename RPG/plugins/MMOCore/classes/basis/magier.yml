@@ -75,13 +75,13 @@ skills:
     POWER_MARK:
         level: 5
         max-level: 30
-    FIREBALL:
+    MAGIER_FIREBALL:
         level: 10
         max-level: 30
     MINOR_HEALINGS:
         level: 15
         max-level: 30
-    ICE_SPIKES:
+    MAGIER_ICE_SPIKES:
         level: 20
         max-level: 30
     WARP:
