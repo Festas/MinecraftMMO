@@ -59,7 +59,8 @@ jobs:
             fi
 
             # Lösche Ordner auf dem Server
-            ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rm -rf $SERVER_PATH/$REPLACE_FOLDER"
+            # Hier ist -n nicht zwingend, da keine Schleife, aber gute Praxis
+            ssh -n -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rm -rf $SERVER_PATH/$REPLACE_FOLDER"
 
             # Lade kompletten Ordner hoch
             eval "rsync -avz -e 'ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no' $EXCLUDE_OPTS --delete RPG/plugins/$REPLACE_FOLDER/ $SSH_USER@$SSH_HOST:$SERVER_PATH/$REPLACE_FOLDER/"
@@ -85,17 +86,20 @@ jobs:
                   if [ "$status" = "D" ]; then
                     # Datei wurde gelöscht
                     echo "Deleting: $relative_file"
-                    ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rm -f $SERVER_PATH/$relative_file"
+                    # WICHTIG: -n verhindert, dass ssh den Input der Schleife 'frisst'
+                    ssh -n -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rm -f $SERVER_PATH/$relative_file"
                   else
                     # Datei wurde hinzugefügt oder geändert
                     echo "Uploading: $relative_file"
                     # Erstelle Verzeichnisstruktur
                     dir_path=$(dirname "$relative_file")
                     if [ "$dir_path" != "." ]; then
-                      ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "mkdir -p $SERVER_PATH/$dir_path"
+                      # WICHTIG: Auch hier -n hinzufügen
+                      ssh -n -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "mkdir -p $SERVER_PATH/$dir_path"
                     fi
                     # Lade Datei hoch
-                    scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no "RPG/$relative_file" "$SSH_USER@$SSH_HOST:$SERVER_PATH/$relative_file"
+                    # scp liest normalerweise nicht von stdin im Batch-Modus, aber zur Sicherheit < /dev/null anhängen
+                    scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no "RPG/$relative_file" "$SSH_USER@$SSH_HOST:$SERVER_PATH/$relative_file" < /dev/null
                   fi
                 done < /tmp/changed_files.txt
                 echo "Sync completed successfully"
@@ -109,3 +113,4 @@ jobs:
               echo "Full sync completed successfully"
             fi
           fi
+
