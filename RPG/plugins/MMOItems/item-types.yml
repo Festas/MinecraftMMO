@@ -107,45 +107,6 @@ HAMMER:
     on-attack: blunt_attack_effect
     attack-damage-types: [ WEAPON, PHYSICAL ]
 
-GAUNTLET:
-    display: IRON_SHOVEL
-    name: 'Gauntlet'
-    unident-item:
-        name: '&f#prefix#Unidentified Gauntlet'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-    on-attack: blunt_attack_effect
-    on-entity-interact: gauntlet_special_attack
-    attack-damage-types: [ WEAPON, PHYSICAL ]
-
-WHIP:
-    display: LEAD
-    name: 'Whip'
-    unident-item:
-        name: '&f#prefix#Unidentified Whip'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-    disable-melee-attacks: true
-    on-left-click: whip_attack
-    on-attack: slashing_attack_effect
-
-    # This will have no effect as this item type uses an 'on-left-click' attack effect:
-    #attack-damage-types: [ WEAPON, PROJECTILE ]
-    # To change damage types, you need to edit the script named 'whip_attack'.
-    # By default, this script is located inside 'MythicLib/script/mmoitems_scripts.yml'.
-
 STAFF:
     display: DIAMOND_HOE
     name: 'Staff'
@@ -186,110 +147,11 @@ BOW:
     # Damage types dealt by projectiles fired with items of this type
     attack-damage-types: [ WEAPON, PROJECTILE ]
 
-CROSSBOW:
-    display: WOODEN_PICKAXE
-    name: 'Crossbow'
-    unident-item:
-        name: '&f#prefix#Unidentified Crossbow'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-    # This will have no effect as this item type uses an 'on-right-click' attack effect:
-    #attack-damage-types: [ WEAPON, PROJECTILE ]
-    # To change damage types, you need to edit the script named 'crossbow_attack'.
-    # By default, this script is located inside 'MythicLib/script/mmoitems_scripts.yml'.
-
-    disable-melee-attacks: true
-    on-right-click: crossbow_attack
-
-MUSKET:
-    display: IRON_HORSE_ARMOR
-    name: 'Musket'
-    unident-item:
-        name: '&f#prefix#Unidentified Musket'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-    disable-melee-attacks: true
-
-    # Lutes' and muskets' attack effects are hardcoded as
-    # of MI 6.10 and cannot be modified at the moment.
-
-LUTE:
-    display: NAME_TAG
-    name: 'Lute'
-    unident-item:
-        name: '&f#prefix#Unidentified Lute'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-    disable-melee-attacks: true
-
-    # Lutes' and muskets' attack effects are hardcoded as
-    # of MI 6.10 and cannot be modified at the moment.
-
-# Applies stats in both hands
 CATALYST:
     display: PRISMARINE_SHARD
     name: 'Catalyst'
     unident-item:
         name: '&f#prefix#Unidentified Catalyst'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-# Applies stats in offhand only
-OFF_CATALYST:
-    display: PRISMARINE_CRYSTALS
-    name: 'Catalyst (Offhand)'
-    unident-item:
-        name: '&f#prefix#Unidentified Catalyst'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-# Applies stats in mainhand only
-MAIN_CATALYST:
-    display: PRISMARINE_CRYSTALS
-    name: 'Catalyst (Mainhand)'
-    unident-item:
-        name: '&f#prefix#Unidentified Catalyst'
-        lore:
-            - '&7This item is unidentified. I must'
-            - '&7find a way to identify it!'
-            - '{tier}'
-            - '{tier}&8Item Info:'
-            - '{range}&8- &7Lvl Range: &e#range#'
-            - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-ORNAMENT:
-    display: GOLD_NUGGET
-    name: 'Ornament'
-    unident-item:
-        name: '&f#prefix#Unidentified Ornament'
         lore:
         - '&7This item is unidentified. I must'
         - '&7find a way to identify it!'
@@ -363,49 +225,6 @@ MISCELLANEOUS:
         - '{range}&8- &7Lvl Range: &e#range#'
         - '{tier}&8- &7Item Tier: #prefix##tier#'
 
-SKIN:
-    display: LEATHER
-    name: 'Skin'
-    unident-item:
-        name: '&f#prefix#Unidentified Skin Item'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-GEM_STONE:
-    display: EMERALD
-    name: 'Gem Stone'
-    unident-item:
-        name: '&f#prefix#Unidentified Gem'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-BLOCK:
-    display: STONE:0
-    name: 'Block'
-    unident-item:
-        name: '&f#prefix#Unidentified Block'
-        lore:
-            - '&7This item is unidentified. I must'
-            - '&7find a way to identify it!'
-            - '{tier}'
-            - '{tier}&8Item Info:'
-            - '{range}&8- &7Lvl Range: &e#range#'
-            - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-##########################################################
-# Default sub-item types
-##########################################################
-
 GREATSWORD:
     display: DIAMOND_SWORD
     name: 'Greatsword'
@@ -421,54 +240,6 @@ GREATSWORD:
         - '{tier}&8- &7Item Tier: #prefix##tier#'
 
     on-attack: slashing_attack_effect
-
-LONG_SWORD:
-    display: STONE_SWORD
-    name: 'Long Sword'
-    parent: 'SWORD'
-    unident-item:
-        name: '&f#prefix#Unidentified Long Sword'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-    on-attack: slashing_attack_effect
-
-KATANA:
-    display: IRON_SWORD
-    name: 'Katana'
-    parent: 'SWORD'
-    unident-item:
-        name: '&f#prefix#Unidentified Katana'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-    on-attack: slashing_attack_effect
-
-THRUSTING_SWORD:
-    display: GOLDEN_SWORD
-    name: 'Thrusting Sword'
-    parent: 'DAGGER'
-    unident-item:
-        name: '&f#prefix#Unidentified Thrusting Dagger'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-    on-attack: piercing_attack_effect
 
 AXE:
     display: STONE_AXE
@@ -502,38 +273,6 @@ GREATAXE:
 
     on-attack: slashing_attack_effect
 
-HALBERD:
-    display: IRON_AXE
-    name: 'Halberd'
-    parent: 'SWORD'
-    unident-item:
-        name: '&f#prefix#Unidentified Halberd'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-    on-attack: blunt_attack_effect
-
-LANCE:
-    display: STICK
-    name: 'Lance'
-    parent: 'SPEAR'
-    unident-item:
-        name: '&f#prefix#Unidentified Lance'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-    on-attack: piercing_attack_effect
-
 GREATHAMMER:
     display: DIAMOND_AXE
     name: 'Greathammer'
@@ -549,66 +288,6 @@ GREATHAMMER:
         - '{tier}&8- &7Item Tier: #prefix##tier#'
 
     on-attack: blunt_attack_effect
-
-GREATSTAFF:
-    display: DIAMOND_HOE
-    name: 'Greatstaff'
-    parent: 'HAMMER'
-    unident-item:
-        name: '&f#prefix#Unidentified Greatstaff'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-    on-attack: blunt_attack_effect
-
-STAVE:
-    display: IRON_HOE
-    name: 'Stave'
-    parent: 'HAMMER'
-    unident-item:
-        name: '&f#prefix#Unidentified Stave'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-    on-attack: blunt_attack_effect
-
-TOME:
-    display: BOOK
-    name: 'Tome'
-    parent: 'CATALYST'
-    unident-item:
-        name: '&f#prefix#Unidentified Tome'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-TALISMAN:
-    display: TOTEM_OF_UNDYING
-    name: 'Talisman'
-    parent: 'CATALYST'
-    unident-item:
-        name: '&f#prefix#Unidentified Talisman'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
 
 WAND:
     display: STICK
@@ -628,22 +307,6 @@ WAND:
     on-left-click: staff_default
     attack-cooldown-key: "staff"
     on-entity-interact: staff_special_attack # Special action when right-clicking entities
-
-GREATBOW:
-    display: BOW
-    name: 'Greatbow'
-    parent: 'BOW'
-    unident-item:
-        name: '&f#prefix#Unidentified Greatbow'
-        lore:
-        - '&7This item is unidentified. I must'
-        - '&7find a way to identify it!'
-        - '{tier}'
-        - '{tier}&8Item Info:'
-        - '{range}&8- &7Lvl Range: &e#range#'
-        - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-    disable-melee-attacks: true
 
 SHIELD:
     display: SHIELD
@@ -672,73 +335,3 @@ MATERIAL:
         - '{tier}&8Item Info:'
         - '{range}&8- &7Lvl Range: &e#range#'
         - '{tier}&8- &7Item Tier: #prefix##tier#'
-
-##########################################################
-# MMOInventory types
-##########################################################
-
-RING:
-    display: EMERALD
-    name: 'Ring'
-    parent: 'ACCESSORY'
-    unident-item:
-        name: '&f#prefix#Unidentified Ring'
-        lore:
-            - '&7This item is unidentified. I must'
-            - '&7find a way to identify it!'
-            - '{tier}'
-            - '{tier}&8Item Info:'
-            - '{range}&8- &7Lvl Range: &e#range#'
-            - '{tier}&8- &7Item Tier: #prefix##tier#'
-AMULET:
-    display: EMERALD
-    name: 'Amulet'
-    parent: 'ACCESSORY'
-    unident-item:
-        name: '&f#prefix#Unidentified Amulet'
-        lore:
-            - '&7This item is unidentified. I must'
-            - '&7find a way to identify it!'
-            - '{tier}'
-            - '{tier}&8Item Info:'
-            - '{range}&8- &7Lvl Range: &e#range#'
-            - '{tier}&8- &7Item Tier: #prefix##tier#'
-BRACELET:
-    display: EMERALD
-    name: 'Bracelet'
-    parent: 'ACCESSORY'
-    unident-item:
-        name: '&f#prefix#Unidentified Bracelet'
-        lore:
-            - '&7This item is unidentified. I must'
-            - '&7find a way to identify it!'
-            - '{tier}'
-            - '{tier}&8Item Info:'
-            - '{range}&8- &7Lvl Range: &e#range#'
-            - '{tier}&8- &7Item Tier: #prefix##tier#'
-GLOVES:
-    display: EMERALD
-    name: 'Gloves'
-    parent: 'ACCESSORY'
-    unident-item:
-        name: '&f#prefix#Unidentified Gloves'
-        lore:
-            - '&7This item is unidentified. I must'
-            - '&7find a way to identify it!'
-            - '{tier}'
-            - '{tier}&8Item Info:'
-            - '{range}&8- &7Lvl Range: &e#range#'
-            - '{tier}&8- &7Item Tier: #prefix##tier#'
-ARTIFACT:
-    display: EMERALD
-    name: 'Artifact'
-    parent: 'ACCESSORY'
-    unident-item:
-        name: '&f#prefix#Unidentified Artifact'
-        lore:
-            - '&7This item is unidentified. I must'
-            - '&7find a way to identify it!'
-            - '{tier}'
-            - '{tier}&8Item Info:'
-            - '{range}&8- &7Lvl Range: &e#range#'
-            - '{tier}&8- &7Item Tier: #prefix##tier#'
