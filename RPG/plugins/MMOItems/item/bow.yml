@@ -423,33 +423,41 @@ BOGENSCHUETZE_ARMBRUST_T6:
 SPINNENSEIDE_BOGEN:
   base:
     material: BOW
-    name: '&c&lSpinnenseide-Bogen'
+    name: '&2&lBogen der Spinnenkönigin'
     lore:
-      - '&8Legendäre Waffe'
-      - ''
-      - '&7Gefertigt aus der Seide'
-      - '&7der Spinnenkönigin Arachnia.'
-      - '&7Jeder Pfeil ist mit'
-      - '&7tödlichem Gift getränkt.'
-      - ''
-      - '&c━━━━━━━━━━━━━━━━━━━━━━━━'
-      - '&c🏹 38-52 Schaden'
-      - '&2+30% Gift-Schaden'
-      - '&c+20% Kritische Trefferchance'
-      - '&8🕷 Gift-Pfeile (5s)'
-      - '&c━━━━━━━━━━━━━━━━━━━━━━━━'
-      - ''
-      - '&d⚡ Ability: Netzfalle'
-      - '&7Schießt ein Netz das Feinde'
-      - '&7für 3s immobilisiert.'
-      - '&8Abklingzeit: 20s'
-      - ''
-      - '&c&lLEGENDÄR'
-      - '&8Drop: Spinnenkönigin Arachnia'
-    attack-damage: 45
-    critical-strike-chance: 20
-    required-level: 45
-    tier: LEGENDARY
-    required-class:
-      - 'BOGENSCHUETZE'
+    - '&7Gewebt aus der widerstandsfähigsten'
+    - '&7Seide der Brutmutter.'
+    - ''
+    - '&8Passive: &7Pfeile sind giftig.'
+    - '&8Passive: &2Verlangsamt Ziele bei Treffer.'
+    - ''
+    - '&c&lLEGENDÄR'
+    - '&8Drop: Spinnenkönigin Arachnia'
+    tier: EPIC
+  attack-damage:
+    base: 28.0
+    scale: 1.5
+  critical-strike-chance: 30.0
+  arrow-velocity: 1.2
+  required-level: 45
+  required-class:
+    - 'BOGENSCHUETZE'
+  # Elementarer Schaden: Gift
+  element:
+    poison:
+      damage:
+        base: 25.0
+        scale: 1.0
+  # Fähigkeiten: Verlangsamung bei Treffer (Netz-Effekt)
+  ability:
+    slow-on-hit:
+      type: SLOW
+      mode: ON_HIT
+      duration: 3.0
+      amplifier: 1.0
+      cooldown: 0.0
+  enchants:
+    PUNCH: 2
+    POWER: 4
+
 
