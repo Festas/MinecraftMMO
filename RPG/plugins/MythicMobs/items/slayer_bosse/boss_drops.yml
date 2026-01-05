@@ -3,69 +3,63 @@
 # MMOItems Integration für Legendary Weapons und Quest Items
 # ===================================================
 
-# WICHTIG: MythicMobs importiert MMOItems automatisch, wenn sie existieren.
-# Du musst sie hier nicht neu definieren, wenn du sie nur droppen willst.
-# Wenn du sie aber als MythicItem haben willst, das auf dem MMOItem basiert:
+# WICHTIG: Auf Linux-Servern muss der Typ (z.B. sword) exakt so geschrieben sein
+# wie der Dateiname im MMOItems Ordner (sword.yml -> sword).
 
 # ==========================================
 # Nekromant Malachar - Drops
 # ==========================================
 
-# Legendary Weapon
-# Wir verweisen hier direkt auf das MMOItem.
-# MythicMobs kann MMOItems direkt in Drops verwenden.
-# Falls du dieses Item hier definieren musst, um es woanders zu referenzieren:
-
 StabDerVerdammnis:
-  # Nutze die MMOItems ID als Referenz
-  # Syntax: MMOITEMS:<TYPE>:<ID>
-  Id: MMOITEMS:SWORD:STAB_DER_VERDAMMNIS
+  # KORRIGIERT: SWORD -> sword
+  Id: MMOITEMS:sword:STAB_DER_VERDAMMNIS
   Display: '&5&lStab der Verdammnis'
   
-# Quest Item
 SeeleDesNekromanten:
-  Id: MMOITEMS:MATERIAL:SEELE_DES_NEKROMANTEN
+  # KORRIGIERT: MATERIAL -> material
+  Id: MMOITEMS:material:SEELE_DES_NEKROMANTEN
   Display: '&5Seele des Nekromanten'
 
 # ==========================================
 # Spinnenkönigin Arachnia - Drops
 # ==========================================
 
-# Legendary Bow
 SpinnenseideBogen:
-  Id: MMOITEMS:BOW:SPINNENSEIDE_BOGEN
+  # KORRIGIERT: BOW -> bow
+  Id: MMOITEMS:bow:SPINNENSEIDE_BOGEN
   Display: '&2&lSpinnenseide-Bogen'
 
-# Quest Item (WICHTIG!)
 HerzDerKoenigin:
-  Id: MMOITEMS:MATERIAL:HERZ_DER_KOENIGIN
+  # KORRIGIERT: MATERIAL -> material
+  Id: MMOITEMS:material:HERZ_DER_KOENIGIN
   Display: '&4Herz der Königin'
 
 # ==========================================
 # Dunkler Magier Vexorin - Drops
 # ==========================================
 
-# Legendary Staff
 StabDerLeere:
-  Id: MMOITEMS:STAFF:STAB_DER_LEERE
+  # KORRIGIERT: STAFF -> staff (falls Datei staff.yml heißt)
+  # Falls du den Stab in sword.yml hast, nutze: MMOITEMS:sword:STAB_DER_LEERE
+  Id: MMOITEMS:staff:STAB_DER_LEERE
   Display: '&0&lStab der Leere'
 
-# Quest Item (WICHTIG für Hauptquest!)
 FragmentDerLeere:
-  Id: MMOITEMS:MATERIAL:FRAGMENT_DER_LEERE
+  # KORRIGIERT: MATERIAL -> material
+  Id: MMOITEMS:material:FRAGMENT_DER_LEERE
   Display: '&0Fragment der Leere'
 
-# Mythic Armor Piece (5% Drop)
 LeereRuestungTeil:
-  Id: MMOITEMS:ARMOR:LEERE_RUESTUNG_TEIL
+  # KORRIGIERT: ARMOR -> armor
+  Id: MMOITEMS:armor:LEERE_RUESTUNG_TEIL
   Display: '&8&lLeere-Brustplatte'
 
 # ==========================================
 # Währung (Global)
 # ==========================================
 
-# Gold Coin (Währung)
 GoldCoin:
-  Id: MMOITEMS:MATERIAL:GOLD_COIN
+  # KORRIGIERT: MATERIAL -> material
+  Id: MMOITEMS:material:GOLD_COIN
   Display: '&6Goldmünze'
 
