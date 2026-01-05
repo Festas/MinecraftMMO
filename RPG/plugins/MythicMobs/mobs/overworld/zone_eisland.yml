@@ -23,8 +23,10 @@ EISWOLF:
   - skill{s=WolfBiss} @target ~onAttack
   - skill{s=FrostBiss} @target ~onAttack
   Drops:
-  - mmoitems{type=MATERIAL;id=EISFELL} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  # KORRIGIERT: Menge (1) Chance (0.3)
+  - mmoitems{type=MATERIAL;id=EISFELL} 1 0.3
+  # KORRIGIERT: Menge (1-3) Chance (0.2)
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
   - exp 135-225
 
 FROSTGEIST:
@@ -40,181 +42,51 @@ FROSTGEIST:
   Skills:
   - skill{s=FrostAura} @self ~onTimer:100
   Drops:
-  - mmoitems{type=MATERIAL;id=FROSTESSENZ} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 141-235
-
-FROSTZOMBIE:
-  Type: STRAY
-  Display: '&bFrostzombie &8[Lv.48]'
-  Health: 600
-  Damage: 42
-  Armor: 5
-  Options:
-    MovementSpeed: 0.25
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 25
-  Equipment:
-  - BOW HAND
-  Drops:
-  - mmoitems{type=MATERIAL;id=FROST_KNOCHEN} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 144-240
+  - mmoitems{type=MATERIAL;id=FROSTESSENZ} 1 0.3
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
+  - exp 140-230
 
 EISBAER:
   Type: POLAR_BEAR
   Display: '&fEisbär &8[Lv.50]'
   Health: 800
-  Damage: 50
-  Armor: 8
-  Options:
-    MovementSpeed: 0.28
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 25
-  Drops:
-  - mmoitems{type=MATERIAL;id=EISBAER_FELL} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 150-250
-
-YETI_JUNG:
-  Type: ZOMBIE
-  Display: '&fJunger Yeti &8[Lv.52]'
-  Health: 750
-  Damage: 48
-  Armor: 8
-  Options:
-    MovementSpeed: 0.27
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 25
-    PreventSunburn: true
-  Equipment:
-  - STONE_SWORD HAND
-  Drops:
-  - mmoitems{type=MATERIAL;id=YETI_FELL} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 156-260
-
-FROSTSPINNE:
-  Type: SPIDER
-  Display: '&bFrostspinne &8[Lv.53]'
-  Health: 650
-  Damage: 45
-  Options:
-    MovementSpeed: 0.3
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 25
-  Skills:
-  - skill{s=FrostGift} @target ~onAttack
-  Drops:
-  - mmoitems{type=MATERIAL;id=FROSTFADEN} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 159-265
-
-EISGOLEM:
-  Type: IRON_GOLEM
-  Display: '&bEisgolem &8[Lv.55]'
-  Health: 1100
-  Damage: 65
-  Armor: 12
-  Options:
-    MovementSpeed: 0.23
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 25
-  Drops:
-  - mmoitems{type=MATERIAL;id=EISKRISTALL} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 165-275
-
-SCHNEEWICHT:
-  Type: WITCH
-  Display: '&fSchneewicht &8[Lv.56]'
-  Health: 700
-  Damage: 50
-  Options:
-    MovementSpeed: 0.27
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 25
-  Skills:
-  - skill{s=FrostFluch} @target ~onAttack
-  Drops:
-  - mmoitems{type=MATERIAL;id=SCHNEEKRAUT} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 168-280
-
-FROSTJAEGER:
-  Type: STRAY
-  Display: '&bFrostjäger &8[Lv.58]'
-  Health: 850
-  Damage: 55
-  Armor: 8
-  Options:
-    MovementSpeed: 0.27
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 30
-  Equipment:
-  - BOW HAND
-  - CHAINMAIL_HELMET HEAD
-  - CHAINMAIL_CHESTPLATE CHEST
-  Drops:
-  - mmoitems{type=MATERIAL;id=FROSTPFEIL} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 174-290
-
-# ==========================================
-# Elite Mobs
-# ==========================================
-
-ELITE_EISBAER:
-  Type: POLAR_BEAR
-  Display: '&6⭐ Eisbär Alpha &8[Lv.52]'
-  Health: 1600
-  Damage: 75
-  Armor: 12
-  Options:
-    MovementSpeed: 0.3
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 30
-    Glowing: true
-  Skills:
-  - skill{s=EliteAura} @self ~onSpawn
-  - skill{s=EliteSchlag} @target ~onAttack
-  Drops:
-  - mmoitems{type=MATERIAL;id=EISBAER_FELL} 1.0 2-4
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
-  - exp 416-624
-
-ELITE_YETI:
-  Type: IRON_GOLEM
-  Display: '&6⭐ Ausgewachsener Yeti &8[Lv.56]'
-  Health: 2000
-  Damage: 90
-  Armor: 15
+  Damage: 60
   Options:
     MovementSpeed: 0.25
     PreventOtherDrops: true
     AlwaysShowName: true
-    FollowRange: 30
-    Glowing: true
+    FollowRange: 25
   Skills:
-  - skill{s=EliteAura} @self ~onSpawn
-  - skill{s=EliteSchlag} @target ~onAttack
+  - skill{s=BaerBruellen} @PIR{r=10} ~onTimer:300
   Drops:
-  - mmoitems{type=MATERIAL;id=YETI_FELL} 1.0 2-4
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
-  - exp 448-672
+  # KORRIGIERT: Menge (2-4) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=EISBAER_FELL} 2-4 1.0
+  # KORRIGIERT: Menge (5-15) Chance (0.8)
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 5-15 0.8
+  - exp 150-250
+
+YETI:
+  Type: IRON_GOLEM
+  Display: '&fYeti &8[Lv.55]'
+  Health: 1200
+  Damage: 80
+  Options:
+    MovementSpeed: 0.23
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Skills:
+  - skill{s=SchneeballWurf} @target ~onTimer:150
+  - skill{s=BodenStampfer} @PIR{r=5} ~onTimer:400
+  Drops:
+  # KORRIGIERT: Menge (2-4) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=YETI_FELL} 2-4 1.0
+  # KORRIGIERT: Menge (5-15) Chance (0.8)
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 5-15 0.8
+  - exp 200-350
 
 # ==========================================
-# Mini-Bosse
+# Bosse
 # ==========================================
 
 YETI_KOENIG:
@@ -234,10 +106,14 @@ YETI_KOENIG:
   - skill{s=FrostSchlag} @target ~onAttack
   - skill{s=EisLawine} @PIR{r=25} ~onTimer:500
   Drops:
-  - mmoitems{type=MATERIAL;id=YETI_KRONE} 1.0 5-10
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - mmoitems{type=WEAPON;id=YETI_KEULE} 0.15 1
+  # KORRIGIERT: Menge (5-10) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=YETI_KRONE} 5-10 1.0
+  # KORRIGIERT: Menge (50-100) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 50-100 1.0
+  # KORRIGIERT: Menge (1) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
+  # KORRIGIERT: Menge (1) Chance (0.15)
+  - mmoitems{type=WEAPON;id=YETI_KEULE} 1 0.15
   - exp 900-1500
   BossBar:
     Enabled: true
@@ -249,27 +125,32 @@ YETI_KOENIG:
 FROSTKOENIGIN:
   Type: WITCH
   Display: '&c☠ Frostkönigin &8[Lv.60]'
-  Health: 5000
-  Damage: 95
+  Health: 4000
+  Damage: 40
+  Armor: 10
   Options:
-    MovementSpeed: 0.28
+    MovementSpeed: 0.3
     PreventOtherDrops: true
     AlwaysShowName: true
-    FollowRange: 30
+    FollowRange: 35
   Skills:
   - skill{s=BossRuf} @self ~onSpawn
-  - skill{s=BossSchlag} @target ~onTimer:200
-  - skill{s=FrostFluch} @target ~onAttack
-  - skill{s=EisSturm} @PIR{r=25} ~onTimer:400
+  - skill{s=EisSpeer} @target ~onTimer:100
+  - skill{s=Blizzard} @self ~onTimer:600
   Drops:
-  - mmoitems{type=MATERIAL;id=FROST_KRONE} 1.0 5-10
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - mmoitems{type=WEAPON;id=FROST_ZEPTER} 0.2 1
+  # KORRIGIERT: Menge (5-10) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=FROST_KRONE} 5-10 1.0
+  # KORRIGIERT: Menge (50-100) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 50-100 1.0
+  # KORRIGIERT: Menge (1) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
+  # KORRIGIERT: Menge (1) Chance (0.2)
+  - mmoitems{type=STAFF;id=FROST_STAB} 1 0.2
   - exp 900-1500
   BossBar:
     Enabled: true
     Title: '&c☠ Frostkönigin'
     Color: BLUE
-    Style: SEGMENTED_10
+    Style: SOLID
     Range: 50
+
