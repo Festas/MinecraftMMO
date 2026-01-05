@@ -1570,4 +1570,48 @@ SCHATTEN_KLINGE:
     attack-damage: 40
     critical-strike-chance: 5
     required-level: 75
+STAB_DER_VERDAMMNIS:
+  base:
+    material: NETHERITE_SWORD
+    name: '&4&lStab der Verdammnis'
+    lore:
+    - '&7Wurde einst von einem Hoch-Nekromanten'
+    - '&7geführt, um ganze Armeen zu unterwerfen.'
+    - ''
+    - '&8Passive: &7Jeder Schlag entzieht Lebenskraft.'
+    - '&8Aktiv (Rechtsklick): &cVerfluchter Strahl'
+    tier: MYTHICAL
+    hide-enchants: true
+  attack-damage:
+    base: 35.0
+    scale: 2.0
+  attack-speed: 1.2
+  critical-strike-chance: 15.0
+  # Elementarer Schaden: Dunkelheit & Feuer
+  element:
+    darkness:
+      damage:
+        base: 20.0
+        scale: 1.5
+    fire:
+      damage:
+        base: 10.0
+        scale: 1.0
+  # Fähigkeiten: Lebensraub passiv + Aktiver Strahl
+  ability:
+    on-hit:
+      type: LIFE_STEAL
+      mode: ON_HIT
+      amount: 4.0
+      cooldown: 1.0
+    active:
+      type: CURSED_BEAM
+      mode: RIGHT_CLICK
+      damage: 40.0
+      duration: 3.0
+      cooldown: 20.0
+  enchants:
+    SHARPNESS: 5
+    FIRE_ASPECT: 2
+
 
