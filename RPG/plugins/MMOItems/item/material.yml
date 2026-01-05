@@ -185,3 +185,34 @@ GOLD_COIN:
     material: GOLD_NUGGET
     name: '&6Goldmünze'
 
+# ==================== FEHLENDE LOG ITEMS ====================
+
+SEELE_DES_NEKROMANTEN:
+  base:
+    material: GHAST_TEAR
+    name: '&5Seele des Nekromanten'
+    lore:
+    - '&7Ein dunkles Überbleibsel eines'
+    - '&7mächtigen Nekromanten.'
+    - ''
+    - '&8Verwendung: Seltenes Crafting'
+
+HERZ_DER_KOENIGIN:
+  base:
+    material: FERMENTED_SPIDER_EYE
+    name: '&cHerz der Königin'
+    lore:
+    - '&7Das pochende Herz der'
+    - '&7Spinnenkönigin.'
+    - ''
+    - '&8Verwendung: Boss-Waffen Crafting'
+
+FRAGMENT_DER_LEERE:
+  base:
+    material: ECHO_SHARD
+    name: '&5Fragment der Leere'
+    lore:
+    - '&7Ein Splitter aus purer Dunkelheit.'
+    - ''
+    - '&8Verwendung: Leeren-Set Crafting'
+
