@@ -20,8 +20,10 @@ WILDSCHWEIN:
     AlwaysShowName: true
     FollowRange: 20
   Drops:
-  - mmoitems{type=MATERIAL;id=ROHES_FLEISCH} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  # KORRIGIERT: Menge (1) Chance (0.3)
+  - mmoitems{type=MATERIAL;id=ROHES_FLEISCH} 1 0.3
+  # KORRIGIERT: Menge (1-3) Chance (0.2)
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
   - exp 3-5
 
 WUETENDER_HUHN:
@@ -35,15 +37,15 @@ WUETENDER_HUHN:
     AlwaysShowName: true
     FollowRange: 20
   Drops:
-  - mmoitems{type=MATERIAL;id=ROHES_FLEISCH} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  - mmoitems{type=MATERIAL;id=ROHES_FLEISCH} 1 0.3
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
   - exp 6-10
 
 WALDWOLF:
   Type: WOLF
-  Display: '&7Waldwolf &8[Lv.3]'
-  Health: 60
-  Damage: 8
+  Display: '&7Waldwolf &8[Lv.5]'
+  Health: 150
+  Damage: 10
   Options:
     MovementSpeed: 0.3
     PreventOtherDrops: true
@@ -52,143 +54,30 @@ WALDWOLF:
   Skills:
   - skill{s=WolfBiss} @target ~onAttack
   Drops:
-  - mmoitems{type=MATERIAL;id=LEDERFETZEN} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 9-15
+  - mmoitems{type=MATERIAL;id=LEDERFETZEN} 1 0.3
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
+  - exp 15-25
 
-RIESENKAEFER:
-  Type: SILVERFISH
-  Display: '&7Riesenkäfer &8[Lv.4]'
-  Health: 50
-  Damage: 6
-  Options:
-    MovementSpeed: 0.35
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 20
-  Drops:
-  - mmoitems{type=MATERIAL;id=INSEKTEN_CHITIN} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 12-20
-
-BANDIT_ANFAENGER:
-  Type: ZOMBIE
-  Display: '&7Bandit Lehrling &8[Lv.5]'
-  Health: 80
-  Damage: 10
+BANDIT:
+  Type: PILLAGER
+  Display: '&8Bandit &8[Lv.7]'
+  Health: 200
+  Damage: 12
   Options:
     MovementSpeed: 0.25
     PreventOtherDrops: true
     AlwaysShowName: true
-    FollowRange: 25
-    PreventSunburn: true
+    FollowRange: 30
   Equipment:
   - WOODEN_SWORD HAND
-  - LEATHER_HELMET HEAD
+  - LEATHER_CHESTPLATE CHEST
   Drops:
-  - mmoitems{type=MATERIAL;id=BANDITENGUT} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 15-25
-
-WALDSPINNE:
-  Type: SPIDER
-  Display: '&7Waldspinne &8[Lv.6]'
-  Health: 70
-  Damage: 9
-  Options:
-    MovementSpeed: 0.3
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 25
-  Skills:
-  - skill{s=SpinnenGift} @target ~onAttack
-  Drops:
-  - mmoitems{type=MATERIAL;id=SPINNENFADEN} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 18-30
-
-VERWILDERTER_HUND:
-  Type: WOLF
-  Display: '&7Verwilderter Hund &8[Lv.7]'
-  Health: 90
-  Damage: 11
-  Options:
-    MovementSpeed: 0.3
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 25
-  Skills:
-  - skill{s=WolfBiss} @target ~onAttack
-  Drops:
-  - mmoitems{type=MATERIAL;id=LEDERFETZEN} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 21-35
-
-KOBOLD:
-  Type: ZOMBIE
-  Display: '&7Kobold &8[Lv.8]'
-  Health: 100
-  Damage: 12
-  Options:
-    MovementSpeed: 0.28
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 25
-    PreventSunburn: true
-  Equipment:
-  - STONE_SWORD HAND
-  Drops:
-  - mmoitems{type=MATERIAL;id=KOBOLDSCHROTT} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 24-40
+  - mmoitems{type=MATERIAL;id=BANDITENGUT} 1 0.3
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
+  - exp 20-40
 
 # ==========================================
-# Elite Mobs
-# ==========================================
-
-ELITE_WILDSCHWEIN:
-  Type: PIG
-  Display: '&6⭐ Elite Wildschwein &8[Lv.5]'
-  Health: 200
-  Damage: 15
-  Options:
-    MovementSpeed: 0.28
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 30
-    Glowing: true
-  Skills:
-  - skill{s=EliteAura} @self ~onSpawn
-  - skill{s=EliteSchlag} @target ~onAttack
-  Drops:
-  - mmoitems{type=MATERIAL;id=ROHES_FLEISCH} 1.0 2-4
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
-  - exp 40-60
-
-ELITE_WALDWOLF:
-  Type: WOLF
-  Display: '&6⭐ Elite Waldwolf &8[Lv.8]'
-  Health: 280
-  Damage: 18
-  Options:
-    MovementSpeed: 0.32
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 30
-    Glowing: true
-  Skills:
-  - skill{s=EliteAura} @self ~onSpawn
-  - skill{s=EliteSchlag} @target ~onAttack
-  - skill{s=WolfBiss} @target ~onAttack
-  Drops:
-  - mmoitems{type=MATERIAL;id=LEDERFETZEN} 1.0 2-4
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
-  - exp 64-96
-
-# ==========================================
-# Mini-Bosse
+# Elite / Bosse
 # ==========================================
 
 ALPHA_WOLF:
@@ -206,10 +95,14 @@ ALPHA_WOLF:
   - skill{s=BossSchlag} @target ~onTimer:200
   - skill{s=WolfBiss} @target ~onAttack
   Drops:
-  - mmoitems{type=MATERIAL;id=LEDERFETZEN} 1.0 5-10
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - mmoitems{type=WEAPON;id=WOLFSZAHN_DOLCH} 0.15 1
+  # KORRIGIERT: Menge (5-10) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=LEDERFETZEN} 5-10 1.0
+  # KORRIGIERT: Menge (50-100) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 50-100 1.0
+  # KORRIGIERT: Menge (1) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
+  # KORRIGIERT: Menge (1) Chance (0.15)
+  - mmoitems{type=WEAPON;id=WOLFSZAHN_DOLCH} 1 0.15
   - exp 150-250
   BossBar:
     Enabled: true
@@ -231,22 +124,20 @@ BANDITENFUEHRER:
     FollowRange: 30
   Equipment:
   - IRON_AXE HAND
-  - CHAINMAIL_HELMET HEAD
   - CHAINMAIL_CHESTPLATE CHEST
-  - CHAINMAIL_LEGGINGS LEGS
-  - CHAINMAIL_BOOTS FEET
   Skills:
   - skill{s=BossRuf} @self ~onSpawn
   - skill{s=BossSchlag} @target ~onTimer:200
   Drops:
-  - mmoitems{type=MATERIAL;id=BANDITENGUT} 1.0 5-10
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - mmoitems{type=WEAPON;id=BANDITENAXT} 0.2 1
-  - exp 150-250
+  - mmoitems{type=MATERIAL;id=BANDITENGUT} 5-10 1.0
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 50-100 1.0
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
+  - mmoitems{type=WEAPON;id=BANDITEN_SAEBEL} 1 0.15
+  - exp 200-300
   BossBar:
     Enabled: true
     Title: '&c☠ Banditenführer'
     Color: RED
     Style: SEGMENTED_10
     Range: 50
+
