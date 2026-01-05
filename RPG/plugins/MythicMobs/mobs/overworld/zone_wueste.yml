@@ -22,8 +22,10 @@ WUESTENSKORPION:
   Skills:
   - skill{s=SkorpionGift} @target ~onAttack
   Drops:
-  - mmoitems{type=MATERIAL;id=SKORPIONSTACHEL} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
+  # KORRIGIERT: Menge (1) Chance (0.3)
+  - mmoitems{type=MATERIAL;id=SKORPIONSTACHEL} 1 0.3
+  # KORRIGIERT: Menge (1-3) Chance (0.2)
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
   - exp 105-175
 
 SANDGEIST:
@@ -37,132 +39,42 @@ SANDGEIST:
     AlwaysShowName: true
     FollowRange: 25
   Drops:
-  - mmoitems{type=MATERIAL;id=SANDESSENZ} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 111-185
+  - mmoitems{type=MATERIAL;id=SANDESSENZ} 1 0.3
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
+  - exp 110-180
 
 MUMIE:
   Type: HUSK
-  Display: '&6Mumie &8[Lv.38]'
-  Health: 520
+  Display: '&6Mumie &8[Lv.40]'
+  Health: 500
   Damage: 40
-  Armor: 5
-  Options:
-    MovementSpeed: 0.25
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 25
-  Drops:
-  - mmoitems{type=MATERIAL;id=MUMIENBANDAGE} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 114-190
-
-WUESTENRAEUBER:
-  Type: PILLAGER
-  Display: '&6Wüstenräuber &8[Lv.40]'
-  Health: 550
-  Damage: 42
-  Options:
-    MovementSpeed: 0.27
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 25
-  Equipment:
-  - BOW HAND
-  - LEATHER_HELMET{color=194,142,0} HEAD
-  Drops:
-  - mmoitems{type=MATERIAL;id=RAEUBERGUT} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 120-200
-
-SANDWURM:
-  Type: ENDERMAN
-  Display: '&6Sandwurm &8[Lv.42]'
-  Health: 600
-  Damage: 48
-  Options:
-    MovementSpeed: 0.28
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 30
-  Drops:
-  - mmoitems{type=MATERIAL;id=SANDWURMHAUT} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 126-210
-
-GRABWAECHTER:
-  Type: WITHER_SKELETON
-  Display: '&8Grabwächter &8[Lv.43]'
-  Health: 650
-  Damage: 50
-  Armor: 8
-  Options:
-    MovementSpeed: 0.27
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 25
-  Equipment:
-  - STONE_SWORD HAND
-  Drops:
-  - mmoitems{type=MATERIAL;id=GRABSTAUB} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 129-215
-
-PHARAONEN_DIENER:
-  Type: HUSK
-  Display: '&6Pharaonen-Diener &8[Lv.45]'
-  Health: 700
-  Damage: 52
-  Armor: 5
-  Options:
-    MovementSpeed: 0.27
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 25
-  Equipment:
-  - GOLDEN_SWORD HAND
-  - GOLDEN_HELMET HEAD
-  Drops:
-  - mmoitems{type=MATERIAL;id=PHARAONEN_GOLD} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 135-225
-
-ANUBIS_KRIEGER:
-  Type: ZOMBIE
-  Display: '&5Anubis Krieger &8[Lv.46]'
-  Health: 750
-  Damage: 55
-  Armor: 8
-  Options:
-    MovementSpeed: 0.27
-    PreventOtherDrops: true
-    AlwaysShowName: true
-    FollowRange: 25
-    PreventSunburn: true
-  Equipment:
-  - IRON_SWORD HAND
-  - WITHER_SKELETON_SKULL HEAD
-  - LEATHER_CHESTPLATE{color=0,0,0} CHEST
-  Drops:
-  - mmoitems{type=MATERIAL;id=ANUBIS_EMBLEM} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 138-230
-
-SANDGOLEM:
-  Type: IRON_GOLEM
-  Display: '&6Sandgolem &8[Lv.48]'
-  Health: 900
-  Damage: 60
-  Armor: 10
   Options:
     MovementSpeed: 0.23
     PreventOtherDrops: true
     AlwaysShowName: true
-    FollowRange: 25
+    FollowRange: 30
   Drops:
-  - mmoitems{type=MATERIAL;id=SANDSTEIN_KERN} 0.3 1
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.2 1-3
-  - exp 144-240
+  - mmoitems{type=MATERIAL;id=MUMIENBANDAGE} 1 0.3
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
+  - exp 120-200
+
+WUESTEN_RAEUBER:
+  Type: VINDICATOR
+  Display: '&eWüstenräuber &8[Lv.42]'
+  Health: 550
+  Damage: 45
+  Options:
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+  Equipment:
+  - IRON_AXE HAND
+  - LEATHER_CHESTPLATE{color=240,230,140} CHEST
+  Drops:
+  - mmoitems{type=MATERIAL;id=ANUBIS_EMBLEM} 1 0.3
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
+  - exp 130-220
 
 # ==========================================
 # Elite Mobs
@@ -170,52 +82,46 @@ SANDGOLEM:
 
 ELITE_MUMIE:
   Type: HUSK
-  Display: '&6⭐ Uralte Mumie &8[Lv.42]'
-  Health: 1200
-  Damage: 65
+  Display: '&6&lElite Mumie &8[Lv.45]'
+  Health: 2000
+  Damage: 80
   Armor: 8
   Options:
-    MovementSpeed: 0.27
+    MovementSpeed: 0.25
     PreventOtherDrops: true
     AlwaysShowName: true
-    FollowRange: 30
-    Glowing: true
+    FollowRange: 35
+    KnockbackResistance: 0.6
   Skills:
-  - skill{s=EliteAura} @self ~onSpawn
-  - skill{s=EliteSchlag} @target ~onAttack
+  - skill{s=SandSturm} @self ~onTimer:300
   Drops:
-  - mmoitems{type=MATERIAL;id=MUMIENBANDAGE} 1.0 2-4
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
-  - exp 336-504
+  # KORRIGIERT: Menge (2-4) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=MUMIENBANDAGE} 2-4 1.0
+  # KORRIGIERT: Menge (5-15) Chance (0.8)
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 5-15 0.8
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 1 0.5
+  - exp 500-800
 
-ELITE_ANUBIS:
-  Type: WITHER_SKELETON
-  Display: '&6⭐ Anubis Wächter &8[Lv.46]'
+SANDWURM:
+  Type: SILVERFISH
+  Display: '&e&lSandwurm &8[Lv.48]'
   Health: 1500
-  Damage: 75
-  Armor: 10
+  Damage: 60
   Options:
-    MovementSpeed: 0.28
+    MovementSpeed: 0.35
     PreventOtherDrops: true
     AlwaysShowName: true
     FollowRange: 30
-    Glowing: true
-  Equipment:
-  - IRON_SWORD HAND
-  - WITHER_SKELETON_SKULL HEAD
-  - CHAINMAIL_CHESTPLATE CHEST
+    Size: 3
   Skills:
-  - skill{s=EliteAura} @self ~onSpawn
-  - skill{s=EliteSchlag} @target ~onAttack
+  - skill{s=Eingraben} @self ~onTimer:200
   Drops:
-  - mmoitems{type=MATERIAL;id=ANUBIS_EMBLEM} 1.0 2-4
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 0.8 5-15
-  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 0.5 1
-  - exp 368-552
+  - mmoitems{type=MATERIAL;id=SANDSTEIN_KERN} 2-4 1.0
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 5-15 0.8
+  - exp 550-850
 
 # ==========================================
-# Mini-Bosse
+# Bosse
 # ==========================================
 
 PHARAO:
@@ -240,10 +146,14 @@ PHARAO:
   - skill{s=BossSchlag} @target ~onTimer:200
   - skill{s=PharaoFluch} @PIR{r=20} ~onTimer:400
   Drops:
-  - mmoitems{type=MATERIAL;id=PHARAONEN_GOLD} 1.0 5-10
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - mmoitems{type=WEAPON;id=PHARAO_ZEPTER} 0.15 1
+  # KORRIGIERT: Menge (5-10) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=PHARAONEN_GOLD} 5-10 1.0
+  # KORRIGIERT: Menge (50-100) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 50-100 1.0
+  # KORRIGIERT: Menge (1) Chance (1.0)
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
+  # KORRIGIERT: Menge (1) Chance (0.15)
+  - mmoitems{type=WEAPON;id=PHARAO_ZEPTER} 1 0.15
   - exp 750-1250
   BossBar:
     Enabled: true
@@ -256,26 +166,29 @@ SANDKOLOSS:
   Type: IRON_GOLEM
   Display: '&c☠ Sandkoloss &8[Lv.50]'
   Health: 5000
-  Damage: 90
-  Armor: 18
+  Damage: 120
+  Armor: 20
   Options:
-    MovementSpeed: 0.25
+    MovementSpeed: 0.2
     PreventOtherDrops: true
     AlwaysShowName: true
     FollowRange: 30
+    KnockbackResistance: 1.0
+    PlayerCreated: false
   Skills:
   - skill{s=BossRuf} @self ~onSpawn
-  - skill{s=BossSchlag} @target ~onTimer:200
-  - skill{s=SandSturm} @PIR{r=25} ~onTimer:600
+  - skill{s=SandWelle} @self ~onTimer:300
+  - skill{s=Erdbeben} @PIR{r=15} ~onTimer:500
   Drops:
-  - mmoitems{type=MATERIAL;id=SANDSTEIN_KERN} 1.0 5-10
-  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1.0 50-100
-  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1.0 1
-  - mmoitems{type=ARMOR;id=SANDKOLOSS_RUESTUNG} 0.2 1
-  - exp 750-1250
+  - mmoitems{type=MATERIAL;id=SANDSTEIN_KERN} 5-10 1.0
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 50-100 1.0
+  - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
+  - mmoitems{type=WEAPON;id=SAND_HAMMER} 1 0.15
+  - exp 800-1300
   BossBar:
     Enabled: true
     Title: '&c☠ Sandkoloss'
-    Color: RED
-    Style: SEGMENTED_10
+    Color: YELLOW
+    Style: SOLID
     Range: 50
+
