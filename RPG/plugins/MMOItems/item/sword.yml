@@ -623,7 +623,7 @@ ASSASSINE_WURFMESSER_T6:
       - '&cGift V'
       - ''
       - '&d⚡ Ability: Sternenhagel'
-      - '&8Massiver Wurfangriff'
+      - '&8Massive Wurfangriff'
       - ''
       - '&8Benötigt Level 78'
     attack-damage: 27
@@ -889,71 +889,85 @@ PALADIN_HEILSCHWERT_T6:
 STAB_DER_VERDAMMNIS:
   base:
     material: NETHERITE_SWORD
-    name: '&5&lStab der Verdammnis'
+    name: '&4&lStab der Verdammnis'
     lore:
-      - '&8Legendäre Waffe'
-      - ''
-      - '&7Die Waffe des gefallenen'
-      - '&7Nekromanten Malachar.'
-      - '&7Dunkle Energie pulsiert'
-      - '&7durch diesen verfluchten Stab.'
-      - ''
-      - '&5━━━━━━━━━━━━━━━━━━━━━━━━'
-      - '&c⚔ 45-65 Schaden'
-      - '&5+25% Magie-Schaden'
-      - '&5+15% Lebensraub'
-      - '&8☠ Chance auf Seelenraub'
-      - '&5━━━━━━━━━━━━━━━━━━━━━━━━'
-      - ''
-      - '&d⚡ Ability: Todesgriff'
-      - '&7Zieht Feinde zu dir und'
-      - '&7entzieht ihnen Leben.'
-      - '&8Abklingzeit: 15s'
-      - ''
-      - '&5&lLEGENDÄR'
-      - '&8Drop: Nekromant Malachar'
-    attack-damage: 55
-    attack-speed: 1.2
-    magic-damage: 25
-    lifesteal: 15
-    required-level: 45
-    tier: LEGENDARY
+    - '&7Wurde einst von einem Hoch-Nekromanten'
+    - '&7geführt, um ganze Armeen zu unterwerfen.'
+    - ''
+    - '&8Passive: &7Jeder Schlag entzieht Lebenskraft.'
+    - '&8Aktiv (Rechtsklick): &cVerfluchter Strahl'
+    tier: MYTHICAL
+    hide-enchants: true
+  attack-damage:
+    base: 35.0
+    scale: 2.0
+  attack-speed: 1.2
+  critical-strike-chance: 15.0
+  # Elementarer Schaden: Dunkelheit & Feuer
+  element:
+    darkness:
+      damage:
+        base: 20.0
+        scale: 1.5
+    fire:
+      damage:
+        base: 10.0
+        scale: 1.0
+  # Fähigkeiten: Lebensraub passiv + Aktiver Strahl
+  ability:
+    on-hit:
+      type: LIFE_STEAL
+      mode: ON_HIT
+      amount: 4.0
+      cooldown: 1.0
+    active:
+      type: CURSED_BEAM
+      mode: RIGHT_CLICK
+      damage: 40.0
+      duration: 3.0
+      cooldown: 20.0
+  enchants:
+    SHARPNESS: 5
+    FIRE_ASPECT: 2
 
 STAB_DER_LEERE:
   base:
-    material: NETHERITE_SWORD
-    name: '&0&lStab der Leere'
+    material: BLAZE_ROD
+    name: '&5&lZepter der Leere'
     lore:
-      - '&8Mythische Waffe'
-      - ''
-      - '&7Die Essenz der Leere selbst'
-      - '&7pulsiert durch diese Waffe.'
-      - '&7Wer sie trägt, hört das'
-      - '&7Flüstern der Dunkelheit...'
-      - ''
-      - '&8━━━━━━━━━━━━━━━━━━━━━━━━'
-      - '&c⚔ 55-85 Schaden'
-      - '&5+40% Magie-Schaden'
-      - '&0+25% Leere-Schaden (ignoriert Rüstung)'
-      - '&5+20 Max Mana'
-      - '&8━━━━━━━━━━━━━━━━━━━━━━━━'
-      - ''
-      - '&d⚡ Ability: Dimensionsriss'
-      - '&7Öffnet einen Riss der Feinde'
-      - '&7in einem Bereich schadet.'
-      - '&8Abklingzeit: 25s'
-      - ''
-      - '&5&lMYTHISCH'
-      - '&8Drop: Dunkler Magier Vexorin'
-    attack-damage: 70
-    attack-speed: 1.0
-    magic-damage: 40
-    max-mana: 20
-    required-level: 50
+    - '&7Kanalisiert die pure, kalte Energie'
+    - '&7des Nichts zwischen den Welten.'
+    - ''
+    - '&8Geist: &5Nether &8(Dunkle Projektile)'
+    - '&8Aktiv (Shift+Rechts): &5Gravitationsfeld'
     tier: MYTHICAL
-    required-class:
-      - 'MAGIER'
-      - 'BESCHWOERER'
+    hide-enchants: true
+  # Basis Magieschaden für den Linksklick-Angriff
+  magic-damage:
+    base: 45.0
+    scale: 3.0
+  # Der "Geist" bestimmt das Standard-Projektil
+  staff-spirit: NETHER_SPIRIT
+  # Elementarer Schaden: Dunkelheit & Eis (Die Kälte des Weltalls)
+  element:
+    darkness:
+      damage:
+        base: 30.0
+        scale: 2.0
+    ice:
+      damage:
+        base: 15.0
+        scale: 1.0
+  # Fähigkeit: Ein schwarzes Loch, das Gegner ansaugt
+  ability:
+    void-hole:
+      type: GRAVITY_WELL
+      mode: SHIFT_RIGHT_CLICK
+      duration: 5.0
+      radius: 8.0
+      cooldown: 35.0
+  enchants:
+    SOUL_SPEED: 3
 
 BERSERKER_KEULE_T1:
   base:
@@ -1570,48 +1584,5 @@ SCHATTEN_KLINGE:
     attack-damage: 40
     critical-strike-chance: 5
     required-level: 75
-STAB_DER_VERDAMMNIS:
-  base:
-    material: NETHERITE_SWORD
-    name: '&4&lStab der Verdammnis'
-    lore:
-    - '&7Wurde einst von einem Hoch-Nekromanten'
-    - '&7geführt, um ganze Armeen zu unterwerfen.'
-    - ''
-    - '&8Passive: &7Jeder Schlag entzieht Lebenskraft.'
-    - '&8Aktiv (Rechtsklick): &cVerfluchter Strahl'
-    tier: MYTHICAL
-    hide-enchants: true
-  attack-damage:
-    base: 35.0
-    scale: 2.0
-  attack-speed: 1.2
-  critical-strike-chance: 15.0
-  # Elementarer Schaden: Dunkelheit & Feuer
-  element:
-    darkness:
-      damage:
-        base: 20.0
-        scale: 1.5
-    fire:
-      damage:
-        base: 10.0
-        scale: 1.0
-  # Fähigkeiten: Lebensraub passiv + Aktiver Strahl
-  ability:
-    on-hit:
-      type: LIFE_STEAL
-      mode: ON_HIT
-      amount: 4.0
-      cooldown: 1.0
-    active:
-      type: CURSED_BEAM
-      mode: RIGHT_CLICK
-      damage: 40.0
-      duration: 3.0
-      cooldown: 20.0
-  enchants:
-    SHARPNESS: 5
-    FIRE_ASPECT: 2
 
 
