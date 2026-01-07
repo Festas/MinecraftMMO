@@ -6,20 +6,23 @@
 ZAUBERBUCH_FEUER:
   base:
     material: BOOK
-    name: '&9Feuerzauber-Buch'
+    name: '&cZauberbuch des Feuers'
     lore:
       - '&8Magier Offhand'
       - ''
-      - '&7Ein altes Buch voller Feuerzauber.'
-      - '&7Verstärkt Feuermagie erheblich.'
+      - '&7Ein Zauberbuch voller'
+      - '&7Feuerzauber-Wissen.'
       - ''
-      - '&9+25% Feuerschaden'
-      - '&9+15 Intelligenz'
-      - '&9+10% Skill-Schaden'
-      - '&9Verbrennung II'
+      - '&c+20% Feuerschaden'
+      - '&c+12 Magieschaden'
+      - '&c+45 Max Mana'
+      - '&c+10% Skill-Schaden'
+      - ''
+      - '&d⚡ Bonus: Verbrennung II'
+      - '&8Angriffe setzen Feinde in Brand'
       - ''
       - '&8Benötigt Level 18'
-  magic-damage: 8
+  magic-damage: 12
   max-mana: 45
   skill-damage: 10
   required-level: 18
@@ -29,20 +32,23 @@ ZAUBERBUCH_FEUER:
 ZAUBERBUCH_FROST:
   base:
     material: BOOK
-    name: '&9Frostzauber-Buch'
+    name: '&bZauberbuch des Frostes'
     lore:
       - '&8Magier Offhand'
       - ''
-      - '&7Ein eisiges Buch voller Frostzauber.'
-      - '&7Verstärkt Frostmagie erheblich.'
+      - '&7Ein Zauberbuch voller'
+      - '&7Frostzauber-Wissen.'
       - ''
-      - '&9+25% Frostschaden'
-      - '&9+15 Intelligenz'
-      - '&9+10% Skill-Schaden'
-      - '&9Verlangsamung II'
+      - '&b+20% Frostschaden'
+      - '&b+12 Magieschaden'
+      - '&b+45 Max Mana'
+      - '&b+10% Skill-Schaden'
+      - ''
+      - '&d⚡ Bonus: Verlangsamung II'
+      - '&8Angriffe verlangsamen Feinde'
       - ''
       - '&8Benötigt Level 18'
-  magic-damage: 8
+  magic-damage: 12
   max-mana: 45
   skill-damage: 10
   required-level: 18
@@ -52,22 +58,27 @@ ZAUBERBUCH_FROST:
 ZAUBERBUCH_BLITZ:
   base:
     material: BOOK
-    name: '&9Blitzzauber-Buch'
+    name: '&eZauberbuch des Blitzes'
     lore:
       - '&8Magier Offhand'
       - ''
-      - '&7Ein elektrisches Buch voller Blitzzauber.'
-      - '&7Entfesselt Gewitterstürme.'
+      - '&7Ein Zauberbuch voller'
+      - '&7Blitzzauber-Wissen.'
       - ''
-      - '&9+30% Blitzschaden'
-      - '&9+20 Intelligenz'
-      - '&9+15% Skill-Schaden'
-      - '&9Kettenblitz'
+      - '&e+25% Blitzschaden'
+      - '&e+18 Magieschaden'
+      - '&e+60 Max Mana'
+      - '&e+15% Skill-Schaden'
+      - '&e-8% Cooldown-Reduktion'
+      - ''
+      - '&d⚡ Bonus: Kettenblitz'
+      - '&8Angriffe springen zu nahen Feinden'
       - ''
       - '&8Benötigt Level 25'
-  magic-damage: 12
+  magic-damage: 18
   max-mana: 60
   skill-damage: 15
+  cooldown-reduction: 8
   required-level: 25
   required-class:
     - 'MAGIER'

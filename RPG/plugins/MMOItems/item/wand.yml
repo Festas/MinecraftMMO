@@ -169,17 +169,20 @@ SCHAMANE_NATURSTAB_T3:
     lore:
       - '&8Schamane Waffe'
       - ''
-      - '&7Ein Stab, der mit den'
-      - '&7Geistern der Natur kommuniziert.'
+      - '&7Ein Stab, durchdrungen von'
+      - '&7der Macht der Naturgeister.'
       - ''
-      - '&9+20 HP/s Heilung'
-      - '&9+18% Heilungskraft'
-      - '&9+8 Intelligenz'
-      - '&9Naturzauber verstärkt'
+      - '&9+22 HP/s Heilung'
+      - '&9+20% Heilungskraft'
+      - '&9+14 Magieschaden'
+      - '&9+55 Max Mana'
+      - ''
+      - '&d⚡ Passiv: Naturzauber verstärkt'
       - ''
       - '&8Benötigt Level 22'
   magic-damage: 14
-  health-regeneration: 20
+  max-mana: 55
+  health-regeneration: 22
   required-level: 22
   required-class:
     - 'SCHAMANE'
@@ -191,17 +194,22 @@ SCHAMANE_NATURSTAB_T4:
     lore:
       - '&8Schamane Waffe'
       - ''
-      - '&7Ein mit Runen verzierter Stab'
-      - '&7von enormer Heilkraft.'
+      - '&7Ein mächtiger Stab mit'
+      - '&7uralten Naturrunen verziert.'
       - ''
-      - '&5+35 HP/s Heilung'
-      - '&5+32% Heilungskraft'
-      - '&5+15 Intelligenz'
-      - '&5Totem-Verstärkung'
+      - '&5+38 HP/s Heilung'
+      - '&5+35% Heilungskraft'
+      - '&5+24 Magieschaden'
+      - '&5+90 Max Mana'
+      - '&5+12% Skill-Schaden'
+      - ''
+      - '&d⚡ Passiv: Totem-Verstärkung'
       - ''
       - '&8Benötigt Level 38'
-  magic-damage: 22
-  health-regeneration: 35
+  magic-damage: 24
+  max-mana: 90
+  health-regeneration: 38
+  skill-damage: 12
   required-level: 38
   required-class:
     - 'SCHAMANE'

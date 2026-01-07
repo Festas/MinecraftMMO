@@ -375,32 +375,30 @@ GEMEINSAM_NACHTSICHT:
 HEILTRANK_KLEIN:
   base:
     material: POTION
-    name: '&fKleiner Heiltrank'
+    name: '&aKleiner Heiltrank'
     lore:
       - '&8Verbrauchsgegenstand'
       - ''
       - '&7Ein einfacher Heiltrank.'
-      - '&7Stellt 30 HP wieder her.'
       - ''
       - '&c❤ +30 Heilung'
       - '&e⌛ 30s Cooldown'
       - ''
-      - '&8Benötigt Level 1'
+      - '&8Für alle Klassen'
   restore-health: 30
   required-level: 1
 
 HEILTRANK_MITTEL:
   base:
     material: POTION
-    name: '&aHeiltrank'
+    name: '&2Mittlerer Heiltrank'
     lore:
       - '&8Verbrauchsgegenstand'
       - ''
-      - '&7Ein mittlerer Heiltrank.'
-      - '&7Stellt 75 HP wieder her.'
+      - '&7Ein solider Heiltrank.'
       - ''
       - '&c❤ +75 Heilung'
-      - '&e⌛ 30s Cooldown'
+      - '&e⌛ 28s Cooldown'
       - ''
       - '&8Benötigt Level 12'
   restore-health: 75
@@ -413,11 +411,11 @@ HEILTRANK_GROSS:
     lore:
       - '&8Verbrauchsgegenstand'
       - ''
-      - '&7Ein großer Heiltrank.'
-      - '&7Stellt 150 HP wieder her.'
+      - '&7Ein mächtiger Heiltrank.'
       - ''
       - '&c❤ +150 Heilung'
-      - '&e⌛ 28s Cooldown'
+      - '&a+3s Regeneration'
+      - '&e⌛ 25s Cooldown'
       - ''
       - '&8Benötigt Level 25'
   restore-health: 150
@@ -426,12 +424,11 @@ HEILTRANK_GROSS:
 MANATRANK_KLEIN:
   base:
     material: POTION
-    name: '&fKleiner Manatrank'
+    name: '&bKleiner Manatrank'
     lore:
       - '&8Verbrauchsgegenstand'
       - ''
       - '&7Ein einfacher Manatrank.'
-      - '&7Stellt 25 Mana wieder her.'
       - ''
       - '&9✦ +25 Mana'
       - '&e⌛ 25s Cooldown'
@@ -443,15 +440,14 @@ MANATRANK_KLEIN:
 MANATRANK_MITTEL:
   base:
     material: POTION
-    name: '&aMittlerer Manatrank'
+    name: '&3Mittlerer Manatrank'
     lore:
       - '&8Verbrauchsgegenstand'
       - ''
-      - '&7Ein mittlerer Manatrank.'
-      - '&7Stellt 60 Mana wieder her.'
+      - '&7Ein solider Manatrank.'
       - ''
       - '&9✦ +60 Mana'
-      - '&e⌛ 23s Cooldown'
+      - '&e⌛ 22s Cooldown'
       - ''
       - '&8Benötigt Level 15'
   restore-mana: 60
@@ -464,10 +460,10 @@ MANATRANK_GROSS:
     lore:
       - '&8Verbrauchsgegenstand'
       - ''
-      - '&7Ein großer Manatrank.'
-      - '&7Stellt 120 Mana wieder her.'
+      - '&7Ein mächtiger Manatrank.'
       - ''
       - '&9✦ +120 Mana'
+      - '&a+3s Mana-Regeneration'
       - '&e⌛ 20s Cooldown'
       - ''
       - '&8Benötigt Level 28'
@@ -477,11 +473,11 @@ MANATRANK_GROSS:
 STAERKUNGSTRANK:
   base:
     material: SPLASH_POTION
-    name: '&9Stärkungstrank'
+    name: '&cStärkungstrank'
     lore:
       - '&8Verbrauchsgegenstand'
       - ''
-      - '&7Ein Trank, der deine Kraft erhöht.'
+      - '&7Erhöht temporär den Schaden.'
       - ''
       - '&c+15% Schaden'
       - '&a⏱ 60s Dauer'
@@ -493,13 +489,13 @@ STAERKUNGSTRANK:
 GESCHWINDIGKEITSTRANK:
   base:
     material: SPLASH_POTION
-    name: '&aGeschwindigkeitstrank'
+    name: '&eGeschwindigkeitstrank'
     lore:
       - '&8Verbrauchsgegenstand'
       - ''
-      - '&7Ein Trank, der dich schneller macht.'
+      - '&7Erhöht temporär die Geschwindigkeit.'
       - ''
-      - '&a+20% Bewegungsgeschwindigkeit'
+      - '&e+20% Bewegungsgeschwindigkeit'
       - '&a⏱ 45s Dauer'
       - '&e⌛ 60s Cooldown'
       - ''
@@ -513,9 +509,9 @@ VERTEIDIGUNGSTRANK:
     lore:
       - '&8Verbrauchsgegenstand'
       - ''
-      - '&7Ein Trank, der deine Rüstung verstärkt.'
+      - '&7Erhöht temporär die Rüstung.'
       - ''
-      - '&6+20% Rüstung'
+      - '&9+20% Rüstung'
       - '&a⏱ 60s Dauer'
       - '&e⌛ 75s Cooldown'
       - ''
@@ -525,11 +521,11 @@ VERTEIDIGUNGSTRANK:
 KRITISCHER_TRANK:
   base:
     material: SPLASH_POTION
-    name: '&5Kritischer Trank'
+    name: '&6Kritischer Trank'
     lore:
       - '&8Verbrauchsgegenstand'
       - ''
-      - '&7Ein Trank, der kritische Treffer verstärkt.'
+      - '&7Erhöht temporär die Krit-Chance.'
       - ''
       - '&6+15% Kritische Trefferchance'
       - '&a⏱ 45s Dauer'
@@ -545,8 +541,7 @@ GEGENGIFT:
     lore:
       - '&8Verbrauchsgegenstand'
       - ''
-      - '&7Ein Gegengift, das alle'
-      - '&7Gift-Effekte entfernt.'
+      - '&7Entfernt alle Vergiftungen.'
       - ''
       - '&2☠ Entfernt Gift'
       - '&e⌛ 45s Cooldown'
@@ -557,11 +552,11 @@ GEGENGIFT:
 REGENERATIONSTRANK:
   base:
     material: POTION
-    name: '&aRegenerationstrank'
+    name: '&dRegenerationstrank'
     lore:
       - '&8Verbrauchsgegenstand'
       - ''
-      - '&7Ein Trank, der dich über Zeit heilt.'
+      - '&7Heilt dich über Zeit.'
       - ''
       - '&c+8 HP/s'
       - '&a⏱ 30s Dauer'
