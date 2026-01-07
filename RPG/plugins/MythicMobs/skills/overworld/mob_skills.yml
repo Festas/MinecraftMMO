@@ -628,7 +628,7 @@ WurzelFalle:
 # Rudel Ruf (Zone 1 & 2)
 RudelRuf:
   Skills:
-  - summon{m=WALDWOLF;a=2;r=5} @self
+  - summon{m=WOLF;a=2;r=5} @self
   - potion{t=INCREASE_DAMAGE;d=200;l=1} @MobsInRadius{r=20;t=WOLF}
   - particles{p=angry_villager;a=30;hS=8;vS=3} @self
   - sound{s=entity.wolf.howl;v=2}
