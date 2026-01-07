@@ -8,68 +8,76 @@ GROSSSTAB_T2:
     material: BLAZE_ROD
     name: '&aElementar-Großstab'
     lore:
-      - '&8Magier Waffe (Großstab)'
+      - '&8Magier Waffe (Zweihändig)'
       - ''
-      - '&7Ein großer Stab mit elementarer Macht.'
-      - '&7Vielseitig und mächtig.'
+      - '&7Ein mächtiger Großstab,'
+      - '&7der elementare Kräfte kanalisiert.'
       - ''
-      - '&a+10 Intelligenz'
-      - '&a+8% Skill-Schaden'
+      - '&a+18 Magieschaden'
+      - '&a+55 Max Mana'
+      - '&a+10% Skill-Schaden'
+      - '&a+8 Intelligenz'
       - ''
       - '&8Benötigt Level 15'
-  magic-damage: 16
+  magic-damage: 18
   max-mana: 55
-  skill-damage: 8
-  attack-speed: 0.9
+  skill-damage: 10
   required-level: 15
   required-class:
     - 'MAGIER'
+    - 'BESCHWOERER'
 
 GROSSSTAB_T3:
   base:
     material: BLAZE_ROD
     name: '&9Arkaner Großstab'
     lore:
-      - '&8Magier Waffe (Großstab)'
+      - '&8Magier Waffe (Zweihändig)'
       - ''
-      - '&7Ein arkaner Großstab mit'
-      - '&7immenser magischer Kraft.'
+      - '&7Ein arkaner Großstab voller'
+      - '&7mystischer Energie.'
       - ''
-      - '&9+18 Intelligenz'
-      - '&9+15% Skill-Schaden'
+      - '&9+28 Magieschaden'
+      - '&9+85 Max Mana'
+      - '&9+18% Skill-Schaden'
+      - '&9+15 Intelligenz'
       - '&9-8% Cooldown-Reduktion'
       - ''
       - '&8Benötigt Level 25'
-  magic-damage: 25
-  max-mana: 95
-  skill-damage: 15
+  magic-damage: 28
+  max-mana: 85
+  skill-damage: 18
   cooldown-reduction: 8
-  attack-speed: 0.9
   required-level: 25
   required-class:
     - 'MAGIER'
+    - 'BESCHWOERER'
 
 GROSSSTAB_T4:
   base:
     material: END_ROD
-    name: '&5Meister-Großstab'
+    name: '&5Runen-Großstab der Macht'
     lore:
-      - '&8Magier Waffe (Großstab)'
+      - '&8Magier Waffe (Zweihändig)'
       - ''
-      - '&7Der Stab eines wahren Meisters.'
-      - '&7Entfesselt verheerende Magie.'
+      - '&7Ein epischer Großstab mit'
+      - '&7uralten Runen der Macht.'
       - ''
-      - '&5+30 Intelligenz'
-      - '&5+24% Skill-Schaden'
+      - '&5+45 Magieschaden'
+      - '&5+130 Max Mana'
+      - '&5+28% Skill-Schaden'
+      - '&5+24 Intelligenz'
       - '&5-15% Cooldown-Reduktion'
-      - '&5+50 Max Mana'
+      - ''
+      - '&d⚡ Passiv: Mana-Schild'
+      - '&810% Schaden wird durch Mana absorbiert'
       - ''
       - '&8Benötigt Level 40'
-  magic-damage: 40
-  max-mana: 150
-  skill-damage: 24
+  magic-damage: 45
+  max-mana: 130
+  skill-damage: 28
   cooldown-reduction: 15
-  attack-speed: 0.9
   required-level: 40
   required-class:
     - 'MAGIER'
+    - 'BESCHWOERER'

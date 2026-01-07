@@ -278,67 +278,70 @@ ASSASSINE_OFFHAND_WURFSET_T6:
 FEUER_KATALYSATOR:
   base:
     material: BLAZE_POWDER
-    name: '&aFeuer-Katalysator'
+    name: '&cFeuer-Katalysator'
     lore:
       - '&8Magier Offhand'
       - ''
       - '&7Ein Katalysator voller Feuermagie.'
-      - '&7Verstärkt Feuerzauber.'
+      - '&7Verstärkt Feuerzauber enorm.'
       - ''
-      - '&a+12% Feuerschaden'
-      - '&a+8 Intelligenz'
-      - '&a+5% Skill-Schaden'
+      - '&c+15% Feuerschaden'
+      - '&c+10 Intelligenz'
+      - '&c+8% Skill-Schaden'
+      - '&c+30 Max Mana'
       - ''
       - '&8Benötigt Level 15'
-  magic-damage: 5
-  max-mana: 25
-  skill-damage: 5
+  magic-damage: 6
+  max-mana: 30
+  skill-damage: 8
   required-level: 15
   required-class:
     - 'MAGIER'
 
 FROST_KATALYSATOR:
   base:
-    material: SNOWBALL
-    name: '&aFrost-Katalysator'
+    material: BLUE_ICE
+    name: '&bFrost-Katalysator'
     lore:
       - '&8Magier Offhand'
       - ''
       - '&7Ein Katalysator voller Kältemagie.'
-      - '&7Verstärkt Frostzauber.'
+      - '&7Verstärkt Frostzauber enorm.'
       - ''
-      - '&a+12% Frostschaden'
-      - '&a+8 Intelligenz'
-      - '&a+5% Skill-Schaden'
+      - '&b+15% Frostschaden'
+      - '&b+10 Intelligenz'
+      - '&b+8% Skill-Schaden'
+      - '&b+30 Max Mana'
       - ''
       - '&8Benötigt Level 15'
-  magic-damage: 5
-  max-mana: 25
-  skill-damage: 5
+  magic-damage: 6
+  max-mana: 30
+  skill-damage: 8
   required-level: 15
   required-class:
     - 'MAGIER'
 
 ARKAN_KATALYSATOR:
   base:
-    material: ENDER_PEARL
-    name: '&9Arkan-Katalysator'
+    material: END_CRYSTAL
+    name: '&5Arkan-Katalysator'
     lore:
       - '&8Magier Offhand'
       - ''
       - '&7Ein Katalysator voller arkaner Macht.'
-      - '&7Verstärkt alle Magieschäden.'
+      - '&7Verstärkt alle Magieschäden erheblich.'
       - ''
-      - '&9+20% Magieschaden'
-      - '&9+15 Intelligenz'
-      - '&9+12% Skill-Schaden'
-      - '&9-8% Cooldown-Reduktion'
+      - '&5+22% Magieschaden'
+      - '&5+18 Intelligenz'
+      - '&5+15% Skill-Schaden'
+      - '&5+55 Max Mana'
+      - '&5-10% Cooldown-Reduktion'
       - ''
       - '&8Benötigt Level 25'
-  magic-damage: 10
-  max-mana: 45
-  skill-damage: 12
-  cooldown-reduction: 8
+  magic-damage: 12
+  max-mana: 55
+  skill-damage: 15
+  cooldown-reduction: 10
   required-level: 25
   required-class:
     - 'MAGIER'
@@ -353,14 +356,15 @@ NATUR_KATALYSATOR:
       - '&7Ein Katalysator voller Naturmagie.'
       - '&7Verstärkt Heilungszauber.'
       - ''
-      - '&a+18% Heilungskraft'
-      - '&a+12 Intelligenz'
-      - '&a+8 HP Regeneration'
+      - '&a+20% Heilungskraft'
+      - '&a+14 Intelligenz'
+      - '&a+10 HP Regeneration'
+      - '&a+40 Max Mana'
       - ''
       - '&8Benötigt Level 20'
-  magic-damage: 6
-  max-mana: 35
-  health-regeneration: 8
+  magic-damage: 8
+  max-mana: 40
+  health-regeneration: 10
   required-level: 20
   required-class:
     - 'SCHAMANE'
@@ -373,18 +377,21 @@ TOTEM_HEILUNG:
     lore:
       - '&8Schamane Katalysator'
       - ''
-      - '&7Ein Totem, das Verbündete'
-      - '&7im Umkreis heilt.'
+      - '&7Ein heiliges Totem, das'
+      - '&7alle Verbündeten im Umkreis heilt.'
       - ''
-      - '&a+25% Heilungskraft'
-      - '&a+15 HP Regeneration'
-      - '&a+10 Intelligenz'
-      - '&aHeilt Verbündete im Umkreis'
+      - '&a+28% Heilungskraft'
+      - '&a+18 HP Regeneration'
+      - '&a+12 Intelligenz'
+      - '&a+45 Max Mana'
+      - ''
+      - '&d⚡ Passiv: Heilungsaura'
+      - '&8Heilt Verbündete im 8-Block-Radius'
       - ''
       - '&8Benötigt Level 20'
-  magic-damage: 8
-  health-regeneration: 15
-  max-mana: 40
+  magic-damage: 10
+  health-regeneration: 18
+  max-mana: 45
   required-level: 20
   required-class:
     - 'SCHAMANE'
@@ -396,19 +403,22 @@ TOTEM_SCHUTZ:
     lore:
       - '&8Schamane Katalysator'
       - ''
-      - '&7Ein Totem, das Verbündete'
-      - '&7im Umkreis schützt.'
+      - '&7Ein schützendes Totem, das'
+      - '&7Verbündeten Schadensreduzierung gewährt.'
       - ''
-      - '&9+15% Schadensreduzierung'
-      - '&9+12 Rüstung'
-      - '&9+12 Intelligenz'
-      - '&9Gewährt Schutz im Umkreis'
+      - '&9+18% Schadensreduzierung'
+      - '&9+15 Rüstung'
+      - '&9+14 Intelligenz'
+      - '&9+50 Max Mana'
+      - ''
+      - '&d⚡ Passiv: Schutzaura'
+      - '&8Reduziert Schaden im 8-Block-Radius'
       - ''
       - '&8Benötigt Level 25'
-  magic-damage: 10
-  armor: 12
-  damage-reduction: 15
-  max-mana: 45
+  magic-damage: 12
+  armor: 15
+  damage-reduction: 18
+  max-mana: 50
   required-level: 25
   required-class:
     - 'SCHAMANE'
@@ -420,18 +430,21 @@ TOTEM_STAERKE:
     lore:
       - '&8Schamane Katalysator'
       - ''
-      - '&7Ein Totem, das die Kraft'
-      - '&7von Verbündeten verstärkt.'
+      - '&7Ein kraftvolles Totem, das'
+      - '&7den Schaden von Verbündeten erhöht.'
       - ''
-      - '&c+12% Schadensbonus'
-      - '&c+15 Angriffskraft'
-      - '&c+14 Intelligenz'
-      - '&cVerstärkt Angriffe im Umkreis'
+      - '&c+15% Schadensbonus'
+      - '&c+18 Angriffskraft'
+      - '&c+16 Intelligenz'
+      - '&c+55 Max Mana'
+      - ''
+      - '&d⚡ Passiv: Kriegsaura'
+      - '&8Verstärkt Angriffe im 8-Block-Radius'
       - ''
       - '&8Benötigt Level 28'
-  magic-damage: 12
-  attack-damage: 15
-  max-mana: 50
+  magic-damage: 14
+  attack-damage: 18
+  max-mana: 55
   required-level: 28
   required-class:
     - 'SCHAMANE'
