@@ -58,11 +58,13 @@ HinterhaltArachnia:
   - 'message{m="&c&lArachnia: &7Hinter dir..."} @target'
   - effect:particles{p=LARGE_SMOKE;a=50;hS=2;vS=2} @self
   - effect:sound{s=entity.enderman.teleport;v=1;p=0.8} @self
-  - potion{t=INVISIBILITY;d=60;l=1} @self
+  # KORRIGIERT: Alte Syntax 'removepotioneffect' entfernt
+  - potion{type=INVISIBILITY;duration=60;level=1} @self
   - delay 20
   - teleport{l=true} @targetlocation{yoffset=0;xoffset=0;zoffset=-2}
   - delay 5
-  - potion{t=INVISIBILITY;d=0;l=0} @self
+  # KORRIGIERT: Unsichtbarkeit entfernen mit neuer Syntax
+  - potion{type=INVISIBILITY;action=REMOVE} @self
   - damage{a=25} @target
   - effect:particles{p=LARGE_SMOKE;a=50;hS=2;vS=2} @self
   - effect:sound{s=entity.spider.ambient;v=2;p=0.5} @self
@@ -81,11 +83,13 @@ BeschwoereGiftspinnen:
 UnsichtbarAngriff:
   Skills:
   - 'message{m="&c&lArachnia: &7Versucht mich doch zu finden!"} @PlayersInRadius{r=30}'
-  - potion{t=INVISIBILITY;d=60;l=1} @self
+  # KORRIGIERT: Syntax angepasst
+  - potion{type=INVISIBILITY;duration=60;level=1} @self
   - effect:particles{p=LARGE_SMOKE;a=100;hS=3;vS=3} @self
   - effect:sound{s=entity.enderman.teleport;v=1.5;p=1} @self
   - delay 60
-  - potion{t=INVISIBILITY;d=0;l=0} @self
+  # KORRIGIERT: Unsichtbarkeit entfernen
+  - potion{type=INVISIBILITY;action=REMOVE} @self
   - damage{a=30} @PlayersInRadius{r=3}
   - effect:particles{p=crit;a=50;hS=2;vS=2} @self
 
@@ -165,3 +169,4 @@ ArachniaDeathDialog:
   - effect:sound{s=entity.spider.death;v=2;p=0.5} @self
   - delay 20
   - skill{s=BossDeathEffects} @self
+
