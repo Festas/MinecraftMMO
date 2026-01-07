@@ -1,13 +1,12 @@
 # ===================================================
 # Boss Drops - Slayer Tier V Bosse
-# MMOItems Integration
+# MMOItems Integration für Legendary Weapons und Quest Items
 # ===================================================
 
-# WICHTIG: Die Typen (sword, material, etc.) müssen mit den Dateinamen in MMOItems übereinstimmen!
+# ==========================================
+# Nekromant Malachar - Drops
+# ==========================================
 
-# ==========================================
-# Nekromant Malachar
-# ==========================================
 StabDerVerdammnis:
   Id: MMOITEMS:sword:STAB_DER_VERDAMMNIS
   Display: '&5&lStab der Verdammnis'
@@ -17,8 +16,9 @@ SeeleDesNekromanten:
   Display: '&5Seele des Nekromanten'
 
 # ==========================================
-# Spinnenkönigin Arachnia
+# Spinnenkönigin Arachnia - Drops
 # ==========================================
+
 SpinnenseideBogen:
   Id: MMOITEMS:bow:SPINNENSEIDE_BOGEN
   Display: '&2&lSpinnenseide-Bogen'
@@ -28,10 +28,10 @@ HerzDerKoenigin:
   Display: '&4Herz der Königin'
 
 # ==========================================
-# Dunkler Magier Vexorin
+# Dunkler Magier Vexorin - Drops
 # ==========================================
+
 StabDerLeere:
-  # Geändert auf 'staff', da wir das Item in staff.yml verschieben
   Id: MMOITEMS:staff:STAB_DER_LEERE
   Display: '&0&lStab der Leere'
 
@@ -39,13 +39,29 @@ FragmentDerLeere:
   Id: MMOITEMS:material:FRAGMENT_DER_LEERE
   Display: '&0Fragment der Leere'
 
-LeereRuestungTeil:
-  Id: MMOITEMS:armor:LEERE_RUESTUNG_TEIL
-  Display: '&8&lLeere-Brustplatte'
+# --- Leere Set (Komplett) ---
+
+LeereHelm:
+  Id: MMOITEMS:armor:LEERE_HELM
+  Display: '&0&lHelm der Leere'
+
+LeereBrustplatte:
+  # Umbenannt von "LeereRuestungTeil" zu "LeereBrustplatte" für Klarheit
+  Id: MMOITEMS:armor:LEERE_BRUSTPLATTE
+  Display: '&0&lBrustplatte der Leere'
+
+LeereBeinschutz:
+  Id: MMOITEMS:armor:LEERE_BEINSCHUTZ
+  Display: '&0&lBeinschutz der Leere'
+
+LeereStiefel:
+  Id: MMOITEMS:armor:LEERE_STIEFEL
+  Display: '&0&lStiefel der Leere'
 
 # ==========================================
-# Währung
+# Währung (Global)
 # ==========================================
+
 GoldCoin:
   Id: MMOITEMS:material:GOLD_COIN
   Display: '&6Goldmünze'
