@@ -114,7 +114,7 @@ SpawnEliteMaya:
   - outside true
 
 SpawnMayaGott:
-  Type: MAYA_GOTT
+  Type: MAYA_SONNENGOTT
   Worlds: world
   Chance: 0.006
   Priority: 3
