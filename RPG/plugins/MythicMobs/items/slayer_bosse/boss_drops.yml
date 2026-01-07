@@ -193,3 +193,340 @@ GoldCoin:
   Lore:
   - '&7Währung für Händler.'
   Model: 0
+
+# ==========================================
+# Frostkönig Glacius - Drops
+# ==========================================
+
+Frostklinge:
+  Id: DIAMOND_SWORD
+  Display: '&b&lFrostklinge'
+  Lore:
+  - '&7Eine Klinge aus purem Eis,'
+  - '&7die niemals schmilzt.'
+  - ''
+  - '&8Passive: &7Verlangsamt Gegner.'
+  - '&8Aktiv (Rechtsklick): &bFroststoß'
+  - ''
+  - '&c&lLEGENDÄR'
+  Enchantments:
+  - SHARPNESS:5
+  - KNOCKBACK:2
+  Attributes:
+    MainHand:
+      AttackDamage: 12
+      AttackSpeed: 1.4
+  Options:
+    Unbreakable: true
+    HideAttributes: true
+
+HerzDesFrostkoenigs:
+  Id: NETHER_STAR
+  Display: '&bHerz des Frostkönigs'
+  Lore:
+  - '&7Ein eisiges Herz, das niemals'
+  - '&7aufhört zu schlagen.'
+  - ''
+  - '&8Verwendung: Frost-Crafting'
+  Options:
+    Glow: true
+
+# --- Frost Set (Komplett) ---
+
+FrostHelm:
+  Id: DIAMOND_HELMET
+  Display: '&b&lHelm des Frostes'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Ein Helm aus ewigem Eis.'
+  - ''
+  - '&8Drop: Frostkönig Glacius'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Head:
+      Armor: 3
+      ArmorToughness: 2
+  Options:
+    Unbreakable: true
+
+FrostBrustplatte:
+  Id: DIAMOND_CHESTPLATE
+  Display: '&b&lBrustplatte des Frostes'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Eine Brustplatte aus ewigem Eis.'
+  - ''
+  - '&8Drop: Frostkönig Glacius'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Chest:
+      Armor: 8
+      ArmorToughness: 2
+  Options:
+    Unbreakable: true
+
+FrostBeinschutz:
+  Id: DIAMOND_LEGGINGS
+  Display: '&b&lBeinschutz des Frostes'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Ein Beinschutz aus ewigem Eis.'
+  - ''
+  - '&8Drop: Frostkönig Glacius'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Legs:
+      Armor: 6
+      ArmorToughness: 2
+  Options:
+    Unbreakable: true
+
+FrostStiefel:
+  Id: DIAMOND_BOOTS
+  Display: '&b&lStiefel des Frostes'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Stiefel aus ewigem Eis.'
+  - ''
+  - '&8Drop: Frostkönig Glacius'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Feet:
+      Armor: 3
+      ArmorToughness: 2
+      MovementSpeed: 0.03
+  Options:
+    Unbreakable: true
+
+# ==========================================
+# Flammenkaiser Ignis - Drops
+# ==========================================
+
+Flammenzunge:
+  Id: NETHERITE_SWORD
+  Display: '&6&lFlammenzunge'
+  Lore:
+  - '&7Ein Schwert geschmiedet aus'
+  - '&7den Flammen der Hölle.'
+  - ''
+  - '&8Passive: &7Zündet Gegner an.'
+  - '&8Aktiv (Rechtsklick): &6Feuerstoß'
+  - ''
+  - '&c&lLEGENDÄR'
+  Enchantments:
+  - SHARPNESS:5
+  - FIRE_ASPECT:3
+  Attributes:
+    MainHand:
+      AttackDamage: 14
+      AttackSpeed: 1.3
+  Options:
+    Unbreakable: true
+    HideAttributes: true
+
+EssenzDesFeuers:
+  Id: BLAZE_POWDER
+  Display: '&6Essenz des Feuers'
+  Lore:
+  - '&7Die pure Essenz des Feuers'
+  - '&7in physischer Form.'
+  - ''
+  - '&8Verwendung: Flammen-Crafting'
+  Options:
+    Glow: true
+
+# --- Flammen Set (Komplett) ---
+
+FlammenHelm:
+  Id: NETHERITE_HELMET
+  Display: '&6&lHelm der Flammen'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Ein Helm aus ewigen Flammen.'
+  - ''
+  - '&8Drop: Flammenkaiser Ignis'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Head:
+      Armor: 4
+      ArmorToughness: 3
+  Options:
+    Unbreakable: true
+
+FlammenBrustplatte:
+  Id: NETHERITE_CHESTPLATE
+  Display: '&6&lBrustplatte der Flammen'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Eine Brustplatte aus ewigen Flammen.'
+  - ''
+  - '&8Drop: Flammenkaiser Ignis'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Chest:
+      Armor: 9
+      ArmorToughness: 3
+  Options:
+    Unbreakable: true
+
+FlammenBeinschutz:
+  Id: NETHERITE_LEGGINGS
+  Display: '&6&lBeinschutz der Flammen'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Ein Beinschutz aus ewigen Flammen.'
+  - ''
+  - '&8Drop: Flammenkaiser Ignis'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Legs:
+      Armor: 7
+      ArmorToughness: 3
+  Options:
+    Unbreakable: true
+
+FlammenStiefel:
+  Id: NETHERITE_BOOTS
+  Display: '&6&lStiefel der Flammen'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Stiefel aus ewigen Flammen.'
+  - ''
+  - '&8Drop: Flammenkaiser Ignis'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Feet:
+      Armor: 4
+      ArmorToughness: 3
+      MovementSpeed: 0.04
+  Options:
+    Unbreakable: true
+
+# ==========================================
+# Schattenfürst Nyx - Drops
+# ==========================================
+
+Nachtklinge:
+  Id: NETHERITE_SWORD
+  Display: '&8&lNachtklinge'
+  Lore:
+  - '&7Eine Klinge geschmiedet aus'
+  - '&7purer Dunkelheit.'
+  - ''
+  - '&8Passive: &7Blendet Gegner.'
+  - '&8Aktiv (Rechtsklick): &8Schattenstoß'
+  - ''
+  - '&c&lLEGENDÄR'
+  Enchantments:
+  - SHARPNESS:5
+  - LOOTING:3
+  Attributes:
+    MainHand:
+      AttackDamage: 13
+      AttackSpeed: 1.5
+  Options:
+    Unbreakable: true
+    HideAttributes: true
+
+FragmentDerDunkelheit:
+  Id: ECHO_SHARD
+  Display: '&8Fragment der Dunkelheit'
+  Lore:
+  - '&7Ein Fragment aus dem Reich'
+  - '&7der ewigen Schatten.'
+  - ''
+  - '&8Verwendung: Schatten-Crafting'
+  Options:
+    Glow: true
+
+# --- Schatten Set (Komplett) ---
+
+SchattenHelm:
+  Id: NETHERITE_HELMET
+  Display: '&8&lHelm der Schatten'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Ein Helm aus reinen Schatten.'
+  - ''
+  - '&8Drop: Schattenfürst Nyx'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Head:
+      Armor: 4
+      ArmorToughness: 3
+  Options:
+    Unbreakable: true
+
+SchattenBrustplatte:
+  Id: NETHERITE_CHESTPLATE
+  Display: '&8&lBrustplatte der Schatten'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Eine Brustplatte aus reinen Schatten.'
+  - ''
+  - '&8Drop: Schattenfürst Nyx'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Chest:
+      Armor: 9
+      ArmorToughness: 3
+  Options:
+    Unbreakable: true
+
+SchattenBeinschutz:
+  Id: NETHERITE_LEGGINGS
+  Display: '&8&lBeinschutz der Schatten'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Ein Beinschutz aus reinen Schatten.'
+  - ''
+  - '&8Drop: Schattenfürst Nyx'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Legs:
+      Armor: 7
+      ArmorToughness: 3
+  Options:
+    Unbreakable: true
+
+SchattenStiefel:
+  Id: NETHERITE_BOOTS
+  Display: '&8&lStiefel der Schatten'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Stiefel aus reinen Schatten.'
+  - ''
+  - '&8Drop: Schattenfürst Nyx'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Feet:
+      Armor: 4
+      ArmorToughness: 3
+      MovementSpeed: 0.06
+  Options:
+    Unbreakable: true
+

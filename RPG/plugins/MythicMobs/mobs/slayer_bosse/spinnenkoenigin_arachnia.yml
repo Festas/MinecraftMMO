@@ -58,6 +58,16 @@ SpinnenkoeniginArachnia:
   - mmoitems{type=MATERIAL;id=GOLD_COIN;amount=2500} 1.0
   # XP
   - exp 4000
-  # Legendary Bow (30% Chance)
-  - mmoitems{type=BOW;id=SPINNENSEIDE_BOGEN} 0.3
+  # Legendary Bow (30% Chance) - Using MythicMobs native item
+  - SpinnenseideBogen 1 0.3
+
+  # ==========================================
+  # Boss Bar
+  # ==========================================
+  BossBar:
+    Enabled: true
+    Title: '&c&lSpinnenkönigin Arachnia'
+    Color: RED
+    Style: SOLID
+    Range: 50
 

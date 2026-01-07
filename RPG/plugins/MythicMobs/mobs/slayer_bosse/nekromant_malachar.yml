@@ -33,8 +33,8 @@ NekromantMalachar:
   - mmoitems{type=MATERIAL;id=GOLD_COIN;amount=3000} 1.0
   # XP
   - exp 5000
-  # Legendary Weapon (25% Chance) - Typ muss SWORD sein, wenn es in MMOItems ein Schwert ist
-  - mmoitems{type=SWORD;id=STAB_DER_VERDAMMNIS;amount=1} 0.25
+  # Legendary Weapon (25% Chance) - Using MythicMobs native item
+  - StabDerVerdammnis 1 0.25
   
   # ==========================================
   # Skills
@@ -50,7 +50,7 @@ NekromantMalachar:
   # Phase 2 (70%-40% HP)
   - skill{s=MalacharPhase2Dialog} @self ~onHealthMod:<0.7 1
   - skill{s=SeelenraubMalachar} @self ~onTimer:500 ~onHealthMod:0.4to0.7
-  - skill{s=KnochenkäfigMalachar} @target ~onTimer:600 ~onHealthMod:0.4to0.7
+  - skill{s=KnochenkaefigMalachar} @target ~onTimer:600 ~onHealthMod:0.4to0.7
   - skill{s=BeschwoereDienerP2} @self ~onTimer:400 ~onHealthMod:0.4to0.7
   
   # Phase 3 (40%-0% HP)
@@ -61,4 +61,14 @@ NekromantMalachar:
   
   # Death
   - skill{s=MalacharDeathDialog} @self ~onDeath
+
+  # ==========================================
+  # Boss Bar
+  # ==========================================
+  BossBar:
+    Enabled: true
+    Title: '&5&lNekromant Malachar'
+    Color: PURPLE
+    Style: SOLID
+    Range: 50
 

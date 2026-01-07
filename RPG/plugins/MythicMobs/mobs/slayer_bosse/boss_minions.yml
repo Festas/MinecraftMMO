@@ -110,3 +110,60 @@ Schattenwaechter:
     Color: BLACK
     Style: SOLID
     Range: 30
+
+# ==========================================
+# Frostkönig Glacius - Minions
+# ==========================================
+
+# Eis-Elementar (Glacius Phase 2)
+Eis_Elementar:
+  Type: SNOW_GOLEM
+  Display: '&bEis-Elementar'
+  Health: 300
+  Damage: 12
+  Armor: 5
+  Options:
+    MovementSpeed: 0.25
+    PreventOtherDrops: true
+    AlwaysShowName: true
+  Skills:
+  - skill{s=EisElementar_Explosion} @self ~onDeath
+
+# ==========================================
+# Flammenkaiser Ignis - Minions
+# ==========================================
+
+# Feuer-Elementar (Ignis Phase 2)
+Feuer_Elementar:
+  Type: MAGMA_CUBE
+  Display: '&6Feuer-Elementar'
+  Health: 400
+  Damage: 15
+  Armor: 3
+  Options:
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+    AlwaysShowName: true
+  Disguise:
+    Type: MAGMA_CUBE
+    Size: 2
+  Skills:
+  - skill{s=FeuerElementar_Explosion} @self ~onDeath
+
+# ==========================================
+# Schattenfürst Nyx - Minions
+# ==========================================
+
+# Schatten-Klon (Nyx Phase 2)
+Schatten_Klon:
+  Type: PHANTOM
+  Display: '&8Schatten-Klon'
+  Health: 250
+  Damage: 10
+  Options:
+    MovementSpeed: 0.35
+    PreventOtherDrops: true
+    AlwaysShowName: true
+  Skills:
+  - skill{s=SchattenKlon_Tod} @self ~onDeath
+

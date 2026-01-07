@@ -82,6 +82,11 @@ BeschwoereLeereSplitter:
   - summon{t=Leere_Splitter;a=3;r=6} @self
   - effect:particles{p=reverse_portal;a=150;hS=6;vS=3} @self
 
+# Alias for consistency - BeschwoereSplitter
+BeschwoereSplitter:
+  Skills:
+  - skill{s=BeschwoereLeereSplitter} @self
+
 # Schaden-Reflektion Aktivierung
 ReflektionBuffVexorin:
   Skills:
@@ -128,6 +133,11 @@ BeschwoereSchattenwaechter:
   - effect:particles{p=explosion_huge;a=10;hS=5;vS=3} @self
   - effect:sound{s=entity.lightning_bolt.thunder;v=1.5;p=0.5} @self
 
+# Alias for consistency - BeschwoereWaechter
+BeschwoereWaechter:
+  Skills:
+  - skill{s=BeschwoereSchattenwaechter} @self
+
 # Leere-Zonen Aktivierung (Kontinuierlicher Schaden auf dem Boden)
 LeereZonenVexorin:
   Skills:
@@ -135,6 +145,34 @@ LeereZonenVexorin:
   - effect:particles{p=portal;a=500;hS=15;vS=1;y=0} @self
   - effect:sound{s=block.portal.trigger;v=2;p=0.5} @self
   - potion{t=WITHER;d=100;l=1} @PlayersInRadius{r=15}
+
+# Schwarzes Loch - Pulls all players and damages
+SchwarzesLochVexorin:
+  Skills:
+  - 'message{m="&0&l>>> SCHWARZES LOCH! <<<"} @PlayersInRadius{r=30}'
+  - effect:particles{p=portal;a=500;hS=10;vS=10} @self
+  - effect:particles{p=reverse_portal;a=500;hS=10;vS=10} @self
+  - effect:sound{s=entity.wither.spawn;v=2;p=0.5} @self
+  - delay 30
+  - pull{v=4;y=0.3} @PlayersInRadius{r=20}
+  - delay 20
+  - damage{a=30} @PlayersInRadius{r=10}
+  - potion{t=SLOW;d=100;l=3} @PlayersInRadius{r=10}
+  - effect:particles{p=explosion_huge;a=5;hS=8;vS=5} @self
+
+# Leere-Gefängnis - Traps player in void prison
+LeereGefaengnisVexorin:
+  Skills:
+  - 'message{m="&0&lVexorin: &7Du bist in der Leere gefangen!"} @target'
+  - effect:particles{p=portal;a=100;hS=3;vS=3} @target
+  - effect:sound{s=block.portal.trigger;v=2;p=0.5} @target
+  - potion{t=SLOW;d=120;l=10} @target
+  - potion{t=BLINDNESS;d=120;l=1} @target
+  - potion{t=WEAKNESS;d=120;l=3} @target
+  - potion{t=WITHER;d=120;l=1} @target
+  - delay 20
+  - effect:particles{p=reverse_portal;a=200;hS=2;vS=4} @target
+  - 'message{m="&c<target.name> ist im Leere-Gefängnis gefangen!"} @PlayersInRadius{r=30}'
 
 # ==========================================
 # Phase 4 Skills (25%-0% HP)

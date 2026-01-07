@@ -82,3 +82,14 @@ DunklerMagierVexorin:
   - LeereBrustplatte 1 0.05
   - LeereBeinschutz 1 0.05
   - LeereStiefel 1 0.05
+
+  # ==========================================
+  # Boss Bar
+  # ==========================================
+  BossBar:
+    Enabled: true
+    Title: '&0&lDunkler Magier Vexorin'
+    Color: BLACK
+    Style: SOLID
+    Range: 50
+
