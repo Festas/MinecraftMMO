@@ -62,7 +62,7 @@ HinterhaltArachnia:
   - delay 20
   - teleport{l=true} @targetlocation{yoffset=0;xoffset=0;zoffset=-2}
   - delay 5
-  - removepotioneffect{t=INVISIBILITY} @self
+  - potion{t=INVISIBILITY;d=0;l=0} @self
   - damage{a=25} @target
   - effect:particles{p=LARGE_SMOKE;a=50;hS=2;vS=2} @self
   - effect:sound{s=entity.spider.ambient;v=2;p=0.5} @self
@@ -85,7 +85,7 @@ UnsichtbarAngriff:
   - effect:particles{p=LARGE_SMOKE;a=100;hS=3;vS=3} @self
   - effect:sound{s=entity.enderman.teleport;v=1.5;p=1} @self
   - delay 60
-  - removepotioneffect{t=INVISIBILITY} @self
+  - potion{t=INVISIBILITY;d=0;l=0} @self
   - damage{a=30} @PlayersInRadius{r=3}
   - effect:particles{p=crit;a=50;hS=2;vS=2} @self
 

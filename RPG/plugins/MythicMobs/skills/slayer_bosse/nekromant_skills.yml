@@ -44,8 +44,8 @@ SeelenraubMalachar:
   - effect:particles{p=heart;a=30;hS=2;vS=2} @self
   - effect:sound{s=entity.player.levelup;v=1;p=1.5} @self
 
-# Knochenkäfig - Fängt Spieler ein
-KnochenkäfigMalachar:
+# Knochenkäfig - Fängt Spieler ein (renamed for consistency)
+KnochenkaefigMalachar:
   Skills:
   - 'message{m="&5&lMalachar: &7Du kannst nicht entkommen!"} @target'
   - effect:particles{p=block_crack;m=bone_block;a=50;hS=2;vS=2} @target
@@ -95,6 +95,18 @@ BeschwoereChampions:
   - summon{t=Skelett_Champion;a=2;r=7} @self
   - effect:particles{p=explosion_large;a=20;hS=5;vS=3} @self
   - effect:sound{s=entity.lightning_bolt.thunder;v=1;p=0.8} @self
+
+# Todesnova - Massive AoE Explosion
+TodesnovaMalachar:
+  Skills:
+  - 'message{m="&5&lMalachar: &7ERLEBE DIE MACHT DES TODES!"} @PlayersInRadius{r=30}'
+  - effect:particles{p=soul_fire_flame;a=200;hS=5;vS=3} @self
+  - effect:sound{s=entity.wither.shoot;v=2;p=0.5} @self
+  - delay 30
+  - damage{a=40} @PlayersInRadius{r=12}
+  - potion{t=WITHER;d=100;l=2} @PlayersInRadius{r=12}
+  - effect:particles{p=explosion_huge;a=10;hS=8;vS=4} @self
+  - effect:sound{s=entity.generic.explode;v=2;p=0.5} @self
 
 # Phase 3 Rage Buff
 RageBuffMalachar:
