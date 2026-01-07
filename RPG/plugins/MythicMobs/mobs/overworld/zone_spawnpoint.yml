@@ -76,8 +76,131 @@ BANDIT:
   - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
   - exp 20-40
 
+RIESENKAEFER:
+  Type: SILVERFISH
+  Display: '&7Riesenkäfer &8[Lv.3]'
+  Health: 60
+  Damage: 6
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 20
+  Drops:
+  - mmoitems{type=MATERIAL;id=KAEFER_PANZER} 1 0.3
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
+  - exp 8-12
+
+BANDIT_ANFAENGER:
+  Type: PILLAGER
+  Display: '&8Bandit Anfänger &8[Lv.6]'
+  Health: 180
+  Damage: 11
+  Options:
+    MovementSpeed: 0.24
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Equipment:
+  - WOODEN_SWORD HAND
+  - LEATHER_HELMET HEAD
+  Drops:
+  - mmoitems{type=MATERIAL;id=BANDITENGUT} 1 0.3
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
+  - exp 15-30
+
+WALDSPINNE:
+  Type: SPIDER
+  Display: '&7Waldspinne &8[Lv.4]'
+  Health: 100
+  Damage: 8
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 20
+  Skills:
+  - skill{s=SpinnenGift} @target ~onAttack
+  Drops:
+  - mmoitems{type=MATERIAL;id=SPINNENFADEN} 1 0.3
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
+  - exp 10-18
+
+VERWILDERTER_HUND:
+  Type: WOLF
+  Display: '&7Verwilderter Hund &8[Lv.4]'
+  Health: 120
+  Damage: 9
+  Options:
+    MovementSpeed: 0.28
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 22
+    Angry: true
+  Skills:
+  - skill{s=WolfBiss} @target ~onAttack
+  Drops:
+  - mmoitems{type=MATERIAL;id=LEDERFETZEN} 1 0.3
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
+  - exp 12-20
+
+KOBOLD:
+  Type: VEX
+  Display: '&2Kobold &8[Lv.8]'
+  Health: 140
+  Damage: 10
+  Options:
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Drops:
+  - mmoitems{type=MATERIAL;id=KOBOLD_OEHR} 1 0.3
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 1-3 0.2
+  - exp 18-35
+
 # ==========================================
 # Elite / Bosse
+# ==========================================
+
+ELITE_WILDSCHWEIN:
+  Type: PIG
+  Display: '&c&lElite Wildschwein &8[Lv.8]'
+  Health: 500
+  Damage: 20
+  Options:
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 25
+  Skills:
+  - skill{s=Ansturm} @target ~onTimer:200
+  Drops:
+  - mmoitems{type=MATERIAL;id=ROHES_FLEISCH} 2-4 1.0
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 5-10 0.8
+  - exp 100-180
+
+ELITE_WALDWOLF:
+  Type: WOLF
+  Display: '&c&lElite Waldwolf &8[Lv.9]'
+  Health: 700
+  Damage: 30
+  Options:
+    MovementSpeed: 0.35
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+    Angry: true
+  Skills:
+  - skill{s=WolfBiss} @target ~onAttack
+  - skill{s=RudelRuf} @self ~onTimer:400
+  Drops:
+  - mmoitems{type=MATERIAL;id=LEDERFETZEN} 2-4 1.0
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 5-10 0.8
+  - exp 120-200
+
+# ==========================================
+# Mini-Bosse
 # ==========================================
 
 ALPHA_WOLF:

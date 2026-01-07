@@ -24,7 +24,7 @@ SpawnGeisterritter:
   - outside true
 
 SpawnVerfluchterRitter:
-  Type: VERFLUCHTER_RITTER
+  Type: VERFLUCHTER_SOLDAT
   Worlds: world
   Chance: 0.10
   Priority: 1
@@ -34,7 +34,7 @@ SpawnVerfluchterRitter:
   - outside true
 
 SpawnBurggespenst:
-  Type: BURGGESPENST
+  Type: SCHLOSSGESPENST
   Worlds: world
   Chance: 0.11
   Priority: 1
@@ -44,7 +44,7 @@ SpawnBurggespenst:
   - outside true
 
 SpawnSchattenwache:
-  Type: SCHATTENWACHE
+  Type: SCHATTENKRIEGER
   Worlds: world
   Chance: 0.10
   Priority: 1
@@ -64,7 +64,7 @@ SpawnKerkermeister:
   - outside true
 
 SpawnRunenritter:
-  Type: RUNENRITTER
+  Type: RUNENWAECHTER
   Worlds: world
   Chance: 0.09
   Priority: 1
@@ -74,7 +74,7 @@ SpawnRunenritter:
   - outside true
 
 SpawnHexenmeister:
-  Type: HEXENMEISTER
+  Type: DUNKLE_HEXE
   Worlds: world
   Chance: 0.10
   Priority: 1

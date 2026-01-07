@@ -190,6 +190,27 @@ ELITE_PILZLING:
   - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 1 0.5
   - exp 650-950
 
+ELITE_MYZEL:
+  Type: IRON_GOLEM
+  Display: '&7&lElite Myzel Golem &8[Lv.67]'
+  Health: 3800
+  Damage: 100
+  Armor: 12
+  Options:
+    MovementSpeed: 0.23
+    PreventOtherDrops: true
+    AlwaysShowName: true
+    FollowRange: 30
+    KnockbackResistance: 0.7
+  Skills:
+  - skill{s=SporenAura} @self ~onTimer:150
+  - skill{s=BodenStampfer} @PIR{r=8} ~onTimer:300
+  Drops:
+  - mmoitems{type=MATERIAL;id=MYZEL_BLOCK} 2-4 1.0
+  - mmoitems{type=MATERIAL;id=GOLD_COIN} 5-15 0.8
+  - mmoitems{type=MATERIAL;id=ELITE_ESSENZ} 1 0.5
+  - exp 720-1080
+
 # ==========================================
 # Mini-Bosse
 # ==========================================

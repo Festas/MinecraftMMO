@@ -114,7 +114,7 @@ SpawnEliteNephilim:
   - outside true
 
 SpawnZeusAvatar:
-  Type: ZEUS_AVATAR
+  Type: AVATAR_DES_ZEUS
   Worlds: world
   Chance: 0.005
   Priority: 3

@@ -34,7 +34,7 @@ SpawnMumie:
   - outside true
 
 SpawnWuestenraeuber:
-  Type: WUESTENRAEUBER
+  Type: WUESTEN_RAEUBER
   Worlds: world
   Chance: 0.10
   Priority: 1
