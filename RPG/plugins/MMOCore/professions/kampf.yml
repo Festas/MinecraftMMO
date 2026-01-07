@@ -55,49 +55,49 @@ on-level-up:
 # HINWEIS: Damit diese funktionieren, muss in der config.yml 'kill' enabled sein!
 exp-sources:
   # Einfache Mobs (5-10 XP)
-  - 'kill{type=ZOMBIE;amount=5-8}'
-  - 'kill{type=HUSK;amount=5-8}'
-  - 'kill{type=DROWNED;amount=6-9}'
-  - 'kill{type=SKELETON;amount=5-8}'
-  - 'kill{type=STRAY;amount=6-9}'
-  - 'kill{type=SPIDER;amount=5-7}'
-  - 'kill{type=CAVE_SPIDER;amount=6-8}'
-  - 'kill{type=CREEPER;amount=7-10}'
-  - 'kill{type=SLIME;amount=4-6}'
-  - 'kill{type=SILVERFISH;amount=3-5}'
+  - 'killmob{type=ZOMBIE;amount=5-8}'
+  - 'killmob{type=HUSK;amount=5-8}'
+  - 'killmob{type=DROWNED;amount=6-9}'
+  - 'killmob{type=SKELETON;amount=5-8}'
+  - 'killmob{type=STRAY;amount=6-9}'
+  - 'killmob{type=SPIDER;amount=5-7}'
+  - 'killmob{type=CAVE_SPIDER;amount=6-8}'
+  - 'killmob{type=CREEPER;amount=7-10}'
+  - 'killmob{type=SLIME;amount=4-6}'
+  - 'killmob{type=SILVERFISH;amount=3-5}'
   # NEU in 1.21: Sumpf-Skelett
-  - 'kill{type=BOGGED;amount=6-9}'
+  - 'killmob{type=BOGGED;amount=6-9}'
   
   # Standard Mobs (10-20 XP)
-  - 'kill{type=ENDERMAN;amount=12-18}'
-  - 'kill{type=WITCH;amount=10-15}'
-  - 'kill{type=PILLAGER;amount=10-15}'
-  - 'kill{type=VINDICATOR;amount=12-18}'
-  - 'kill{type=BLAZE;amount=12-16}'
-  - 'kill{type=WITHER_SKELETON;amount=15-20}'
-  - 'kill{type=GHAST;amount=10-15}'
-  - 'kill{type=MAGMA_CUBE;amount=8-12}'
-  - 'kill{type=PHANTOM;amount=10-14}'
+  - 'killmob{type=ENDERMAN;amount=12-18}'
+  - 'killmob{type=WITCH;amount=10-15}'
+  - 'killmob{type=PILLAGER;amount=10-15}'
+  - 'killmob{type=VINDICATOR;amount=12-18}'
+  - 'killmob{type=BLAZE;amount=12-16}'
+  - 'killmob{type=WITHER_SKELETON;amount=15-20}'
+  - 'killmob{type=GHAST;amount=10-15}'
+  - 'killmob{type=MAGMA_CUBE;amount=8-12}'
+  - 'killmob{type=PHANTOM;amount=10-14}'
   
   # Nether Mobs
-  - 'kill{type=PIGLIN_BRUTE;amount=15-20}'
-  - 'kill{type=HOGLIN;amount=12-16}'
-  - 'kill{type=ZOMBIFIED_PIGLIN;amount=8-12}'
-  - 'kill{type=ZOGLIN;amount=14-18}'
+  - 'killmob{type=PIGLIN_BRUTE;amount=15-20}'
+  - 'killmob{type=HOGLIN;amount=12-16}'
+  - 'killmob{type=ZOMBIFIED_PIGLIN;amount=8-12}'
+  - 'killmob{type=ZOGLIN;amount=14-18}'
   
   # Special Mobs (15-25 XP)
-  - 'kill{type=GUARDIAN;amount=12-16}'
-  - 'kill{type=SHULKER;amount=15-20}'
+  - 'killmob{type=GUARDIAN;amount=12-16}'
+  - 'killmob{type=SHULKER;amount=15-20}'
   # NEU in 1.21: Breeze
-  - 'kill{type=BREEZE;amount=15-25}'
+  - 'killmob{type=BREEZE;amount=15-25}'
   
   # Mini-Bosse (20-50 XP)
-  - 'kill{type=RAVAGER;amount=18-25}'
-  - 'kill{type=ELDER_GUARDIAN;amount=35-45}'
-  - 'kill{type=EVOKER;amount=30-40}'
+  - 'killmob{type=RAVAGER;amount=18-25}'
+  - 'killmob{type=ELDER_GUARDIAN;amount=35-45}'
+  - 'killmob{type=EVOKER;amount=30-40}'
   
   # Bosse (100+ XP)
-  - 'kill{type=WARDEN;amount=40-50}'
-  - 'kill{type=ENDER_DRAGON;amount=150-200}'
-  - 'kill{type=WITHER;amount=100-150}'
+  - 'killmob{type=WARDEN;amount=40-50}'
+  - 'killmob{type=ENDER_DRAGON;amount=150-200}'
+  - 'killmob{type=WITHER;amount=100-150}'
 
