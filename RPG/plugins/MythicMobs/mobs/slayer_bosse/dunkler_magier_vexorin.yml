@@ -22,7 +22,8 @@ DunklerMagierVexorin:
   - LEATHER_LEGGINGS{color=0,0,0,Unbreakable:true} LEGS
   - LEATHER_BOOTS{color=0,0,0,Unbreakable:true} FEET
   
-  # ==========================================\n  # Skills
+  # ==========================================
+  # Skills
   # ==========================================
   Skills:
   # Spawn
@@ -56,17 +57,28 @@ DunklerMagierVexorin:
   # Death
   - skill{s=VexorinDeathDialog} @self ~onDeath
   
-  # ==========================================\n  # Drops (KORRIGIERT)
+  # ==========================================
+  # Drops (Vollständiges Set & Items)
   # ==========================================
   Drops:
-  # Quest Item
-  - mmoitems{type=MATERIAL;id=FRAGMENT_DER_LEERE} 1.0 1
-  # Gold
+  # Syntax: - <MythicItemName> <Menge> <Wahrscheinlichkeit>
+  
+  # 100% Quest Item
+  - FragmentDerLeere 1 1.0
+  
+  # 100% Währung (5000 GoldCoins -> MythicMobs droppt Items einzeln, 
+  # daher nutzen wir hier lieber den MMOItems Befehl für Stacks oder definieren GoldCoin als Stack in boss_drops)
+  # Da wir GoldCoin als einzelnes Item definiert haben, droppen wir es hier als MMOItem Stack:
   - mmoitems{type=MATERIAL;id=GOLD_COIN;amount=5000} 1.0
+  
   # XP
   - exp 8000
-  # Legendary Staff (20% Chance) - Angenommen Type ist STAFF
-  - mmoitems{type=STAFF;id=STAB_DER_LEERE} 0.2
-  # Mythic Armor (5% Chance)
-  - mmoitems{type=ARMOR;id=LEERE_RUESTUNG_TEIL} 0.05
-
+  
+  # --- Legendäre Waffe (20%) ---
+  - StabDerLeere 1 0.2
+  
+  # --- Mythisches Rüstungs-Set (Je 5%) ---
+  - LeereHelm 1 0.05
+  - LeereBrustplatte 1 0.05
+  - LeereBeinschutz 1 0.05
+  - LeereStiefel 1 0.05
