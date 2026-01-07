@@ -1,0 +1,97 @@
+# ============================================================
+# TOME.yml - Alle TOME Items (Zauberbücher)
+# ============================================================
+
+# ==================== NEUE ZAUBERBÜCHER ====================
+ZAUBERBUCH_FEUER:
+  base:
+    material: BOOK
+    name: '&9Feuerzauber-Buch'
+    lore:
+      - '&8Magier Offhand'
+      - ''
+      - '&7Ein altes Buch voller Feuerzauber.'
+      - '&7Verstärkt Feuermagie erheblich.'
+      - ''
+      - '&9+25% Feuerschaden'
+      - '&9+15 Intelligenz'
+      - '&9+10% Skill-Schaden'
+      - '&9Verbrennung II'
+      - ''
+      - '&8Benötigt Level 18'
+  magic-damage: 8
+  max-mana: 45
+  skill-damage: 10
+  required-level: 18
+  required-class:
+    - 'MAGIER'
+
+ZAUBERBUCH_FROST:
+  base:
+    material: BOOK
+    name: '&9Frostzauber-Buch'
+    lore:
+      - '&8Magier Offhand'
+      - ''
+      - '&7Ein eisiges Buch voller Frostzauber.'
+      - '&7Verstärkt Frostmagie erheblich.'
+      - ''
+      - '&9+25% Frostschaden'
+      - '&9+15 Intelligenz'
+      - '&9+10% Skill-Schaden'
+      - '&9Verlangsamung II'
+      - ''
+      - '&8Benötigt Level 18'
+  magic-damage: 8
+  max-mana: 45
+  skill-damage: 10
+  required-level: 18
+  required-class:
+    - 'MAGIER'
+
+ZAUBERBUCH_BLITZ:
+  base:
+    material: BOOK
+    name: '&9Blitzzauber-Buch'
+    lore:
+      - '&8Magier Offhand'
+      - ''
+      - '&7Ein elektrisches Buch voller Blitzzauber.'
+      - '&7Entfesselt Gewitterstürme.'
+      - ''
+      - '&9+30% Blitzschaden'
+      - '&9+20 Intelligenz'
+      - '&9+15% Skill-Schaden'
+      - '&9Kettenblitz'
+      - ''
+      - '&8Benötigt Level 25'
+  magic-damage: 12
+  max-mana: 60
+  skill-damage: 15
+  required-level: 25
+  required-class:
+    - 'MAGIER'
+
+ZAUBERBUCH_HEILUNG:
+  base:
+    material: BOOK
+    name: '&aHeilzauber-Buch'
+    lore:
+      - '&8Schamane Offhand'
+      - ''
+      - '&7Ein heiliges Buch voller Heilzauber.'
+      - '&7Verstärkt alle Heilungen.'
+      - ''
+      - '&a+35% Heilungskraft'
+      - '&a+18 Intelligenz'
+      - '&a+12 HP Regeneration'
+      - '&a+10% Max HP'
+      - ''
+      - '&8Benötigt Level 20'
+  magic-damage: 6
+  max-mana: 50
+  max-health: 30
+  health-regeneration: 12
+  required-level: 20
+  required-class:
+    - 'SCHAMANE'

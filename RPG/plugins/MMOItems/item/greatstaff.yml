@@ -1,0 +1,75 @@
+# ============================================================
+# GREATSTAFF.yml - Alle GREATSTAFF Items
+# ============================================================
+
+# ==================== NEUE GROSSE STÄBE ====================
+GROSSSTAB_T2:
+  base:
+    material: BLAZE_ROD
+    name: '&aElementar-Großstab'
+    lore:
+      - '&8Magier Waffe (Großstab)'
+      - ''
+      - '&7Ein großer Stab mit elementarer Macht.'
+      - '&7Vielseitig und mächtig.'
+      - ''
+      - '&a+10 Intelligenz'
+      - '&a+8% Skill-Schaden'
+      - ''
+      - '&8Benötigt Level 15'
+  magic-damage: 16
+  max-mana: 55
+  skill-damage: 8
+  attack-speed: 0.9
+  required-level: 15
+  required-class:
+    - 'MAGIER'
+
+GROSSSTAB_T3:
+  base:
+    material: BLAZE_ROD
+    name: '&9Arkaner Großstab'
+    lore:
+      - '&8Magier Waffe (Großstab)'
+      - ''
+      - '&7Ein arkaner Großstab mit'
+      - '&7immenser magischer Kraft.'
+      - ''
+      - '&9+18 Intelligenz'
+      - '&9+15% Skill-Schaden'
+      - '&9-8% Cooldown-Reduktion'
+      - ''
+      - '&8Benötigt Level 25'
+  magic-damage: 25
+  max-mana: 95
+  skill-damage: 15
+  cooldown-reduction: 8
+  attack-speed: 0.9
+  required-level: 25
+  required-class:
+    - 'MAGIER'
+
+GROSSSTAB_T4:
+  base:
+    material: END_ROD
+    name: '&5Meister-Großstab'
+    lore:
+      - '&8Magier Waffe (Großstab)'
+      - ''
+      - '&7Der Stab eines wahren Meisters.'
+      - '&7Entfesselt verheerende Magie.'
+      - ''
+      - '&5+30 Intelligenz'
+      - '&5+24% Skill-Schaden'
+      - '&5-15% Cooldown-Reduktion'
+      - '&5+50 Max Mana'
+      - ''
+      - '&8Benötigt Level 40'
+  magic-damage: 40
+  max-mana: 150
+  skill-damage: 24
+  cooldown-reduction: 15
+  attack-speed: 0.9
+  required-level: 40
+  required-class:
+    - 'MAGIER'

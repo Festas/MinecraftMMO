@@ -536,3 +536,70 @@ BURGHERR_AXT:
     attack-damage: 45
     required-level: 75
 
+# ==================== NEUE KRIEGSÄXTE ====================
+KRIEGSAXT_T2:
+  base:
+    material: IRON_AXE
+    name: '&aStahlkriegsaxt'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Eine robuste Kriegsaxt aus Stahl.'
+      - '&7Perfekt für den Nahkampf.'
+      - ''
+      - '&a+6% Kritische Trefferchance'
+      - '&aBlutung I (3 Sekunden)'
+      - ''
+      - '&8Benötigt Level 12'
+  attack-damage: 13
+  attack-speed: 1.1
+  critical-strike-chance: 6
+  required-level: 12
+  required-class:
+    - 'KRIEGER'
+
+KRIEGSAXT_T3:
+  base:
+    material: DIAMOND_AXE
+    name: '&9Mithril-Kriegsaxt'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Eine mächtige Kriegsaxt aus Mithril.'
+      - '&7Verursacht schwere Blutungen.'
+      - ''
+      - '&9+10% Kritische Trefferchance'
+      - '&9Blutung II (5 Sekunden)'
+      - '&9+8 Stärke'
+      - ''
+      - '&8Benötigt Level 22'
+  attack-damage: 20
+  attack-speed: 1.1
+  critical-strike-chance: 10
+  required-level: 22
+  required-class:
+    - 'KRIEGER'
+
+KRIEGSAXT_T4:
+  base:
+    material: DIAMOND_AXE
+    name: '&5Adamant-Kriegsaxt'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Eine epische Kriegsaxt aus Adamant.'
+      - '&7Zerstört die Rüstung des Feindes.'
+      - ''
+      - '&5+15% Kritische Trefferchance'
+      - '&5Blutung III (7 Sekunden)'
+      - '&5+15 Stärke'
+      - '&5+12% Rüstungsdurchdringung'
+      - ''
+      - '&8Benötigt Level 38'
+  attack-damage: 30
+  attack-speed: 1.1
+  critical-strike-chance: 15
+  required-level: 38
+  required-class:
+    - 'KRIEGER'
+

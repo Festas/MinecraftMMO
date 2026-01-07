@@ -274,3 +274,94 @@ ASSASSINE_OFFHAND_WURFSET_T6:
     required-class:
       - 'ASSASSINE'
 
+# ==================== NEUE KATALYSATOREN ====================
+FEUER_KATALYSATOR:
+  base:
+    material: BLAZE_POWDER
+    name: '&aFeuer-Katalysator'
+    lore:
+      - '&8Magier Offhand'
+      - ''
+      - '&7Ein Katalysator voller Feuermagie.'
+      - '&7Verstärkt Feuerzauber.'
+      - ''
+      - '&a+12% Feuerschaden'
+      - '&a+8 Intelligenz'
+      - '&a+5% Skill-Schaden'
+      - ''
+      - '&8Benötigt Level 15'
+  magic-damage: 5
+  max-mana: 25
+  skill-damage: 5
+  required-level: 15
+  required-class:
+    - 'MAGIER'
+
+FROST_KATALYSATOR:
+  base:
+    material: SNOWBALL
+    name: '&aFrost-Katalysator'
+    lore:
+      - '&8Magier Offhand'
+      - ''
+      - '&7Ein Katalysator voller Kältemagie.'
+      - '&7Verstärkt Frostzauber.'
+      - ''
+      - '&a+12% Frostschaden'
+      - '&a+8 Intelligenz'
+      - '&a+5% Skill-Schaden'
+      - ''
+      - '&8Benötigt Level 15'
+  magic-damage: 5
+  max-mana: 25
+  skill-damage: 5
+  required-level: 15
+  required-class:
+    - 'MAGIER'
+
+ARKAN_KATALYSATOR:
+  base:
+    material: ENDER_PEARL
+    name: '&9Arkan-Katalysator'
+    lore:
+      - '&8Magier Offhand'
+      - ''
+      - '&7Ein Katalysator voller arkaner Macht.'
+      - '&7Verstärkt alle Magieschäden.'
+      - ''
+      - '&9+20% Magieschaden'
+      - '&9+15 Intelligenz'
+      - '&9+12% Skill-Schaden'
+      - '&9-8% Cooldown-Reduktion'
+      - ''
+      - '&8Benötigt Level 25'
+  magic-damage: 10
+  max-mana: 45
+  skill-damage: 12
+  cooldown-reduction: 8
+  required-level: 25
+  required-class:
+    - 'MAGIER'
+
+NATUR_KATALYSATOR:
+  base:
+    material: GLOW_BERRIES
+    name: '&aNatur-Katalysator'
+    lore:
+      - '&8Schamane Offhand'
+      - ''
+      - '&7Ein Katalysator voller Naturmagie.'
+      - '&7Verstärkt Heilungszauber.'
+      - ''
+      - '&a+18% Heilungskraft'
+      - '&a+12 Intelligenz'
+      - '&a+8 HP Regeneration'
+      - ''
+      - '&8Benötigt Level 20'
+  magic-damage: 6
+  max-mana: 35
+  health-regeneration: 8
+  required-level: 20
+  required-class:
+    - 'SCHAMANE'
+

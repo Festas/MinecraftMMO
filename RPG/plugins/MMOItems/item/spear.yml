@@ -81,3 +81,69 @@ SUMPF_DREIZACK:
     attack-damage: 35
     required-level: 35
 
+# ==================== NEUE SPEERE ====================
+SPEER_T2:
+  base:
+    material: TRIDENT
+    name: '&aStahl-Speer'
+    lore:
+      - '&8Bogenschütze/Krieger Waffe'
+      - ''
+      - '&7Ein vielseitiger Speer aus Stahl.'
+      - '&7Kann geworfen oder im Nahkampf verwendet werden.'
+      - ''
+      - '&a+10% Wurfschaden'
+      - '&a+12% Reichweite'
+      - ''
+      - '&8Benötigt Level 12'
+  attack-damage: 12
+  attack-speed: 1.4
+  projectile-damage: 15
+  attack-range: 3.2
+  required-level: 12
+
+SPEER_T3:
+  base:
+    material: TRIDENT
+    name: '&9Mithril-Speer'
+    lore:
+      - '&8Bogenschütze/Krieger Waffe'
+      - ''
+      - '&7Ein edler Speer aus Mithril.'
+      - '&7Perfekte Balance für Wurf und Kampf.'
+      - ''
+      - '&9+18% Wurfschaden'
+      - '&9+18% Reichweite'
+      - '&9+8% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 22'
+  attack-damage: 19
+  attack-speed: 1.4
+  projectile-damage: 24
+  critical-strike-chance: 8
+  attack-range: 3.6
+  required-level: 22
+
+SPEER_T4:
+  base:
+    material: TRIDENT
+    name: '&5Adamant-Speer'
+    lore:
+      - '&8Bogenschütze/Krieger Waffe'
+      - ''
+      - '&7Ein epischer Speer aus Adamant.'
+      - '&7Durchbohrt alles in seinem Weg.'
+      - ''
+      - '&5+28% Wurfschaden'
+      - '&5+25% Reichweite'
+      - '&5+15% Kritische Trefferchance'
+      - '&5Durchdringung I'
+      - ''
+      - '&8Benötigt Level 38'
+  attack-damage: 30
+  attack-speed: 1.4
+  projectile-damage: 38
+  critical-strike-chance: 15
+  attack-range: 4.0
+  required-level: 38
+

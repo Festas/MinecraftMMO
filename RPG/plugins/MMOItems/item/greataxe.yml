@@ -130,3 +130,69 @@ KRIEGER_GROSSAXT_T6:
     required-class:
       - 'KRIEGER'
 
+# ==================== NEUE GROSSÄXTE ====================
+GROSSAXT_T2:
+  base:
+    material: IRON_AXE
+    name: '&aStahl-Großaxt'
+    lore:
+      - '&8Krieger Waffe (Großaxt)'
+      - ''
+      - '&7Eine massive Großaxt aus Stahl.'
+      - '&7Langsam aber verheerend.'
+      - ''
+      - '&a+12% Kritischer Schaden'
+      - '&aBlutung I (4 Sekunden)'
+      - ''
+      - '&8Benötigt Level 15'
+    attack-damage: 22
+    attack-speed: 0.75
+    critical-strike-power: 12
+    required-level: 15
+    required-class:
+      - 'KRIEGER'
+
+GROSSAXT_T3:
+  base:
+    material: DIAMOND_AXE
+    name: '&9Mithril-Großaxt'
+    lore:
+      - '&8Krieger Waffe (Großaxt)'
+      - ''
+      - '&7Eine furchterregende Großaxt aus Mithril.'
+      - '&7Spaltet Feinde mit Leichtigkeit.'
+      - ''
+      - '&9+20% Kritischer Schaden'
+      - '&9Blutung II (6 Sekunden)'
+      - '&9+10 Stärke'
+      - ''
+      - '&8Benötigt Level 25'
+    attack-damage: 33
+    attack-speed: 0.75
+    critical-strike-power: 20
+    required-level: 25
+    required-class:
+      - 'KRIEGER'
+
+GROSSAXT_T4:
+  base:
+    material: DIAMOND_AXE
+    name: '&5Adamant-Großaxt'
+    lore:
+      - '&8Krieger Waffe (Großaxt)'
+      - ''
+      - '&7Eine epische Großaxt aus Adamant.'
+      - '&7Durchdringt selbst stärkste Rüstungen.'
+      - ''
+      - '&5+30% Kritischer Schaden'
+      - '&5Blutung III (8 Sekunden)'
+      - '&5+18 Stärke'
+      - '&5+15% Rüstungsdurchdringung'
+      - ''
+      - '&8Benötigt Level 40'
+    attack-damage: 50
+    attack-speed: 0.75
+    critical-strike-power: 30
+    required-level: 40
+    required-class:
+      - 'KRIEGER'
