@@ -3,7 +3,7 @@
 # Blaze-Slayer Boss mit 3 Kampfphasen
 # ===================================================
 
-FlammenkaisetIgnis:
+FlammenkaiserIgnis:
   Type: BLAZE
   Display: '&6&lFlammenkaiser Ignis'
   Health: 5000
