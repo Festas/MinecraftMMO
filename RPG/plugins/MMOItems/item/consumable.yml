@@ -371,3 +371,202 @@ GEMEINSAM_NACHTSICHT:
       - '&8Für alle Klassen'
     required-level: 1
 
+# ==================== NEUE CONSUMABLES ====================
+HEILTRANK_KLEIN:
+  base:
+    material: POTION
+    name: '&fKleiner Heiltrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein einfacher Heiltrank.'
+      - '&7Stellt 30 HP wieder her.'
+      - ''
+      - '&c❤ +30 Heilung'
+      - '&e⌛ 30s Cooldown'
+      - ''
+      - '&8Benötigt Level 1'
+  restore-health: 30
+  required-level: 1
+
+HEILTRANK_MITTEL:
+  base:
+    material: POTION
+    name: '&aHeiltrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein mittlerer Heiltrank.'
+      - '&7Stellt 75 HP wieder her.'
+      - ''
+      - '&c❤ +75 Heilung'
+      - '&e⌛ 30s Cooldown'
+      - ''
+      - '&8Benötigt Level 12'
+  restore-health: 75
+  required-level: 12
+
+HEILTRANK_GROSS:
+  base:
+    material: POTION
+    name: '&9Großer Heiltrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein großer Heiltrank.'
+      - '&7Stellt 150 HP wieder her.'
+      - ''
+      - '&c❤ +150 Heilung'
+      - '&e⌛ 28s Cooldown'
+      - ''
+      - '&8Benötigt Level 25'
+  restore-health: 150
+  required-level: 25
+
+MANATRANK_KLEIN:
+  base:
+    material: POTION
+    name: '&fKleiner Manatrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein einfacher Manatrank.'
+      - '&7Stellt 25 Mana wieder her.'
+      - ''
+      - '&9✦ +25 Mana'
+      - '&e⌛ 25s Cooldown'
+      - ''
+      - '&8Benötigt Level 5'
+  restore-mana: 25
+  required-level: 5
+
+MANATRANK_MITTEL:
+  base:
+    material: POTION
+    name: '&aMittlerer Manatrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein mittlerer Manatrank.'
+      - '&7Stellt 60 Mana wieder her.'
+      - ''
+      - '&9✦ +60 Mana'
+      - '&e⌛ 23s Cooldown'
+      - ''
+      - '&8Benötigt Level 15'
+  restore-mana: 60
+  required-level: 15
+
+MANATRANK_GROSS:
+  base:
+    material: POTION
+    name: '&9Großer Manatrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein großer Manatrank.'
+      - '&7Stellt 120 Mana wieder her.'
+      - ''
+      - '&9✦ +120 Mana'
+      - '&e⌛ 20s Cooldown'
+      - ''
+      - '&8Benötigt Level 28'
+  restore-mana: 120
+  required-level: 28
+
+STAERKUNGSTRANK:
+  base:
+    material: SPLASH_POTION
+    name: '&9Stärkungstrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Trank, der deine Kraft erhöht.'
+      - ''
+      - '&c+15% Schaden'
+      - '&a⏱ 60s Dauer'
+      - '&e⌛ 90s Cooldown'
+      - ''
+      - '&8Benötigt Level 20'
+  required-level: 20
+
+GESCHWINDIGKEITSTRANK:
+  base:
+    material: SPLASH_POTION
+    name: '&aGeschwindigkeitstrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Trank, der dich schneller macht.'
+      - ''
+      - '&a+20% Bewegungsgeschwindigkeit'
+      - '&a⏱ 45s Dauer'
+      - '&e⌛ 60s Cooldown'
+      - ''
+      - '&8Benötigt Level 18'
+  required-level: 18
+
+VERTEIDIGUNGSTRANK:
+  base:
+    material: SPLASH_POTION
+    name: '&9Verteidigungstrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Trank, der deine Rüstung verstärkt.'
+      - ''
+      - '&6+20% Rüstung'
+      - '&a⏱ 60s Dauer'
+      - '&e⌛ 75s Cooldown'
+      - ''
+      - '&8Benötigt Level 20'
+  required-level: 20
+
+KRITISCHER_TRANK:
+  base:
+    material: SPLASH_POTION
+    name: '&5Kritischer Trank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Trank, der kritische Treffer verstärkt.'
+      - ''
+      - '&6+15% Kritische Trefferchance'
+      - '&a⏱ 45s Dauer'
+      - '&e⌛ 65s Cooldown'
+      - ''
+      - '&8Benötigt Level 25'
+  required-level: 25
+
+GEGENGIFT:
+  base:
+    material: POTION
+    name: '&aGegengift'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Gegengift, das alle'
+      - '&7Gift-Effekte entfernt.'
+      - ''
+      - '&2☠ Entfernt Gift'
+      - '&e⌛ 45s Cooldown'
+      - ''
+      - '&8Benötigt Level 10'
+  required-level: 10
+
+REGENERATIONSTRANK:
+  base:
+    material: POTION
+    name: '&aRegenerationstrank'
+    lore:
+      - '&8Verbrauchsgegenstand'
+      - ''
+      - '&7Ein Trank, der dich über Zeit heilt.'
+      - ''
+      - '&c+8 HP/s'
+      - '&a⏱ 30s Dauer'
+      - '&e⌛ 50s Cooldown'
+      - ''
+      - '&8Benötigt Level 15'
+  required-level: 15
+
