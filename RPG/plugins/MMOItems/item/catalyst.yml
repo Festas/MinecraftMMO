@@ -365,3 +365,74 @@ NATUR_KATALYSATOR:
   required-class:
     - 'SCHAMANE'
 
+# ==================== SCHAMANEN TOTEMS ====================
+TOTEM_HEILUNG:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '&aTotem der Heilung'
+    lore:
+      - '&8Schamane Katalysator'
+      - ''
+      - '&7Ein Totem, das Verbündete'
+      - '&7im Umkreis heilt.'
+      - ''
+      - '&a+25% Heilungskraft'
+      - '&a+15 HP Regeneration'
+      - '&a+10 Intelligenz'
+      - '&aHeilt Verbündete im Umkreis'
+      - ''
+      - '&8Benötigt Level 20'
+  magic-damage: 8
+  health-regeneration: 15
+  max-mana: 40
+  required-level: 20
+  required-class:
+    - 'SCHAMANE'
+
+TOTEM_SCHUTZ:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '&9Totem des Schutzes'
+    lore:
+      - '&8Schamane Katalysator'
+      - ''
+      - '&7Ein Totem, das Verbündete'
+      - '&7im Umkreis schützt.'
+      - ''
+      - '&9+15% Schadensreduzierung'
+      - '&9+12 Rüstung'
+      - '&9+12 Intelligenz'
+      - '&9Gewährt Schutz im Umkreis'
+      - ''
+      - '&8Benötigt Level 25'
+  magic-damage: 10
+  armor: 12
+  damage-reduction: 15
+  max-mana: 45
+  required-level: 25
+  required-class:
+    - 'SCHAMANE'
+
+TOTEM_STAERKE:
+  base:
+    material: TOTEM_OF_UNDYING
+    name: '&cTotem der Stärke'
+    lore:
+      - '&8Schamane Katalysator'
+      - ''
+      - '&7Ein Totem, das die Kraft'
+      - '&7von Verbündeten verstärkt.'
+      - ''
+      - '&c+12% Schadensbonus'
+      - '&c+15 Angriffskraft'
+      - '&c+14 Intelligenz'
+      - '&cVerstärkt Angriffe im Umkreis'
+      - ''
+      - '&8Benötigt Level 28'
+  magic-damage: 12
+  attack-damage: 15
+  max-mana: 50
+  required-level: 28
+  required-class:
+    - 'SCHAMANE'
+
