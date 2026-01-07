@@ -62,3 +62,13 @@ NekromantMalachar:
   # Death
   - skill{s=MalacharDeathDialog} @self ~onDeath
 
+  # ==========================================
+  # Boss Bar
+  # ==========================================
+  BossBar:
+    Enabled: true
+    Title: '&5&lNekromant Malachar'
+    Color: PURPLE
+    Style: SOLID
+    Range: 50
+

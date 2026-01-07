@@ -61,3 +61,13 @@ SpinnenkoeniginArachnia:
   # Legendary Bow (30% Chance) - Using MythicMobs native item
   - SpinnenseideBogen 1 0.3
 
+  # ==========================================
+  # Boss Bar
+  # ==========================================
+  BossBar:
+    Enabled: true
+    Title: '&c&lSpinnenkönigin Arachnia'
+    Color: RED
+    Style: SOLID
+    Range: 50
+
