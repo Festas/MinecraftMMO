@@ -2233,3 +2233,78 @@ BERSERKER_AMULETT_T6:
     required-class:
       - 'BERSERKER'
 
+# ==================== NEUE AMULETTE ====================
+AMULETT_VITALITAET:
+  base:
+    material: EMERALD
+    name: '&aAmulett der Vitalität'
+    lore:
+      - '&8Accessoire (Amulett)'
+      - ''
+      - '&7Ein Amulett, das Leben spendet.'
+      - ''
+      - '&a+50 Max HP'
+      - '&a+5 HP Regeneration'
+      - '&a+8% Max HP'
+      - ''
+      - '&8Benötigt Level 15'
+  max-health: 50
+  health-regeneration: 5
+  required-level: 15
+
+AMULETT_VITALITAET_T2:
+  base:
+    material: EMERALD
+    name: '&9Amulett der Vitalität II'
+    lore:
+      - '&8Accessoire (Amulett)'
+      - ''
+      - '&7Ein mächtiges Amulett mit verstärkter Lebenskraft.'
+      - ''
+      - '&9+100 Max HP'
+      - '&9+12 HP Regeneration'
+      - '&9+15% Max HP'
+      - '&9+5% Schadensreduzierung'
+      - ''
+      - '&8Benötigt Level 30'
+  max-health: 100
+  health-regeneration: 12
+  damage-reduction: 5
+  required-level: 30
+
+AMULETT_DES_MAGIERS:
+  base:
+    material: LAPIS_LAZULI
+    name: '&aAmulett des Magiers'
+    lore:
+      - '&8Accessoire (Amulett)'
+      - ''
+      - '&7Ein Amulett, das magische Kraft verleiht.'
+      - ''
+      - '&a+50 Max Mana'
+      - '&a+10 Intelligenz'
+      - '&a+8% Skill-Schaden'
+      - ''
+      - '&8Benötigt Level 15'
+  max-mana: 50
+  skill-damage: 8
+  required-level: 15
+
+AMULETT_DES_KRIEGERS:
+  base:
+    material: REDSTONE
+    name: '&aAmulett des Kriegers'
+    lore:
+      - '&8Accessoire (Amulett)'
+      - ''
+      - '&7Ein Amulett, das Kriegern Kraft verleiht.'
+      - ''
+      - '&a+12 Angriffschaden'
+      - '&a+10 Stärke'
+      - '&a+8% Kritische Trefferchance'
+      - ''
+      - '&8Benötigt Level 18'
+  attack-damage: 12
+  critical-strike-chance: 8
+  required-level: 18
+

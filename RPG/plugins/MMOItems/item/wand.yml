@@ -188,3 +188,96 @@ LIGHTNING_STAFF:
         damage: 5.0
         cooldown: 30.0
 
+# ==================== NEUE ZAUBERSTÄBE ====================
+ZAUBERSTAB_FEUER_T2:
+  base:
+    material: BLAZE_ROD
+    name: '&aFeuer-Zauberstab'
+    lore:
+      - '&8Magier Waffe'
+      - ''
+      - '&7Ein Zauberstab voller Feuermagie.'
+      - '&7Verbrennt Feinde.'
+      - ''
+      - '&a+8 Feuerschaden'
+      - '&a+6 Intelligenz'
+      - '&aVerbrennung I (3s)'
+      - ''
+      - '&8Benötigt Level 12'
+  magic-damage: 11
+  max-mana: 35
+  attack-speed: 1.6
+  required-level: 12
+  required-class:
+    - 'MAGIER'
+
+ZAUBERSTAB_FROST_T2:
+  base:
+    material: STICK
+    name: '&aFrost-Zauberstab'
+    lore:
+      - '&8Magier Waffe'
+      - ''
+      - '&7Ein Zauberstab voller Kältemagie.'
+      - '&7Verlangsamt Feinde.'
+      - ''
+      - '&a+8 Frostschaden'
+      - '&a+6 Intelligenz'
+      - '&aVerlangsamung I (3s)'
+      - ''
+      - '&8Benötigt Level 12'
+  magic-damage: 11
+  max-mana: 35
+  attack-speed: 1.6
+  required-level: 12
+  required-class:
+    - 'MAGIER'
+
+ZAUBERSTAB_FEUER_T3:
+  base:
+    material: BLAZE_ROD
+    name: '&9Inferno-Zauberstab'
+    lore:
+      - '&8Magier Waffe'
+      - ''
+      - '&7Ein mächtiger Zauberstab,'
+      - '&7der Feuerinfernos entfesselt.'
+      - ''
+      - '&9+15 Feuerschaden'
+      - '&9+12 Intelligenz'
+      - '&9Verbrennung II (5s)'
+      - '&9+10% Skill-Schaden'
+      - ''
+      - '&8Benötigt Level 22'
+  magic-damage: 18
+  max-mana: 60
+  skill-damage: 10
+  attack-speed: 1.6
+  required-level: 22
+  required-class:
+    - 'MAGIER'
+
+ZAUBERSTAB_FROST_T3:
+  base:
+    material: STICK
+    name: '&9Eiszeit-Zauberstab'
+    lore:
+      - '&8Magier Waffe'
+      - ''
+      - '&7Ein eisiger Zauberstab,'
+      - '&7der Feinde einfriert.'
+      - ''
+      - '&9+15 Frostschaden'
+      - '&9+12 Intelligenz'
+      - '&9Verlangsamung II (5s)'
+      - '&9+10% Skill-Schaden'
+      - ''
+      - '&8Benötigt Level 22'
+  magic-damage: 18
+  max-mana: 60
+  skill-damage: 10
+  attack-speed: 1.6
+  required-level: 22
+  required-class:
+    - 'MAGIER'
+

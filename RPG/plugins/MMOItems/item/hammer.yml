@@ -252,3 +252,45 @@ PALADIN_STREITKOLBEN_T6:
     required-class:
       - 'PALADIN'
 
+# ==================== NEUE KRIEGSHÄMMER ====================
+KRIEGSHAMMER_T2:
+  base:
+    material: IRON_AXE
+    name: '&aStahl-Kriegshammer'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Ein schwerer Kriegshammer aus Stahl.'
+      - '&7Durchbricht Rüstungen.'
+      - ''
+      - '&a+12% Rüstungsdurchdringung'
+      - '&a15% Betäubungschance (1s)'
+      - ''
+      - '&8Benötigt Level 12'
+    attack-damage: 16
+    attack-speed: 1.0
+    required-level: 12
+    required-class:
+      - 'KRIEGER'
+
+KRIEGSHAMMER_T3:
+  base:
+    material: DIAMOND_AXE
+    name: '&9Mithril-Kriegshammer'
+    lore:
+      - '&8Krieger Waffe'
+      - ''
+      - '&7Ein mächtiger Kriegshammer aus Mithril.'
+      - '&7Perfekt für Rüstungsbrecher.'
+      - ''
+      - '&9+20% Rüstungsdurchdringung'
+      - '&9Betäubung I (1.5s)'
+      - '&9+8 Stärke'
+      - ''
+      - '&8Benötigt Level 22'
+    attack-damage: 23
+    attack-speed: 1.0
+    required-level: 22
+    required-class:
+      - 'KRIEGER'
+

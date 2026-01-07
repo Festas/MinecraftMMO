@@ -149,3 +149,45 @@ KRIEGER_KRIEGSHAMMER_T6:
     required-class:
       - 'KRIEGER'
 
+# ==================== NEUE GROSSHÄMMER ====================
+GROSSHAMMER_T2:
+  base:
+    material: IRON_AXE
+    name: '&aStahl-Großhammer'
+    lore:
+      - '&8Krieger Waffe (Großhammer)'
+      - ''
+      - '&7Ein massiver Großhammer aus Stahl.'
+      - '&7Langsam aber vernichtend.'
+      - ''
+      - '&a+25% Rüstungsdurchdringung'
+      - '&a20% Betäubungschance (1.5s)'
+      - ''
+      - '&8Benötigt Level 18'
+    attack-damage: 28
+    attack-speed: 0.65
+    required-level: 18
+    required-class:
+      - 'KRIEGER'
+
+GROSSHAMMER_T3:
+  base:
+    material: DIAMOND_AXE
+    name: '&9Mithril-Großhammer'
+    lore:
+      - '&8Krieger Waffe (Großhammer)'
+      - ''
+      - '&7Ein gewaltiger Großhammer aus Mithril.'
+      - '&7Zermalmt Feinde mit einem Schlag.'
+      - ''
+      - '&9+35% Rüstungsdurchdringung'
+      - '&9Betäubung II (2s)'
+      - '&9+12 Stärke'
+      - ''
+      - '&8Benötigt Level 28'
+    attack-damage: 42
+    attack-speed: 0.65
+    required-level: 28
+    required-class:
+      - 'KRIEGER'
+

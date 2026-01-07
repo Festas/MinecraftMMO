@@ -216,3 +216,113 @@ FRAGMENT_DER_LEERE:
     - ''
     - '&8Verwendung: Leeren-Set Crafting'
 
+# ==================== NEUE CRAFTING ESSENZEN ====================
+
+ARKANE_ESSENZ:
+  base:
+    material: ENDER_PEARL
+    name: '&5Arkane Essenz'
+    lore:
+      - '&8Crafting-Material'
+      - ''
+      - '&7Hochkonzentrierte arkane Energie.'
+      - '&7Wird für mächtige magische'
+      - '&7Waffen benötigt.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Arkane Waffen (T4-T5)'
+      - '&8• Katalysatoren'
+      - ''
+      - '&8Für Magier-Klassen'
+    required-level: 38
+
+FROST_ESSENZ:
+  base:
+    material: ICE
+    name: '&bFrost-Essenz'
+    lore:
+      - '&8Crafting-Material'
+      - ''
+      - '&7Essenz der ewigen Kälte.'
+      - '&7Wird für Frost-Waffen'
+      - '&7verwendet.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Frost-Zauberstäbe'
+      - '&8• Frost-Verzauberungen'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 12
+
+NATUR_ESSENZ:
+  base:
+    material: MOSS_BLOCK
+    name: '&aNatur-Essenz'
+    lore:
+      - '&8Crafting-Material'
+      - ''
+      - '&7Essenz der Natur.'
+      - '&7Wird für Schamanen-Waffen'
+      - '&7verwendet.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Naturstäbe'
+      - '&8• Totems'
+      - ''
+      - '&8Für Schamanen'
+    required-level: 22
+
+LEBENS_ESSENZ:
+  base:
+    material: GLOW_BERRIES
+    name: '&aLebens-Essenz'
+    lore:
+      - '&8Crafting-Material'
+      - ''
+      - '&7Konzentrierte Lebensenergie.'
+      - '&7Wird für Heilungs-Items'
+      - '&7verwendet.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Heiltränke'
+      - '&8• Totems'
+      - ''
+      - '&8Für alle Klassen'
+    required-level: 15
+
+GIFT_ESSENZ:
+  base:
+    material: SPIDER_EYE
+    name: '&2Gift-Essenz'
+    lore:
+      - '&8Crafting-Material'
+      - ''
+      - '&7Konzentriertes Gift.'
+      - '&7Wird für Gift-Waffen'
+      - '&7verwendet.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Giftdolche'
+      - '&8• Gift-Pfeile'
+      - ''
+      - '&8Für Assassinen'
+    required-level: 25
+
+SCHATTEN_ESSENZ:
+  base:
+    material: PHANTOM_MEMBRANE
+    name: '&8Schatten-Essenz'
+    lore:
+      - '&8Crafting-Material'
+      - ''
+      - '&7Essenz der Schatten.'
+      - '&7Wird für dunkle Waffen'
+      - '&7verwendet.'
+      - ''
+      - '&7Verwendung:'
+      - '&8• Schatten-Waffen'
+      - '&8• Assassinen-Ausrüstung'
+      - ''
+      - '&8Für Assassinen'
+    required-level: 38
+

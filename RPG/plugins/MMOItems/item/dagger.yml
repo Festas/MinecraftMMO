@@ -306,6 +306,103 @@ BERSERKER_BARBAR_T2:
     required-class:
       - 'KRIEGER'
 
+# ==================== NEUE DOLCHE ====================
+DOLCH_T2:
+  base:
+    material: IRON_SWORD
+    name: '&aStahl-Dolch'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Ein scharfer Dolch aus Stahl.'
+      - '&7Schnell und tödlich.'
+      - ''
+      - '&a+15% Kritische Trefferchance'
+      - '&a+8% Ausweichen'
+      - ''
+      - '&8Benötigt Level 12'
+  attack-damage: 10
+  attack-speed: 1.9
+  critical-strike-chance: 15
+  dodge-rating: 8
+  required-level: 12
+  required-class:
+    - 'ASSASSINE'
+
+DOLCH_T3:
+  base:
+    material: DIAMOND_SWORD
+    name: '&9Mithril-Dolch'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Ein leichter Dolch aus Mithril.'
+      - '&7Perfekt für schnelle Angriffe.'
+      - ''
+      - '&9+22% Kritische Trefferchance'
+      - '&9+12% Ausweichen'
+      - '&9+25% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 22'
+  attack-damage: 15
+  attack-speed: 1.9
+  critical-strike-chance: 22
+  critical-strike-power: 25
+  dodge-rating: 12
+  required-level: 22
+  required-class:
+    - 'ASSASSINE'
+
+DOLCH_T4:
+  base:
+    material: DIAMOND_SWORD
+    name: '&5Adamant-Dolch'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Ein epischer Dolch aus Adamant.'
+      - '&7Lautlos und tödlich.'
+      - ''
+      - '&5+32% Kritische Trefferchance'
+      - '&5+18% Ausweichen'
+      - '&5+45% Kritischer Schaden'
+      - '&5Gift II (5 Sekunden)'
+      - ''
+      - '&8Benötigt Level 38'
+  attack-damage: 24
+  attack-speed: 1.9
+  critical-strike-chance: 32
+  critical-strike-power: 45
+  dodge-rating: 18
+  required-level: 38
+  required-class:
+    - 'ASSASSINE'
+
+GIFTDOLCH_T3:
+  base:
+    material: DIAMOND_SWORD
+    name: '&9Vergifteter Dolch'
+    lore:
+      - '&8Assassine Waffe'
+      - ''
+      - '&7Ein mit Gift beschichteter Dolch.'
+      - '&7Verursacht schwere Vergiftungen.'
+      - ''
+      - '&9+20% Kritische Trefferchance'
+      - '&9+10% Ausweichen'
+      - '&9Gift III (7 Sekunden)'
+      - '&9+30% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 25'
+  attack-damage: 16
+  attack-speed: 1.9
+  critical-strike-chance: 20
+  critical-strike-power: 30
+  dodge-rating: 10
+  required-level: 25
+  required-class:
+    - 'ASSASSINE'
+
 # ==================== BOSS DAGGER ====================
 AWAKENED_ARCHER_GALEBOW:
   base:

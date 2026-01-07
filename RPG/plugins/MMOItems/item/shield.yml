@@ -421,3 +421,68 @@ SCHAMANE_SCHILD_T6:
     required-class:
       - 'SCHAMANE'
 
+# ==================== NEUE SCHILDE ====================
+STAHLSCHILD_T2:
+  base:
+    material: SHIELD
+    name: '&aStahlschild'
+    lore:
+      - '&8Krieger/Paladin Offhand'
+      - ''
+      - '&7Ein robuster Schild aus Stahl.'
+      - '&7Guter Schutz für Krieger.'
+      - ''
+      - '&aBlockchance: 22%'
+      - '&a+30 Max. HP'
+      - '&a+4 Rüstung'
+      - ''
+      - '&8Benötigt Level 12'
+  max-health: 30
+  armor: 4
+  block-rating: 22
+  required-level: 12
+
+STAHLSCHILD_T3:
+  base:
+    material: SHIELD
+    name: '&9Mithril-Schild'
+    lore:
+      - '&8Krieger/Paladin Offhand'
+      - ''
+      - '&7Ein leichter aber starker'
+      - '&7Schild aus Mithril.'
+      - ''
+      - '&9Blockchance: 28%'
+      - '&9+55 Max. HP'
+      - '&9+7 Rüstung'
+      - '&9+6 Stärke'
+      - ''
+      - '&8Benötigt Level 22'
+  max-health: 55
+  armor: 7
+  block-rating: 28
+  required-level: 22
+
+MITHRILSCHILD_T4:
+  base:
+    material: SHIELD
+    name: '&5Adamant-Schild'
+    lore:
+      - '&8Krieger/Paladin Offhand'
+      - ''
+      - '&7Ein epischer Schild aus Adamant.'
+      - '&7Nahezu unzerstörbar.'
+      - ''
+      - '&5Blockchance: 35%'
+      - '&5+90 Max. HP'
+      - '&5+12 Rüstung'
+      - '&5+10 Stärke'
+      - '&5+5% Schadensreduzierung'
+      - ''
+      - '&8Benötigt Level 38'
+  max-health: 90
+  armor: 12
+  block-rating: 35
+  damage-reduction: 5
+  required-level: 38
+
