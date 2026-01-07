@@ -22,6 +22,7 @@ Feuerball_Tick:
 Feuerball_Hit:
   Skills:
   - damage{a=18;ia=0.5} @target
+  # Remove fire resistance so players can be ignited
   - potion{t=FIRE_RESISTANCE;d=0;l=0} @target
   - ignite{t=100} @target
   - effect:particles{p=explosion_large;a=2;hS=1;vS=1} @target
@@ -51,6 +52,7 @@ LavawellenIgnis:
   - delay 40
   - damage{a=25} @PlayersInRadius{r=15}
   - ignite{t=120} @PlayersInRadius{r=15}
+  # Remove fire resistance so players can be ignited
   - potion{t=FIRE_RESISTANCE;d=0;l=0} @PlayersInRadius{r=15}
   - effect:particles{p=flame;a=500;hS=15;vS=3} @self
   - effect:sound{s=entity.generic.burn;v=2;p=0.5} @self
