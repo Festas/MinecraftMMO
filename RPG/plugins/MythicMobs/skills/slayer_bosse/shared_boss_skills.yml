@@ -56,3 +56,29 @@ Splitter_Heilung:
   - effect:particles{p=heart;a=20;hS=2;vS=2} @self
   - effect:particles{p=reverse_portal;a=30;hS=1;vS=1} @self
   - effect:sound{s=block.beacon.power_select;v=0.5;p=1.5} @self
+
+# Eis-Elementar Explosion - Freezes on death
+EisElementar_Explosion:
+  Skills:
+  - effect:particles{p=snowflake;a=100;hS=3;vS=3} @self
+  - effect:sound{s=block.glass.break;v=1;p=0.5} @self
+  - potion{t=SLOW;d=100;l=2} @PlayersInRadius{r=5}
+  - 'message{m="&bDer Eis-Elementar explodiert in Frost!"} @PlayersInRadius{r=10}'
+
+# Feuer-Elementar Explosion - Burns on death
+FeuerElementar_Explosion:
+  Skills:
+  - effect:particles{p=flame;a=100;hS=3;vS=3} @self
+  - effect:sound{s=entity.generic.explode;v=1;p=0.5} @self
+  - damage{a=10} @PlayersInRadius{r=5}
+  - ignite{t=80} @PlayersInRadius{r=5}
+  - 'message{m="&6Der Feuer-Elementar explodiert!"} @PlayersInRadius{r=10}'
+
+# Schatten-Klon Tod - Blinds on death
+SchattenKlon_Tod:
+  Skills:
+  - effect:particles{p=smoke_large;a=100;hS=3;vS=3} @self
+  - effect:sound{s=entity.phantom.death;v=1;p=0.5} @self
+  - potion{t=BLINDNESS;d=60;l=1} @PlayersInRadius{r=5}
+  - 'message{m="&8Der Schatten-Klon löst sich auf!"} @PlayersInRadius{r=10}'
+
