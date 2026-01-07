@@ -162,6 +162,50 @@ SCHAMANE_NATURSTAB_T2:
     required-class:
       - 'SCHAMANE'
 
+SCHAMANE_NATURSTAB_T3:
+  base:
+    material: STICK
+    name: '&9Geister-Naturstab'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Ein Stab, der mit den'
+      - '&7Geistern der Natur kommuniziert.'
+      - ''
+      - '&9+20 HP/s Heilung'
+      - '&9+18% Heilungskraft'
+      - '&9+8 Intelligenz'
+      - '&9Naturzauber verstärkt'
+      - ''
+      - '&8Benötigt Level 22'
+  magic-damage: 14
+  health-regeneration: 20
+  required-level: 22
+  required-class:
+    - 'SCHAMANE'
+
+SCHAMANE_NATURSTAB_T4:
+  base:
+    material: BLAZE_ROD
+    name: '&5Runen-Naturstab'
+    lore:
+      - '&8Schamane Waffe'
+      - ''
+      - '&7Ein mit Runen verzierter Stab'
+      - '&7von enormer Heilkraft.'
+      - ''
+      - '&5+35 HP/s Heilung'
+      - '&5+32% Heilungskraft'
+      - '&5+15 Intelligenz'
+      - '&5Totem-Verstärkung'
+      - ''
+      - '&8Benötigt Level 38'
+  magic-damage: 22
+  health-regeneration: 35
+  required-level: 38
+  required-class:
+    - 'SCHAMANE'
+
 # ==================== BOSS WAND ====================
 LIGHTNING_STAFF:
   base:
