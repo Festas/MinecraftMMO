@@ -1,65 +1,51 @@
 # ===================================================
 # Boss Drops - Slayer Tier V Bosse
-# MMOItems Integration für Legendary Weapons und Quest Items
+# MMOItems Integration
 # ===================================================
 
-# WICHTIG: Auf Linux-Servern muss der Typ (z.B. sword) exakt so geschrieben sein
-# wie der Dateiname im MMOItems Ordner (sword.yml -> sword).
+# WICHTIG: Die Typen (sword, material, etc.) müssen mit den Dateinamen in MMOItems übereinstimmen!
 
 # ==========================================
-# Nekromant Malachar - Drops
+# Nekromant Malachar
 # ==========================================
-
 StabDerVerdammnis:
-  # KORRIGIERT: SWORD -> sword
   Id: MMOITEMS:sword:STAB_DER_VERDAMMNIS
   Display: '&5&lStab der Verdammnis'
   
 SeeleDesNekromanten:
-  # KORRIGIERT: MATERIAL -> material
   Id: MMOITEMS:material:SEELE_DES_NEKROMANTEN
   Display: '&5Seele des Nekromanten'
 
 # ==========================================
-# Spinnenkönigin Arachnia - Drops
+# Spinnenkönigin Arachnia
 # ==========================================
-
 SpinnenseideBogen:
-  # KORRIGIERT: BOW -> bow
   Id: MMOITEMS:bow:SPINNENSEIDE_BOGEN
   Display: '&2&lSpinnenseide-Bogen'
 
 HerzDerKoenigin:
-  # KORRIGIERT: MATERIAL -> material
   Id: MMOITEMS:material:HERZ_DER_KOENIGIN
   Display: '&4Herz der Königin'
 
 # ==========================================
-# Dunkler Magier Vexorin - Drops
+# Dunkler Magier Vexorin
 # ==========================================
-
 StabDerLeere:
-  # KORRIGIERT: STAFF -> staff (falls Datei staff.yml heißt)
-  # Falls du den Stab in sword.yml hast, nutze: MMOITEMS:sword:STAB_DER_LEERE
+  # Geändert auf 'staff', da wir das Item in staff.yml verschieben
   Id: MMOITEMS:staff:STAB_DER_LEERE
   Display: '&0&lStab der Leere'
 
 FragmentDerLeere:
-  # KORRIGIERT: MATERIAL -> material
   Id: MMOITEMS:material:FRAGMENT_DER_LEERE
   Display: '&0Fragment der Leere'
 
 LeereRuestungTeil:
-  # KORRIGIERT: ARMOR -> armor
   Id: MMOITEMS:armor:LEERE_RUESTUNG_TEIL
   Display: '&8&lLeere-Brustplatte'
 
 # ==========================================
-# Währung (Global)
+# Währung
 # ==========================================
-
 GoldCoin:
-  # KORRIGIERT: MATERIAL -> material
   Id: MMOITEMS:material:GOLD_COIN
   Display: '&6Goldmünze'
-
