@@ -1,67 +1,195 @@
 # ===================================================
 # Boss Drops - Slayer Tier V Bosse
-# MMOItems Integration für Legendary Weapons und Quest Items
+# Stand-Alone MythicMobs Items (Kein MMOItems benötigt!)
 # ===================================================
+
+# Diese Items funktionieren zu 100%, egal was mit MMOItems los ist.
+# MythicMobs erstellt sie als normale Minecraft-Items mit Name/Lore.
 
 # ==========================================
 # Nekromant Malachar - Drops
 # ==========================================
 
 StabDerVerdammnis:
-  Id: MMOITEMS:sword:STAB_DER_VERDAMMNIS
+  Id: NETHERITE_SWORD
   Display: '&5&lStab der Verdammnis'
+  Lore:
+  - '&7Wurde einst von einem Hoch-Nekromanten'
+  - '&7geführt, um ganze Armeen zu unterwerfen.'
+  - ''
+  - '&8Passive: &7Jeder Schlag entzieht Lebenskraft.'
+  - '&8Aktiv (Rechtsklick): &cVerfluchter Strahl'
+  - ''
+  - '&5&lMYTHISCH'
+  Enchantments:
+  - SHARPNESS:5
+  - FIRE_ASPECT:2
+  Attributes:
+    MainHand:
+      AttackDamage: 14
+      AttackSpeed: 1.2
+  Options:
+    Unbreakable: true
+    HideAttributes: true
   
 SeeleDesNekromanten:
-  Id: MMOITEMS:material:SEELE_DES_NEKROMANTEN
+  Id: GHAST_TEAR
   Display: '&5Seele des Nekromanten'
+  Lore:
+  - '&7Ein dunkles Überbleibsel eines'
+  - '&7mächtigen Nekromanten.'
+  - ''
+  - '&8Verwendung: Seltenes Crafting'
+  Options:
+    Glow: true
 
 # ==========================================
 # Spinnenkönigin Arachnia - Drops
 # ==========================================
 
 SpinnenseideBogen:
-  Id: MMOITEMS:bow:SPINNENSEIDE_BOGEN
-  Display: '&2&lSpinnenseide-Bogen'
+  Id: BOW
+  Display: '&2&lBogen der Spinnenkönigin'
+  Lore:
+  - '&7Gewebt aus der widerstandsfähigsten'
+  - '&7Seide der Brutmutter.'
+  - ''
+  - '&8Passive: &7Pfeile sind giftig.'
+  - '&8Passive: &2Verlangsamt Ziele bei Treffer.'
+  - ''
+  - '&c&lLEGENDÄR'
+  Enchantments:
+  - POWER:4
+  - PUNCH:2
+  Options:
+    Unbreakable: true
 
 HerzDerKoenigin:
-  Id: MMOITEMS:material:HERZ_DER_KOENIGIN
+  Id: FERMENTED_SPIDER_EYE
   Display: '&4Herz der Königin'
+  Lore:
+  - '&7Das noch schlagende Herz der'
+  - '&7Spinnenkönigin.'
+  - ''
+  - '&8Verwendung: Boss-Waffen Crafting'
 
 # ==========================================
 # Dunkler Magier Vexorin - Drops
 # ==========================================
 
 StabDerLeere:
-  Id: MMOITEMS:staff:STAB_DER_LEERE
-  Display: '&0&lStab der Leere'
+  Id: BLAZE_ROD
+  Display: '&5&lZepter der Leere'
+  Lore:
+  - '&7Kanalisiert die pure, kalte Energie'
+  - '&7des Nichts zwischen den Welten.'
+  - ''
+  - '&8Geist: &5Nether &8(Dunkle Projektile)'
+  - '&8Aktiv (Shift+Rechts): &5Gravitationsfeld'
+  - ''
+  - '&5&lMYTHISCH'
+  Enchantments:
+  - SOUL_SPEED:3
+  Options:
+    Unbreakable: true
+    HideEnchantments: true
 
 FragmentDerLeere:
-  Id: MMOITEMS:material:FRAGMENT_DER_LEERE
+  Id: AMETHYST_SHARD
   Display: '&0Fragment der Leere'
+  Lore:
+  - '&7Ein Splitter aus purer Dunkelheit.'
+  - ''
+  - '&8Verwendung: Leeren-Set Crafting'
+  Options:
+    Glow: true
 
 # --- Leere Set (Komplett) ---
 
 LeereHelm:
-  Id: MMOITEMS:armor:LEERE_HELM
+  Id: NETHERITE_HELMET
   Display: '&0&lHelm der Leere'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Ein Helm durchdrungen von'
+  - '&7der Essenz der Leere.'
+  - ''
+  - '&8Drop: Dunkler Magier Vexorin'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Head:
+      Armor: 4
+      ArmorToughness: 3
+  Options:
+    Unbreakable: true
 
 LeereBrustplatte:
-  # Umbenannt von "LeereRuestungTeil" zu "LeereBrustplatte" für Klarheit
-  Id: MMOITEMS:armor:LEERE_BRUSTPLATTE
+  Id: NETHERITE_CHESTPLATE
   Display: '&0&lBrustplatte der Leere'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Eine Brustplatte durchdrungen'
+  - '&7von der Essenz der Leere.'
+  - ''
+  - '&8Drop: Dunkler Magier Vexorin'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Chest:
+      Armor: 9
+      ArmorToughness: 3
+  Options:
+    Unbreakable: true
 
 LeereBeinschutz:
-  Id: MMOITEMS:armor:LEERE_BEINSCHUTZ
+  Id: NETHERITE_LEGGINGS
   Display: '&0&lBeinschutz der Leere'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Ein Beinschutz durchdrungen'
+  - '&7von der Essenz der Leere.'
+  - ''
+  - '&8Drop: Dunkler Magier Vexorin'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Legs:
+      Armor: 7
+      ArmorToughness: 3
+  Options:
+    Unbreakable: true
 
 LeereStiefel:
-  Id: MMOITEMS:armor:LEERE_STIEFEL
+  Id: NETHERITE_BOOTS
   Display: '&0&lStiefel der Leere'
+  Lore:
+  - '&8Mythische Rüstung'
+  - ''
+  - '&7Stiefel durchdrungen von'
+  - '&7der Essenz der Leere.'
+  - ''
+  - '&8Drop: Dunkler Magier Vexorin'
+  - ''
+  - '&5&lMYTHISCH'
+  Attributes:
+    Feet:
+      Armor: 4
+      ArmorToughness: 3
+      MovementSpeed: 0.05
+  Options:
+    Unbreakable: true
 
 # ==========================================
 # Währung (Global)
 # ==========================================
 
 GoldCoin:
-  Id: MMOITEMS:material:GOLD_COIN
+  Id: GOLD_NUGGET
   Display: '&6Goldmünze'
+  Lore:
+  - '&7Währung für Händler.'
+  Model: 0
