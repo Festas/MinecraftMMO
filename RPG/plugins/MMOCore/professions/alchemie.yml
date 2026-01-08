@@ -104,75 +104,48 @@ on-level-up:
 # XP-Quellen für Trank-Brauen
 # ACHTUNG: Namen wurden für 1.21+ korrigiert!
 exp-sources:
-  # Basic Tränke
-  - 'brew{potion=AWKWARD;amount=3-5}'
-  - 'brew{potion=THICK;amount=2-4}'
-  - 'brew{potion=MUNDANE;amount=2-4}'
-  
   # Heilung
-  - 'brew{potion=HEALING;amount=8-12}'
-  - 'brew{potion=STRONG_HEALING;amount=12-18}'
+  - 'brewpotion{effect=INSTANT_HEALTH;amount=8-12}'
   
   # Regeneration
-  - 'brew{potion=REGENERATION;amount=10-15}'
-  - 'brew{potion=LONG_REGENERATION;amount=12-18}'
-  - 'brew{potion=STRONG_REGENERATION;amount=15-22}'
+  - 'brewpotion{effect=REGENERATION;amount=10-15}'
   
   # Stärke
-  - 'brew{potion=STRENGTH;amount=10-15}'
-  - 'brew{potion=LONG_STRENGTH;amount=12-18}'
-  - 'brew{potion=STRONG_STRENGTH;amount=15-22}'
+  - 'brewpotion{effect=STRENGTH;amount=10-15}'
   
   # Schnelligkeit
-  - 'brew{potion=SWIFTNESS;amount=8-12}'
-  - 'brew{potion=LONG_SWIFTNESS;amount=10-15}'
-  - 'brew{potion=STRONG_SWIFTNESS;amount=12-18}'
+  - 'brewpotion{effect=SPEED;amount=8-12}'
   
   # Sprungkraft
-  - 'brew{potion=LEAPING;amount=8-12}'
-  - 'brew{potion=LONG_LEAPING;amount=10-15}'
-  - 'brew{potion=STRONG_LEAPING;amount=12-18}'
+  - 'brewpotion{effect=JUMP_BOOST;amount=8-12}'
   
   # Feuerresistenz
-  - 'brew{potion=FIRE_RESISTANCE;amount=10-15}'
-  - 'brew{potion=LONG_FIRE_RESISTANCE;amount=12-18}'
+  - 'brewpotion{effect=FIRE_RESISTANCE;amount=10-15}'
   
   # Wasseratmung
-  - 'brew{potion=WATER_BREATHING;amount=10-15}'
-  - 'brew{potion=LONG_WATER_BREATHING;amount=12-18}'
+  - 'brewpotion{effect=WATER_BREATHING;amount=10-15}'
   
   # Nachtsicht
-  - 'brew{potion=NIGHT_VISION;amount=8-12}'
-  - 'brew{potion=LONG_NIGHT_VISION;amount=10-15}'
+  - 'brewpotion{effect=NIGHT_VISION;amount=8-12}'
   
   # Unsichtbarkeit
-  - 'brew{potion=INVISIBILITY;amount=12-18}'
-  - 'brew{potion=LONG_INVISIBILITY;amount=15-22}'
+  - 'brewpotion{effect=INVISIBILITY;amount=12-18}'
   
   # Langsamkeit
-  - 'brew{potion=SLOWNESS;amount=8-12}'
-  - 'brew{potion=LONG_SLOWNESS;amount=10-15}'
-  - 'brew{potion=STRONG_SLOWNESS;amount=12-18}'
+  - 'brewpotion{effect=SLOWNESS;amount=8-12}'
   
   # Schaden
-  - 'brew{potion=HARMING;amount=10-15}'
-  - 'brew{potion=STRONG_HARMING;amount=15-22}'
+  - 'brewpotion{effect=INSTANT_DAMAGE;amount=10-15}'
   
   # Gift
-  - 'brew{potion=POISON;amount=10-15}'
-  - 'brew{potion=LONG_POISON;amount=12-18}'
-  - 'brew{potion=STRONG_POISON;amount=15-22}'
+  - 'brewpotion{effect=POISON;amount=10-15}'
   
   # Schwäche
-  - 'brew{potion=WEAKNESS;amount=8-12}'
-  - 'brew{potion=LONG_WEAKNESS;amount=10-15}'
+  - 'brewpotion{effect=WEAKNESS;amount=8-12}'
   
-  # Schildkrötenpanzer
-  - 'brew{potion=TURTLE_MASTER;amount=15-22}'
-  - 'brew{potion=LONG_TURTLE_MASTER;amount=18-26}'
-  - 'brew{potion=STRONG_TURTLE_MASTER;amount=22-30}'
+  # Schildkrötenpanzer (verwendet RESISTANCE als Effekt)
+  - 'brewpotion{effect=RESISTANCE;amount=15-22}'
   
   # Sanfter Fall
-  - 'brew{potion=SLOW_FALLING;amount=10-15}'
-  - 'brew{potion=LONG_SLOW_FALLING;amount=12-18}'
+  - 'brewpotion{effect=SLOW_FALLING;amount=10-15}'
 

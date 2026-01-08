@@ -102,55 +102,35 @@ on-level-up:
 
 # XP-Quellen für Verzauberungen
 exp-sources:
-  # Waffen-Verzauberungen
-  - 'enchant{enchant=SHARPNESS;amount=5-10}'
-  - 'enchant{enchant=SMITE;amount=5-10}'
-  - 'enchant{enchant=BANE_OF_ARTHROPODS;amount=5-10}'
-  - 'enchant{enchant=KNOCKBACK;amount=4-8}'
-  - 'enchant{enchant=FIRE_ASPECT;amount=8-12}'
-  - 'enchant{enchant=LOOTING;amount=10-15}'
-  - 'enchant{enchant=SWEEPING_EDGE;amount=6-10}'
-  
-  # Rüstungs-Verzauberungen
-  - 'enchant{enchant=PROTECTION;amount=5-10}'
-  - 'enchant{enchant=FIRE_PROTECTION;amount=5-10}'
-  - 'enchant{enchant=BLAST_PROTECTION;amount=5-10}'
-  - 'enchant{enchant=PROJECTILE_PROTECTION;amount=5-10}'
-  - 'enchant{enchant=FEATHER_FALLING;amount=6-10}'
-  - 'enchant{enchant=THORNS;amount=8-12}'
-  - 'enchant{enchant=RESPIRATION;amount=6-10}'
-  - 'enchant{enchant=DEPTH_STRIDER;amount=6-10}'
-  - 'enchant{enchant=FROST_WALKER;amount=8-12}'
-  - 'enchant{enchant=SOUL_SPEED;amount=10-15}'
-  
-  # Werkzeug-Verzauberungen
-  - 'enchant{enchant=EFFICIENCY;amount=5-10}'
-  - 'enchant{enchant=SILK_TOUCH;amount=15-20}'
-  - 'enchant{enchant=FORTUNE;amount=12-18}'
-  - 'enchant{enchant=UNBREAKING;amount=8-12}'
-  
-  # Bogen-Verzauberungen
-  - 'enchant{enchant=POWER;amount=6-10}'
-  - 'enchant{enchant=PUNCH;amount=5-8}'
-  - 'enchant{enchant=FLAME;amount=8-12}'
-  - 'enchant{enchant=INFINITY;amount=15-20}'
-  
-  # Armbrust-Verzauberungen
-  - 'enchant{enchant=QUICK_CHARGE;amount=8-12}'
-  - 'enchant{enchant=PIERCING;amount=8-12}'
-  - 'enchant{enchant=MULTISHOT;amount=12-18}'
-  
-  # Dreizack-Verzauberungen
-  - 'enchant{enchant=LOYALTY;amount=8-12}'
-  - 'enchant{enchant=IMPALING;amount=8-12}'
-  - 'enchant{enchant=RIPTIDE;amount=10-15}'
-  - 'enchant{enchant=CHANNELING;amount=12-18}'
-  
-  # Universelle Verzauberungen
-  - 'enchant{enchant=MENDING;amount=20-30}'
-  - 'enchant{enchant=VANISHING_CURSE;amount=5-8}'
-  - 'enchant{enchant=BINDING_CURSE;amount=5-8}'
-  
-  # Angel-Verzauberungen
-  - 'enchant{enchant=LUCK_OF_THE_SEA;amount=8-12}'
-  - 'enchant{enchant=LURE;amount=6-10}'
+  # Waffen
+  - 'enchantitem{type=DIAMOND_SWORD;amount=10-20}'
+  - 'enchantitem{type=NETHERITE_SWORD;amount=15-25}'
+  - 'enchantitem{type=IRON_SWORD;amount=6-12}'
+  # Rüstung
+  - 'enchantitem{type=DIAMOND_HELMET;amount=10-20}'
+  - 'enchantitem{type=DIAMOND_CHESTPLATE;amount=12-22}'
+  - 'enchantitem{type=DIAMOND_LEGGINGS;amount=11-21}'
+  - 'enchantitem{type=DIAMOND_BOOTS;amount=10-20}'
+  - 'enchantitem{type=NETHERITE_HELMET;amount=15-25}'
+  - 'enchantitem{type=NETHERITE_CHESTPLATE;amount=18-28}'
+  - 'enchantitem{type=NETHERITE_LEGGINGS;amount=16-26}'
+  - 'enchantitem{type=NETHERITE_BOOTS;amount=15-25}'
+  - 'enchantitem{type=IRON_HELMET;amount=5-10}'
+  - 'enchantitem{type=IRON_CHESTPLATE;amount=6-12}'
+  - 'enchantitem{type=IRON_LEGGINGS;amount=5-11}'
+  - 'enchantitem{type=IRON_BOOTS;amount=5-10}'
+  # Werkzeuge
+  - 'enchantitem{type=DIAMOND_PICKAXE;amount=10-20}'
+  - 'enchantitem{type=NETHERITE_PICKAXE;amount=15-25}'
+  - 'enchantitem{type=DIAMOND_AXE;amount=10-20}'
+  - 'enchantitem{type=DIAMOND_SHOVEL;amount=8-16}'
+  - 'enchantitem{type=DIAMOND_HOE;amount=8-16}'
+  # Fernkampf
+  - 'enchantitem{type=BOW;amount=8-15}'
+  - 'enchantitem{type=CROSSBOW;amount=10-18}'
+  - 'enchantitem{type=TRIDENT;amount=15-25}'
+  # Sonstiges
+  - 'enchantitem{type=FISHING_ROD;amount=6-12}'
+  - 'enchantitem{type=BOOK;amount=5-10}'
+  - 'enchantitem{type=SHIELD;amount=8-15}'
+  - 'enchantitem{type=ELYTRA;amount=20-30}'
