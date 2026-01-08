@@ -1,0 +1,70 @@
+# Daily Quest: Erze für Grimjaw
+# Quest-Geber: Schmiedemeister Grimjaw
+# Reset: Täglich um 4:00 Uhr
+
+# ============================================================================
+# Täglich: Sammle Erze für den Schmied
+# ============================================================================
+
+conversations:
+  grimjaw_daily_erze:
+    quester: "Schmiedemeister Grimjaw"
+    first: "start"
+    
+    NPC_options:
+      start:
+        text: "&8*Schaut mürrisch von seinem Amboss auf* Jeden verfluchten Tag das Gleiche... Erze sammeln. Du! Bist du stark genug für ein bisschen Bergbau?"
+        pointer: "spieler_antwort"
+        conditions: "!daily_erze_aktiv,_core.ist_level_5,!daily_erze_complete_heute"
+      
+      beschreibung:
+        text: "&8Ich brauche 20 Erze. Eisen oder Kohle, ist mir egal. Haupt Sache Material! Ich zahl dir 100 Gold und geb dir etwas Bergbau-Erfahrung. Deal?"
+        pointer: "quest_optionen"
+      
+      erfolg:
+        text: "&8*Grunzt zufrieden* Gute Qualität! Das reicht für heute. Hier, dein Gold. Und *brummt* ...du hast gute Arbeit geleistet. Komm morgen wieder!"
+        pointer: "ende"
+        events: "daily_erze_belohnung"
+        conditions: "daily_erze_complete"
+      
+      schon_erledigt:
+        text: "&8Du warst heute schon da! Komm morgen wieder. Ich bin kein Gold-Automat!"
+        pointer: "ende"
+        conditions: "daily_erze_complete_heute"
+    
+    player_options:
+      fragen:
+        text: "&7Was genau braucht Ihr?"
+        pointer: "beschreibung"
+      
+      annehmen:
+        text: "&aIch sammle die Erze!"
+        pointer: "ende"
+        events: "start_daily_erze"
+      
+      ablehnen:
+        text: "&7Heute nicht..."
+        pointer: "ende"
+
+events:
+  start_daily_erze: "tag daily_erze_aktiv,journal add daily_erze_start,objective add sammle_erze_daily 20"
+  erze_gesammelt: "tag daily_erze_complete,tag !daily_erze_aktiv"
+  daily_erze_belohnung: "point playerpoints 100,experience 50,tag daily_erze_complete_heute,sound_quest_complete,journal update daily_erze_done"
+  daily_erze_reset: "tag !daily_erze_complete_heute"  # Wird täglich um 4:00 ausgeführt
+
+objectives:
+  sammle_erze_daily: "block IRON_ORE,DEEPSLATE_IRON_ORE,COAL_ORE,DEEPSLATE_COAL_ORE 20 events:erze_gesammelt notify:&b%left% Erze verbleiben"
+
+conditions:
+  daily_erze_aktiv: "tag daily_erze_aktiv"
+  daily_erze_complete: "tag daily_erze_complete"
+  daily_erze_complete_heute: "tag daily_erze_complete_heute"
+
+journal:
+  daily_erze_start: "&bDaily: Erze für Grimjaw|&7Sammle 20 Erze (Eisen/Kohle)|&7für Schmiedemeister Grimjaw.|&7Belohnung: 100 Gold + 50 XP"
+  daily_erze_done: "&b&lDaily Abgeschlossen!|&7Grimjaw ist zufrieden.|&7Komm morgen wieder!"
+
+# Hinweis: Der Reset muss über einen Cron-Job oder Plugin-Scheduler eingerichtet werden
+# Beispiel mit BetonQuest folder event:
+# folder daily_reset delay:0 random:0 events:duesterwall.daily.erze_fuer_grimjaw.daily_erze_reset
+# Dieser muss dann täglich um 4:00 Uhr ausgeführt werden
