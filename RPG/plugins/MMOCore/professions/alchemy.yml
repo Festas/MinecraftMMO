@@ -105,10 +105,10 @@ on-level-up:
 # ACHTUNG: Namen wurden für 1.21+ korrigiert!
 exp-sources:
   # Heilung
-  - 'brewpotion{effect=INSTANT_HEALTH;amount=8-12}'
+  - 'brewpotion{effect=INSTANT_HEAL;amount=8-12}'
   
   # Regeneration
-  - 'brewpotion{effect=REGENERATION;amount=10-15}'
+  - 'brewpotion{effect=REGEN;amount=10-15}'
   
   # Stärke
   - 'brewpotion{effect=STRENGTH;amount=10-15}'
@@ -117,7 +117,7 @@ exp-sources:
   - 'brewpotion{effect=SPEED;amount=8-12}'
   
   # Sprungkraft
-  - 'brewpotion{effect=JUMP_BOOST;amount=8-12}'
+  - 'brewpotion{effect=JUMP;amount=8-12}'
   
   # Feuerresistenz
   - 'brewpotion{effect=FIRE_RESISTANCE;amount=10-15}'
@@ -143,8 +143,8 @@ exp-sources:
   # Schwäche
   - 'brewpotion{effect=WEAKNESS;amount=8-12}'
   
-  # Schildkrötenpanzer (verwendet RESISTANCE als Effekt)
-  - 'brewpotion{effect=RESISTANCE;amount=15-22}'
+  # Schildkrötenpanzer (Turtle Master Potion)
+  - 'brewpotion{effect=TURTLE_MASTER;amount=15-22}'
   
   # Sanfter Fall
   - 'brewpotion{effect=SLOW_FALLING;amount=10-15}'
