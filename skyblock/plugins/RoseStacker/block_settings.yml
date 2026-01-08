@@ -362,6 +362,10 @@ COPPER_CHAIN:
   enabled: false
   display-name: Copper Chain
   max-stack-size: -1
+COPPER_CHEST:
+  enabled: false
+  display-name: Copper Chest
+  max-stack-size: -1
 COPPER_GRATE:
   enabled: false
   display-name: Copper Grate
@@ -689,6 +693,10 @@ EXPOSED_COPPER_BULB:
 EXPOSED_COPPER_CHAIN:
   enabled: false
   display-name: Exposed Copper Chain
+  max-stack-size: -1
+EXPOSED_COPPER_CHEST:
+  enabled: false
+  display-name: Exposed Copper Chest
   max-stack-size: -1
 EXPOSED_COPPER_GRATE:
   enabled: false
@@ -1233,6 +1241,10 @@ OXIDIZED_COPPER_BULB:
 OXIDIZED_COPPER_CHAIN:
   enabled: false
   display-name: Oxidized Copper Chain
+  max-stack-size: -1
+OXIDIZED_COPPER_CHEST:
+  enabled: false
+  display-name: Oxidized Copper Chest
   max-stack-size: -1
 OXIDIZED_COPPER_GRATE:
   enabled: false
@@ -2058,6 +2070,10 @@ WEATHERED_COPPER_CHAIN:
   enabled: false
   display-name: Weathered Copper Chain
   max-stack-size: -1
+WEATHERED_COPPER_CHEST:
+  enabled: false
+  display-name: Weathered Copper Chest
+  max-stack-size: -1
 WEATHERED_COPPER_GRATE:
   enabled: false
   display-name: Weathered Copper Grate
@@ -2137,20 +2153,4 @@ YELLOW_TERRACOTTA:
 YELLOW_WOOL:
   enabled: false
   display-name: Yellow Wool
-  max-stack-size: -1
-COPPER_CHEST:
-  enabled: false
-  display-name: Copper Chest
-  max-stack-size: -1
-EXPOSED_COPPER_CHEST:
-  enabled: false
-  display-name: Exposed Copper Chest
-  max-stack-size: -1
-OXIDIZED_COPPER_CHEST:
-  enabled: false
-  display-name: Oxidized Copper Chest
-  max-stack-size: -1
-WEATHERED_COPPER_CHEST:
-  enabled: false
-  display-name: Weathered Copper Chest
   max-stack-size: -1
