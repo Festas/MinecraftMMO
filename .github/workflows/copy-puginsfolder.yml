@@ -1,4 +1,4 @@
-name: Sync Plugin Configs from Server
+name: Sync Plugin Configs
 
 on:
   workflow_dispatch:
@@ -13,13 +13,22 @@ on:
           - RPG
           - SKYBLOCK
           - SURVIVAL
+      direction:
+        description: 'Sync-Richtung'
+        required: true
+        type: choice
+        options:
+          - 'Server → Repo'
+          - 'Repo → Server'
 
 jobs: 
   sync-plugins:
     runs-on: ubuntu-latest
     steps: 
-      - name:  Checkout Repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
 
       - name: Setup SSH Key
         run: |
@@ -28,9 +37,10 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Sync Plugin Configs from Server
+      - name: Sync Plugins
         run: |
-          SERVER_NAME="${{ github.event. inputs.server }}"
+          SERVER_NAME="${{ github.event.inputs.server }}"
+          DIRECTION="${{ github.event.inputs.direction }}"
           
           # Dynamisch den richtigen Secret-Pfad auswählen
           case $SERVER_NAME in
@@ -41,7 +51,7 @@ jobs:
               SERVER_PATH="${{ secrets.SERVER_PATH_PROXY }}"
               ;;
             RPG)
-              SERVER_PATH="${{ secrets. SERVER_PATH_RPG }}"
+              SERVER_PATH="${{ secrets.SERVER_PATH_RPG }}"
               ;;
             SKYBLOCK)
               SERVER_PATH="${{ secrets.SERVER_PATH_SKYBLOCK }}"
@@ -51,30 +61,47 @@ jobs:
               ;;
           esac
           
-          # Zielordner erstellen
-          TARGET_DIR="${SERVER_NAME,,}/plugins"  # lowercase
-          mkdir -p "$TARGET_DIR"
+          # Lokaler Ordner
+          LOCAL_DIR="${SERVER_NAME,,}/plugins"  # lowercase
           
-          # Rsync: Plugins kopieren, .jar Dateien ausschließen
-          rsync -avz --delete \
-            --exclude='*.jar' \
-            --exclude='*.jar.disabled' \
-            -e "ssh -o StrictHostKeyChecking=no" \
-            "${{ secrets. SSH_USER }}@${{ secrets.SSH_HOST }}:${SERVER_PATH}/" \
-            "$TARGET_DIR/"
+          if [ "$DIRECTION" == "Server → Repo" ]; then
+            echo "📥 Kopiere vom Server zum Repository..."
+            mkdir -p "$LOCAL_DIR"
+            
+            # Rsync: Server → Repo
+            rsync -avz --delete \
+              --exclude='*.jar' \
+              --exclude='*.jar.disabled' \
+              -e "ssh -o StrictHostKeyChecking=no" \
+              "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${SERVER_PATH}/" \
+              "$LOCAL_DIR/"
+          else
+            echo "📤 Kopiere vom Repository zum Server..."
+            
+            # Rsync: Repo → Server
+            rsync -avz --delete \
+              --exclude='*.jar' \
+              --exclude='*.jar.disabled' \
+              -e "ssh -o StrictHostKeyChecking=no" \
+              "$LOCAL_DIR/" \
+              "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${SERVER_PATH}/"
+          fi
 
       - name: Commit and Push Changes
+        if: github.event.inputs.direction == 'Server → Repo'
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users. noreply.github.com"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           
           SERVER_NAME="${{ github.event.inputs.server }}"
+          LOCAL_DIR="${SERVER_NAME,,}/plugins"
           
-          git add .
+          git add "$LOCAL_DIR"
           
           if git diff --staged --quiet; then
             echo "Keine Änderungen gefunden."
           else
             git commit -m "🔄 Sync $SERVER_NAME plugin configs from server"
+            git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}
             git push
           fi
