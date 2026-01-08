@@ -101,12 +101,12 @@ jobs:
             
             git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}
             
-            # Try to pull and rebase, if conflicts occur abort and try a simple pull
+            # Try to pull and rebase, if conflicts occur abort and try a fast-forward only pull
             if ! git pull --rebase origin main; then
-              echo "⚠️ Rebase conflict detected, aborting and trying regular pull..."
+              echo "⚠️ Rebase conflict detected, aborting and trying fast-forward only pull..."
               git rebase --abort
-              if ! git pull --no-rebase origin main; then
-                echo "❌ Pull failed, manual intervention required"
+              if ! git pull --ff-only origin main; then
+                echo "❌ Fast-forward pull failed, manual intervention required"
                 exit 1
               fi
             fi
@@ -165,10 +165,16 @@ jobs:
             else
               # Plugin wurde gelöscht - entferne es auch vom Server
               echo "🗑️ $PLUGIN existiert nicht mehr lokal, entferne vom Server..."
-              ssh -o StrictHostKeyChecking=no \
-                "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" \
-                "rm -rf ${{ secrets.SERVER_PATH_SKYBLOCK }}/$PLUGIN" 2>/dev/null || true
-              echo "✅ $PLUGIN vom Server entfernt"
+              # Safely construct the path and verify it's not empty
+              REMOTE_PATH="${{ secrets.SERVER_PATH_SKYBLOCK }}/$PLUGIN"
+              if [ -n "$REMOTE_PATH" ] && [ "$PLUGIN" != "" ]; then
+                ssh -o StrictHostKeyChecking=no \
+                  "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" \
+                  "if [ -d \"$REMOTE_PATH\" ]; then rm -rf \"$REMOTE_PATH\"; fi" 2>/dev/null || true
+                echo "✅ $PLUGIN vom Server entfernt"
+              else
+                echo "⚠️ Invalid remote path, skipping deletion"
+              fi
             fi
           done
           
