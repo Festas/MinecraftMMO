@@ -1,4 +1,4 @@
-name: Deploy Proxy Server Configs
+name: Deploy proxy Server Configs
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2  # Für Vergleich mit vorherigem Commit
+          fetch-depth: 2
 
       - name: Setup SSH
         run: |
@@ -31,7 +31,6 @@ jobs:
         id: changed_files
         run: |
           if [ "${{ github.event_name }}" = "push" ]; then
-            # Bei Push: Erkenne geänderte/gelöschte Dateien
             git diff --name-status HEAD~1 HEAD | grep '^[AMD]' | grep '^.\s*proxy/' > /tmp/changed_files.txt || true
             cat /tmp/changed_files.txt
           else
@@ -42,60 +41,63 @@ jobs:
         env:
           SSH_HOST: ${{ secrets.SSH_HOST }}
           SSH_USER: ${{ secrets.SSH_USER }}
-          SERVER_PATH: ${{ secrets.SERVER_PATH_PROXY }}
+          SERVER_PATH: ${{ secrets.SERVER_PATH_PROXY }} # Endet auf .../plugins
           REPLACE_FOLDER: ${{ github.event.inputs.replace_folder }}
         run: |
-          # Exclude patterns
           EXCLUDE_OPTS="--exclude='*.db' --exclude='*.sqlite' --exclude='*.log' --exclude='playerdata/' --exclude='data/' --exclude='cache/' --exclude='.git*'"
 
           if [ -n "$REPLACE_FOLDER" ]; then
-            # Ordner komplett ersetzen
+            # --- Modus: Ganzen Ordner ersetzen ---
             echo "Replacing folder: $REPLACE_FOLDER"
 
-            # Prüfe ob Ordner im Repository existiert
-            if [ ! -d "proxy/$REPLACE_FOLDER" ]; then
-              echo "Error: Folder proxy/$REPLACE_FOLDER does not exist in repository"
+            if [ ! -d "proxy/plugins/$REPLACE_FOLDER" ]; then
+              echo "Error: Folder proxy/plugins/$REPLACE_FOLDER does not exist in repository"
               exit 1
             fi
 
-            # Lösche Ordner auf dem Server
-            ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rm -rf $SERVER_PATH/$REPLACE_FOLDER"
+            ssh -n -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rm -rf $SERVER_PATH/$REPLACE_FOLDER"
 
-            # Lade kompletten Ordner hoch
-            eval "scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -r $EXCLUDE_OPTS proxy/$REPLACE_FOLDER $SSH_USER@$SSH_HOST:$SERVER_PATH/"
+            # Hier passt es, da wir explizit in den Zielordner/$REPLACE_FOLDER schreiben
+            eval "rsync -avz -e 'ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no' $EXCLUDE_OPTS --delete proxy/plugins/$REPLACE_FOLDER/ $SSH_USER@$SSH_HOST:$SERVER_PATH/$REPLACE_FOLDER/"
 
             echo "Folder $REPLACE_FOLDER replaced successfully"
           else
-            # Normale Synchronisation
+            # --- Modus: Sync Changed Files ---
             echo "Syncing changed files..."
 
             if [ "${{ github.event_name }}" = "push" ]; then
-              # Verarbeite geänderte Dateien
               if [ -f /tmp/changed_files.txt ] && [ -s /tmp/changed_files.txt ]; then
                 while IFS=$'\t' read -r status file; do
-                  # Entferne proxy/ Prefix
-                  relative_file="${file#proxy/}"
+                  # file ist z.B. "proxy/plugins/Ordner/Config.yml"
 
-                  # Skip excluded patterns
-                  if echo "$relative_file" | grep -qE '\.(db|sqlite|log)$|^(playerdata|data|cache)/|^\.git'; then
-                    echo "Skipping excluded file: $relative_file"
+                  # Berechne den Pfad für den Server (entferne 'proxy/plugins/')
+                  # Da SERVER_PATH schon im plugins-Ordner ist, brauchen wir nur "Ordner/Config.yml"
+                  if [[ "$file" == proxy/plugins/* ]]; then
+                    remote_relative_file="${file#proxy/plugins/}"
+                  else
+                    # Fallback falls Datei direkt in proxy/ liegt (z.B. proxy/readme.txt)
+                    remote_relative_file="${file#proxy/}"
+                  fi
+
+                  # Excludes prüfen (auf Basis des Dateinamens)
+                  if echo "$remote_relative_file" | grep -qE '\.(db|sqlite|log)$|^(playerdata|data|cache)/|^\.git'; then
+                    echo "Skipping excluded file: $remote_relative_file"
                     continue
                   fi
 
                   if [ "$status" = "D" ]; then
-                    # Datei wurde gelöscht
-                    echo "Deleting: $relative_file"
-                    ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rm -f $SERVER_PATH/$relative_file"
+                    echo "Deleting: $remote_relative_file"
+                    ssh -n -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rm -f $SERVER_PATH/$remote_relative_file"
                   else
-                    # Datei wurde hinzugefügt oder geändert
-                    echo "Uploading: $relative_file"
-                    # Erstelle Verzeichnisstruktur
-                    dir_path=$(dirname "$relative_file")
+                    echo "Uploading: $remote_relative_file"
+                    
+                    dir_path=$(dirname "$remote_relative_file")
                     if [ "$dir_path" != "." ]; then
-                      ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "mkdir -p $SERVER_PATH/$dir_path"
+                      ssh -n -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "mkdir -p $SERVER_PATH/$dir_path"
                     fi
-                    # Lade Datei hoch
-                    scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no "proxy/$relative_file" "$SSH_USER@$SSH_HOST:$SERVER_PATH/$relative_file"
+                    
+                    # Nutze $file (lokaler voller Pfad) -> $SERVER_PATH/$remote_relative_file (Server Pfad ohne doppeltes plugins/)
+                    scp -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no "$file" "$SSH_USER@$SSH_HOST:$SERVER_PATH/$remote_relative_file" < /dev/null
                   fi
                 done < /tmp/changed_files.txt
                 echo "Sync completed successfully"
@@ -103,9 +105,12 @@ jobs:
                 echo "No files changed in proxy/"
               fi
             else
-              # Manueller Trigger ohne replace_folder: Sync alle Dateien
+              # --- Manueller Full Sync ---
               echo "Manual sync: uploading all files..."
-              eval "rsync -avz -e 'ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no' $EXCLUDE_OPTS --delete proxy/ $SSH_USER@$SSH_HOST:$SERVER_PATH/"
+              # WICHTIG: Hier auch proxy/plugins/ als Quelle nutzen, nicht proxy/
+              # Sonst wird der Ordner 'plugins' in den Ordner 'plugins' kopiert -> plugins/plugins
+              eval "rsync -avz -e 'ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no' $EXCLUDE_OPTS --delete proxy/plugins/ $SSH_USER@$SSH_HOST:$SERVER_PATH/"
               echo "Full sync completed successfully"
             fi
           fi
+
