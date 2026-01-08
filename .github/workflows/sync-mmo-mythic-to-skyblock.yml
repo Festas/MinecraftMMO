@@ -1,0 +1,181 @@
+name: Sync MMO & Mythic Plugins RPG → Skyblock
+
+on:
+  push: 
+    branches: 
+      - main
+    paths:
+      # MMO Plugins
+      - 'rpg/plugins/MMOCore/**'
+      - 'rpg/plugins/MMOItems/**'
+      # Mythic Plugins
+      - 'rpg/plugins/MythicAchievements/**'
+      - 'rpg/plugins/MythicDungeons/**'
+      - 'rpg/plugins/MythicHUD/**'
+      - 'rpg/plugins/MythicLib/**'
+      - 'rpg/plugins/MythicMobs/**'
+      - 'rpg/plugins/MythicRPG/**'
+
+  workflow_dispatch: 
+    inputs:
+      sync_all:
+        description: 'Alle MMO & Mythic Ordner synchronisieren?'
+        required: false
+        type: boolean
+        default: true
+
+jobs: 
+  sync-to-skyblock-repo:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          fetch-depth: 0
+
+      - name: Sync MMO & Mythic Plugins to Skyblock folder
+        run: |
+          echo "🔄 Synchronisiere MMO & Mythic Plugins von RPG nach Skyblock..."
+          
+          # Liste der zu synchronisierenden Ordner
+          PLUGINS=(
+            "MMOCore"
+            "MMOItems"
+            "MythicAchievements"
+            "MythicDungeons"
+            "MythicHUD"
+            "MythicLib"
+            "MythicMobs"
+            "MythicRPG"
+          )
+          
+          # Skyblock plugins Verzeichnis erstellen falls nicht vorhanden
+          mkdir -p skyblock/plugins
+          
+          for PLUGIN in "${PLUGINS[@]}"; do
+            SOURCE="rpg/plugins/$PLUGIN"
+            DEST="skyblock/plugins/$PLUGIN"
+            
+            if [ -d "$SOURCE" ]; then
+              echo "📂 Synchronisiere $PLUGIN..."
+              
+              # Lösche Zielordner komplett und kopiere neu (vollständiger Sync inkl. Löschungen)
+              rm -rf "$DEST"
+              cp -r "$SOURCE" "$DEST"
+              
+              echo "✅ $PLUGIN erfolgreich synchronisiert"
+            else
+              # Wenn Quellordner nicht mehr existiert, lösche auch den Zielordner
+              if [ -d "$DEST" ]; then
+                echo "🗑️ $SOURCE wurde gelöscht, entferne auch $DEST..."
+                rm -rf "$DEST"
+                echo "✅ $PLUGIN aus Skyblock entfernt"
+              fi
+            fi
+          done
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # -A erfasst auch Löschungen
+          git add -A skyblock/plugins/
+          
+          if git diff --staged --quiet; then
+            echo "ℹ️ Keine Änderungen gefunden."
+          else
+            # Zeige was sich geändert hat (inkl. Löschungen)
+            echo "📋 Änderungen:"
+            git diff --staged --stat
+            
+            git commit -m "🔄 Auto-sync MMO & Mythic plugins from RPG to Skyblock
+
+            Synchronisierte Plugins:
+            - MMOCore, MMOItems
+            - MythicAchievements, MythicDungeons, MythicHUD
+            - MythicLib, MythicMobs, MythicRPG
+            
+            Inkl. Löschungen und Aktualisierungen."
+            
+            git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}
+            
+            # Try to pull and rebase, if conflicts occur abort and try a fast-forward only pull
+            if ! git pull --rebase origin main; then
+              echo "⚠️ Rebase conflict detected, aborting and trying fast-forward only pull..."
+              git rebase --abort
+              if ! git pull --ff-only origin main; then
+                echo "❌ Fast-forward pull failed, manual intervention required"
+                exit 1
+              fi
+            fi
+            
+            git push
+            echo "✅ Änderungen erfolgreich gepusht!"
+          fi
+
+  deploy-to-skyblock-server:
+    needs: sync-to-skyblock-repo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy MMO & Mythic to Skyblock Server
+        run: |
+          echo "📤 Deploye MMO & Mythic Plugins zum Skyblock Server..."
+          
+          PLUGINS=(
+            "MMOCore"
+            "MMOItems"
+            "MythicAchievements"
+            "MythicDungeons"
+            "MythicHUD"
+            "MythicLib"
+            "MythicMobs"
+            "MythicRPG"
+          )
+          
+          for PLUGIN in "${PLUGINS[@]}"; do
+            LOCAL_DIR="skyblock/plugins/$PLUGIN"
+            
+            if [ -d "$LOCAL_DIR" ]; then
+              echo "📂 Deploye $PLUGIN..."
+              
+              # --delete sorgt dafür, dass gelöschte Dateien auch auf dem Server entfernt werden
+              rsync -avz --delete \
+                --exclude='*.jar' \
+                --exclude='*.jar.disabled' \
+                -e "ssh -o StrictHostKeyChecking=no" \
+                "$LOCAL_DIR/" \
+                "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.SERVER_PATH_SKYBLOCK }}/$PLUGIN/"
+              
+              echo "✅ $PLUGIN deployed"
+            else
+              # Plugin wurde gelöscht - entferne es auch vom Server
+              echo "🗑️ $PLUGIN existiert nicht mehr lokal, entferne vom Server..."
+              # Safely construct the path and verify it's not empty
+              REMOTE_PATH="${{ secrets.SERVER_PATH_SKYBLOCK }}/$PLUGIN"
+              if [ -n "$REMOTE_PATH" ] && [ "$PLUGIN" != "" ]; then
+                ssh -o StrictHostKeyChecking=no \
+                  "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" \
+                  "if [ -d \"$REMOTE_PATH\" ]; then rm -rf \"$REMOTE_PATH\"; fi" 2>/dev/null || true
+                echo "✅ $PLUGIN vom Server entfernt"
+              else
+                echo "⚠️ Invalid remote path, skipping deletion"
+              fi
+            fi
+          done
+          
+          echo "🎉 Alle Plugins erfolgreich deployed!"
