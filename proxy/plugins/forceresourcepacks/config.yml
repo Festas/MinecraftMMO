@@ -1,0 +1,91 @@
+# ForceResourcepacks Velocity config
+# Update: Nutzung von Nginx Reverse Proxy Links (Port 80) für saubere Dateinamen.
+
+debug: false
+default-language: en
+update-notifications: true
+disable-metrics: false
+
+# Hash automatisch generieren lassen
+autogeneratehashes: true
+append-hash-to-url: true
+
+store-joins: true
+
+prompttimeout: 15
+kickdelay: 0
+usepack-is-temporary: true
+
+# WICHTIG: Muss auf 'true' bleiben, damit Packs entladen werden
+selected-packs-remove-existing: true
+
+stored-packs-override-assignments: false
+permanent-pack-remove-time: 30
+only-run-actions-after-pack-send: true
+use-auth-plugin: false
+
+packs:
+  oraxen_pack_rpg:
+    # NEU: Link über Nginx (Port 80).
+    # Durch Nginx heißt die Datei nun wirklich "rpg.zip" für den Client.
+    # Das verhindert Caching-Konflikte zu 100%.
+    url: http://128.140.99.121/rpg.zip
+    
+    hash: ""
+    uuid: 6251f286-9031-4328-b873-104449074092
+    format: 34
+    restricted: false
+    permission: forceresourcepacks.pack.global
+
+  oraxen_pack_survival:
+    # NEU: Link über Nginx (Port 80).
+    # Heißt nun "survival.zip".
+    url: http://128.140.99.121/survival.zip
+    
+    hash: ""
+    uuid: 6251f286-9031-4328-b873-104449074097
+    format: 34
+    restricted: false
+    permission: forceresourcepacks.pack.global
+
+  # Leeres Pack (Fallback zum "Entladen")
+  empty:
+    url: http://cdn.moep.tv/files/Empty.zip
+    hash: 01517226212d27586ea0c5d6aff1aa5492dd2484
+
+global:
+  pack: none
+  secondary: []
+  optional-packs: []
+  # Die Verzögerung ist weiterhin sinnvoll, aber mit Nginx oft nicht mehr zwingend.
+  # Wir lassen sie zur Sicherheit auf 1 Sekunde (20 Ticks).
+  send-delay: 0
+  required: true
+  prompt-message: "&cDu musst das Ressourcenpaket akzeptieren, um auf diesem Server zu spielen!"
+  
+  actions:
+    loaded:
+      action_bar: "&aRessourcenpaket erfolgreich geladen!"
+    declined:
+      kick: "&cDu musst das Ressourcenpaket akzeptieren!\n&cBitte bearbeite den Server in deiner Liste und stelle 'Server-Ressourcenpakete' auf 'Aktiviert'."
+    failed:
+      kick: "&cDer Download des Ressourcenpakets ist fehlgeschlagen.\n&cBitte versuche es erneut."
+    timeout:
+      kick: "&cDu hast zu lange gebraucht, um das Paket zu akzeptieren."
+
+  first-join-actions:
+    loaded:
+      message: "&aWillkommen! Das Ressourcenpaket wurde geladen."
+
+servers:
+  skyblock:
+    pack: oraxen_pack_survival
+  rpg:
+    pack: oraxen_pack_rpg
+  
+  # Lobby bekommt das leere Pack, um den Cache zu säubern
+  lobby:
+    pack: oraxen_pack_survival
+    
+  survival:
+    pack: oraxen_pack_survival

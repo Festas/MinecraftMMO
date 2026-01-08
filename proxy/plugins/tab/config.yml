@@ -1,0 +1,201 @@
+header-footer:
+  enabled: true
+  designs:
+    tycoon:
+      display-condition: '%world%=tycoon'
+      header:
+      - ''
+      - '&6&l✦ &e&lTYCOON &6&l✦'
+      - '&7Baue dein Imperium auf!'
+      - ''
+      footer:
+      - ''
+      - '&8&m-------------------------'
+      - '&7Dein Status:'
+      - ' &8» &7Rang: %luckperms_prefix%'
+      - ' &8» &7Geld: &a$%vault_eco_balance_formatted%'
+      - ''
+      - '&7Nächstes Ziel:'
+      - ' &8» &e%rankup_next_rank%'
+      - ' &8» &7Fehlend: &c$%rankup_money_left_formatted%'
+      - '&8&m-------------------------'
+      - ''
+      - '&7Ping: &e%ping%ms &8| &7Online: &a%online%'
+      - ''
+      - '&bmc.festas-builds.com'
+    default:
+      header:
+      - ''
+      - '&6&l✦ &b&lFestas Builds &6&l✦'
+      - '&7Willkommen, &f%player%&7!'
+      - ''
+      - '&7Online: &a%online%&8/&7%server_max_players%'
+      - ''
+      footer:
+      - ''
+      - '&7Rang: %luckperms_prefix% &8| &7Geld: &a%vault_eco_balance_formatted%'
+      - '&7Ping: &e%ping%ms &8| &7Zeit: &e%time%'
+      - ''
+      - '&bmc.festas-builds.com'
+tablist-name-formatting:
+  enabled: true
+  disable-condition: '%world%=disabledworld'
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  sorting-types:
+  - GROUPS:inhaber,vorstand,manager,security,adminvater,endgegner,koenig,systemdribbler,oligarch,scheich,pate,rolex,gucci,goennjamin,richkid,flexer,maincharacter,baba,maschine,loewe,ehrenmann,bre,bratan,tuersteher,macher,hustler,ticker,chiller,knecht,lauch,tycoon_bedrock,tycoon_magma,tycoon_seelenerde,tycoon_prismarin,tycoon_endstein,tycoon_purpur,tycoon_schwarzstein,tycoon_basalt,tycoon_granit,tycoon_andesit,tycoon_diorit,tycoon_calcit,tycoon_tuff,tycoon_netherite,tycoon_obsidian,tycoon_diamant,tycoon_smaragd,tycoon_lapis,tycoon_redstone,tycoon_gold,tycoon_kupfer,tycoon_eisen,tycoon_kohle,tycoon_stein,tycoon_erde,default
+  - PLACEHOLDER_A_TO_Z:%player%
+  case-sensitive-sorting: true
+  can-see-friendly-invisibles: false
+  disable-condition: '%world%=disabledworld'
+playerlist-objective:
+  enabled: true
+  value: '%ping%'
+  fancy-value: '&7Ping: %ping%'
+  title: TAB
+  render-type: INTEGER
+  disable-condition: '%world%=disabledworld'
+belowname-objective:
+  enabled: true
+  value: '%vault_eco_balance_fixed%'
+  title: ' &a€'
+  fancy-value: '%vault_eco_balance_formatted% &a€'
+  fancy-value-default: NPC
+  disable-condition: '%world%=disabledworld'
+prevent-spectator-effect:
+  enabled: false
+bossbar:
+  enabled: false
+  toggle-command: /bossbar
+  remember-toggle-choice: false
+  hidden-by-default: false
+  bars:
+    ServerInfo:
+      style: PROGRESS
+      color: BLUE
+      progress: '100'
+      text: '&fWebsite: &bwww.domain.com'
+scoreboard:
+  enabled: false
+  toggle-command: /sb
+  remember-toggle-choice: false
+  hidden-by-default: false
+  use-numbers: true
+  static-number: 0
+  delay-on-join-milliseconds: 0
+  scoreboards:
+    scoreboard:
+      title: <#E0B11E>MyServer</#FF0000>
+      lines:
+      - '&7%date%'
+layout:
+  enabled: false
+ping-spoof:
+  enabled: false
+  value: 0
+global-playerlist:
+  enabled: true
+  display-others-as-spectators: false
+  display-vanished-players-as-spectators: true
+  isolate-unlisted-servers: false
+  update-latency: false
+  spy-servers:
+  - lobby
+  server-groups:
+    lobbies:
+    - lobby
+    game-servers:
+    - survival
+    - rpg
+placeholders:
+  date-format: dd.MM.yyyy
+  time-format: '[HH:mm:ss / h:mm a]'
+  time-offset: 1
+  register-tab-expansion: true
+placeholder-output-replacements:
+  '%essentials_vanished%':
+    'yes': '&7| Vanished'
+    'no': ''
+  '%luckperms_prefix%':
+    ? ''
+    : '&7User'
+  '%statistic_deaths%':
+    ? ''
+    : '0'
+conditions:
+  nick:
+    conditions:
+    - '%player%=%essentials_nickname%'
+    true: '%player%'
+    false: ~%essentials_nickname%
+placeholder-refresh-intervals:
+  default-refresh-interval: 500
+  '%server_uptime%': 1000
+  '%server_tps_1_colored%': 1000
+  '%server_unique_joins%': 5000
+  '%player_health%': 200
+  '%player_ping%': 1000
+  '%vault_prefix%': 1000
+  '%rel_factionsuuid_relation_color%': 1000
+  '%luckperms_prefix%': 1000
+  '%vault_eco_balance_formatted%': 1000
+  '%statistic_deaths%': 2000
+assign-groups-by-permissions: false
+primary-group-finding-list:
+- inhaber
+- vorstand
+- manager
+- security
+- adminvater
+- endgegner
+- koenig
+- systemdribbler
+- oligarch
+- scheich
+- pate
+- rolex
+- gucci
+- goennjamin
+- richkid
+- flexer
+- maincharacter
+- baba
+- maschine
+- loewe
+- ehrenmann
+- bre
+- bratan
+- tuersteher
+- macher
+- hustler
+- ticker
+- chiller
+- knecht
+- lauch
+- default
+permission-refresh-interval: 1000
+debug: false
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: tab
+  username: user
+  password: password
+  useSSL: true
+proxy-support:
+  enabled: false
+  type: PLUGIN
+  plugin:
+    name: RedisBungee
+components:
+  minimessage-support: true
+  disable-shadow-for-heads: true
+config-version: 2
+use-bukkit-permissions-manager: false
+use-online-uuid-in-tablist: true
+compensate-for-packetevents-bug: false
+per-world-playerlist:
+  enabled: false
