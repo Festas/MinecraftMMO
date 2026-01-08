@@ -1,0 +1,163 @@
+# ---------------------------------------------------------------------------------------
+# Instant XP Skript (Console Command Edition)
+# 
+# WICHTIG GEGEN SPAM:
+# Bitte führe einmalig "/gamerule logAdminCommands false" in der Server-Konsole aus!
+# Das ist die einzige saubere Methode, um den Balken-Bug zu beheben UND Ruhe zu haben.
+# ---------------------------------------------------------------------------------------
+
+on experience spawn:
+    # 1. Menge sichern & Event abbrechen
+    set {_xp_amount} to event-experience
+    cancel event
+
+    if {_xp_amount} is not set:
+        stop
+    if {_xp_amount} <= 0:
+        stop
+    
+    # 2. Spieler finden (Nur Survival/Adventure & Lebendig)
+    set {_closestDist} to 20
+    set {_target} to null
+    
+    loop players in radius 20 of event-location:
+        # Filter: Nur Spieler, die XP brauchen
+        if loop-player's gamemode is survival or adventure:
+            if loop-player is not dead:
+                set {_dist} to distance between loop-player and event-location
+                if {_dist} < {_closestDist}:
+                    set {_closestDist} to {_dist}
+                    set {_target} to loop-player
+
+    if {_target} is not set:
+        stop
+
+    # 3. Mending Logik (Sequenziell für jeden Slot)
+    
+    # --- Slot 1: Haupthand ---
+    if {_xp_amount} > 0:
+        set {_i} to tool of {_target}
+        if {_i} is not air:
+            if {_i} is enchanted with mending:
+                if damage of {_i} > 0:
+                    set {_repair_needed} to damage of {_i}
+                    set {_repair_possible} to {_xp_amount} * 2
+                    
+                    if {_repair_possible} >= {_repair_needed}:
+                        repair {_i}
+                        set {_cost} to ceil({_repair_needed} / 2)
+                        remove {_cost} from {_xp_amount}
+                    else:
+                        set {_new_damage} to {_repair_needed} - {_repair_possible}
+                        set damage of {_i} to {_new_damage}
+                        set {_xp_amount} to 0
+                    
+                    set tool of {_target} to {_i}
+
+    # --- Slot 2: Nebenhand ---
+    if {_xp_amount} > 0:
+        set {_i} to offhand tool of {_target}
+        if {_i} is not air:
+            if {_i} is enchanted with mending:
+                if damage of {_i} > 0:
+                    set {_repair_needed} to damage of {_i}
+                    set {_repair_possible} to {_xp_amount} * 2
+                    
+                    if {_repair_possible} >= {_repair_needed}:
+                        repair {_i}
+                        set {_cost} to ceil({_repair_needed} / 2)
+                        remove {_cost} from {_xp_amount}
+                    else:
+                        set {_new_damage} to {_repair_needed} - {_repair_possible}
+                        set damage of {_i} to {_new_damage}
+                        set {_xp_amount} to 0
+                    
+                    set offhand tool of {_target} to {_i}
+
+    # --- Slot 3: Schuhe ---
+    if {_xp_amount} > 0:
+        set {_i} to boots of {_target}
+        if {_i} is not air:
+            if {_i} is enchanted with mending:
+                if damage of {_i} > 0:
+                    set {_repair_needed} to damage of {_i}
+                    set {_repair_possible} to {_xp_amount} * 2
+                    
+                    if {_repair_possible} >= {_repair_needed}:
+                        repair {_i}
+                        set {_cost} to ceil({_repair_needed} / 2)
+                        remove {_cost} from {_xp_amount}
+                    else:
+                        set {_new_damage} to {_repair_needed} - {_repair_possible}
+                        set damage of {_i} to {_new_damage}
+                        set {_xp_amount} to 0
+                    
+                    set boots of {_target} to {_i}
+
+    # --- Slot 4: Hose ---
+    if {_xp_amount} > 0:
+        set {_i} to leggings of {_target}
+        if {_i} is not air:
+            if {_i} is enchanted with mending:
+                if damage of {_i} > 0:
+                    set {_repair_needed} to damage of {_i}
+                    set {_repair_possible} to {_xp_amount} * 2
+                    
+                    if {_repair_possible} >= {_repair_needed}:
+                        repair {_i}
+                        set {_cost} to ceil({_repair_needed} / 2)
+                        remove {_cost} from {_xp_amount}
+                    else:
+                        set {_new_damage} to {_repair_needed} - {_repair_possible}
+                        set damage of {_i} to {_new_damage}
+                        set {_xp_amount} to 0
+                    
+                    set leggings of {_target} to {_i}
+
+    # --- Slot 5: Brustplatte ---
+    if {_xp_amount} > 0:
+        set {_i} to chestplate of {_target}
+        if {_i} is not air:
+            if {_i} is enchanted with mending:
+                if damage of {_i} > 0:
+                    set {_repair_needed} to damage of {_i}
+                    set {_repair_possible} to {_xp_amount} * 2
+                    
+                    if {_repair_possible} >= {_repair_needed}:
+                        repair {_i}
+                        set {_cost} to ceil({_repair_needed} / 2)
+                        remove {_cost} from {_xp_amount}
+                    else:
+                        set {_new_damage} to {_repair_needed} - {_repair_possible}
+                        set damage of {_i} to {_new_damage}
+                        set {_xp_amount} to 0
+                    
+                    set chestplate of {_target} to {_i}
+
+    # --- Slot 6: Helm ---
+    if {_xp_amount} > 0:
+        set {_i} to helmet of {_target}
+        if {_i} is not air:
+            if {_i} is enchanted with mending:
+                if damage of {_i} > 0:
+                    set {_repair_needed} to damage of {_i}
+                    set {_repair_possible} to {_xp_amount} * 2
+                    
+                    if {_repair_possible} >= {_repair_needed}:
+                        repair {_i}
+                        set {_cost} to ceil({_repair_needed} / 2)
+                        remove {_cost} from {_xp_amount}
+                    else:
+                        set {_new_damage} to {_repair_needed} - {_repair_possible}
+                        set damage of {_i} to {_new_damage}
+                        set {_xp_amount} to 0
+                    
+                    set helmet of {_target} to {_i}
+
+    # 4. Restliche XP geben (Konsolen-Befehl)
+    if {_xp_amount} > 0:
+        set {_final_xp} to floor({_xp_amount})
+        if {_final_xp} > 0:
+            # Wir nutzen den Befehl, da er den Level-Balken am zuverlässigsten aktualisiert.
+            # Der Spam wird durch '/gamerule logAdminCommands false' verhindert.
+            execute console command "minecraft:xp add ""%{_target}%"" %{_final_xp}% points"

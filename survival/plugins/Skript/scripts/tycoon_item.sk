@@ -1,0 +1,56 @@
+# Diese Datei regelt das Item (Uhr) und die Smart-Start Logik.
+
+# Funktion zum Checken (Gibt Item beim Join/Weltwechsel)
+function checkTycoonItem(p: player):
+    wait 2 ticks
+    if name of {_p}'s world is "tycoon":
+        if slot 4 of {_p}'s inventory is not clock:
+            set slot 4 of {_p}'s inventory to clock named "&6&lTycoon Manager" with lore "&7Rechtsklick um das Menü zu öffnen"
+
+# Events
+on join:
+    checkTycoonItem(player)
+
+on world change:
+    checkTycoonItem(player)
+
+on respawn:
+    checkTycoonItem(player)
+
+# --- KLICK EVENT (Smart Logic) ---
+on right click:
+    if player's tool is clock:
+        if name of player's tool is "&6&lTycoon Manager":
+            if name of player's world is "tycoon":
+                cancel event
+                
+                # PRÜFUNG: Hat er schon gestartet?
+                if player has permission "tycoon.started":
+                    # Ja -> Menü öffnen
+                    execute player command "dm open tycoon_main"
+                else:
+                    # Nein -> Tycoon starten
+                    send "&8[&6Tycoon&8] &eStarte Setup..." to player
+                    make player execute command "tycoon start"
+
+# --- DROP EVENT (Smart Logic) ---
+on drop:
+    if name of event-item is "&6&lTycoon Manager":
+        if name of player's world is "tycoon":
+            cancel event
+            
+            # PRÜFUNG: Hat er schon gestartet?
+            if player has permission "tycoon.started":
+                execute player command "dm open tycoon_main"
+            else:
+                send "&8[&6Tycoon&8] &eStarte Setup..." to player
+                make player execute command "tycoon start"
+
+# --- INVENTAR SCHUTZ ---
+on inventory click:
+    if name of player's world is "tycoon":
+        if index of event-slot is 4:
+            cancel event
+        if event-inventory action is hotbar swap:
+            if hotbar button is 4:
+                cancel event

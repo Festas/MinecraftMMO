@@ -1,0 +1,787 @@
+menu_title: '&8» &2Generatoren Markt'
+open_command: generators
+size: 36
+
+items:
+  # ==============================================================
+  # FILLER (Hintergrund)
+  # ==============================================================
+  'filler':
+    material: BLACK_STAINED_GLASS_PANE
+    priority: 5
+    display_name: '&f'
+    slots:
+      - '0-35'
+
+  # ==============================================================
+  # TIER 1: ERDE (Start - Immer verfügbar)
+  # ==============================================================
+  'tier1':
+    material: DIRT
+    slot: 0
+    priority: 0
+    display_name: '&6Erde Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$500'
+      - '&7Limit: &fMax 10'
+      - ''
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier1_1 500 Erde-Gen'
+      - '[close]'
+
+  # ==============================================================
+  # TIER 2: STEIN
+  # ==============================================================
+  'tier2_unlocked':
+    material: STONE
+    slot: 1
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.stein
+    display_name: '&7Stein Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$2.000'
+      - '&7Limit: &fMax 10'
+      - ''
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier2_1 2000 Stein-Gen'
+      - '[close]'
+
+  'tier2_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 1
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cStein'
+      - '&7Steige auf mit /rankup'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Stein erreichen!'
+
+  # ==============================================================
+  # TIER 3: KOHLE
+  # ==============================================================
+  'tier3_unlocked':
+    material: COAL_ORE
+    slot: 2
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.kohle
+    display_name: '&8Kohle Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$5.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier3_1 5000 Kohle-Gen'
+      - '[close]'
+
+  'tier3_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 2
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cKohle'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Kohle erreichen!'
+
+  # ==============================================================
+  # TIER 4: EISEN
+  # ==============================================================
+  'tier4_unlocked':
+    material: IRON_ORE
+    slot: 3
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.eisen
+    display_name: '&fEisen Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$15.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier4_1 15000 Eisen-Gen'
+      - '[close]'
+
+  'tier4_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 3
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cEisen'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Eisen erreichen!'
+
+  # ==============================================================
+  # TIER 5: KUPFER
+  # ==============================================================
+  'tier5_unlocked':
+    material: COPPER_ORE
+    slot: 4
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.kupfer
+    display_name: '&cKupfer Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$40.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier5_1 40000 Kupfer-Gen'
+      - '[close]'
+
+  'tier5_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 4
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cKupfer'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Kupfer erreichen!'
+
+  # ==============================================================
+  # TIER 6: GOLD
+  # ==============================================================
+  'tier6_unlocked':
+    material: GOLD_ORE
+    slot: 5
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.gold
+    display_name: '&6Gold Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$100.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier6_1 100000 Gold-Gen'
+      - '[close]'
+
+  'tier6_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 5
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cGold'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Gold erreichen!'
+
+  # ==============================================================
+  # TIER 7: REDSTONE
+  # ==============================================================
+  'tier7_unlocked':
+    material: REDSTONE_ORE
+    slot: 6
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.redstone
+    display_name: '&cRedstone Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$250.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier7_1 250000 Redstone-Gen'
+      - '[close]'
+
+  'tier7_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 6
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cRedstone'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Redstone erreichen!'
+
+  # ==============================================================
+  # TIER 8: LAPIS
+  # ==============================================================
+  'tier8_unlocked':
+    material: LAPIS_ORE
+    slot: 7
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.lapis
+    display_name: '&9Lapis Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$600.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier8_1 600000 Lapis-Gen'
+      - '[close]'
+
+  'tier8_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 7
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cLapis'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Lapis erreichen!'
+
+  # ==============================================================
+  # TIER 9: SMARAGD
+  # ==============================================================
+  'tier9_unlocked':
+    material: EMERALD_ORE
+    slot: 8
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.smaragd
+    display_name: '&aSmaragd Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$1.500.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier9_1 1500000 Smaragd-Gen'
+      - '[close]'
+
+  'tier9_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 8
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cSmaragd'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Smaragd erreichen!'
+
+  # ==============================================================
+  # TIER 10: DIAMANT
+  # ==============================================================
+  'tier10_unlocked':
+    material: DIAMOND_ORE
+    slot: 9
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.diamant
+    display_name: '&bDiamant Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$3.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier10_1 3000000 Diamant-Gen'
+      - '[close]'
+
+  'tier10_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 9
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cDiamant'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Diamant erreichen!'
+
+  # ==============================================================
+  # TIER 11: OBSIDIAN
+  # ==============================================================
+  'tier11_unlocked':
+    material: OBSIDIAN
+    slot: 10
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.obsidian
+    display_name: '&5Obsidian Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$7.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier11_1 7000000 Obsidian-Gen'
+      - '[close]'
+
+  'tier11_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 10
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cObsidian'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Obsidian erreichen!'
+
+  # ==============================================================
+  # TIER 12: NETHERITE
+  # ==============================================================
+  'tier12_unlocked':
+    material: ANCIENT_DEBRIS
+    slot: 11
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.netherite
+    display_name: '&4Netherite Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$15.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier12_1 15000000 Netherite-Gen'
+      - '[close]'
+
+  'tier12_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 11
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cNetherite'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Netherite erreichen!'
+
+  # ==============================================================
+  # TIER 13: TUFF
+  # ==============================================================
+  'tier13_unlocked':
+    material: TUFF
+    slot: 12
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.tuff
+    display_name: '&7Tuff Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$30.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier13_1 30000000 Tuff-Gen'
+      - '[close]'
+
+  'tier13_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 12
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cTuff'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Tuff erreichen!'
+
+  # ==============================================================
+  # TIER 14: CALCIT
+  # ==============================================================
+  'tier14_unlocked':
+    material: CALCITE
+    slot: 13
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.calcit
+    display_name: '&fCalcit Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$60.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier14_1 60000000 Calcit-Gen'
+      - '[close]'
+
+  'tier14_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 13
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cCalcit'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Calcit erreichen!'
+
+  # ==============================================================
+  # TIER 15: DIORIT
+  # ==============================================================
+  'tier15_unlocked':
+    material: DIORITE
+    slot: 14
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.diorit
+    display_name: '&fDiorit Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$120.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier15_1 120000000 Diorit-Gen'
+      - '[close]'
+
+  'tier15_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 14
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cDiorit'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Diorit erreichen!'
+
+  # ==============================================================
+  # TIER 16: ANDESIT
+  # ==============================================================
+  'tier16_unlocked':
+    material: ANDESITE
+    slot: 15
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.andesit
+    display_name: '&7Andesit Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$250.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier16_1 250000000 Andesit-Gen'
+      - '[close]'
+
+  'tier16_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 15
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cAndesit'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Andesit erreichen!'
+
+  # ==============================================================
+  # TIER 17: GRANIT
+  # ==============================================================
+  'tier17_unlocked':
+    material: GRANITE
+    slot: 16
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.granit
+    display_name: '&cGranit Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$500.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier17_1 500000000 Granit-Gen'
+      - '[close]'
+
+  'tier17_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 16
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cGranit'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Granit erreichen!'
+
+  # ==============================================================
+  # TIER 18: BASALT
+  # ==============================================================
+  'tier18_unlocked':
+    material: BASALT
+    slot: 17
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.basalt
+    display_name: '&8Basalt Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$1.000.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier18_1 1000000000 Basalt-Gen'
+      - '[close]'
+
+  'tier18_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 17
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cBasalt'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Basalt erreichen!'
+
+  # ==============================================================
+  # TIER 19: SCHWARZSTEIN
+  # ==============================================================
+  'tier19_unlocked':
+    material: BLACKSTONE
+    slot: 18
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.schwarzstein
+    display_name: '&0Schwarzstein Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$2.000.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier19_1 2000000000 Schwarzstein-Gen'
+      - '[close]'
+
+  'tier19_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 18
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cSchwarzstein'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Schwarzstein erreichen!'
+
+  # ==============================================================
+  # TIER 20: PURPUR
+  # ==============================================================
+  'tier20_unlocked':
+    material: PURPUR_BLOCK
+    slot: 19
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.purpur
+    display_name: '&dPurpur Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$4.000.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier20_1 4000000000 Purpur-Gen'
+      - '[close]'
+
+  'tier20_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 19
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cPurpur'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Purpur erreichen!'
+
+  # ==============================================================
+  # TIER 21: ENDSTEIN
+  # ==============================================================
+  'tier21_unlocked':
+    material: END_STONE
+    slot: 20
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.endstein
+    display_name: '&eEndstein Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$8.000.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier21_1 8000000000 Endstein-Gen'
+      - '[close]'
+
+  'tier21_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 20
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cEndstein'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Endstein erreichen!'
+
+  # ==============================================================
+  # TIER 22: PRISMARIN
+  # ==============================================================
+  'tier22_unlocked':
+    material: PRISMARINE
+    slot: 21
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.prismarin
+    display_name: '&bPrismarin Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$16.000.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier22_1 16000000000 Prismarin-Gen'
+      - '[close]'
+
+  'tier22_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 21
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cPrismarin'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Prismarin erreichen!'
+
+  # ==============================================================
+  # TIER 23: SEELENERDE
+  # ==============================================================
+  'tier23_unlocked':
+    material: SOUL_SOIL
+    slot: 22
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.seelenerde
+    display_name: '&8Seelenerde Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$32.000.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier23_1 32000000000 Seelenerde-Gen'
+      - '[close]'
+
+  'tier23_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 22
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cSeelenerde'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Seelenerde erreichen!'
+
+  # ==============================================================
+  # TIER 24: MAGMA
+  # ==============================================================
+  'tier24_unlocked':
+    material: MAGMA_BLOCK
+    slot: 23
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.magma
+    display_name: '&6Magma Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$64.000.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier24_1 64000000000 Magma-Gen'
+      - '[close]'
+
+  'tier24_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 23
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cMagma'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Magma erreichen!'
+
+  # ==============================================================
+  # TIER 25: BEDROCK
+  # ==============================================================
+  'tier25_unlocked':
+    material: BEDROCK
+    slot: 24
+    priority: 0
+    view_requirement:
+      requirements:
+        perm_check:
+          type: has permission
+          permission: tycoon.unlock.bedrock
+    display_name: '&8Bedrock Generator &7(Lvl 1)'
+    lore:
+      - '&7Preis: &a$128.000.000.000'
+      - '&e► Linksklick zum Kaufen'
+    left_click_commands:
+      - '[player] tycoon_buy_system tier25_1 128000000000 Bedrock-Gen'
+      - '[close]'
+
+  'tier25_locked':
+    material: RED_STAINED_GLASS_PANE
+    slot: 24
+    priority: 1
+    display_name: '&c&lGESPERRT'
+    lore:
+      - '&7Benötigter Rang: &cBedrock'
+    left_click_commands:
+      - '[sound] BLOCK_ANVIL_PLACE'
+      - '[message] &8[&6Tycoon&8] &cDu musst erst den Rang Bedrock erreichen!'
+# --- ZURÜCK ZUM MAIN MENÜ ---
+  'back':
+    material: ARROW
+    slot: 31
+    priority: 0
+    display_name: '&cZurück'
+    left_click_commands:
+      - '[openguimenu] tycoon_main'
+      - '[sound] UI_BUTTON_CLICK'

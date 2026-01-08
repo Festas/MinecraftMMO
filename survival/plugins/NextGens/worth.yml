@@ -1,0 +1,107 @@
+# --- NEXTGENS ITEM WERTE ---
+# Diese Preise müssen identisch zu ShopGUI+ sein!
+# WICHTIG: Materialnamen müssen KLEINGESCHRIEBEN sein!
+
+material-worth:
+  # Tier 1
+  dirt: 5.0
+  coarse_dirt: 10.0
+  
+  # Tier 2
+  stone: 10.0
+  stone_bricks: 20.0
+  
+  # Tier 3
+  coal: 20.0
+  coal_block: 180.0
+  
+  # Tier 4
+  iron_ingot: 50.0
+  iron_block: 450.0
+  
+  # Tier 5
+  copper_ingot: 80.0
+  copper_block: 720.0
+  
+  # Tier 6
+  gold_ingot: 120.0
+  gold_block: 1080.0
+  
+  # Tier 7
+  redstone: 200.0
+  redstone_block: 1800.0
+  
+  # Tier 8
+  lapis_lazuli: 450.0
+  lapis_block: 4050.0
+  
+  # Tier 9
+  emerald: 800.0
+  emerald_block: 7200.0
+  
+  # Tier 10
+  diamond: 1500.0
+  diamond_block: 13500.0
+  
+  # Tier 11
+  obsidian: 2500.0
+  crying_obsidian: 5000.0
+  
+  # Tier 12
+  netherite_scrap: 5000.0
+  netherite_ingot: 20000.0
+  
+  # Tier 13
+  tuff: 8000.0
+  polished_tuff: 16000.0
+  
+  # Tier 14
+  calcite: 12000.0
+  amethyst_shard: 20000.0
+  
+  # Tier 15
+  diorite: 18000.0
+  polished_diorite: 36000.0
+  
+  # Tier 16
+  andesite: 25000.0
+  polished_andesite: 50000.0
+  
+  # Tier 17
+  granite: 40000.0
+  polished_granite: 80000.0
+  
+  # Tier 18
+  basalt: 60000.0
+  polished_basalt: 120000.0
+  
+  # Tier 19
+  blackstone: 100000.0
+  polished_blackstone: 200000.0
+  
+  # Tier 20
+  purpur_block: 200000.0
+  purpur_pillar: 400000.0
+  
+  # Tier 21
+  end_stone: 400000.0
+  end_stone_bricks: 800000.0
+  
+  # Tier 22
+  prismarine_shard: 800000.0
+  prismarine_crystals: 1600000.0
+  
+  # Tier 23
+  soul_soil: 1500000.0
+  soul_lantern: 3000000.0
+  
+  # Tier 24
+  magma_cream: 3000000.0
+  magma_block: 6000000.0
+  
+  # Tier 25
+  bedrock: 6000000.0
+  beacon: 12000000.0
+
+# Optional: Falls du spezielle Items mit Lore/Namen hast
+custom-item-worth: {}

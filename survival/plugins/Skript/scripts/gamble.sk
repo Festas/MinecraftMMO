@@ -1,0 +1,198 @@
+# --- CASINO SYSTEM (Talahun Extended Edition) ---
+# High Risk, High Reward.
+# Mit Trostpreisen und extra vielen Sprüchen.
+
+command /gamble <text>:
+    aliases: /cf, /coinflip, /casino
+    trigger:
+        # --- KONFIGURATION ---
+        set {_prefix} to "&8[&dCasino&8] &7"
+        set {_min_bet} to 100
+        set {_max_bet} to 1000000000
+        
+        set {_input} to arg-1
+        set {_p} to player
+        set {_balance} to {_p}'s balance
+        
+        # --- 1. EINSATZ ---
+        if {_input} is "all" or "alles":
+            set {_bet} to {_balance}
+            if {_bet} <= 0:
+                send "%{_prefix}%&cBruder, du bist komplett pleite. Geh arbeiten!" to {_p}
+                stop
+        else:
+            set {_bet} to {_input} parsed as number
+        
+        # --- 2. CHECKS ---
+        if {_bet} is not set:
+            send "%{_prefix}%&cDigga, schreib eine Zahl oder 'all'." to {_p}
+            stop
+        if {_bet} < {_min_bet}:
+            send "%{_prefix}%&cBruder, unter &e$%{_min_bet}% &cmach ich nicht auf." to {_p}
+            stop
+        if {_bet} > {_max_bet}:
+            send "%{_prefix}%&cOha, übertreib nicht. Max ist &e$%{_max_bet}%&c." to {_p}
+            stop
+        if {_balance} < {_bet}:
+            send "%{_prefix}%&cWas laberst du? Du hast nur &e$%{_balance}%&c!" to {_p}
+            send "%{_prefix}%&7Versuch nicht Auge zu machen." to {_p}
+            play sound "entity.villager.no" to {_p}
+            stop
+            
+        # --- 3. START ---
+        remove {_bet} from {_p}'s balance
+        
+        send "%{_prefix}%&eEinsatz: &6$%{_bet}%" to {_p}
+        send "%{_prefix}%&7Wallah, Würfel rollen..." to {_p}
+        
+        # Spannung
+        loop 3 times:
+            play sound "block.note_block.hat" with pitch 2 to {_p}
+            send title "" with subtitle "&6&lROLLING... &8| &7Vallah krise oder gönnung?" to {_p} for 1 second
+            wait 20 ticks
+        
+        # --- 4. RNG ---
+        set {_luck} to random integer between 1 and 1000
+        
+        # --- 5. ERGEBNISSE ---
+        
+        # A) VERLOREN (70%)
+        if {_luck} <= 700:
+            delete {_msgs::*}
+            # Die Klassiker
+            add "Wallah, dein Geld ist weg. Hops genommen!" to {_msgs::*}
+            add "Digga, bist du lost? Alles weg." to {_msgs::*}
+            add "Krise, Bruder, Krise. Das Haus dankt." to {_msgs::*}
+            add "Abow, das tat weh. Mach lieber Ausbildung." to {_msgs::*}
+            # Neue Sprüche
+            add "Chaya guckt zu und du verkackst so hart." to {_msgs::*}
+            add "Geld macht Urlaub in Dubai ohne dich." to {_msgs::*}
+            add "Einfach Hops. Geh Seite, Digga." to {_msgs::*}
+            add "Hast du gedacht, du gewinnst? Sike!" to {_msgs::*}
+            add "Vallah Billah, heute nicht dein Tag, Cousin." to {_msgs::*}
+            add "Dein Geld ist jetzt bei mir. Kuss geht raus." to {_msgs::*}
+            add "Bruder muss los... genau wie dein Geld." to {_msgs::*}
+            add "Jemand hat Auge gemacht, schwöre." to {_msgs::*}
+            add "Das wars komplett. Insolvenz kickt." to {_msgs::*}
+            add "Nicht weinen Habibi, ist nur Pixel-Geld." to {_msgs::*}
+            add "Der Automat hat Hunger gehabt. Danke!" to {_msgs::*}
+            
+            set {_msg} to random element out of {_msgs::*}
+            
+            send title "" with subtitle "&c&lHOPS GENOMMEN &8| &7%{_msg}%" to {_p} for 4 seconds
+            send "%{_prefix}%&c%{_msg}%" to {_p}
+            play sound "block.anvil.land" with pitch 0.5 to {_p}
+            
+            # --- TROSTPREIS SYSTEM (25% Chance) ---
+            set {_trashLuck} to random integer between 1 and 100
+            if {_trashLuck} <= 25:
+                wait 20 ticks
+                send "%{_prefix}%&7Aber warte... der Talahun hat Mitleid." to {_p}
+                play sound "entity.chicken.egg" to {_p}
+                
+                set {_trashType} to random integer between 1 and 5
+                
+                if {_trashType} is 1:
+                    set {_item} to apple named "&cAngebissener Talahun Apfel" with lore "&7Man sieht die Spuren seiner" and "&7Goldzähne im Fruchtfleisch."
+                    send "%{_prefix}%&aDu bekommst: &fAngebissener Apfel &7(Vitamine wichtig)" to {_p}
+                
+                else if {_trashType} is 2:
+                    set {_item} to bread named "&6Halber Döner" with lore "&7Ohne Soße, mit alles." and "&7Wurde schon mal abgebissen."
+                    send "%{_prefix}%&aDu bekommst: &fHalber Döner &7(Schmeckt noch)" to {_p}
+                    
+                else if {_trashType} is 3:
+                    set {_item} to glass bottle named "&9Leere Capri-Sonne" with lore "&7Plattgetreten am Bahnhof." and "&7Riecht nach Kirsche."
+                    send "%{_prefix}%&aDu bekommst: &fLeere Capri-Sonne &7(Pfand ist da)" to {_p}
+                    
+                else if {_trashType} is 4:
+                    set {_item} to leather named "&cGefälschte Bauchtasche" with lore "&7Reißverschluss klemmt, Bruder." and "&7Made in Turkey."
+                    send "%{_prefix}%&aDu bekommst: &fGucci Bauchtasche &7(Original, schwöre)" to {_p}
+
+                else if {_trashType} is 5:
+                    set {_item} to potion named "&aAbgelaufener Energy" with lore "&7Schmeckt nach Spüli und Herzrasen." and "&7Klebt ein bisschen."
+                    send "%{_prefix}%&aDu bekommst: &fEnergy Drink &7(Ballert bös)" to {_p}
+
+                give 1 of {_item} to {_p}
+            
+        # B) KLEINER GEWINN - 1.5x (15%)
+        else if {_luck} <= 850:
+            set {_win} to {_bet} * 1.5
+            add {_win} to {_p}'s balance
+            
+            delete {_msgs::*}
+            add "Besser als nix, Habibi." to {_msgs::*}
+            add "Kleines Taschengeld für die S-Bahn." to {_msgs::*}
+            add "Nicht viel, aber schmeckt trotzdem." to {_msgs::*}
+            add "Bruder, nimm das und lauf." to {_msgs::*}
+            add "Könnte schlimmer sein. Döner ist bezahlt." to {_msgs::*}
+            add "Immerhin kein Minus, Cousin." to {_msgs::*}
+            
+            set {_msg} to random element out of {_msgs::*}
+            
+            send title "" with subtitle "&e&lGEWINN (x1.5) &8| &7+ &a$%{_win}% &8| &7%{_msg}%" to {_p} for 4 seconds
+            send "%{_prefix}%&e%{_msg}%" to {_p}
+            play sound "entity.experience_orb.pickup" to {_p}
+            
+        # C) VERDOPPELT - 2x (9%)
+        else if {_luck} <= 940:
+            set {_win} to {_bet} * 2
+            add {_win} to {_p}'s balance
+            
+            delete {_msgs::*}
+            add "Schmeckt, Digga! Verdoppelt." to {_msgs::*}
+            add "Stabiler Move. Gönn dir das Geld." to {_msgs::*}
+            add "Läuft bei dir, Cousin." to {_msgs::*}
+            add "Geld macht brrr. Verdoppelt, Habibi." to {_msgs::*}
+            add "Nicht schlecht für 'nen Talahun." to {_msgs::*}
+            add "Einfach verdoppelt. Macher." to {_msgs::*}
+            
+            set {_msg} to random element out of {_msgs::*}
+            
+            send title "" with subtitle "&a&lGEWONNEN! (x2) &8| &7Gewinn: &a$%{_win}%" to {_p} for 3 seconds
+            send "%{_prefix}%&a%{_msg}%" to {_p}
+            play sound "entity.player.levelup" to {_p}
+            
+        # D) BABA GEWINN - 4x (4%)
+        else if {_luck} <= 999:
+            set {_win} to {_bet} * 4
+            add {_win} to {_p}'s balance
+            
+            delete {_msgs::*}
+            add "Oha, vierfach! Macher, kein Lacher." to {_msgs::*}
+            add "Wallah Krise... für die Bank! Du hast gewonnen." to {_msgs::*}
+            add "Digga, du rasierst komplett." to {_msgs::*}
+            add "Abow, guck mal dein Konto an jetzt." to {_msgs::*}
+            add "Zu wild, einfach vervierfacht." to {_msgs::*}
+            add "Junge, bist du Elon Musk oder was?" to {_msgs::*}
+            
+            set {_msg} to random element out of {_msgs::*}
+            
+            send title "" with subtitle "&6&lBABA GEWINN! (x4) &8| &7Gewinn: &6$%{_win}%" to {_p} for 5 seconds
+            send "%{_prefix}%&6%{_msg}%" to {_p}
+            play sound "ui.toast.challenge_complete" to {_p}
+            
+        # E) JACKPOT - 10x (2%)
+        else:
+            set {_win} to {_bet} * 10
+            add {_win} to {_p}'s balance
+            
+            delete {_msgs::*}
+            add "JACKPOT! System gedribbelt!" to {_msgs::*}
+            add "König von Block! x10, Wallah ich schwöre!" to {_msgs::*}
+            add "Alle anderen sind NPCs, du bist der Main Character!" to {_msgs::*}
+            add "Abow, Alarm! Wir brauchen mehr Geld für dich!" to {_msgs::*}
+            add "Du hast den Talahun-Jackpot geknackt. Respekt!" to {_msgs::*}
+            add "Kauf dir den Server, Bruder. Du bist reich!" to {_msgs::*}
+            
+            set {_msg} to random element out of {_msgs::*}
+            
+            # Globaler Broadcast
+            broadcast ""
+            broadcast "%{_prefix}%&d&lJACKPOT! &f%player% hat &d$%{_win}% &fgewonnen! &7(x10)"
+            broadcast "%{_prefix}%&dZitat: &f""%{_msg}%"""
+            broadcast ""
+            
+            send title "" with subtitle "&d&lJACKPOT (x10) &8| &d+$%{_win}% &8| &7%{_msg}%" to {_p} for 6 seconds
+            play sound "ui.toast.challenge_complete" to {_p}
+            play sound "entity.ender_dragon.death" to {_p}
+            

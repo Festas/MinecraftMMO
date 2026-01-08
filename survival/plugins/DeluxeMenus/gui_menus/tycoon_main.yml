@@ -1,0 +1,99 @@
+menu_title: '&8» &6Tycoon Manager'
+open_command: tycoon_menu
+size: 27
+
+items:
+  # ==============================================================
+  # FILLER (Hintergrund)
+  # ==============================================================
+  'filler':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - '0-26' # WICHTIG: In Anführungszeichen!
+    display_name: '&f'
+    priority: 2
+
+  # ==============================================================
+  # 1. GENERATOR SHOP
+  # ==============================================================
+  'gens_shop':
+    material: EMERALD_BLOCK
+    slot: 10
+    priority: 1
+    display_name: '&a&lGeneratoren Markt'
+    lore:
+      - '&7Kaufe neue Generatoren.'
+      - '&7Limit: &f10 Stück'
+      - ''
+      - '&e► Linksklick zum Öffnen'
+    left_click_commands:
+      - '[openguimenu] generators'
+      - '[sound] UI_BUTTON_CLICK'
+
+  # ==============================================================
+  # 2. VERKAUFEN
+  # ==============================================================
+  'sell_all':
+    material: HOPPER
+    slot: 12
+    priority: 1
+    display_name: '&6&lAlles Verkaufen'
+    lore:
+      - '&7Verkauft dein ganzes Inventar.'
+      # PAPI Placeholder für ShopGUI+ Multiplikator
+      - '&7Dein Multiplikator: &e%shopguiplus_modifier_group%'
+      - ''
+      - '&6► Linksklick zum Verkaufen'
+    left_click_commands:
+      - '[player] sell'
+      - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+      - '[close]'
+
+  # ==============================================================
+  # 3. RANGAUFSTIEG
+  # ==============================================================
+  'rankup':
+    material: DIAMOND_BLOCK
+    slot: 14
+    priority: 1
+    display_name: '&b&lRang Aufstieg'
+    lore:
+      - '&7Steige auf, um neue Generatoren'
+      - '&7freizuschalten (Achtung: Reset!).'
+      - ''
+      - '&7Aktueller Rang: &f%rankup_current_rank%'
+      - '&7Nächster Rang: &f%rankup_next_rank%'
+      - '&7fehlt noch: &a%rankup_money_left_formatted%'
+    left_click_commands:
+      - '[player] rankup'
+      - '[close]'
+
+  # ==============================================================
+  # 4. ZUR BASIS
+  # ==============================================================
+  'plot_home':
+    material: IRON_DOOR
+    slot: 16
+    priority: 1
+    display_name: '&e&lZur Basis'
+    lore:
+      - '&7Teleportiert dich zu'
+      - '&7deinem Tycoon Plot.'
+    left_click_commands:
+      - '[player] plot home tycoon'
+      - '[close]'
+
+  # ==============================================================
+  # 5. WARPS MENÜ (Öffnet Untermenü)
+  # ==============================================================
+  'warps_menu':
+    material: COMPASS
+    slot: 22
+    priority: 1
+    display_name: '&9&lWarps'
+    lore:
+      - '&e► Öffne Warp-Liste'
+    left_click_commands:
+      - '[openguimenu] tycoon_warps'
+      - '[sound] UI_BUTTON_CLICK'
+

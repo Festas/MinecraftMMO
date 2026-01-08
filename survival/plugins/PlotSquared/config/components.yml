@@ -1,0 +1,30 @@
+presets:
+# Setzt den Boden zurück auf Gras
+- component: floor
+  cost: 0.0             # Kostenlos (oder Preis eintragen)
+  pattern: 'grass_block'
+  name: <green>Natural Grass</green>
+  icon: grass_block
+  description:
+  - <gray>Zurück zur Natur!</gray>
+  permission: ''        # Jeder darf das
+
+# Macht den Boden zu Stein (gut für Fundamente)
+- component: floor
+  cost: 100.0           # Kostet 100$ (optional)
+  pattern: 'stone'
+  name: <gray>Stone Foundation</gray>
+  icon: stone
+  description:
+  - <gray>Perfekt für Keller und Fundamente.</gray>
+  permission: ''
+
+# Macht den Boden zu Wasser (gut für Farmen)
+- component: floor
+  cost: 500.0           # Etwas teurer
+  pattern: 'water'
+  name: <blue>Ocean Floor</blue>
+  icon: water_bucket
+  description:
+  - <gray>Verwandle dein Plot in einen See.</gray>
+  permission: ''

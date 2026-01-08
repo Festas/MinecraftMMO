@@ -1,0 +1,94 @@
+# ---------------------------------------------------------------
+# CMI Scheduler Konfiguration
+# ---------------------------------------------------------------
+# Hier kannst du automatische Aufgaben definieren.
+# Vergiss nicht, nach Änderungen '/cmi reload' einzugeben.
+# ---------------------------------------------------------------
+
+# 1. ITEM CLEANER (Nur für die Tycoon-Welt)
+# ---------------------------------------------------------------
+TycoonCleaner:
+  Enabled: true
+  Type: Repeat
+  AutoStart: true
+  # Alle 300 Sekunden (5 Minuten)
+  Interval: 300
+  Commands:
+  # Warnung nur an Spieler in der Welt 'tycoon'
+  - cmi broadcast -w:tycoon &8[&6Tycoon&8] &7Achtung! Alle Items am Boden werden in &e10 Sekunden &7gelöscht!
+  - delay! 10
+  # Löscht Items nur in 'tycoon'
+  - cmi groundclean tycoon
+  # Bestätigung nur an Spieler in 'tycoon'
+  - cmi broadcast -w:tycoon &8[&6Tycoon&8] &aMüll wurde entfernt!
+
+# 2. AUTOMATISCHE NACHRICHTEN (Announcer)
+# ---------------------------------------------------------------
+Announcer:
+  Enabled: true
+  Type: Repeat
+  AutoStart: true
+  # Alle 10 Minuten (600 Sekunden) eine Nachricht
+  Interval: 600
+  Randomize: true
+  Commands:
+  # Wiki Hinweis
+  - cmi broadcast &8[&bInfo&8] &7Alles zum Server findest du im Wiki: &e&nmc.festas-builds.com/wiki
+  # Jobs Hinweis
+  - cmi broadcast &8[&bInfo&8] &7Brauchst du Geld? Such dir einen Job: &a/jobs browse
+  # Shop Hinweis
+  - cmi broadcast &8[&bInfo&8] &7Items kaufen und verkaufen kannst du im &6/shop
+  # Gamble Hinweis (Neu)
+  - cmi broadcast &8[&bInfo&8] &7Fühlst du dich glücklich? Nutze &d/gamble <Betrag> &7oder setze alles mit &d/gamble all&7!
+
+# 3. TÄGLICHER NEUSTART-COUNTDOWN
+# ---------------------------------------------------------------
+# Passt die Zeit bei "PerformOn" an deinen tatsächlichen Neustart an!
+# Beispiel hier: Neustart ist um 04:00 Uhr morgens geplant.
+RestartWarning:
+  Enabled: true
+  Type: OneTime
+  PerformOn:
+    '1':
+      Hour: 3
+      Minute: 55
+      Second: 0
+  Commands:
+  - cmi broadcast &c&lDer Server startet in 5 Minuten neu!
+  # Warten 4 Minuten (240 Sekunden)
+  - delay! 240
+  - cmi broadcast &c&lDer Server startet in 1 Minute neu!
+  # Warten 50 Sekunden
+  - delay! 50
+  - cmi broadcast &c&lNeustart in 10 Sekunden...
+  - actionbar! &cNeustart in 10 Sekunden...
+  - delay! 5
+  - actionbar! &cNeustart in 5 Sekunden...
+  - delay! 1
+  - actionbar! &cNeustart in 4 Sekunden...
+  - delay! 1
+  - actionbar! &cNeustart in 3 Sekunden...
+  - delay! 1
+  - actionbar! &cNeustart in 2 Sekunden...
+  - delay! 1
+  - actionbar! &cNeustart in 1 Sekunde...
+  - cmi save-all
+  - delay! 1
+  - kickall! &cDer Server startet neu. Wir sind gleich zurück!
+  # HINWEIS: Wenn dein Hoster den Server neustartet, brauchst du hier kein "stop".
+  # Wenn CMI den Server stoppen soll, entferne das # vor der nächsten Zeile:
+  # - cmi stop
+
+# 4. LUCKY WINNER (Kleines Belohnungs-Event)
+# ---------------------------------------------------------------
+# Wählt jede Stunde einen zufälligen Spieler und gibt ihm Geld.
+LuckyWinner:
+  Enabled: true
+  Type: Repeat
+  AutoStart: true
+  # Alle 3600 Sekunden (1 Stunde)
+  Interval: 3600
+  MinPlayers: 5
+  Commands:
+  - cmi money give [randomPlayer] 500
+  - cmi broadcast &8[&6Lotterie&8] &e[randomPlayer] &7hat gerade &a$500 &7fürs Online-Sein gewonnen!

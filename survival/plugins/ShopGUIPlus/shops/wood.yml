@@ -1,0 +1,660 @@
+wood:
+  name: "&f七七七七七七七七⤽"
+  fillItem:
+    material: ""
+  items:
+
+
+
+
+
+    P1_19:
+      type: item
+      item:
+        material: OAK_LOG
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 2
+      slot: 19
+      page: 1
+
+    P1_20:
+      type: item
+      item:
+        material: STRIPPED_OAK_LOG
+        quantity: 1
+      buyPrice: 12
+      sellPrice: 2
+      slot: 20
+      page: 1
+
+    P1_21:
+      type: item
+      item:
+        material: OAK_WOOD
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 2
+      slot: 21
+      page: 1
+
+    P1_22:
+      type: item
+      item:
+        material: OAK_PLANKS
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 22
+      page: 1
+
+    P1_23:
+      type: item
+      item:
+        material: SPRUCE_LOG
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 2
+      slot: 23
+      page: 1
+
+    P1_24:
+      type: item
+      item:
+        material: STRIPPED_SPRUCE_LOG
+        quantity: 1
+      buyPrice: 12
+      sellPrice: 2
+      slot: 24
+      page: 1
+
+    P1_25:
+      type: item
+      item:
+        material: SPRUCE_WOOD
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 2
+      slot: 25
+      page: 1
+
+    P1_28:
+      type: item
+      item:
+        material: SPRUCE_PLANKS
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 28
+      page: 1
+
+    P1_29:
+      type: item
+      item:
+        material: BIRCH_LOG
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 2
+      slot: 29
+      page: 1
+
+    P1_30:
+      type: item
+      item:
+        material: STRIPPED_BIRCH_LOG
+        quantity: 1
+      buyPrice: 12
+      sellPrice: 2
+      slot: 30
+      page: 1
+
+    P1_31:
+      type: item
+      item:
+        material: BIRCH_WOOD
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 2
+      slot: 31
+      page: 1
+
+    P1_32:
+      type: item
+      item:
+        material: BIRCH_PLANKS
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 32
+      page: 1
+
+    P1_33:
+      type: item
+      item:
+        material: JUNGLE_LOG
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 2
+      slot: 33
+      page: 1
+
+    P1_34:
+      type: item
+      item:
+        material: STRIPPED_JUNGLE_LOG
+        quantity: 1
+      buyPrice: 12
+      sellPrice: 2
+      slot: 34
+      page: 1
+
+    P1_37:
+      type: item
+      item:
+        material: JUNGLE_WOOD
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 2
+      slot: 37
+      page: 1
+
+    P1_38:
+      type: item
+      item:
+        material: JUNGLE_PLANKS
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 38
+      page: 1
+
+    P1_39:
+      type: item
+      item:
+        material: ACACIA_LOG
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 2
+      slot: 39
+      page: 1
+
+    P1_40:
+      type: item
+      item:
+        material: STRIPPED_ACACIA_LOG
+        quantity: 1
+      buyPrice: 12
+      sellPrice: 2
+      slot: 40
+      page: 1
+
+    P1_41:
+      type: item
+      item:
+        material: ACACIA_WOOD
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 2
+      slot: 41
+      page: 1
+
+    P1_42:
+      type: item
+      item:
+        material: ACACIA_PLANKS
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 42
+      page: 1
+
+    P1_43:
+      type: item
+      item:
+        material: DARK_OAK_LOG
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 2
+      slot: 43
+      page: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    P2_19:
+      type: item
+      item:
+        material: STRIPPED_DARK_OAK_LOG
+        quantity: 1
+      buyPrice: 12
+      sellPrice: 2
+      slot: 19
+      page: 2
+
+    P2_20:
+      type: item
+      item:
+        material: DARK_OAK_WOOD
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 2
+      slot: 20
+      page: 2
+
+    P2_21:
+      type: item
+      item:
+        material: DARK_OAK_PLANKS
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 21
+      page: 2
+
+    P2_22:
+      type: item
+      item:
+        material: CRIMSON_STEM
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 2
+      slot: 22
+      page: 2
+
+    P2_23:
+      type: item
+      item:
+        material: STRIPPED_CRIMSON_STEM
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 25
+      slot: 23
+      page: 2
+
+    P2_24:
+      type: item
+      item:
+        material: CRIMSON_HYPHAE
+        quantity: 1
+      buyPrice: 40
+      sellPrice: 25
+      slot: 24
+      page: 2
+
+    P2_25:
+      type: item
+      item:
+        material: CRIMSON_PLANKS
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 25
+      page: 2
+
+    P2_28:
+      type: item
+      item:
+        material: WARPED_STEM
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 2
+      slot: 28
+      page: 2
+
+    P2_29:
+      type: item
+      item:
+        material: STRIPPED_WARPED_STEM
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 25
+      slot: 29
+      page: 2
+
+    P2_30:
+      type: item
+      item:
+        material: WARPED_HYPHAE
+        quantity: 1
+      buyPrice: 40
+      sellPrice: 25
+      slot: 30
+      page: 2
+
+    P2_31:
+      type: item
+      item:
+        material: WARPED_PLANKS
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 31
+      page: 2
+
+    P2_32:
+      type: item
+      item:
+        material: MANGROVE_LOG
+        quantity: 1
+      buyPrice: 16
+      sellPrice: 2
+      slot: 32
+      page: 2
+
+    P2_33:
+      type: item
+      item:
+        material: STRIPPED_MANGROVE_LOG
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 21
+      slot: 33
+      page: 2
+
+    P2_34:
+      type: item
+      item:
+        material: MANGROVE_WOOD
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 22
+      slot: 34
+      page: 2
+
+    P2_37:
+      type: item
+      item:
+        material: MANGROVE_PLANKS
+        quantity: 1
+      buyPrice: 3
+      sellPrice: 1
+      slot: 37
+      page: 2
+
+    P2_38:
+      type: item
+      item:
+        material: MANGROVE_ROOTS
+        quantity: 1
+      buyPrice: 12
+      sellPrice: 2
+      slot: 38
+      page: 2
+
+    P2_39:
+      type: item
+      item:
+        material: MUDDY_MANGROVE_ROOTS
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 5
+      slot: 39
+      page: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Previous1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui blocks"
+      slot: 0
+      page: 1
+    Next1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui minerals"
+      slot: 8
+      page: 1
+    Previous2:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui blocks"
+      slot: 0
+      page: 2
+    Next2:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui minerals"
+      slot: 8
+      page: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ShopTools1:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 1
+      page: 1
+      commandsOnClick:
+      - "shopgui tools"
+
+    ShopWeapons1:
+      type: dummy
+      item:
+        material: IRON_CHESTPLATE
+        quantity: 1
+        name: "&e&lWeapons"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 2
+      page: 1
+      commandsOnClick:
+      - "shopgui weapons"
+
+    ShopBlocks1:
+      type: dummy
+      item:
+        material: BRICKS
+        quantity: 1
+        name: "&e&lBlocks"
+      slot: 3
+      page: 1
+      commandsOnClick:
+      - "shopgui blocks"
+
+    ShopWood1:
+      type: dummy
+      item:
+        material: OAK_LOG
+        quantity: 1
+        name: "&e&lWood"
+      slot: 4
+      page: 1
+      commandsOnClick:
+      - "shopgui wood"
+
+    ShopMinerals1:
+      type: dummy
+      item:
+        material: DIAMOND
+        quantity: 1
+        name: "&e&lMinerals"
+      slot: 5
+      page: 1
+      commandsOnClick:
+      - "shopgui minerals"
+
+    ShopFarming1:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 6
+      page: 1
+      commandsOnClick:
+      - "shopgui farming"
+
+    ShopFoods1:
+      type: dummy
+      item:
+        material: APPLE
+        quantity: 1
+        name: "&e&lFoods"
+      slot: 7
+      page: 1
+      commandsOnClick:
+      - "shopgui foods"
+
+
+
+    ShopTools2:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 1
+      page: 2
+      commandsOnClick:
+      - "shopgui tools"
+
+    ShopWeapons2:
+      type: dummy
+      item:
+        material: IRON_CHESTPLATE
+        quantity: 1
+        name: "&e&lWeapons"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 2
+      page: 2
+      commandsOnClick:
+      - "shopgui weapons"
+
+    ShopBlocks2:
+      type: dummy
+      item:
+        material: BRICKS
+        quantity: 1
+        name: "&e&lBlocks"
+      slot: 3
+      page: 2
+      commandsOnClick:
+      - "shopgui blocks"
+
+    ShopWood2:
+      type: dummy
+      item:
+        material: OAK_LOG
+        quantity: 1
+        name: "&e&lWood"
+      slot: 4
+      page: 2
+      commandsOnClick:
+      - "shopgui wood"
+
+    ShopMinerals2:
+      type: dummy
+      item:
+        material: DIAMOND
+        quantity: 1
+        name: "&e&lMinerals"
+      slot: 5
+      page: 2
+      commandsOnClick:
+      - "shopgui minerals"
+
+    ShopFarming2:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 6
+      page: 2
+      commandsOnClick:
+      - "shopgui farming"
+
+    ShopFoods2:
+      type: dummy
+      item:
+        material: APPLE
+        quantity: 1
+        name: "&e&lFoods"
+      slot: 7
+      page: 2
+      commandsOnClick:
+      - "shopgui foods"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

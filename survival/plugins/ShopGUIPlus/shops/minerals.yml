@@ -1,0 +1,518 @@
+minerals:
+  name: "&f七七七七七七七七⥼"
+  namePerPage:
+  fillItem:
+    material: ""
+  items:
+
+
+
+
+
+
+    P1_19:
+      type: item
+      item:
+        material: RAW_GOLD
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 19
+      page: 1
+
+    P1_20:
+      type: item
+      item:
+        material: NETHERITE_SCRAP
+        quantity: 1
+      buyPrice: 5000
+      sellPrice: -1
+      slot: 20
+      page: 1
+
+    P1_21:
+      type: item
+      item:
+        material: RAW_IRON
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 5
+      slot: 21
+      page: 1
+
+    P1_22:
+      type: item
+      item:
+        material: COAL
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 3
+      slot: 22
+      page: 1
+
+    P1_23:
+      type: item
+      item:
+        material: GOLD_INGOT
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 10
+      slot: 23
+      page: 1
+
+    P1_24:
+      type: item
+      item:
+        material: NETHERITE_INGOT
+        quantity: 1
+      buyPrice: 20000
+      sellPrice: -1
+      slot: 24
+      page: 1
+
+    P1_25:
+      type: item
+      item:
+        material: IRON_INGOT
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 5
+      slot: 25
+      page: 1
+
+    P1_28:
+      type: item
+      item:
+        material: LAPIS_LAZULI
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 10
+      slot: 28
+      page: 1
+
+    P1_29:
+      type: item
+      item:
+        material: COAL_BLOCK
+        quantity: 1
+      buyPrice: 150
+      sellPrice: 30
+      slot: 29
+      page: 1
+
+    P1_30:
+      type: item
+      item:
+        material: REDSTONE_BLOCK
+        quantity: 1
+      buyPrice: 200
+      sellPrice: 30
+      slot: 30
+      page: 1
+
+    P1_31:
+      type: item
+      item:
+        material: GOLD_BLOCK
+        quantity: 1
+      buyPrice: 400
+      sellPrice: 80
+      slot: 31
+      page: 1
+
+    P1_32:
+      type: item
+      item:
+        material: NETHERITE_BLOCK
+        quantity: 1
+      buyPrice: 180000
+      sellPrice: -1
+      slot: 32
+      page: 1
+
+    P1_33:
+      type: item
+      item:
+        material: IRON_BLOCK
+        quantity: 1
+      buyPrice: 200
+      sellPrice: 20
+      slot: 33
+      page: 1
+
+    P1_34:
+      type: item
+      item:
+        material: DIAMOND_BLOCK
+        quantity: 1
+      buyPrice: 50000
+      sellPrice: 500
+      slot: 34
+      page: 1
+
+    P1_37:
+      type: item
+      item:
+        material: LAPIS_BLOCK
+        quantity: 1
+      buyPrice: 400
+      sellPrice: 50
+      slot: 37
+      page: 1
+
+    P1_38:
+      type: item
+      item:
+        material: REDSTONE
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 5
+      slot: 38
+      page: 1
+
+    P1_39:
+      type: item
+      item:
+        material: DIAMOND
+        quantity: 1
+      buyPrice: 5000
+      sellPrice: 80
+      slot: 39
+      page: 1
+
+    P1_40:
+      type: item
+      item:
+        material: QUARTZ
+        quantity: 1
+      buyPrice: 100
+      sellPrice: 5
+      slot: 40
+      page: 1
+
+    P1_41:
+      type: item
+      item:
+        material: RAW_COPPER
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 3
+      slot: 41
+      page: 1
+
+    P1_42:
+      type: item
+      item:
+        material: EMERALD
+        quantity: 1
+      buyPrice: 1000
+      sellPrice: 20
+      slot: 42
+      page: 1
+
+    P1_43:
+      type: item
+      item:
+        material: QUARTZ_BLOCK
+        quantity: 1
+      buyPrice: 400
+      sellPrice: 50
+      slot: 43
+      page: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    P2_19:
+      type: item
+      item:
+        material: COPPER_INGOT
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 5
+      slot: 19
+      page: 2
+
+
+    P2_20:
+      type: item
+      item:
+        material: EMERALD_BLOCK
+        quantity: 1
+      buyPrice: 10000
+      sellPrice: 100
+      slot: 20
+      page: 2
+
+    P2_21:
+      type: item
+      item:
+        material: amethyst_shard
+        quantity: 1
+      buyPrice: 150
+      sellPrice: 20
+      slot: 21
+      page: 2
+
+    P2_22:
+      type: item
+      item:
+        material: COPPER_BLOCK
+        quantity: 1
+      buyPrice: 200
+      sellPrice: 20
+      slot: 22
+      page: 2
+
+    P2_23:
+      type: item
+      item:
+        material: ECHO_SHARD
+        quantity: 1
+      buyPrice: 2000
+      sellPrice: 200
+      slot: 23
+      page: 2
+
+
+
+
+
+
+
+
+
+
+    Previous1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui wood"
+      slot: 0
+      page: 1
+    Next1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui farming"
+      slot: 8
+      page: 1
+    Previous2:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui wood"
+      slot: 0
+      page: 2
+    Next2:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui farming"
+      slot: 8
+      page: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ShopWeapons1:
+      type: dummy
+      item:
+        material: IRON_CHESTPLATE
+        quantity: 1
+        name: "&e&lWeapons"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 1
+      page: 1
+      commandsOnClick:
+      - "shopgui weapons"
+
+    ShopBlocks1:
+      type: dummy
+      item:
+        material: BRICKS
+        quantity: 1
+        name: "&e&lBlocks"
+      slot: 2
+      page: 1
+      commandsOnClick:
+      - "shopgui blocks"
+
+    ShopWood1:
+      type: dummy
+      item:
+        material: OAK_LOG
+        quantity: 1
+        name: "&e&lWood"
+      slot: 3
+      page: 1
+      commandsOnClick:
+      - "shopgui wood"
+
+    ShopMinerals1:
+      type: dummy
+      item:
+        material: DIAMOND
+        quantity: 1
+        name: "&e&lMinerals"
+      slot: 4
+      page: 1
+      commandsOnClick:
+      - "shopgui minerals"
+
+    ShopFarming1:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 5
+      page: 1
+      commandsOnClick:
+      - "shopgui farming"
+
+    ShopFoods1:
+      type: dummy
+      item:
+        material: APPLE
+        quantity: 1
+        name: "&e&lFoods"
+      slot: 6
+      page: 1
+      commandsOnClick:
+      - "shopgui foods"
+
+    ShopRottenFlesh1:
+      type: dummy
+      item:
+        material: ROTTEN_FLESH
+        quantity: 1
+        name: "&e&lMob Drops"
+      slot: 7
+      page: 1
+      commandsOnClick:
+      - "shopgui mobdrops"
+
+
+
+
+    ShopWeapons2:
+      type: dummy
+      item:
+        material: IRON_CHESTPLATE
+        quantity: 1
+        name: "&e&lWeapons"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 1
+      page: 2
+      commandsOnClick:
+      - "shopgui weapons"
+
+    ShopBlocks2:
+      type: dummy
+      item:
+        material: BRICKS
+        quantity: 1
+        name: "&e&lBlocks"
+      slot: 2
+      page: 2
+      commandsOnClick:
+      - "shopgui blocks"
+
+    ShopWood2:
+      type: dummy
+      item:
+        material: OAK_LOG
+        quantity: 1
+        name: "&e&lWood"
+      slot: 3
+      page: 2
+      commandsOnClick:
+      - "shopgui wood"
+
+    ShopMinerals2:
+      type: dummy
+      item:
+        material: DIAMOND
+        quantity: 1
+        name: "&e&lMinerals"
+      slot: 4
+      page: 2
+      commandsOnClick:
+      - "shopgui minerals"
+
+    ShopFarming2:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 5
+      page: 2
+      commandsOnClick:
+      - "shopgui farming"
+
+    ShopFoods2:
+      type: dummy
+      item:
+        material: APPLE
+        quantity: 1
+        name: "&e&lFoods"
+      slot: 6
+      page: 2
+      commandsOnClick:
+      - "shopgui foods"
+
+    ShopRottenFlesh2:
+      type: dummy
+      item:
+        material: ROTTEN_FLESH
+        quantity: 1
+        name: "&e&lMob Drops"
+      slot: 7
+      page: 2
+      commandsOnClick:
+      - "shopgui mobdrops"
+
+
+

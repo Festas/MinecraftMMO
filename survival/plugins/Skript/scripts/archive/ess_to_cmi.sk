@@ -1,0 +1,282 @@
+# --- PURE CMI MIGRATION SCRIPT (PLUS EDITION) ---
+# Dieses Skript fasst NUR Essentials & CMI Permissions an.
+# Enthält jetzt zusätzliche "CMI-Only" Features für mehr Spielspaß.
+
+command /setup_cmi_ranks:
+    permission: op
+    trigger:
+        send "&eStarte &b&lCMI MIGRATION &d(PLUS)&e... &7(Essentials -> CMI + Extra Features)" to console
+        
+        # ==============================================================================
+        # 1. DEFAULT (NPC)
+        # ==============================================================================
+        # Unset Essentials
+        execute console command "luckperms group default permission unset essentials.sethome.multiple.1"
+        execute console command "luckperms group default permission unset essentials.spawn"
+        execute console command "luckperms group default permission unset essentials.tpa"
+        execute console command "luckperms group default permission unset essentials.tpaccept"
+        execute console command "luckperms group default permission unset essentials.tpdeny"
+        execute console command "luckperms group default permission unset essentials.warp"
+        execute console command "luckperms group default permission unset essentials.warps.list"
+        execute console command "luckperms group default permission unset essentials.msg"
+        execute console command "luckperms group default permission unset essentials.reply"
+        execute console command "luckperms group default permission unset essentials.pay"
+        execute console command "luckperms group default permission unset essentials.balance"
+        execute console command "luckperms group default permission unset essentials.balancetop"
+        execute console command "luckperms group default permission unset essentials.afk"
+        execute console command "luckperms group default permission unset essentials.afk.auto"
+        execute console command "luckperms group default permission unset essentials.help"
+        
+        # Set CMI Basis
+        execute console command "luckperms group default permission set cmi.command.sethome true"
+        execute console command "luckperms group default permission set cmi.home.limit.1 true"
+        execute console command "luckperms group default permission set cmi.command.home true"
+        execute console command "luckperms group default permission set cmi.command.delhome true"
+        execute console command "luckperms group default permission set cmi.command.spawn true"
+        execute console command "luckperms group default permission set cmi.command.tpa true"
+        execute console command "luckperms group default permission set cmi.command.tpaccept true"
+        execute console command "luckperms group default permission set cmi.command.tpdeny true"
+        execute console command "luckperms group default permission set cmi.command.warp true"
+        execute console command "luckperms group default permission set cmi.command.warp.list true"
+        execute console command "luckperms group default permission set cmi.command.msg true"
+        execute console command "luckperms group default permission set cmi.command.reply true"
+        execute console command "luckperms group default permission set cmi.command.ignore true"
+        execute console command "luckperms group default permission set cmi.command.pay true"
+        execute console command "luckperms group default permission set cmi.command.balance true"
+        execute console command "luckperms group default permission set cmi.command.balancetop true"
+        execute console command "luckperms group default permission set cmi.command.afk true"
+        execute console command "luckperms group default permission set cmi.autoafk true"
+        execute console command "luckperms group default permission set cmi.command.help true"
+        
+        # --- NEU: CMI EXTRAS (Für Alle) ---
+        # Sitzen auf Treppen/Blöcken (spart ein Sitz-Plugin!)
+        execute console command "luckperms group default permission set cmi.command.sit true"
+        # Spielzeit anzeigen
+        execute console command "luckperms group default permission set cmi.command.playtime true"
+        # Statistiken anzeigen
+        execute console command "luckperms group default permission set cmi.command.stats true"
+        
+        wait 5 ticks
+
+        # ==============================================================================
+        # 2. LAUCH
+        # ==============================================================================
+        execute console command "luckperms group lauch permission unset essentials.sethome.multiple.2"
+        execute console command "luckperms group lauch permission set cmi.home.limit.2 true"
+        
+        # --- NEU: CMI EXTRA ---
+        # Rezepte anzeigen (sehr nützlich)
+        execute console command "luckperms group lauch permission set cmi.command.recipe true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # 3. KNECHT
+        # ==============================================================================
+        execute console command "luckperms group knecht permission unset essentials.workbench"
+        execute console command "luckperms group knecht permission set cmi.command.workbench true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # 4. CHILLER
+        # ==============================================================================
+        execute console command "luckperms group chiller permission unset essentials.ptime"
+        execute console command "luckperms group chiller permission unset essentials.pweather"
+        execute console command "luckperms group chiller permission set cmi.command.ptime true"
+        execute console command "luckperms group chiller permission set cmi.command.pweather true"
+        
+        # --- NEU: CMI EXTRA ---
+        # Farbcodes anzeigen (/cmi colors) - nützlich, da sie bald farbig schreiben können
+        execute console command "luckperms group chiller permission set cmi.command.colors true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # 5. TICKER
+        # ==============================================================================
+        execute console command "luckperms group ticker permission unset essentials.sethome.multiple.3"
+        execute console command "luckperms group ticker permission unset essentials.enderchest"
+        execute console command "luckperms group ticker permission set cmi.home.limit.3 true"
+        execute console command "luckperms group ticker permission set cmi.command.enderchest true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # 6. HUSTLER
+        # ==============================================================================
+        execute console command "luckperms group hustler permission unset essentials.hat"
+        execute console command "luckperms group hustler permission set cmi.command.hat true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # 7. MACHER
+        # ==============================================================================
+        execute console command "luckperms group macher permission unset essentials.dispose"
+        execute console command "luckperms group macher permission set cmi.command.dispose true"
+        
+        # --- NEU: CMI EXTRA ---
+        # ArmorStand Editor (Mega Feature für Builder!)
+        # Erlaubt das Posen von Rüstungsständern via GUI
+        execute console command "luckperms group macher permission set cmi.command.armorstand true"
+        execute console command "luckperms group macher permission set cmi.command.armorstand.editor true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # 8. TÜRSTEHER
+        # ==============================================================================
+        execute console command "luckperms group tuersteher permission unset essentials.sethome.multiple.5"
+        execute console command "luckperms group tuersteher permission set cmi.home.limit.5 true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # 9. BRATAN
+        # ==============================================================================
+        execute console command "luckperms group bratan permission unset essentials.anvil"
+        execute console command "luckperms group bratan permission set cmi.command.anvil true"
+        
+        # --- NEU: CMI EXTRA ---
+        # Schilder bearbeiten mit Rechtsklick (SignEdit)
+        execute console command "luckperms group bratan permission set cmi.command.signedit true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # 10. BRE
+        # ==============================================================================
+        execute console command "luckperms group bre permission unset essentials.chat.color"
+        execute console command "luckperms group bre permission set cmi.chat.color true"
+        execute console command "luckperms group bre permission set cmi.colors.publicmessage.* true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # 11. EHRENMANN
+        # ==============================================================================
+        execute console command "luckperms group ehrenmann permission unset essentials.sethome.multiple.8"
+        execute console command "luckperms group ehrenmann permission unset essentials.feed"
+        execute console command "luckperms group ehrenmann permission set cmi.home.limit.8 true"
+        execute console command "luckperms group ehrenmann permission set cmi.command.feed true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # 12. LÖWE
+        # ==============================================================================
+        execute console command "luckperms group loewe permission unset essentials.repair"
+        execute console command "luckperms group loewe permission set cmi.command.repair true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # 13. MASCHINE
+        # ==============================================================================
+        execute console command "luckperms group maschine permission set cmi.command.headdb true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # 14. BABA
+        # ==============================================================================
+        execute console command "luckperms group baba permission unset essentials.sethome.multiple.12"
+        execute console command "luckperms group baba permission unset essentials.back"
+        execute console command "luckperms group baba permission unset essentials.back.ondeath"
+        execute console command "luckperms group baba permission unset essentials.chat.format"
+        
+        execute console command "luckperms group baba permission set cmi.home.limit.12 true"
+        execute console command "luckperms group baba permission set cmi.command.back true"
+        execute console command "luckperms group baba permission set cmi.command.back.death true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # 15. MAIN CHARACTER
+        # ==============================================================================
+        execute console command "luckperms group maincharacter permission unset essentials.sethome.multiple.15"
+        execute console command "luckperms group maincharacter permission unset essentials.keepxp"
+        execute console command "luckperms group maincharacter permission set cmi.home.limit.15 true"
+        execute console command "luckperms group maincharacter permission set cmi.keepxp true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # FLEXER
+        # ==============================================================================
+        execute console command "luckperms group flexer permission unset essentials.fly"
+        execute console command "luckperms group flexer permission set cmi.command.fly true world=tycoon"
+        
+        # --- NEU: CMI EXTRA ---
+        # Glow Effekt (Leuchten) - Cooler kosmetischer Effekt
+        execute console command "luckperms group flexer permission set cmi.command.glow true"
+        execute console command "luckperms group flexer permission set cmi.command.glow.color.* true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # RICH KID
+        # ==============================================================================
+        execute console command "luckperms group richkid permission unset essentials.repair.all"
+        execute console command "luckperms group richkid permission set cmi.command.repair.all true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # GÖNNJAMIN
+        # ==============================================================================
+        execute console command "luckperms group goennjamin permission unset essentials.feed.cooldown.bypass"
+        execute console command "luckperms group goennjamin permission set cmi.cooldown.bypass.feed true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # GUCCI
+        # ==============================================================================
+        execute console command "luckperms group gucci permission unset essentials.heal"
+        execute console command "luckperms group gucci permission unset essentials.nick"
+        execute console command "luckperms group gucci permission unset essentials.nick.color"
+        execute console command "luckperms group gucci permission set cmi.command.heal true"
+        execute console command "luckperms group gucci permission set cmi.command.nick true"
+        execute console command "luckperms group gucci permission set cmi.command.nick.color true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # ROLEX
+        # ==============================================================================
+        execute console command "luckperms group rolex permission unset essentials.condense"
+        execute console command "luckperms group rolex permission set cmi.command.condense true"
+        
+        # --- NEU: CMI EXTRA ---
+        # Teleport zum höchsten Block (/cmi top)
+        execute console command "luckperms group rolex permission set cmi.command.top true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # KÖNIG
+        # ==============================================================================
+        execute console command "luckperms group koenig permission unset essentials.fly"
+        execute console command "luckperms group koenig permission set cmi.command.fly true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # ADMIN VATER
+        # ==============================================================================
+        execute console command "luckperms group adminvater permission unset essentials.god"
+        execute console command "luckperms group adminvater permission set cmi.command.god true"
+        
+        # --- NEU: CMI EXTRA ---
+        # Inventare ansehen (InvSee ist bei CMI: /cmi inv)
+        # Auch wenn er Permissions erbt, schadet explizit nicht
+        execute console command "luckperms group adminvater permission set cmi.command.inv true"
+        wait 3 ticks
+
+        # ==============================================================================
+        # SECURITY & TEAM (Updates)
+        # ==============================================================================
+        execute console command "luckperms group security permission unset essentials.kick"
+        execute console command "luckperms group security permission unset essentials.mute"
+        execute console command "luckperms group security permission unset essentials.staffchat"
+        execute console command "luckperms group security permission set cmi.command.kick true"
+        execute console command "luckperms group security permission set cmi.command.mute true"
+        execute console command "luckperms group security permission set cmi.command.staffmsg true"
+        execute console command "luckperms group security permission set cmi.command.warn true"
+        
+        execute console command "luckperms group manager permission unset essentials.ban"
+        execute console command "luckperms group manager permission unset essentials.tempban"
+        execute console command "luckperms group manager permission unset essentials.invsee"
+        execute console command "luckperms group manager permission unset essentials.enderchest.others"
+        execute console command "luckperms group manager permission set cmi.command.ban true"
+        execute console command "luckperms group manager permission set cmi.command.tempban true"
+        execute console command "luckperms group manager permission set cmi.command.inv true"
+        execute console command "luckperms group manager permission set cmi.command.enderchest.others true"
+
+        # VORSTAND Update
+        execute console command "luckperms group vorstand permission unset essentials.gamemode"
+        execute console command "luckperms group vorstand permission set cmi.command.gamemode true"
+
+        send "&a&lMIGRATION ERFOLGREICH! &7Essentials Permissions ersetzt & CMI Extras hinzugefügt." to console

@@ -1,0 +1,21 @@
+# --- SELLWAND PROTECTION FIX ---
+# Verhindert, dass Spieler Items aus fremden Kisten verkaufen.
+# Options entfernt, um Syntaxfehler zu vermeiden.
+
+on right click on chest or trapped chest or barrel or shulker box:
+    # Konfiguration in Variablen
+    set {_wand_name} to "Sellwand"
+    set {_prefix} to "&8[&6Tycoon&8] &7"
+
+    # 1. Ist das Item ein Sellwand?
+    if name of player's tool contains {_wand_name}:
+        
+        # 2. Hat der Spieler Baurechte an diesem Block?
+        # Skript prüft hier automatisch WorldGuard und PlotSquared.
+        if player cannot build at event-block:
+            cancel event
+            send "%{_prefix}%&cDu darfst hier nicht verkaufen! (Fremdes Grundstück)" to player
+            play sound "entity.villager.no" to player
+            stop
+
+

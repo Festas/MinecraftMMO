@@ -1,0 +1,9 @@
+command /shop:
+ trigger:
+  make player execute command "/shopgui blocks"
+
+
+
+
+
+

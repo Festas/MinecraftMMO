@@ -1,0 +1,344 @@
+redstone:
+  name: "&f七七七七七七七七⥿"
+  namePerPage:
+  fillItem:
+    material: ""
+  items:
+
+
+
+
+    P1_19:
+      type: item
+      item:
+        material: REDSTONE
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 5
+      slot: 19
+      page: 1
+
+    P1_20:
+      type: item
+      item:
+        material: REDSTONE_TORCH
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 20
+      page: 1
+
+    P1_21:
+      type: item
+      item:
+        material: REPEATER
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 21
+      page: 1
+
+    P1_22:
+      type: item
+      item:
+        material: COMPARATOR
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 22
+      page: 1
+
+    P1_23:
+      type: item
+      item:
+        material: PISTON
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 23
+      page: 1
+
+    P1_24:
+      type: item
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+      buyPrice: 100
+      sellPrice:
+      slot: 24
+      page: 1
+
+    P1_25:
+      type: item
+      item:
+        material: SLIME_BLOCK
+        quantity: 1
+      buyPrice: 150
+      sellPrice: -1
+      slot: 25
+      page: 1
+
+    P1_28:
+      type: item
+      item:
+        material: HONEY_BLOCK
+        quantity: 1
+      buyPrice: 150
+      sellPrice: -1
+      slot: 28
+      page: 1
+
+    P1_29:
+      type: item
+      item:
+        material: OBSERVER
+        quantity: 1
+      buyPrice: 150
+      sellPrice: -1
+      slot: 29
+      page: 1
+
+    P1_30:
+      type: item
+      item:
+        material: HOPPER
+        quantity: 1
+      buyPrice: 500
+      sellPrice: -1
+      slot: 30
+      page: 1
+
+    P1_31:
+      type: item
+      item:
+        material: DISPENSER
+        quantity: 1
+      buyPrice: 100
+      sellPrice: -1
+      slot: 31
+      page: 1
+
+    P1_32:
+      type: item
+      item:
+        material: DROPPER
+        quantity: 1
+      buyPrice: 100
+      sellPrice: -1
+      slot: 32
+      page: 1
+
+    P1_33:
+      type: item
+      item:
+        material: TARGET
+        quantity: 1
+      buyPrice: 100
+      sellPrice: -1
+      slot: 33
+      page: 1
+
+    P1_34:
+      type: item
+      item:
+        material: LIGHTNING_ROD
+        quantity: 1
+      buyPrice: 250
+      sellPrice: -1
+      slot: 34
+      page: 1
+
+    P1_37:
+      type: item
+      item:
+        material: DAYLIGHT_DETECTOR
+        quantity: 1
+      buyPrice: 500
+      sellPrice: -1
+      slot: 37
+      page: 1
+
+    P1_38:
+      type: item
+      item:
+        material: TRIPWIRE_HOOK
+        quantity: 1
+      buyPrice: 20
+      sellPrice: -1
+      slot: 38
+      page: 1
+
+    P1_39:
+      type: item
+      item:
+        material: REDSTONE_LAMP
+        quantity: 1
+      buyPrice: 100
+      sellPrice: -1
+      slot: 39
+      page: 1
+
+    P1_40:
+      type: item
+      item:
+        material: DETECTOR_RAIL
+        quantity: 1
+      buyPrice: 100
+      sellPrice: -1
+      slot: 40
+      page: 1
+
+    P1_41:
+      type: item
+      item:
+        material: ACTIVATOR_RAIL
+        quantity: 1
+      buyPrice: 100
+      sellPrice: -1
+      slot: 41
+      page: 1
+
+    P1_42:
+      type: item
+      item:
+        material: SCULK_SENSOR
+        quantity: 1
+      buyPrice: 2000
+      sellPrice: -1
+      slot: 42
+      page: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Previous1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui decoration"
+      slot: 0
+      page: 1
+    Next1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui tools"
+      slot: 8
+      page: 1
+
+
+
+
+
+
+
+
+
+
+
+    ShopRottenFlesh1:
+      type: dummy
+      item:
+        material: ROTTEN_FLESH
+        quantity: 1
+        name: "&e&lMob Drops"
+      slot: 1
+      page: 1
+      commandsOnClick:
+      - "shopgui mobdrops"
+
+    ShopColored1:
+      type: dummy
+      item:
+        material: CYAN_WOOL
+        quantity: 1
+        name: "&e&lColors"
+      slot: 2
+      page: 1
+      commandsOnClick:
+      - "shopgui coloredblocks"
+
+    ShopDecoration1:
+      type: dummy
+      item:
+        material: PAINTING
+        quantity: 1
+        name: "&e&lDecoration"
+      slot: 3
+      page: 1
+      commandsOnClick:
+      - "shopgui decoration"
+
+    ShopRedstone1:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+      slot: 4
+      page: 1
+      commandsOnClick:
+      - "shopgui redstone"
+
+    ShopTools1:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+      slot: 5
+      page: 1
+      commandsOnClick:
+      - "shopgui tools"
+
+    ShopWeapons1:
+      type: dummy
+      item:
+        material: IRON_CHESTPLATE
+        quantity: 1
+        name: "&e&lWeapons"
+      slot: 6
+      page: 1
+      commandsOnClick:
+      - "shopgui weapons"
+
+    ShopBlocks1:
+      type: dummy
+      item:
+        material: BRICKS
+        quantity: 1
+        name: "&e&lBlocks"
+      slot: 7
+      page: 1
+      commandsOnClick:
+      - "shopgui bricks"
+
+
+
+
+
+
+
+
+
+
+

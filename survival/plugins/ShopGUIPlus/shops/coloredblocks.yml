@@ -1,0 +1,1588 @@
+Coloredblocks:
+  name: "&f七七七七七七七七⤒"
+  fillItem:
+    material: ""
+  items:
+
+    P1_19:
+      type: item
+      item:
+        material: WHITE_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 19
+      page: 1
+
+    P1_20:
+      type: item
+      item:
+        material: ORANGE_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 20
+      page: 1
+
+    P1_21:
+      type: item
+      item:
+        material: MAGENTA_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 21
+      page: 1
+
+    P1_22:
+      type: item
+      item:
+        material: LIGHT_BLUE_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 22
+      page: 1
+
+    P1_23:
+      type: item
+      item:
+        material: YELLOW_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 23
+      page: 1
+
+    P1_24:
+      type: item
+      item:
+        material: LIME_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 24
+      page: 1
+
+    P1_25:
+      type: item
+      item:
+        material: PINK_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 25
+      page: 1
+
+    P1_28:
+      type: item
+      item:
+        material: GRAY_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 28
+      page: 1
+
+    P1_29:
+      type: item
+      item:
+        material: LIGHT_GRAY_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 29
+      page: 1
+
+    P1_30:
+      type: item
+      item:
+        material: CYAN_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 30
+      page: 1
+
+    P1_31:
+      type: item
+      item:
+        material: PURPLE_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 31
+      page: 1
+
+    P1_32:
+      type: item
+      item:
+        material: BLUE_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 32
+      page: 1
+
+    P1_33:
+      type: item
+      item:
+        material: BROWN_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 33
+      page: 1
+
+    P1_34:
+      type: item
+      item:
+        material: GREEN_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 34
+      page: 1
+
+    P1_37:
+      type: item
+      item:
+        material: RED_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 37
+      page: 1
+
+    P1_38:
+      type: item
+      item:
+        material: BLACK_WOOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 38
+      page: 1
+
+    P1_39:
+      type: item
+      item:
+        material: WHITE_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 39
+      page: 1
+
+    P1_40:
+      type: item
+      item:
+        material: ORANGE_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 40
+      page: 1
+
+    P1_41:
+      type: item
+      item:
+        material: MAGENTA_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 41
+      page: 1
+
+    P1_42:
+      type: item
+      item:
+        material: LIGHT_BLUE_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 42
+      page: 1
+
+    P1_43:
+      type: item
+      item:
+        material: YELLOW_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 43
+      page: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+    P2_19:
+      type: item
+      item:
+        material: LIME_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 19
+      page: 2
+
+    P2_20:
+      type: item
+      item:
+        material: PINK_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 20
+      page: 2
+
+    P2_21:
+      type: item
+      item:
+        material: GRAY_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 21
+      page: 2
+
+    P2_22:
+      type: item
+      item:
+        material: LIGHT_GRAY_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 22
+      page: 2
+
+    P2_23:
+      type: item
+      item:
+        material: CYAN_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 23
+      page: 2
+
+    P2_24:
+      type: item
+      item:
+        material: PURPLE_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 24
+      page: 2
+
+    P2_25:
+      type: item
+      item:
+        material: BLUE_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 25
+      page: 2
+
+    P2_28:
+      type: item
+      item:
+        material: BROWN_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 28
+      page: 2
+
+    P2_29:
+      type: item
+      item:
+        material: GREEN_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 29
+      page: 2
+
+    P2_30:
+      type: item
+      item:
+        material: RED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 30
+      page: 2
+
+    P2_31:
+      type: item
+      item:
+        material: BLACK_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 31
+      page: 2
+
+    P2_32:
+      type: item
+      item:
+        material: TERRACOTTA
+        quantity: 1
+      buyPrice: 3.5
+      sellPrice: 0.28
+      slot: 32
+      page: 2
+
+    P2_33:
+      type: item
+      item:
+        material: RED_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 33
+      page: 2
+
+    P2_34:
+      type: item
+      item:
+        material: WHITE_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 34
+      page: 2
+
+    P2_37:
+      type: item
+      item:
+        material: ORANGE_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 37
+      page: 2
+
+    P2_38:
+      type: item
+      item:
+        material: MAGENTA_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 38
+      page: 2
+
+    P2_39:
+      type: item
+      item:
+        material: LIGHT_BLUE_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 39
+      page: 2
+
+    P2_40:
+      type: item
+      item:
+        material: YELLOW_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 40
+      page: 2
+
+    P2_41:
+      type: item
+      item:
+        material: LIME_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 41
+      page: 2
+
+    P2_42:
+      type: item
+      item:
+        material: PINK_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 42
+      page: 2
+
+    P2_43:
+      type: item
+      item:
+        material: GRAY_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 43
+      page: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    P3_19:
+      type: item
+      item:
+        material: LIGHT_GRAY_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 19
+      page: 3
+
+    P3_20:
+      type: item
+      item:
+        material: CYAN_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 20
+      page: 3
+
+    P3_21:
+      type: item
+      item:
+        material: PURPLE_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 21
+      page: 3
+
+    P3_22:
+      type: item
+      item:
+        material: BLUE_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 22
+      page: 3
+
+    P3_23:
+      type: item
+      item:
+        material: BROWN_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 23
+      page: 3
+
+    P3_24:
+      type: item
+      item:
+        material: GREEN_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 24
+      page: 3
+
+    P3_25:
+      type: item
+      item:
+        material: BLACK_GLAZED_TERRACOTTA
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 25
+      page: 3
+
+    P3_28:
+      type: item
+      item:
+        material: WHITE_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 28
+      page: 3
+
+    P3_29:
+      type: item
+      item:
+        material: WHITE_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 29
+      page: 3
+
+    P3_30:
+      type: item
+      item:
+        material: ORANGE_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 30
+      page: 3
+
+    P3_31:
+      type: item
+      item:
+        material: ORANGE_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 31
+      page: 3
+
+    P3_32:
+      type: item
+      item:
+        material: MAGENTA_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 32
+      page: 3
+
+    P3_33:
+      type: item
+      item:
+        material: MAGENTA_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 33
+      page: 3
+
+    P3_34:
+      type: item
+      item:
+        material: LIGHT_BLUE_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 34
+      page: 3
+
+    P3_37:
+      type: item
+      item:
+        material: LIGHT_BLUE_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 37
+      page: 3
+
+    P3_38:
+      type: item
+      item:
+        material: YELLOW_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 38
+      page: 3
+
+    P3_39:
+      type: item
+      item:
+        material: YELLOW_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 39
+      page: 3
+
+    P3_40:
+      type: item
+      item:
+        material: LIME_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 40
+      page: 3
+
+    P3_41:
+      type: item
+      item:
+        material: LIME_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 41
+      page: 3
+
+    P3_42:
+      type: item
+      item:
+        material: PINK_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 42
+      page: 3
+
+    P3_43:
+      type: item
+      item:
+        material: PINK_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 43
+      page: 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    P4_19:
+      type: item
+      item:
+        material: GRAY_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 19
+      page: 4
+
+    P4_20:
+      type: item
+      item:
+        material: GRAY_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 20
+      page: 4
+
+    P4_21:
+      type: item
+      item:
+        material: LIGHT_GRAY_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 21
+      page: 4
+
+    P4_22:
+      type: item
+      item:
+        material: LIGHT_GRAY_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 22
+      page: 4
+
+    P4_23:
+      type: item
+      item:
+        material: CYAN_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 23
+      page: 4
+
+    P4_24:
+      type: item
+      item:
+        material: CYAN_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 24
+      page: 4
+
+    P4_25:
+      type: item
+      item:
+        material: PURPLE_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 25
+      page: 4
+
+    P4_28:
+      type: item
+      item:
+        material: PURPLE_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 28
+      page: 4
+
+    P4_29:
+      type: item
+      item:
+        material: BLUE_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 29
+      page: 4
+
+    P4_30:
+      type: item
+      item:
+        material: BROWN_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 30
+      page: 4
+
+    P4_31:
+      type: item
+      item:
+        material: BROWN_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 31
+      page: 4
+
+    P4_32:
+      type: item
+      item:
+        material: GREEN_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 32
+      page: 4
+
+    P4_33:
+      type: item
+      item:
+        material: GREEN_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 33
+      page: 4
+
+    P4_34:
+      type: item
+      item:
+        material: RED_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 34
+      page: 4
+
+    P4_37:
+      type: item
+      item:
+        material: RED_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 37
+      page: 4
+
+    P4_38:
+      type: item
+      item:
+        material: BLACK_CONCRETE_POWDER
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 38
+      page: 4
+
+    P4_39:
+      type: item
+      item:
+        material: BLACK_CONCRETE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 39
+      page: 4
+
+    P4_40:
+      type: item
+      item:
+        material: GLASS
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 40
+      page: 4
+
+    P4_41:
+      type: item
+      item:
+        material: WHITE_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 41
+      page: 4
+
+    P4_42:
+      type: item
+      item:
+        material: ORANGE_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 42
+      page: 4
+
+    P4_43:
+      type: item
+      item:
+        material: MAGENTA_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 43
+      page: 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    P5_19:
+      type: item
+      item:
+        material: LIGHT_BLUE_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 19
+      page: 5
+
+    P5_20:
+      type: item
+      item:
+        material: YELLOW_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 20
+      page: 5
+
+    P5_21:
+      type: item
+      item:
+        material: LIME_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 21
+      page: 5
+
+    P5_22:
+      type: item
+      item:
+        material: PINK_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 22
+      page: 5
+
+    P5_23:
+      type: item
+      item:
+        material: GRAY_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 23
+      page: 5
+
+    P5_24:
+      type: item
+      item:
+        material: LIGHT_GRAY_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 24
+      page: 5
+
+    P5_25:
+      type: item
+      item:
+        material: CYAN_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 25
+      page: 5
+
+    P5_28:
+      type: item
+      item:
+        material: PURPLE_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 28
+      page: 5
+
+    P5_29:
+      type: item
+      item:
+        material: BLUE_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 29
+      page: 5
+
+    P5_30:
+      type: item
+      item:
+        material: BROWN_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 30
+      page: 5
+
+    P5_31:
+      type: item
+      item:
+        material: GREEN_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 31
+      page: 5
+
+    P5_32:
+      type: item
+      item:
+        material: RED_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 32
+      page: 5
+
+    P5_33:
+      type: item
+      item:
+        material: BLACK_STAINED_GLASS
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 33
+      page: 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Previous1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui Mobdrops"
+      slot: 0
+      page: 1
+    Next1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui Decoration"
+      slot: 8
+      page: 1
+    Previous2:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui Mobdrops"
+      slot: 0
+      page: 2
+    Next2:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui Decoration"
+      slot: 8
+      page: 2
+    Previous3:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui Mobdrops"
+      slot: 0
+      page: 3
+    Next3:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui Decoration"
+      slot: 8
+      page: 3
+    Previous4:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui Mobdrops"
+      slot: 0
+      page: 4
+    Next4:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui Decoration"
+      slot: 8
+      page: 4
+    Previous5:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui Mobdrops"
+      slot: 0
+      page: 5
+    Next5:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui Decoration"
+      slot: 8
+      page: 5
+
+
+
+
+
+
+
+
+
+
+
+
+    ShopFarming1:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 1
+      page: 1
+      commandsOnClick:
+      - "shopgui farming"
+
+
+    ShopFoods1:
+      type: dummy
+      item:
+        material: APPLE
+        quantity: 1
+        name: "&e&lFoods"
+      slot: 2
+      page: 1
+      commandsOnClick:
+      - "shopgui foods"
+
+    ShopRottenFlesh1:
+      type: dummy
+      item:
+        material: ROTTEN_FLESH
+        quantity: 1
+        name: "&e&lMob Drops"
+      slot: 3
+      page: 1
+      commandsOnClick:
+      - "shopgui mobdrops"
+
+    ShopColors1:
+      type: dummy
+      item:
+        material: CYAN_WOOL
+        quantity: 1
+        name: "&e&lColors"
+      slot: 4
+      page: 1
+      commandsOnClick:
+      - "shopgui coloredblocks"
+
+    ShopDecoration1:
+      type: dummy
+      item:
+        material: PAINTING
+        quantity: 1
+        name: "&e&lDecoration"
+      slot: 5
+      page: 1
+      commandsOnClick:
+      - "shopgui decoration"
+
+    ShopRedstone1:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+      slot: 6
+      page: 1
+      commandsOnClick:
+      - "shopgui restone"
+
+    ShopTools1:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+      slot: 7
+      page: 1
+      commandsOnClick:
+      - "shopgui tools"
+
+
+
+
+
+
+    ShopFarming2:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 1
+      page: 2
+      commandsOnClick:
+      - "shopgui farming"
+
+
+    ShopFoods2:
+      type: dummy
+      item:
+        material: APPLE
+        quantity: 1
+        name: "&e&lFoods"
+      slot: 2
+      page: 2
+      commandsOnClick:
+      - "shopgui foods"
+
+    ShopRottenFlesh2:
+      type: dummy
+      item:
+        material: ROTTEN_FLESH
+        quantity: 1
+        name: "&e&lMob Drops"
+      slot: 3
+      page: 2
+      commandsOnClick:
+      - "shopgui mobdrops"
+
+    ShopColors2:
+      type: dummy
+      item:
+        material: CYAN_WOOL
+        quantity: 1
+        name: "&e&lColors"
+      slot: 4
+      page: 2
+      commandsOnClick:
+      - "shopgui coloredblocks"
+
+    ShopDecoration2:
+      type: dummy
+      item:
+        material: PAINTING
+        quantity: 1
+        name: "&e&lDecoration"
+      slot: 5
+      page: 2
+      commandsOnClick:
+      - "shopgui decoration"
+
+    ShopRedstone2:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+      slot: 6
+      page: 2
+      commandsOnClick:
+      - "shopgui restone"
+
+    ShopTools2:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+      slot: 7
+      page: 2
+      commandsOnClick:
+      - "shopgui tools"
+
+
+
+
+
+
+    ShopFarming3:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 1
+      page: 3
+      commandsOnClick:
+      - "shopgui farming"
+
+
+    ShopFoods3:
+      type: dummy
+      item:
+        material: APPLE
+        quantity: 1
+        name: "&e&lFoods"
+      slot: 2
+      page: 3
+      commandsOnClick:
+      - "shopgui foods"
+
+    ShopRottenFlesh3:
+      type: dummy
+      item:
+        material: ROTTEN_FLESH
+        quantity: 1
+        name: "&e&lMob Drops"
+      slot: 3
+      page: 3
+      commandsOnClick:
+      - "shopgui mobdrops"
+
+    ShopColors3:
+      type: dummy
+      item:
+        material: CYAN_WOOL
+        quantity: 1
+        name: "&e&lColors"
+      slot: 4
+      page: 3
+      commandsOnClick:
+      - "shopgui coloredblocks"
+
+    ShopDecoration3:
+      type: dummy
+      item:
+        material: PAINTING
+        quantity: 1
+        name: "&e&lDecoration"
+      slot: 5
+      page: 3
+      commandsOnClick:
+      - "shopgui decoration"
+
+    ShopRedstone3:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+      slot: 6
+      page: 3
+      commandsOnClick:
+      - "shopgui restone"
+
+    ShopTools3:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+      slot: 7
+      page: 3
+      commandsOnClick:
+      - "shopgui tools"
+
+
+
+
+
+
+    ShopFarming4:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 1
+      page: 4
+      commandsOnClick:
+      - "shopgui farming"
+
+
+    ShopFoods4:
+      type: dummy
+      item:
+        material: APPLE
+        quantity: 1
+        name: "&e&lFoods"
+      slot: 2
+      page: 4
+      commandsOnClick:
+      - "shopgui foods"
+
+    ShopRottenFlesh4:
+      type: dummy
+      item:
+        material: ROTTEN_FLESH
+        quantity: 1
+        name: "&e&lMob Drops"
+      slot: 3
+      page: 4
+      commandsOnClick:
+      - "shopgui mobdrops"
+
+    ShopColors4:
+      type: dummy
+      item:
+        material: CYAN_WOOL
+        quantity: 1
+        name: "&e&lColors"
+      slot: 4
+      page: 4
+      commandsOnClick:
+      - "shopgui coloredblocks"
+
+    ShopDecoration4:
+      type: dummy
+      item:
+        material: PAINTING
+        quantity: 1
+        name: "&e&lDecoration"
+      slot: 5
+      page: 4
+      commandsOnClick:
+      - "shopgui decoration"
+
+    ShopRedstone4:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+      slot: 6
+      page: 4
+      commandsOnClick:
+      - "shopgui restone"
+
+    ShopTools4:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+      slot: 7
+      page: 4
+      commandsOnClick:
+      - "shopgui tools"
+
+
+
+
+
+
+    ShopFarming5:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 1
+      page: 5
+      commandsOnClick:
+      - "shopgui farming"
+
+
+    ShopFoods5:
+      type: dummy
+      item:
+        material: APPLE
+        quantity: 1
+        name: "&e&lFoods"
+      slot: 2
+      page: 5
+      commandsOnClick:
+      - "shopgui foods"
+
+    ShopRottenFlesh5:
+      type: dummy
+      item:
+        material: ROTTEN_FLESH
+        quantity: 1
+        name: "&e&lMob Drops"
+      slot: 3
+      page: 5
+      commandsOnClick:
+      - "shopgui mobdrops"
+
+    ShopColors5:
+      type: dummy
+      item:
+        material: CYAN_WOOL
+        quantity: 1
+        name: "&e&lColors"
+      slot: 4
+      page: 5
+      commandsOnClick:
+      - "shopgui coloredblocks"
+
+    ShopDecoration5:
+      type: dummy
+      item:
+        material: PAINTING
+        quantity: 1
+        name: "&e&lDecoration"
+      slot: 5
+      page: 5
+      commandsOnClick:
+      - "shopgui decoration"
+
+    ShopRedstone5:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+      slot: 6
+      page: 5
+      commandsOnClick:
+      - "shopgui restone"
+
+    ShopTools5:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+      slot: 7
+      page: 5
+      commandsOnClick:
+      - "shopgui tools"
+
+
+
+
+
+
+
+
+
+
+
+

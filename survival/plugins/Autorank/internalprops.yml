@@ -1,0 +1,40 @@
+# This is the internal properties file of Autorank. 
+# You should not touch any values here, unless instructed by a developer.
+# Autorank uses these to keep track of certain aspects of the plugin.
+
+leaderboard last updated: 0
+has converted uuids: true
+leaderboards:
+  daily_time:
+    cached leaderboard:
+    - '-------- Leaderboard (Daily time) --------'
+    - '------------------------------------'
+    last updated: 1767831009554
+  weekly_time:
+    cached leaderboard:
+    - '-------- Leaderboard (Weekly time) --------'
+    - '------------------------------------'
+    last updated: 1767484997413
+  monthly_time:
+    cached leaderboard:
+    - '-------- Leaderboard (Monthly time) --------'
+    - §61 | §bFestas - §70 days, 1 hour and 7 minutes.
+    - §62 | §bShanaFNS - §70 days, 0 hours and 20 minutes.
+    - §63 | §bElexian - §70 days, 0 hours and 19 minutes.
+    - §64 | §b_YoshisWorld_ - §70 days, 0 hours and 17 minutes.
+    - '------------------------------------'
+    last updated: 1767304771918
+  total_time:
+    cached leaderboard:
+    - '-------- Leaderboard (All time) --------'
+    - §61 | §bJasi_UwU - §70 days, 7 hours and 54 minutes.
+    - §62 | §bFestas - §70 days, 7 hours and 26 minutes.
+    - §63 | §bYuukiiiFy - §70 days, 2 hours and 0 minutes.
+    - §64 | §b_YoshisWorld_ - §70 days, 1 hour and 49 minutes.
+    - §65 | §bShanaFNS - §70 days, 1 hour and 32 minutes.
+    - '------------------------------------'
+    last updated: 1767304771922
+is converted to new format: true
+tracked day: 4
+tracked week: 2
+tracked month: 1

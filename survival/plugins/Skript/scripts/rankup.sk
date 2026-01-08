@@ -1,0 +1,63 @@
+# --- RANKUP EFFECTS (Visuals & Sounds) ---
+# Wird von Autorank ausgeführt.
+# Regelt die Party beim Aufstieg.
+
+command /tycoon_celebrate_rankup <player> <text> <text>:
+    permission: tycoon.admin
+    trigger:
+        set {_p} to arg-1
+        set {_rankName} to arg-2
+        set {_tier} to arg-3 # "normal", "mid", "high", "god"
+        set {_pName} to name of {_p}
+        
+        # 1. Title & Subtitle (Immer)
+        send title "&6&lAUFSTIEG!" with subtitle "&7Du bist nun: %{_rankName}%" to {_p} for 5 seconds
+        
+        # 2. Effekte je nach Tier
+        
+        if {_tier} is "normal":
+            # (Lauch bis Ticker)
+            play sound "entity.player.levelup" to {_p}
+            # Grüne Partikel (Happy Villager)
+            execute console command "execute at %{_pName}% run particle happy_villager ~ ~2 ~ 0.5 0.5 0.5 0.1 20"
+            
+        else if {_tier} is "mid":
+            # (Hustler bis Bre)
+            play sound "ui.toast.challenge_complete" to {_p}
+            # Kleines Feuerwerk
+            execute console command "execute at %{_pName}% run particle fireworks ~ ~2 ~ 0.2 0.5 0.2 0.1 50"
+            
+        else if {_tier} is "high":
+            # (Ehrenmann bis Maschine)
+            play sound "ui.toast.challenge_complete" to {_p}
+            play sound "entity.firework_rocket.launch" to {_p}
+            # Totem Effekt
+            execute console command "execute at %{_pName}% run particle totem_of_undying ~ ~1 ~ 0.3 0.5 0.3 0.2 100"
+            
+        else if {_tier} is "god":
+            # (Baba & Main Character)
+            play sound "ui.toast.challenge_complete" to {_p}
+            play sound "entity.ender_dragon.growl" to {_p}
+            play sound "entity.lightning_bolt.thunder" to {_p}
+            
+            # Blitz-Effekt (Nur visuell, kein Schaden)
+            strike lightning effect at {_p}
+            
+            # Massive Partikel-Explosion
+            execute console command "execute at %{_pName}% run particle dust_color_transition 1.0 0.0 0.0 1.0 0.0 1.0 0.0 ~ ~1 ~ 1 1 1 1 200"
+
+        # 3. Chat Nachricht (Persönlich - Neutraler Prefix)
+        send "" to {_p}
+        send "&8&m----------------------------------------" to {_p}
+        send " &6&lGLÜCKWUNSCH!" to {_p}
+        send " &7Deine Treue wurde belohnt." to {_p}
+        send " &7Neuer Rang: %{_rankName}%"
+        send "&8&m----------------------------------------" to {_p}
+        send "" to {_p}
+
+# Einfacher Befehl, um farbige Nachrichten zu senden
+command /tycoon_msg <player> <text>:
+    permission: op
+    trigger:
+        send colored arg-2 to arg-1
+

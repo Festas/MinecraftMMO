@@ -1,0 +1,651 @@
+# The title of the gui
+title: "&8Generatoren Markt"
+# The size of the gui
+size: 54
+
+items:
+  # --- TIER 1: ERDE (Jeder) ---
+  tier1_1:
+    type: GENERATOR
+    generator: tier1_1
+    page: 1
+    cost: 500
+    material: DIRT
+    display-name: "&6Erde Generator &7(Lvl 1)"
+    glowing: false
+    slots: [0]
+    # Erde darf jeder sehen/kaufen
+    permission: tycoon.unlock.erde
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&6&lINFO"
+      - "&8Zeit: &f4 Sekunden"
+      - "&8Tier: &f1"
+      - "&7"
+      - "&6&lMögliche Drops"
+      - "&7Erde &8(100%)"
+      - "&7Grobe Erde &8(1%)"
+      - "&7"
+      - "&7Preis: &a$500"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 2: STEIN (Nur Stein+) ---
+  tier2_1:
+    type: GENERATOR
+    generator: tier2_1
+    page: 1
+    cost: 2000
+    material: STONE
+    display-name: "&7Stein Generator &7(Lvl 1)"
+    glowing: false
+    slots: [1]
+    # WICHTIG: Permission Check
+    permission: tycoon.unlock.stein
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&7&lINFO"
+      - "&8Zeit: &f4 Sekunden"
+      - "&8Tier: &f2"
+      - "&7"
+      - "&7&lMögliche Drops"
+      - "&7Stein &8(100%)"
+      - "&7Steinziegel &8(1%)"
+      - "&7"
+      - "&7Preis: &a$2.000"
+      - "&cBenötigt Rang: Stein"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 3: KOHLE ---
+  tier3_1:
+    type: GENERATOR
+    generator: tier3_1
+    page: 1
+    cost: 5000
+    material: COAL_ORE
+    display-name: "&8Kohle Generator &7(Lvl 1)"
+    glowing: false
+    slots: [2]
+    permission: tycoon.unlock.kohle
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&8&lINFO"
+      - "&8Zeit: &f4 Sekunden"
+      - "&8Tier: &f3"
+      - "&7"
+      - "&8&lMögliche Drops"
+      - "&7Kohle &8(100%)"
+      - "&7Kohleblock &8(1%)"
+      - "&7"
+      - "&7Preis: &a$5.000"
+      - "&cBenötigt Rang: Kohle"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 4: EISEN ---
+  tier4_1:
+    type: GENERATOR
+    generator: tier4_1
+    page: 1
+    cost: 15000
+    material: IRON_ORE
+    display-name: "&fEisen Generator &7(Lvl 1)"
+    glowing: false
+    slots: [3]
+    permission: tycoon.unlock.eisen
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&f&lINFO"
+      - "&8Zeit: &f4 Sekunden"
+      - "&8Tier: &f4"
+      - "&7"
+      - "&f&lMögliche Drops"
+      - "&7Eisen &8(100%)"
+      - "&7Eisenblock &8(1%)"
+      - "&7"
+      - "&7Preis: &a$15.000"
+      - "&cBenötigt Rang: Eisen"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 5: KUPFER ---
+  tier5_1:
+    type: GENERATOR
+    generator: tier5_1
+    page: 1
+    cost: 40000
+    material: COPPER_ORE
+    display-name: "&cKupfer Generator &7(Lvl 1)"
+    glowing: false
+    slots: [4]
+    permission: tycoon.unlock.kupfer
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&c&lINFO"
+      - "&8Zeit: &f4 Sekunden"
+      - "&8Tier: &f5"
+      - "&7"
+      - "&c&lMögliche Drops"
+      - "&7Kupfer &8(100%)"
+      - "&7Kupferblock &8(1%)"
+      - "&7"
+      - "&7Preis: &a$40.000"
+      - "&cBenötigt Rang: Kupfer"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 6: GOLD ---
+  tier6_1:
+    type: GENERATOR
+    generator: tier6_1
+    page: 1
+    cost: 100000
+    material: GOLD_ORE
+    display-name: "&6Gold Generator &7(Lvl 1)"
+    glowing: false
+    slots: [5]
+    permission: tycoon.unlock.gold
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&6&lINFO"
+      - "&8Zeit: &f4 Sekunden"
+      - "&8Tier: &f6"
+      - "&7"
+      - "&6&lMögliche Drops"
+      - "&7Gold &8(100%)"
+      - "&7Goldblock &8(1%)"
+      - "&7"
+      - "&7Preis: &a$100.000"
+      - "&cBenötigt Rang: Gold"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 7: REDSTONE ---
+  tier7_1:
+    type: GENERATOR
+    generator: tier7_1
+    page: 1
+    cost: 250000
+    material: REDSTONE_ORE
+    display-name: "&cRedstone Generator &7(Lvl 1)"
+    glowing: false
+    slots: [6]
+    permission: tycoon.unlock.redstone
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&c&lINFO"
+      - "&8Zeit: &f4 Sekunden"
+      - "&8Tier: &f7"
+      - "&7"
+      - "&c&lMögliche Drops"
+      - "&7Redstone &8(100%)"
+      - "&7Redstoneblock &8(1%)"
+      - "&7"
+      - "&7Preis: &a$250.000"
+      - "&cBenötigt Rang: Redstone"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 8: LAPIS ---
+  tier8_1:
+    type: GENERATOR
+    generator: tier8_1
+    page: 1
+    cost: 600000
+    material: LAPIS_ORE
+    display-name: "&9Lapis Generator &7(Lvl 1)"
+    glowing: false
+    slots: [7]
+    permission: tycoon.unlock.lapis
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&9&lINFO"
+      - "&8Zeit: &f4 Sekunden"
+      - "&8Tier: &f8"
+      - "&7"
+      - "&9&lMögliche Drops"
+      - "&7Lapis &8(100%)"
+      - "&7Lapisblock &8(1%)"
+      - "&7"
+      - "&7Preis: &a$600.000"
+      - "&cBenötigt Rang: Lapis"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 9: SMARAGD ---
+  tier9_1:
+    type: GENERATOR
+    generator: tier9_1
+    page: 1
+    cost: 1500000
+    material: EMERALD_ORE
+    display-name: "&aSmaragd Generator &7(Lvl 1)"
+    glowing: false
+    slots: [8]
+    permission: tycoon.unlock.smaragd
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&a&lINFO"
+      - "&8Zeit: &f4 Sekunden"
+      - "&8Tier: &f9"
+      - "&7"
+      - "&a&lMögliche Drops"
+      - "&7Smaragd &8(100%)"
+      - "&7Smaragdblock &8(1%)"
+      - "&7"
+      - "&7Preis: &a$1.500.000"
+      - "&cBenötigt Rang: Smaragd"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 10: DIAMANT ---
+  tier10_1:
+    type: GENERATOR
+    generator: tier10_1
+    page: 1
+    cost: 3000000
+    material: DIAMOND_ORE
+    display-name: "&bDiamant Generator &7(Lvl 1)"
+    glowing: false
+    slots: [9]
+    permission: tycoon.unlock.diamant
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&b&lINFO"
+      - "&8Zeit: &f4 Sekunden"
+      - "&8Tier: &f10"
+      - "&7"
+      - "&b&lMögliche Drops"
+      - "&7Diamant &8(100%)"
+      - "&7Diamantblock &8(1%)"
+      - "&7"
+      - "&7Preis: &a$3.000.000"
+      - "&cBenötigt Rang: Diamant"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 11: OBSIDIAN ---
+  tier11_1:
+    type: GENERATOR
+    generator: tier11_1
+    page: 1
+    cost: 7000000
+    material: OBSIDIAN
+    display-name: "&5Obsidian Generator &7(Lvl 1)"
+    glowing: false
+    slots: [10]
+    permission: tycoon.unlock.obsidian
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&5&lINFO"
+      - "&8Zeit: &f5 Sekunden"
+      - "&8Tier: &f11"
+      - "&7"
+      - "&5&lMögliche Drops"
+      - "&7Obsidian &8(100%)"
+      - "&7Weinender Obsidian &8(1%)"
+      - "&7"
+      - "&7Preis: &a$7.000.000"
+      - "&cBenötigt Rang: Obsidian"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 12: NETHERITE ---
+  tier12_1:
+    type: GENERATOR
+    generator: tier12_1
+    page: 1
+    cost: 15000000
+    material: ANCIENT_DEBRIS
+    display-name: "&4Netherite Generator &7(Lvl 1)"
+    glowing: false
+    slots: [11]
+    permission: tycoon.unlock.netherite
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&4&lINFO"
+      - "&8Zeit: &f6 Sekunden"
+      - "&8Tier: &f12"
+      - "&7"
+      - "&4&lMögliche Drops"
+      - "&7Scrap &8(100%)"
+      - "&7Barren &8(1%)"
+      - "&7"
+      - "&7Preis: &a$15.000.000"
+      - "&cBenötigt Rang: Netherite"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 13: TUFF ---
+  tier13_1:
+    type: GENERATOR
+    generator: tier13_1
+    page: 1
+    cost: 30000000
+    material: TUFF
+    display-name: "&7Tuff Generator &7(Lvl 1)"
+    glowing: false
+    slots: [12]
+    permission: tycoon.unlock.tuff
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&7&lINFO"
+      - "&8Tier: &f13"
+      - "&7"
+      - "&7&lMögliche Drops"
+      - "&7Tuff &8(100%)"
+      - "&7Polierter Tuff &8(1%)"
+      - "&7"
+      - "&7Preis: &a$30.000.000"
+      - "&cBenötigt Rang: Tuff"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 14: CALCIT ---
+  tier14_1:
+    type: GENERATOR
+    generator: tier14_1
+    page: 1
+    cost: 60000000
+    material: CALCITE
+    display-name: "&fCalcit Generator &7(Lvl 1)"
+    glowing: false
+    slots: [13]
+    permission: tycoon.unlock.calcit
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&f&lINFO"
+      - "&8Tier: &f14"
+      - "&7"
+      - "&f&lMögliche Drops"
+      - "&7Calcit &8(100%)"
+      - "&7Amethystscherbe &8(1%)"
+      - "&7"
+      - "&7Preis: &a$60.000.000"
+      - "&cBenötigt Rang: Calcit"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 15: DIORIT ---
+  tier15_1:
+    type: GENERATOR
+    generator: tier15_1
+    page: 1
+    cost: 120000000
+    material: DIORITE
+    display-name: "&fDiorit Generator &7(Lvl 1)"
+    glowing: false
+    slots: [14]
+    permission: tycoon.unlock.diorit
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&f&lINFO"
+      - "&8Tier: &f15"
+      - "&7"
+      - "&f&lMögliche Drops"
+      - "&7Diorit &8(100%)"
+      - "&7Polierter Diorit &8(1%)"
+      - "&7"
+      - "&7Preis: &a$120.000.000"
+      - "&cBenötigt Rang: Diorit"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 16: ANDESIT ---
+  tier16_1:
+    type: GENERATOR
+    generator: tier16_1
+    page: 1
+    cost: 250000000
+    material: ANDESITE
+    display-name: "&7Andesit Generator &7(Lvl 1)"
+    glowing: false
+    slots: [15]
+    permission: tycoon.unlock.andesit
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&7&lINFO"
+      - "&8Tier: &f16"
+      - "&7"
+      - "&7&lMögliche Drops"
+      - "&7Andesit &8(100%)"
+      - "&7Polierter Andesit &8(1%)"
+      - "&7"
+      - "&7Preis: &a$250.000.000"
+      - "&cBenötigt Rang: Andesit"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 17: GRANIT ---
+  tier17_1:
+    type: GENERATOR
+    generator: tier17_1
+    page: 1
+    cost: 500000000
+    material: GRANITE
+    display-name: "&cGranit Generator &7(Lvl 1)"
+    glowing: false
+    slots: [16]
+    permission: tycoon.unlock.granit
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&c&lINFO"
+      - "&8Tier: &f17"
+      - "&7"
+      - "&c&lMögliche Drops"
+      - "&7Granit &8(100%)"
+      - "&7Polierter Granit &8(1%)"
+      - "&7"
+      - "&7Preis: &a$500.000.000"
+      - "&cBenötigt Rang: Granit"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 18: BASALT ---
+  tier18_1:
+    type: GENERATOR
+    generator: tier18_1
+    page: 1
+    cost: 1000000000
+    material: BASALT
+    display-name: "&8Basalt Generator &7(Lvl 1)"
+    glowing: false
+    slots: [17]
+    permission: tycoon.unlock.basalt
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&8&lINFO"
+      - "&8Tier: &f18"
+      - "&7"
+      - "&8&lMögliche Drops"
+      - "&7Basalt &8(100%)"
+      - "&7Polierter Basalt &8(1%)"
+      - "&7"
+      - "&7Preis: &a$1 Mrd."
+      - "&cBenötigt Rang: Basalt"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 19: SCHWARZSTEIN ---
+  tier19_1:
+    type: GENERATOR
+    generator: tier19_1
+    page: 1
+    cost: 2000000000
+    material: BLACKSTONE
+    display-name: "&0Schwarzstein Generator &7(Lvl 1)"
+    glowing: false
+    slots: [18]
+    permission: tycoon.unlock.schwarzstein
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&0&lINFO"
+      - "&8Tier: &f19"
+      - "&7"
+      - "&0&lMögliche Drops"
+      - "&7Schwarzstein &8(100%)"
+      - "&7Polierter Schwarzstein &8(1%)"
+      - "&7"
+      - "&7Preis: &a$2 Mrd."
+      - "&cBenötigt Rang: Schwarzstein"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 20: PURPUR ---
+  tier20_1:
+    type: GENERATOR
+    generator: tier20_1
+    page: 1
+    cost: 4000000000
+    material: PURPUR_BLOCK
+    display-name: "&dPurpur Generator &7(Lvl 1)"
+    glowing: false
+    slots: [19]
+    permission: tycoon.unlock.purpur
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&d&lINFO"
+      - "&8Tier: &f20"
+      - "&7"
+      - "&d&lMögliche Drops"
+      - "&7Purpur &8(100%)"
+      - "&7Purpursäule &8(1%)"
+      - "&7"
+      - "&7Preis: &a$4 Mrd."
+      - "&cBenötigt Rang: Purpur"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 21: ENDSTEIN ---
+  tier21_1:
+    type: GENERATOR
+    generator: tier21_1
+    page: 1
+    cost: 8000000000
+    material: END_STONE
+    display-name: "&eEndstein Generator &7(Lvl 1)"
+    glowing: false
+    slots: [20]
+    permission: tycoon.unlock.endstein
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&e&lINFO"
+      - "&8Tier: &f21"
+      - "&7"
+      - "&e&lMögliche Drops"
+      - "&7Endstein &8(100%)"
+      - "&7Endsteinziegel &8(1%)"
+      - "&7"
+      - "&7Preis: &a$8 Mrd."
+      - "&cBenötigt Rang: Endstein"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 22: PRISMARIN ---
+  tier22_1:
+    type: GENERATOR
+    generator: tier22_1
+    page: 1
+    cost: 16000000000
+    material: PRISMARINE
+    display-name: "&bPrismarin Generator &7(Lvl 1)"
+    glowing: false
+    slots: [21]
+    permission: tycoon.unlock.prismarin
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&b&lINFO"
+      - "&8Tier: &f22"
+      - "&7"
+      - "&b&lMögliche Drops"
+      - "&7Prismarin &8(100%)"
+      - "&7Kristalle &8(1%)"
+      - "&7"
+      - "&7Preis: &a$16 Mrd."
+      - "&cBenötigt Rang: Prismarin"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 23: SEELENERDE ---
+  tier23_1:
+    type: GENERATOR
+    generator: tier23_1
+    page: 1
+    cost: 32000000000
+    material: SOUL_SOIL
+    display-name: "&8Seelenerde Generator &7(Lvl 1)"
+    glowing: false
+    slots: [22]
+    permission: tycoon.unlock.seelenerde
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&8&lINFO"
+      - "&8Tier: &f23"
+      - "&7"
+      - "&8&lMögliche Drops"
+      - "&7Seelenerde &8(100%)"
+      - "&7Laterne &8(1%)"
+      - "&7"
+      - "&7Preis: &a$32 Mrd."
+      - "&cBenötigt Rang: Seelenerde"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 24: MAGMA ---
+  tier24_1:
+    type: GENERATOR
+    generator: tier24_1
+    page: 1
+    cost: 64000000000
+    material: MAGMA_BLOCK
+    display-name: "&6Magma Generator &7(Lvl 1)"
+    glowing: false
+    slots: [23]
+    permission: tycoon.unlock.magma
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&6&lINFO"
+      - "&8Tier: &f24"
+      - "&7"
+      - "&6&lMögliche Drops"
+      - "&7Magma &8(100%)"
+      - "&7Magmablock &8(1%)"
+      - "&7"
+      - "&7Preis: &a$64 Mrd."
+      - "&cBenötigt Rang: Magma"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- TIER 25: BEDROCK ---
+  tier25_1:
+    type: GENERATOR
+    generator: tier25_1
+    page: 1
+    cost: 128000000000
+    material: BEDROCK
+    display-name: "&8Bedrock Generator &7(Lvl 1)"
+    glowing: false
+    slots: [24]
+    permission: tycoon.unlock.bedrock
+    lore:
+      - "&8Kaufbarer Generator"
+      - "&7"
+      - "&8&lINFO"
+      - "&8Tier: &f25 (MAX)"
+      - "&7"
+      - "&8&lMögliche Drops"
+      - "&7Bedrock &8(100%)"
+      - "&7Leuchtfeuer &8(1%)"
+      - "&7"
+      - "&7Preis: &a$128 Mrd."
+      - "&cBenötigt Rang: Bedrock"
+      - "&a> Klicken zum Kaufen <"
+
+  # --- FILLER (Hintergrund) ---
+  filler:
+    type: DUMMY
+    material: BLACK_STAINED_GLASS_PANE
+    display-name: "&f"
+    slots: [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53]
+    lore: []

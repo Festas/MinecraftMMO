@@ -1,0 +1,668 @@
+decoration:
+  name: "&f七七七七七七七七⤓"
+  namePerPage:
+  fillItem:
+    material: ""
+  items:
+
+
+ 
+    P1_19:
+      type: item
+      item:
+        material: COBBLESTONE_WALL
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 19
+      page: 1
+
+    P1_20:
+      type: item
+      item:
+        material: RED_NETHER_BRICK_WALL
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 20
+      page: 1
+
+    P1_21:
+      type: item
+      item:
+        material: END_STONE_BRICK_WALL
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 21
+      page: 1
+
+    P1_22:
+      type: item
+      item:
+        material: BLACKSTONE_WALL
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 22
+      page: 1
+
+    P1_23:
+      type: item
+      item:
+        material: COBBLED_DEEPSLATE_WALL
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 23
+      page: 1
+
+    P1_24:
+      type: item
+      item:
+        material: BOOKSHELF
+        quantity: 1
+      buyPrice: 200
+      sellPrice: -1
+      slot: 24
+      page: 1
+
+    P1_25:
+      type: item
+      item:
+        material: ENCHANTING_TABLE
+        quantity: 1
+      buyPrice: 2000
+      sellPrice: -1
+      slot: 25
+      page: 1
+ 
+    P1_28:
+      type: item
+      item:
+        material: ANVIL
+        quantity: 1
+      buyPrice: 1000
+      sellPrice: -1
+      slot: 28
+      page: 1
+
+    P1_29:
+      type: item
+      item:
+        material: ENDER_CHEST
+        quantity: 1
+      buyPrice: 1000
+      sellPrice: -1
+      slot: 29
+      page: 1
+
+    P1_30:
+      type: item
+      item:
+        material: TRAPPED_CHEST
+        quantity: 1
+      buyPrice: 10
+      sellPrice: -1
+      slot: 30
+      page: 1
+
+    P1_31:
+      type: item
+      item:
+        material: FURNACE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: -1
+      slot: 31
+      page: 1
+
+    P1_32:
+      type: item
+      item:
+        material: JUKEBOX
+        quantity: 1
+      buyPrice: 500
+      sellPrice: -1
+      slot: 32
+      page: 1
+
+    P1_33:
+      type: item
+      item:
+        material: NOTE_BLOCK
+        quantity: 1
+      buyPrice: 100
+      sellPrice: -1
+      slot: 33
+      page: 1
+
+    P1_34:
+      type: item
+      item:
+        material: FLOWER_POT
+        quantity: 1
+      buyPrice: 20
+      sellPrice: -1
+      slot: 34
+      page: 1
+ 
+    P1_37:
+      type: item
+      item:
+        material: ARMOR_STAND
+        quantity: 1
+      buyPrice: 20
+      sellPrice: -1
+      slot: 37
+      page: 1
+
+    P1_38:
+      type: item
+      item:
+        material: COBWEB
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 38
+      page: 1
+
+    P1_39:
+      type: item
+      item:
+        material: IRON_BARS
+        quantity: 1
+      buyPrice: 20
+      sellPrice: -1
+      slot: 39
+      page: 1
+
+    P1_40:
+      type: item
+      item:
+        material: AZALEA
+        quantity: 1
+      buyPrice: 100
+      sellPrice: -1
+      slot: 40
+      page: 1
+
+    P1_41:
+      type: item
+      item:
+        material: BIG_DRIPLEAF
+        quantity: 1
+      buyPrice: 300
+      sellPrice: -1
+      slot: 41
+      page: 1
+
+    P1_42:
+      type: item
+      item:
+        material: IRON_CHAIN
+        quantity: 1
+      buyPrice: 25
+      sellPrice: -1
+      slot: 42
+      page: 1
+
+    P1_43:
+      type: item
+      item:
+        material: CAMPFIRE
+        quantity: 1
+      buyPrice: 20
+      sellPrice: -1
+      slot: 43
+      page: 1
+
+
+
+
+
+
+
+
+
+
+
+
+    P2_19:
+      type: item
+      item:
+        material: ZOMBIE_HEAD
+        quantity: 1
+      buyPrice: 25000
+      sellPrice: -1
+      slot: 19
+      page: 2
+
+    P2_20:
+      type: item
+      item:
+        material: CREEPER_HEAD
+        quantity: 1
+      buyPrice: 25000
+      sellPrice: -1
+      slot: 20
+      page: 2
+
+    P2_21:
+      type: item
+      item:
+        material: SKELETON_SKULL
+        quantity: 1
+      buyPrice: 25000
+      sellPrice: -1
+      slot: 21
+      page: 2
+
+    P2_22:
+      type: item
+      item:
+        material: PAINTING
+        quantity: 1
+      buyPrice: 25
+      sellPrice: -1
+      slot: 22
+      page: 2
+
+    P2_23:
+      type: item
+      item:
+        material: ITEM_FRAME
+        quantity: 1
+      buyPrice: 25
+      sellPrice: -1
+      slot: 23
+      page: 2
+
+    P2_24:
+      type: item
+      item:
+        material: WHITE_BED
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 24
+      page: 2
+
+    P2_25:
+      type: item
+      item:
+        material: NETHER_BRICK_FENCE
+        quantity: 1
+      buyPrice: 20
+      sellPrice: -1
+      slot: 25
+      page: 2
+ 
+    P2_28:
+      type: item
+      item:
+        material: FLOWERING_AZALEA
+        quantity: 1
+      buyPrice: 250
+      sellPrice: -1
+      slot: 28
+      page: 2
+
+    P2_29:
+      type: item
+      item:
+        material: DEAD_BUSH
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 29
+      page: 2
+
+    P2_30:
+      type: item
+      item:
+        material: SPORE_BLOSSOM
+        quantity: 1
+      buyPrice: 250
+      sellPrice: -1
+      slot: 30
+      page: 2
+
+    P2_31:
+      type: item
+      item:
+        material: SMALL_DRIPLEAF
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 31
+      page: 2
+
+    P2_32:
+      type: item
+      item:
+        material: MOSS_BLOCK
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 0.1
+      slot: 32
+      page: 2
+
+    P2_33:
+      type: item
+      item:
+        material: GLOW_LICHEN
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 33
+      page: 2
+
+    P2_34:
+      type: item
+      item:
+        material: GLOW_ITEM_FRAME
+        quantity: 1
+      buyPrice: 150
+      sellPrice: -1
+      slot: 34
+      page: 2
+
+    P2_37:
+      type: item
+      item:
+        material: BELL
+        quantity: 1
+      buyPrice: 100
+      sellPrice: -1
+      slot: 37
+      page: 2
+
+    P2_38:
+      type: item
+      item:
+        material: SOUL_CAMPFIRE
+        quantity: 1
+      buyPrice: 200
+      sellPrice: -1
+      slot: 38
+      page: 2
+
+    P2_39:
+      type: item
+      item:
+        material: SHROOMLIGHT
+        quantity: 1
+      buyPrice: 30
+      sellPrice: -1
+      slot: 39
+      page: 2
+
+    P2_40:
+      type: item
+      item:
+        material: AMETHYST_CLUSTER
+        quantity: 1
+      buyPrice: 200
+      sellPrice: -1
+      slot: 40
+      page: 2
+
+    P2_41:
+      type: item
+      item:
+        material: OCHRE_FROGLIGHT
+        quantity: 1
+      buyPrice: 30
+      sellPrice: -1
+      slot: 41
+      page: 2
+
+    P2_42:
+      type: item
+      item:
+        material: VERDANT_FROGLIGHT
+        quantity: 1
+      buyPrice: 30
+      sellPrice: -1
+      slot: 42
+      page: 2
+
+    P2_43:
+      type: item
+      item:
+        material: PEARLESCENT_FROGLIGHT
+        quantity: 1
+      buyPrice: 30
+      sellPrice: -1
+      slot: 43
+      page: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Previous1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui coloredblocks"
+      slot: 0
+      page: 1
+    Next1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui redstone"
+      slot: 8
+      page: 1
+    Previous2:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui coloredblocks"
+      slot: 0
+      page: 2
+    Next2:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui redstone"
+      slot: 8
+      page: 2
+
+
+
+
+
+
+
+
+
+
+
+    ShopFoods1:
+      type: dummy
+      item:
+        material: APPLE
+        quantity: 1
+        name: "&e&lFoods"
+      slot: 1
+      page: 1
+      commandsOnClick:
+      - "shopgui foods"
+
+    ShopRottenFlesh1:
+      type: dummy
+      item:
+        material: ROTTEN_FLESH
+        quantity: 1
+        name: "&e&lMob Drops"
+      slot: 2
+      page: 1
+      commandsOnClick:
+      - "shopgui mobdrops"
+
+    ShopColored1:
+      type: dummy
+      item:
+        material: CYAN_WOOL
+        quantity: 1
+        name: "&e&lColors"
+      slot: 3
+      page: 1
+      commandsOnClick:
+      - "shopgui coloredblocks"
+
+    ShopDecoration1:
+      type: dummy
+      item:
+        material: PAINTING
+        quantity: 1
+        name: "&e&lDecoration"
+      slot: 4
+      page: 1
+      commandsOnClick:
+      - "shopgui Decoration"
+
+    ShopRedstone1:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+      slot: 5
+      page: 1
+      commandsOnClick:
+      - "shopgui redstone"
+
+    ShopTools1:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+      slot: 6
+      page: 1
+      commandsOnClick:
+      - "shopgui tools"
+
+    ShopWeapons1:
+      type: dummy
+      item:
+        material: IRON_CHESTPLATE
+        quantity: 1
+        name: "&e&lWeapons"
+      slot: 7
+      page: 1
+      commandsOnClick:
+      - "shopgui weapons"
+
+
+
+
+    ShopFoods2:
+      type: dummy
+      item:
+        material: APPLE
+        quantity: 1
+        name: "&e&lFoods"
+      slot: 1
+      page: 2
+      commandsOnClick:
+      - "shopgui foods"
+
+    ShopRottenFlesh2:
+      type: dummy
+      item:
+        material: ROTTEN_FLESH
+        quantity: 1
+        name: "&e&lMob Drops"
+      slot: 2
+      page: 2
+      commandsOnClick:
+      - "shopgui mobdrops"
+
+    ShopColored2:
+      type: dummy
+      item:
+        material: CYAN_WOOL
+        quantity: 1
+        name: "&e&lColors"
+      slot: 3
+      page: 2
+      commandsOnClick:
+      - "shopgui coloredblocks"
+
+    ShopDecoration2:
+      type: dummy
+      item:
+        material: PAINTING
+        quantity: 1
+        name: "&e&lDecoration"
+      slot: 4
+      page: 2
+      commandsOnClick:
+      - "shopgui Decoration"
+
+    ShopRedstone2:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+      slot: 5
+      page: 2
+      commandsOnClick:
+      - "shopgui redstone"
+
+    ShopTools2:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+      slot: 6
+      page: 2
+      commandsOnClick:
+      - "shopgui tools"
+
+    ShopWeapons2:
+      type: dummy
+      item:
+        material: IRON_CHESTPLATE
+        quantity: 1
+        name: "&e&lWeapons"
+      slot: 7
+      page: 2
+      commandsOnClick:
+      - "shopgui weapons"
+
+
+
+
+

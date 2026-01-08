@@ -1,0 +1,241 @@
+# --- NITWIT BOSS SYSTEM (Yuukiiify Special Edition) ---
+# Normaler Nitwit für alle ($10k).
+# Albtraum Nitwit NUR für Yuukiiify ($20k).
+
+options:
+    spawn_interval: 180 minutes
+    boss_id: nitwit_boss
+    
+    # --- NORMALER NITWIT ---
+    nitwit_name: "&2&lNitwit &c(Der Rächer)"
+    health_normal: 100
+    reward_normal: 10000
+    
+    # --- YUUKIIIFY NITWIT (Hardcore) ---
+    nitwit_name_heavy: "&4&lAlbtraum Nitwit &8(Yuukiiifys Ende)"
+    health_heavy: 300
+    reward_heavy: 20000
+
+# --- TIMER LOOP ---
+every {@spawn_interval}:
+    set {_players::*} to all players
+    set {_target} to random element out of {_players::*}
+    
+    if {_target} is set:
+        if world of {_target} is "tycoon" or "world":
+            execute console command "spawn_nitwit %name of {_target}%"
+
+# --- SPAWN BEFEHL ---
+command /spawn_nitwit <player>:
+    permission: tycoon.admin
+    trigger:
+        set {_p} to arg-1
+        
+        # --- PRÜFUNG: IST ES YUUKIIIFY? ---
+        if name of {_p} is "Yuukiiify":
+            set {_isHeavy} to true
+            set {_name} to {@nitwit_name_heavy}
+            set {_hp} to {@health_heavy}
+            set {_barColor} to "red"
+            set {_msgTitle} to "&4&lALBTRAUM!"
+            set {_msgSub} to "&cEr ist gekommen um dich zu holen..."
+        else:
+            set {_isHeavy} to false
+            set {_name} to {@nitwit_name}
+            set {_hp} to {@health_normal}
+            set {_barColor} to "green"
+            set {_msgTitle} to "&2&lNITWIT KOMMT!"
+            set {_msgSub} to "&cMach dich kampfbereit!"
+
+        # --- VORWARNUNG ---
+        send title "&4&lWARNUNG!" with subtitle "&7Du fühlst dich beobachtet..." to {_p} for 2 seconds
+        play sound "ambient.cave" with volume 1 and pitch 0.5 to {_p}
+        wait 2 seconds
+        
+        send title "{_msgTitle}" with subtitle "{_msgSub}" to {_p} for 2 seconds
+        play sound "entity.wither.spawn" with volume 0.5 to {_p}
+        wait 1 second
+
+        # --- SPAWN ---
+        set {_spawnLoc} to location 3 meters behind {_p}
+        add 1 to y-coord of {_spawnLoc}
+        
+        spawn zombie villager at {_spawnLoc}
+        set {_nitwit} to last spawned entity
+        set {_uuid} to uuid of {_nitwit}
+        
+        # --- WERTE ---
+        set name of {_nitwit} to {_name}
+        set max health of {_nitwit} to {_hp}
+        set health of {_nitwit} to {_hp}
+        
+        # NBT: Beruf setzen
+        execute console command "data merge entity %{_uuid}% {VillagerData:{profession:""minecraft:nitwit""}}"
+        
+        # --- EQUIPMENT ---
+        if {_isHeavy} is true:
+            # HEAVY GEAR (Netherite/Dia Mix)
+            equip {_nitwit} with diamond helmet
+            equip {_nitwit} with netherite chestplate
+            equip {_nitwit} with netherite leggings
+            equip {_nitwit} with diamond boots
+            set {_weapon} to netherite axe named "&4Der Schlächter"
+            enchant {_weapon} with sharpness 4
+            equip {_nitwit} with {_weapon}
+            # Extra Buffs
+            apply strength 2 to {_nitwit} for 9999 seconds
+        else:
+            # NORMAL GEAR (Leder Grün)
+            set {_helm} to leather helmet
+            dye {_helm} green
+            equip {_nitwit} with {_helm}
+            set {_chest} to leather chestplate
+            dye {_chest} green
+            equip {_nitwit} with {_chest}
+            set {_legs} to leather leggings
+            dye {_legs} green
+            equip {_nitwit} with {_legs}
+            set {_boots} to leather boots
+            dye {_boots} green
+            equip {_nitwit} with {_boots}
+            # Waffe
+            set {_weapon} to emerald named "&aDie Klinge des Handels"
+            enchant {_weapon} with sharpness 3
+            equip {_nitwit} with {_weapon}
+
+        # Gemeinsame Buffs
+        apply speed 1 to {_nitwit} for 9999 seconds
+        apply resistance 1 to {_nitwit} for 9999 seconds
+        
+        # --- BOSSBAR SETUP ---
+        execute console command "bossbar remove {@boss_id}"
+        # Name in Anführungszeichen für den Command
+        execute console command "bossbar add {@boss_id} ""%{_name}%"""
+        execute console command "bossbar set {@boss_id} color %{_barColor}%"
+        execute console command "bossbar set {@boss_id} style notched_10"
+        execute console command "bossbar set {@boss_id} players %name of {_p}%"
+        execute console command "bossbar set {@boss_id} value %{_hp}%"
+        execute console command "bossbar set {@boss_id} max %{_hp}%"
+        
+        set {_lastHP} to {_hp}
+        set target of {_nitwit} to {_p}
+        
+        # --- BOSS LOOP ---
+        set {_active} to true
+        set {_timer} to 0
+        
+        while {_active} is true:
+            if {_nitwit} is dead:
+                execute console command "bossbar remove {@boss_id}"
+                stop
+            if {_p} is not online:
+                execute console command "bossbar remove {@boss_id}"
+                delete {_nitwit}
+                stop
+            if {_timer} > 300:
+                execute console command "bossbar remove {@boss_id}"
+                delete {_nitwit}
+                stop
+            
+            add 1 to {_timer}
+            
+            # Bossbar Update
+            set {_currentHealth} to health of {_nitwit}
+            set {_bossbarValue} to floor({_currentHealth})
+            
+            if {_bossbarValue} is not {_lastHP}:
+                execute console command "bossbar set {@boss_id} value %{_bossbarValue}%"
+                set {_lastHP} to {_bossbarValue}
+            
+            # SKILLS (Alle 5s)
+            if mod({_timer}, 5) is 0:
+                set {_skill} to random integer between 1 and 4
+                
+                if {_skill} is 1: # MINIONS
+                    play sound "entity.zombie.ambient" at {_nitwit}
+                    loop 2 times:
+                        spawn zombie at location of {_nitwit}
+                        set {_minion} to last spawned entity
+                        set {_minionUUID} to uuid of {_minion}
+                        execute console command "data merge entity %{_minionUUID}% {IsBaby:1b}"
+                        set name of {_minion} to "&2Azubi"
+                        set target of {_minion} to {_p}
+                        apply speed 2 to {_minion} for 10 seconds
+                        
+                else if {_skill} is 2: # SMASH
+                    if distance between {_nitwit} and {_p} < 5:
+                        play sound "entity.iron_golem.attack" at {_nitwit}
+                        push {_p} upwards at speed 1.2
+                        
+                else if {_skill} is 3: # GIFT
+                    play sound "entity.witch.throw" at {_nitwit}
+                    apply poison 1 to {_p} for 4 seconds
+                    
+                else if {_skill} is 4: # TELEPORT
+                    play sound "entity.enderman.teleport" at {_nitwit}
+                    teleport {_nitwit} to location 1 meter behind {_p}
+
+            # PARTIKEL (Dimension Fix)
+            set {_loc} to location of {_nitwit}
+            add 1 to y-coord of {_loc}
+            set {_wName} to name of world of {_loc}
+            if {_wName} is "world":
+                set {_dim} to "minecraft:overworld"
+            else:
+                set {_dim} to {_wName}
+            
+            execute console command "execute in %{_dim}% run particle angry_villager %x-coord of {_loc}% %y-coord of {_loc}% %z-coord of {_loc}% 0.3 0.5 0.3 0 2 force"
+            
+            wait 1 second
+
+# --- TOD & BELOHNUNG ---
+on death of zombie villager:
+    execute console command "bossbar remove {@boss_id}"
+    
+    set {_killer} to attacker
+    
+    if {_killer} is a player:
+        set {_reward} to 0
+        
+        # Check: War es der normale oder der schwere Nitwit?
+        if name of victim is {@nitwit_name}:
+            set {_reward} to {@reward_normal}
+            set {_msg} to "&2&lNITWIT BESIEGT!"
+            
+        else if name of victim is {@nitwit_name_heavy}:
+            set {_reward} to {@reward_heavy}
+            set {_msg} to "&4&lALBTRAUM BESIEGT!"
+        
+        # Auszahlung
+        if {_reward} > 0:
+            add {_reward} to {_killer}'s balance
+            
+            broadcast ""
+            broadcast "&8[&6Tycoon&8] %{_msg}%"
+            broadcast "&7Der Spieler &a%name of {_killer}% &7hat den Boss erledigt."
+            broadcast "&7Belohnung: &a$%{_reward}%"
+            broadcast ""
+            
+            play sound "ui.toast.challenge_complete" to {_killer}
+            play sound "entity.player.levelup" to {_killer}
+            
+            # Partikel
+            set {_loc} to location of victim
+            set {_wName} to name of world of {_loc}
+            if {_wName} is "world":
+                set {_dim} to "minecraft:overworld"
+            else:
+                set {_dim} to {_wName}
+            execute console command "execute in %{_dim}% run particle totem_of_undying %x-coord of {_loc}% %y-coord of {_loc}% %z-coord of {_loc}% 0.5 0.5 0.5 0.5 50 force"
+            
+            # Rare Drop (für beide)
+            set {_luck} to random integer between 1 and 100
+            if {_luck} <= 10:
+                set {_sword} to emerald named "&a&lNitwits Klinge" with lore "&7Ein Andenken an den" and "&7grünen Rächer."
+                enchant {_sword} with sharpness 5
+                enchant {_sword} with knockback 2
+                add hide enchants to item flags of {_sword}
+                drop {_sword} at {_loc}
+                send "&6&lRARE DROP! &eDu hast seine Waffe gefunden!" to {_killer}
+            
+        clear drops

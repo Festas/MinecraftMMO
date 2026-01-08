@@ -1,0 +1,177 @@
+configuration_version: v5
+worlds:
+  town:
+    plot:
+      size: 64
+      height: 64
+      biome: minecraft:cherry_grove
+      filling: dirt
+      floor: grass_block
+      auto_merge: true
+      create_signs: true
+      sign_material: OAK_WALL_SIGN
+      bedrock: true
+    wall:
+      filling: light_blue_stained_glass
+      block_claimed: cherry_slab
+      height: 64
+      block: smooth_stone_slab
+      place_top_block: true
+    road:
+      width: 7
+      height: 64
+      block: stripped_cherry_wood
+      flags: {}
+    world:
+      gamemode: survival
+      max_height: 320
+      min_height: -64
+      border: false
+      component_below_bedrock: false
+      max_gen_height: 319
+      min_gen_height: -64
+      border_size: 1
+    economy:
+      prices:
+        merge: 100
+        sell: 100
+        claim: 100
+      use: false
+    event:
+      spawn:
+        egg: false
+        breeding: false
+        custom: true
+    natural_mob_spawning: false
+    mob_spawner_spawning: false
+    flags: {}
+    misc_spawn_unowned: false
+    home:
+      nonmembers: side
+      default: side
+    schematic:
+      specify_on_claim: false
+      on_claim: false
+      file: 'null'
+      schematics: []
+    chat:
+      forced: false
+      enabled: true
+  tycoon:
+    plot:
+      size: 32
+      height: 64
+      biome: minecraft:basalt_deltas
+      filling: deepslate
+      floor: polished_andesite
+      auto_merge: true
+      create_signs: true
+      sign_material: OAK_WALL_SIGN
+      bedrock: true
+      schematic: tycoon
+      flags:
+        drop-protection: true
+    wall:
+      filling: red_stained_glass
+      block_claimed: red_nether_brick_slab
+      height: 64
+      block: polished_blackstone_brick_slab
+      place_top_block: true
+    road:
+      width: 7
+      height: 64
+      block: polished_blackstone
+      flags: {}
+    world:
+      gamemode: survival
+      max_height: 320
+      min_height: -64
+      border: false
+      component_below_bedrock: false
+      max_gen_height: 319
+      min_gen_height: -64
+      border_size: 1
+    economy:
+      use: false
+      prices:
+        merge: 100
+        sell: 100
+        claim: 100
+    event:
+      spawn:
+        egg: false
+        breeding: false
+        custom: true
+    natural_mob_spawning: false
+    mob_spawner_spawning: false
+    flags: {}
+    misc_spawn_unowned: false
+    home:
+      nonmembers: side
+      default: side
+    schematic:
+      specify_on_claim: false
+      on_claim: true
+      file: tycoon
+      schematics:
+      - tycoon
+    chat:
+      forced: false
+      enabled: true
+  freebuild:
+    plot:
+      size: 64
+      height: 64
+      biome: minecraft:lush_caves
+      filling: dirt
+      floor: grass_block
+      auto_merge: true
+      create_signs: true
+      sign_material: DARK_OAK_WALL_SIGN
+      bedrock: true
+    wall:
+      filling: white_stained_glass
+      block_claimed: quartz_slab
+      height: 64
+      block: smooth_stone_slab
+      place_top_block: true
+    road:
+      width: 9
+      height: 64
+      block: smooth_quartz
+      flags: {}
+    world:
+      gamemode: creative
+      max_height: 320
+      min_height: -64
+      border: false
+      component_below_bedrock: false
+      max_gen_height: 319
+      min_gen_height: -64
+      border_size: 1
+    economy:
+      use: false
+      prices:
+        merge: 100
+        sell: 100
+        claim: 100
+    event:
+      spawn:
+        egg: false
+        breeding: false
+        custom: true
+    natural_mob_spawning: false
+    mob_spawner_spawning: false
+    flags: {}
+    misc_spawn_unowned: false
+    home:
+      nonmembers: side
+      default: side
+    schematic:
+      specify_on_claim: false
+      on_claim: false
+      file: 'null'
+      schematics: []
+    chat:
+      forced: false
+      enabled: true

@@ -1,0 +1,224 @@
+# --- RANKUPS CONFIGURATION (Safe Mode) ---
+# Wir nutzen den Master-Befehl /tycoon_perform_rankup ohne "console:" Präfix.
+  # 1. ERDE -> STEIN
+  tycoon_erde:
+    rank: 'tycoon_erde'
+    next: 'tycoon_stein'
+    requirements:
+      - 'money 5000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} stein tier2_1'
+
+  # 2. STEIN -> KOHLE
+  tycoon_stein:
+    rank: 'tycoon_stein'
+    next: 'tycoon_kohle'
+    requirements:
+      - 'money 25000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} kohle tier3_1'
+
+  # 3. KOHLE -> EISEN
+  tycoon_kohle:
+    rank: 'tycoon_kohle'
+    next: 'tycoon_eisen'
+    requirements:
+      - 'money 75000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} eisen tier4_1'
+
+  # 4. EISEN -> KUPFER
+  tycoon_eisen:
+    rank: 'tycoon_eisen'
+    next: 'tycoon_kupfer'
+    requirements:
+      - 'money 200000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} kupfer tier5_1'
+
+  # 5. KUPFER -> GOLD
+  tycoon_kupfer:
+    rank: 'tycoon_kupfer'
+    next: 'tycoon_gold'
+    requirements:
+      - 'money 500000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} gold tier6_1'
+
+  # 6. GOLD -> REDSTONE
+  tycoon_gold:
+    rank: 'tycoon_gold'
+    next: 'tycoon_redstone'
+    requirements:
+      - 'money 1200000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} redstone tier7_1'
+
+  # 7. REDSTONE -> LAPIS
+  tycoon_redstone:
+    rank: 'tycoon_redstone'
+    next: 'tycoon_lapis'
+    requirements:
+      - 'money 3000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} lapis tier8_1'
+
+  # 8. LAPIS -> SMARAGD
+  tycoon_lapis:
+    rank: 'tycoon_lapis'
+    next: 'tycoon_smaragd'
+    requirements:
+      - 'money 7500000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} smaragd tier9_1'
+
+  # 9. SMARAGD -> DIAMANT
+  tycoon_smaragd:
+    rank: 'tycoon_smaragd'
+    next: 'tycoon_diamant'
+    requirements:
+      - 'money 15000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} diamant tier10_1'
+
+  # 10. DIAMANT -> OBSIDIAN
+  tycoon_diamant:
+    rank: 'tycoon_diamant'
+    next: 'tycoon_obsidian'
+    requirements:
+      - 'money 35000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} obsidian tier11_1'
+
+  # 11. OBSIDIAN -> NETHERITE
+  tycoon_obsidian:
+    rank: 'tycoon_obsidian'
+    next: 'tycoon_netherite'
+    requirements:
+      - 'money 75000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} netherite tier12_1'
+
+  # 12. NETHERITE -> TUFF
+  tycoon_netherite:
+    rank: 'tycoon_netherite'
+    next: 'tycoon_tuff'
+    requirements:
+      - 'money 150000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} tuff tier13_1'
+
+  # 13. TUFF -> CALCIT
+  tycoon_tuff:
+    rank: 'tycoon_tuff'
+    next: 'tycoon_calcit'
+    requirements:
+      - 'money 300000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} calcit tier14_1'
+
+  # 14. CALCIT -> DIORIT
+  tycoon_calcit:
+    rank: 'tycoon_calcit'
+    next: 'tycoon_diorit'
+    requirements:
+      - 'money 600000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} diorit tier15_1'
+
+  # 15. DIORIT -> ANDESIT
+  tycoon_diorit:
+    rank: 'tycoon_diorit'
+    next: 'tycoon_andesit'
+    requirements:
+      - 'money 1000000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} andesit tier16_1'
+
+  # 16. ANDESIT -> GRANIT
+  tycoon_andesit:
+    rank: 'tycoon_andesit'
+    next: 'tycoon_granit'
+    requirements:
+      - 'money 2000000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} granit tier17_1'
+
+  # 17. GRANIT -> BASALT
+  tycoon_granit:
+    rank: 'tycoon_granit'
+    next: 'tycoon_basalt'
+    requirements:
+      - 'money 4000000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} basalt tier18_1'
+
+  # 18. BASALT -> SCHWARZSTEIN
+  tycoon_basalt:
+    rank: 'tycoon_basalt'
+    next: 'tycoon_schwarzstein'
+    requirements:
+      - 'money 8000000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} schwarzstein tier19_1'
+
+  # 19. SCHWARZSTEIN -> PURPUR
+  tycoon_schwarzstein:
+    rank: 'tycoon_schwarzstein'
+    next: 'tycoon_purpur'
+    requirements:
+      - 'money 15000000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} purpur tier20_1'
+
+  # 20. PURPUR -> ENDSTEIN
+  tycoon_purpur:
+    rank: 'tycoon_purpur'
+    next: 'tycoon_endstein'
+    requirements:
+      - 'money 25000000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} endstein tier21_1'
+
+  # 21. ENDSTEIN -> PRISMARIN
+  tycoon_endstein:
+    rank: 'tycoon_endstein'
+    next: 'tycoon_prismarin'
+    requirements:
+      - 'money 40000000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} prismarin tier22_1'
+
+  # 22. PRISMARIN -> SEELENERDE
+  tycoon_prismarin:
+    rank: 'tycoon_prismarin'
+    next: 'tycoon_seelenerde'
+    requirements:
+      - 'money 65000000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} seelenerde tier23_1'
+
+  # 23. SEELENERDE -> MAGMA
+  tycoon_seelenerde:
+    rank: 'tycoon_seelenerde'
+    next: 'tycoon_magma'
+    requirements:
+      - 'money 100000000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} magma tier24_1'
+
+  # 24. MAGMA -> BEDROCK
+  tycoon_magma:
+    rank: 'tycoon_magma'
+    next: 'tycoon_bedrock'
+    requirements:
+      - 'money 250000000000'
+    commands:
+      - 'tycoon_perform_rankup {{player}} bedrock tier25_1'
+
+  # 25. BEDROCK (Ende)
+  tycoon_bedrock:
+    rank: 'tycoon_bedrock'
+    # Kein 'next', da Ende der Leiter
+    requirements:
+      - 'money 0'

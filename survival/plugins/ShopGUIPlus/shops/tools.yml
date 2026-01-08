@@ -1,0 +1,615 @@
+tools:
+  name: "&f七七七七七七七七⤼"
+  namePerPage:
+  fillItem:
+    material: ""
+  items:
+
+
+
+
+
+    P1_19:
+      type: item
+      item:
+        material: WOODEN_AXE
+        quantity: 1
+      buyPrice: 20
+      sellPrice: -1
+      slot: 19
+      page: 1
+
+    P1_20:
+      type: item
+      item:
+        material: WOODEN_PICKAXE
+        quantity: 1
+      buyPrice: 20
+      sellPrice: -1
+      slot: 20
+      page: 1
+
+    P1_21:
+      type: item
+      item:
+        material: WOODEN_SHOVEL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: -1
+      slot: 21
+      page: 1
+
+    P1_22:
+      type: item
+      item:
+        material: WOODEN_HOE
+        quantity: 1
+      buyPrice: 12
+      sellPrice: -1
+      slot: 22
+      page: 1
+
+
+    P1_24:
+      type: item
+      item:
+        material: COMPASS
+        quantity: 1
+      buyPrice: 200
+      sellPrice: -1
+      slot: 24
+      page: 1
+
+    P1_25:
+      type: item
+      item:
+        material: RECOVERY_COMPASS
+        quantity: 1
+      buyPrice: 5000
+      sellPrice: -1
+      slot: 25
+      page: 1
+
+    P1_28:
+      type: item
+      item:
+        material: STONE_AXE
+        quantity: 1
+      buyPrice: 25
+      sellPrice: -1
+      slot: 28
+      page: 1
+
+    P1_29:
+      type: item
+      item:
+        material: STONE_PICKAXE
+        quantity: 1
+      buyPrice: 25
+      sellPrice: -1
+      slot: 29
+      page: 1
+
+    P1_30:
+      type: item
+      item:
+        material: STONE_SHOVEL
+        quantity: 1
+      buyPrice: 25
+      sellPrice: -1
+      slot: 30
+      page: 1
+
+    P1_31:
+      type: item
+      item:
+        material: STONE_HOE
+        quantity: 1
+      buyPrice: 25
+      sellPrice: -1
+      slot: 31
+      page: 1
+
+
+
+    P1_33:
+      type: item
+      item:
+        material: SPYGLASS
+        quantity: 1
+      buyPrice: 300
+      sellPrice: -1
+      slot: 33
+      page: 1
+
+    P1_34:
+      type: item
+      item:
+        material: SHEARS
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 34
+      page: 1
+
+    P1_37:
+      type: item
+      item:
+        material: GOLDEN_AXE
+        quantity: 1
+      buyPrice: 200
+      sellPrice: -1
+      slot: 37
+      page: 1
+
+    P1_38:
+      type: item
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+      buyPrice: 200
+      sellPrice: -1
+      slot: 38
+      page: 1
+
+    P1_39:
+      type: item
+      item:
+        material: GOLDEN_SHOVEL
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 39
+      page: 1
+
+    P1_40:
+      type: item
+      item:
+        material: GOLDEN_HOE
+        quantity: 1
+      buyPrice: 100
+      sellPrice: -1
+      slot: 40
+      page: 1
+
+
+
+    P1_42:
+      type: item
+      item:
+        material: LEAD
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 42
+      page: 1
+
+    P1_43:
+      type: item
+      item:
+        material: CLOCK
+        quantity: 1
+      buyPrice: 200
+      sellPrice: -1
+      slot: 43
+      page: 1
+
+
+
+
+
+
+
+
+
+
+
+    P2_19:
+      type: item
+      item:
+        material: IRON_AXE
+        quantity: 1
+      buyPrice: 100
+      sellPrice: -1
+      slot: 19
+      page: 2
+
+    P2_20:
+      type: item
+      item:
+        material: IRON_PICKAXE
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 20
+      page: 2
+
+    P2_21:
+      type: item
+      item:
+        material: IRON_SHOVEL
+        quantity: 1
+      buyPrice: 25
+      sellPrice: -1
+      slot: 21
+      page: 2
+
+    P2_22:
+      type: item
+      item:
+        material: IRON_HOE
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 22
+      page: 2
+
+
+
+    P2_24:
+      type: item
+      item:
+        material: FLINT_AND_STEEL
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 24
+      page: 2
+
+    P2_25:
+      type: item
+      item:
+        material: NAME_TAG
+        quantity: 1
+      buyPrice: 1000
+      sellPrice: -1
+      slot: 25
+      page: 2
+
+    P2_28:
+      type: item
+      item:
+        material: DIAMOND_AXE
+        quantity: 1
+      buyPrice: 1000
+      sellPrice: -1
+      slot: 28
+      page: 2
+
+    P2_29:
+      type: item
+      item:
+        material: DIAMOND_PICKAXE
+        quantity: 1
+      buyPrice: 1000
+      sellPrice: -1
+      slot: 29
+      page: 2
+
+    P2_30:
+      type: item
+      item:
+        material: DIAMOND_SHOVEL
+        quantity: 1
+      buyPrice: 1000
+      sellPrice: -1
+      slot: 30
+      page: 2
+
+    P2_31:
+      type: item
+      item:
+        material: DIAMOND_HOE
+        quantity: 1
+      buyPrice: 1000
+      sellPrice: -1
+      slot: 31
+      page: 2
+
+
+
+    P2_33:
+      type: item
+      item:
+        material: TADPOLE_BUCKET
+        quantity: 1
+      buyPrice: 100
+      sellPrice: -1
+      slot: 33
+      page: 2
+
+    P2_34:
+      type: item
+      item:
+        material: FISHING_ROD
+        quantity: 1
+      buyPrice: 25
+      sellPrice: -1
+      slot: 34
+      page: 2
+
+    P2_37:
+      type: item
+      item:
+        material: NETHERITE_AXE
+        quantity: 1
+      buyPrice: 50000
+      sellPrice: -1
+      slot: 37
+      page: 2
+
+    P2_38:
+      type: item
+      item:
+        material: NETHERITE_PICKAXE
+        quantity: 1
+      buyPrice: 50000
+      sellPrice: -1
+      slot: 38
+      page: 2
+
+    P2_39:
+      type: item
+      item:
+        material: NETHERITE_SHOVEL
+        quantity: 1
+      buyPrice: 50000
+      sellPrice: -1
+      slot: 39
+      page: 2
+
+    P2_40:
+      type: item
+      item:
+        material: NETHERITE_HOE
+        quantity: 1
+      buyPrice: 50000
+      sellPrice: -1
+      slot: 40
+      page: 2
+
+
+
+    P2_42:
+      type: item
+      item:
+        material: BUCKET
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 42
+      page: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Previous1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui redstone"
+      slot: 0
+      page: 1
+    Next1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui weapons"
+      slot: 8
+      page: 1
+    Previous2:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui redstone"
+      slot: 0
+      page: 2
+    Next2:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui weapons"
+      slot: 8
+      page: 2
+
+
+
+
+
+
+
+
+
+
+
+    ShopColored1:
+      type: dummy
+      item:
+        material: CYAN_WOOL
+        quantity: 1
+        name: "&e&lColors"
+      slot: 1
+      page: 1
+      commandsOnClick:
+      - "shopgui coloredblocks"
+
+    ShopDecoration1:
+      type: dummy
+      item:
+        material: PAINTING
+        quantity: 1
+        name: "&e&lDecoration"
+      slot: 2
+      page: 1
+      commandsOnClick:
+      - "shopgui decoration"
+
+    ShopRedstone1:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+      slot: 3
+      page: 1
+      commandsOnClick:
+      - "shopgui redstone"
+
+    ShopTools1:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+      slot: 4
+      page: 1
+      commandsOnClick:
+      - "shopgui tools"
+
+    ShopWeapons1:
+      type: dummy
+      item:
+        material: IRON_CHESTPLATE
+        quantity: 1
+        name: "&e&lWeapons"
+      slot: 5
+      page: 1
+      commandsOnClick:
+      - "shopgui weapons"
+
+    ShopBlocks1:
+      type: dummy
+      item:
+        material: BRICKS
+        quantity: 1
+        name: "&e&lBlocks"
+      slot: 6
+      page: 1
+      commandsOnClick:
+      - "shopgui blocks"
+
+    ShopWood1:
+      type: dummy
+      item:
+        material: OAK_LOG
+        quantity: 1
+        name: "&e&lWood"
+      slot: 7
+      page: 1
+      commandsOnClick:
+      - "shopgui wood"
+
+
+    ShopColored2:
+      type: dummy
+      item:
+        material: CYAN_WOOL
+        quantity: 1
+        name: "&e&lColors"
+      slot: 1
+      page: 2
+      commandsOnClick:
+      - "shopgui coloredblocks"
+
+    ShopDecoration2:
+      type: dummy
+      item:
+        material: PAINTING
+        quantity: 1
+        name: "&e&lDecoration"
+      slot: 2
+      page: 2
+      commandsOnClick:
+      - "shopgui decoration"
+
+    ShopRedstone2:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+      slot: 3
+      page: 2
+      commandsOnClick:
+      - "shopgui redstone"
+
+    ShopTools2:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+      slot: 4
+      page: 2
+      commandsOnClick:
+      - "shopgui tools"
+
+    ShopWeapons2:
+      type: dummy
+      item:
+        material: IRON_CHESTPLATE
+        quantity: 1
+        name: "&e&lWeapons"
+      slot: 5
+      page: 2
+      commandsOnClick:
+      - "shopgui weapons"
+
+    ShopBlocks2:
+      type: dummy
+      item:
+        material: BRICKS
+        quantity: 1
+        name: "&e&lBlocks"
+      slot: 6
+      page: 2
+      commandsOnClick:
+      - "shopgui blocks"
+
+    ShopWood2:
+      type: dummy
+      item:
+        material: OAK_LOG
+        quantity: 1
+        name: "&e&lWood"
+      slot: 7
+      page: 2
+      commandsOnClick:
+      - "shopgui wood"
+
+
+
+
+
+
+
+
+
+
+
+

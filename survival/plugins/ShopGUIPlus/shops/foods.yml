@@ -1,0 +1,337 @@
+foods:
+  name: "&f七七七七七七七七⤜"
+  namePerPage:
+  fillItem:
+    material: ""
+  items:
+
+
+
+
+
+
+
+    P1_19:
+      type: item
+      item:
+        material: APPLE
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 0.05
+      slot: 19
+      page: 1
+
+    P1_20:
+      type: item
+      item:
+        material: GOLDEN_APPLE
+        quantity: 1
+      buyPrice: 500
+      sellPrice: -1
+      slot: 20
+      page: 1
+
+    P1_21:
+      type: item
+      item:
+        material: ENCHANTED_GOLDEN_APPLE
+        quantity: 1
+      buyPrice: 10000
+      sellPrice: -1
+      slot: 21
+      page: 1
+
+    P1_22:
+      type: item
+      item:
+        material: COOKIE
+        quantity: 1
+      buyPrice: 30
+      sellPrice: -1
+      slot: 22
+      page: 1
+
+    P1_23:
+      type: item
+      item:
+        material: CAKE
+        quantity: 1
+      buyPrice: 300
+      sellPrice: -1
+      slot: 23
+      page: 1
+
+    P1_24:
+      type: item
+      item:
+        material: PUMPKIN_PIE
+        quantity: 1
+      buyPrice: 120
+      sellPrice: -1
+      slot: 24
+      page: 1
+
+    P1_25:
+      type: item
+      item:
+        material: BREAD
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 25
+      page: 1
+
+    P1_28:
+      type: item
+      item:
+        material: BAKED_POTATO
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 28
+      page: 1
+
+    P1_29:
+      type: item
+      item:
+        material: COOKED_MUTTON
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 29
+      page: 1
+
+    P1_30:
+      type: item
+      item:
+        material: COOKED_CHICKEN
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 30
+      page: 1
+
+    P1_31:
+      type: item
+      item:
+        material: COOKED_BEEF
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 31
+      page: 1
+
+    P1_32:
+      type: item
+      item:
+        material: COOKED_PORKCHOP
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 32
+      page: 1
+
+    P1_33:
+      type: item
+      item:
+        material: COD
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 33
+      page: 1
+
+    P1_34:
+      type: item
+      item:
+        material: PUFFERFISH
+        quantity: 1
+      buyPrice: 500
+      sellPrice: -1
+      slot: 34
+      page: 1
+
+    P1_37:
+      type: item
+      item:
+        material: TROPICAL_FISH
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 37
+      page: 1
+
+    P1_38:
+      type: item
+      item:
+        material: COOKED_COD
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 38
+      page: 1
+
+    P1_39:
+      type: item
+      item:
+        material: COOKED_SALMON
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 39
+      page: 1
+
+    P1_40:
+      type: item
+      item:
+        material: GLOW_BERRIES
+        quantity: 1
+      buyPrice: 100
+      sellPrice: 0.05
+      slot: 40
+      page: 1
+
+    P1_41:
+      type: item
+      item:
+        material: CHORUS_FRUIT
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 5
+      slot: 41
+      page: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Previous1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui farming"
+      slot: 0
+      page: 1
+    Next1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui mobdrops"
+      slot: 8
+      page: 1
+
+
+
+
+
+
+
+
+    ShopWood1:
+      type: dummy
+      item:
+        material: OAK_LOG
+        quantity: 1
+        name: "&e&lWood"
+      slot: 1
+      page: 1
+      commandsOnClick:
+      - "shopgui wood"
+
+    ShopMinerals1:
+      type: dummy
+      item:
+        material: DIAMOND
+        quantity: 1
+        name: "&e&lMinerals"
+      slot: 2
+      page: 1
+      commandsOnClick:
+      - "shopgui minerals"
+
+    ShopFarming1:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 3
+      page: 1
+      commandsOnClick:
+      - "shopgui farming"
+
+    ShopFoods1:
+      type: dummy
+      item:
+        material: APPLE
+        quantity: 1
+        name: "&e&lFoods"
+      slot: 4
+      page: 1
+      commandsOnClick:
+      - "shopgui foods"
+
+    ShopRottenFlesh1:
+      type: dummy
+      item:
+        material: ROTTEN_FLESH
+        quantity: 1
+        name: "&e&lMob Drops"
+      slot: 5
+      page: 1
+      commandsOnClick:
+      - "shopgui mobdrops"
+
+    ShopColors1:
+      type: dummy
+      item:
+        material: CYAN_WOOL
+        quantity: 1
+        name: "&e&lColors"
+      slot: 6
+      page: 1
+      commandsOnClick:
+      - "shopgui coloredblocks"
+
+    ShopDecoration1:
+      type: dummy
+      item:
+        material: PAINTING
+        quantity: 1
+        name: "&e&lDecoration"
+      slot: 7
+      page: 1
+      commandsOnClick:
+      - "shopgui decoration"
+
+
+
+
+
+
+
+
+
+
+
+
+

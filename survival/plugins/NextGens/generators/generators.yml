@@ -1,0 +1,623 @@
+# --- NEXTGENS CONFIGURATION (25 Tiers x 10 Level) ---
+# FIX: Alle Generatoren beginnen nun ohne Einrückung am Zeilenanfang.
+# Dies verhindert, dass das Plugin denkt, die Datei sei zu Ende.
+
+# ==========================================================
+# TIER 1: ERDE
+# ==========================================================
+tier1_1:
+  display-name: "&6Erde Generator &7(Lvl 1)"
+  interval: 4
+  upgrade:
+    next-generator: tier1_2
+    upgrade-cost: 200
+  item:
+    material: DIRT
+    display-name: "&6Erde Generator &7(Lvl 1)"
+    lore:
+      - "&7Rate: &f4.0s"
+      - "&7Rare Drop: &f1%"
+  drops:
+    '0':
+      chance: 100
+      sell-value: 5
+      item:
+        material: DIRT
+        display-name: "&6Erde"
+    '1':
+      chance: 1
+      sell-value: 10
+      item:
+        material: COARSE_DIRT
+        display-name: "&6Grobe Erde"
+
+tier1_2: {display-name: "&6Erde Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier1_3, upgrade-cost: 300}, item: {material: DIRT, display-name: "&6Erde Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 5, item: {material: DIRT, display-name: "&6Erde"}}, '1': {chance: 2, sell-value: 10, item: {material: COARSE_DIRT, display-name: "&6Grobe Erde"}}}}
+tier1_3: {display-name: "&6Erde Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier1_4, upgrade-cost: 450}, item: {material: DIRT, display-name: "&6Erde Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 5, item: {material: DIRT, display-name: "&6Erde"}}, '1': {chance: 3, sell-value: 10, item: {material: COARSE_DIRT, display-name: "&6Grobe Erde"}}}}
+tier1_4: {display-name: "&6Erde Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier1_5, upgrade-cost: 600}, item: {material: DIRT, display-name: "&6Erde Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 5, item: {material: DIRT, display-name: "&6Erde"}}, '1': {chance: 4, sell-value: 10, item: {material: COARSE_DIRT, display-name: "&6Grobe Erde"}}}}
+tier1_5: {display-name: "&6Erde Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier1_6, upgrade-cost: 800}, item: {material: DIRT, display-name: "&6Erde Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 5, item: {material: DIRT, display-name: "&6Erde"}}, '1': {chance: 5, sell-value: 10, item: {material: COARSE_DIRT, display-name: "&6Grobe Erde"}}}}
+tier1_6: {display-name: "&6Erde Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier1_7, upgrade-cost: 1000}, item: {material: DIRT, display-name: "&6Erde Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 5, item: {material: DIRT, display-name: "&6Erde"}}, '1': {chance: 6, sell-value: 10, item: {material: COARSE_DIRT, display-name: "&6Grobe Erde"}}}}
+tier1_7: {display-name: "&6Erde Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier1_8, upgrade-cost: 1250}, item: {material: DIRT, display-name: "&6Erde Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 5, item: {material: DIRT, display-name: "&6Erde"}}, '1': {chance: 7, sell-value: 10, item: {material: COARSE_DIRT, display-name: "&6Grobe Erde"}}}}
+tier1_8: {display-name: "&6Erde Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier1_9, upgrade-cost: 1500}, item: {material: DIRT, display-name: "&6Erde Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 5, item: {material: DIRT, display-name: "&6Erde"}}, '1': {chance: 8, sell-value: 10, item: {material: COARSE_DIRT, display-name: "&6Grobe Erde"}}}}
+tier1_9: {display-name: "&6Erde Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier1_10, upgrade-cost: 2000}, item: {material: DIRT, display-name: "&6Erde Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 5, item: {material: DIRT, display-name: "&6Erde"}}, '1': {chance: 9, sell-value: 10, item: {material: COARSE_DIRT, display-name: "&6Grobe Erde"}}}}
+
+tier1_10:
+  display-name: "&6Erde Generator &b(MAX)"
+  interval: 1
+  upgrade:
+    next-generator: null
+    upgrade-cost: 0
+  item:
+    material: GRASS_BLOCK
+    display-name: "&6Erde Generator &b(MAX)"
+    lore:
+      - "&7Rate: &a1.0s"
+      - "&7Rare Drop: &a10%"
+      - "&eBenötigt Rang &nStein&e!"
+  drops:
+    '0':
+      chance: 100
+      sell-value: 5
+      item:
+        material: DIRT
+        display-name: "&6Erde"
+    '1':
+      chance: 10
+      sell-value: 10
+      item:
+        material: COARSE_DIRT
+        display-name: "&6Grobe Erde"
+
+# ==========================================================
+# TIER 2: STEIN
+# ==========================================================
+tier2_1:
+  display-name: "&7Stein Generator &7(Lvl 1)"
+  interval: 4
+  upgrade:
+    next-generator: tier2_2
+    upgrade-cost: 1500
+  item:
+    material: STONE
+    display-name: "&7Stein Generator &7(Lvl 1)"
+    lore:
+      - "&7Rate: &f4s"
+      - "&7Rare Drop: &f1%"
+  drops:
+    '0':
+      chance: 100
+      sell-value: 10
+      item:
+        material: STONE
+        display-name: "&7Stein"
+    '1':
+      chance: 1
+      sell-value: 20
+      item:
+        material: STONE_BRICKS
+        display-name: "&7Steinziegel"
+
+tier2_2: {display-name: "&7Stein Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier2_3, upgrade-cost: 2000}, item: {material: STONE, display-name: "&7Stein Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 10, item: {material: STONE, display-name: "&7Stein"}}, '1': {chance: 2, sell-value: 20, item: {material: STONE_BRICKS, display-name: "&7Steinziegel"}}}}
+tier2_3: {display-name: "&7Stein Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier2_4, upgrade-cost: 2500}, item: {material: STONE, display-name: "&7Stein Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 10, item: {material: STONE, display-name: "&7Stein"}}, '1': {chance: 3, sell-value: 20, item: {material: STONE_BRICKS, display-name: "&7Steinziegel"}}}}
+tier2_4: {display-name: "&7Stein Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier2_5, upgrade-cost: 3000}, item: {material: STONE, display-name: "&7Stein Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 10, item: {material: STONE, display-name: "&7Stein"}}, '1': {chance: 4, sell-value: 20, item: {material: STONE_BRICKS, display-name: "&7Steinziegel"}}}}
+tier2_5: {display-name: "&7Stein Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier2_6, upgrade-cost: 3500}, item: {material: STONE, display-name: "&7Stein Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 10, item: {material: STONE, display-name: "&7Stein"}}, '1': {chance: 5, sell-value: 20, item: {material: STONE_BRICKS, display-name: "&7Steinziegel"}}}}
+tier2_6: {display-name: "&7Stein Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier2_7, upgrade-cost: 4000}, item: {material: STONE, display-name: "&7Stein Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 10, item: {material: STONE, display-name: "&7Stein"}}, '1': {chance: 6, sell-value: 20, item: {material: STONE_BRICKS, display-name: "&7Steinziegel"}}}}
+tier2_7: {display-name: "&7Stein Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier2_8, upgrade-cost: 4500}, item: {material: STONE, display-name: "&7Stein Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 10, item: {material: STONE, display-name: "&7Stein"}}, '1': {chance: 7, sell-value: 20, item: {material: STONE_BRICKS, display-name: "&7Steinziegel"}}}}
+tier2_8: {display-name: "&7Stein Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier2_9, upgrade-cost: 5000}, item: {material: STONE, display-name: "&7Stein Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 10, item: {material: STONE, display-name: "&7Stein"}}, '1': {chance: 8, sell-value: 20, item: {material: STONE_BRICKS, display-name: "&7Steinziegel"}}}}
+tier2_9: {display-name: "&7Stein Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier2_10, upgrade-cost: 6000}, item: {material: STONE, display-name: "&7Stein Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 10, item: {material: STONE, display-name: "&7Stein"}}, '1': {chance: 9, sell-value: 20, item: {material: STONE_BRICKS, display-name: "&7Steinziegel"}}}}
+
+tier2_10:
+  display-name: "&7Stein Generator &b(MAX)"
+  interval: 1
+  upgrade:
+    next-generator: null
+    upgrade-cost: 0
+  item:
+    material: STONE_BRICKS
+    display-name: "&7Stein Generator &b(MAX)"
+    lore:
+      - "&7Rate: &a1.0s"
+      - "&7Rare Drop: &a10%"
+      - "&eBenötigt Rang &nKohle&e!"
+  drops:
+    '0':
+      chance: 100
+      sell-value: 10
+      item:
+        material: STONE
+        display-name: "&7Stein"
+    '1':
+      chance: 10
+      sell-value: 20
+      item:
+        material: STONE_BRICKS
+        display-name: "&7Steinziegel"
+
+# ==========================================================
+# TIER 3: KOHLE
+# ==========================================================
+tier3_1:
+  display-name: "&8Kohle Generator &7(Lvl 1)"
+  interval: 4
+  upgrade:
+    next-generator: tier3_2
+    upgrade-cost: 5000
+  item:
+    material: COAL_ORE
+    display-name: "&8Kohle Generator &7(Lvl 1)"
+    lore:
+      - "&7Rate: &f4s"
+      - "&7Rare Drop: &f1%"
+  drops:
+    '0':
+      chance: 100
+      sell-value: 20
+      item:
+        material: COAL
+        display-name: "&8Kohle"
+    '1':
+      chance: 1
+      sell-value: 180
+      item:
+        material: COAL_BLOCK
+        display-name: "&8Kohleblock"
+
+tier3_2: {display-name: "&8Kohle Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier3_3, upgrade-cost: 6000}, item: {material: COAL_ORE, display-name: "&8Kohle Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 20, item: {material: COAL, display-name: "&8Kohle"}}, '1': {chance: 2, sell-value: 180, item: {material: COAL_BLOCK, display-name: "&8Kohleblock"}}}}
+tier3_3: {display-name: "&8Kohle Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier3_4, upgrade-cost: 7000}, item: {material: COAL_ORE, display-name: "&8Kohle Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 20, item: {material: COAL, display-name: "&8Kohle"}}, '1': {chance: 3, sell-value: 180, item: {material: COAL_BLOCK, display-name: "&8Kohleblock"}}}}
+tier3_4: {display-name: "&8Kohle Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier3_5, upgrade-cost: 8000}, item: {material: COAL_ORE, display-name: "&8Kohle Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 20, item: {material: COAL, display-name: "&8Kohle"}}, '1': {chance: 4, sell-value: 180, item: {material: COAL_BLOCK, display-name: "&8Kohleblock"}}}}
+tier3_5: {display-name: "&8Kohle Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier3_6, upgrade-cost: 9000}, item: {material: COAL_ORE, display-name: "&8Kohle Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 20, item: {material: COAL, display-name: "&8Kohle"}}, '1': {chance: 5, sell-value: 180, item: {material: COAL_BLOCK, display-name: "&8Kohleblock"}}}}
+tier3_6: {display-name: "&8Kohle Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier3_7, upgrade-cost: 10000}, item: {material: COAL_ORE, display-name: "&8Kohle Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 20, item: {material: COAL, display-name: "&8Kohle"}}, '1': {chance: 6, sell-value: 180, item: {material: COAL_BLOCK, display-name: "&8Kohleblock"}}}}
+tier3_7: {display-name: "&8Kohle Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier3_8, upgrade-cost: 11000}, item: {material: COAL_ORE, display-name: "&8Kohle Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 20, item: {material: COAL, display-name: "&8Kohle"}}, '1': {chance: 7, sell-value: 180, item: {material: COAL_BLOCK, display-name: "&8Kohleblock"}}}}
+tier3_8: {display-name: "&8Kohle Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier3_9, upgrade-cost: 12000}, item: {material: COAL_ORE, display-name: "&8Kohle Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 20, item: {material: COAL, display-name: "&8Kohle"}}, '1': {chance: 8, sell-value: 180, item: {material: COAL_BLOCK, display-name: "&8Kohleblock"}}}}
+tier3_9: {display-name: "&8Kohle Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier3_10, upgrade-cost: 13000}, item: {material: COAL_ORE, display-name: "&8Kohle Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 20, item: {material: COAL, display-name: "&8Kohle"}}, '1': {chance: 9, sell-value: 180, item: {material: COAL_BLOCK, display-name: "&8Kohleblock"}}}}
+
+tier3_10:
+  display-name: "&8Kohle Generator &b(MAX)"
+  interval: 1
+  upgrade:
+    next-generator: null
+    upgrade-cost: 0
+  item:
+    material: COAL_BLOCK
+    display-name: "&8Kohle Generator &b(MAX)"
+    lore:
+      - "&7Rate: &a1.0s"
+      - "&7Rare Drop: &a10%"
+      - "&eBenötigt Rang &nEisen&e!"
+  drops:
+    '0':
+      chance: 100
+      sell-value: 20
+      item:
+        material: COAL
+        display-name: "&8Kohle"
+    '1':
+      chance: 10
+      sell-value: 180
+      item:
+        material: COAL_BLOCK
+        display-name: "&8Kohleblock"
+
+# ==========================================================
+# TIER 4: EISEN
+# ==========================================================
+tier4_1:
+  display-name: "&fEisen Generator &7(Lvl 1)"
+  interval: 4
+  upgrade:
+    next-generator: tier4_2
+    upgrade-cost: 15000
+  item:
+    material: IRON_ORE
+    display-name: "&fEisen Generator &7(Lvl 1)"
+    lore:
+      - "&7Rate: &f4.0s"
+      - "&7Rare Drop: &f1%"
+  drops:
+    '0':
+      chance: 100
+      sell-value: 50
+      item:
+        material: IRON_INGOT
+        display-name: "&fEisen"
+    '1':
+      chance: 1
+      sell-value: 450
+      item:
+        material: IRON_BLOCK
+        display-name: "&fEisenblock"
+
+tier4_2: {display-name: "&fEisen Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier4_3, upgrade-cost: 18000}, item: {material: IRON_ORE, display-name: "&fEisen Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 50, item: {material: IRON_INGOT, display-name: "&fEisen"}}, '1': {chance: 2, sell-value: 450, item: {material: IRON_BLOCK, display-name: "&fEisenblock"}}}}
+tier4_3: {display-name: "&fEisen Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier4_4, upgrade-cost: 21000}, item: {material: IRON_ORE, display-name: "&fEisen Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 50, item: {material: IRON_INGOT, display-name: "&fEisen"}}, '1': {chance: 3, sell-value: 450, item: {material: IRON_BLOCK, display-name: "&fEisenblock"}}}}
+tier4_4: {display-name: "&fEisen Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier4_5, upgrade-cost: 24000}, item: {material: IRON_ORE, display-name: "&fEisen Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 50, item: {material: IRON_INGOT, display-name: "&fEisen"}}, '1': {chance: 4, sell-value: 450, item: {material: IRON_BLOCK, display-name: "&fEisenblock"}}}}
+tier4_5: {display-name: "&fEisen Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier4_6, upgrade-cost: 27000}, item: {material: IRON_ORE, display-name: "&fEisen Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 50, item: {material: IRON_INGOT, display-name: "&fEisen"}}, '1': {chance: 5, sell-value: 450, item: {material: IRON_BLOCK, display-name: "&fEisenblock"}}}}
+tier4_6: {display-name: "&fEisen Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier4_7, upgrade-cost: 30000}, item: {material: IRON_ORE, display-name: "&fEisen Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 50, item: {material: IRON_INGOT, display-name: "&fEisen"}}, '1': {chance: 6, sell-value: 450, item: {material: IRON_BLOCK, display-name: "&fEisenblock"}}}}
+tier4_7: {display-name: "&fEisen Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier4_8, upgrade-cost: 33000}, item: {material: IRON_ORE, display-name: "&fEisen Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 50, item: {material: IRON_INGOT, display-name: "&fEisen"}}, '1': {chance: 7, sell-value: 450, item: {material: IRON_BLOCK, display-name: "&fEisenblock"}}}}
+tier4_8: {display-name: "&fEisen Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier4_9, upgrade-cost: 36000}, item: {material: IRON_ORE, display-name: "&fEisen Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 50, item: {material: IRON_INGOT, display-name: "&fEisen"}}, '1': {chance: 8, sell-value: 450, item: {material: IRON_BLOCK, display-name: "&fEisenblock"}}}}
+tier4_9: {display-name: "&fEisen Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier4_10, upgrade-cost: 40000}, item: {material: IRON_ORE, display-name: "&fEisen Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 50, item: {material: IRON_INGOT, display-name: "&fEisen"}}, '1': {chance: 9, sell-value: 450, item: {material: IRON_BLOCK, display-name: "&fEisenblock"}}}}
+
+tier4_10:
+  display-name: "&fEisen Generator &b(MAX)"
+  interval: 1
+  upgrade:
+    next-generator: null
+    upgrade-cost: 0
+  item:
+    material: IRON_BLOCK
+    display-name: "&fEisen Generator &b(MAX)"
+    lore:
+      - "&7Rate: &a1.0s"
+      - "&7Rare Drop: &a10%"
+      - "&eBenötigt Rang &nKupfer&e!"
+  drops:
+    '0':
+      chance: 100
+      sell-value: 50
+      item:
+        material: IRON_INGOT
+        display-name: "&fEisen"
+    '1':
+      chance: 10
+      sell-value: 450
+      item:
+        material: IRON_BLOCK
+        display-name: "&fEisenblock"
+
+# ==========================================================
+# TIER 5: KUPFER
+# ==========================================================
+tier5_1:
+  display-name: "&cKupfer Generator &7(Lvl 1)"
+  interval: 4
+  upgrade:
+    next-generator: tier5_2
+    upgrade-cost: 40000
+  item:
+    material: COPPER_ORE
+    display-name: "&cKupfer Generator &7(Lvl 1)"
+    lore:
+      - "&7Rate: &f4.0s"
+      - "&7Rare Drop: &f1%"
+  drops:
+    '0':
+      chance: 100
+      sell-value: 80
+      item:
+        material: COPPER_INGOT
+        display-name: "&cKupfer"
+    '1':
+      chance: 1
+      sell-value: 720
+      item:
+        material: COPPER_BLOCK
+        display-name: "&cKupferblock"
+
+tier5_2: {display-name: "&cKupfer Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier5_3, upgrade-cost: 45000}, item: {material: COPPER_ORE, display-name: "&cKupfer Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 80, item: {material: COPPER_INGOT, display-name: "&cKupfer"}}, '1': {chance: 2, sell-value: 720, item: {material: COPPER_BLOCK, display-name: "&cKupferblock"}}}}
+tier5_3: {display-name: "&cKupfer Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier5_4, upgrade-cost: 50000}, item: {material: COPPER_ORE, display-name: "&cKupfer Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 80, item: {material: COPPER_INGOT, display-name: "&cKupfer"}}, '1': {chance: 3, sell-value: 720, item: {material: COPPER_BLOCK, display-name: "&cKupferblock"}}}}
+tier5_4: {display-name: "&cKupfer Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier5_5, upgrade-cost: 55000}, item: {material: COPPER_ORE, display-name: "&cKupfer Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 80, item: {material: COPPER_INGOT, display-name: "&cKupfer"}}, '1': {chance: 4, sell-value: 720, item: {material: COPPER_BLOCK, display-name: "&cKupferblock"}}}}
+tier5_5: {display-name: "&cKupfer Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier5_6, upgrade-cost: 60000}, item: {material: COPPER_ORE, display-name: "&cKupfer Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 80, item: {material: COPPER_INGOT, display-name: "&cKupfer"}}, '1': {chance: 5, sell-value: 720, item: {material: COPPER_BLOCK, display-name: "&cKupferblock"}}}}
+tier5_6: {display-name: "&cKupfer Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier5_7, upgrade-cost: 65000}, item: {material: COPPER_ORE, display-name: "&cKupfer Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 80, item: {material: COPPER_INGOT, display-name: "&cKupfer"}}, '1': {chance: 6, sell-value: 720, item: {material: COPPER_BLOCK, display-name: "&cKupferblock"}}}}
+tier5_7: {display-name: "&cKupfer Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier5_8, upgrade-cost: 70000}, item: {material: COPPER_ORE, display-name: "&cKupfer Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 80, item: {material: COPPER_INGOT, display-name: "&cKupfer"}}, '1': {chance: 7, sell-value: 720, item: {material: COPPER_BLOCK, display-name: "&cKupferblock"}}}}
+tier5_8: {display-name: "&cKupfer Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier5_9, upgrade-cost: 75000}, item: {material: COPPER_ORE, display-name: "&cKupfer Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 80, item: {material: COPPER_INGOT, display-name: "&cKupfer"}}, '1': {chance: 8, sell-value: 720, item: {material: COPPER_BLOCK, display-name: "&cKupferblock"}}}}
+tier5_9: {display-name: "&cKupfer Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier5_10, upgrade-cost: 80000}, item: {material: COPPER_ORE, display-name: "&cKupfer Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 80, item: {material: COPPER_INGOT, display-name: "&cKupfer"}}, '1': {chance: 9, sell-value: 720, item: {material: COPPER_BLOCK, display-name: "&cKupferblock"}}}}
+
+tier5_10:
+  display-name: "&cKupfer Generator &b(MAX)"
+  interval: 1
+  upgrade:
+    next-generator: null
+    upgrade-cost: 0
+  item:
+    material: COPPER_BLOCK
+    display-name: "&cKupfer Generator &b(MAX)"
+    lore:
+      - "&7Rate: &a1.0s"
+      - "&7Rare Drop: &a10%"
+      - "&eBenötigt Rang &nGold&e!"
+  drops:
+    '0':
+      chance: 100
+      sell-value: 80
+      item:
+        material: COPPER_INGOT
+        display-name: "&cKupfer"
+    '1':
+      chance: 10
+      sell-value: 720
+      item:
+        material: COPPER_BLOCK
+        display-name: "&cKupferblock"
+
+# ==========================================================
+# TIER 6: GOLD
+# ==========================================================
+tier6_1: {display-name: "&6Gold Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier6_2, upgrade-cost: 100000}, item: {material: GOLD_ORE, display-name: "&6Gold Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 120, item: {material: GOLD_INGOT, display-name: "&6Gold"}}, '1': {chance: 1, sell-value: 1080, item: {material: GOLD_BLOCK, display-name: "&6Goldblock"}}}}
+tier6_2: {display-name: "&6Gold Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier6_3, upgrade-cost: 110000}, item: {material: GOLD_ORE, display-name: "&6Gold Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 120, item: {material: GOLD_INGOT, display-name: "&6Gold"}}, '1': {chance: 2, sell-value: 1080, item: {material: GOLD_BLOCK, display-name: "&6Goldblock"}}}}
+tier6_3: {display-name: "&6Gold Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier6_4, upgrade-cost: 120000}, item: {material: GOLD_ORE, display-name: "&6Gold Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 120, item: {material: GOLD_INGOT, display-name: "&6Gold"}}, '1': {chance: 3, sell-value: 1080, item: {material: GOLD_BLOCK, display-name: "&6Goldblock"}}}}
+tier6_4: {display-name: "&6Gold Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier6_5, upgrade-cost: 130000}, item: {material: GOLD_ORE, display-name: "&6Gold Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 120, item: {material: GOLD_INGOT, display-name: "&6Gold"}}, '1': {chance: 4, sell-value: 1080, item: {material: GOLD_BLOCK, display-name: "&6Goldblock"}}}}
+tier6_5: {display-name: "&6Gold Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier6_6, upgrade-cost: 140000}, item: {material: GOLD_ORE, display-name: "&6Gold Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 120, item: {material: GOLD_INGOT, display-name: "&6Gold"}}, '1': {chance: 5, sell-value: 1080, item: {material: GOLD_BLOCK, display-name: "&6Goldblock"}}}}
+tier6_6: {display-name: "&6Gold Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier6_7, upgrade-cost: 150000}, item: {material: GOLD_ORE, display-name: "&6Gold Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 120, item: {material: GOLD_INGOT, display-name: "&6Gold"}}, '1': {chance: 6, sell-value: 1080, item: {material: GOLD_BLOCK, display-name: "&6Goldblock"}}}}
+tier6_7: {display-name: "&6Gold Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier6_8, upgrade-cost: 160000}, item: {material: GOLD_ORE, display-name: "&6Gold Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 120, item: {material: GOLD_INGOT, display-name: "&6Gold"}}, '1': {chance: 7, sell-value: 1080, item: {material: GOLD_BLOCK, display-name: "&6Goldblock"}}}}
+tier6_8: {display-name: "&6Gold Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier6_9, upgrade-cost: 170000}, item: {material: GOLD_ORE, display-name: "&6Gold Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 120, item: {material: GOLD_INGOT, display-name: "&6Gold"}}, '1': {chance: 8, sell-value: 1080, item: {material: GOLD_BLOCK, display-name: "&6Goldblock"}}}}
+tier6_9: {display-name: "&6Gold Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier6_10, upgrade-cost: 180000}, item: {material: GOLD_ORE, display-name: "&6Gold Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 120, item: {material: GOLD_INGOT, display-name: "&6Gold"}}, '1': {chance: 9, sell-value: 1080, item: {material: GOLD_BLOCK, display-name: "&6Goldblock"}}}}
+tier6_10: {display-name: "&6Gold Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: GOLD_BLOCK}, drops: {'0': {chance: 100, item: {material: GOLD_INGOT}}, '1': {chance: 10, item: {material: GOLD_BLOCK}}}}
+
+# --- REDSTONE (Tier 7) --- Rare: Redstoneblock
+tier7_1: {display-name: "&cRedstone Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier7_2, upgrade-cost: 250000}, item: {material: REDSTONE_ORE, display-name: "&cRedstone Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 200, item: {material: REDSTONE, display-name: "&cRedstone"}}, '1': {chance: 1, sell-value: 1800, item: {material: REDSTONE_BLOCK, display-name: "&cRedstoneblock"}}}}
+tier7_2: {display-name: "&cRedstone Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier7_3, upgrade-cost: 275000}, item: {material: REDSTONE_ORE, display-name: "&cRedstone Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 200, item: {material: REDSTONE, display-name: "&cRedstone"}}, '1': {chance: 2, sell-value: 1800, item: {material: REDSTONE_BLOCK, display-name: "&cRedstoneblock"}}}}
+tier7_3: {display-name: "&cRedstone Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier7_4, upgrade-cost: 300000}, item: {material: REDSTONE_ORE, display-name: "&cRedstone Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 200, item: {material: REDSTONE, display-name: "&cRedstone"}}, '1': {chance: 3, sell-value: 1800, item: {material: REDSTONE_BLOCK, display-name: "&cRedstoneblock"}}}}
+tier7_4: {display-name: "&cRedstone Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier7_5, upgrade-cost: 325000}, item: {material: REDSTONE_ORE, display-name: "&cRedstone Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 200, item: {material: REDSTONE, display-name: "&cRedstone"}}, '1': {chance: 4, sell-value: 1800, item: {material: REDSTONE_BLOCK, display-name: "&cRedstoneblock"}}}}
+tier7_5: {display-name: "&cRedstone Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier7_6, upgrade-cost: 350000}, item: {material: REDSTONE_ORE, display-name: "&cRedstone Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 200, item: {material: REDSTONE, display-name: "&cRedstone"}}, '1': {chance: 5, sell-value: 1800, item: {material: REDSTONE_BLOCK, display-name: "&cRedstoneblock"}}}}
+tier7_6: {display-name: "&cRedstone Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier7_7, upgrade-cost: 375000}, item: {material: REDSTONE_ORE, display-name: "&cRedstone Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 200, item: {material: REDSTONE, display-name: "&cRedstone"}}, '1': {chance: 6, sell-value: 1800, item: {material: REDSTONE_BLOCK, display-name: "&cRedstoneblock"}}}}
+tier7_7: {display-name: "&cRedstone Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier7_8, upgrade-cost: 400000}, item: {material: REDSTONE_ORE, display-name: "&cRedstone Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 200, item: {material: REDSTONE, display-name: "&cRedstone"}}, '1': {chance: 7, sell-value: 1800, item: {material: REDSTONE_BLOCK, display-name: "&cRedstoneblock"}}}}
+tier7_8: {display-name: "&cRedstone Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier7_9, upgrade-cost: 425000}, item: {material: REDSTONE_ORE, display-name: "&cRedstone Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 200, item: {material: REDSTONE, display-name: "&cRedstone"}}, '1': {chance: 8, sell-value: 1800, item: {material: REDSTONE_BLOCK, display-name: "&cRedstoneblock"}}}}
+tier7_9: {display-name: "&cRedstone Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier7_10, upgrade-cost: 450000}, item: {material: REDSTONE_ORE, display-name: "&cRedstone Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 200, item: {material: REDSTONE, display-name: "&cRedstone"}}, '1': {chance: 9, sell-value: 1800, item: {material: REDSTONE_BLOCK, display-name: "&cRedstoneblock"}}}}
+tier7_10: {display-name: "&cRedstone Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: REDSTONE_BLOCK, display-name: "&cRedstone Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nLapis&e!"]}, drops: {'0': {chance: 100, sell-value: 200, item: {material: REDSTONE, display-name: "&cRedstone"}}, '1': {chance: 10, sell-value: 1800, item: {material: REDSTONE_BLOCK, display-name: "&cRedstoneblock"}}}}
+
+# --- LAPIS (Tier 8) --- Rare: Lapisblock
+tier8_1: {display-name: "&9Lapis Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier8_2, upgrade-cost: 600000}, item: {material: LAPIS_ORE, display-name: "&9Lapis Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 450, item: {material: LAPIS_LAZULI, display-name: "&9Lapis"}}, '1': {chance: 1, sell-value: 4050, item: {material: LAPIS_BLOCK, display-name: "&9Lapisblock"}}}}
+tier8_2: {display-name: "&9Lapis Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier8_3, upgrade-cost: 650000}, item: {material: LAPIS_ORE, display-name: "&9Lapis Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 450, item: {material: LAPIS_LAZULI, display-name: "&9Lapis"}}, '1': {chance: 2, sell-value: 4050, item: {material: LAPIS_BLOCK, display-name: "&9Lapisblock"}}}}
+tier8_3: {display-name: "&9Lapis Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier8_4, upgrade-cost: 700000}, item: {material: LAPIS_ORE, display-name: "&9Lapis Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 450, item: {material: LAPIS_LAZULI, display-name: "&9Lapis"}}, '1': {chance: 3, sell-value: 4050, item: {material: LAPIS_BLOCK, display-name: "&9Lapisblock"}}}}
+tier8_4: {display-name: "&9Lapis Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier8_5, upgrade-cost: 750000}, item: {material: LAPIS_ORE, display-name: "&9Lapis Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 450, item: {material: LAPIS_LAZULI, display-name: "&9Lapis"}}, '1': {chance: 4, sell-value: 4050, item: {material: LAPIS_BLOCK, display-name: "&9Lapisblock"}}}}
+tier8_5: {display-name: "&9Lapis Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier8_6, upgrade-cost: 800000}, item: {material: LAPIS_ORE, display-name: "&9Lapis Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 450, item: {material: LAPIS_LAZULI, display-name: "&9Lapis"}}, '1': {chance: 5, sell-value: 4050, item: {material: LAPIS_BLOCK, display-name: "&9Lapisblock"}}}}
+tier8_6: {display-name: "&9Lapis Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier8_7, upgrade-cost: 850000}, item: {material: LAPIS_ORE, display-name: "&9Lapis Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 450, item: {material: LAPIS_LAZULI, display-name: "&9Lapis"}}, '1': {chance: 6, sell-value: 4050, item: {material: LAPIS_BLOCK, display-name: "&9Lapisblock"}}}}
+tier8_7: {display-name: "&9Lapis Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier8_8, upgrade-cost: 900000}, item: {material: LAPIS_ORE, display-name: "&9Lapis Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 450, item: {material: LAPIS_LAZULI, display-name: "&9Lapis"}}, '1': {chance: 7, sell-value: 4050, item: {material: LAPIS_BLOCK, display-name: "&9Lapisblock"}}}}
+tier8_8: {display-name: "&9Lapis Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier8_9, upgrade-cost: 950000}, item: {material: LAPIS_ORE, display-name: "&9Lapis Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 450, item: {material: LAPIS_LAZULI, display-name: "&9Lapis"}}, '1': {chance: 8, sell-value: 4050, item: {material: LAPIS_BLOCK, display-name: "&9Lapisblock"}}}}
+tier8_9: {display-name: "&9Lapis Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier8_10, upgrade-cost: 1000000}, item: {material: LAPIS_ORE, display-name: "&9Lapis Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 450, item: {material: LAPIS_LAZULI, display-name: "&9Lapis"}}, '1': {chance: 9, sell-value: 4050, item: {material: LAPIS_BLOCK, display-name: "&9Lapisblock"}}}}
+tier8_10: {display-name: "&9Lapis Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: LAPIS_BLOCK, display-name: "&9Lapis Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nSmaragd&e!"]}, drops: {'0': {chance: 100, sell-value: 450, item: {material: LAPIS_LAZULI, display-name: "&9Lapis"}}, '1': {chance: 10, sell-value: 4050, item: {material: LAPIS_BLOCK, display-name: "&9Lapisblock"}}}}
+
+# --- SMARAGD (Tier 9) --- Rare: Smaragdblock
+tier9_1: {display-name: "&aSmaragd Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier9_2, upgrade-cost: 1500000}, item: {material: EMERALD_ORE, display-name: "&aSmaragd Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 800, item: {material: EMERALD, display-name: "&aSmaragd"}}, '1': {chance: 1, sell-value: 7200, item: {material: EMERALD_BLOCK, display-name: "&aSmaragdblock"}}}}
+tier9_2: {display-name: "&aSmaragd Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier9_3, upgrade-cost: 1600000}, item: {material: EMERALD_ORE, display-name: "&aSmaragd Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 800, item: {material: EMERALD, display-name: "&aSmaragd"}}, '1': {chance: 2, sell-value: 7200, item: {material: EMERALD_BLOCK, display-name: "&aSmaragdblock"}}}}
+tier9_3: {display-name: "&aSmaragd Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier9_4, upgrade-cost: 1700000}, item: {material: EMERALD_ORE, display-name: "&aSmaragd Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 800, item: {material: EMERALD, display-name: "&aSmaragd"}}, '1': {chance: 3, sell-value: 7200, item: {material: EMERALD_BLOCK, display-name: "&aSmaragdblock"}}}}
+tier9_4: {display-name: "&aSmaragd Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier9_5, upgrade-cost: 1800000}, item: {material: EMERALD_ORE, display-name: "&aSmaragd Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 800, item: {material: EMERALD, display-name: "&aSmaragd"}}, '1': {chance: 4, sell-value: 7200, item: {material: EMERALD_BLOCK, display-name: "&aSmaragdblock"}}}}
+tier9_5: {display-name: "&aSmaragd Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier9_6, upgrade-cost: 1900000}, item: {material: EMERALD_ORE, display-name: "&aSmaragd Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 800, item: {material: EMERALD, display-name: "&aSmaragd"}}, '1': {chance: 5, sell-value: 7200, item: {material: EMERALD_BLOCK, display-name: "&aSmaragdblock"}}}}
+tier9_6: {display-name: "&aSmaragd Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier9_7, upgrade-cost: 2000000}, item: {material: EMERALD_ORE, display-name: "&aSmaragd Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 800, item: {material: EMERALD, display-name: "&aSmaragd"}}, '1': {chance: 6, sell-value: 7200, item: {material: EMERALD_BLOCK, display-name: "&aSmaragdblock"}}}}
+tier9_7: {display-name: "&aSmaragd Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier9_8, upgrade-cost: 2100000}, item: {material: EMERALD_ORE, display-name: "&aSmaragd Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 800, item: {material: EMERALD, display-name: "&aSmaragd"}}, '1': {chance: 7, sell-value: 7200, item: {material: EMERALD_BLOCK, display-name: "&aSmaragdblock"}}}}
+tier9_8: {display-name: "&aSmaragd Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier9_9, upgrade-cost: 2200000}, item: {material: EMERALD_ORE, display-name: "&aSmaragd Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 800, item: {material: EMERALD, display-name: "&aSmaragd"}}, '1': {chance: 8, sell-value: 7200, item: {material: EMERALD_BLOCK, display-name: "&aSmaragdblock"}}}}
+tier9_9: {display-name: "&aSmaragd Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier9_10, upgrade-cost: 2300000}, item: {material: EMERALD_ORE, display-name: "&aSmaragd Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 800, item: {material: EMERALD, display-name: "&aSmaragd"}}, '1': {chance: 9, sell-value: 7200, item: {material: EMERALD_BLOCK, display-name: "&aSmaragdblock"}}}}
+tier9_10: {display-name: "&aSmaragd Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: EMERALD_BLOCK, display-name: "&aSmaragd Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nDiamant&e!"]}, drops: {'0': {chance: 100, sell-value: 800, item: {material: EMERALD, display-name: "&aSmaragd"}}, '1': {chance: 10, sell-value: 7200, item: {material: EMERALD_BLOCK, display-name: "&aSmaragdblock"}}}}
+
+# --- DIAMANT (Tier 10) --- Rare: Diamantblock
+tier10_1: {display-name: "&bDiamant Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier10_2, upgrade-cost: 3000000}, item: {material: DIAMOND_ORE, display-name: "&bDiamant Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 1500, item: {material: DIAMOND, display-name: "&bDiamant"}}, '1': {chance: 1, sell-value: 13500, item: {material: DIAMOND_BLOCK, display-name: "&bDiamantblock"}}}}
+tier10_2: {display-name: "&bDiamant Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier10_3, upgrade-cost: 3200000}, item: {material: DIAMOND_ORE, display-name: "&bDiamant Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 1500, item: {material: DIAMOND, display-name: "&bDiamant"}}, '1': {chance: 2, sell-value: 13500, item: {material: DIAMOND_BLOCK, display-name: "&bDiamantblock"}}}}
+tier10_3: {display-name: "&bDiamant Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier10_4, upgrade-cost: 3400000}, item: {material: DIAMOND_ORE, display-name: "&bDiamant Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 1500, item: {material: DIAMOND, display-name: "&bDiamant"}}, '1': {chance: 3, sell-value: 13500, item: {material: DIAMOND_BLOCK, display-name: "&bDiamantblock"}}}}
+tier10_4: {display-name: "&bDiamant Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier10_5, upgrade-cost: 3600000}, item: {material: DIAMOND_ORE, display-name: "&bDiamant Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 1500, item: {material: DIAMOND, display-name: "&bDiamant"}}, '1': {chance: 4, sell-value: 13500, item: {material: DIAMOND_BLOCK, display-name: "&bDiamantblock"}}}}
+tier10_5: {display-name: "&bDiamant Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier10_6, upgrade-cost: 3800000}, item: {material: DIAMOND_ORE, display-name: "&bDiamant Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 1500, item: {material: DIAMOND, display-name: "&bDiamant"}}, '1': {chance: 5, sell-value: 13500, item: {material: DIAMOND_BLOCK, display-name: "&bDiamantblock"}}}}
+tier10_6: {display-name: "&bDiamant Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier10_7, upgrade-cost: 4000000}, item: {material: DIAMOND_ORE, display-name: "&bDiamant Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 1500, item: {material: DIAMOND, display-name: "&bDiamant"}}, '1': {chance: 6, sell-value: 13500, item: {material: DIAMOND_BLOCK, display-name: "&bDiamantblock"}}}}
+tier10_7: {display-name: "&bDiamant Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier10_8, upgrade-cost: 4200000}, item: {material: DIAMOND_ORE, display-name: "&bDiamant Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 1500, item: {material: DIAMOND, display-name: "&bDiamant"}}, '1': {chance: 7, sell-value: 13500, item: {material: DIAMOND_BLOCK, display-name: "&bDiamantblock"}}}}
+tier10_8: {display-name: "&bDiamant Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier10_9, upgrade-cost: 4400000}, item: {material: DIAMOND_ORE, display-name: "&bDiamant Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 1500, item: {material: DIAMOND, display-name: "&bDiamant"}}, '1': {chance: 8, sell-value: 13500, item: {material: DIAMOND_BLOCK, display-name: "&bDiamantblock"}}}}
+tier10_9: {display-name: "&bDiamant Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier10_10, upgrade-cost: 4600000}, item: {material: DIAMOND_ORE, display-name: "&bDiamant Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 1500, item: {material: DIAMOND, display-name: "&bDiamant"}}, '1': {chance: 9, sell-value: 13500, item: {material: DIAMOND_BLOCK, display-name: "&bDiamantblock"}}}}
+tier10_10: {display-name: "&bDiamant Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: DIAMOND_BLOCK, display-name: "&bDiamant Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nObsidian&e!"]}, drops: {'0': {chance: 100, sell-value: 1500, item: {material: DIAMOND, display-name: "&bDiamant"}}, '1': {chance: 10, sell-value: 13500, item: {material: DIAMOND_BLOCK, display-name: "&bDiamantblock"}}}}
+
+# --- OBSIDIAN (Tier 11) --- Rare: Weinender Obsidian
+tier11_1: {display-name: "&5Obsidian Generator &7(Lvl 1)", interval: 5, upgrade: {next-generator: tier11_2, upgrade-cost: 7000000}, item: {material: OBSIDIAN, display-name: "&5Obsidian Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 2500, item: {material: OBSIDIAN, display-name: "&5Obsidian"}}, '1': {chance: 1, sell-value: 5000, item: {material: CRYING_OBSIDIAN, display-name: "&5Weinender Obsidian"}}}}
+tier11_2: {display-name: "&5Obsidian Generator &7(Lvl 2)", interval: 4.6, upgrade: {next-generator: tier11_3, upgrade-cost: 7500000}, item: {material: OBSIDIAN, display-name: "&5Obsidian Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 2500, item: {material: OBSIDIAN, display-name: "&5Obsidian"}}, '1': {chance: 2, sell-value: 5000, item: {material: CRYING_OBSIDIAN, display-name: "&5Weinender Obsidian"}}}}
+tier11_3: {display-name: "&5Obsidian Generator &7(Lvl 3)", interval: 4.2, upgrade: {next-generator: tier11_4, upgrade-cost: 8000000}, item: {material: OBSIDIAN, display-name: "&5Obsidian Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 2500, item: {material: OBSIDIAN, display-name: "&5Obsidian"}}, '1': {chance: 3, sell-value: 5000, item: {material: CRYING_OBSIDIAN, display-name: "&5Weinender Obsidian"}}}}
+tier11_4: {display-name: "&5Obsidian Generator &7(Lvl 4)", interval: 3.8, upgrade: {next-generator: tier11_5, upgrade-cost: 8500000}, item: {material: OBSIDIAN, display-name: "&5Obsidian Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 2500, item: {material: OBSIDIAN, display-name: "&5Obsidian"}}, '1': {chance: 4, sell-value: 5000, item: {material: CRYING_OBSIDIAN, display-name: "&5Weinender Obsidian"}}}}
+tier11_5: {display-name: "&5Obsidian Generator &e(Lvl 5)", interval: 3.4, upgrade: {next-generator: tier11_6, upgrade-cost: 9000000}, item: {material: OBSIDIAN, display-name: "&5Obsidian Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 2500, item: {material: OBSIDIAN, display-name: "&5Obsidian"}}, '1': {chance: 5, sell-value: 5000, item: {material: CRYING_OBSIDIAN, display-name: "&5Weinender Obsidian"}}}}
+tier11_6: {display-name: "&5Obsidian Generator &e(Lvl 6)", interval: 3.0, upgrade: {next-generator: tier11_7, upgrade-cost: 9500000}, item: {material: OBSIDIAN, display-name: "&5Obsidian Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 2500, item: {material: OBSIDIAN, display-name: "&5Obsidian"}}, '1': {chance: 6, sell-value: 5000, item: {material: CRYING_OBSIDIAN, display-name: "&5Weinender Obsidian"}}}}
+tier11_7: {display-name: "&5Obsidian Generator &e(Lvl 7)", interval: 2.6, upgrade: {next-generator: tier11_8, upgrade-cost: 10000000}, item: {material: OBSIDIAN, display-name: "&5Obsidian Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 2500, item: {material: OBSIDIAN, display-name: "&5Obsidian"}}, '1': {chance: 7, sell-value: 5000, item: {material: CRYING_OBSIDIAN, display-name: "&5Weinender Obsidian"}}}}
+tier11_8: {display-name: "&5Obsidian Generator &e(Lvl 8)", interval: 2.2, upgrade: {next-generator: tier11_9, upgrade-cost: 10500000}, item: {material: OBSIDIAN, display-name: "&5Obsidian Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 2500, item: {material: OBSIDIAN, display-name: "&5Obsidian"}}, '1': {chance: 8, sell-value: 5000, item: {material: CRYING_OBSIDIAN, display-name: "&5Weinender Obsidian"}}}}
+tier11_9: {display-name: "&5Obsidian Generator &6(Lvl 9)", interval: 1.8, upgrade: {next-generator: tier11_10, upgrade-cost: 11000000}, item: {material: OBSIDIAN, display-name: "&5Obsidian Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 2500, item: {material: OBSIDIAN, display-name: "&5Obsidian"}}, '1': {chance: 9, sell-value: 5000, item: {material: CRYING_OBSIDIAN, display-name: "&5Weinender Obsidian"}}}}
+tier11_10: {display-name: "&5Obsidian Generator &b(MAX)", interval: 1.4, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: CRYING_OBSIDIAN, display-name: "&5Obsidian Generator &b(MAX)", lore: ["&7Rate: &a1.4s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nNetherite&e!"]}, drops: {'0': {chance: 100, sell-value: 2500, item: {material: OBSIDIAN, display-name: "&5Obsidian"}}, '1': {chance: 10, sell-value: 5000, item: {material: CRYING_OBSIDIAN, display-name: "&5Weinender Obsidian"}}}}
+
+# --- NETHERITE (Tier 12) --- Rare: Netherite Barren
+tier12_1: {display-name: "&4Netherite Generator &7(Lvl 1)", interval: 6, upgrade: {next-generator: tier12_2, upgrade-cost: 15000000}, item: {material: ANCIENT_DEBRIS, display-name: "&4Netherite Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 5000, item: {material: NETHERITE_SCRAP, display-name: "&4Netherite"}}, '1': {chance: 1, sell-value: 20000, item: {material: NETHERITE_INGOT, display-name: "&4Netheritebarren"}}}}
+tier12_2: {display-name: "&4Netherite Generator &7(Lvl 2)", interval: 5.6, upgrade: {next-generator: tier12_3, upgrade-cost: 16000000}, item: {material: ANCIENT_DEBRIS, display-name: "&4Netherite Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 5000, item: {material: NETHERITE_SCRAP, display-name: "&4Netherite"}}, '1': {chance: 2, sell-value: 20000, item: {material: NETHERITE_INGOT, display-name: "&4Netheritebarren"}}}}
+tier12_3: {display-name: "&4Netherite Generator &7(Lvl 3)", interval: 5.2, upgrade: {next-generator: tier12_4, upgrade-cost: 17000000}, item: {material: ANCIENT_DEBRIS, display-name: "&4Netherite Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 5000, item: {material: NETHERITE_SCRAP, display-name: "&4Netherite"}}, '1': {chance: 3, sell-value: 20000, item: {material: NETHERITE_INGOT, display-name: "&4Netheritebarren"}}}}
+tier12_4: {display-name: "&4Netherite Generator &7(Lvl 4)", interval: 4.8, upgrade: {next-generator: tier12_5, upgrade-cost: 18000000}, item: {material: ANCIENT_DEBRIS, display-name: "&4Netherite Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 5000, item: {material: NETHERITE_SCRAP, display-name: "&4Netherite"}}, '1': {chance: 4, sell-value: 20000, item: {material: NETHERITE_INGOT, display-name: "&4Netheritebarren"}}}}
+tier12_5: {display-name: "&4Netherite Generator &e(Lvl 5)", interval: 4.4, upgrade: {next-generator: tier12_6, upgrade-cost: 19000000}, item: {material: ANCIENT_DEBRIS, display-name: "&4Netherite Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 5000, item: {material: NETHERITE_SCRAP, display-name: "&4Netherite"}}, '1': {chance: 5, sell-value: 20000, item: {material: NETHERITE_INGOT, display-name: "&4Netheritebarren"}}}}
+tier12_6: {display-name: "&4Netherite Generator &e(Lvl 6)", interval: 4.0, upgrade: {next-generator: tier12_7, upgrade-cost: 20000000}, item: {material: ANCIENT_DEBRIS, display-name: "&4Netherite Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 5000, item: {material: NETHERITE_SCRAP, display-name: "&4Netherite"}}, '1': {chance: 6, sell-value: 20000, item: {material: NETHERITE_INGOT, display-name: "&4Netheritebarren"}}}}
+tier12_7: {display-name: "&4Netherite Generator &e(Lvl 7)", interval: 3.6, upgrade: {next-generator: tier12_8, upgrade-cost: 21000000}, item: {material: ANCIENT_DEBRIS, display-name: "&4Netherite Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 5000, item: {material: NETHERITE_SCRAP, display-name: "&4Netherite"}}, '1': {chance: 7, sell-value: 20000, item: {material: NETHERITE_INGOT, display-name: "&4Netheritebarren"}}}}
+tier12_8: {display-name: "&4Netherite Generator &e(Lvl 8)", interval: 3.2, upgrade: {next-generator: tier12_9, upgrade-cost: 22000000}, item: {material: ANCIENT_DEBRIS, display-name: "&4Netherite Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 5000, item: {material: NETHERITE_SCRAP, display-name: "&4Netherite"}}, '1': {chance: 8, sell-value: 20000, item: {material: NETHERITE_INGOT, display-name: "&4Netheritebarren"}}}}
+tier12_9: {display-name: "&4Netherite Generator &6(Lvl 9)", interval: 2.8, upgrade: {next-generator: tier12_10, upgrade-cost: 23000000}, item: {material: ANCIENT_DEBRIS, display-name: "&4Netherite Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 5000, item: {material: NETHERITE_SCRAP, display-name: "&4Netherite"}}, '1': {chance: 9, sell-value: 20000, item: {material: NETHERITE_INGOT, display-name: "&4Netheritebarren"}}}}
+tier12_10: {display-name: "&4Netherite Generator &b(MAX)", interval: 2.4, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: NETHERITE_BLOCK, display-name: "&4Netherite Generator &b(MAX)", lore: ["&7Rate: &a2.4s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nTuff&e!"]}, drops: {'0': {chance: 100, sell-value: 5000, item: {material: NETHERITE_SCRAP, display-name: "&4Netherite"}}, '1': {chance: 10, sell-value: 20000, item: {material: NETHERITE_INGOT, display-name: "&4Netheritebarren"}}}}
+
+# --- TUFF (Tier 13) --- Rare: Polierter Tuff
+tier13_1: {display-name: "&7Tuff Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier13_2, upgrade-cost: 30000000}, item: {material: TUFF, display-name: "&7Tuff Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 8000, item: {material: TUFF, display-name: "&7Tuff"}}, '1': {chance: 1, sell-value: 16000, item: {material: POLISHED_TUFF, display-name: "&7Polierter Tuff"}}}}
+tier13_2: {display-name: "&7Tuff Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier13_3, upgrade-cost: 32000000}, item: {material: TUFF, display-name: "&7Tuff Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 8000, item: {material: TUFF, display-name: "&7Tuff"}}, '1': {chance: 2, sell-value: 16000, item: {material: POLISHED_TUFF, display-name: "&7Polierter Tuff"}}}}
+tier13_3: {display-name: "&7Tuff Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier13_4, upgrade-cost: 34000000}, item: {material: TUFF, display-name: "&7Tuff Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 8000, item: {material: TUFF, display-name: "&7Tuff"}}, '1': {chance: 3, sell-value: 16000, item: {material: POLISHED_TUFF, display-name: "&7Polierter Tuff"}}}}
+tier13_4: {display-name: "&7Tuff Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier13_5, upgrade-cost: 36000000}, item: {material: TUFF, display-name: "&7Tuff Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 8000, item: {material: TUFF, display-name: "&7Tuff"}}, '1': {chance: 4, sell-value: 16000, item: {material: POLISHED_TUFF, display-name: "&7Polierter Tuff"}}}}
+tier13_5: {display-name: "&7Tuff Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier13_6, upgrade-cost: 38000000}, item: {material: TUFF, display-name: "&7Tuff Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 8000, item: {material: TUFF, display-name: "&7Tuff"}}, '1': {chance: 5, sell-value: 16000, item: {material: POLISHED_TUFF, display-name: "&7Polierter Tuff"}}}}
+tier13_6: {display-name: "&7Tuff Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier13_7, upgrade-cost: 40000000}, item: {material: TUFF, display-name: "&7Tuff Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 8000, item: {material: TUFF, display-name: "&7Tuff"}}, '1': {chance: 6, sell-value: 16000, item: {material: POLISHED_TUFF, display-name: "&7Polierter Tuff"}}}}
+tier13_7: {display-name: "&7Tuff Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier13_8, upgrade-cost: 42000000}, item: {material: TUFF, display-name: "&7Tuff Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 8000, item: {material: TUFF, display-name: "&7Tuff"}}, '1': {chance: 7, sell-value: 16000, item: {material: POLISHED_TUFF, display-name: "&7Polierter Tuff"}}}}
+tier13_8: {display-name: "&7Tuff Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier13_9, upgrade-cost: 44000000}, item: {material: TUFF, display-name: "&7Tuff Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 8000, item: {material: TUFF, display-name: "&7Tuff"}}, '1': {chance: 8, sell-value: 16000, item: {material: POLISHED_TUFF, display-name: "&7Polierter Tuff"}}}}
+tier13_9: {display-name: "&7Tuff Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier13_10, upgrade-cost: 46000000}, item: {material: TUFF, display-name: "&7Tuff Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 8000, item: {material: TUFF, display-name: "&7Tuff"}}, '1': {chance: 9, sell-value: 16000, item: {material: POLISHED_TUFF, display-name: "&7Polierter Tuff"}}}}
+tier13_10: {display-name: "&7Tuff Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: TUFF, display-name: "&7Tuff Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nCalcit&e!"]}, drops: {'0': {chance: 100, sell-value: 8000, item: {material: TUFF, display-name: "&7Tuff"}}, '1': {chance: 10, sell-value: 16000, item: {material: POLISHED_TUFF, display-name: "&7Polierter Tuff"}}}}
+
+# --- CALCIT (Tier 14) --- Rare: Amethystscherbe
+tier14_1: {display-name: "&fCalcit Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier14_2, upgrade-cost: 60000000}, item: {material: CALCITE, display-name: "&fCalcit Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 12000, item: {material: CALCITE, display-name: "&fCalcit"}}, '1': {chance: 1, sell-value: 20000, item: {material: AMETHYST_SHARD, display-name: "&dAmethystscherbe"}}}}
+tier14_2: {display-name: "&fCalcit Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier14_3, upgrade-cost: 65000000}, item: {material: CALCITE, display-name: "&fCalcit Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 12000, item: {material: CALCITE, display-name: "&fCalcit"}}, '1': {chance: 2, sell-value: 20000, item: {material: AMETHYST_SHARD, display-name: "&dAmethystscherbe"}}}}
+tier14_3: {display-name: "&fCalcit Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier14_4, upgrade-cost: 70000000}, item: {material: CALCITE, display-name: "&fCalcit Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 12000, item: {material: CALCITE, display-name: "&fCalcit"}}, '1': {chance: 3, sell-value: 20000, item: {material: AMETHYST_SHARD, display-name: "&dAmethystscherbe"}}}}
+tier14_4: {display-name: "&fCalcit Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier14_5, upgrade-cost: 75000000}, item: {material: CALCITE, display-name: "&fCalcit Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 12000, item: {material: CALCITE, display-name: "&fCalcit"}}, '1': {chance: 4, sell-value: 20000, item: {material: AMETHYST_SHARD, display-name: "&dAmethystscherbe"}}}}
+tier14_5: {display-name: "&fCalcit Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier14_6, upgrade-cost: 80000000}, item: {material: CALCITE, display-name: "&fCalcit Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 12000, item: {material: CALCITE, display-name: "&fCalcit"}}, '1': {chance: 5, sell-value: 20000, item: {material: AMETHYST_SHARD, display-name: "&dAmethystscherbe"}}}}
+tier14_6: {display-name: "&fCalcit Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier14_7, upgrade-cost: 85000000}, item: {material: CALCITE, display-name: "&fCalcit Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 12000, item: {material: CALCITE, display-name: "&fCalcit"}}, '1': {chance: 6, sell-value: 20000, item: {material: AMETHYST_SHARD, display-name: "&dAmethystscherbe"}}}}
+tier14_7: {display-name: "&fCalcit Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier14_8, upgrade-cost: 90000000}, item: {material: CALCITE, display-name: "&fCalcit Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 12000, item: {material: CALCITE, display-name: "&fCalcit"}}, '1': {chance: 7, sell-value: 20000, item: {material: AMETHYST_SHARD, display-name: "&dAmethystscherbe"}}}}
+tier14_8: {display-name: "&fCalcit Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier14_9, upgrade-cost: 95000000}, item: {material: CALCITE, display-name: "&fCalcit Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 12000, item: {material: CALCITE, display-name: "&fCalcit"}}, '1': {chance: 8, sell-value: 20000, item: {material: AMETHYST_SHARD, display-name: "&dAmethystscherbe"}}}}
+tier14_9: {display-name: "&fCalcit Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier14_10, upgrade-cost: 100000000}, item: {material: CALCITE, display-name: "&fCalcit Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 12000, item: {material: CALCITE, display-name: "&fCalcit"}}, '1': {chance: 9, sell-value: 20000, item: {material: AMETHYST_SHARD, display-name: "&dAmethystscherbe"}}}}
+tier14_10: {display-name: "&fCalcit Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: CALCITE, display-name: "&fCalcit Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nDiorit&e!"]}, drops: {'0': {chance: 100, sell-value: 12000, item: {material: CALCITE, display-name: "&fCalcit"}}, '1': {chance: 10, sell-value: 20000, item: {material: AMETHYST_SHARD, display-name: "&dAmethystscherbe"}}}}
+
+# --- DIORIT (Tier 15) --- Rare: Polierter Diorit
+tier15_1: {display-name: "&fDiorit Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier15_2, upgrade-cost: 120000000}, item: {material: DIORITE, display-name: "&fDiorit Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 18000, item: {material: DIORITE, display-name: "&fDiorit"}}, '1': {chance: 1, sell-value: 36000, item: {material: POLISHED_DIORITE, display-name: "&fPolierter Diorit"}}}}
+tier15_2: {display-name: "&fDiorit Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier15_3, upgrade-cost: 130000000}, item: {material: DIORITE, display-name: "&fDiorit Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 18000, item: {material: DIORITE, display-name: "&fDiorit"}}, '1': {chance: 2, sell-value: 36000, item: {material: POLISHED_DIORITE, display-name: "&fPolierter Diorit"}}}}
+tier15_3: {display-name: "&fDiorit Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier15_4, upgrade-cost: 140000000}, item: {material: DIORITE, display-name: "&fDiorit Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 18000, item: {material: DIORITE, display-name: "&fDiorit"}}, '1': {chance: 3, sell-value: 36000, item: {material: POLISHED_DIORITE, display-name: "&fPolierter Diorit"}}}}
+tier15_4: {display-name: "&fDiorit Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier15_5, upgrade-cost: 150000000}, item: {material: DIORITE, display-name: "&fDiorit Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 18000, item: {material: DIORITE, display-name: "&fDiorit"}}, '1': {chance: 4, sell-value: 36000, item: {material: POLISHED_DIORITE, display-name: "&fPolierter Diorit"}}}}
+tier15_5: {display-name: "&fDiorit Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier15_6, upgrade-cost: 160000000}, item: {material: DIORITE, display-name: "&fDiorit Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 18000, item: {material: DIORITE, display-name: "&fDiorit"}}, '1': {chance: 5, sell-value: 36000, item: {material: POLISHED_DIORITE, display-name: "&fPolierter Diorit"}}}}
+tier15_6: {display-name: "&fDiorit Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier15_7, upgrade-cost: 170000000}, item: {material: DIORITE, display-name: "&fDiorit Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 18000, item: {material: DIORITE, display-name: "&fDiorit"}}, '1': {chance: 6, sell-value: 36000, item: {material: POLISHED_DIORITE, display-name: "&fPolierter Diorit"}}}}
+tier15_7: {display-name: "&fDiorit Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier15_8, upgrade-cost: 180000000}, item: {material: DIORITE, display-name: "&fDiorit Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 18000, item: {material: DIORITE, display-name: "&fDiorit"}}, '1': {chance: 7, sell-value: 36000, item: {material: POLISHED_DIORITE, display-name: "&fPolierter Diorit"}}}}
+tier15_8: {display-name: "&fDiorit Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier15_9, upgrade-cost: 190000000}, item: {material: DIORITE, display-name: "&fDiorit Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 18000, item: {material: DIORITE, display-name: "&fDiorit"}}, '1': {chance: 8, sell-value: 36000, item: {material: POLISHED_DIORITE, display-name: "&fPolierter Diorit"}}}}
+tier15_9: {display-name: "&fDiorit Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier15_10, upgrade-cost: 200000000}, item: {material: DIORITE, display-name: "&fDiorit Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 18000, item: {material: DIORITE, display-name: "&fDiorit"}}, '1': {chance: 9, sell-value: 36000, item: {material: POLISHED_DIORITE, display-name: "&fPolierter Diorit"}}}}
+tier15_10: {display-name: "&fDiorit Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: DIORITE, display-name: "&fDiorit Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nAndesit&e!"]}, drops: {'0': {chance: 100, sell-value: 18000, item: {material: DIORITE, display-name: "&fDiorit"}}, '1': {chance: 10, sell-value: 36000, item: {material: POLISHED_DIORITE, display-name: "&fPolierter Diorit"}}}}
+
+# --- ANDESIT (Tier 16) --- Rare: Polierter Andesit
+tier16_1: {display-name: "&7Andesit Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier16_2, upgrade-cost: 250000000}, item: {material: ANDESITE, display-name: "&7Andesit Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 25000, item: {material: ANDESITE, display-name: "&7Andesit"}}, '1': {chance: 1, sell-value: 50000, item: {material: POLISHED_ANDESITE, display-name: "&7Polierter Andesit"}}}}
+tier16_2: {display-name: "&7Andesit Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier16_3, upgrade-cost: 270000000}, item: {material: ANDESITE, display-name: "&7Andesit Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 25000, item: {material: ANDESITE, display-name: "&7Andesit"}}, '1': {chance: 2, sell-value: 50000, item: {material: POLISHED_ANDESITE, display-name: "&7Polierter Andesit"}}}}
+tier16_3: {display-name: "&7Andesit Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier16_4, upgrade-cost: 290000000}, item: {material: ANDESITE, display-name: "&7Andesit Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 25000, item: {material: ANDESITE, display-name: "&7Andesit"}}, '1': {chance: 3, sell-value: 50000, item: {material: POLISHED_ANDESITE, display-name: "&7Polierter Andesit"}}}}
+tier16_4: {display-name: "&7Andesit Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier16_5, upgrade-cost: 310000000}, item: {material: ANDESITE, display-name: "&7Andesit Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 25000, item: {material: ANDESITE, display-name: "&7Andesit"}}, '1': {chance: 4, sell-value: 50000, item: {material: POLISHED_ANDESITE, display-name: "&7Polierter Andesit"}}}}
+tier16_5: {display-name: "&7Andesit Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier16_6, upgrade-cost: 330000000}, item: {material: ANDESITE, display-name: "&7Andesit Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 25000, item: {material: ANDESITE, display-name: "&7Andesit"}}, '1': {chance: 5, sell-value: 50000, item: {material: POLISHED_ANDESITE, display-name: "&7Polierter Andesit"}}}}
+tier16_6: {display-name: "&7Andesit Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier16_7, upgrade-cost: 350000000}, item: {material: ANDESITE, display-name: "&7Andesit Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 25000, item: {material: ANDESITE, display-name: "&7Andesit"}}, '1': {chance: 6, sell-value: 50000, item: {material: POLISHED_ANDESITE, display-name: "&7Polierter Andesit"}}}}
+tier16_7: {display-name: "&7Andesit Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier16_8, upgrade-cost: 370000000}, item: {material: ANDESITE, display-name: "&7Andesit Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 25000, item: {material: ANDESITE, display-name: "&7Andesit"}}, '1': {chance: 7, sell-value: 50000, item: {material: POLISHED_ANDESITE, display-name: "&7Polierter Andesit"}}}}
+tier16_8: {display-name: "&7Andesit Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier16_9, upgrade-cost: 390000000}, item: {material: ANDESITE, display-name: "&7Andesit Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 25000, item: {material: ANDESITE, display-name: "&7Andesit"}}, '1': {chance: 8, sell-value: 50000, item: {material: POLISHED_ANDESITE, display-name: "&7Polierter Andesit"}}}}
+tier16_9: {display-name: "&7Andesit Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier16_10, upgrade-cost: 410000000}, item: {material: ANDESITE, display-name: "&7Andesit Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 25000, item: {material: ANDESITE, display-name: "&7Andesit"}}, '1': {chance: 9, sell-value: 50000, item: {material: POLISHED_ANDESITE, display-name: "&7Polierter Andesit"}}}}
+tier16_10: {display-name: "&7Andesit Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: ANDESITE, display-name: "&7Andesit Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nGranit&e!"]}, drops: {'0': {chance: 100, sell-value: 25000, item: {material: ANDESITE, display-name: "&7Andesit"}}, '1': {chance: 10, sell-value: 50000, item: {material: POLISHED_ANDESITE, display-name: "&7Polierter Andesit"}}}}
+
+# --- GRANIT (Tier 17) --- Rare: Polierter Granit
+tier17_1: {display-name: "&cGranit Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier17_2, upgrade-cost: 500000000}, item: {material: GRANITE, display-name: "&cGranit Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 40000, item: {material: GRANITE, display-name: "&cGranit"}}, '1': {chance: 1, sell-value: 80000, item: {material: POLISHED_GRANITE, display-name: "&cPolierter Granit"}}}}
+tier17_2: {display-name: "&cGranit Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier17_3, upgrade-cost: 550000000}, item: {material: GRANITE, display-name: "&cGranit Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 40000, item: {material: GRANITE, display-name: "&cGranit"}}, '1': {chance: 2, sell-value: 80000, item: {material: POLISHED_GRANITE, display-name: "&cPolierter Granit"}}}}
+tier17_3: {display-name: "&cGranit Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier17_4, upgrade-cost: 600000000}, item: {material: GRANITE, display-name: "&cGranit Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 40000, item: {material: GRANITE, display-name: "&cGranit"}}, '1': {chance: 3, sell-value: 80000, item: {material: POLISHED_GRANITE, display-name: "&cPolierter Granit"}}}}
+tier17_4: {display-name: "&cGranit Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier17_5, upgrade-cost: 650000000}, item: {material: GRANITE, display-name: "&cGranit Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 40000, item: {material: GRANITE, display-name: "&cGranit"}}, '1': {chance: 4, sell-value: 80000, item: {material: POLISHED_GRANITE, display-name: "&cPolierter Granit"}}}}
+tier17_5: {display-name: "&cGranit Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier17_6, upgrade-cost: 700000000}, item: {material: GRANITE, display-name: "&cGranit Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 40000, item: {material: GRANITE, display-name: "&cGranit"}}, '1': {chance: 5, sell-value: 80000, item: {material: POLISHED_GRANITE, display-name: "&cPolierter Granit"}}}}
+tier17_6: {display-name: "&cGranit Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier17_7, upgrade-cost: 750000000}, item: {material: GRANITE, display-name: "&cGranit Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 40000, item: {material: GRANITE, display-name: "&cGranit"}}, '1': {chance: 6, sell-value: 80000, item: {material: POLISHED_GRANITE, display-name: "&cPolierter Granit"}}}}
+tier17_7: {display-name: "&cGranit Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier17_8, upgrade-cost: 800000000}, item: {material: GRANITE, display-name: "&cGranit Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 40000, item: {material: GRANITE, display-name: "&cGranit"}}, '1': {chance: 7, sell-value: 80000, item: {material: POLISHED_GRANITE, display-name: "&cPolierter Granit"}}}}
+tier17_8: {display-name: "&cGranit Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier17_9, upgrade-cost: 850000000}, item: {material: GRANITE, display-name: "&cGranit Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 40000, item: {material: GRANITE, display-name: "&cGranit"}}, '1': {chance: 8, sell-value: 80000, item: {material: POLISHED_GRANITE, display-name: "&cPolierter Granit"}}}}
+tier17_9: {display-name: "&cGranit Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier17_10, upgrade-cost: 900000000}, item: {material: GRANITE, display-name: "&cGranit Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 40000, item: {material: GRANITE, display-name: "&cGranit"}}, '1': {chance: 9, sell-value: 80000, item: {material: POLISHED_GRANITE, display-name: "&cPolierter Granit"}}}}
+tier17_10: {display-name: "&cGranit Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: GRANITE, display-name: "&cGranit Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nBasalt&e!"]}, drops: {'0': {chance: 100, sell-value: 40000, item: {material: GRANITE, display-name: "&cGranit"}}, '1': {chance: 10, sell-value: 80000, item: {material: POLISHED_GRANITE, display-name: "&cPolierter Granit"}}}}
+
+# --- BASALT (Tier 18) --- Rare: Polierter Basalt
+tier18_1: {display-name: "&8Basalt Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier18_2, upgrade-cost: 1000000000}, item: {material: BASALT, display-name: "&8Basalt Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 60000, item: {material: BASALT, display-name: "&8Basalt"}}, '1': {chance: 1, sell-value: 120000, item: {material: POLISHED_BASALT, display-name: "&8Polierter Basalt"}}}}
+tier18_2: {display-name: "&8Basalt Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier18_3, upgrade-cost: 1100000000}, item: {material: BASALT, display-name: "&8Basalt Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 60000, item: {material: BASALT, display-name: "&8Basalt"}}, '1': {chance: 2, sell-value: 120000, item: {material: POLISHED_BASALT, display-name: "&8Polierter Basalt"}}}}
+tier18_3: {display-name: "&8Basalt Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier18_4, upgrade-cost: 1200000000}, item: {material: BASALT, display-name: "&8Basalt Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 60000, item: {material: BASALT, display-name: "&8Basalt"}}, '1': {chance: 3, sell-value: 120000, item: {material: POLISHED_BASALT, display-name: "&8Polierter Basalt"}}}}
+tier18_4: {display-name: "&8Basalt Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier18_5, upgrade-cost: 1300000000}, item: {material: BASALT, display-name: "&8Basalt Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 60000, item: {material: BASALT, display-name: "&8Basalt"}}, '1': {chance: 4, sell-value: 120000, item: {material: POLISHED_BASALT, display-name: "&8Polierter Basalt"}}}}
+tier18_5: {display-name: "&8Basalt Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier18_6, upgrade-cost: 1400000000}, item: {material: BASALT, display-name: "&8Basalt Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 60000, item: {material: BASALT, display-name: "&8Basalt"}}, '1': {chance: 5, sell-value: 120000, item: {material: POLISHED_BASALT, display-name: "&8Polierter Basalt"}}}}
+tier18_6: {display-name: "&8Basalt Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier18_7, upgrade-cost: 1500000000}, item: {material: BASALT, display-name: "&8Basalt Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 60000, item: {material: BASALT, display-name: "&8Basalt"}}, '1': {chance: 6, sell-value: 120000, item: {material: POLISHED_BASALT, display-name: "&8Polierter Basalt"}}}}
+tier18_7: {display-name: "&8Basalt Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier18_8, upgrade-cost: 1600000000}, item: {material: BASALT, display-name: "&8Basalt Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 60000, item: {material: BASALT, display-name: "&8Basalt"}}, '1': {chance: 7, sell-value: 120000, item: {material: POLISHED_BASALT, display-name: "&8Polierter Basalt"}}}}
+tier18_8: {display-name: "&8Basalt Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier18_9, upgrade-cost: 1700000000}, item: {material: BASALT, display-name: "&8Basalt Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 60000, item: {material: BASALT, display-name: "&8Basalt"}}, '1': {chance: 8, sell-value: 120000, item: {material: POLISHED_BASALT, display-name: "&8Polierter Basalt"}}}}
+tier18_9: {display-name: "&8Basalt Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier18_10, upgrade-cost: 1800000000}, item: {material: BASALT, display-name: "&8Basalt Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 60000, item: {material: BASALT, display-name: "&8Basalt"}}, '1': {chance: 9, sell-value: 120000, item: {material: POLISHED_BASALT, display-name: "&8Polierter Basalt"}}}}
+tier18_10: {display-name: "&8Basalt Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: BASALT, display-name: "&8Basalt Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nSchwarzstein&e!"]}, drops: {'0': {chance: 100, sell-value: 60000, item: {material: BASALT, display-name: "&8Basalt"}}, '1': {chance: 10, sell-value: 120000, item: {material: POLISHED_BASALT, display-name: "&8Polierter Basalt"}}}}
+
+# --- SCHWARZSTEIN (Tier 19) --- Rare: Polierter Schwarzstein
+tier19_1: {display-name: "&0Schwarzstein Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier19_2, upgrade-cost: 2000000000}, item: {material: BLACKSTONE, display-name: "&0Schwarzstein Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 100000, item: {material: BLACKSTONE, display-name: "&0Schwarzstein"}}, '1': {chance: 1, sell-value: 200000, item: {material: POLISHED_BLACKSTONE, display-name: "&0Polierter Schwarzstein"}}}}
+tier19_2: {display-name: "&0Schwarzstein Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier19_3, upgrade-cost: 2200000000}, item: {material: BLACKSTONE, display-name: "&0Schwarzstein Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 100000, item: {material: BLACKSTONE, display-name: "&0Schwarzstein"}}, '1': {chance: 2, sell-value: 200000, item: {material: POLISHED_BLACKSTONE, display-name: "&0Polierter Schwarzstein"}}}}
+tier19_3: {display-name: "&0Schwarzstein Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier19_4, upgrade-cost: 2400000000}, item: {material: BLACKSTONE, display-name: "&0Schwarzstein Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 100000, item: {material: BLACKSTONE, display-name: "&0Schwarzstein"}}, '1': {chance: 3, sell-value: 200000, item: {material: POLISHED_BLACKSTONE, display-name: "&0Polierter Schwarzstein"}}}}
+tier19_4: {display-name: "&0Schwarzstein Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier19_5, upgrade-cost: 2600000000}, item: {material: BLACKSTONE, display-name: "&0Schwarzstein Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 100000, item: {material: BLACKSTONE, display-name: "&0Schwarzstein"}}, '1': {chance: 4, sell-value: 200000, item: {material: POLISHED_BLACKSTONE, display-name: "&0Polierter Schwarzstein"}}}}
+tier19_5: {display-name: "&0Schwarzstein Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier19_6, upgrade-cost: 2800000000}, item: {material: BLACKSTONE, display-name: "&0Schwarzstein Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 100000, item: {material: BLACKSTONE, display-name: "&0Schwarzstein"}}, '1': {chance: 5, sell-value: 200000, item: {material: POLISHED_BLACKSTONE, display-name: "&0Polierter Schwarzstein"}}}}
+tier19_6: {display-name: "&0Schwarzstein Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier19_7, upgrade-cost: 3000000000}, item: {material: BLACKSTONE, display-name: "&0Schwarzstein Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 100000, item: {material: BLACKSTONE, display-name: "&0Schwarzstein"}}, '1': {chance: 6, sell-value: 200000, item: {material: POLISHED_BLACKSTONE, display-name: "&0Polierter Schwarzstein"}}}}
+tier19_7: {display-name: "&0Schwarzstein Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier19_8, upgrade-cost: 3200000000}, item: {material: BLACKSTONE, display-name: "&0Schwarzstein Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 100000, item: {material: BLACKSTONE, display-name: "&0Schwarzstein"}}, '1': {chance: 7, sell-value: 200000, item: {material: POLISHED_BLACKSTONE, display-name: "&0Polierter Schwarzstein"}}}}
+tier19_8: {display-name: "&0Schwarzstein Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier19_9, upgrade-cost: 3400000000}, item: {material: BLACKSTONE, display-name: "&0Schwarzstein Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 100000, item: {material: BLACKSTONE, display-name: "&0Schwarzstein"}}, '1': {chance: 8, sell-value: 200000, item: {material: POLISHED_BLACKSTONE, display-name: "&0Polierter Schwarzstein"}}}}
+tier19_9: {display-name: "&0Schwarzstein Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier19_10, upgrade-cost: 3600000000}, item: {material: BLACKSTONE, display-name: "&0Schwarzstein Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 100000, item: {material: BLACKSTONE, display-name: "&0Schwarzstein"}}, '1': {chance: 9, sell-value: 200000, item: {material: POLISHED_BLACKSTONE, display-name: "&0Polierter Schwarzstein"}}}}
+tier19_10: {display-name: "&0Schwarzstein Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: BLACKSTONE, display-name: "&0Schwarzstein Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nPurpur&e!"]}, drops: {'0': {chance: 100, sell-value: 100000, item: {material: BLACKSTONE, display-name: "&0Schwarzstein"}}, '1': {chance: 10, sell-value: 200000, item: {material: POLISHED_BLACKSTONE, display-name: "&0Polierter Schwarzstein"}}}}
+
+# --- PURPUR (Tier 20) --- Rare: Purpursäule
+tier20_1: {display-name: "&dPurpur Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier20_2, upgrade-cost: 4000000000}, item: {material: PURPUR_BLOCK, display-name: "&dPurpur Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 200000, item: {material: PURPUR_BLOCK, display-name: "&dPurpur"}}, '1': {chance: 1, sell-value: 400000, item: {material: PURPUR_PILLAR, display-name: "&dPurpursäule"}}}}
+tier20_2: {display-name: "&dPurpur Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier20_3, upgrade-cost: 4400000000}, item: {material: PURPUR_BLOCK, display-name: "&dPurpur Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 200000, item: {material: PURPUR_BLOCK, display-name: "&dPurpur"}}, '1': {chance: 2, sell-value: 400000, item: {material: PURPUR_PILLAR, display-name: "&dPurpursäule"}}}}
+tier20_3: {display-name: "&dPurpur Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier20_4, upgrade-cost: 4800000000}, item: {material: PURPUR_BLOCK, display-name: "&dPurpur Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 200000, item: {material: PURPUR_BLOCK, display-name: "&dPurpur"}}, '1': {chance: 3, sell-value: 400000, item: {material: PURPUR_PILLAR, display-name: "&dPurpursäule"}}}}
+tier20_4: {display-name: "&dPurpur Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier20_5, upgrade-cost: 5200000000}, item: {material: PURPUR_BLOCK, display-name: "&dPurpur Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 200000, item: {material: PURPUR_BLOCK, display-name: "&dPurpur"}}, '1': {chance: 4, sell-value: 400000, item: {material: PURPUR_PILLAR, display-name: "&dPurpursäule"}}}}
+tier20_5: {display-name: "&dPurpur Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier20_6, upgrade-cost: 5600000000}, item: {material: PURPUR_BLOCK, display-name: "&dPurpur Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 200000, item: {material: PURPUR_BLOCK, display-name: "&dPurpur"}}, '1': {chance: 5, sell-value: 400000, item: {material: PURPUR_PILLAR, display-name: "&dPurpursäule"}}}}
+tier20_6: {display-name: "&dPurpur Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier20_7, upgrade-cost: 6000000000}, item: {material: PURPUR_BLOCK, display-name: "&dPurpur Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 200000, item: {material: PURPUR_BLOCK, display-name: "&dPurpur"}}, '1': {chance: 6, sell-value: 400000, item: {material: PURPUR_PILLAR, display-name: "&dPurpursäule"}}}}
+tier20_7: {display-name: "&dPurpur Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier20_8, upgrade-cost: 6400000000}, item: {material: PURPUR_BLOCK, display-name: "&dPurpur Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 200000, item: {material: PURPUR_BLOCK, display-name: "&dPurpur"}}, '1': {chance: 7, sell-value: 400000, item: {material: PURPUR_PILLAR, display-name: "&dPurpursäule"}}}}
+tier20_8: {display-name: "&dPurpur Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier20_9, upgrade-cost: 6800000000}, item: {material: PURPUR_BLOCK, display-name: "&dPurpur Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 200000, item: {material: PURPUR_BLOCK, display-name: "&dPurpur"}}, '1': {chance: 8, sell-value: 400000, item: {material: PURPUR_PILLAR, display-name: "&dPurpursäule"}}}}
+tier20_9: {display-name: "&dPurpur Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier20_10, upgrade-cost: 7200000000}, item: {material: PURPUR_BLOCK, display-name: "&dPurpur Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 200000, item: {material: PURPUR_BLOCK, display-name: "&dPurpur"}}, '1': {chance: 9, sell-value: 400000, item: {material: PURPUR_PILLAR, display-name: "&dPurpursäule"}}}}
+tier20_10: {display-name: "&dPurpur Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: PURPUR_BLOCK, display-name: "&dPurpur Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nEndstein&e!"]}, drops: {'0': {chance: 100, sell-value: 200000, item: {material: PURPUR_BLOCK, display-name: "&dPurpur"}}, '1': {chance: 10, sell-value: 400000, item: {material: PURPUR_PILLAR, display-name: "&dPurpursäule"}}}}
+
+# --- ENDSTEIN (Tier 21) --- Rare: Endsteinziegel
+tier21_1: {display-name: "&eEndstein Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier21_2, upgrade-cost: 8000000000}, item: {material: END_STONE, display-name: "&eEndstein Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 400000, item: {material: END_STONE, display-name: "&eEndstein"}}, '1': {chance: 1, sell-value: 800000, item: {material: END_STONE_BRICKS, display-name: "&eEndsteinziegel"}}}}
+tier21_2: {display-name: "&eEndstein Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier21_3, upgrade-cost: 8800000000}, item: {material: END_STONE, display-name: "&eEndstein Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 400000, item: {material: END_STONE, display-name: "&eEndstein"}}, '1': {chance: 2, sell-value: 800000, item: {material: END_STONE_BRICKS, display-name: "&eEndsteinziegel"}}}}
+tier21_3: {display-name: "&eEndstein Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier21_4, upgrade-cost: 9600000000}, item: {material: END_STONE, display-name: "&eEndstein Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 400000, item: {material: END_STONE, display-name: "&eEndstein"}}, '1': {chance: 3, sell-value: 800000, item: {material: END_STONE_BRICKS, display-name: "&eEndsteinziegel"}}}}
+tier21_4: {display-name: "&eEndstein Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier21_5, upgrade-cost: 10400000000}, item: {material: END_STONE, display-name: "&eEndstein Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 400000, item: {material: END_STONE, display-name: "&eEndstein"}}, '1': {chance: 4, sell-value: 800000, item: {material: END_STONE_BRICKS, display-name: "&eEndsteinziegel"}}}}
+tier21_5: {display-name: "&eEndstein Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier21_6, upgrade-cost: 11200000000}, item: {material: END_STONE, display-name: "&eEndstein Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 400000, item: {material: END_STONE, display-name: "&eEndstein"}}, '1': {chance: 5, sell-value: 800000, item: {material: END_STONE_BRICKS, display-name: "&eEndsteinziegel"}}}}
+tier21_6: {display-name: "&eEndstein Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier21_7, upgrade-cost: 12000000000}, item: {material: END_STONE, display-name: "&eEndstein Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 400000, item: {material: END_STONE, display-name: "&eEndstein"}}, '1': {chance: 6, sell-value: 800000, item: {material: END_STONE_BRICKS, display-name: "&eEndsteinziegel"}}}}
+tier21_7: {display-name: "&eEndstein Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier21_8, upgrade-cost: 12800000000}, item: {material: END_STONE, display-name: "&eEndstein Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 400000, item: {material: END_STONE, display-name: "&eEndstein"}}, '1': {chance: 7, sell-value: 800000, item: {material: END_STONE_BRICKS, display-name: "&eEndsteinziegel"}}}}
+tier21_8: {display-name: "&eEndstein Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier21_9, upgrade-cost: 13600000000}, item: {material: END_STONE, display-name: "&eEndstein Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 400000, item: {material: END_STONE, display-name: "&eEndstein"}}, '1': {chance: 8, sell-value: 800000, item: {material: END_STONE_BRICKS, display-name: "&eEndsteinziegel"}}}}
+tier21_9: {display-name: "&eEndstein Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier21_10, upgrade-cost: 14400000000}, item: {material: END_STONE, display-name: "&eEndstein Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 400000, item: {material: END_STONE, display-name: "&eEndstein"}}, '1': {chance: 9, sell-value: 800000, item: {material: END_STONE_BRICKS, display-name: "&eEndsteinziegel"}}}}
+tier21_10: {display-name: "&eEndstein Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: END_STONE, display-name: "&eEndstein Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nPrismarin&e!"]}, drops: {'0': {chance: 100, sell-value: 400000, item: {material: END_STONE, display-name: "&eEndstein"}}, '1': {chance: 10, sell-value: 800000, item: {material: END_STONE_BRICKS, display-name: "&eEndsteinziegel"}}}}
+
+# --- PRISMARIN (Tier 22) --- Rare: Prismarinkristalle
+tier22_1: {display-name: "&bPrismarin Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier22_2, upgrade-cost: 16000000000}, item: {material: PRISMARINE, display-name: "&bPrismarin Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 800000, item: {material: PRISMARINE_SHARD, display-name: "&bPrismarin"}}, '1': {chance: 1, sell-value: 1600000, item: {material: PRISMARINE_CRYSTALS, display-name: "&bPrismarinkristalle"}}}}
+tier22_2: {display-name: "&bPrismarin Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier22_3, upgrade-cost: 17600000000}, item: {material: PRISMARINE, display-name: "&bPrismarin Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 800000, item: {material: PRISMARINE_SHARD, display-name: "&bPrismarin"}}, '1': {chance: 2, sell-value: 1600000, item: {material: PRISMARINE_CRYSTALS, display-name: "&bPrismarinkristalle"}}}}
+tier22_3: {display-name: "&bPrismarin Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier22_4, upgrade-cost: 19200000000}, item: {material: PRISMARINE, display-name: "&bPrismarin Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 800000, item: {material: PRISMARINE_SHARD, display-name: "&bPrismarin"}}, '1': {chance: 3, sell-value: 1600000, item: {material: PRISMARINE_CRYSTALS, display-name: "&bPrismarinkristalle"}}}}
+tier22_4: {display-name: "&bPrismarin Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier22_5, upgrade-cost: 20800000000}, item: {material: PRISMARINE, display-name: "&bPrismarin Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 800000, item: {material: PRISMARINE_SHARD, display-name: "&bPrismarin"}}, '1': {chance: 4, sell-value: 1600000, item: {material: PRISMARINE_CRYSTALS, display-name: "&bPrismarinkristalle"}}}}
+tier22_5: {display-name: "&bPrismarin Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier22_6, upgrade-cost: 22400000000}, item: {material: PRISMARINE, display-name: "&bPrismarin Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 800000, item: {material: PRISMARINE_SHARD, display-name: "&bPrismarin"}}, '1': {chance: 5, sell-value: 1600000, item: {material: PRISMARINE_CRYSTALS, display-name: "&bPrismarinkristalle"}}}}
+tier22_6: {display-name: "&bPrismarin Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier22_7, upgrade-cost: 24000000000}, item: {material: PRISMARINE, display-name: "&bPrismarin Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 800000, item: {material: PRISMARINE_SHARD, display-name: "&bPrismarin"}}, '1': {chance: 6, sell-value: 1600000, item: {material: PRISMARINE_CRYSTALS, display-name: "&bPrismarinkristalle"}}}}
+tier22_7: {display-name: "&bPrismarin Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier22_8, upgrade-cost: 25600000000}, item: {material: PRISMARINE, display-name: "&bPrismarin Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 800000, item: {material: PRISMARINE_SHARD, display-name: "&bPrismarin"}}, '1': {chance: 7, sell-value: 1600000, item: {material: PRISMARINE_CRYSTALS, display-name: "&bPrismarinkristalle"}}}}
+tier22_8: {display-name: "&bPrismarin Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier22_9, upgrade-cost: 27200000000}, item: {material: PRISMARINE, display-name: "&bPrismarin Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 800000, item: {material: PRISMARINE_SHARD, display-name: "&bPrismarin"}}, '1': {chance: 8, sell-value: 1600000, item: {material: PRISMARINE_CRYSTALS, display-name: "&bPrismarinkristalle"}}}}
+tier22_9: {display-name: "&bPrismarin Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier22_10, upgrade-cost: 28800000000}, item: {material: PRISMARINE, display-name: "&bPrismarin Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 800000, item: {material: PRISMARINE_SHARD, display-name: "&bPrismarin"}}, '1': {chance: 9, sell-value: 1600000, item: {material: PRISMARINE_CRYSTALS, display-name: "&bPrismarinkristalle"}}}}
+tier22_10: {display-name: "&bPrismarin Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: PRISMARINE, display-name: "&bPrismarin Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nSeelenerde&e!"]}, drops: {'0': {chance: 100, sell-value: 800000, item: {material: PRISMARINE_SHARD, display-name: "&bPrismarin"}}, '1': {chance: 10, sell-value: 1600000, item: {material: PRISMARINE_CRYSTALS, display-name: "&bPrismarinkristalle"}}}}
+
+# --- SEELENERDE (Tier 23) --- Rare: Seelenlaterne
+tier23_1: {display-name: "&8Seelenerde Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier23_2, upgrade-cost: 32000000000}, item: {material: SOUL_SOIL, display-name: "&8Seelenerde Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 1500000, item: {material: SOUL_SOIL, display-name: "&8Seelenerde"}}, '1': {chance: 1, sell-value: 3000000, item: {material: SOUL_LANTERN, display-name: "&bSeelenlaterne"}}}}
+tier23_2: {display-name: "&8Seelenerde Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier23_3, upgrade-cost: 35200000000}, item: {material: SOUL_SOIL, display-name: "&8Seelenerde Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 1500000, item: {material: SOUL_SOIL, display-name: "&8Seelenerde"}}, '1': {chance: 2, sell-value: 3000000, item: {material: SOUL_LANTERN, display-name: "&bSeelenlaterne"}}}}
+tier23_3: {display-name: "&8Seelenerde Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier23_4, upgrade-cost: 38400000000}, item: {material: SOUL_SOIL, display-name: "&8Seelenerde Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 1500000, item: {material: SOUL_SOIL, display-name: "&8Seelenerde"}}, '1': {chance: 3, sell-value: 3000000, item: {material: SOUL_LANTERN, display-name: "&bSeelenlaterne"}}}}
+tier23_4: {display-name: "&8Seelenerde Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier23_5, upgrade-cost: 41600000000}, item: {material: SOUL_SOIL, display-name: "&8Seelenerde Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 1500000, item: {material: SOUL_SOIL, display-name: "&8Seelenerde"}}, '1': {chance: 4, sell-value: 3000000, item: {material: SOUL_LANTERN, display-name: "&bSeelenlaterne"}}}}
+tier23_5: {display-name: "&8Seelenerde Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier23_6, upgrade-cost: 44800000000}, item: {material: SOUL_SOIL, display-name: "&8Seelenerde Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 1500000, item: {material: SOUL_SOIL, display-name: "&8Seelenerde"}}, '1': {chance: 5, sell-value: 3000000, item: {material: SOUL_LANTERN, display-name: "&bSeelenlaterne"}}}}
+tier23_6: {display-name: "&8Seelenerde Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier23_7, upgrade-cost: 48000000000}, item: {material: SOUL_SOIL, display-name: "&8Seelenerde Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 1500000, item: {material: SOUL_SOIL, display-name: "&8Seelenerde"}}, '1': {chance: 6, sell-value: 3000000, item: {material: SOUL_LANTERN, display-name: "&bSeelenlaterne"}}}}
+tier23_7: {display-name: "&8Seelenerde Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier23_8, upgrade-cost: 51200000000}, item: {material: SOUL_SOIL, display-name: "&8Seelenerde Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 1500000, item: {material: SOUL_SOIL, display-name: "&8Seelenerde"}}, '1': {chance: 7, sell-value: 3000000, item: {material: SOUL_LANTERN, display-name: "&bSeelenlaterne"}}}}
+tier23_8: {display-name: "&8Seelenerde Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier23_9, upgrade-cost: 54400000000}, item: {material: SOUL_SOIL, display-name: "&8Seelenerde Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 1500000, item: {material: SOUL_SOIL, display-name: "&8Seelenerde"}}, '1': {chance: 8, sell-value: 3000000, item: {material: SOUL_LANTERN, display-name: "&bSeelenlaterne"}}}}
+tier23_9: {display-name: "&8Seelenerde Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier23_10, upgrade-cost: 57600000000}, item: {material: SOUL_SOIL, display-name: "&8Seelenerde Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 1500000, item: {material: SOUL_SOIL, display-name: "&8Seelenerde"}}, '1': {chance: 9, sell-value: 3000000, item: {material: SOUL_LANTERN, display-name: "&bSeelenlaterne"}}}}
+tier23_10: {display-name: "&8Seelenerde Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: SOUL_SOIL, display-name: "&8Seelenerde Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nMagma&e!"]}, drops: {'0': {chance: 100, sell-value: 1500000, item: {material: SOUL_SOIL, display-name: "&8Seelenerde"}}, '1': {chance: 10, sell-value: 3000000, item: {material: SOUL_LANTERN, display-name: "&bSeelenlaterne"}}}}
+
+# --- MAGMA (Tier 24) --- Rare: Magmablock
+tier24_1: {display-name: "&6Magma Generator &7(Lvl 1)", interval: 4, upgrade: {next-generator: tier24_2, upgrade-cost: 64000000000}, item: {material: MAGMA_BLOCK, display-name: "&6Magma Generator &7(Lvl 1)", lore: ["&7Rare Drop: &f1%"]}, drops: {'0': {chance: 100, sell-value: 3000000, item: {material: MAGMA_CREAM, display-name: "&6Magma"}}, '1': {chance: 1, sell-value: 6000000, item: {material: MAGMA_BLOCK, display-name: "&6Magmablock"}}}}
+tier24_2: {display-name: "&6Magma Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier24_3, upgrade-cost: 70400000000}, item: {material: MAGMA_BLOCK, display-name: "&6Magma Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 3000000, item: {material: MAGMA_CREAM, display-name: "&6Magma"}}, '1': {chance: 2, sell-value: 6000000, item: {material: MAGMA_BLOCK, display-name: "&6Magmablock"}}}}
+tier24_3: {display-name: "&6Magma Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier24_4, upgrade-cost: 76800000000}, item: {material: MAGMA_BLOCK, display-name: "&6Magma Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 3000000, item: {material: MAGMA_CREAM, display-name: "&6Magma"}}, '1': {chance: 3, sell-value: 6000000, item: {material: MAGMA_BLOCK, display-name: "&6Magmablock"}}}}
+tier24_4: {display-name: "&6Magma Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier24_5, upgrade-cost: 83200000000}, item: {material: MAGMA_BLOCK, display-name: "&6Magma Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 3000000, item: {material: MAGMA_CREAM, display-name: "&6Magma"}}, '1': {chance: 4, sell-value: 6000000, item: {material: MAGMA_BLOCK, display-name: "&6Magmablock"}}}}
+tier24_5: {display-name: "&6Magma Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier24_6, upgrade-cost: 89600000000}, item: {material: MAGMA_BLOCK, display-name: "&6Magma Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 3000000, item: {material: MAGMA_CREAM, display-name: "&6Magma"}}, '1': {chance: 5, sell-value: 6000000, item: {material: MAGMA_BLOCK, display-name: "&6Magmablock"}}}}
+tier24_6: {display-name: "&6Magma Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier24_7, upgrade-cost: 96000000000}, item: {material: MAGMA_BLOCK, display-name: "&6Magma Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 3000000, item: {material: MAGMA_CREAM, display-name: "&6Magma"}}, '1': {chance: 6, sell-value: 6000000, item: {material: MAGMA_BLOCK, display-name: "&6Magmablock"}}}}
+tier24_7: {display-name: "&6Magma Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier24_8, upgrade-cost: 102400000000}, item: {material: MAGMA_BLOCK, display-name: "&6Magma Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 3000000, item: {material: MAGMA_CREAM, display-name: "&6Magma"}}, '1': {chance: 7, sell-value: 6000000, item: {material: MAGMA_BLOCK, display-name: "&6Magmablock"}}}}
+tier24_8: {display-name: "&6Magma Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier24_9, upgrade-cost: 108800000000}, item: {material: MAGMA_BLOCK, display-name: "&6Magma Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 3000000, item: {material: MAGMA_CREAM, display-name: "&6Magma"}}, '1': {chance: 8, sell-value: 6000000, item: {material: MAGMA_BLOCK, display-name: "&6Magmablock"}}}}
+tier24_9: {display-name: "&6Magma Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier24_10, upgrade-cost: 115200000000}, item: {material: MAGMA_BLOCK, display-name: "&6Magma Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 3000000, item: {material: MAGMA_CREAM, display-name: "&6Magma"}}, '1': {chance: 9, sell-value: 6000000, item: {material: MAGMA_BLOCK, display-name: "&6Magmablock"}}}}
+tier24_10: {display-name: "&6Magma Generator &b(MAX)", interval: 1, upgrade: {next-generator: null, upgrade-cost: 0}, item: {material: MAGMA_BLOCK, display-name: "&6Magma Generator &b(MAX)", lore: ["&7Rate: &a1.0s", "&7Rare Drop: &a10%", "&eBenötigt Rang &nBedrock&e!"]}, drops: {'0': {chance: 100, sell-value: 3000000, item: {material: MAGMA_CREAM, display-name: "&6Magma"}}, '1': {chance: 10, sell-value: 6000000, item: {material: MAGMA_BLOCK, display-name: "&6Magmablock"}}}}
+
+  # ==========================================================
+  # TIER 25: BEDROCK (ENDGAME)
+  # Rare Drop: Leuchtfeuer
+  # ==========================================================
+tier25_1:
+  display-name: "&8Bedrock Generator &7(Lvl 1)"
+  interval: 4
+  upgrade:
+    next-generator: tier25_2
+    upgrade-cost: 128000000000
+  item:
+    material: BEDROCK
+    display-name: "&8Bedrock Generator &7(Lvl 1)"
+    lore:
+      - "&7Rate: &f4.0s"
+      - "&7Rare Drop: &f1%"
+  drops:
+    '0':
+      chance: 100
+      sell-value: 6000000
+      item:
+        material: BEDROCK
+        display-name: "&8Bedrock"
+    '1':
+      chance: 1
+      sell-value: 12000000
+      item:
+        material: BEACON
+        display-name: "&bLeuchtfeuer"
+
+tier25_2: {display-name: "&8Bedrock Generator &7(Lvl 2)", interval: 3.6, upgrade: {next-generator: tier25_3, upgrade-cost: 140000000000}, item: {material: BEDROCK, display-name: "&8Bedrock Generator &7(Lvl 2)", lore: ["&7Rare Drop: &f2%"]}, drops: {'0': {chance: 100, sell-value: 6000000, item: {material: BEDROCK, display-name: "&8Bedrock"}}, '1': {chance: 2, sell-value: 12000000, item: {material: BEACON, display-name: "&bLeuchtfeuer"}}}}
+tier25_3: {display-name: "&8Bedrock Generator &7(Lvl 3)", interval: 3.2, upgrade: {next-generator: tier25_4, upgrade-cost: 152000000000}, item: {material: BEDROCK, display-name: "&8Bedrock Generator &7(Lvl 3)", lore: ["&7Rare Drop: &f3%"]}, drops: {'0': {chance: 100, sell-value: 6000000, item: {material: BEDROCK, display-name: "&8Bedrock"}}, '1': {chance: 3, sell-value: 12000000, item: {material: BEACON, display-name: "&bLeuchtfeuer"}}}}
+tier25_4: {display-name: "&8Bedrock Generator &7(Lvl 4)", interval: 2.8, upgrade: {next-generator: tier25_5, upgrade-cost: 164000000000}, item: {material: BEDROCK, display-name: "&8Bedrock Generator &7(Lvl 4)", lore: ["&7Rare Drop: &f4%"]}, drops: {'0': {chance: 100, sell-value: 6000000, item: {material: BEDROCK, display-name: "&8Bedrock"}}, '1': {chance: 4, sell-value: 12000000, item: {material: BEACON, display-name: "&bLeuchtfeuer"}}}}
+tier25_5: {display-name: "&8Bedrock Generator &e(Lvl 5)", interval: 2.4, upgrade: {next-generator: tier25_6, upgrade-cost: 176000000000}, item: {material: BEDROCK, display-name: "&8Bedrock Generator &e(Lvl 5)", lore: ["&7Rare Drop: &f5%"]}, drops: {'0': {chance: 100, sell-value: 6000000, item: {material: BEDROCK, display-name: "&8Bedrock"}}, '1': {chance: 5, sell-value: 12000000, item: {material: BEACON, display-name: "&bLeuchtfeuer"}}}}
+tier25_6: {display-name: "&8Bedrock Generator &e(Lvl 6)", interval: 2.0, upgrade: {next-generator: tier25_7, upgrade-cost: 188000000000}, item: {material: BEDROCK, display-name: "&8Bedrock Generator &e(Lvl 6)", lore: ["&7Rare Drop: &f6%"]}, drops: {'0': {chance: 100, sell-value: 6000000, item: {material: BEDROCK, display-name: "&8Bedrock"}}, '1': {chance: 6, sell-value: 12000000, item: {material: BEACON, display-name: "&bLeuchtfeuer"}}}}
+tier25_7: {display-name: "&8Bedrock Generator &e(Lvl 7)", interval: 1.8, upgrade: {next-generator: tier25_8, upgrade-cost: 200000000000}, item: {material: BEDROCK, display-name: "&8Bedrock Generator &e(Lvl 7)", lore: ["&7Rare Drop: &f7%"]}, drops: {'0': {chance: 100, sell-value: 6000000, item: {material: BEDROCK, display-name: "&8Bedrock"}}, '1': {chance: 7, sell-value: 12000000, item: {material: BEACON, display-name: "&bLeuchtfeuer"}}}}
+tier25_8: {display-name: "&8Bedrock Generator &e(Lvl 8)", interval: 1.6, upgrade: {next-generator: tier25_9, upgrade-cost: 212000000000}, item: {material: BEDROCK, display-name: "&8Bedrock Generator &e(Lvl 8)", lore: ["&7Rare Drop: &f8%"]}, drops: {'0': {chance: 100, sell-value: 6000000, item: {material: BEDROCK, display-name: "&8Bedrock"}}, '1': {chance: 8, sell-value: 12000000, item: {material: BEACON, display-name: "&bLeuchtfeuer"}}}}
+tier25_9: {display-name: "&8Bedrock Generator &6(Lvl 9)", interval: 1.4, upgrade: {next-generator: tier25_10, upgrade-cost: 224000000000}, item: {material: BEDROCK, display-name: "&8Bedrock Generator &6(Lvl 9)", lore: ["&7Rare Drop: &f9%"]}, drops: {'0': {chance: 100, sell-value: 6000000, item: {material: BEDROCK, display-name: "&8Bedrock"}}, '1': {chance: 9, sell-value: 12000000, item: {material: BEACON, display-name: "&bLeuchtfeuer"}}}}
+
+tier25_10:
+  display-name: "&8&lULTRA BEDROCK GENERATOR"
+  interval: 1
+  upgrade:
+    next-generator: null
+    upgrade-cost: 0
+  item:
+    material: BEDROCK
+    lore:
+      - "&d&k||&r &5DAS ULTIMATIVE ZIEL &d&k||"
+      - "&7Rate: &a1.0s"
+      - "&7Rare Drop: &a10%"
+  drops:
+    '0':
+      chance: 100
+      sell-value: 6000000
+      item:
+        material: BEDROCK
+        display-name: "&8Bedrock"
+    '1':
+      chance: 10
+      sell-value: 12000000
+      item:
+        material: BEACON
+        display-name: "&bLeuchtfeuer"

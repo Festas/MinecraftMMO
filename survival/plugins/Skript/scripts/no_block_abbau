@@ -1,0 +1,31 @@
+# --- WELT REGELN (Place YES, Break NO) ---
+# Verhindert versehentliches Abbauen von Generatoren/Deko.
+# Wir nutzen Variablen statt Options, um Syntaxfehler zu vermeiden.
+
+on break:
+    # Konfiguration
+    set {_world} to "tycoon"
+    set {_prefix} to "&8[&6Tycoon&8] &7"
+
+    # Nur in der Tycoon Welt prüfen
+    if name of player's world is {_world}:
+        
+        # 1. Admins dürfen immer (Bypass)
+        if player has permission "tycoon.admin":
+            stop
+            
+        # 2. Ausnahme: Öffentliche Mine (Falls du das Skript tycoon_mine.sk nutzt)
+        if "%region at event-block%" contains "public_mine":
+            stop
+            
+        # 3. Abbauen verhindern
+        cancel event
+        
+        # WICHTIG: Hier nutzen wir %{_prefix}% als Variable, das verhindert den Fehler.
+        send "%{_prefix}%&cAbbauen ist deaktiviert! Nutze Shift+Rechtsklick (oder /pickupgens) um Generatoren aufzuheben." to player
+        
+        # Optional: Sound für Feedback
+        play sound "block.note_block.bass" at player
+
+# Hinweis: "on place" müssen wir nicht definieren, da Skript standardmäßig alles erlaubt, 
+# was wir nicht verbieten. Platzieren funktioniert also einfach weiter.

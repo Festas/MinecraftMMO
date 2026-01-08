@@ -1,0 +1,26 @@
+# --- GENERATOR FUNDAMENT ZWANG ---
+# Verhindert, dass Generatoren einfach in die Wiese gesetzt werden.
+# Keine Options mehr, um Syntaxfehler zu vermeiden.
+
+on place:
+    # 1. Konfiguration (Variablen)
+    set {_prefix} to "&8[&6Tycoon&8] &7"
+    set {_base_block} to polished_andesite
+    set {_base_name} to "&8Polierter Andesite"
+
+    # 2. Prüfen: Ist das platzierte Item ein Generator?
+    # NextGens Items haben immer "Generator" im Namen und "Rate" in der Lore.
+    if name of player's tool contains "Generator":
+        if line 1 of lore of player's tool contains "Rate":
+            
+            # 3. Block UNTER der Platzierung prüfen
+            set {_below} to block below event-block
+            
+            # Wenn der Block darunter NICHT das Fundament ist...
+            if {_below} is not {_base_block}:
+                cancel event
+                send "%{_prefix}%&cGeneratoren brauchen ein Fundament aus %{_base_name}%&c!" to player
+                play sound "block.note_block.bass" to player
+                
+                # Optional: Hinweis
+                # send "%{_prefix}%&7(Du kannst diese Blöcke im Shop kaufen)" to player

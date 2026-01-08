@@ -1,0 +1,1553 @@
+blocks:
+  name: "&f七七七七七七七七⟻"
+  namePerPage:
+  fillItem:
+    material: ""
+  items:
+
+
+
+    P1_19:
+      type: item
+      item:
+        material: STONE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 19
+      page: 1
+
+    P1_20:
+      type: item
+      item:
+        material: GRANITE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 20
+      page: 1
+
+    P1_21:
+      type: item
+      item:
+        material: DIORITE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 21
+      page: 1
+
+    P1_22:
+      type: item
+      item:
+        material: ANDESITE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 22
+      page: 1
+
+    P1_23:
+      type: item
+      item:
+        material: COBBLESTONE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 23
+      page: 1
+
+    P1_24:
+      type: item
+      item:
+        material: GRASS_BLOCK
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 10
+      slot: 24
+      page: 1
+
+    P1_25:
+      type: item
+      item:
+        material: COARSE_DIRT
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 2
+      slot: 25
+      page: 1
+
+    P1_28:
+      type: item
+      item:
+        material: MUD
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 2
+      slot: 28
+      page: 1
+
+    P1_29:
+      type: item
+      item:
+        material: PACKED_MUD
+        quantity: 1
+      buyPrice: 35
+      sellPrice: 5
+      slot: 29
+      page: 1
+
+    P1_30:
+      type: item
+      item:
+        material: PODZOL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 2
+      slot: 30
+      page: 1
+
+    P1_31:
+      type: item
+      item:
+        material: DIRT
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 31
+      page: 1
+
+    P1_32:
+      type: item
+      item:
+        material: SAND
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 32
+      page: 1
+
+    P1_33:
+      type: item
+      item:
+        material: RED_SANDSTONE
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 3
+      slot: 33
+      page: 1
+
+    P1_34:
+      type: item
+      item:
+        material: RED_SAND
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 34
+      page: 1
+
+    P1_37:
+      type: item
+      item:
+        material: SANDSTONE
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 1
+      slot: 37
+      page: 1
+
+    P1_38:
+      type: item
+      item:
+        material: GRAVEL
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 38
+      page: 1
+
+    P1_39:
+      type: item
+      item:
+        material: BRICKS
+        quantity: 1
+      buyPrice: 40
+      sellPrice: 8
+      slot: 39
+      page: 1
+
+    P1_40:
+      type: item
+      item:
+        material: MOSSY_COBBLESTONE
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 10
+      slot: 40
+      page: 1
+
+    P1_41:
+      type: item
+      item:
+        material: ICE
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 5
+      slot: 41
+      page: 1
+
+    P1_42:
+      type: item
+      item:
+        material: SNOW_BLOCK
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 5
+      slot: 42
+      page: 1
+
+    P1_43:
+      type: item
+      item:
+        material: CLAY
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 3
+      slot: 43
+      page: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    P2_19:
+      type: item
+      item:
+        material: NETHERRACK
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 19
+      page: 2
+
+    P2_20:
+      type: item
+      item:
+        material: SOUL_SAND
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 20
+      page: 2
+
+    P2_21:
+      type: item
+      item:
+        material: GLOWSTONE
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 5
+      slot: 21
+      page: 2
+
+    P2_22:
+      type: item
+      item:
+        material: MYCELIUM
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 5
+      slot: 22
+      page: 2
+
+    P2_23:
+      type: item
+      item:
+        material: END_STONE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 23
+      page: 2
+
+    P2_24:
+      type: item
+      item:
+        material: PRISMARINE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: -1
+      slot: 24
+      page: 2
+
+    P2_25:
+      type: item
+      item:
+        material: PRISMARINE_BRICKS
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 3
+      slot: 25
+      page: 2
+
+    P2_28:
+      type: item
+      item:
+        material: DARK_PRISMARINE
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 3
+      slot: 28
+      page: 2
+
+    P2_29:
+      type: item
+      item:
+        material: SEA_LANTERN
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 2
+      slot: 29
+      page: 2
+
+    P2_30:
+      type: item
+      item:
+        material: AMETHYST_BLOCK
+        quantity: 1
+      buyPrice: 500
+      sellPrice: -1
+      slot: 30
+      page: 2
+
+    P2_31:
+      type: item
+      item:
+        material: BUDDING_AMETHYST
+        quantity: 1
+      buyPrice: 500
+      sellPrice: -1
+      slot: 31
+      page: 2
+
+    P2_32:
+      type: item
+      item:
+        material: CALCITE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 32
+      page: 2
+
+    P2_33:
+      type: item
+      item:
+        material: COBBLED_DEEPSLATE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 33
+      page: 2
+
+    P2_34:
+      type: item
+      item:
+        material: DEEPSLATE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 34
+      page: 2
+
+    P2_37:
+      type: item
+      item:
+        material: DEEPSLATE_TILES
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 37
+      page: 2
+
+    P2_38:
+      type: item
+      item:
+        material: POLISHED_DEEPSLATE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 38
+      page: 2
+
+    P2_39:
+      type: item
+      item:
+        material: DRIPSTONE_BLOCK
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 39
+      page: 2
+
+    P2_40:
+      type: item
+      item:
+        material: POINTED_DRIPSTONE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 40
+      page: 2
+
+    P2_41:
+      type: item
+      item:
+        material: MOSS_BLOCK
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 2
+      slot: 41
+      page: 2
+
+    P2_42:
+      type: item
+      item:
+        material: BASALT
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 42
+      page: 2
+
+    P2_43:
+      type: item
+      item:
+        material: SMOOTH_BASALT
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 43
+      page: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    P3_19:
+      type: item
+      item:
+        material: TUFF
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 19
+      page: 3
+
+    P3_20:
+      type: item
+      item:
+        material: RAW_COPPER_BLOCK
+        quantity: 1
+      buyPrice: 200
+      sellPrice: 20
+      slot: 20
+      page: 3
+
+    P3_21:
+      type: item
+      item:
+        material: RAW_IRON_BlOCK
+        quantity: 1
+      buyPrice: 250
+      sellPrice: 30
+      slot: 21
+      page: 3
+
+    P3_22:
+      type: item
+      item:
+        material: RAW_GOLD_BLOCK
+        quantity: 1
+      buyPrice: 400
+      sellPrice: 50
+      slot: 22
+      page: 3
+
+    P3_23:
+      type: item
+      item:
+        material: COPPER_BLOCK
+        quantity: 1
+      buyPrice: 400
+      sellPrice: 50
+      slot: 23
+      page: 3
+
+    P3_24:
+      type: item
+      item:
+        material: EXPOSED_COPPER
+        quantity: 1
+      buyPrice: 500
+      sellPrice: 50
+      slot: 24
+      page: 3
+
+    P3_25:
+      type: item
+      item:
+        material: WEATHERED_COPPER
+        quantity: 1
+      buyPrice: 500
+      sellPrice: 50
+      slot: 25
+      page: 3
+
+    P3_28:
+      type: item
+      item:
+        material: OXIDIZED_COPPER
+        quantity: 1
+      buyPrice: 500
+      sellPrice: 50
+      slot: 28
+      page: 3
+
+    P3_29:
+      type: item
+      item:
+        material: POWDER_SNOW_BUCKET
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 29
+      page: 3
+
+    P3_30:
+      type: item
+      item:
+        material: ROOTED_DIRT
+        quantity: 1
+      buyPrice: 3
+      sellPrice: -1
+      slot: 30
+      page: 3
+
+    P3_31:
+      type: item
+      item:
+        material: BLACKSTONE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 31
+      page: 3
+
+    P3_32:
+      type: item
+      item:
+        material: POLISHED_BLACKSTONE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 32
+      page: 3
+
+    P3_33:
+      type: item
+      item:
+        material: POLISHED_BLACKSTONE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 33
+      page: 3
+
+    P3_34:
+      type: item
+      item:
+        material: SCAFFOLDING
+        quantity: 1
+      buyPrice: 10
+      sellPrice: -1
+      slot: 34
+      page: 3
+
+    P3_37:
+      type: item
+      item:
+        material: RED_MUSHROOM_BLOCK
+        quantity: 1
+      buyPrice: 20
+      sellPrice: -1
+      slot: 37
+      page: 3
+
+    P3_38:
+      type: item
+      item:
+        material: BROWN_MUSHROOM_BLOCK
+        quantity: 1
+      buyPrice: 20
+      sellPrice: -1
+      slot: 38
+      page: 3
+
+    P3_39:
+      type: item
+      item:
+        material: BLUE_ICE
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 2
+      slot: 39
+      page: 3
+
+    P3_40:
+      type: item
+      item:
+        material: MUSHROOM_STEM
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 40
+      page: 3
+
+    P3_41:
+      type: item
+      item:
+        material: SMOOTH_QUARTZ
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 41
+      page: 3
+
+    P3_42:
+      type: item
+      item:
+        material: SMOOTH_RED_SANDSTONE
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 5
+      slot: 42
+      page: 3
+
+    P3_43:
+      type: item
+      item:
+        material: SMOOTH_SANDSTONE
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 5
+      slot: 43
+      page: 3
+
+
+
+
+
+
+
+
+
+
+
+
+    P4_19:
+      type: item
+      item:
+        material: SMOOTH_STONE
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 19
+      page: 4
+
+    P4_20:
+      type: item
+      item:
+        material: BRAIN_CORAL_BLOCK
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 20
+      page: 4
+
+    P4_21:
+      type: item
+      item:
+        material: BRAIN_CORAL
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 21
+      page: 4
+
+    P4_22:
+      type: item
+      item:
+        material: BRAIN_CORAL_FAN
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 22
+      page: 4
+
+    P4_23:
+      type: item
+      item:
+        material: BUBBLE_CORAL_BLOCK
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 23
+      page: 4
+
+    P4_24:
+      type: item
+      item:
+        material: BUBBLE_CORAL
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 24
+      page: 4
+
+    P4_25:
+      type: item
+      item:
+        material: BUBBLE_CORAL_FAN
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 25
+      page: 4
+
+    P4_28:
+      type: item
+      item:
+        material: FIRE_CORAL_BLOCK
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 28
+      page: 4
+
+    P4_29:
+      type: item
+      item:
+        material: FIRE_CORAL
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 29
+      page: 4
+
+    P4_30:
+      type: item
+      item:
+        material: FIRE_CORAL_FAN
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 30
+      page: 4
+
+    P4_31:
+      type: item
+      item:
+        material: HORN_CORAL_BLOCK
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 31
+      page: 4
+
+    P4_32:
+      type: item
+      item:
+        material: HORN_CORAL
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 32
+      page: 4
+
+    P4_33:
+      type: item
+      item:
+        material: HORN_CORAL_FAN
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 33
+      page: 4
+
+    P4_34:
+      type: item
+      item:
+        material: TUBE_CORAL_BLOCK
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 34
+      page: 4
+
+    P4_37:
+      type: item
+      item:
+        material: TUBE_CORAL
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 37
+      page: 4
+
+    P4_38:
+      type: item
+      item:
+        material: TUBE_CORAL_FAN
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 38
+      page: 4
+
+    P4_39:
+      type: item
+      item:
+        material: SEA_PICKLE
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 1
+      slot: 39
+      page: 4
+
+    P4_40:
+      type: item
+      item:
+        material: SEAGRASS
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 1
+      slot: 40
+      page: 4
+
+    P4_41:
+      type: item
+      item:
+        material: HONEY_BLOCK
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 5
+      slot: 41
+      page: 4
+
+    P4_42:
+      type: item
+      item:
+        material: HONEYCOMB_BLOCK
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 5
+      slot: 42
+      page: 4
+
+    P4_43:
+      type: item
+      item:
+        material: BEE_NEST
+        quantity: 1
+      buyPrice: 800
+      sellPrice: -1
+      slot: 43
+      page: 4
+
+
+
+
+
+
+
+
+
+
+    P5_19:
+      type: item
+      item:
+        material: BEEHIVE
+        quantity: 1
+      buyPrice: 350
+      sellPrice: -1
+      slot: 19
+      page: 5
+
+    P5_20:
+      type: item
+      item:
+        material: PURPUR_BLOCK
+        quantity: 1
+      buyPrice: 10
+      sellPrice: -1
+      slot: 20
+      page: 5
+
+    P5_21:
+      type: item
+      item:
+        material: MAGMA_BLOCK
+        quantity: 1
+      buyPrice: 50
+      sellPrice: -1
+      slot: 21
+      page: 5
+
+    P5_22:
+      type: item
+      item:
+        material: BONE_BLOCK
+        quantity: 1
+      buyPrice: 20
+      sellPrice: -1
+      slot: 22
+      page: 5
+
+    P5_23:
+      type: item
+      item:
+        material: RED_NETHER_BRICKS
+        quantity: 1
+      buyPrice: 20
+      sellPrice: -1
+      slot: 23
+      page: 5
+
+    P5_24:
+      type: item
+      item:
+        material: WARPED_NYLIUM
+        quantity: 1
+      buyPrice: 20
+      sellPrice: -1
+      slot: 24
+      page: 5
+
+    P5_25:
+      type: item
+      item:
+        material: CRIMSON_NYLIUM
+        quantity: 1
+      buyPrice: 20
+      sellPrice: -1
+      slot: 25
+      page: 5
+
+    P5_28:
+      type: item
+      item:
+        material: SOUL_SOIL
+        quantity: 1
+      buyPrice: 10
+      sellPrice: -1
+      slot: 28
+      page: 5
+
+    P5_29:
+      type: item
+      item:
+        material: SPONGE
+        quantity: 1
+      buyPrice: 5000
+      sellPrice: -1
+      slot: 29
+      page: 5
+
+
+
+
+
+
+
+
+
+
+
+
+    Previous1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui weapons"
+      slot: 0
+      page: 1
+    Next1:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui wood"
+      slot: 8
+      page: 1
+    Previous2:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui weapons"
+      slot: 0
+      page: 2
+    Next2:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui wood"
+      slot: 8
+      page: 2
+    Previous3:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui weapons"
+      slot: 0
+      page: 3
+    Next3:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui wood"
+      slot: 8
+      page: 3
+    Previous4:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui weapons"
+      slot: 0
+      page: 4
+    Next4:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui wood"
+      slot: 8
+      page: 4
+    Previous5:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lᴘʀᴇᴠɪᴏᴜs"
+      commandsOnClick:
+      - "shopgui weapons"
+      slot: 0
+      page: 5
+    Next5:
+      type: dummy
+      item:
+        material: PAPER
+        model: 110007
+        quantity: 1
+        name: "&f&lɴᴇxᴛ"
+      commandsOnClick:
+      - "shopgui wood"
+      slot: 8
+      page: 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ShopRedstone1:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 1
+      page: 1
+      commandsOnClick:
+      - "shopgui restone"
+
+    ShopTools1:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 2
+      page: 1
+      commandsOnClick:
+      - "shopgui tools"
+
+    ShopWeapons1:
+      type: dummy
+      item:
+        material: IRON_CHESTPLATE
+        quantity: 1
+        name: "&e&lWeapons"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 3
+      page: 1
+      commandsOnClick:
+      - "shopgui weapons"
+
+    ShopBlocks1:
+      type: dummy
+      item:
+        material: BRICKS
+        quantity: 1
+        name: "&e&lBlocks"
+      slot: 4
+      page: 1
+      commandsOnClick:
+      - "shopgui blocks"
+
+    ShopWood1:
+      type: dummy
+      item:
+        material: OAK_LOG
+        quantity: 1
+        name: "&e&lWood"
+      slot: 5
+      page: 1
+      commandsOnClick:
+      - "shopgui wood"
+
+    ShopMinerals1:
+      type: dummy
+      item:
+        material: DIAMOND
+        quantity: 1
+        name: "&e&lMinerals"
+      slot: 6
+      page: 1
+      commandsOnClick:
+      - "shopgui minerals"
+
+    ShopFarming1:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 7
+      page: 1
+      commandsOnClick:
+      - "shopgui farming"
+
+
+
+
+
+    ShopRedstone2:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 1
+      page: 2
+      commandsOnClick:
+      - "shopgui restone"
+
+    ShopTools2:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 2
+      page: 2
+      commandsOnClick:
+      - "shopgui tools"
+
+    ShopWeapons2:
+      type: dummy
+      item:
+        material: IRON_CHESTPLATE
+        quantity: 1
+        name: "&e&lWeapons"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 3
+      page: 2
+      commandsOnClick:
+      - "shopgui weapons"
+
+    ShopBlocks2:
+      type: dummy
+      item:
+        material: BRICKS
+        quantity: 1
+        name: "&e&lBlocks"
+      slot: 4
+      page: 2
+      commandsOnClick:
+      - "shopgui blocks"
+
+    ShopWood2:
+      type: dummy
+      item:
+        material: OAK_LOG
+        quantity: 1
+        name: "&e&lWood"
+      slot: 5
+      page: 2
+      commandsOnClick:
+      - "shopgui wood"
+
+    ShopMinerals2:
+      type: dummy
+      item:
+        material: DIAMOND
+        quantity: 1
+        name: "&e&lMinerals"
+      slot: 6
+      page: 2
+      commandsOnClick:
+      - "shopgui minerals"
+
+    ShopFarming2:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 7
+      page: 2
+      commandsOnClick:
+      - "shopgui farming"
+
+
+
+
+
+    ShopRedstone3:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 1
+      page: 3
+      commandsOnClick:
+      - "shopgui restone"
+
+    ShopTools3:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 2
+      page: 3
+      commandsOnClick:
+      - "shopgui tools"
+
+    ShopWeapons3:
+      type: dummy
+      item:
+        material: IRON_CHESTPLATE
+        quantity: 1
+        name: "&e&lWeapons"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 3
+      page: 3
+      commandsOnClick:
+      - "shopgui weapons"
+
+    ShopBlocks3:
+      type: dummy
+      item:
+        material: BRICKS
+        quantity: 1
+        name: "&e&lBlocks"
+      slot: 4
+      page: 3
+      commandsOnClick:
+      - "shopgui blocks"
+
+    ShopWood3:
+      type: dummy
+      item:
+        material: OAK_LOG
+        quantity: 1
+        name: "&e&lWood"
+      slot: 5
+      page: 3
+      commandsOnClick:
+      - "shopgui wood"
+
+    ShopMinerals3:
+      type: dummy
+      item:
+        material: DIAMOND
+        quantity: 1
+        name: "&e&lMinerals"
+      slot: 6
+      page: 3
+      commandsOnClick:
+      - "shopgui minerals"
+
+    ShopFarming3:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 7
+      page: 3
+      commandsOnClick:
+      - "shopgui farming"
+
+
+
+
+
+    ShopRedstone4:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 1
+      page: 4
+      commandsOnClick:
+      - "shopgui restone"
+
+    ShopTools4:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 2
+      page: 4
+      commandsOnClick:
+      - "shopgui tools"
+
+    ShopWeapons4:
+      type: dummy
+      item:
+        material: IRON_CHESTPLATE
+        quantity: 1
+        name: "&e&lWeapons"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 3
+      page: 4
+      commandsOnClick:
+      - "shopgui weapons"
+
+    ShopBlocks4:
+      type: dummy
+      item:
+        material: BRICKS
+        quantity: 1
+        name: "&e&lBlocks"
+      slot: 4
+      page: 4
+      commandsOnClick:
+      - "shopgui blocks"
+
+    ShopWood4:
+      type: dummy
+      item:
+        material: OAK_LOG
+        quantity: 1
+        name: "&e&lWood"
+      slot: 5
+      page: 4
+      commandsOnClick:
+      - "shopgui wood"
+
+    ShopMinerals4:
+      type: dummy
+      item:
+        material: DIAMOND
+        quantity: 1
+        name: "&e&lMinerals"
+      slot: 6
+      page: 4
+      commandsOnClick:
+      - "shopgui minerals"
+
+    ShopFarming4:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 7
+      page: 4
+      commandsOnClick:
+      - "shopgui farming"
+
+
+
+
+
+    ShopRedstone5:
+      type: dummy
+      item:
+        material: STICKY_PISTON
+        quantity: 1
+        name: "&e&lRedstone"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 1
+      page: 5
+      commandsOnClick:
+      - "shopgui restone"
+
+    ShopTools5:
+      type: dummy
+      item:
+        material: GOLDEN_PICKAXE
+        quantity: 1
+        name: "&e&lTools"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 2
+      page: 5
+      commandsOnClick:
+      - "shopgui tools"
+
+    ShopWeapons5:
+      type: dummy
+      item:
+        material: IRON_CHESTPLATE
+        quantity: 1
+        name: "&e&lWeapons"
+        flags:
+          - HIDE_ATTRIBUTES
+      slot: 3
+      page: 5
+      commandsOnClick:
+      - "shopgui weapons"
+
+    ShopBlocks5:
+      type: dummy
+      item:
+        material: BRICKS
+        quantity: 1
+        name: "&e&lBlocks"
+      slot: 4
+      page: 5
+      commandsOnClick:
+      - "shopgui blocks"
+
+    ShopWood5:
+      type: dummy
+      item:
+        material: OAK_LOG
+        quantity: 1
+        name: "&e&lWood"
+      slot: 5
+      page: 5
+      commandsOnClick:
+      - "shopgui wood"
+
+    ShopMinerals5:
+      type: dummy
+      item:
+        material: DIAMOND
+        quantity: 1
+        name: "&e&lMinerals"
+      slot: 6
+      page: 5
+      commandsOnClick:
+      - "shopgui minerals"
+
+    ShopFarming5:
+      type: dummy
+      item:
+        material: WHEAT
+        quantity: 1
+        name: "&e&lFarming"
+      slot: 7
+      page: 5
+      commandsOnClick:
+      - "shopgui farming"
