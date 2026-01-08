@@ -1,8 +1,8 @@
 name: Sync MMO & Mythic Plugins RPG → Skyblock
 
 on:
-  push: 
-    branches: 
+  push:
+    branches:
       - main
     paths:
       # MMO Plugins
@@ -15,8 +15,23 @@ on:
       - 'rpg/plugins/MythicLib/**'
       - 'rpg/plugins/MythicMobs/**'
       - 'rpg/plugins/MythicRPG/**'
+      # Wirtschaftssystem
+      - 'rpg/plugins/CoinsEngine/**'
+      - 'rpg/plugins/DeluxeBazaar/**'
+      - 'rpg/plugins/GlobalMarketPlus/**'
+      - 'rpg/plugins/Vault/**'
+      # Rose Plugins
+      - 'rpg/plugins/RoseGarden/**'
+      - 'rpg/plugins/RoseLoot/**'
+      - 'rpg/plugins/RoseStacker/**'
+      # CMI
+      - 'rpg/plugins/CMI/**'
+      - 'rpg/plugins/CMILib/**'
+      # Aurora Plugins
+      - 'rpg/plugins/Aurora/**'
+      - 'rpg/plugins/AuroraCollections/**'
 
-  workflow_dispatch: 
+  workflow_dispatch:
     inputs:
       sync_all:
         description: 'Alle MMO & Mythic Ordner synchronisieren?'
@@ -24,30 +39,47 @@ on:
         type: boolean
         default: true
 
-jobs: 
+jobs:
   sync-to-skyblock-repo:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           fetch-depth: 0
 
-      - name: Sync MMO & Mythic Plugins to Skyblock folder
+      - name: Sync Plugins to Skyblock folder
         run: |
-          echo "🔄 Synchronisiere MMO & Mythic Plugins von RPG nach Skyblock..."
+          echo "🔄 Synchronisiere Plugins von RPG nach Skyblock..."
           
           # Liste der zu synchronisierenden Ordner
           PLUGINS=(
+            # MMO Plugins
             "MMOCore"
             "MMOItems"
+            # Mythic Plugins
             "MythicAchievements"
             "MythicDungeons"
             "MythicHUD"
             "MythicLib"
             "MythicMobs"
             "MythicRPG"
+            # Wirtschaftssystem
+            "CoinsEngine"
+            "DeluxeBazaar"
+            "GlobalMarketPlus"
+            "Vault"
+            # Rose Plugins
+            "RoseGarden"
+            "RoseLoot"
+            "RoseStacker"
+            # CMI
+            "CMI"
+            "CMILib"
+            # Aurora Plugins
+            "Aurora"
+            "AuroraCollections"
           )
           
           # Skyblock plugins Verzeichnis erstellen falls nicht vorhanden
@@ -90,12 +122,16 @@ jobs:
             echo "📋 Änderungen:"
             git diff --staged --stat
             
-            git commit -m "🔄 Auto-sync MMO & Mythic plugins from RPG to Skyblock
+            git commit -m "🔄 Auto-sync plugins from RPG to Skyblock
 
             Synchronisierte Plugins:
             - MMOCore, MMOItems
             - MythicAchievements, MythicDungeons, MythicHUD
             - MythicLib, MythicMobs, MythicRPG
+            - CoinsEngine, DeluxeBazaar, GlobalMarketPlus, Vault
+            - RoseGarden, RoseLoot, RoseStacker
+            - CMI, CMILib
+            - Aurora, AuroraCollections
             
             Inkl. Löschungen und Aktualisierungen."
             
@@ -132,19 +168,36 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Deploy MMO & Mythic to Skyblock Server
+      - name: Deploy Plugins to Skyblock Server
         run: |
-          echo "📤 Deploye MMO & Mythic Plugins zum Skyblock Server..."
+          echo "📤 Deploye Plugins zum Skyblock Server..."
           
           PLUGINS=(
+            # MMO Plugins
             "MMOCore"
             "MMOItems"
+            # Mythic Plugins
             "MythicAchievements"
             "MythicDungeons"
             "MythicHUD"
             "MythicLib"
             "MythicMobs"
             "MythicRPG"
+            # Wirtschaftssystem
+            "CoinsEngine"
+            "DeluxeBazaar"
+            "GlobalMarketPlus"
+            "Vault"
+            # Rose Plugins
+            "RoseGarden"
+            "RoseLoot"
+            "RoseStacker"
+            # CMI
+            "CMI"
+            "CMILib"
+            # Aurora Plugins
+            "Aurora"
+            "AuroraCollections"
           )
           
           for PLUGIN in "${PLUGINS[@]}"; do
