@@ -1,9 +1,9 @@
-name: Deploy RPG Server Configs
+name: Deploy rpg Server Configs
 
 on:
   push:
     branches: [main]
-    paths: ['RPG/**']
+    paths: ['rpg/**']
   workflow_dispatch:
     inputs:
       replace_folder:
@@ -31,7 +31,7 @@ jobs:
         id: changed_files
         run: |
           if [ "${{ github.event_name }}" = "push" ]; then
-            git diff --name-status HEAD~1 HEAD | grep '^[AMD]' | grep '^.\s*RPG/' > /tmp/changed_files.txt || true
+            git diff --name-status HEAD~1 HEAD | grep '^[AMD]' | grep '^.\s*rpg/' > /tmp/changed_files.txt || true
             cat /tmp/changed_files.txt
           else
             echo "Manual trigger - will handle in sync step"
@@ -50,15 +50,15 @@ jobs:
             # --- Modus: Ganzen Ordner ersetzen ---
             echo "Replacing folder: $REPLACE_FOLDER"
 
-            if [ ! -d "RPG/plugins/$REPLACE_FOLDER" ]; then
-              echo "Error: Folder RPG/plugins/$REPLACE_FOLDER does not exist in repository"
+            if [ ! -d "rpg/plugins/$REPLACE_FOLDER" ]; then
+              echo "Error: Folder rpg/plugins/$REPLACE_FOLDER does not exist in repository"
               exit 1
             fi
 
             ssh -n -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rm -rf $SERVER_PATH/$REPLACE_FOLDER"
 
             # Hier passt es, da wir explizit in den Zielordner/$REPLACE_FOLDER schreiben
-            eval "rsync -avz -e 'ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no' $EXCLUDE_OPTS --delete RPG/plugins/$REPLACE_FOLDER/ $SSH_USER@$SSH_HOST:$SERVER_PATH/$REPLACE_FOLDER/"
+            eval "rsync -avz -e 'ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no' $EXCLUDE_OPTS --delete rpg/plugins/$REPLACE_FOLDER/ $SSH_USER@$SSH_HOST:$SERVER_PATH/$REPLACE_FOLDER/"
 
             echo "Folder $REPLACE_FOLDER replaced successfully"
           else
@@ -68,15 +68,15 @@ jobs:
             if [ "${{ github.event_name }}" = "push" ]; then
               if [ -f /tmp/changed_files.txt ] && [ -s /tmp/changed_files.txt ]; then
                 while IFS=$'\t' read -r status file; do
-                  # file ist z.B. "RPG/plugins/Ordner/Config.yml"
+                  # file ist z.B. "rpg/plugins/Ordner/Config.yml"
 
-                  # Berechne den Pfad für den Server (entferne 'RPG/plugins/')
+                  # Berechne den Pfad für den Server (entferne 'rpg/plugins/')
                   # Da SERVER_PATH schon im plugins-Ordner ist, brauchen wir nur "Ordner/Config.yml"
-                  if [[ "$file" == RPG/plugins/* ]]; then
-                    remote_relative_file="${file#RPG/plugins/}"
+                  if [[ "$file" == rpg/plugins/* ]]; then
+                    remote_relative_file="${file#rpg/plugins/}"
                   else
-                    # Fallback falls Datei direkt in RPG/ liegt (z.B. RPG/readme.txt)
-                    remote_relative_file="${file#RPG/}"
+                    # Fallback falls Datei direkt in rpg/ liegt (z.B. rpg/readme.txt)
+                    remote_relative_file="${file#rpg/}"
                   fi
 
                   # Excludes prüfen (auf Basis des Dateinamens)
@@ -102,14 +102,14 @@ jobs:
                 done < /tmp/changed_files.txt
                 echo "Sync completed successfully"
               else
-                echo "No files changed in RPG/"
+                echo "No files changed in rpg/"
               fi
             else
               # --- Manueller Full Sync ---
               echo "Manual sync: uploading all files..."
-              # WICHTIG: Hier auch RPG/plugins/ als Quelle nutzen, nicht RPG/
+              # WICHTIG: Hier auch rpg/plugins/ als Quelle nutzen, nicht rpg/
               # Sonst wird der Ordner 'plugins' in den Ordner 'plugins' kopiert -> plugins/plugins
-              eval "rsync -avz -e 'ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no' $EXCLUDE_OPTS --delete RPG/plugins/ $SSH_USER@$SSH_HOST:$SERVER_PATH/"
+              eval "rsync -avz -e 'ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no' $EXCLUDE_OPTS --delete rpg/plugins/ $SSH_USER@$SSH_HOST:$SERVER_PATH/"
               echo "Full sync completed successfully"
             fi
           fi
