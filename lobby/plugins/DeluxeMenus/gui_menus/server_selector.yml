@@ -1,0 +1,65 @@
+# Pfad: plugins/DeluxeMenus/gui_menus/server_selector.yml
+menu_title: '&8» &bNetzwerk Navigator'
+open_command: server_selector
+size: 27
+
+items:
+  'filler':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+      - 0-9
+      - 17-26
+    display_name: '&f'
+    priority: 2
+
+  # --- RPG SERVER ---
+  'rpg':
+    material: DIAMOND_SWORD
+    # Füge hier "CustomModelData" hinzu, falls du Oraxen Icons nutzen willst
+    slot: 11
+    priority: 1
+    display_name: '&5&l⚔ RPG Server'
+    lore:
+      - '&7Tauche ein in eine Welt voller'
+      - '&7Magie, Dungeons und Abenteuer!'
+      - ''
+      - '&7Status: &aOnline'
+      - ''
+      - '&e► Klicke zum Verbinden'
+    left_click_commands:
+      - '[close]'
+      - '[connect] rpg' # Dieser Befehl schickt den Spieler zum RPG Server
+    right_click_commands:
+      - '[close]'
+      - '[connect] rpg'
+
+  # --- INFO MITTE ---
+  'info':
+    material: NETHER_STAR
+    slot: 13
+    priority: 1
+    display_name: '&6&lFestas Builds'
+    lore:
+      - '&7Wähle deinen Spielmodus'
+    left_click_commands:
+      - '[refresh]'
+
+  # --- SURVIVAL SERVER ---
+  'survival':
+    material: GRASS_BLOCK
+    slot: 15
+    priority: 1
+    display_name: '&a&l🌳 Survival'
+    lore:
+      - '&7Klassisches Survival mit'
+      - '&7Plots und Wirtschaft.'
+      - ''
+      - '&7Status: &aOnline'
+      - ''
+      - '&e► Klicke zum Verbinden'
+    left_click_commands:
+      - '[close]'
+      - '[connect] survival' # Schickt den Spieler zum Survival Server
+    right_click_commands:
+      - '[close]'
+      - '[connect] survival'

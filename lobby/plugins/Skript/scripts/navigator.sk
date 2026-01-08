@@ -1,0 +1,83 @@
+# Pfad: plugins/Skript/scripts/navigator.sk
+
+# --- KONFIGURATION ---
+# Hier den Namen der Welt eintragen (ohne Anführungszeichen in der Option selbst, Skript mag das so lieber)
+options:
+    lobby_world: lobby
+
+# --- 1. NAVIGATOR BEFEHL ---
+command /navigator:
+    description: Öffnet das Server-Menü
+    aliases: /servers, /nav
+    trigger:
+        execute player command "dm open server_selector"
+
+command /lobby:
+    trigger:
+        message "&cDu bist bereits auf der Lobby!"
+
+# --- 2. ALIASES (Direktwahl) ---
+command /rpg:
+    trigger:
+        execute player command "dm open server_selector"
+
+command /survival:
+    trigger:
+        execute player command "dm open server_selector"
+
+# --- 3. DAS ITEM MANAGEN (Nur in der Lobby-Welt) ---
+
+function updateNavigator(p: player):
+    wait 5 ticks
+    # Korrektur: Wir vergleichen world of {_p} mit dem String "lobby" (über die Option)
+    if world of {_p} is "{@lobby_world}":
+        # Slot 4 (Mitte) prüfen
+        if slot 4 of {_p}'s inventory is not compass:
+            set slot 4 of {_p}'s inventory to compass named "&b&lNavigator &7(Rechtsklick)" with lore "&7Wähle deinen Server"
+    
+    # Korrektur: Das 'else' muss direkt an den 'if'-Block anschließen (Einrückung beachten!)
+    else:
+        loop all items in {_p}'s inventory:
+            if loop-item is compass:
+                if name of loop-item contains "Navigator":
+                    remove loop-item from {_p}'s inventory
+
+# --- EVENTS ---
+on join:
+    updateNavigator(player)
+
+on world change:
+    updateNavigator(player)
+
+on respawn:
+    updateNavigator(player)
+
+on death of player:
+    loop drops:
+        if loop-value is compass:
+            if name of loop-value contains "Navigator":
+                remove loop-value from drops
+
+# --- 4. SCHUTZ & INTERAKTION ---
+
+on inventory click:
+    if world of player is "{@lobby_world}":
+        if index of event-slot is 4:
+            cancel event
+        if event-item is compass:
+            if name of event-item contains "Navigator":
+                cancel event
+
+on drop:
+    if world of player is "{@lobby_world}":
+        if event-item is compass:
+            if name of event-item contains "Navigator":
+                cancel event
+                execute player command "navigator"
+
+on click:
+    if world of player is "{@lobby_world}":
+        if player's tool is compass:
+            if name of player's tool contains "Navigator":
+                cancel event
+                execute player command "navigator"
