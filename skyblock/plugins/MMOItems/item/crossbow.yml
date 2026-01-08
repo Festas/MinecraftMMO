@@ -1,57 +1,71 @@
-MEDIEVAL_CROSSBOW:
+# ============================================================
+# CROSSBOW.yml - Alle CROSSBOW Items
+# ============================================================
+
+# ==================== NEUE ARMBRÜSTE ====================
+ARMBRUST_T2:
   base:
-    material: WOODEN_PICKAXE
-    name: §6§lMedieval Crossbow
+    material: CROSSBOW
+    name: '&aStahl-Armbrust'
     lore:
-      - §6Like in the old times.
-      - §eFor more realism, it also poisons
-      - §eand makes a different sound!
-    tier: UNCOMMON
-    weapon-damage:
-      base: 15.0
-      scale: 0.05
-      spread: 0.1
-      max-spread: 0.2
-    attack-damage:
-      base: 9.0
-      scale: 0.1
-      spread: 0.05
-      max-spread: 0.1
-    arrow-velocity: 2.0
-    arrow-potion-effects:
-      POISON:
-        duration: 10.0
-        amplifier: 1
-    projectile-damage:
-      base: 20.0
-      scale: 0.05
-      spread: 0.05
-      max-spread: 0.2
-    sounds:
-      on-right-click:
-        sound: item.crossbow.hit
-        volume: 2.0
-        pitch: 0.0
-HANDGUN:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Eine robuste Armbrust aus Stahl.'
+      - '&7Präzise und durchschlagskräftig.'
+      - ''
+      - '&a+8% Kritische Trefferchance'
+      - '&a+10% Durchdringung'
+      - ''
+      - '&8Benötigt Level 12'
+  projectile-damage: 15
+  arrow-velocity: 2.5
+  critical-strike-chance: 8
+  required-level: 12
+  required-class:
+    - 'BOGENSCHUETZE'
+
+ARMBRUST_T3:
   base:
-    material: IRON_HORSE_ARMOR
-    name: §7Hand Gun
-    attack-damage: 30.0
-    required-biomes:
-      - plains
+    material: CROSSBOW
+    name: '&9Mithril-Armbrust'
     lore:
-      - §cFor security reasons, this gun
-      - §cis only usable in §3plains§c.
-    attack-speed: 1.4
-    arrow-velocity: 4.0
-    required-level: 20.0
-    weapon-damage:
-      base: 15.0
-      scale: 0.06
-      spread: 0.08
-      max-spread: 0.15
-    gem-sockets:
-      - Red
-      - Red
-    max-durability: 2650.0
-    tier: RARE
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Eine edle Armbrust aus Mithril.'
+      - '&7Durchschlägt mehrere Ziele.'
+      - ''
+      - '&9+12% Kritische Trefferchance'
+      - '&9+18% Durchdringung'
+      - '&9Durchdringung I'
+      - ''
+      - '&8Benötigt Level 22'
+  projectile-damage: 24
+  arrow-velocity: 2.8
+  critical-strike-chance: 12
+  required-level: 22
+  required-class:
+    - 'BOGENSCHUETZE'
+
+ARMBRUST_T4:
+  base:
+    material: CROSSBOW
+    name: '&5Adamant-Armbrust'
+    lore:
+      - '&8Bogenschütze Waffe'
+      - ''
+      - '&7Eine epische Armbrust aus Adamant.'
+      - '&7Unaufhaltsame Geschosse.'
+      - ''
+      - '&5+18% Kritische Trefferchance'
+      - '&5+28% Durchdringung'
+      - '&5Durchdringung II'
+      - '&5+15% Kritischer Schaden'
+      - ''
+      - '&8Benötigt Level 38'
+  projectile-damage: 38
+  arrow-velocity: 3.2
+  critical-strike-chance: 18
+  critical-strike-power: 15
+  required-level: 38
+  required-class:
+    - 'BOGENSCHUETZE'

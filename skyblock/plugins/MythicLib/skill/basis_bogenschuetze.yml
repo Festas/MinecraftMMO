@@ -1,0 +1,14 @@
+POWER_SHOT:
+    mythicmobs-skill-id: Basis_Power_Shot
+    modifiers:
+    - damage
+
+ARROW_RAIN:
+    mythicmobs-skill-id: Basis_Arrow_Rain
+    modifiers:
+    - damage
+
+EVASIVE_ROLL:
+    mythicmobs-skill-id: Basis_Evasive_Roll
+    modifiers:
+    - range

@@ -189,7 +189,7 @@ volya-outline:
     ascii:
       type: "bitmap"
       texture: font/volya-outline/ascii.png
-      height: 8
+      height: 7
       chars:
         - "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
         - "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
@@ -288,4 +288,4 @@ volya-outline:
         - "\u2c7f\u0240\u1d80\ua7c4\ua794\u1d81\u1d82\u1d83\ua795\u1d84\u1d85\u1d86\u1d87\u1d88\u1d89\u1d8a"
         - "\u1d8b\u1d8c\u1d8d\ua7c6\u1d8e\u1d8f\u1d90\u1d92\u1d93\u1d94\u1d95\u1d96\u1d97\u1d98\u1d99\u1d9a"
         - "\u1e9a\u2152\u2158\u20a8\u20af\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000"
-#6399f73aaa3e81f3f60a7e98855bde6e
+#5734d424def1dfdcd4dc143c55d2da56

@@ -1,126 +1,108 @@
-AMPLIFICATION_TOME:
-  base:
-    material: ENCHANTED_BOOK
-    name: '&9Amplification Tome'
-    required-level: 9.0
-    lore:
-    - '&7It emits a strong magical aura.'
-    - '&7Hold it to &5greatly enhance'
-    - '&7your magical powers.'
-    magic-damage:
-      base: 85.0
-      spread: 0.02
-      max-spread: 0.06
-WYVERN_FEATHER:
-  base:
-    material: FEATHER
-    disable-crafting: true
-    name: '&fWyvern Feather'
-    fall-damage-reduction: 65.0
-WYVERN_SOUL:
-  base:
-    material: ENDER_EYE
-    name: '&fWyvern Soul'
-    disable-interaction: true
-    disable-crafting: true
-    enchants:
-      unbreaking: 1
-    perm-effects:
-      LEVITATION: 2
-    hide-enchants: true
-TOME_OF_ACCURACY:
-  base:
-    material: ENCHANTED_BOOK
-    disable-repairing: true
-    name: '&eTome of Accuracy'
-    critical-strike-power:
-      base: 27.5
-      spread: 0.03
-      max-spread: 0.08
-    critical-strike-chance:
-      base: 7.5
-      spread: 0.08
-      max-spread: 0.25
-    lore:
-    - '&7Increases your critical power.'
-NAUGHTY_SPELL_BOOK:
-  base:
-    material: ENCHANTED_BOOK
-    disable-repairing: true
-    name: '&8Naughty Spell Book'
-    required-level: 20.0
-    ability:
-      right-click:
-        type: CURSED_BEAM
-        mode: RIGHT_CLICK
-        cooldown: 30.0
-        damage: 6.0
-    lore:
-    - '&7Right click to cast a &5cursed beam&7.'
-    - '&7This magic projectile deals &57'
-    - '&5damage &7to the first enemy it hits.'
-CELESTIAL_TOME:
+# ============================================================
+# TOME.yml - Alle TOME Items (Zauberbücher)
+# ============================================================
+
+# ==================== NEUE ZAUBERBÜCHER ====================
+ZAUBERBUCH_FEUER:
   base:
     material: BOOK
-    enchants:
-      luck_of_the_sea: 1.0
-    disable-interaction: true
+    name: '&cZauberbuch des Feuers'
     lore:
-      - §f§oFrom the angels themselves!
-      - §bThe gods shall not let others take
-      - §bthis from you. It can't drop on death.
-    name: §b§lCelestial Tome
-    tier: EPIC
-    ability:
-      ability1:
-        type: HOLY_MISSILE
-        mode: RIGHT_CLICK
-        duration: 5.0
-        damage: 9.0
-        cooldown: 8.0
-    disable-death-drop: true
-OMNIELEMENTAL_TOME:
+      - '&8Magier Offhand'
+      - ''
+      - '&7Ein Zauberbuch voller'
+      - '&7Feuerzauber-Wissen.'
+      - ''
+      - '&c+20% Feuerschaden'
+      - '&c+12 Magieschaden'
+      - '&c+45 Max Mana'
+      - '&c+10% Skill-Schaden'
+      - ''
+      - '&d⚡ Bonus: Verbrennung II'
+      - '&8Angriffe setzen Feinde in Brand'
+      - ''
+      - '&8Benötigt Level 18'
+  magic-damage: 12
+  max-mana: 45
+  skill-damage: 10
+  required-level: 18
+  required-class:
+    - 'MAGIER'
+
+ZAUBERBUCH_FROST:
   base:
     material: BOOK
-    name: §c§lO§6§lm§e§ln§a§li§2§lE§3§ll§9§le§b§lm§f§le§e§ln§a§lt§6§la§c§ll §6§lT§e§lo§a§lm§2§le
-    required-level: 30.0
-    tier: VERY_RARE
-    magic-damage:
-      base: 30.0
-      scale: 0.15
-      spread: 0.1
-      max-spread: 0.3
-    element:
-      wind:
-        damage: 25.0
-      earth:
-        damage: 25.0
-      thunder:
-        damage: 25.0
-      water:
-        damage: 25.0
+    name: '&bZauberbuch des Frostes'
     lore:
-      - §7Chaos is the source of all creation.
-    ability:
-      ability1:
-        type: SWIFTNESS
-        duration: 6.0
-        amplifier: 1.0
-        cooldown: 10.0
-        mode: SHIFT_RIGHT_CLICK
-      ability2:
-        type: SHOCKWAVE
-        cooldown: 10.0
-        knock-up: 2.0
-        length: 5.0
-        mode: SHIFT_RIGHT_CLICK
-      ability3:
-        type: SMITE
-        mode: SHIFT_RIGHT_CLICK
-        damage: 8.0
-        cooldown: 10.0
-      ability4:
-        type: HEAL
-        mode: SHIFT_RIGHT_CLICK
-        heal: 10.0
-        cooldown: 10.0
+      - '&8Magier Offhand'
+      - ''
+      - '&7Ein Zauberbuch voller'
+      - '&7Frostzauber-Wissen.'
+      - ''
+      - '&b+20% Frostschaden'
+      - '&b+12 Magieschaden'
+      - '&b+45 Max Mana'
+      - '&b+10% Skill-Schaden'
+      - ''
+      - '&d⚡ Bonus: Verlangsamung II'
+      - '&8Angriffe verlangsamen Feinde'
+      - ''
+      - '&8Benötigt Level 18'
+  magic-damage: 12
+  max-mana: 45
+  skill-damage: 10
+  required-level: 18
+  required-class:
+    - 'MAGIER'
+
+ZAUBERBUCH_BLITZ:
+  base:
+    material: BOOK
+    name: '&eZauberbuch des Blitzes'
+    lore:
+      - '&8Magier Offhand'
+      - ''
+      - '&7Ein Zauberbuch voller'
+      - '&7Blitzzauber-Wissen.'
+      - ''
+      - '&e+25% Blitzschaden'
+      - '&e+18 Magieschaden'
+      - '&e+60 Max Mana'
+      - '&e+15% Skill-Schaden'
+      - '&e-8% Cooldown-Reduktion'
+      - ''
+      - '&d⚡ Bonus: Kettenblitz'
+      - '&8Angriffe springen zu nahen Feinden'
+      - ''
+      - '&8Benötigt Level 25'
+  magic-damage: 18
+  max-mana: 60
+  skill-damage: 15
+  cooldown-reduction: 8
+  required-level: 25
+  required-class:
+    - 'MAGIER'
+
+ZAUBERBUCH_HEILUNG:
+  base:
+    material: BOOK
+    name: '&aHeilzauber-Buch'
+    lore:
+      - '&8Schamane Offhand'
+      - ''
+      - '&7Ein heiliges Buch voller Heilzauber.'
+      - '&7Verstärkt alle Heilungen.'
+      - ''
+      - '&a+35% Heilungskraft'
+      - '&a+18 Intelligenz'
+      - '&a+12 HP Regeneration'
+      - '&a+10% Max HP'
+      - ''
+      - '&8Benötigt Level 20'
+  magic-damage: 6
+  max-mana: 50
+  max-health: 30
+  health-regeneration: 12
+  required-level: 20
+  required-class:
+    - 'SCHAMANE'

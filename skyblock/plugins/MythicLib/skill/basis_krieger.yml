@@ -1,0 +1,43 @@
+COMBO_ATTACK:
+    mythicmobs-skill-id: Basis_Combo_Attack
+    modifiers:
+    - damage
+    - count
+
+DEEP_WOUND:
+    mythicmobs-skill-id: Basis_Deep_Wound
+    modifiers:
+    - damage
+    - extra
+
+EMPOWERED_ATTACK:
+    mythicmobs-skill-id: Basis_Empowered_Attack
+    modifiers:
+    - damage
+    - extra
+    - radius
+    - knockback
+
+CIRCULAR_SLASH:
+    mythicmobs-skill-id: Basis_Circular_Slash
+    modifiers:
+    - damage
+    - radius
+
+KRIEGER_HEAVY_CHARGE:
+    mythicmobs-skill-id: Basis_Heavy_Charge
+    modifiers:
+    - damage
+    - knockback
+
+FIRE_BERSERKER:
+    mythicmobs-skill-id: Basis_Fire_Berserker
+    modifiers:
+    - duration
+    - extra
+
+HUMAN_SHIELD:
+    mythicmobs-skill-id: Basis_Human_Shield
+    modifiers:
+    - duration
+    - resistance

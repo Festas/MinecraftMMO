@@ -2,8 +2,6 @@ generate-default-files: true
 generate-unicode-files: true
 layout:
   default:
-  - default-layout
-  - sword-layout
   - mmohud-layout
 check-update: 5
 placeholder-update: 5

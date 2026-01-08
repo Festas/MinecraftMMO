@@ -1,75 +1,136 @@
+# Verzauberung Profession (Enchanting)
+name: '&9✨ &bVerzauberung'
 
-# Display options
-name: Enchanting
-
-# Experience given to the main level
-# when leveling up this profession
+# XP zum Hauptlevel beim Leveln dieses Berufs
 experience:
-    base: 10
-    per-level: 2
+  base: 40
+  per-level: 7
 
-# Can be a file path to an existing .txt file inside the MMOCore/ folder.
-# | The TXT files contains only the experience required per level, one per line.
-# | Example: 'expcurves/profession_exp_curve.txt'
-# Or a formula using the {level} and PAPI placeholders.
-# | The formula should return the total experience required to reach the next
-# | level if {level} is the player's current profession level.
-# | Example: '{level} * 150'
-exp-curve: '{level} * 150'
+# Skyblock-Style XP-Kurve
+exp-curve: '{level} * {level} * 4 + 200'
 
-# Remove the 'enchant' parameter from the line config
-# to make the profession get EXP with ANY enchant.
+# Maximum Level
+max-level: 50
 
-# Specifying enchants like that lets you create different
-# enchanting professions, like DESTRUCTION for offense enchants
-# (Smite, Bane of Arth., Sharpness, Power, Fire Aspect, Flame)
-# and ALTERATION for strategic enchants for example.
-#
-# Use enchantitem{} to have it apply for any enchant.
-#
-# Use enchantitem{enchant="sharpness,power"} for multiple enchants
+# Icon für UI
+icon: ENCHANTING_TABLE
+
+# Level-Up Trigger mit Meilensteinen
+on-level-up:
+  default:
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &9✨ &bVerzauberung Level {level}!"}'
+    - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=ENTITY_PLAYER_LEVELUP;volume=1;pitch=1}'
+  
+  5:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 5"}'
+    - 'message{text="  &7Freigeschaltet: &a+5% Verzauberungs-Qualität"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  10:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 10"}'
+    - 'message{text="  &7Freigeschaltet: &aBessere Verzauberungen"}'
+    - 'message{text="  &7Neue Fähigkeit: &dVerzauberungs-Boost"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  15:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 15"}'
+    - 'message{text="  &7Freigeschaltet: &aVerzauberungs-Kombinationen"}'
+    - 'message{text="  &7Zugang zu: &bVerzauberungs-Turm I"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  20:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 20"}'
+    - 'message{text="  &7Freigeschaltet: &eSeltene Verzauberungen"}'
+    - 'message{text="  &7Belohnung: &6Goldener Verzauberungstisch"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  25:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 25"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Verzauberer]"}'
+    - 'message{text="  &7Zugang zu: &bVerzauberungs-Turm II"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  30:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 30"}'
+    - 'message{text="  &7Freigeschaltet: &cCustom Verzauberungen"}'
+    - 'message{text="  &7Neue Fähigkeit: &dMagische Verstärkung"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  35:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 35"}'
+    - 'message{text="  &7Freigeschaltet: &bErweiterte Kombinationen"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  40:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 40"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Verzauberungs-Experte]"}'
+    - 'message{text="  &7Belohnung: &bDiamant-Verzauberungstisch der Magie"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  45:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&lMEILENSTEIN! &bVerzauberung Level 45"}'
+    - 'message{text="  &7Freigeschaltet: &5Meister-Verzauberer"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=1}'
+  
+  50:
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'message{text="  &6&l&nMAXIMUM LEVEL! &bVerzauberung Level 50"}'
+    - 'message{text="  &7Freigeschaltet: &6Titel [Verzauberungs-Legende]"}'
+    - 'message{text="  &7Belohnung: &5&lLegendärer Verzauberungstisch"}'
+    - 'message{text="&9▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
+    - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=2}'
+
+# XP-Quellen für Verzauberungen
 exp-sources:
-- 'enchantitem{}'
-
-# When enchanting an item, players earn Enchanting experience.
-# Experience given by an item is the sum of the EXP given by every extra enchantment.
-# Enchantment experience depends on the enchant itself + the enchant level.
-# Enchant exp = <enchant-level> * <base-enchant-exp>
-base-enchant-exp:
-    fire_protection: 10
-    sharpness: 10
-    flame: 10
-    aqua_affinity: 10
-    punch: 10
-    loyalty: 10
-    depth_strider: 10
-    vanishing_curse: 10
-    unbreaking: 10
-    knockback: 10
-    luck_of_the_sea: 10
-    binding_curse: 10
-    fortune: 10
-    protection: 10
-    efficiency: 10
-    mending: 10
-    frost_walker: 10
-    lure: 10
-    looting: 10
-    piercing: 10
-    blast_protection: 10
-    smite: 10
-    multishot: 10
-    fire_aspect: 10
-    channeling: 10
-    sweeping: 10
-    thorns: 10
-    bane_of_arthropods: 10
-    respiration: 10
-    riptide: 10
-    silk_touch: 10
-    quick_charge: 10
-    projectile_protection: 10
-    impaling: 10
-    feather_falling: 10
-    power: 10
-    infinity: 10
+  # Waffen
+  - 'enchantitem{type=DIAMOND_SWORD;amount=10-20}'
+  - 'enchantitem{type=NETHERITE_SWORD;amount=15-25}'
+  - 'enchantitem{type=IRON_SWORD;amount=6-12}'
+  # Rüstung
+  - 'enchantitem{type=DIAMOND_HELMET;amount=10-20}'
+  - 'enchantitem{type=DIAMOND_CHESTPLATE;amount=12-22}'
+  - 'enchantitem{type=DIAMOND_LEGGINGS;amount=11-21}'
+  - 'enchantitem{type=DIAMOND_BOOTS;amount=10-20}'
+  - 'enchantitem{type=NETHERITE_HELMET;amount=15-25}'
+  - 'enchantitem{type=NETHERITE_CHESTPLATE;amount=18-28}'
+  - 'enchantitem{type=NETHERITE_LEGGINGS;amount=16-26}'
+  - 'enchantitem{type=NETHERITE_BOOTS;amount=15-25}'
+  - 'enchantitem{type=IRON_HELMET;amount=5-10}'
+  - 'enchantitem{type=IRON_CHESTPLATE;amount=6-12}'
+  - 'enchantitem{type=IRON_LEGGINGS;amount=5-11}'
+  - 'enchantitem{type=IRON_BOOTS;amount=5-10}'
+  # Werkzeuge
+  - 'enchantitem{type=DIAMOND_PICKAXE;amount=10-20}'
+  - 'enchantitem{type=NETHERITE_PICKAXE;amount=15-25}'
+  - 'enchantitem{type=DIAMOND_AXE;amount=10-20}'
+  - 'enchantitem{type=DIAMOND_SHOVEL;amount=8-16}'
+  - 'enchantitem{type=DIAMOND_HOE;amount=8-16}'
+  # Fernkampf
+  - 'enchantitem{type=BOW;amount=8-15}'
+  - 'enchantitem{type=CROSSBOW;amount=10-18}'
+  - 'enchantitem{type=TRIDENT;amount=15-25}'
+  # Sonstiges
+  - 'enchantitem{type=FISHING_ROD;amount=6-12}'
+  - 'enchantitem{type=BOOK;amount=5-10}'
+  - 'enchantitem{type=SHIELD;amount=8-15}'
+  - 'enchantitem{type=ELYTRA;amount=20-30}'

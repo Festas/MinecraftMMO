@@ -1,5 +1,5 @@
 # GUI display name
-name: Party ({players}/{max})
+name: Gruppenansicht ({players}/{max})
 
 # Number of slots in your inventory. Must be
 # between 9 and 54 and must be a multiple of 9.
@@ -11,7 +11,7 @@ items:
     function: member
     empty:
       item: GRAY_STAINED_GLASS_PANE
-      name: '&aNo Player'
+      name: '&aKein Spieler'
     member:
 
       #custom_model_data_float: 0.45        # 1.20.4+ Float custom model data. Either this, or string option above works completely fine
@@ -34,11 +34,11 @@ items:
     slots: [ 50 ]
     function: leave
     item: REDSTONE
-    name: '&cLeave Party'
+    name: '&cGruppe verlassen'
     lore: { }
   request:
     slots: [ 48 ]
     function: invite
     item: WRITABLE_BOOK
-    name: '&aInvite a player..'
+    name: '&aEinen Spieler einladen...'
     lore: { }
