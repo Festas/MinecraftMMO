@@ -106,37 +106,42 @@ on-level-up:
     - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=2}'
 
 # XP-Quellen für Zähmung und Interaktion mit Tieren
-exp-sources:
-  # Tiere zähmen (10-30 XP)
-  - 'tamemob{type=WOLF;amount=15-20}'
-  - 'tamemob{type=CAT;amount=12-18}'
-  - 'tamemob{type=PARROT;amount=10-15}'
-  - 'tamemob{type=HORSE;amount=20-25}'
-  - 'tamemob{type=DONKEY;amount=18-23}'
-  - 'tamemob{type=MULE;amount=18-23}'
-  - 'tamemob{type=LLAMA;amount=15-20}'
-  - 'tamemob{type=TRADER_LLAMA;amount=20-25}'
-  - 'tamemob{type=FOX;amount=25-30}'
-  - 'tamemob{type=OCELOT;amount=20-25}'
-  - 'tamemob{type=AXOLOTL;amount=18-23}'
+# HINWEIS: Die Trigger 'tamemob' und 'breedmob' werden von MMOCore nicht unterstützt.
+# Diese Profession ist derzeit deaktiviert und muss über andere Mechanismen konfiguriert werden.
+# Verwenden Sie stattdessen MMOCore Events oder Custom Triggers.
+exp-sources: {}
   
-  # Tiere züchten (5-15 XP)
-  - 'breedmob{type=WOLF;amount=8-12}'
-  - 'breedmob{type=CAT;amount=6-10}'
-  - 'breedmob{type=HORSE;amount=10-15}'
-  - 'breedmob{type=DONKEY;amount=8-12}'
-  - 'breedmob{type=LLAMA;amount=8-12}'
-  - 'breedmob{type=FOX;amount=10-15}'
-  - 'breedmob{type=COW;amount=5-8}'
-  - 'breedmob{type=SHEEP;amount=5-8}'
-  - 'breedmob{type=PIG;amount=5-8}'
-  - 'breedmob{type=CHICKEN;amount=4-7}'
-  - 'breedmob{type=RABBIT;amount=6-9}'
-  - 'breedmob{type=GOAT;amount=7-10}'
-  - 'breedmob{type=TURTLE;amount=8-12}'
-  - 'breedmob{type=BEE;amount=6-9}'
-  - 'breedmob{type=PANDA;amount=10-15}'
-  - 'breedmob{type=POLAR_BEAR;amount=10-15}'
-  - 'breedmob{type=AXOLOTL;amount=8-12}'
-  - 'breedmob{type=HOGLIN;amount=12-16}'
-  - 'breedmob{type=STRIDER;amount=9-13}'
+  # DEAKTIVIERT - Nicht unterstützte Trigger:
+  # Tiere zähmen (10-30 XP) - 'tamemob' existiert nicht in MMOCore
+  # - 'tamemob{type=WOLF;amount=15-20}'
+  # - 'tamemob{type=CAT;amount=12-18}'
+  # - 'tamemob{type=PARROT;amount=10-15}'
+  # - 'tamemob{type=HORSE;amount=20-25}'
+  # - 'tamemob{type=DONKEY;amount=18-23}'
+  # - 'tamemob{type=MULE;amount=18-23}'
+  # - 'tamemob{type=LLAMA;amount=15-20}'
+  # - 'tamemob{type=TRADER_LLAMA;amount=20-25}'
+  # - 'tamemob{type=FOX;amount=25-30}'
+  # - 'tamemob{type=OCELOT;amount=20-25}'
+  # - 'tamemob{type=AXOLOTL;amount=18-23}'
+  
+  # Tiere züchten (5-15 XP) - 'breedmob' existiert nicht in MMOCore
+  # - 'breedmob{type=WOLF;amount=8-12}'
+  # - 'breedmob{type=CAT;amount=6-10}'
+  # - 'breedmob{type=HORSE;amount=10-15}'
+  # - 'breedmob{type=DONKEY;amount=8-12}'
+  # - 'breedmob{type=LLAMA;amount=8-12}'
+  # - 'breedmob{type=FOX;amount=10-15}'
+  # - 'breedmob{type=COW;amount=5-8}'
+  # - 'breedmob{type=SHEEP;amount=5-8}'
+  # - 'breedmob{type=PIG;amount=5-8}'
+  # - 'breedmob{type=CHICKEN;amount=4-7}'
+  # - 'breedmob{type=RABBIT;amount=6-9}'
+  # - 'breedmob{type=GOAT;amount=7-10}'
+  # - 'breedmob{type=TURTLE;amount=8-12}'
+  # - 'breedmob{type=BEE;amount=6-9}'
+  # - 'breedmob{type=PANDA;amount=10-15}'
+  # - 'breedmob{type=POLAR_BEAR;amount=10-15}'
+  # - 'breedmob{type=AXOLOTL;amount=8-12}'
+  # - 'breedmob{type=HOGLIN;amount=12-16}'
+  # - 'breedmob{type=STRIDER;amount=9-13}'

@@ -100,7 +100,92 @@ on-level-up:
     - 'message{text="&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"}'
     - 'sound{sound=UI_TOAST_CHALLENGE_COMPLETE;volume=1;pitch=2}'
 
-# Hinweis: Schmieden-XP muss durch MMOCore-Events konfiguriert werden
-# Die Profession trackt Amboss-Nutzung, Reparaturen und Netherite-Upgrades
-# Konfiguration erfolgt über config.yml im Abschnitt "anvil-permissions"
+# XP-Quellen für Schmieden
+# Reparatur-XP für verschiedene Items am Amboss
+repair-exp:
+  # Waffen - Schwerter
+  DIAMOND_SWORD: 2
+  GOLDEN_SWORD: 60
+  IRON_SWORD: 8
+  STONE_SWORD: 7
+  WOODEN_SWORD: 13
+  NETHERITE_SWORD: 1
+  
+  # Werkzeuge - Spitzhacken
+  DIAMOND_PICKAXE: 2
+  GOLDEN_PICKAXE: 60
+  IRON_PICKAXE: 8
+  STONE_PICKAXE: 7
+  WOODEN_PICKAXE: 13
+  NETHERITE_PICKAXE: 1
+  
+  # Werkzeuge - Äxte
+  DIAMOND_AXE: 2
+  GOLDEN_AXE: 60
+  IRON_AXE: 8
+  STONE_AXE: 7
+  WOODEN_AXE: 13
+  NETHERITE_AXE: 1
+  
+  # Werkzeuge - Schaufeln
+  DIAMOND_SHOVEL: 2
+  GOLDEN_SHOVEL: 60
+  IRON_SHOVEL: 8
+  STONE_SHOVEL: 7
+  WOODEN_SHOVEL: 13
+  NETHERITE_SHOVEL: 1
+  
+  # Werkzeuge - Hacken
+  DIAMOND_HOE: 2
+  GOLDEN_HOE: 60
+  IRON_HOE: 8
+  STONE_HOE: 7
+  WOODEN_HOE: 13
+  NETHERITE_HOE: 1
+  
+  # Rüstung - Helme
+  DIAMOND_HELMET: 3
+  GOLDEN_HELMET: 65
+  IRON_HELMET: 10
+  CHAINMAIL_HELMET: 9
+  LEATHER_HELMET: 12
+  NETHERITE_HELMET: 2
+  TURTLE_HELMET: 8
+  
+  # Rüstung - Brustplatten
+  DIAMOND_CHESTPLATE: 4
+  GOLDEN_CHESTPLATE: 70
+  IRON_CHESTPLATE: 12
+  CHAINMAIL_CHESTPLATE: 11
+  LEATHER_CHESTPLATE: 15
+  NETHERITE_CHESTPLATE: 3
+  
+  # Rüstung - Hosen
+  DIAMOND_LEGGINGS: 3
+  GOLDEN_LEGGINGS: 68
+  IRON_LEGGINGS: 11
+  CHAINMAIL_LEGGINGS: 10
+  LEATHER_LEGGINGS: 14
+  NETHERITE_LEGGINGS: 2
+  
+  # Rüstung - Stiefel
+  DIAMOND_BOOTS: 2
+  GOLDEN_BOOTS: 62
+  IRON_BOOTS: 9
+  CHAINMAIL_BOOTS: 8
+  LEATHER_BOOTS: 11
+  NETHERITE_BOOTS: 1
+  
+  # Andere Items
+  BOW: 5
+  CROSSBOW: 6
+  TRIDENT: 4
+  SHIELD: 7
+  ELYTRA: 3
+  SHEARS: 8
+  FISHING_ROD: 6
+  FLINT_AND_STEEL: 9
+  CARROT_ON_A_STICK: 10
+  WARPED_FUNGUS_ON_A_STICK: 10
+
 exp-sources: {}
