@@ -75,13 +75,6 @@ jobs:
             fi
           done
 
-      - name: Detect and sync deleted plugins
-        run: |
-          echo "🔍 Prüfe auf gelöschte Dateien innerhalb der Plugins..."
-          
-          # Dieser Schritt stellt sicher, dass gelöschte Dateien auch im Git erfasst werden
-          git add -A skyblock/plugins/MMO* skyblock/plugins/Mythic* 2>/dev/null || true
-
       - name: Commit and Push Changes
         run: |
           git config user.name "github-actions[bot]"
@@ -108,11 +101,15 @@ jobs:
             
             git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}
             
-            git pull --rebase origin main || {
-              echo "Rebase conflict detected. Retrying..."
+            # Try to pull and rebase, if conflicts occur abort and try a simple pull
+            if ! git pull --rebase origin main; then
+              echo "⚠️ Rebase conflict detected, aborting and trying regular pull..."
               git rebase --abort
-              git pull --rebase origin main
-            }
+              if ! git pull --no-rebase origin main; then
+                echo "❌ Pull failed, manual intervention required"
+                exit 1
+              fi
+            fi
             
             git push
             echo "✅ Änderungen erfolgreich gepusht!"
@@ -126,6 +123,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
 
       - name: Setup SSH Key
         run: |
