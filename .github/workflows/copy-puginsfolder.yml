@@ -103,5 +103,13 @@ jobs:
           else
             git commit -m "🔄 Sync $SERVER_NAME plugin configs from server"
             git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}
+            
+            # Pull remote changes and rebase before pushing
+            git pull --rebase origin main || {
+              echo "Rebase conflict detected. Aborting and retrying..."
+              git rebase --abort
+              git pull --rebase origin main
+            }
+            
             git push
           fi
