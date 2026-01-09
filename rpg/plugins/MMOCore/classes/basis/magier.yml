@@ -69,7 +69,7 @@ options:
     needs-permission: false
 
 skills:
-    FIRE_STORM:
+    BASIS_FIRE_STORM:
         level: 1
         max-level: 30
     POWER_MARK:
@@ -78,7 +78,7 @@ skills:
     MAGIER_FIREBALL:
         level: 10
         max-level: 30
-    MINOR_HEALINGS:
+    BASIS_MINOR_HEALINGS:
         level: 15
         max-level: 30
     MAGIER_ICE_SPIKES:

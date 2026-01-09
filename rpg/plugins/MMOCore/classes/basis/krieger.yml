@@ -71,19 +71,19 @@ options:
     needs-permission: false
 
 skills:
-    DEEP_WOUND:
+    BASIS_DEEP_WOUND:
         level: 1
         max-level: 30
-    WEAKEN:
+    BASIS_WEAKEN:
         level: 5
         max-level: 30
-    EMPOWERED_ATTACK:
+    BASIS_EMPOWERED_ATTACK:
         level: 10
         max-level: 30
-    COMBO_ATTACK:
+    BASIS_COMBO_ATTACK:
         level: 15
         max-level: 30
-    MINOR_HEALINGS:
+    BASIS_MINOR_HEALINGS:
         level: 20
         max-level: 30
         upgradable: false

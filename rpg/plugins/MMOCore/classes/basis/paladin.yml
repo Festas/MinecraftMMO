@@ -69,16 +69,16 @@ options:
     needs-permission: false
 
 skills:
-    MINOR_HEALINGS:
+    BASIS_MINOR_HEALINGS:
         level: 1
         max-level: 30
-    WEAKEN:
+    BASIS_WEAKEN:
         level: 5
         max-level: 30
-    EMPOWERED_ATTACK:
+    BASIS_EMPOWERED_ATTACK:
         level: 25
         max-level: 30
-    GREATER_HEALINGS:
+    BASIS_GREATER_HEALINGS:
         level: 40
         max-level: 30
 

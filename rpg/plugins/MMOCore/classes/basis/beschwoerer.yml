@@ -60,10 +60,10 @@ options:
     needs-permission: false
 
 skills:
-    MINOR_HEALINGS:
+    BASIS_MINOR_HEALINGS:
         level: 1
         max-level: 30
-    WEAKEN:
+    BASIS_WEAKEN:
         level: 10
         max-level: 30
     WARP:

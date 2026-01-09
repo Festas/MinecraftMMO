@@ -1,21 +1,21 @@
-MINOR_HEALINGS:
+BASIS_MINOR_HEALINGS:
     mythicmobs-skill-id: Basis_Minor_Healings
     modifiers:
     - heal
 
-GREATER_HEALINGS:
+BASIS_GREATER_HEALINGS:
     mythicmobs-skill-id: Basis_Greater_Healings
     modifiers:
     - heal
     - duration
 
-WEAKEN:
+BASIS_WEAKEN:
     mythicmobs-skill-id: Basis_Weaken
     modifiers:
     - duration
     - amplifier
 
-REGEN_ALLY:
+BASIS_REGEN_ALLY:
     mythicmobs-skill-id: Basis_Regen_Ally
     modifiers:
     - duration
