@@ -17,18 +17,21 @@ BASIS_FIRE_STORM:
     - duration
     - radius
 
-BLINK:
+# UMBENANNT: BLINK → BASIS_BLINK
+BASIS_BLINK:
     mythicmobs-skill-id: Basis_Blink
     modifiers:
     - range
 
-FREEZE:
+# UMBENANNT: FREEZE → BASIS_FREEZE
+BASIS_FREEZE:
     mythicmobs-skill-id: Basis_Freeze
     modifiers:
     - duration
     - amplifier
 
-FIRE_METEOR:
+# UMBENANNT: FIRE_METEOR → BASIS_FIRE_METEOR
+BASIS_FIRE_METEOR:
     mythicmobs-skill-id: Basis_Fire_Meteor
     modifiers:
     - damage
