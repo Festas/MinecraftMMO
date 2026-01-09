@@ -204,7 +204,7 @@ conditions:
 
 # JOURNAL
 journal:
-  daemonen_tier1_start: "run ^&5Slayer: Dämonen-Jäger I|&7Töte 10 Dämonen.|&7(Hexen ^Evoker ^Vindicator)|&7Belohnung: 50 Gold + 100 XP"
+  daemonen_tier1_start: "&5Slayer: Dämonen-Jäger I|&7Töte 10 Dämonen.|&7(Hexen, Evoker, Vindicator)|&7Belohnung: 50 Gold + 100 XP"
   daemonen_tier2_start: "&5Slayer: Dämonen-Jäger II|&7Töte 25 Dämonen.|&7Belohnung: 150 Gold + 300 XP"
   daemonen_tier3_start: "&5Slayer: Dämonen-Jäger III|&7Töte 50 Dämonen.|&7Belohnung: 400 Gold + 750 XP"
   daemonen_tier4_start: "&5Slayer: Dämonen-Jäger IV|&7Töte 100 Dämonen.|&7Belohnung: 1000 Gold + 2000 XP"

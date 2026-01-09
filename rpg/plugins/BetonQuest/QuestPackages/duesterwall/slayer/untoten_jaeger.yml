@@ -76,6 +76,10 @@ conversations:
         pointer: "ende"
         events: "untoten_tier5_belohnung"
         conditions: "untoten_tier5_complete,!untoten_tier5_belohnt"
+      
+      ende:
+        text: "&7Gehe und vollende deinen Auftrag."
+        pointer: ""
     
     player_options:
       tier_info:
@@ -164,11 +168,11 @@ events:
 
 # OBJECTIVES
 objectives:
-  untoten_tier1_kills: "mobkill ZOMBIE,SKELETON,DROWNED,HUSK ^STRAY 10 events:untoten_tier1_done notify:&cTier I: %left% Untote verbleiben"
-  untoten_tier2_kills: "mobkill ZOMBIE,SKELETON,DROWNED,HUSK ^STRAY 25 events:untoten_tier2_done notify:&cTier II: %left% Untote verbleiben"
-  untoten_tier3_kills: "mobkill ZOMBIE,SKELETON,DROWNED,HUSK ^STRAY 50 events:untoten_tier3_done notify:&cTier III: %left% Untote verbleiben"
-  untoten_tier4_kills: "mobkill ZOMBIE,SKELETON,DROWNED,HUSK ^STRAY 100 events:untoten_tier4_done notify:&cTier IV: %left% Untote verbleiben"
-  untoten_tier5_kills: "mobkill ZOMBIE,SKELETON,DROWNED,HUSK ^STRAY 250 events:untoten_tier5_done notify:&cTier V: %left% Untote verbleiben"
+  untoten_tier1_kills: "mobkill ZOMBIE,SKELETON,DROWNED,HUSK,STRAY 10 events:untoten_tier1_done notify:Tier_I:_%left%_Untote_verbleiben"
+  untoten_tier2_kills: "mobkill ZOMBIE,SKELETON,DROWNED,HUSK,STRAY 25 events:untoten_tier2_done notify:Tier_II:_%left%_Untote_verbleiben"
+  untoten_tier3_kills: "mobkill ZOMBIE,SKELETON,DROWNED,HUSK,STRAY 50 events:untoten_tier3_done notify:Tier_III:_%left%_Untote_verbleiben"
+  untoten_tier4_kills: "mobkill ZOMBIE,SKELETON,DROWNED,HUSK,STRAY 100 events:untoten_tier4_done notify:Tier_IV:_%left%_Untote_verbleiben"
+  untoten_tier5_kills: "mobkill ZOMBIE,SKELETON,DROWNED,HUSK,STRAY 250 events:untoten_tier5_done notify:Tier_V:_%left%_Untote_verbleiben"
 
 # CONDITIONS
 conditions:

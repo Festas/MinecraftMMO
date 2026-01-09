@@ -28,6 +28,14 @@ conversations:
         events: "sohn_belohnung_final"
     
     player_options:
+      spieler_antwort:
+        text: "&7[Zurück zum Hauptmenü]"
+        pointer: "start"
+      
+      quest_optionen:
+        text: "&7[Zurück]"
+        pointer: "start"
+      
       annehmen:
         text: "&aIch werde ihn finden, Hammund!"
         pointer: "ende"
@@ -72,8 +80,21 @@ conversations:
         text: "&7*Verwirrt* Wo... wo bin ich? Die Stimmen... sie sind weg. Danke... danke dass du mich gefunden hast..."
         pointer: "ende"
         conditions: "sohn_quest_complete"
+      
+      ende:
+        text: "&7Auf Wiedersehen."
+        pointer: ""
+    
     
     player_options:
+      spieler_antwort:
+        text: "&7[Zurück zum Hauptmenü]"
+        pointer: "start"
+      
+      quest_optionen:
+        text: "&7[Zurück]"
+        pointer: "start"
+      
       beruhigen:
         text: "&7Torin! Dein Vater sucht dich! Komm, ich bringe dich nach Hause!"
         pointer: "ende"

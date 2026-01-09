@@ -168,11 +168,11 @@ events:
 
 # OBJECTIVES
 objectives:
-  spinnen_tier1_kills: "mobkill SPIDER,CAVE_SPIDER 10 events:spinnen_tier1_done notify:&8Tier I: %left% Spinnen verbleiben"
-  spinnen_tier2_kills: "mobkill SPIDER,CAVE_SPIDER 25 events:spinnen_tier2_done notify:&8Tier II: %left% Spinnen verbleiben"
-  spinnen_tier3_kills: "mobkill SPIDER,CAVE_SPIDER 50 events:spinnen_tier3_done notify:&8Tier III: %left% Spinnen verbleiben"
-  spinnen_tier4_kills: "mobkill SPIDER,CAVE_SPIDER 100 events:spinnen_tier4_done notify:&8Tier IV: %left% Spinnen verbleiben"
-  spinnen_tier5_kills: "mobkill SPIDER,CAVE_SPIDER 250 events:spinnen_tier5_done notify:&8Tier V: %left% Spinnen verbleiben"
+  spinnen_tier1_kills: "mobkill SPIDER,CAVE_SPIDER 10 events:spinnen_tier1_done notify:Tier_I:_%left%_Spinnen_verbleiben"
+  spinnen_tier2_kills: "mobkill SPIDER,CAVE_SPIDER 25 events:spinnen_tier2_done notify:Tier_II:_%left%_Spinnen_verbleiben"
+  spinnen_tier3_kills: "mobkill SPIDER,CAVE_SPIDER 50 events:spinnen_tier3_done notify:Tier_III:_%left%_Spinnen_verbleiben"
+  spinnen_tier4_kills: "mobkill SPIDER,CAVE_SPIDER 100 events:spinnen_tier4_done notify:Tier_IV:_%left%_Spinnen_verbleiben"
+  spinnen_tier5_kills: "mobkill SPIDER,CAVE_SPIDER 250 events:spinnen_tier5_done notify:Tier_V:_%left%_Spinnen_verbleiben"
 
 # CONDITIONS
 conditions:
