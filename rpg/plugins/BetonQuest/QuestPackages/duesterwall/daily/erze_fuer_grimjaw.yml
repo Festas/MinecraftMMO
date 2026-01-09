@@ -66,7 +66,7 @@ events:
   daily_erze_reset: "tag !daily_erze_complete_heute"  # Wird täglich um 4:00 ausgeführt
 
 objectives:
-  sammle_erze_daily: "block IRON_ORE,DEEPSLATE_IRON_ORE,COAL_ORE,DEEPSLATE_COAL_ORE 20 events:erze_gesammelt notify:1:&7%left% Erze verbleiben"
+  sammle_erze_daily: "block IRON_ORE,DEEPSLATE_IRON_ORE,COAL_ORE,DEEPSLATE_COAL_ORE 20 events:erze_gesammelt notify"
 
 conditions:
   daily_erze_aktiv: "tag daily_erze_aktiv"
