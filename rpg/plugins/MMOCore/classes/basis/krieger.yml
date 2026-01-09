@@ -87,7 +87,7 @@ skills:
         level: 20
         max-level: 30
         upgradable: false
-    FIRE_BERSERKER:
+    BASIS_FIRE_BERSERKER:
         level: 30
         max-level: 30
 
