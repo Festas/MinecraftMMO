@@ -2,20 +2,20 @@
 # Reusable Conditions
 
 conditions:
-  # Level-Checks (MMOCore Level)
-  ist_level_5: "mmocore_level 5"
-  ist_level_10: "mmocore_level 10"
-  ist_level_15: "mmocore_level 15"
-  ist_level_20: "mmocore_level 20"
-  ist_level_25: "mmocore_level 25"
-  ist_level_30: "mmocore_level 30"
-  ist_level_35: "mmocore_level 35"
-  ist_level_40: "mmocore_level 40"
-  ist_level_50: "mmocore_level 50"
+  # Level-Checks (MMOCore Level via PlaceholderAPI)
+  ist_level_5: "variable %mmocore_level%>=5"
+  ist_level_10: "variable %mmocore_level%>=10"
+  ist_level_15: "variable %mmocore_level%>=15"
+  ist_level_20: "variable %mmocore_level%>=20"
+  ist_level_25: "variable %mmocore_level%>=25"
+  ist_level_30: "variable %mmocore_level%>=30"
+  ist_level_35: "variable %mmocore_level%>=35"
+  ist_level_40: "variable %mmocore_level%>=40"
+  ist_level_50: "variable %mmocore_level%>=50"
   
   # Zeit-Checks
-  ist_tag: "time 0-12000"
-  ist_nacht: "time 12000-24000"
+  ist_tag: "time 0-12"
+  ist_nacht: "time 12-24"
   
   # Quest-Status Checks
   hat_leere_zeichen: "item leere_zeichen"
