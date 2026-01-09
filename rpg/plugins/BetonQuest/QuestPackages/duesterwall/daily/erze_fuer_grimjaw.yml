@@ -23,18 +23,14 @@ conversations:
       
       erfolg:
         text: "&8*Grunzt zufrieden* Gute Qualität! Das reicht für heute. Hier, dein Gold. Und *brummt* ...du hast gute Arbeit geleistet. Komm morgen wieder!"
-        pointer: "ende"
+        pointer: ""
         events: "daily_erze_belohnung"
         conditions: "daily_erze_complete"
       
       schon_erledigt:
         text: "&8Du warst heute schon da! Komm morgen wieder. Ich bin kein Gold-Automat!"
-        pointer: "ende"
-        conditions: "daily_erze_complete_heute"
-      
-      ende:
-        text: "&7Auf Wiedersehen."
         pointer: ""
+        conditions: "daily_erze_complete_heute"
     
     
     player_options:
@@ -52,12 +48,12 @@ conversations:
       
       annehmen:
         text: "&aIch sammle die Erze!"
-        pointer: "ende"
+        pointer: ""
         events: "start_daily_erze"
       
       ablehnen:
         text: "&7Heute nicht..."
-        pointer: "ende"
+        pointer: ""
 
 events:
   start_daily_erze: "run ^tag daily_erze_aktiv ^journal add daily_erze_start ^objective add sammle_erze_daily 20"

@@ -21,10 +21,6 @@ conversations:
       
       danke:
         text: "&6*Kehrt zu seinem verwirrten Selbst zurück* Äh... was wollte ich nochmal sagen? Ach ja! Gute Arbeit, Herbert! Oder warst du Karl?"
-        pointer: "ende"
-      
-      ende:
-        text: "&6Hmm... was? Ah, auf Wiedersehen!"
         pointer: ""
     
     player_options:
@@ -39,7 +35,7 @@ conversations:
       
       mal_frage_nein:
         text: "&7Ich sehe nichts Besonderes..."
-        pointer: "ende"
+        pointer: ""
       
       auftrag_annehmen:
         text: "&aIch werde helfen, Euer Hoheit!"
@@ -48,7 +44,7 @@ conversations:
       
       auftrag_ablehnen:
         text: "&cIch bin nicht bereit dafür..."
-        pointer: "ende"
+        pointer: ""
 
 conditions:
   hauptquest_aktiv: "tag hauptquest_kap1_aktiv"

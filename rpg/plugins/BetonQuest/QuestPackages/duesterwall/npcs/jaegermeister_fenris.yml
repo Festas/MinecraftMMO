@@ -18,7 +18,7 @@ conversations:
       
       slayer_niedrig_level:
         text: "&7*schüttelt den Kopf* Du bist zu grün. Komm wieder wenn du Level 10 erreicht hast. Die Monster da draußen fressen Grünschnäbel zum Frühstück."
-        pointer: "ende"
+        pointer: ""
         conditions: "!_core.ist_level_10"
       
       untoten_info:
@@ -32,10 +32,6 @@ conversations:
       daemonen_info:
         text: "&7Hexen und Illager... Sie sind schlau und gefährlich. Dies ist der härteste Pfad. Rang V verleiht den Titel [Dämonen-Schlächter]. Benötigt höheres Level zum Starten."
         pointer: "daemonen_optionen"
-      
-      ende:
-        text: "&7Gute Jagd. *Der Wolf heult*"
-        pointer: ""
     
     player_options:
       spieler_optionen:
@@ -76,7 +72,7 @@ conversations:
       
       abschied:
         text: "&7Auf Wiedersehen, Fenris."
-        pointer: "ende"
+        pointer: ""
 
 conditions:
 

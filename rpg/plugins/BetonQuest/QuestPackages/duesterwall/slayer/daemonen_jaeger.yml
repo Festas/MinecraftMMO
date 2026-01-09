@@ -21,7 +21,7 @@ conversations:
       
       zu_schwach:
         text: "&7*Schüttelt den Kopf* Du bist noch nicht bereit. Diese Gegner töten erfahrene Krieger. Komm wieder wenn du Level 15 erreicht hast."
-        pointer: "ende"
+        pointer: ""
         conditions: "!_core.ist_level_15"
       
       tier_info_text:
@@ -35,7 +35,7 @@ conversations:
       
       tier1_erfolg:
         text: "&aBeeindruckend. Du lebst noch. Tier II wird härter."
-        pointer: "ende"
+        pointer: ""
         events: "daemonen_tier1_belohnung"
         conditions: "daemonen_tier1_complete,!daemonen_tier1_belohnt"
       
@@ -46,7 +46,7 @@ conversations:
       
       tier2_erfolg:
         text: "&aTier II bezwungen! Du lernst schnell."
-        pointer: "ende"
+        pointer: ""
         events: "daemonen_tier2_belohnung"
         conditions: "daemonen_tier2_complete,!daemonen_tier2_belohnt"
       
@@ -57,7 +57,7 @@ conversations:
       
       tier3_erfolg:
         text: "&aTier III! Die Dämonen flüstern deinen Namen mit Furcht!"
-        pointer: "ende"
+        pointer: ""
         events: "daemonen_tier3_belohnung"
         conditions: "daemonen_tier3_complete,!daemonen_tier3_belohnt"
       
@@ -68,7 +68,7 @@ conversations:
       
       tier4_erfolg:
         text: "&aTier IV abgeschlossen! Du bist ein legendärer Jäger geworden!"
-        pointer: "ende"
+        pointer: ""
         events: "daemonen_tier4_belohnung"
         conditions: "daemonen_tier4_complete,!daemonen_tier4_belohnt"
       
@@ -79,13 +79,9 @@ conversations:
       
       tier5_erfolg:
         text: "&6&l*Verneigt sich tief* [&5Dämonen-Schlächter&6&l]. Selbst die Leere weiß von deinen Taten. Du bist eine lebende Legende."
-        pointer: "ende"
+        pointer: ""
         events: "daemonen_tier5_belohnung"
         conditions: "daemonen_tier5_complete,!daemonen_tier5_belohnt"
-      
-      ende:
-        text: "&7Gehe und vollende deinen Auftrag."
-        pointer: ""
     
     player_options:
       tier_info:
@@ -122,27 +118,27 @@ conversations:
       
       tier1_start:
         text: "&aIch wage mich an Tier I!"
-        pointer: "ende"
+        pointer: ""
         events: "start_daemonen_tier1"
       
       tier2_start:
         text: "&aWeiter zu Tier II!"
-        pointer: "ende"
+        pointer: ""
         events: "start_daemonen_tier2"
       
       tier3_start:
         text: "&aIch bin bereit für Tier III!"
-        pointer: "ende"
+        pointer: ""
         events: "start_daemonen_tier3"
       
       tier4_start:
         text: "&aTier IV - ich bin vorbereitet!"
-        pointer: "ende"
+        pointer: ""
         events: "start_daemonen_tier4"
       
       tier5_start:
         text: "&aIch stelle mich der ultimativen Prüfung!"
-        pointer: "ende"
+        pointer: ""
         events: "start_daemonen_tier5"
 
 # EVENTS

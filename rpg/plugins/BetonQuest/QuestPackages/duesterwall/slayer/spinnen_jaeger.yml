@@ -29,7 +29,7 @@ conversations:
       
       tier1_erfolg:
         text: "&aGut! Die erste Prüfung ist bestanden. Weiter zu Tier II?"
-        pointer: "ende"
+        pointer: ""
         events: "spinnen_tier1_belohnung"
         conditions: "spinnen_tier1_complete,!spinnen_tier1_belohnt"
       
@@ -40,7 +40,7 @@ conversations:
       
       tier2_erfolg:
         text: "&aTier II abgeschlossen! Du kennst ihre Muster nun."
-        pointer: "ende"
+        pointer: ""
         events: "spinnen_tier2_belohnung"
         conditions: "spinnen_tier2_complete,!spinnen_tier2_belohnt"
       
@@ -51,7 +51,7 @@ conversations:
       
       tier3_erfolg:
         text: "&aTier III! Die Spinnen fürchten dich bereits!"
-        pointer: "ende"
+        pointer: ""
         events: "spinnen_tier3_belohnung"
         conditions: "spinnen_tier3_complete,!spinnen_tier3_belohnt"
       
@@ -62,7 +62,7 @@ conversations:
       
       tier4_erfolg:
         text: "&aTier IV geschafft! Du bist ein Meister der Spinnenjagd!"
-        pointer: "ende"
+        pointer: ""
         events: "spinnen_tier4_belohnung"
         conditions: "spinnen_tier4_complete,!spinnen_tier4_belohnt"
       
@@ -73,13 +73,9 @@ conversations:
       
       tier5_erfolg:
         text: "&6&l*Nickt respektvoll* [&8Spinnen-Bezwinger&6&l]. Selbst die größten Spinnen weben ihre Netze nicht mehr in deiner Nähe."
-        pointer: "ende"
+        pointer: ""
         events: "spinnen_tier5_belohnung"
         conditions: "spinnen_tier5_complete,!spinnen_tier5_belohnt"
-      
-      ende:
-        text: "&7Gehe und vollende deinen Auftrag."
-        pointer: ""
     
     player_options:
       tier_info:
@@ -116,27 +112,27 @@ conversations:
       
       tier1_start:
         text: "&aIch beginne mit Tier I!"
-        pointer: "ende"
+        pointer: ""
         events: "start_spinnen_tier1"
       
       tier2_start:
         text: "&aWeiter zu Tier II!"
-        pointer: "ende"
+        pointer: ""
         events: "start_spinnen_tier2"
       
       tier3_start:
         text: "&aIch wage mich an Tier III!"
-        pointer: "ende"
+        pointer: ""
         events: "start_spinnen_tier3"
       
       tier4_start:
         text: "&aIch bin bereit für Tier IV!"
-        pointer: "ende"
+        pointer: ""
         events: "start_spinnen_tier4"
       
       tier5_start:
         text: "&aIch stelle mich der finalen Prüfung!"
-        pointer: "ende"
+        pointer: ""
         events: "start_spinnen_tier5"
 
 # EVENTS

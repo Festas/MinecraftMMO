@@ -18,7 +18,7 @@ conversations:
       
       quest_erfolg:
         text: "&8Ha! Gute Arbeit! *inspiziert die Erze* Qualität ist... akzeptabel. Hier, wie versprochen - eine echte Grimjaw-Rüstung! Passt gut auf dich auf, Grünschnabel!"
-        pointer: "ende"
+        pointer: ""
         events: "schmied_belohnung"
         conditions: "schmied_erze_complete"
       
@@ -29,10 +29,6 @@ conversations:
       
       small_talk:
         text: "&8*brummt zustimmend* Die Dunkelheit da draußen... sie korrumpiert sogar das Metall. Hab neulich ein Schwert geschmiedet - wurde schwarz wie die Nacht. Musste es einschmelzen. Verflucht sei die Leere!"
-        pointer: "ende"
-      
-      ende:
-        text: "&8Jetzt lass mich weiterarbeiten! *hämmert*"
         pointer: ""
     
     player_options:
@@ -54,16 +50,16 @@ conversations:
       
       quest_annehmen:
         text: "&aIch bringe Euch die Erze!"
-        pointer: "ende"
+        pointer: ""
         events: "start_schmied_quest"
       
       quest_ablehnen:
         text: "&7Vielleicht später..."
-        pointer: "ende"
+        pointer: ""
       
       daily_annehmen:
         text: "&aIch sammle die Erze für Euch!"
-        pointer: "ende"
+        pointer: ""
         events: "start_daily_erze"
       
       plaudern:

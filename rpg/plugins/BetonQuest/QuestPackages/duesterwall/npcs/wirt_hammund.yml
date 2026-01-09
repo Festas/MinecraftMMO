@@ -22,16 +22,12 @@ conversations:
       
       sohn_gefunden:
         text: "&2*Umarmt dich* DANKE! Du hast meinen Sohn gerettet! *weint vor Freude* Er spricht wirres Zeug über die Dunkelheit, aber er lebt! Hier, nimm das Gold. Und du isst hier IMMER kostenlos!"
-        pointer: "ende"
+        pointer: ""
         events: "sohn_belohnung"
         conditions: "sohn_quest_complete"
       
       geschichten:
         text: "&2*Lehnt sich zurück* Was willst du wissen? Über König Nitwit? Die Leere? Die alten Zeiten? Ich habe viele Geschichten gehört in dieser Taverne..."
-        pointer: "ende"
-      
-      ende:
-        text: "&2Komm jederzeit wieder!"
         pointer: ""
     
     player_options:
@@ -57,12 +53,12 @@ conversations:
       
       sohn_annehmen:
         text: "&aIch werde ihn finden!"
-        pointer: "ende"
+        pointer: ""
         events: "start_sohn_quest"
       
       sohn_ablehnen:
         text: "&7Ich... ich kann nicht..."
-        pointer: "ende"
+        pointer: ""
       
       geschichten_hoeren:
         text: "&7Erzählt mir Geschichten!"
@@ -70,12 +66,12 @@ conversations:
       
       essen_trinken:
         text: "&7Ich hätte gern etwas zu essen und zu trinken."
-        pointer: "ende"
+        pointer: ""
         events: "give_essen"
       
       abschied:
         text: "&7Auf Wiedersehen, Hammund."
-        pointer: "ende"
+        pointer: ""
 
 conditions:
   sohn_quest_aktiv: "tag sohn_quest_aktiv"
