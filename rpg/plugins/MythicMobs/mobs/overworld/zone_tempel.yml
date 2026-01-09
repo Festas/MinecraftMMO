@@ -314,7 +314,7 @@ AVATAR_DES_ZEUS:
   # KORRIGIERT: Menge (1) Chance (1.0)
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
   # KORRIGIERT: Menge (1) Chance (0.15)
-  - mmoitems{type=WEAPON;id=ZEUS_DONNERKLINGE} 1 0.15
+  - mmoitems{type=SWORD;id=ZEUS_DONNERKLINGE} 1 0.15
   - exp 1500-2500
   BossBar:
     Enabled: true
@@ -344,7 +344,7 @@ TEMPELGOTT:
   - mmoitems{type=MATERIAL;id=TEMPELGOTT_HERZ} 5-10 1.0
   - mmoitems{type=MATERIAL;id=GOLD_COIN} 50-100 1.0
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
-  - mmoitems{type=WEAPON;id=GOETTER_HAMMER} 1 0.15
+  - mmoitems{type=HAMMER;id=GOETTER_HAMMER} 1 0.15
   - exp 2000-3000
   BossBar:
     Enabled: true

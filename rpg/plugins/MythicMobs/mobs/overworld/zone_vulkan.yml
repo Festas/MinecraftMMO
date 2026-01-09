@@ -292,7 +292,7 @@ FEUERLORD:
   # KORRIGIERT: Menge (1) Chance (1.0)
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
   # KORRIGIERT: Menge (1) Chance (0.15)
-  - mmoitems{type=WEAPON;id=FEUERLORD_STAB} 1 0.15
+  - mmoitems{type=STAFF;id=FEUERLORD_STAB} 1 0.15
   - exp 975-1625
   BossBar:
     Enabled: true
@@ -320,7 +320,7 @@ VULKANBIEST:
   - mmoitems{type=MATERIAL;id=VULKANBIEST_HORN} 5-10 1.0
   - mmoitems{type=MATERIAL;id=GOLD_COIN} 50-100 1.0
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
-  - mmoitems{type=WEAPON;id=VULKAN_AXT} 1 0.15
+  - mmoitems{type=AXE;id=VULKAN_AXT} 1 0.15
   - exp 1000-1800
   BossBar:
     Enabled: true

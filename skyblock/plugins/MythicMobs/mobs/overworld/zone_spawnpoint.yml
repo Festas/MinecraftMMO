@@ -225,7 +225,7 @@ ALPHA_WOLF:
   # KORRIGIERT: Menge (1) Chance (1.0)
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
   # KORRIGIERT: Menge (1) Chance (0.15)
-  - mmoitems{type=WEAPON;id=WOLFSZAHN_DOLCH} 1 0.15
+  - mmoitems{type=DAGGER;id=WOLFSZAHN_DOLCH} 1 0.15
   - exp 150-250
   BossBar:
     Enabled: true
@@ -255,7 +255,7 @@ BANDITENFUEHRER:
   - mmoitems{type=MATERIAL;id=BANDITENGUT} 5-10 1.0
   - mmoitems{type=MATERIAL;id=GOLD_COIN} 50-100 1.0
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
-  - mmoitems{type=WEAPON;id=BANDITEN_SAEBEL} 1 0.15
+  - mmoitems{type=SWORD;id=BANDITEN_SAEBEL} 1 0.15
   - exp 200-300
   BossBar:
     Enabled: true

@@ -2416,3 +2416,11 @@ VOID_STAFF:
     lore:
       - '§7Think of all the places this can go.'
 
+HUMAN_SOUL:
+  base:
+    material: GHAST_TEAR
+    name: '&bHuman Soul'
+    lore:
+      - '&7A captured human soul'
+      - '&7for dark crafting.'
+

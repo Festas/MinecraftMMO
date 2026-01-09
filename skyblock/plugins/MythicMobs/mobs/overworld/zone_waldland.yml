@@ -231,7 +231,7 @@ SPINNENMATRIARCHIN:
   - mmoitems{type=MATERIAL;id=SPINNENFADEN} 5-10 1.0
   - mmoitems{type=MATERIAL;id=GOLD_COIN} 50-100 1.0
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
-  - mmoitems{type=WEAPON;id=GIFTKLINGE} 1 0.15
+  - mmoitems{type=SWORD;id=GIFTKLINGE} 1 0.15
   - exp 280-480
   BossBar:
     Enabled: true
@@ -270,7 +270,7 @@ WALDKOENIG:
   # KORRIGIERT: Menge (1) Chance (1.0)
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
   # KORRIGIERT: Menge (1) Chance (0.15)
-  - mmoitems{type=WEAPON;id=WALDKOENIG_AXT} 1 0.15
+  - mmoitems{type=AXE;id=WALDKOENIG_AXT} 1 0.15
   - exp 300-500
   BossBar:
     Enabled: true

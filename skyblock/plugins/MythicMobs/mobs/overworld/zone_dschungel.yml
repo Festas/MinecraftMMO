@@ -266,7 +266,7 @@ MAYA_SONNENGOTT:
   # KORRIGIERT: Menge (1) Chance (1.0)
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
   # KORRIGIERT: Menge (1) Chance (0.15)
-  - mmoitems{type=WEAPON;id=MAYA_SONNENSCHWERT} 1 0.15
+  - mmoitems{type=SWORD;id=MAYA_SONNENSCHWERT} 1 0.15
   - exp 525-875
   BossBar:
     Enabled: true
@@ -295,7 +295,7 @@ DSCHUNGELHYDRA:
   - mmoitems{type=MATERIAL;id=HYDRA_SCHUPPE} 5-10 1.0
   - mmoitems{type=MATERIAL;id=GOLD_COIN} 50-100 1.0
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
-  - mmoitems{type=WEAPON;id=HYDRA_BOGEN} 1 0.15
+  - mmoitems{type=BOW;id=HYDRA_BOGEN} 1 0.15
   - exp 800-1200
   BossBar:
     Enabled: true

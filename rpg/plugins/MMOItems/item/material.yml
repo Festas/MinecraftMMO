@@ -325,3 +325,19 @@ SCHATTEN_ESSENZ:
       - '&8Benötigt Level 20'
   required-level: 20
 
+EPIC_WEAPON_ESSENCE:
+  base:
+    material: NETHER_STAR
+    name: '&5Epic Weapon Essence'
+    lore:
+      - '&7A powerful essence used'
+      - '&7to craft epic weapons.'
+
+SILVER_INGOT:
+  base:
+    material: IRON_INGOT
+    name: '&fSilver Ingot'
+    lore:
+      - '&7A refined silver ingot'
+      - '&7used in crafting.'
+
