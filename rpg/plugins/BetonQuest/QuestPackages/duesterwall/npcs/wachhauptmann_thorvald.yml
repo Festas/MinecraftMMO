@@ -76,12 +76,14 @@ conditions:
 events:
   thorvald_zum_koenig: "run ^tag add thorvald_getroffen ^objective start audienz_koenig"
   start_pruefung: "run ^tag add hauptquest_pruefung_aktiv ^objective add pruefung_zombies 5"
+  pruefung_zombies_done: "run ^tag add pruefung_zombies_complete"
   pruefung_belohnung: "run ^tag add pruefung_complete ^give _core.anfaenger_schwert ^point playerpoints 50 ^experience 100 ^_core.sound_quest_complete"
   start_daily_monster: "run ^tag add daily_monster_aktiv ^objective add daily_monster_kill 15"
+  daily_monster_done: "run ^tag add daily_monster_complete ^tag del daily_monster_aktiv"
 
 objectives:
-  pruefung_zombies: "mobkill ZOMBIE 5 events:pruefung_zombies_done notify:%left%_Zombies_verbleiben"
-  daily_monster_kill: "mobkill ZOMBIE,SKELETON,SPIDER,CREEPER 15 events:daily_monster_done notify:%left%_Monster_verbleiben"
+  pruefung_zombies: "mobkill ZOMBIE 5 events:pruefung_zombies_done notify:1:&7%left% Zombies verbleiben"
+  daily_monster_kill: "mobkill ZOMBIE,SKELETON,SPIDER,CREEPER 15 events:daily_monster_done notify:1:&7%left% Monster verbleiben"
 
 journal:
   thorvald_getroffen: "&cWachhauptmann Thorvald|&7Der Hauptmann will dass ich|&7zum König gehe."

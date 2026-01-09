@@ -9,10 +9,11 @@
 
 events:
   quest1_start: "run ^tag add quest1_aktiv ^give _core.leere_zeichen ^journal add quest1_start ^_core.sound_quest_start"
-  quest1_complete: "run ^tag add quest1_complete ^tag remove quest1_aktiv ^tag add quest2_aktiv"
+  quest1_thorvald_erreicht: "run ^tag add quest1_complete ^tag del quest1_aktiv ^tag add quest2_aktiv"
+  quest1_complete: "run ^tag add quest1_complete ^tag del quest1_aktiv ^tag add quest2_aktiv"
 
 objectives:
-  quest1_thorvald: "location 0;64;0;15 events:quest1_thorvald_erreicht notify:Sprich mit Wachhauptmann Thorvald"
+  quest1_thorvald: "location 0;64;0;15 events:quest1_thorvald_erreicht notify:1:&7Sprich mit Wachhauptmann Thorvald"
 
 journal:
   quest1_start: "&6Das Erwachen|&7Du bist am Stadttor erwacht.|&7Ein violettes Mal glüht|&7auf deiner Hand.|&7Die Wachen bringen dich|&7zum König."
@@ -24,7 +25,7 @@ journal:
 
 events:
   quest2_start: "run ^tag add quest2_aktiv ^journal add quest2_start"
-  quest2_complete: "run ^tag add quest2_complete ^tag remove quest2_aktiv ^tag add quest3_aktiv ^experience 50"
+  quest2_complete: "run ^tag add quest2_complete ^tag del quest2_aktiv ^tag add quest3_aktiv ^experience 50"
 
 journal:
   quest2_start: "&6Audienz beim König|&7König Nitwit will dich sehen.|&7Gehe zum Thronsaal."
@@ -37,10 +38,10 @@ journal:
 events:
   quest3_start: "run ^tag add quest3_aktiv ^journal add quest3_start"
   quest3_zombies_done: "tag add quest3_zombies_complete"
-  quest3_complete: "run ^tag add quest3_complete ^tag remove quest3_aktiv ^tag add quest4_aktiv ^give _core.anfaenger_schwert ^experience 100 ^point playerpoints 50 ^_core.sound_quest_complete ^journal add quest3_done"
+  quest3_complete: "run ^tag add quest3_complete ^tag del quest3_aktiv ^tag add quest4_aktiv ^give _core.anfaenger_schwert ^experience 100 ^point playerpoints 50 ^_core.sound_quest_complete ^journal add quest3_done"
 
 objectives:
-  quest3_zombies: "mobkill ZOMBIE 5 events:quest3_zombies_done notify:%left%_Zombies_verbleiben"
+  quest3_zombies: "mobkill ZOMBIE 5 events:quest3_zombies_done notify:1:&7%left% Zombies verbleiben"
 
 journal:
   quest3_start: "&6Erste Prüfung|&7Wachhauptmann Thorvald will|&7deine Kampffähigkeiten testen.|&7Töte 5 Zombies vor den|&7Stadtmauern."
@@ -54,10 +55,10 @@ journal:
 events:
   quest4_start: "run ^tag add quest4_aktiv ^journal add quest4_start"
   quest4_erze_done: "tag add quest4_erze_complete"
-  quest4_complete: "run ^tag add quest4_complete ^tag remove quest4_aktiv ^tag add quest5_aktiv ^give _core.verbesserte_ruestung_set ^experience 150 ^point playerpoints 100 ^_core.sound_quest_complete ^journal add quest4_done"
+  quest4_complete: "run ^tag add quest4_complete ^tag del quest4_aktiv ^tag add quest5_aktiv ^give _core.verbesserte_ruestung_set ^experience 150 ^point playerpoints 100 ^_core.sound_quest_complete ^journal add quest4_done"
 
 objectives:
-  quest4_eisenerze: "block IRON_ORE,DEEPSLATE_IRON_ORE 10 events:quest4_erze_done notify:%left%_Eisenerze_verbleiben"
+  quest4_eisenerze: "block IRON_ORE,DEEPSLATE_IRON_ORE 10 events:quest4_erze_done notify:1:&7%left% Eisenerze verbleiben"
 
 journal:
   quest4_start: "&6Der Schmied|&7Schmiedemeister Grimjaw|&7braucht 10 Eisenerze|&7für bessere Ausrüstung."
@@ -73,7 +74,7 @@ events:
   quest5_npc1_talked: "tag add quest5_npc1"
   quest5_npc2_talked: "tag add quest5_npc2"
   quest5_npc3_talked: "tag add quest5_npc3"
-  quest5_complete: "run ^tag add quest5_complete ^tag remove quest5_aktiv ^tag add quest6_aktiv ^experience 100 ^point playerpoints 75 ^_core.sound_quest_complete ^journal add quest5_done"
+  quest5_complete: "run ^tag add quest5_complete ^tag del quest5_aktiv ^tag add quest6_aktiv ^experience 100 ^point playerpoints 75 ^_core.sound_quest_complete ^journal add quest5_done"
 
 conditions:
   quest5_alle_npcs: "tag quest5_npc1,quest5_npc2,quest5_npc3"
@@ -91,11 +92,11 @@ events:
   quest6_start: "run ^tag add quest6_aktiv ^journal add quest6_start"
   quest6_location_erreicht: "run ^tag add quest6_location ^give _core.korruptes_fragment"
   quest6_leere_wesen_done: "tag add quest6_leere_complete"
-  quest6_complete: "run ^tag add quest6_complete ^tag remove quest6_aktiv ^tag add quest7_aktiv ^experience 300 ^point playerpoints 200 ^_core.sound_quest_complete ^journal add quest6_done"
+  quest6_complete: "run ^tag add quest6_complete ^tag del quest6_aktiv ^tag add quest7_aktiv ^experience 300 ^point playerpoints 200 ^_core.sound_quest_complete ^journal add quest6_done"
 
 objectives:
-  quest6_dunkler_wald: "location 150;64;150;20 events:quest6_location_erreicht notify:Erreiche_den_dunklen_Wald"
-  quest6_leere_wesen: "mobkill ZOMBIE,SKELETON,SPIDER 3 events:quest6_leere_wesen_done notify:%left%_Leere-Wesen_verbleiben"
+  quest6_dunkler_wald: "location 150;64;150;20 events:quest6_location_erreicht notify:1:&7Erreiche den dunklen Wald"
+  quest6_leere_wesen: "mobkill ZOMBIE,SKELETON,SPIDER 3 events:quest6_leere_wesen_done notify:1:&7%left% Leere-Wesen verbleiben"
 
 journal:
   quest6_start: "&6Der dunkle Wald|&7Untersuche den Wald|&7östlich der Stadt.|&7Berichte über korrupte|&7Zonen wurden gemeldet."
@@ -108,7 +109,7 @@ journal:
 
 events:
   quest7_start: "run ^tag add quest7_aktiv ^journal add quest7_start ^give _core.bericht_dokument"
-  quest7_complete: "run ^tag add quest7_complete ^tag remove quest7_aktiv ^tag add kapitel1_complete ^experience 500 ^point playerpoints 500 ^tag add koenig_titel ^_core.sound_quest_complete ^journal add quest7_done ^journal add kapitel1_done"
+  quest7_complete: "run ^tag add quest7_complete ^tag del quest7_aktiv ^tag add kapitel1_complete ^experience 500 ^point playerpoints 500 ^tag add koenig_titel ^_core.sound_quest_complete ^journal add quest7_done ^journal add kapitel1_done"
 
 journal:
   quest7_start: "&6Bericht an den König|&7Bringe König Nitwit|&7deinen Bericht über|&7die korrupte Zone."

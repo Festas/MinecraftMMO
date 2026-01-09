@@ -66,10 +66,11 @@ conditions:
 
 events:
   start_rattenproblem: "run ^tag add rattenproblem_aktiv ^objective add ratten_toeten 10"
+  ratten_toeten_done: "run ^tag add ratten_toeten_complete"
   ratten_belohnung: "run ^tag add rattenproblem_complete ^point playerpoints 200 ^experience 100 ^_core.sound_quest_complete"
 
 objectives:
-  ratten_toeten: "mobkill SILVERFISH 10 events:ratten_toeten_done notify:%left%_Ratten_verbleiben"
+  ratten_toeten: "mobkill SILVERFISH 10 events:ratten_toeten_done notify:1:&7%left% Ratten verbleiben"
 
 journal:
   ratten_quest: "&eRattenproblem|&7Berthold hat Ratten im Keller.|&7Ich soll sie eliminieren."

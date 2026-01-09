@@ -83,11 +83,13 @@ conditions:
 
 events:
   start_sohn_quest: "run ^tag add sohn_quest_aktiv ^objective add finde_torin"
+  torin_gefunden: "run ^tag torin_gefunden ^journal add torin_gefunden_journal"
   sohn_belohnung: "run ^tag add sohn_quest_complete ^point playerpoints 300 ^experience 200 ^_core.sound_quest_complete"
   give_essen: "run ^give minecraft:bread 3 ^give minecraft:cooked_beef 2"
 
 objectives:
-  finde_torin: "location 100;64;200;10 events:torin_gefunden notify:Finde_Torin_im_oestlichen_Wald"
+  finde_torin: "location 100;64;200;10 events:torin_gefunden notify:1:&7Finde Torin im östlichen Wald"
 
 journal:
   sohn_quest: "&2Der vermisste Sohn|&7Hammunds Sohn Torin ist|&7im Wald verschwunden.|&7Ich muss ihn finden."
+  torin_gefunden_journal: "&eSohn gefunden!|&7Torin ist traumatisiert.|&7Er spricht von flüsternden|&7Schatten. Die Leere hat ihn|&7fast verschlungen."

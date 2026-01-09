@@ -3,10 +3,10 @@
 
 events:
   # Sound-Effekte
-  sound_quest_start: "notify &aQuest gestartet! sound:ENTITY_PLAYER_LEVELUP"
-  sound_quest_complete: "notify &aQuest abgeschlossen! sound:UI_TOAST_CHALLENGE_COMPLETE"
-  sound_quest_fail: "notify &cQuest fehlgeschlagen! sound:ENTITY_VILLAGER_NO"
-  sound_item_received: "notify &eItem erhalten! sound:ENTITY_ITEM_PICKUP"
+  sound_quest_start: "notify &eNeue Quest gestartet! io:sound_quest_start"
+  sound_quest_complete: "notify &aQuest abgeschlossen! io:sound_quest_complete"
+  sound_quest_fail: "notify &cQuest fehlgeschlagen! io:sound_quest_fail"
+  sound_item_received: "notify &bGegenstand erhalten! io:sound_item_received"
   
   # XP-Belohnungen
   xp_klein: "experience 50"
