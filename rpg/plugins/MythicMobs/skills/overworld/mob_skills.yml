@@ -310,7 +310,7 @@ SandSturm:
   Skills:
   - damage{a=25} @PlayersInRadius{r=25}
   - potion{t=BLINDNESS;d=100;l=1} @PlayersInRadius{r=25}
-  - particles{p=BLOCK{m=SAND};a=300;hS=15;vS=8} @self
+  - particles{p=block;material=SAND;a=300;hS=15;vS=8} @self
   - sound{s=entity.wither.shoot;v=1.5}
 
 # Feuer Inferno
@@ -486,7 +486,7 @@ SandWelle:
   - damage{a=35} @PlayersInRadius{r=20}
   - potion{t=SLOW;d=80;l=2} @PlayersInRadius{r=20}
   - potion{t=BLINDNESS;d=60;l=1} @PlayersInRadius{r=20}
-  - particles{p=BLOCK{m=SAND};a=200;hS=12;vS=6} @self
+  - particles{p=block;material=SAND;a=200;hS=12;vS=6} @self
   - sound{s=entity.wither.shoot;v=1.3}
 
 # Feuer Sturm (Zone 6)
@@ -624,7 +624,7 @@ WurzelFalle:
   Skills:
   - potion{t=SLOW;d=120;l=3} @target
   - potion{t=SLOW_DIGGING;d=120;l=2} @target
-  - particles{p=BLOCK{m=OAK_LEAVES};a=40;hS=2;vS=3} @target
+  - particles{p=block;material=OAK_LEAVES;a=40;hS=2;vS=3} @target
   - sound{s=block.grass.break;v=1.5}
 
 # Rudel Ruf (Zone 1 & 2)
@@ -700,7 +700,7 @@ Eingraben:
   # KORRIGIERT: 'effect:invisibility' durch 'potion' ersetzt
   - potion{type=INVISIBILITY;duration=60;level=1} @self
   - potion{t=SPEED;d=60;l=2} @self
-  - particles{p=BLOCK{m=SAND};a=50;hS=3;vS=2} @self
+  - particles{p=block;material=SAND;a=50;hS=3;vS=2} @self
   - sound{s=block.sand.break;v=1.5}
 
 # Göttlicher Schutz (Zone 10)
