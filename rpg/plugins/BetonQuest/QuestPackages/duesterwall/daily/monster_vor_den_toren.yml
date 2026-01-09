@@ -23,18 +23,14 @@ conversations:
       
       erfolg:
         text: "&c*Nickt anerkennend* Gute Arbeit, Soldat! Die Wachen können heute Nacht etwas ruhiger schlafen. Hier, deine Belohnung. Du hast sie dir verdient!"
-        pointer: "ende"
+        pointer: ""
         events: "daily_monster_belohnung"
         conditions: "daily_monster_complete"
       
       schon_erledigt:
         text: "&cDu hast heute genug gekämpft. Ruh dich aus. Die Monster werden morgen wieder da sein... leider."
-        pointer: "ende"
-        conditions: "daily_monster_complete_heute"
-      
-      ende:
-        text: "&7Auf Wiedersehen."
         pointer: ""
+        conditions: "daily_monster_complete_heute"
     
     
     player_options:
@@ -52,12 +48,12 @@ conversations:
       
       annehmen:
         text: "&aIch werde die Stadtmauern verteidigen!"
-        pointer: "ende"
+        pointer: ""
         events: "start_daily_monster"
       
       ablehnen:
         text: "&7Ich bin nicht kampfbereit..."
-        pointer: "ende"
+        pointer: ""
 
 events:
   start_daily_monster: "run ^tag daily_monster_aktiv ^journal add daily_monster_start ^objective add toete_monster_daily 15"

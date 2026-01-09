@@ -28,12 +28,8 @@ conversations:
       
       geheimnis:
         text: "&5*flüstert* Das Mal auf deiner Hand... Es ist sowohl Fluch als auch Segen. Die Leere hat dich markiert, aber du bist nicht ihr Diener. Du bist der Ausgleich. Das Gegengift."
-        pointer: "ende"
-        conditions: "_core.hat_leere_zeichen"
-      
-      ende:
-        text: "&5Geh in Frieden, Kind."
         pointer: ""
+        conditions: "_core.hat_leere_zeichen"
     
     player_options:
       spieler_optionen:
@@ -54,7 +50,7 @@ conversations:
       
       daily_annehmen:
         text: "&aIch sammle die Kräuter für Euch!"
-        pointer: "ende"
+        pointer: ""
         events: "start_daily_kraeuter"
       
       frage_mal:
@@ -64,7 +60,7 @@ conversations:
       
       abschied:
         text: "&7Auf Wiedersehen, Morgana."
-        pointer: "ende"
+        pointer: ""
 
 conditions:
   daily_kraeuter_aktiv: "tag daily_kraeuter_aktiv"

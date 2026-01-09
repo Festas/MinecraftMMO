@@ -18,16 +18,12 @@ conversations:
       
       ratten_erfolg:
         text: "&e*seufzt erleichtert* ENDLICH! Keine Ratten mehr! Du bist ein Held! Hier, dein Gold... *zählt widerwillig Münzen* ...und ein Rabatt. 10% auf alles... für eine Woche."
-        pointer: "ende"
+        pointer: ""
         events: "ratten_belohnung"
         conditions: "rattenproblem_complete"
       
       handel:
         text: "&eIch habe alles was ein Abenteurer braucht! Waffen, Rüstungen, Tränke, Werkzeuge... Für den richtigen Preis natürlich. Gold spricht lauter als Worte!"
-        pointer: "ende"
-      
-      ende:
-        text: "&eKomm bald wieder! *zählt Münzen*"
         pointer: ""
     
     player_options:
@@ -45,12 +41,12 @@ conversations:
       
       ratten_annehmen:
         text: "&aIch kümmere mich um die Ratten!"
-        pointer: "ende"
+        pointer: ""
         events: "start_rattenproblem"
       
       ratten_ablehnen:
         text: "&7Ratten sind nicht mein Ding..."
-        pointer: "ende"
+        pointer: ""
       
       handel_interesse:
         text: "&7Was habt Ihr im Angebot?"
@@ -58,7 +54,7 @@ conversations:
       
       abschied:
         text: "&7Auf Wiedersehen, Berthold."
-        pointer: "ende"
+        pointer: ""
 
 conditions:
   rattenproblem_aktiv: "tag rattenproblem_aktiv"

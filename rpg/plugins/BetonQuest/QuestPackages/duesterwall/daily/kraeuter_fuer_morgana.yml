@@ -23,18 +23,14 @@ conversations:
       
       erfolg:
         text: "&5*Inspiziert die Kräuter* Wundervoll... noch voller Leben. Danke, Kind. Hier, dein Gold und dieser Trank. Er wird dich heilen wenn du am Rande des Todes stehst."
-        pointer: "ende"
+        pointer: ""
         events: "daily_kraeuter_belohnung"
         conditions: "daily_kraeuter_complete"
       
       schon_erledigt:
         text: "&5Die heutigen Kräuter reichen. Die Pflanzen brauchen Zeit zum Nachwachsen. Komm morgen wieder."
-        pointer: "ende"
-        conditions: "daily_kraeuter_complete_heute"
-      
-      ende:
-        text: "&7Auf Wiedersehen."
         pointer: ""
+        conditions: "daily_kraeuter_complete_heute"
     
     
     player_options:
@@ -52,12 +48,12 @@ conversations:
       
       annehmen:
         text: "&aIch sammle die Kräuter!"
-        pointer: "ende"
+        pointer: ""
         events: "start_daily_kraeuter"
       
       ablehnen:
         text: "&7Heute habe ich keine Zeit..."
-        pointer: "ende"
+        pointer: ""
 
 events:
   start_daily_kraeuter: "run ^tag daily_kraeuter_aktiv ^journal add daily_kraeuter_start ^objective add sammle_kraeuter_daily 10"

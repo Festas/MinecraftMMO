@@ -29,7 +29,7 @@ conversations:
       
       tier1_erfolg:
         text: "&aGut gemacht! Tier I abgeschlossen. Bereit für Tier II?"
-        pointer: "ende"
+        pointer: ""
         events: "untoten_tier1_belohnung"
         conditions: "untoten_tier1_complete,!untoten_tier1_belohnt"
       
@@ -40,7 +40,7 @@ conversations:
       
       tier2_erfolg:
         text: "&aTier II geschafft! Du wirst zu einem wahren Jäger."
-        pointer: "ende"
+        pointer: ""
         events: "untoten_tier2_belohnung"
         conditions: "untoten_tier2_complete,!untoten_tier2_belohnt"
       
@@ -51,7 +51,7 @@ conversations:
       
       tier3_erfolg:
         text: "&aTier III! Du bist ein ernstzunehmender Jäger geworden!"
-        pointer: "ende"
+        pointer: ""
         events: "untoten_tier3_belohnung"
         conditions: "untoten_tier3_complete,!untoten_tier3_belohnt"
       
@@ -62,7 +62,7 @@ conversations:
       
       tier4_erfolg:
         text: "&aTier IV abgeschlossen! Du bist eine lebende Legende!"
-        pointer: "ende"
+        pointer: ""
         events: "untoten_tier4_belohnung"
         conditions: "untoten_tier4_complete,!untoten_tier4_belohnt"
       
@@ -73,13 +73,9 @@ conversations:
       
       tier5_erfolg:
         text: "&6&l*Verneigt sich respektvoll* Du bist jetzt ein [&cUntoten-Vernichter&6&l]. Die Leere fürchtet deinen Namen!"
-        pointer: "ende"
+        pointer: ""
         events: "untoten_tier5_belohnung"
         conditions: "untoten_tier5_complete,!untoten_tier5_belohnt"
-      
-      ende:
-        text: "&7Gehe und vollende deinen Auftrag."
-        pointer: ""
     
     player_options:
       tier_info:
@@ -116,27 +112,27 @@ conversations:
       
       tier1_start:
         text: "&aIch starte Tier I!"
-        pointer: "ende"
+        pointer: ""
         events: "start_untoten_tier1"
       
       tier2_start:
         text: "&aIch starte Tier II!"
-        pointer: "ende"
+        pointer: ""
         events: "start_untoten_tier2"
       
       tier3_start:
         text: "&aIch starte Tier III!"
-        pointer: "ende"
+        pointer: ""
         events: "start_untoten_tier3"
       
       tier4_start:
         text: "&aIch starte Tier IV!"
-        pointer: "ende"
+        pointer: ""
         events: "start_untoten_tier4"
       
       tier5_start:
         text: "&aIch starte Tier V!"
-        pointer: "ende"
+        pointer: ""
         events: "start_untoten_tier5"
 
 # EVENTS

@@ -13,7 +13,7 @@ conversations:
       
       zum_koenig:
         text: "&cDas Zeichen der Leere... Ich habe davon in alten Schriften gelesen. Komm mit! Der König muss dich sehen. SOFORT!"
-        pointer: "ende"
+        pointer: ""
         events: "thorvald_zum_koenig"
       
       pruefung_anbieten:
@@ -23,7 +23,7 @@ conversations:
       
       pruefung_erfolg:
         text: "&aBeeindruckend! Du kannst ein Schwert führen. Hier, nimm dieses Schwert der Stadtwache. Du hast es dir verdient, Soldat!"
-        pointer: "ende"
+        pointer: ""
         events: "pruefung_belohnung"
         conditions: "pruefung_complete"
       
@@ -34,12 +34,8 @@ conversations:
       
       slayer_angebot:
         text: "&cDu willst dich als Jäger beweisen? Sprich mit Fenris, dem Jägermeister. Er koordiniert die Slayer-Aufträge."
-        pointer: "ende"
-        conditions: "_core.ist_level_10"
-      
-      ende:
-        text: "&cGeh und erfülle deine Pflicht!"
         pointer: ""
+        conditions: "_core.ist_level_10"
     
     player_options:
       erklaerung_spieler:
@@ -56,16 +52,16 @@ conversations:
       
       pruefung_annehmen:
         text: "&aIch nehme die Herausforderung an!"
-        pointer: "ende"
+        pointer: ""
         events: "start_pruefung"
       
       pruefung_ablehnen:
         text: "&7Ich bin noch nicht bereit..."
-        pointer: "ende"
+        pointer: ""
       
       daily_annehmen:
         text: "&aIch werde die Monster zurückdrängen!"
-        pointer: "ende"
+        pointer: ""
         events: "start_daily_monster"
 
 conditions:
