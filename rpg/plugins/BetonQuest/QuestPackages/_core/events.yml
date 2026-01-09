@@ -3,10 +3,11 @@
 
 events:
   # Sound-Effekte
-  sound_quest_start: "notify &eNeue Quest gestartet! io:sound_quest_start"
-  sound_quest_complete: "notify &aQuest abgeschlossen! io:sound_quest_complete"
-  sound_quest_fail: "notify &cQuest fehlgeschlagen! io:sound_quest_fail"
-  sound_item_received: "notify &bGegenstand erhalten! io:sound_item_received"
+  # FIX: Syntax geändert auf direkte Minecraft Sounds (sound:NAME), da io: Kategorien oft fehlen
+  sound_quest_start: "notify &eNeue Quest gestartet! sound:ENTITY_PLAYER_LEVELUP"
+  sound_quest_complete: "notify &aQuest abgeschlossen! sound:UI_TOAST_CHALLENGE_COMPLETE"
+  sound_quest_fail: "notify &cQuest fehlgeschlagen! sound:BLOCK_ANVIL_LAND"
+  sound_item_received: "notify &bGegenstand erhalten! sound:ENTITY_ITEM_PICKUP"
   
   # XP-Belohnungen
   xp_klein: "experience 50"
@@ -19,3 +20,4 @@ events:
   gold_mittel: "point playerpoints 200"
   gold_gross: "point playerpoints 1000"
   gold_riesig: "point playerpoints 5000"
+
