@@ -150,22 +150,22 @@ events:
   # Tier I
   start_daemonen_tier1: "run ^tag add daemonen_tier1_aktiv ^journal add daemonen_tier1_start ^objective add daemonen_tier1_kills 10"
   daemonen_tier1_done: "run ^tag add daemonen_tier1_complete ^tag remove daemonen_tier1_aktiv"
-  daemonen_tier1_belohnung: "run ^tag add daemonen_tier1_belohnt ^point playerpoints 50 ^experience 100 ^sound_quest_complete"
+  daemonen_tier1_belohnung: "run ^tag add daemonen_tier1_belohnt ^point playerpoints 50 ^experience 100 ^_core.sound_quest_complete"
   
   # Tier II
   start_daemonen_tier2: "run ^tag add daemonen_tier2_aktiv ^journal add daemonen_tier2_start ^objective add daemonen_tier2_kills 25"
   daemonen_tier2_done: "run ^tag add daemonen_tier2_complete ^tag remove daemonen_tier2_aktiv"
-  daemonen_tier2_belohnung: "run ^tag add daemonen_tier2_belohnt ^point playerpoints 150 ^experience 300 ^sound_quest_complete"
+  daemonen_tier2_belohnung: "run ^tag add daemonen_tier2_belohnt ^point playerpoints 150 ^experience 300 ^_core.sound_quest_complete"
   
   # Tier III
   start_daemonen_tier3: "run ^tag add daemonen_tier3_aktiv ^journal add daemonen_tier3_start ^objective add daemonen_tier3_kills 50"
   daemonen_tier3_done: "run ^tag add daemonen_tier3_complete ^tag remove daemonen_tier3_aktiv"
-  daemonen_tier3_belohnung: "run ^tag add daemonen_tier3_belohnt ^point playerpoints 400 ^experience 750 ^sound_quest_complete"
+  daemonen_tier3_belohnung: "run ^tag add daemonen_tier3_belohnt ^point playerpoints 400 ^experience 750 ^_core.sound_quest_complete"
   
   # Tier IV
   start_daemonen_tier4: "run ^tag add daemonen_tier4_aktiv ^journal add daemonen_tier4_start ^objective add daemonen_tier4_kills 100"
   daemonen_tier4_done: "run ^tag add daemonen_tier4_complete ^tag remove daemonen_tier4_aktiv"
-  daemonen_tier4_belohnung: "run ^tag add daemonen_tier4_belohnt ^point playerpoints 1000 ^experience 2000 ^sound_quest_complete"
+  daemonen_tier4_belohnung: "run ^tag add daemonen_tier4_belohnt ^point playerpoints 1000 ^experience 2000 ^_core.sound_quest_complete"
   
   # Tier V
   start_daemonen_tier5: "run ^tag add daemonen_tier5_aktiv ^journal add daemonen_tier5_start ^objective add daemonen_tier5_kills 250"

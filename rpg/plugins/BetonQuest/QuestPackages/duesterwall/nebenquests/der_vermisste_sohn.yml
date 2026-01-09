@@ -56,8 +56,8 @@ events:
   sohn_belohnung_final: "run ^point playerpoints 300 ^experience 200 ^tag freie_mahlzeiten ^_core.sound_quest_complete"
 
 objectives:
-  finde_torin_wald: "location 150;64;180;15 events:torin_gefunden_event notify:Suche Torin im östlichen Wald"
-  bringe_torin_zurueck: "location 0;64;0;20 events:sohn_retten notify:Bringe Torin zurück zur Stadt"
+  finde_torin_wald: "location 150;64;180;15 events:torin_gefunden_event notify:Suche_Torin_im_oestlichen_Wald"
+  bringe_torin_zurueck: "location 0;64;0;20 events:sohn_retten notify:Bringe_Torin_zurueck_zur_Stadt"
 
 conditions:
   sohn_quest_aktiv: "tag sohn_quest_aktiv"

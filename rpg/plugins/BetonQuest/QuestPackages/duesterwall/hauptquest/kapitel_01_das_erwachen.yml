@@ -76,7 +76,7 @@ events:
   quest5_complete: "run ^tag add quest5_complete ^tag remove quest5_aktiv ^tag add quest6_aktiv ^experience 100 ^point playerpoints 75 ^_core.sound_quest_complete ^journal add quest5_done"
 
 conditions:
-  quest5_alle_npcs: "tag quest5_npc1 tag quest5_npc2 tag quest5_npc3"
+  quest5_alle_npcs: "tag quest5_npc1,quest5_npc2,quest5_npc3"
 
 journal:
   quest5_start: "&6Gerüchte im Wind|&7Wirt Hammund hat Gerüchte|&7über die Dunkelheit gehört.|&7Sprich mit 3 Bürgern:|&7Morgana, Berthold, Fenris"

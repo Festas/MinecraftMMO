@@ -63,8 +63,8 @@ events:
 
 objectives:
   toete_ratten: "mobkill SILVERFISH 10 events:ratten_getoetet notify:%left%_Ratten_verbleiben"
-  finde_nest: "location -20;60;-20;10 events:nest_zerstoert notify:Finde und zerstöre das Rattennest"
-  zerstoere_nest: "block COBWEB 1 events:ratten_quest_abschluss notify:Zerstöre das Rattennest"
+  finde_nest: "location -20;60;-20;10 events:nest_zerstoert notify:Finde_und_zerstoere_das_Rattennest"
+  zerstoere_nest: "block COBWEB 1 events:ratten_quest_abschluss notify:Zerstoere_das_Rattennest"
 
 conditions:
   ratten_quest_aktiv: "tag ratten_quest_aktiv"
