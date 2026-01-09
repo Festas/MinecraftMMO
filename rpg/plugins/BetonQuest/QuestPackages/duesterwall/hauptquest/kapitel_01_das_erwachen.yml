@@ -9,6 +9,7 @@
 
 events:
   quest1_start: "run ^tag add quest1_aktiv ^give _core.leere_zeichen ^journal add quest1_start ^_core.sound_quest_start"
+  quest1_thorvald_erreicht: "run ^tag add quest1_complete ^tag del quest1_aktiv ^tag add quest2_aktiv"
   quest1_complete: "run ^tag add quest1_complete ^tag del quest1_aktiv ^tag add quest2_aktiv"
 
 objectives:

@@ -66,6 +66,7 @@ conditions:
 
 events:
   start_rattenproblem: "run ^tag add rattenproblem_aktiv ^objective add ratten_toeten 10"
+  ratten_toeten_done: "run ^tag add ratten_toeten_complete"
   ratten_belohnung: "run ^tag add rattenproblem_complete ^point playerpoints 200 ^experience 100 ^_core.sound_quest_complete"
 
 objectives:
