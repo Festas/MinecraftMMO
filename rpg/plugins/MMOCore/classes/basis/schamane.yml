@@ -61,16 +61,16 @@ options:
     needs-permission: false
 
 skills:
-    MINOR_HEALINGS:
+    BASIS_MINOR_HEALINGS:
         level: 1
         max-level: 30
-    WEAKEN:
+    BASIS_WEAKEN:
         level: 5
         max-level: 30
-    GREATER_HEALINGS:
+    BASIS_GREATER_HEALINGS:
         level: 15
         max-level: 30
-    REGEN_ALLY:
+    BASIS_REGEN_ALLY:
         level: 25
         max-level: 30
 

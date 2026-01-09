@@ -50,16 +50,16 @@ options:
     needs-permission: false
 
 skills:
-    WEAKEN:
+    BASIS_WEAKEN:
         level: 1
         max-level: 30
-    EVADE:
+    BASIS_EVADE:
         level: 10
         max-level: 30
-    COMBO_ATTACK:
+    BASIS_COMBO_ATTACK:
         level: 15
         max-level: 30
-    MINOR_HEALINGS:
+    BASIS_MINOR_HEALINGS:
         level: 25
         max-level: 30
         upgradable: false

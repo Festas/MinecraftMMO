@@ -1,4 +1,4 @@
-EVADE:
+BASIS_EVADE:
     mythicmobs-skill-id: Basis_Evade
     modifiers:
     - range
@@ -9,7 +9,7 @@ BACKSTAB:
     - damage
     - extra
 
-FURTIVE_STRIKE:
+BASIS_FURTIVE_STRIKE:
     mythicmobs-skill-id: Basis_Furtive_Strike
     modifiers:
     - damage
