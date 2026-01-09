@@ -357,7 +357,7 @@ Bloodbound_Barrier_BLOCK:
   - aura{auraName=Bloodbound_Barrier_RESET;duration=<skill.duration> * 20;maxStacks=5} @self
   - effect:sound{s=entity.elder_guardian.hurt;volume=0.8;pitch=1.2} @self
   - effect:sound{s=block.trial_spawner.spawn_item_begin;volume=1;pitch=1} @self
-  - sudoskill{s=Bloodbound_Barrier_BLOCK_SU;cat=true} @MobsInRadius{r=3;types=VFX_Bloodbound_Barrier;limit=1;sort=NEAREST}
+  - sudoskill{s=Bloodbound_Barrier_BLOCK_SU;cat=true} @MobsInRadius{r=3;type=VFX_Bloodbound_Barrier;limit=1;sort=NEAREST}
   - auraremove{aura=VFX_Bloodbound_Barrier} @self ?hasaurastacks{n=Bloodbound_Barrier_RESET;s=5}
   - auraremove{aura=Bloodbound_Barrier_RESET} @self ?hasaurastacks{n=Bloodbound_Barrier_RESET;s=5}
   - skill{s=Bloodbound_Barrier_DAMAGE} @EIR{r=5.5;limit=8;conditions=[ - isLiving true - hasaura{n=immunedelay} false ]}
