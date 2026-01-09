@@ -3,7 +3,8 @@ BASIS_EVADE:
     modifiers:
     - range
 
-BACKSTAB:
+# UMBENANNT: BACKSTAB → BASIS_BACKSTAB
+BASIS_BACKSTAB:
     mythicmobs-skill-id: Basis_Backstab
     modifiers:
     - damage
@@ -14,7 +15,8 @@ BASIS_FURTIVE_STRIKE:
     modifiers:
     - damage
 
-SHADOW_VEIL:
+# UMBENANNT: SHADOW_VEIL → BASIS_SHADOW_VEIL
+BASIS_SHADOW_VEIL:
     mythicmobs-skill-id: Basis_Shadow_Veil
     modifiers:
     - duration
