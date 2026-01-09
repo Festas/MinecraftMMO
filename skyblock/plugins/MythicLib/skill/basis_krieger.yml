@@ -1,16 +1,16 @@
-COMBO_ATTACK:
+BASIS_COMBO_ATTACK:
     mythicmobs-skill-id: Basis_Combo_Attack
     modifiers:
     - damage
     - count
 
-DEEP_WOUND:
+BASIS_DEEP_WOUND:
     mythicmobs-skill-id: Basis_Deep_Wound
     modifiers:
     - damage
     - extra
 
-EMPOWERED_ATTACK:
+BASIS_EMPOWERED_ATTACK:
     mythicmobs-skill-id: Basis_Empowered_Attack
     modifiers:
     - damage

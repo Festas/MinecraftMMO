@@ -51,22 +51,22 @@ cast-particle:
     particle: SPELL_WITCH
 
 skills:
-    DEEP_WOUND:
+    BASIS_DEEP_WOUND:
         level: 1
         max-level: 30
     SNEAKY_PICKY:
         level: 5
         max-level: 20
-    FURTIVE_STRIKE:
+    BASIS_FURTIVE_STRIKE:
         level: 10
         max-level: 30
-    EVADE:
+    BASIS_EVADE:
         level: 15
         max-level: 30
-    COMBO_ATTACK:
+    BASIS_COMBO_ATTACK:
         level: 20
         max-level: 30
-    MINOR_HEALINGS:
+    BASIS_MINOR_HEALINGS:
         level: 30
         max-level: 30
         upgradable: false
