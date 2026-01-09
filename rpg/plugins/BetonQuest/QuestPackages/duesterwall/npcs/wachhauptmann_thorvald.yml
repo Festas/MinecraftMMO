@@ -78,8 +78,8 @@ events:
   daily_monster_done: "run ^tag add daily_monster_complete ^tag del daily_monster_aktiv"
 
 objectives:
-  pruefung_zombies: "mobkill ZOMBIE 5 events:pruefung_zombies_done notify:1:&7%left% Zombies verbleiben"
-  daily_monster_kill: "mobkill ZOMBIE,SKELETON,SPIDER,CREEPER 15 events:daily_monster_done notify:1:&7%left% Monster verbleiben"
+  pruefung_zombies: "mobkill ZOMBIE 5 events:pruefung_zombies_done notify"
+  daily_monster_kill: "mobkill ZOMBIE,SKELETON,SPIDER,CREEPER 15 events:daily_monster_done notify"
 
 journal:
   thorvald_getroffen: "&cWachhauptmann Thorvald|&7Der Hauptmann will dass ich|&7zum König gehe."

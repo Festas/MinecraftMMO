@@ -62,7 +62,7 @@ events:
   daily_kraeuter_reset: "tag !daily_kraeuter_complete_heute"
 
 objectives:
-  sammle_kraeuter_daily: "block POPPY,DANDELION,BLUE_ORCHID,ALLIUM,AZURE_BLUET,RED_TULIP,ORANGE_TULIP,WHITE_TULIP,PINK_TULIP,OXEYE_DAISY,CORNFLOWER,LILY_OF_THE_VALLEY,SUNFLOWER,LILAC,ROSE_BUSH,PEONY 10 events:kraeuter_gesammelt notify:1:&7%left% Kräuter verbleiben"
+  sammle_kraeuter_daily: "block POPPY,DANDELION,BLUE_ORCHID,ALLIUM,AZURE_BLUET,RED_TULIP,ORANGE_TULIP,WHITE_TULIP,PINK_TULIP,OXEYE_DAISY,CORNFLOWER,LILY_OF_THE_VALLEY,SUNFLOWER,LILAC,ROSE_BUSH,PEONY 10 events:kraeuter_gesammelt notify"
 
 conditions:
   daily_kraeuter_aktiv: "tag daily_kraeuter_aktiv"

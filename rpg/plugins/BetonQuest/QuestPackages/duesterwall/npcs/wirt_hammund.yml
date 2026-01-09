@@ -84,7 +84,7 @@ events:
   give_essen: "run ^give minecraft:bread 3 ^give minecraft:cooked_beef 2"
 
 objectives:
-  finde_torin: "location 100;64;200;10 events:torin_gefunden notify:1:&7Finde Torin im östlichen Wald"
+  finde_torin: "location 100;64;200;10 events:torin_gefunden notify"
 
 journal:
   sohn_quest: "&2Der vermisste Sohn|&7Hammunds Sohn Torin ist|&7im Wald verschwunden.|&7Ich muss ihn finden."

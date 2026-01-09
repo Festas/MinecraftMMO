@@ -170,11 +170,11 @@ events:
 
 # OBJECTIVES
 objectives:
-  daemonen_tier1_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 10 events:daemonen_tier1_done notify:1:&8Tier I: %left% Dämonen verbleiben"
-  daemonen_tier2_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 25 events:daemonen_tier2_done notify:5:&8Tier II: %left% Dämonen verbleiben"
-  daemonen_tier3_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 50 events:daemonen_tier3_done notify:10:&8Tier III: %left% Dämonen verbleiben"
-  daemonen_tier4_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 100 events:daemonen_tier4_done notify:10:&8Tier IV: %left% Dämonen verbleiben"
-  daemonen_tier5_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 250 events:daemonen_tier5_done notify:25:&8Tier V: %left% Dämonen verbleiben"
+  daemonen_tier1_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 10 events:daemonen_tier1_done notify"
+  daemonen_tier2_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 25 events:daemonen_tier2_done notify"
+  daemonen_tier3_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 50 events:daemonen_tier3_done notify"
+  daemonen_tier4_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 100 events:daemonen_tier4_done notify"
+  daemonen_tier5_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 250 events:daemonen_tier5_done notify"
 
 # CONDITIONS
 conditions:

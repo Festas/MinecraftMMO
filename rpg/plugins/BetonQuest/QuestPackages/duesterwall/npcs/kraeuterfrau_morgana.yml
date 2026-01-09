@@ -70,7 +70,7 @@ events:
   daily_kraeuter_done: "run ^tag del daily_kraeuter_aktiv ^point playerpoints 100 ^give minecraft:potion 1 name:&5Morganas_Heiltrank"
 
 objectives:
-  daily_kraeuter_sammeln: "block POPPY,DANDELION,BLUE_ORCHID,ALLIUM,AZURE_BLUET,RED_TULIP,ORANGE_TULIP,WHITE_TULIP,PINK_TULIP,OXEYE_DAISY,CORNFLOWER,LILY_OF_THE_VALLEY 10 events:daily_kraeuter_done notify:1:&7%left% Kräuter verbleiben"
+  daily_kraeuter_sammeln: "block POPPY,DANDELION,BLUE_ORCHID,ALLIUM,AZURE_BLUET,RED_TULIP,ORANGE_TULIP,WHITE_TULIP,PINK_TULIP,OXEYE_DAISY,CORNFLOWER,LILY_OF_THE_VALLEY 10 events:daily_kraeuter_done notify"
 
 journal:
   morgana_begegnung: "&5Kräuterfrau Morgana|&7Morgana weiß mehr über|&7die Leere als sie zugibt."
