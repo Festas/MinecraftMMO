@@ -269,7 +269,7 @@ YETI_KOENIG:
   # KORRIGIERT: Menge (1) Chance (1.0)
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
   # KORRIGIERT: Menge (1) Chance (0.15)
-  - mmoitems{type=WEAPON;id=YETI_KEULE} 1 0.15
+  - mmoitems{type=HAMMER;id=YETI_KEULE} 1 0.15
   - exp 900-1500
   BossBar:
     Enabled: true

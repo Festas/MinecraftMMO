@@ -238,7 +238,7 @@ PILZKOENIG:
   # KORRIGIERT: Menge (1) Chance (1.0)
   - mmoitems{type=MATERIAL;id=BOSS_ESSENZ} 1 1.0
   # KORRIGIERT: Menge (1) Chance (0.15)
-  - mmoitems{type=WEAPON;id=PILZ_KEULE} 1 0.15
+  - mmoitems{type=HAMMER;id=PILZ_KEULE} 1 0.15
   - exp 1050-1750
   BossBar:
     Enabled: true
