@@ -176,6 +176,7 @@ HALBGOTT:
     AlwaysShowName: true
     FollowRange: 35
     PreventSunburn: true
+    VillagerProfession: PLAINS
   Equipment:
   - DIAMOND_SWORD HAND
   - DIAMOND_HELMET HEAD
@@ -202,6 +203,7 @@ TITAN_BERSERKER:
     AlwaysShowName: true
     FollowRange: 30
     PreventSunburn: true
+    VillagerProfession: PLAINS
   Equipment:
   - GOLDEN_AXE HAND
   - GOLDEN_CHESTPLATE CHEST
