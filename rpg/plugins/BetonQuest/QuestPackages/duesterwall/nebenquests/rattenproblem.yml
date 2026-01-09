@@ -42,14 +42,14 @@ conversations:
         pointer: "ende"
 
 events:
-  start_ratten_quest: "tag ratten_quest_aktiv,journal add ratten_quest_start,objective add toete_ratten 10"
-  ratten_getoetet: "tag ratten_getoetet,journal add ratten_getoetet_journal,objective add finde_nest"
-  nest_zerstoert: "tag nest_zerstoert,journal add nest_zerstoert_journal"
-  ratten_quest_abschluss: "tag ratten_quest_complete,tag !ratten_quest_aktiv"
-  ratten_belohnung_final: "point playerpoints 200,experience 100,tag berthold_rabatt,sound_quest_complete,journal add ratten_quest_done"
+  start_ratten_quest: "run ^tag ratten_quest_aktiv ^journal add ratten_quest_start ^objective add toete_ratten 10"
+  ratten_getoetet: "run ^tag ratten_getoetet ^journal add ratten_getoetet_journal ^objective add finde_nest"
+  nest_zerstoert: "run ^tag nest_zerstoert ^journal add nest_zerstoert_journal"
+  ratten_quest_abschluss: "run ^tag ratten_quest_complete ^tag remove ratten_quest_aktiv"
+  ratten_belohnung_final: "run ^point playerpoints 200 ^experience 100 ^tag berthold_rabatt ^_core.sound_quest_complete ^journal add ratten_quest_done"
 
 objectives:
-  toete_ratten: "mobkill SILVERFISH 10 events:ratten_getoetet notify:&e%left% Ratten verbleiben"
+  toete_ratten: "mobkill SILVERFISH 10 events:ratten_getoetet notify:%left%_Ratten_verbleiben"
   finde_nest: "location -20;60;-20;10 events:nest_zerstoert notify:Finde und zerstöre das Rattennest"
   zerstoere_nest: "block COBWEB 1 events:ratten_quest_abschluss notify:Zerstöre das Rattennest"
 

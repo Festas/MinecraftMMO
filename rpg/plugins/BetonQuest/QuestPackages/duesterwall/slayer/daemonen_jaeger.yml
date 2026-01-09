@@ -82,8 +82,40 @@ conversations:
         pointer: "ende"
         events: "daemonen_tier5_belohnung"
         conditions: "daemonen_tier5_complete,!daemonen_tier5_belohnt"
+      
+      ende:
+        text: "&7Gehe und vollende deinen Auftrag."
+        pointer: ""
     
     player_options:
+      tier_info:
+        text: "&7[Zurück zum Hauptmenü]"
+        pointer: "start"
+      
+      tier_optionen:
+        text: "&7[Zurück]"
+        pointer: "start"
+      
+      tier1_optionen:
+        text: "&7[Zurück]"
+        pointer: "start"
+      
+      tier2_optionen:
+        text: "&7[Zurück]"
+        pointer: "start"
+      
+      tier3_optionen:
+        text: "&7[Zurück]"
+        pointer: "start"
+      
+      tier4_optionen:
+        text: "&7[Zurück]"
+        pointer: "start"
+      
+      tier5_optionen:
+        text: "&7[Zurück]"
+        pointer: "start"
+      
       info_wollen:
         text: "&7Erkläre mir die Ränge."
         pointer: "tier_info_text"
@@ -116,37 +148,37 @@ conversations:
 # EVENTS
 events:
   # Tier I
-  start_daemonen_tier1: "tag add daemonen_tier1_aktiv,journal add daemonen_tier1_start,objective add daemonen_tier1_kills 10"
-  daemonen_tier1_done: "tag add daemonen_tier1_complete,tag remove daemonen_tier1_aktiv"
+  start_daemonen_tier1: "run ^tag add daemonen_tier1_aktiv ^journal add daemonen_tier1_start ^objective add daemonen_tier1_kills 10"
+  daemonen_tier1_done: "run ^tag add daemonen_tier1_complete ^tag remove daemonen_tier1_aktiv"
   daemonen_tier1_belohnung: "run ^tag add daemonen_tier1_belohnt ^point playerpoints 50 ^experience 100 ^sound_quest_complete"
   
   # Tier II
-  start_daemonen_tier2: "tag add daemonen_tier2_aktiv,journal add daemonen_tier2_start,objective add daemonen_tier2_kills 25"
-  daemonen_tier2_done: "tag add daemonen_tier2_complete,tag remove daemonen_tier2_aktiv"
+  start_daemonen_tier2: "run ^tag add daemonen_tier2_aktiv ^journal add daemonen_tier2_start ^objective add daemonen_tier2_kills 25"
+  daemonen_tier2_done: "run ^tag add daemonen_tier2_complete ^tag remove daemonen_tier2_aktiv"
   daemonen_tier2_belohnung: "run ^tag add daemonen_tier2_belohnt ^point playerpoints 150 ^experience 300 ^sound_quest_complete"
   
   # Tier III
-  start_daemonen_tier3: "tag add daemonen_tier3_aktiv,journal add daemonen_tier3_start,objective add daemonen_tier3_kills 50"
-  daemonen_tier3_done: "tag add daemonen_tier3_complete,tag remove daemonen_tier3_aktiv"
+  start_daemonen_tier3: "run ^tag add daemonen_tier3_aktiv ^journal add daemonen_tier3_start ^objective add daemonen_tier3_kills 50"
+  daemonen_tier3_done: "run ^tag add daemonen_tier3_complete ^tag remove daemonen_tier3_aktiv"
   daemonen_tier3_belohnung: "run ^tag add daemonen_tier3_belohnt ^point playerpoints 400 ^experience 750 ^sound_quest_complete"
   
   # Tier IV
-  start_daemonen_tier4: "tag add daemonen_tier4_aktiv,journal add daemonen_tier4_start,objective add daemonen_tier4_kills 100"
-  daemonen_tier4_done: "tag add daemonen_tier4_complete,tag remove daemonen_tier4_aktiv"
+  start_daemonen_tier4: "run ^tag add daemonen_tier4_aktiv ^journal add daemonen_tier4_start ^objective add daemonen_tier4_kills 100"
+  daemonen_tier4_done: "run ^tag add daemonen_tier4_complete ^tag remove daemonen_tier4_aktiv"
   daemonen_tier4_belohnung: "run ^tag add daemonen_tier4_belohnt ^point playerpoints 1000 ^experience 2000 ^sound_quest_complete"
   
   # Tier V
-  start_daemonen_tier5: "tag add daemonen_tier5_aktiv,journal add daemonen_tier5_start,objective add daemonen_tier5_kills 250"
-  daemonen_tier5_done: "tag add daemonen_tier5_complete,tag remove daemonen_tier5_aktiv"
-  daemonen_tier5_belohnung: "run ^tag add daemonen_tier5_belohnt ^point playerpoints 3000 ^experience 5000 ^tag add titel_daemonen_schlaechter ^sound_quest_complete"
+  start_daemonen_tier5: "run ^tag add daemonen_tier5_aktiv ^journal add daemonen_tier5_start ^objective add daemonen_tier5_kills 250"
+  daemonen_tier5_done: "run ^tag add daemonen_tier5_complete ^tag remove daemonen_tier5_aktiv"
+  daemonen_tier5_belohnung: "run ^tag add daemonen_tier5_belohnt ^point playerpoints 3000 ^experience 5000 ^tag add titel_daemonen_schlaechter ^_core.sound_quest_complete"
 
 # OBJECTIVES
 objectives:
-  daemonen_tier1_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 10 events:daemonen_tier1_done notify:&5Tier I: %left% Dämonen verbleiben"
-  daemonen_tier2_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 25 events:daemonen_tier2_done notify:&5Tier II: %left% Dämonen verbleiben"
-  daemonen_tier3_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 50 events:daemonen_tier3_done notify:&5Tier III: %left% Dämonen verbleiben"
-  daemonen_tier4_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 100 events:daemonen_tier4_done notify:&5Tier IV: %left% Dämonen verbleiben"
-  daemonen_tier5_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 250 events:daemonen_tier5_done notify:&5Tier V: %left% Dämonen verbleiben"
+  daemonen_tier1_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 10 events:daemonen_tier1_done notify:Tier_I:_%left%_Daemonen_verbleiben"
+  daemonen_tier2_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 25 events:daemonen_tier2_done notify:Tier_II:_%left%_Daemonen_verbleiben"
+  daemonen_tier3_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 50 events:daemonen_tier3_done notify:Tier_III:_%left%_Daemonen_verbleiben"
+  daemonen_tier4_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 100 events:daemonen_tier4_done notify:Tier_IV:_%left%_Daemonen_verbleiben"
+  daemonen_tier5_kills: "mobkill WITCH,EVOKER,VINDICATOR,PILLAGER 250 events:daemonen_tier5_done notify:Tier_V:_%left%_Daemonen_verbleiben"
 
 # CONDITIONS
 conditions:
@@ -172,7 +204,7 @@ conditions:
 
 # JOURNAL
 journal:
-  daemonen_tier1_start: "&5Slayer: Dämonen-Jäger I|&7Töte 10 Dämonen.|&7(Hexen, Evoker, Vindicator)|&7Belohnung: 50 Gold + 100 XP"
+  daemonen_tier1_start: "run ^&5Slayer: Dämonen-Jäger I|&7Töte 10 Dämonen.|&7(Hexen ^Evoker ^Vindicator)|&7Belohnung: 50 Gold + 100 XP"
   daemonen_tier2_start: "&5Slayer: Dämonen-Jäger II|&7Töte 25 Dämonen.|&7Belohnung: 150 Gold + 300 XP"
   daemonen_tier3_start: "&5Slayer: Dämonen-Jäger III|&7Töte 50 Dämonen.|&7Belohnung: 400 Gold + 750 XP"
   daemonen_tier4_start: "&5Slayer: Dämonen-Jäger IV|&7Töte 100 Dämonen.|&7Belohnung: 1000 Gold + 2000 XP"
