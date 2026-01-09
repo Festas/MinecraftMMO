@@ -12,5 +12,7 @@ items:
   korruptes_fragment: "minecraft:obsidian name:&5Korruptes_Fragment lore:&7Ein_Fragment_der_Leere|&7Pulsiert_mit_dunkler_Energie"
   
   # Belohnungs-Items
-  anfaenger_schwert: "minecraft:iron_sword name:&aStadtwachen-Schwert damage:0 unbreakable:true lore:&7Ein_Schwert_der_Stadtwache|&7von_Düsterwall"
-  verbesserte_ruestung_set: "minecraft:iron_chestplate name:&aStadtwachen-Brustplatte damage:0 unbreakable:true lore:&7Solide_Rüstung_für|&7königliche_Beschützer"
+  # FIX: "damage:0" entfernt, da dies Fehler verursachte
+  anfaenger_schwert: "minecraft:iron_sword name:&aStadtwachen-Schwert unbreakable:true lore:&7Ein_Schwert_der_Stadtwache|&7von_Düsterwall"
+  verbesserte_ruestung_set: "minecraft:iron_chestplate name:&aStadtwachen-Brustplatte unbreakable:true lore:&7Solide_Rüstung_für|&7königliche_Beschützer"
+
