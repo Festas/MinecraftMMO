@@ -30,8 +30,24 @@ conversations:
         text: "&5*flüstert* Das Mal auf deiner Hand... Es ist sowohl Fluch als auch Segen. Die Leere hat dich markiert, aber du bist nicht ihr Diener. Du bist der Ausgleich. Das Gegengift."
         pointer: "ende"
         conditions: "_core.hat_leere_zeichen"
+      
+      ende:
+        text: "&5Geh in Frieden, Kind."
+        pointer: ""
     
     player_options:
+      spieler_optionen:
+        text: "&7[Zurück zum Hauptmenü]"
+        pointer: "begruessung"
+      
+      mehr_fragen:
+        text: "&7[Zurück]"
+        pointer: "begruessung"
+      
+      daily_optionen:
+        text: "&7[Zurück]"
+        pointer: "begruessung"
+      
       frage_leere:
         text: "&7Was wisst Ihr über die Leere?"
         pointer: "ueber_leere"
@@ -54,11 +70,11 @@ conditions:
   daily_kraeuter_aktiv: "tag daily_kraeuter_aktiv"
 
 events:
-  start_daily_kraeuter: "tag daily_kraeuter_aktiv,objective add daily_kraeuter_sammeln 10"
-  daily_kraeuter_done: "tag !daily_kraeuter_aktiv,point playerpoints 100,give minecraft:potion 1 name:&5Morganas_Heiltrank"
+  start_daily_kraeuter: "run ^tag daily_kraeuter_aktiv ^objective add daily_kraeuter_sammeln 10"
+  daily_kraeuter_done: "run ^tag remove daily_kraeuter_aktiv ^point playerpoints 100 ^give minecraft:potion 1 name:&5Morganas_Heiltrank"
 
 objectives:
-  daily_kraeuter_sammeln: "block POPPY,DANDELION,BLUE_ORCHID,ALLIUM,AZURE_BLUET,RED_TULIP,ORANGE_TULIP,WHITE_TULIP,PINK_TULIP,OXEYE_DAISY,CORNFLOWER,LILY_OF_THE_VALLEY 10 events:daily_kraeuter_done notify:&5%left% Kräuter verbleiben"
+  daily_kraeuter_sammeln: "block POPPY,DANDELION,BLUE_ORCHID,ALLIUM,AZURE_BLUET,RED_TULIP,ORANGE_TULIP,WHITE_TULIP,PINK_TULIP,OXEYE_DAISY,CORNFLOWER,LILY_OF_THE_VALLEY 10 events:daily_kraeuter_done notify:%left%_Kraeuter_verbleiben"
 
 journal:
   morgana_begegnung: "&5Kräuterfrau Morgana|&7Morgana weiß mehr über|&7die Leere als sie zugibt."

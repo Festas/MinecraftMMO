@@ -32,8 +32,32 @@ conversations:
       daemonen_info:
         text: "&7Hexen und Illager... Sie sind schlau und gefährlich. Dies ist der härteste Pfad. Rang V verleiht den Titel [Dämonen-Schlächter]. Benötigt höheres Level zum Starten."
         pointer: "daemonen_optionen"
+      
+      ende:
+        text: "&7Gute Jagd. *Der Wolf heult*"
+        pointer: ""
     
     player_options:
+      spieler_optionen:
+        text: "&7[Zurück zum Hauptmenü]"
+        pointer: "begruessung"
+      
+      slayer_optionen:
+        text: "&7[Zurück]"
+        pointer: "begruessung"
+      
+      untoten_optionen:
+        text: "&7[Zurück]"
+        pointer: "slayer_erklaerung"
+      
+      spinnen_optionen:
+        text: "&7[Zurück]"
+        pointer: "slayer_erklaerung"
+      
+      daemonen_optionen:
+        text: "&7[Zurück]"
+        pointer: "slayer_erklaerung"
+      
       interesse_slayer:
         text: "&7Ich möchte ein Slayer werden."
         pointer: "slayer_erklaerung"

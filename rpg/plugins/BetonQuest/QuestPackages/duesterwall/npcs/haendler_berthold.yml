@@ -25,8 +25,20 @@ conversations:
       handel:
         text: "&eIch habe alles was ein Abenteurer braucht! Waffen, Rüstungen, Tränke, Werkzeuge... Für den richtigen Preis natürlich. Gold spricht lauter als Worte!"
         pointer: "ende"
+      
+      ende:
+        text: "&eKomm bald wieder! *zählt Münzen*"
+        pointer: ""
     
     player_options:
+      spieler_optionen:
+        text: "&7[Zurück zum Hauptmenü]"
+        pointer: "begruessung"
+      
+      ratten_optionen:
+        text: "&7[Zurück]"
+        pointer: "begruessung"
+      
       frage_ratten:
         text: "&7Ich höre, Ihr habt ein Rattenproblem?"
         pointer: "rattenproblem"
@@ -53,11 +65,11 @@ conditions:
   rattenproblem_complete: "tag rattenproblem_complete"
 
 events:
-  start_rattenproblem: "tag rattenproblem_aktiv,objective add ratten_toeten 10"
-  ratten_belohnung: "tag rattenproblem_complete,point playerpoints 200,experience 100,sound_quest_complete"
+  start_rattenproblem: "run ^tag add rattenproblem_aktiv ^objective add ratten_toeten 10"
+  ratten_belohnung: "run ^tag add rattenproblem_complete ^point playerpoints 200 ^experience 100 ^_core.sound_quest_complete"
 
 objectives:
-  ratten_toeten: "mobkill SILVERFISH 10 events:ratten_toeten_done notify:&e%left% Ratten verbleiben"
+  ratten_toeten: "mobkill SILVERFISH 10 events:ratten_toeten_done notify:%left%_Ratten_verbleiben"
 
 journal:
   ratten_quest: "&eRattenproblem|&7Berthold hat Ratten im Keller.|&7Ich soll sie eliminieren."

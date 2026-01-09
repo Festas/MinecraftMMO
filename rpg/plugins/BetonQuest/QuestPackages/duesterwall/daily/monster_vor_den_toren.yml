@@ -31,8 +31,21 @@ conversations:
         text: "&cDu hast heute genug gekämpft. Ruh dich aus. Die Monster werden morgen wieder da sein... leider."
         pointer: "ende"
         conditions: "daily_monster_complete_heute"
+      
+      ende:
+        text: "&7Auf Wiedersehen."
+        pointer: ""
+    
     
     player_options:
+      spieler_antwort:
+        text: "&7[Zurück zum Hauptmenü]"
+        pointer: "start"
+      
+      quest_optionen:
+        text: "&7[Zurück]"
+        pointer: "start"
+      
       fragen:
         text: "&7Welche Monster genau?"
         pointer: "beschreibung"
@@ -47,13 +60,13 @@ conversations:
         pointer: "ende"
 
 events:
-  start_daily_monster: "tag daily_monster_aktiv,journal add daily_monster_start,objective add toete_monster_daily 15"
-  monster_getoetet: "tag daily_monster_complete,tag !daily_monster_aktiv"
-  daily_monster_belohnung: "point playerpoints 150,experience 100,tag daily_monster_complete_heute,sound_quest_complete,journal update daily_monster_done"
+  start_daily_monster: "run ^tag daily_monster_aktiv ^journal add daily_monster_start ^objective add toete_monster_daily 15"
+  monster_getoetet: "run ^tag daily_monster_complete ^tag remove daily_monster_aktiv"
+  daily_monster_belohnung: "run ^point playerpoints 150 ^experience 100 ^tag daily_monster_complete_heute ^_core.sound_quest_complete ^journal update daily_monster_done"
   daily_monster_reset: "tag !daily_monster_complete_heute"
 
 objectives:
-  toete_monster_daily: "mobkill ZOMBIE,SKELETON,SPIDER,CREEPER,CAVE_SPIDER,HUSK,STRAY,DROWNED 15 events:monster_getoetet notify:&c%left% Monster verbleiben"
+  toete_monster_daily: "mobkill ZOMBIE,SKELETON,SPIDER,CREEPER,CAVE_SPIDER,HUSK,STRAY,DROWNED 15 events:monster_getoetet notify:%left%_Monster_verbleiben"
 
 conditions:
   daily_monster_aktiv: "tag daily_monster_aktiv"

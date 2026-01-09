@@ -31,8 +31,21 @@ conversations:
         text: "&5Die heutigen Kräuter reichen. Die Pflanzen brauchen Zeit zum Nachwachsen. Komm morgen wieder."
         pointer: "ende"
         conditions: "daily_kraeuter_complete_heute"
+      
+      ende:
+        text: "&7Auf Wiedersehen."
+        pointer: ""
+    
     
     player_options:
+      spieler_antwort:
+        text: "&7[Zurück zum Hauptmenü]"
+        pointer: "start"
+      
+      quest_optionen:
+        text: "&7[Zurück]"
+        pointer: "start"
+      
       fragen:
         text: "&7Welche Kräuter genau?"
         pointer: "beschreibung"
@@ -47,13 +60,13 @@ conversations:
         pointer: "ende"
 
 events:
-  start_daily_kraeuter: "tag daily_kraeuter_aktiv,journal add daily_kraeuter_start,objective add sammle_kraeuter_daily 10"
-  kraeuter_gesammelt: "tag daily_kraeuter_complete,tag !daily_kraeuter_aktiv"
-  daily_kraeuter_belohnung: "point playerpoints 100,give minecraft:potion 1 name:&5Morganas_Heiltrank effect:instant_health:1:3,tag daily_kraeuter_complete_heute,sound_quest_complete,journal update daily_kraeuter_done"
+  start_daily_kraeuter: "run ^tag daily_kraeuter_aktiv ^journal add daily_kraeuter_start ^objective add sammle_kraeuter_daily 10"
+  kraeuter_gesammelt: "run ^tag daily_kraeuter_complete ^tag remove daily_kraeuter_aktiv"
+  daily_kraeuter_belohnung: "run ^point playerpoints 100 ^give minecraft:potion 1 name:&5Morganas_Heiltrank effect:instant_health:1:3 ^tag daily_kraeuter_complete_heute ^_core.sound_quest_complete ^journal update daily_kraeuter_done"
   daily_kraeuter_reset: "tag !daily_kraeuter_complete_heute"
 
 objectives:
-  sammle_kraeuter_daily: "block POPPY,DANDELION,BLUE_ORCHID,ALLIUM,AZURE_BLUET,RED_TULIP,ORANGE_TULIP,WHITE_TULIP,PINK_TULIP,OXEYE_DAISY,CORNFLOWER,LILY_OF_THE_VALLEY,SUNFLOWER,LILAC,ROSE_BUSH,PEONY 10 events:kraeuter_gesammelt notify:&5%left% Kräuter verbleiben"
+  sammle_kraeuter_daily: "block POPPY,DANDELION,BLUE_ORCHID,ALLIUM,AZURE_BLUET,RED_TULIP,ORANGE_TULIP,WHITE_TULIP,PINK_TULIP,OXEYE_DAISY,CORNFLOWER,LILY_OF_THE_VALLEY,SUNFLOWER,LILAC,ROSE_BUSH,PEONY 10 events:kraeuter_gesammelt notify:%left%_Kraeuter_verbleiben"
 
 conditions:
   daily_kraeuter_aktiv: "tag daily_kraeuter_aktiv"

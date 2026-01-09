@@ -28,6 +28,14 @@ conversations:
         events: "sohn_belohnung_final"
     
     player_options:
+      spieler_antwort:
+        text: "&7[Zurück zum Hauptmenü]"
+        pointer: "start"
+      
+      quest_optionen:
+        text: "&7[Zurück]"
+        pointer: "start"
+      
       annehmen:
         text: "&aIch werde ihn finden, Hammund!"
         pointer: "ende"
@@ -42,14 +50,14 @@ conversations:
         pointer: "belohnung_text"
 
 events:
-  start_sohn_suche: "tag sohn_quest_aktiv,journal add sohn_quest_start,objective add finde_torin_wald"
-  torin_gefunden_event: "tag torin_gefunden,journal add torin_gefunden_journal"
-  sohn_retten: "tag sohn_quest_complete,tag !sohn_quest_aktiv,journal add sohn_gerettet"
-  sohn_belohnung_final: "point playerpoints 300,experience 200,tag freie_mahlzeiten,sound_quest_complete"
+  start_sohn_suche: "run ^tag sohn_quest_aktiv ^journal add sohn_quest_start ^objective add finde_torin_wald"
+  torin_gefunden_event: "run ^tag torin_gefunden ^journal add torin_gefunden_journal"
+  sohn_retten: "run ^tag sohn_quest_complete ^tag remove sohn_quest_aktiv ^journal add sohn_gerettet"
+  sohn_belohnung_final: "run ^point playerpoints 300 ^experience 200 ^tag freie_mahlzeiten ^_core.sound_quest_complete"
 
 objectives:
-  finde_torin_wald: "location 150;64;180;15 events:torin_gefunden_event notify:Suche Torin im östlichen Wald"
-  bringe_torin_zurueck: "location 0;64;0;20 events:sohn_retten notify:Bringe Torin zurück zur Stadt"
+  finde_torin_wald: "location 150;64;180;15 events:torin_gefunden_event notify:Suche_Torin_im_oestlichen_Wald"
+  bringe_torin_zurueck: "location 0;64;0;20 events:sohn_retten notify:Bringe_Torin_zurueck_zur_Stadt"
 
 conditions:
   sohn_quest_aktiv: "tag sohn_quest_aktiv"
@@ -72,8 +80,21 @@ conversations:
         text: "&7*Verwirrt* Wo... wo bin ich? Die Stimmen... sie sind weg. Danke... danke dass du mich gefunden hast..."
         pointer: "ende"
         conditions: "sohn_quest_complete"
+      
+      ende:
+        text: "&7Auf Wiedersehen."
+        pointer: ""
+    
     
     player_options:
+      spieler_antwort:
+        text: "&7[Zurück zum Hauptmenü]"
+        pointer: "start"
+      
+      quest_optionen:
+        text: "&7[Zurück]"
+        pointer: "start"
+      
       beruhigen:
         text: "&7Torin! Dein Vater sucht dich! Komm, ich bringe dich nach Hause!"
         pointer: "ende"

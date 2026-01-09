@@ -13,7 +13,7 @@ conversations:
       
       geruechte:
         text: "&2*Beugt sich vor und flüstert* Ich höre viel hier in der Taverne... Die Leute reden. Sie haben Angst. Die Dunkelheit im Osten wächst. Reisende verschwinden. Und mein Sohn..."
-        pointer: "sohn_frage"
+        pointer: "spieler_optionen"
       
       sohn_vermisst:
         text: "&2*Tränen in den Augen* Mein Sohn Torin... Er ist vor drei Tagen in den Wald gegangen. Kräuter sammeln wollte er. Er ist nicht zurückgekommen. *schluchzt* Bitte... finde ihn!"
@@ -28,9 +28,25 @@ conversations:
       
       geschichten:
         text: "&2*Lehnt sich zurück* Was willst du wissen? Über König Nitwit? Die Leere? Die alten Zeiten? Ich habe viele Geschichten gehört in dieser Taverne..."
-        pointer: "geschichten_optionen"
+        pointer: "ende"
+      
+      ende:
+        text: "&2Komm jederzeit wieder!"
+        pointer: ""
     
     player_options:
+      spieler_optionen:
+        text: "&7[Zurück zum Hauptmenü]"
+        pointer: "begruessung"
+      
+      sohn_optionen:
+        text: "&7[Zurück]"
+        pointer: "begruessung"
+      
+      geschichten_optionen:
+        text: "&7[Zurück]"
+        pointer: "begruessung"
+      
       frage_geruechte:
         text: "&7Was gibt es Neues in der Stadt?"
         pointer: "geruechte"
@@ -66,12 +82,12 @@ conditions:
   sohn_quest_complete: "tag sohn_quest_complete"
 
 events:
-  start_sohn_quest: "tag sohn_quest_aktiv,objective add finde_torin"
-  sohn_belohnung: "tag sohn_quest_complete,point playerpoints 300,experience 200,sound_quest_complete"
-  give_essen: "give minecraft:bread 3,give minecraft:cooked_beef 2"
+  start_sohn_quest: "run ^tag add sohn_quest_aktiv ^objective add finde_torin"
+  sohn_belohnung: "run ^tag add sohn_quest_complete ^point playerpoints 300 ^experience 200 ^_core.sound_quest_complete"
+  give_essen: "run ^give minecraft:bread 3 ^give minecraft:cooked_beef 2"
 
 objectives:
-  finde_torin: "location 100;64;200;10 events:torin_gefunden notify:Finde Torin im östlichen Wald"
+  finde_torin: "location 100;64;200;10 events:torin_gefunden notify:Finde_Torin_im_oestlichen_Wald"
 
 journal:
   sohn_quest: "&2Der vermisste Sohn|&7Hammunds Sohn Torin ist|&7im Wald verschwunden.|&7Ich muss ihn finden."
