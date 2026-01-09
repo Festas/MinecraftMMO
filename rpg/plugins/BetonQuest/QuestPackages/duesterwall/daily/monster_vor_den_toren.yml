@@ -61,12 +61,12 @@ conversations:
 
 events:
   start_daily_monster: "run ^tag daily_monster_aktiv ^journal add daily_monster_start ^objective add toete_monster_daily 15"
-  monster_getoetet: "run ^tag daily_monster_complete ^tag remove daily_monster_aktiv"
+  monster_getoetet: "run ^tag daily_monster_complete ^tag del daily_monster_aktiv"
   daily_monster_belohnung: "run ^point playerpoints 150 ^experience 100 ^tag daily_monster_complete_heute ^_core.sound_quest_complete ^journal update daily_monster_done"
   daily_monster_reset: "tag !daily_monster_complete_heute"
 
 objectives:
-  toete_monster_daily: "mobkill ZOMBIE,SKELETON,SPIDER,CREEPER,CAVE_SPIDER,HUSK,STRAY,DROWNED 15 events:monster_getoetet notify:%left%_Monster_verbleiben"
+  toete_monster_daily: "mobkill ZOMBIE,SKELETON,SPIDER,CREEPER,CAVE_SPIDER,HUSK,STRAY,DROWNED 15 events:monster_getoetet notify:1:&7%left% Monster verbleiben"
 
 conditions:
   daily_monster_aktiv: "tag daily_monster_aktiv"

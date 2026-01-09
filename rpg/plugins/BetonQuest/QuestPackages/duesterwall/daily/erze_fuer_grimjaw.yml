@@ -61,12 +61,12 @@ conversations:
 
 events:
   start_daily_erze: "run ^tag daily_erze_aktiv ^journal add daily_erze_start ^objective add sammle_erze_daily 20"
-  erze_gesammelt: "run ^tag daily_erze_complete ^tag remove daily_erze_aktiv"
+  erze_gesammelt: "run ^tag daily_erze_complete ^tag del daily_erze_aktiv"
   daily_erze_belohnung: "run ^point playerpoints 100 ^experience 50 ^tag daily_erze_complete_heute ^_core.sound_quest_complete ^journal update daily_erze_done"
   daily_erze_reset: "tag !daily_erze_complete_heute"  # Wird täglich um 4:00 ausgeführt
 
 objectives:
-  sammle_erze_daily: "block IRON_ORE,DEEPSLATE_IRON_ORE,COAL_ORE,DEEPSLATE_COAL_ORE 20 events:erze_gesammelt notify:%left%_Erze_verbleiben"
+  sammle_erze_daily: "block IRON_ORE,DEEPSLATE_IRON_ORE,COAL_ORE,DEEPSLATE_COAL_ORE 20 events:erze_gesammelt notify:1:&7%left% Erze verbleiben"
 
 conditions:
   daily_erze_aktiv: "tag daily_erze_aktiv"

@@ -81,8 +81,8 @@ events:
   start_daily_erze: "run ^tag add daily_erze_aktiv ^objective add daily_erze_sammeln 20"
 
 objectives:
-  sammle_eisenerze: "block IRON_ORE,DEEPSLATE_IRON_ORE 10 events:erze_complete notify:%left%_Eisenerze_verbleiben"
-  daily_erze_sammeln: "block IRON_ORE,DEEPSLATE_IRON_ORE,COAL_ORE,DEEPSLATE_COAL_ORE 20 events:daily_erze_done notify:%left%_Erze_verbleiben"
+  sammle_eisenerze: "block IRON_ORE,DEEPSLATE_IRON_ORE 10 events:erze_complete notify:1:&7%left% Eisenerze verbleiben"
+  daily_erze_sammeln: "block IRON_ORE,DEEPSLATE_IRON_ORE,COAL_ORE,DEEPSLATE_COAL_ORE 20 events:daily_erze_done notify:1:&7%left% Erze verbleiben"
 
 journal:
   schmied_quest: "&8Grimjaws Auftrag|&7Der Zwergenschmied braucht|&710 Eisenerze für Rüstungen."
